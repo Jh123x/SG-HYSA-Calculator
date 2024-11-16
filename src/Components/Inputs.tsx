@@ -1,22 +1,27 @@
-import { Container, TextField, Checkbox, Grid2, FormControlLabel, Box, Typography, Button, FormControl } from "@mui/material";
+import { TextField, Checkbox, Grid2, FormControlLabel, Box, Typography, Button, FormControl } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import Profile from "../logic/profile.ts";
+import Profile from "../types/profile.ts";
 import { STORE_KEY } from "../logic/constants.ts";
 
-export const FormInputs = () => {
+export const FormInputs = ({ updateResult }) => {
     const [state, setState] = useState<Profile>(
         {
             Age: 0,
             Salary: 0,
+            Savings: 0,
             Investment: 0,
             Insurance: 0,
+            Spending: 0,
+            GiroTransactions: 0,
+            MonthlyAccIncrease: 0,
         },
     )
 
-    useEffect(() => localStorage.setItem(STORE_KEY, JSON.stringify(state)), [state])
+    useEffect(() => updateResult(state), [state])
 
     return <Grid2 justifyContent="center">
         <FormControl>
+            <SavingsInput updateSavings={(savings) => setState({ ...state, Savings: savings })} />
             <AgeInput updateAge={(age) => setState({ ...state, Age: age })} />
             <SalaryInput updateSalary={(salary) => setState({ ...state, Salary: salary })} />
             <InsuranceInput updateInsurance={(insurance) => setState({ ...state, Insurance: insurance })} />
@@ -24,6 +29,26 @@ export const FormInputs = () => {
             <Button type="submit" onClick={() => localStorage.setItem(STORE_KEY, JSON.stringify(state))}>Submit</Button>
         </FormControl>
     </Grid2>
+}
+
+const SavingsInput = ({ updateSavings }) => {
+    return <Box
+        component="form"
+        sx={{ '& > :not(style)': { m: 1 } }}
+        display="flex"
+        flex="row"
+    >
+        <Typography variant="h6">Current Savings</Typography>
+        <TextField
+            id="outlined-number"
+            label="Current Savings"
+            type="number"
+            onChange={e => updateSavings(parseInt(e.target.value ?? 0))}
+            slotProps={{
+                inputLabel: { shrink: true },
+            }}
+        />
+    </Box>
 }
 
 const AgeInput = ({ updateAge }) => {
@@ -70,7 +95,7 @@ const SalaryInput = ({ updateSalary }) => (
 
 const InsuranceInput = ({ updateInsurance }) => {
     const [isSelected, setSelected] = useState(true)
-    return <Container>
+    return <Box>
         <Grid2 display="flex" flexDirection="row">
             <FormControlLabel control={<Checkbox onChange={() => setSelected(!isSelected)} />} label="Willing to Insure" />
             <TextField
@@ -87,12 +112,12 @@ const InsuranceInput = ({ updateInsurance }) => {
                 }}
             />
         </Grid2>
-    </Container>
+    </Box>
 }
 
 const InvestmentInput = ({ updateInvestment }) => {
     const [isSelected, setSelected] = useState(true)
-    return <Container>
+    return <Box>
         <Grid2 display="flex" flexDirection="row">
             <FormControlLabel control={<Checkbox onChange={() => setSelected(!isSelected)} />} label="Willing to Invest" />
             <TextField
@@ -109,5 +134,5 @@ const InvestmentInput = ({ updateInvestment }) => {
                 }}
             />
         </Grid2>
-    </Container>
+    </Box>
 }
