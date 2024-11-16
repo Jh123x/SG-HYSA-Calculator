@@ -13,18 +13,18 @@ export const stand_chart_interest = (profile: Profile): ResultInterest => {
     if (Spending >= 500 && Spending <= 1999) {
         interest += 0.65
     } else if (Spending >= 2000) {
-        interest += 1.45
+        interest += 1.4
     }
 
-    if (GiroTransactions > 3) {
+    if (GiroTransactions >= 3) {
         interest += 0.23
     }
 
-    if (Insurance > 12000) {
+    if (Insurance >= 12000) {
         interest += 2
     }
 
-    if (Investment > 30000) {
+    if (Investment >= 30000) {
         interest += 2
     }
 
