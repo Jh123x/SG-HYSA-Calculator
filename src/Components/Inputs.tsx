@@ -1,5 +1,5 @@
 import { Container, TextField, Checkbox, Grid2, FormControlLabel, Box, Typography, Button, FormControl } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Profile from "../logic/profile.ts";
 import { STORE_KEY } from "../logic/constants.ts";
 
@@ -12,6 +12,8 @@ export const FormInputs = () => {
             Insurance: 0,
         },
     )
+
+    useEffect(() => localStorage.setItem(STORE_KEY, JSON.stringify(state)), [state])
 
     return <Grid2 justifyContent="center">
         <FormControl>
