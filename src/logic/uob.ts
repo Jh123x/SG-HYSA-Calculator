@@ -38,7 +38,7 @@ const ir_cutoff: Array<Interest> = [
 export const uob_interest = (profile: Profile): ResultInterest => {
     const { Savings, Spending, GiroTransactions, Salary } = profile
 
-    if (Spending >= 500 && Salary > 1600) {
+    if (Spending >= 500 && Salary >= 1600) {
         return calculate_ir(Savings, ir_cutoff[0])
     }
 
