@@ -32,7 +32,7 @@ export const ocbc_interest = (profile: Profile): ResultInterest => {
         interest[1] += 2.4
     }
 
-    if (Savings > 200000) {
+    if (Savings >= 200000) {
         interest[0] += 2.4
         interest[1] += 2.4
     }

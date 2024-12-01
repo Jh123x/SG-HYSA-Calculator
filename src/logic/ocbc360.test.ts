@@ -27,7 +27,31 @@ describe("OCBC Interest rates", () => {
             insurance: true,
             investment: true,
 
-            expectedResult: 857.76 * 12,
+            expectedResult: 10_100,
+        },
+        {
+            caseName: "100k and all criteria",
+
+            savings: 100_000,
+            salary: 1800,
+            balanceIncrease: 500,
+            spending: 500,
+            insurance: true,
+            investment: true,
+
+            expectedResult: 7650,
+        },
+        {
+            caseName: "100k + salary + save",
+
+            savings: 100_000,
+            salary: 1800,
+            balanceIncrease: 500,
+            spending: 500,
+            insurance: false,
+            investment: false,
+
+            expectedResult: 4650,
         },
         {
             caseName: "0 should return 0",
