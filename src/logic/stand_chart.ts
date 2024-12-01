@@ -10,9 +10,11 @@ export const stand_chart_interest = (profile: Profile): ResultInterest => {
         interest += 2
     }
 
-    if (Spending >= 500 && Spending <= 1999) {
-        interest += 0.65
-    } else if (Spending >= 2000) {
+    if (Spending >= 500 && Spending < 2000) {
+        interest += 0.6
+    }
+
+    if (Spending >= 2000) {
         interest += 1.4
     }
 
@@ -29,7 +31,12 @@ export const stand_chart_interest = (profile: Profile): ResultInterest => {
     }
 
     return calculate_ir(Savings, {
-        cutoffs: [{ Cutoff: 100000, InterestRatePercent: interest },],
+        cutoffs: [
+            {
+                Cutoff: 100_000,
+                InterestRatePercent: interest,
+            },
+        ],
         baseRatePercent: 0.05
     })
 }

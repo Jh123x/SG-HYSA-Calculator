@@ -1,15 +1,16 @@
 import { Interest } from "../types/interest.ts";
 import { ResultInterest } from "../types/interest_result.ts";
 
-export const calculate_ir = (savings, interest: Interest): ResultInterest => {
+export const calculate_ir = (savings: number, interest: Interest): ResultInterest => {
     var total_interest = 0;
     for( const {Cutoff, InterestRatePercent} of interest.cutoffs){
+        const irDecimal = InterestRatePercent / 100
         if (savings <= Cutoff) {
-            total_interest += savings * InterestRatePercent/100
-            break
+            return  new ResultInterest(total_interest + savings * irDecimal)
         }
+
         savings -= Cutoff
-        total_interest += Cutoff * InterestRatePercent / 100
+        total_interest += Cutoff * irDecimal
     }
 
     return new ResultInterest(total_interest + savings * interest.baseRatePercent / 100)

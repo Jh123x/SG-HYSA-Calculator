@@ -1,7 +1,7 @@
 export class ResultInterest {
     private yearly_interest: number
     constructor(yearly: number) {
-        this.yearly_interest = yearly;
+        this.yearly_interest = parseFloat(yearly.toFixed(2));
     }
 
     toYearly(): number {
