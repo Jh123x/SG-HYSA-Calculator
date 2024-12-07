@@ -16,7 +16,7 @@ const makeDefaultValue = (value?: number): number | undefined => value === undef
 
 const attrs: Array<InputArg<number>> = [
     {
-        label: "Savings",
+        label: "Savings (To be transferred to bank)",
         inputType: "number",
         key: "savings",
         fn: (profile, v) => { return { ...profile, Savings: v } },
@@ -30,7 +30,7 @@ const attrs: Array<InputArg<number>> = [
         getDefault: (profile: Profile) => makeDefaultValue(profile.Age),
     },
     {
-        label: "Salary",
+        label: "Salary (Must be credited to bank)",
         inputType: "number",
         key: "salary",
         fn: (profile, v) => { return { ...profile, Salary: v } },
@@ -94,7 +94,7 @@ export const FormInputs = ({ updateResult }) => {
     const onSubmit = () => {
         localStorage.setItem(STORE_KEY, JSON.stringify(state))
         setHideModal(false)
-        setTimeout(() => { setHideModal(true) }, 3000)
+        setTimeout(() => setHideModal(true), 3000)
     }
 
     return <>
