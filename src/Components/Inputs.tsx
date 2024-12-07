@@ -86,8 +86,10 @@ const defaultValue = {
 
 export const FormInputs = ({ updateResult }) => {
     const [hideModel, setHideModal] = useState<boolean>(true);
-    const localValue = JSON.parse(localStorage.getItem(STORE_KEY) ?? "")
+    const localData = localStorage.getItem(STORE_KEY) ?? ""
+    const localValue = localData ? JSON.parse(localData) : undefined
     const [state, setState] = useState<Profile>(localValue ?? defaultValue)
+
     useEffect(() => updateResult(state), [state, updateResult])
     const onSubmit = () => {
         localStorage.setItem(STORE_KEY, JSON.stringify(state))

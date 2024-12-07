@@ -31,7 +31,7 @@ const displayResult = (bankName: string, info: ResultProp) => {
             width: '100%'
         }}>
         <TableCell>{bankName}</TableCell>
-        <TableCell>{info.interest.toYearly()}</TableCell>
+        <TableCell>{info.interest.toYearly() ?? 0}</TableCell>
         <TableCell>{info.remarks}</TableCell>
         <TableCell><Link href={info.url} target="_blank">Official Website</Link></TableCell>
     </TableRow>
