@@ -6,13 +6,39 @@ import { ocbc_interest } from "./ocbc360.ts"
 import { choco_finance } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
 
+interface Info {
+    interestFn: (profile: Profile) => ResultInterest
+    url: string
+    remarks?: string
+}
+
 export const STORE_KEY = "current_profile"
-export const calc_fn: Record<string, (profile: Profile) => ResultInterest> = {
-    "UOB Bank": uob_interest,
-    "Maribank": maribank_interest,
-    "OCBC Bank": ocbc_interest,
-    "Chocolate Finance": choco_finance,
-    "Standard Chartered Bank": stand_chart_interest,
+export const bankInfo: Record<string, Info> = {
+    "UOB Bank": {
+        interestFn: uob_interest,
+        url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
+        remarks: "The calculation here excludes spending rebates included in their calculator",
+    },
+    "Maribank": {
+        interestFn: maribank_interest,
+        url: "https://www.maribank.sg/product/mari-savings-account",
+        remarks: "Interest rates are a flat 2.7%",
+    },
+    "OCBC Bank": {
+        interestFn: ocbc_interest,
+        url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
+        remarks: "For more information use the calculator on their website"
+    },
+    "Chocolate Finance": {
+        interestFn: choco_finance,
+        url: "https://www.chocolatefinance.com/",
+        remarks: "Amounts above 50k are investments and not included in this calculator"
+    },
+    "Standard Chartered Bank": {
+        interestFn: stand_chart_interest,
+        url: "https://www.sc.com/sg/save/current-accounts/bonussaver/?intcid=web_listing-sc_com_top_nav-homepg1-staticmedia_others-sng-homepage_new-bsaver-acquisition-sc_com_organic-sg-en",
+        remarks: "For more information use the calculator on their website",
+    },
 
     // TODO
     //dbs_finance,

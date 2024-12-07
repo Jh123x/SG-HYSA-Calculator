@@ -3,10 +3,10 @@ import { Container, GlobalStyles } from '@mui/material';
 import { Header } from './Components/Header.tsx';
 import { FormInputs } from './Components/Inputs.tsx';
 import Profile from './types/profile.ts';
-import { calc_fn } from './logic/constants.ts';
-import { ResultInterest } from './types/interest_result.ts';
+import { bankInfo } from './logic/constants.ts';
 import { Result } from './Components/Interests.tsx';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ResultProp } from './types/props.ts';
 
 const theme = createTheme({
   palette: {
@@ -17,11 +17,18 @@ const theme = createTheme({
   },
 });
 
+
 export const App = () => {
-  const [interests, setInterests] = useState<Record<string, ResultInterest>>({})
+  const [interests, setInterests] = useState<Record<string, ResultProp>>({})
   const updateResult = (profile: Profile) => {
-    const results: Record<string, ResultInterest> = {}
-    for (let [name, fn] of Object.entries(calc_fn)) { results[name] = fn(profile) }
+    const results: Record<string, ResultProp> = {}
+    for (let [name, info] of Object.entries(bankInfo)) {
+      results[name] = {
+        interest: info.interestFn(profile),
+        url: info.url,
+        remarks: info.remarks
+      }
+    }
     setInterests(results)
   }
 

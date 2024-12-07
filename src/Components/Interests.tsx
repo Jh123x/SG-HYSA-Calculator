@@ -1,18 +1,18 @@
 import React from "react"
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material"
-import { ResultInterest } from "../types/interest_result"
+import { Link, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material"
+import { ResultProp } from "../types/props"
 
-interface ResultProp {
-    results: Record<string, ResultInterest>
-}
-
-export const Result = ({ results }: ResultProp) => {
+export const Result = ({ results }: {
+    results: Record<string, ResultProp>
+}) => {
     return <TableContainer>
         <Table>
             <TableHead>
                 <TableRow>
                     <TableCell>Bank Name</TableCell>
                     <TableCell>Yearly Interest</TableCell>
+                    <TableCell>Remarks</TableCell>
+                    <TableCell>Webpage</TableCell>
                 </TableRow>
             </TableHead>
             <TableBody>
@@ -22,7 +22,7 @@ export const Result = ({ results }: ResultProp) => {
     </TableContainer>
 }
 
-const displayResult = (bankName: string, interest: ResultInterest) => {
+const displayResult = (bankName: string, info: ResultProp) => {
     return <TableRow
         key={bankName}
         sx={{
@@ -31,6 +31,8 @@ const displayResult = (bankName: string, interest: ResultInterest) => {
             width: '100%'
         }}>
         <TableCell>{bankName}</TableCell>
-        <TableCell>{interest.toYearly()}</TableCell>
+        <TableCell>{info.interest.toYearly()}</TableCell>
+        <TableCell>{info.remarks}</TableCell>
+        <TableCell><Link href={info.url} target="_blank">Official Website</Link></TableCell>
     </TableRow>
 }
