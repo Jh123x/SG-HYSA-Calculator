@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result Table should match snapshot when results are full 1`] = `
+<Result
+  results={
+    Object {
+      "UOB Bank": Object {
+        "interest": ResultInterest {
+          "yearly_interest": 1000,
+        },
+        "remarks": "Testing remarks",
+        "url": "https://jh123x.com",
+      },
+    }
+  }
+/>
+`;
+
+exports[`Result Table should match snapshot when results is empty 1`] = `
+<Result
+  results={Object {}}
+/>
+`;
