@@ -1,20 +1,16 @@
-import { Grid2, Link, Typography } from "@mui/material";
-import React from "react";
-
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 
 export const Header = () => {
-    return <Grid2 justifyContent="center" alignItems="center">
-        <Typography variant="h2" gutterBottom>
-            Optimize Your Interests
-        </Typography>
-        <Typography variant="h4" gutterBottom>
-            This is a tool to calculate
-            the interest gained by each
-            particular bank, with your
-            information.
-            <Link href="https://jh123x.com/blog/2024/high-yield-saving-accounts/" target="_blanks">
-                Complementing my blog post
-            </Link>
-        </Typography>
-    </Grid2>
+    return (
+        <AppBar position="static">
+            <Toolbar>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                    HYSA Calculator
+                </Typography>
+            </Toolbar>
+        </AppBar>
+    );
 }

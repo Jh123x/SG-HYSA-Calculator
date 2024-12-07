@@ -1,138 +1,155 @@
-import { TextField, Checkbox, Grid2, FormControlLabel, Box, Typography, Button, FormControl } from "@mui/material";
+import { TextField, Button, FormControl, Typography, Alert } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Profile from "../types/profile.ts";
 import { STORE_KEY } from "../logic/constants.ts";
 
+
+interface InputArg<Type> {
+    label: string
+    inputType?: React.HTMLInputTypeAttribute
+    key: string
+    fn: (profile: Profile, value: Type) => Profile
+    getDefault: (profile: Profile) => Type | undefined
+}
+
+const makeDefaultValue = (value?: number): number | undefined => value === undefined || value === 0 ? undefined : value
+
+const attrs: Array<InputArg<number>> = [
+    {
+        label: "Savings",
+        inputType: "number",
+        key: "savings",
+        fn: (profile, v) => { return { ...profile, Savings: v } },
+        getDefault: (profile: Profile) => makeDefaultValue(profile.Savings),
+    },
+    {
+        label: "Age",
+        inputType: "number",
+        key: "age",
+        fn: (profile, v) => { return { ...profile, Age: v } },
+        getDefault: (profile: Profile) => makeDefaultValue(profile.Age),
+    },
+    {
+        label: "Salary",
+        inputType: "number",
+        key: "salary",
+        fn: (profile, v) => { return { ...profile, Salary: v } },
+        getDefault: (profile: Profile) => makeDefaultValue(profile.Salary),
+    },
+    {
+        label: "Investment (Willing to spend with bank)",
+        inputType: "number",
+        key: "investment",
+        fn: (profile, v) => { return { ...profile, Investment: v } },
+        getDefault: (profile: Profile) => makeDefaultValue(profile.Investment),
+    },
+    {
+        label: "Insurance (Willing to spend with bank)",
+        inputType: "number",
+        key: "insurance",
+        fn: (profile, v) => { return { ...profile, Insurance: v } },
+        getDefault: (profile: Profile) => makeDefaultValue(profile.Insurance),
+    },
+    {
+        label: "Spending (On eligible cards)",
+        inputType: "number",
+        key: "spending",
+        fn: (profile, v) => { return { ...profile, Spending: v } },
+        getDefault: (profile: Profile) => makeDefaultValue(profile.Spending),
+    },
+    {
+        label: "Giro Transactions (Monthly)",
+        inputType: "number",
+        key: "giro",
+        fn: (profile, v) => { return { ...profile, GiroTransactions: v } },
+        getDefault: (profile: Profile) => makeDefaultValue(profile.GiroTransactions),
+    },
+    {
+        label: "Monthly Account Value Increment",
+        inputType: "number",
+        key: "monthly-acc-value",
+        fn: (profile, v) => { return { ...profile, MonthlyAccIncrease: v } },
+        getDefault: (profile: Profile) => makeDefaultValue(profile.MonthlyAccIncrease),
+    },
+]
+
+const defaultValue = {
+    Age: 0,
+    Salary: 0,
+    Savings: 0,
+    Investment: 0,
+    Insurance: 0,
+    Spending: 0,
+    GiroTransactions: 0,
+    MonthlyAccIncrease: 0,
+}
+
 export const FormInputs = ({ updateResult }) => {
-    const [state, setState] = useState<Profile>(
-        {
-            Age: 0,
-            Salary: 0,
-            Savings: 0,
-            Investment: 0,
-            Insurance: 0,
-            Spending: 0,
-            GiroTransactions: 0,
-            MonthlyAccIncrease: 0,
-        },
-    )
+    const [hideModel, setHideModal] = useState<boolean>(true);
+    const localValue = JSON.parse(localStorage.getItem(STORE_KEY) ?? "")
+    const [state, setState] = useState<Profile>(localValue ?? defaultValue)
+    useEffect(() => updateResult(state), [state, updateResult])
+    const onSubmit = () => {
+        localStorage.setItem(STORE_KEY, JSON.stringify(state))
+        setHideModal(false)
+        setTimeout(() => { setHideModal(true) }, 3000)
+    }
 
-    useEffect(() => updateResult(state), [state])
-
-    return <Grid2 justifyContent="center">
-        <FormControl>
-            <SavingsInput updateSavings={(savings) => setState({ ...state, Savings: savings })} />
-            <AgeInput updateAge={(age) => setState({ ...state, Age: age })} />
-            <SalaryInput updateSalary={(salary) => setState({ ...state, Salary: salary })} />
-            <InsuranceInput updateInsurance={(insurance) => setState({ ...state, Insurance: insurance })} />
-            <InvestmentInput updateInvestment={(investment) => setState({ ...state, Investment: investment })} />
-            <Button type="submit" onClick={() => localStorage.setItem(STORE_KEY, JSON.stringify(state))}>Submit</Button>
+    return <>
+        <Typography variant="h4" >
+            High Yield Savings Account Calculator
+        </Typography>
+        <Typography variant="h6" >
+            This is a calculator to show you which banks in Singapore have the best interest rates.
+            Key in your information below and view the interest you will get every year.
+        </Typography>
+        <FormControl sx={{ width: '100%' }} >
+            {attrs.map(
+                ({ label, inputType, getDefault, fn }) => <Input
+                    label={label}
+                    key={label.replace(" ", "_")}
+                    inputType={inputType}
+                    onChange={(value) => setState(fn(state, value))}
+                    defaultValue={getDefault(state)}
+                />
+            )}
+            <Button
+                key="submit-btn"
+                sx={{ backgroundColor: '#555' }}
+                type="submit"
+                onClick={onSubmit}>
+                Save locally
+            </Button>
         </FormControl>
-    </Grid2>
+        {hideModel && <Alert severity="success">Save Success</Alert>}
+    </>
 }
 
-const SavingsInput = ({ updateSavings }) => {
-    return <Box
-        component="form"
-        sx={{ '& > :not(style)': { m: 1 } }}
-        display="flex"
-        flex="row"
-    >
-        <Typography variant="h6">Current Savings</Typography>
-        <TextField
-            id="outlined-number"
-            label="Current Savings"
-            type="number"
-            onChange={e => updateSavings(parseInt(e.target.value ?? 0))}
-            slotProps={{
-                inputLabel: { shrink: true },
-            }}
-        />
-    </Box>
+interface Field {
+    label: string
+    onChange: (string) => any
+    defaultValue?: number
+    inputType?: React.HTMLInputTypeAttribute
+    subTest?: string
+    key?: string
 }
 
-const AgeInput = ({ updateAge }) => {
-    return <Box
-        component="form"
-        sx={{ '& > :not(style)': { m: 1 } }}
-        display="flex"
-        flex="row"
-    >
-        <Typography variant="h6">Current Age</Typography>
-        <TextField
-            id="outlined-number"
-            label="Current Age"
-            type="number"
-            onChange={e => updateAge(parseInt(e.target.value ?? 0))}
-            slotProps={{
-                inputLabel: { shrink: true },
-            }}
-        />
-    </Box>
-};
-
-const SalaryInput = ({ updateSalary }) => (
-    <Box
-        component="form"
-        sx={{ '& > :not(style)': { m: 1 } }}
-        display="flex"
-        flex="row"
-    >
-        <Typography variant="h6">Monthly Salary Credit Amount</Typography>
-        <TextField
-            id="outlined-number"
-            label="Monthly Salary"
-            type="number"
-            onChange={e => updateSalary(parseInt(e.target.value ?? 0))}
-            slotProps={{
-                inputLabel: {
-                    shrink: true,
-                },
-            }}
-        />
-    </Box>
-)
-
-const InsuranceInput = ({ updateInsurance }) => {
-    const [isSelected, setSelected] = useState(true)
-    return <Box>
-        <Grid2 display="flex" flexDirection="row">
-            <FormControlLabel control={<Checkbox onChange={() => setSelected(!isSelected)} />} label="Willing to Insure" />
-            <TextField
-                hidden={isSelected}
-                disabled={isSelected}
-                id="outlined-number"
-                label="Insurance Amount"
-                type="number"
-                onChange={e => updateInsurance(parseInt(e.target.value ?? 0))}
-                slotProps={{
-                    inputLabel: {
-                        shrink: true,
-                    },
-                }}
-            />
-        </Grid2>
-    </Box>
-}
-
-const InvestmentInput = ({ updateInvestment }) => {
-    const [isSelected, setSelected] = useState(true)
-    return <Box>
-        <Grid2 display="flex" flexDirection="row">
-            <FormControlLabel control={<Checkbox onChange={() => setSelected(!isSelected)} />} label="Willing to Invest" />
-            <TextField
-                hidden={isSelected}
-                disabled={isSelected}
-                id="outlined-number"
-                label="Investment Amount"
-                type="number"
-                onChange={e => updateInvestment(parseInt(e.target.value ?? 0))}
-                slotProps={{
-                    inputLabel: {
-                        shrink: true,
-                    },
-                }}
-            />
-        </Grid2>
-    </Box>
+const Input = (props: Field) => {
+    return <TextField
+        label={props.label}
+        type={props.inputType ?? ''}
+        variant="filled"
+        sx={{
+            color: '#000',
+            backgroundColor: '#555',
+            width: '100%'
+        }}
+        onChange={(e) => props.onChange(e.target.value)}
+        value={props.defaultValue}
+        slotProps={{
+            inputLabel: {
+                shrink: true,
+            },
+        }}
+    />
 }
