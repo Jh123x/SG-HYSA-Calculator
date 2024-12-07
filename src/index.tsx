@@ -4,10 +4,5 @@ import { App } from './App.tsx';
 
 const rootElem = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElem as Container);
-
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<React.StrictMode><App /></React.StrictMode>);
 
