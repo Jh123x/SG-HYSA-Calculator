@@ -1,15 +1,13 @@
 import React, { ReactElement } from "react"
 import { Link, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material"
 import { ResultProp } from "../types/props"
+import { primaryColor, textColor } from "../consts/colors.ts"
 
 export const Result = ({ results }: {
     results: Record<string, ResultProp>
 }) => {
     return <TableContainer
-        sx={{
-            padding: "5px 0px",
-            borderRadius: "10px"
-        }}
+        sx={{ padding: "5px 0px", borderRadius: "10px" }}
     >
         <Table>
             <TableHead>
@@ -42,7 +40,7 @@ const ThemedTableCell = ({ children, bankName }: {
 }) => <TableRow
     key={bankName}
     sx={{
-        color: '#000',
-        backgroundColor: '#555',
+        color: textColor,
+        backgroundColor: primaryColor,
         width: '100%'
     }}>{children}</TableRow>

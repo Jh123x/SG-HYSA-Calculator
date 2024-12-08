@@ -5,17 +5,10 @@ import { FormInputs } from './Components/Inputs.tsx';
 import Profile from './types/profile.ts';
 import { bankInfo } from './logic/constants.ts';
 import { Result } from './Components/Interests.tsx';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 import { ResultProp } from './types/props.ts';
+import { secondaryColor, theme } from './consts/colors.ts';
 
-const theme = createTheme({
-  palette: {
-    mode: 'dark',
-    background: {
-      default: 'grey'
-    }
-  },
-});
 
 
 export const App = () => {
@@ -37,7 +30,7 @@ export const App = () => {
       <GlobalStyles
         styles={{
           body: {
-            backgroundColor: '#bbb',
+            backgroundColor: secondaryColor,
             margin: '0px',
             padding: '0px',
             height: '100vh',
@@ -48,11 +41,7 @@ export const App = () => {
       <Header />
       <Container
         maxWidth={false}
-        sx={{
-          backgroundColor: '#fff',
-          height: '100%',
-          width: '100%',
-        }}
+        sx={{ height: '100%', width: '100%' }}
       >
         <FormInputs updateResult={updateResult} />
         <Result results={interests} />

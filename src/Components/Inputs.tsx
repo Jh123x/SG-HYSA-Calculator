@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import Profile from "../types/profile.ts";
 import { STORE_KEY } from "../logic/constants.ts";
 import { Check, Close } from "@mui/icons-material";
+import { useTheme } from "@emotion/react";
+import { primaryColor, textColor } from "../consts/colors.ts";
 
 
 interface InputArg<Type> {
@@ -89,6 +91,7 @@ export const FormInputs = ({ updateResult }) => {
     const [hideModel, setHideModal] = useState<boolean>(false);
     const localData = localStorage.getItem(STORE_KEY) ?? ""
     const localValue = localData ? JSON.parse(localData) : undefined
+    const theme = useTheme()
     const [state, setState] = useState<Profile>(localValue ?? defaultValue)
 
     useEffect(() => updateResult(state), [state, updateResult])
@@ -124,7 +127,7 @@ export const FormInputs = ({ updateResult }) => {
             )}
             <Button
                 key="submit-btn"
-                sx={{ backgroundColor: '#555' }}
+                sx={{ backgroundColor: primaryColor }}
                 type="submit"
                 onClick={onSubmit}>
                 Save locally
@@ -179,9 +182,10 @@ const Input = (props: Field) => {
         type={props.inputType ?? ''}
         variant="filled"
         sx={{
-            color: '#000',
-            backgroundColor: '#555',
-            width: '100%'
+            color: textColor,
+            backgroundColor: primaryColor,
+            width: '100%',
+            margin: "1px",
         }}
         onChange={(e) => props.onChange(e.target.value)}
         value={props.defaultValue}
