@@ -1,7 +1,8 @@
-import { TextField, Button, FormControl, Typography, Alert } from "@mui/material";
+import { TextField, Button, FormControl, Typography, Alert, Collapse, IconButton } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Profile from "../types/profile.ts";
 import { STORE_KEY } from "../logic/constants.ts";
+import { Check, Close } from "@mui/icons-material";
 
 
 interface InputArg<Type> {
@@ -85,7 +86,7 @@ const defaultValue = {
 }
 
 export const FormInputs = ({ updateResult }) => {
-    const [hideModel, setHideModal] = useState<boolean>(true);
+    const [hideModel, setHideModal] = useState<boolean>(false);
     const localData = localStorage.getItem(STORE_KEY) ?? ""
     const localValue = localData ? JSON.parse(localData) : undefined
     const [state, setState] = useState<Profile>(localValue ?? defaultValue)
@@ -94,7 +95,10 @@ export const FormInputs = ({ updateResult }) => {
     const onSubmit = () => {
         localStorage.setItem(STORE_KEY, JSON.stringify(state))
         setHideModal(false)
-        setTimeout(() => setHideModal(true), 3000)
+        setTimeout(() => {
+            if (!hideModel) return
+            setHideModal(true)
+        }, 1500)
     }
 
     return <>
@@ -102,8 +106,11 @@ export const FormInputs = ({ updateResult }) => {
             High Yield Savings Account Calculator
         </Typography>
         <Typography variant="h6" >
-            This is a calculator to show you which banks in Singapore have the best interest rates.
-            Key in your information below and view the interest you will get every year.
+            <p>
+                This is a calculator to show you which banks in Singapore have the best interest rates.
+                <br />
+                Key in your information below and view the interest you will get every year.
+            </p>
         </Typography>
         <FormControl sx={{ width: '100%' }} >
             {attrs.map(
@@ -123,8 +130,38 @@ export const FormInputs = ({ updateResult }) => {
                 Save locally
             </Button>
         </FormControl>
-        {hideModel && <Alert severity="success">Save Success</Alert>}
+        {!hideModel && <SaveAlert hideModel={hideModel} setHideModal={setHideModal} />}
     </>
+}
+
+const SaveAlert = ({
+    hideModel,
+    setHideModal,
+}: {
+    hideModel: boolean,
+    setHideModal: (boolean) => void
+}) => {
+    return <Collapse in={!hideModel}>
+        <Alert
+            severity="success"
+            icon={<Check fontSize="inherit" />}
+            sx={{
+                position: "fixed",
+                top: "7vh",
+                right: "20px",
+            }}
+            action={
+                <IconButton
+                    aria-label="close"
+                    color="inherit"
+                    size="small"
+                    onClick={() => setHideModal(true)}
+                >
+                    <Close fontSize="inherit" />
+                </IconButton>
+            }
+        > Save Success</Alert >
+    </Collapse >
 }
 
 interface Field {
