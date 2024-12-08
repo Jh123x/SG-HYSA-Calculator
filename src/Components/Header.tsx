@@ -2,7 +2,7 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { bgColor, primaryColor, textColor } from '../consts/colors.ts';
+import { primaryColor, textColor } from '../consts/colors.ts';
 
 export const Header = () => {
     return (
