@@ -7,7 +7,7 @@ import { bankInfo } from './logic/constants.ts';
 import { Result } from './Components/Interests.tsx';
 import { ThemeProvider } from '@mui/material/styles';
 import { ResultProp } from './types/props.ts';
-import { secondaryColor, theme } from './consts/colors.ts';
+import { bgColor, theme } from './consts/colors.ts';
 
 
 
@@ -30,7 +30,7 @@ export const App = () => {
       <GlobalStyles
         styles={{
           body: {
-            backgroundColor: secondaryColor,
+            backgroundColor: bgColor,
             margin: '0px',
             padding: '0px',
             height: '100vh',

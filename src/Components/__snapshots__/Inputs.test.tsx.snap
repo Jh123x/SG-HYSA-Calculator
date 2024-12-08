@@ -6,12 +6,12 @@ Object {
   "baseElement": <body>
     <div>
       <h4
-        class="MuiTypography-root MuiTypography-h4 css-f84ov1-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-h4 css-1pk9sz2-MuiTypography-root"
       >
         High Yield Savings Account Calculator
       </h4>
       <h6
-        class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-h6 css-36ajpz-MuiTypography-root"
       >
         <p>
           This is a calculator to show you which banks in Singapore have the best interest rates.
@@ -23,7 +23,7 @@ Object {
         class="MuiFormControl-root css-7549ua-MuiFormControl-root"
       >
         <div
-          class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+          class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -46,7 +46,7 @@ Object {
           </div>
         </div>
         <div
-          class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+          class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -69,7 +69,7 @@ Object {
           </div>
         </div>
         <div
-          class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+          class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -92,7 +92,7 @@ Object {
           </div>
         </div>
         <div
-          class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+          class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -115,7 +115,7 @@ Object {
           </div>
         </div>
         <div
-          class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+          class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -138,7 +138,7 @@ Object {
           </div>
         </div>
         <div
-          class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+          class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -161,7 +161,7 @@ Object {
           </div>
         </div>
         <div
-          class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+          class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -184,7 +184,7 @@ Object {
           </div>
         </div>
         <div
-          class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+          class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -207,84 +207,23 @@ Object {
           </div>
         </div>
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1vm0eet-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1rw7ax1-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="submit"
         >
           Save locally
         </button>
       </div>
-      <div
-        class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-qr6njo-MuiCollapse-root"
-        style="min-height: 0px;"
-      >
-        <div
-          class="MuiCollapse-wrapper MuiCollapse-vertical css-1x6hinx-MuiCollapse-wrapper"
-        >
-          <div
-            class="MuiCollapse-wrapperInner MuiCollapse-vertical css-1i4ywhz-MuiCollapse-wrapperInner"
-          >
-            <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorSuccess MuiAlert-standardSuccess MuiAlert-standard css-s1vfyc-MuiPaper-root-MuiAlert-root"
-              role="alert"
-              style="--Paper-shadow: none;"
-            >
-              <div
-                class="MuiAlert-icon css-vab54s-MuiAlert-icon"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1ckov0h-MuiSvgIcon-root"
-                  data-testid="CheckIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-                  />
-                </svg>
-              </div>
-              <div
-                class="MuiAlert-message css-zioonp-MuiAlert-message"
-              >
-                 Save Success
-              </div>
-              <div
-                class="MuiAlert-action css-rgppqo-MuiAlert-action"
-              >
-                <button
-                  aria-label="close"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeSmall css-4ns38t-MuiButtonBase-root-MuiIconButton-root"
-                  tabindex="0"
-                  type="button"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1ckov0h-MuiSvgIcon-root"
-                    data-testid="CloseIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </body>,
   "container": <div>
     <h4
-      class="MuiTypography-root MuiTypography-h4 css-f84ov1-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h4 css-1pk9sz2-MuiTypography-root"
     >
       High Yield Savings Account Calculator
     </h4>
     <h6
-      class="MuiTypography-root MuiTypography-h6 css-1miy0lu-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h6 css-36ajpz-MuiTypography-root"
     >
       <p>
         This is a calculator to show you which banks in Singapore have the best interest rates.
@@ -296,7 +235,7 @@ Object {
       class="MuiFormControl-root css-7549ua-MuiFormControl-root"
     >
       <div
-        class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
       >
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -319,7 +258,7 @@ Object {
         </div>
       </div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
       >
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -342,7 +281,7 @@ Object {
         </div>
       </div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
       >
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -365,7 +304,7 @@ Object {
         </div>
       </div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
       >
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -388,7 +327,7 @@ Object {
         </div>
       </div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
       >
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -411,7 +350,7 @@ Object {
         </div>
       </div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
       >
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -434,7 +373,7 @@ Object {
         </div>
       </div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
       >
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -457,7 +396,7 @@ Object {
         </div>
       </div>
       <div
-        class="MuiFormControl-root MuiTextField-root css-35b0no-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
       >
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
@@ -480,73 +419,12 @@ Object {
         </div>
       </div>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1vm0eet-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1rw7ax1-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="submit"
       >
         Save locally
       </button>
-    </div>
-    <div
-      class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-qr6njo-MuiCollapse-root"
-      style="min-height: 0px;"
-    >
-      <div
-        class="MuiCollapse-wrapper MuiCollapse-vertical css-1x6hinx-MuiCollapse-wrapper"
-      >
-        <div
-          class="MuiCollapse-wrapperInner MuiCollapse-vertical css-1i4ywhz-MuiCollapse-wrapperInner"
-        >
-          <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorSuccess MuiAlert-standardSuccess MuiAlert-standard css-s1vfyc-MuiPaper-root-MuiAlert-root"
-            role="alert"
-            style="--Paper-shadow: none;"
-          >
-            <div
-              class="MuiAlert-icon css-vab54s-MuiAlert-icon"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1ckov0h-MuiSvgIcon-root"
-                data-testid="CheckIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
-                />
-              </svg>
-            </div>
-            <div
-              class="MuiAlert-message css-zioonp-MuiAlert-message"
-            >
-               Save Success
-            </div>
-            <div
-              class="MuiAlert-action css-rgppqo-MuiAlert-action"
-            >
-              <button
-                aria-label="close"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeSmall css-4ns38t-MuiButtonBase-root-MuiIconButton-root"
-                tabindex="0"
-                type="button"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1ckov0h-MuiSvgIcon-root"
-                  data-testid="CloseIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>,
   "debug": [Function],

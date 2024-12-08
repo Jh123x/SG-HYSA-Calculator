@@ -3,8 +3,7 @@ import React, { useEffect, useState } from "react";
 import Profile from "../types/profile.ts";
 import { STORE_KEY } from "../logic/constants.ts";
 import { Check, Close } from "@mui/icons-material";
-import { useTheme } from "@emotion/react";
-import { primaryColor, textColor } from "../consts/colors.ts";
+import { primaryColor, bgColor, textColor } from "../consts/colors.ts";
 
 
 interface InputArg<Type> {
@@ -88,10 +87,9 @@ const defaultValue = {
 }
 
 export const FormInputs = ({ updateResult }) => {
-    const [hideModel, setHideModal] = useState<boolean>(false);
+    const [hideModel, setHideModal] = useState<boolean>(true);
     const localData = localStorage.getItem(STORE_KEY) ?? ""
     const localValue = localData ? JSON.parse(localData) : undefined
-    const theme = useTheme()
     const [state, setState] = useState<Profile>(localValue ?? defaultValue)
 
     useEffect(() => updateResult(state), [state, updateResult])
@@ -105,10 +103,10 @@ export const FormInputs = ({ updateResult }) => {
     }
 
     return <>
-        <Typography variant="h4" >
+        <Typography variant="h4" sx={{ margin: "10px 0px", color: textColor }}>
             High Yield Savings Account Calculator
         </Typography>
-        <Typography variant="h6" >
+        <Typography variant="h6" sx={{ margin: "10px 0px", color: textColor }}>
             <p>
                 This is a calculator to show you which banks in Singapore have the best interest rates.
                 <br />
@@ -127,7 +125,7 @@ export const FormInputs = ({ updateResult }) => {
             )}
             <Button
                 key="submit-btn"
-                sx={{ backgroundColor: primaryColor }}
+                sx={{ backgroundColor: bgColor, color: textColor }}
                 type="submit"
                 onClick={onSubmit}>
                 Save locally
@@ -152,6 +150,8 @@ const SaveAlert = ({
                 position: "fixed",
                 top: "7vh",
                 right: "20px",
+                color: textColor,
+                backgroundColor: primaryColor,
             }}
             action={
                 <IconButton
@@ -182,10 +182,15 @@ const Input = (props: Field) => {
         type={props.inputType ?? ''}
         variant="filled"
         sx={{
-            color: textColor,
-            backgroundColor: primaryColor,
+            backgroundColor: bgColor,
             width: '100%',
             margin: "1px",
+            input: {
+                color: textColor,
+            },
+            label: {
+                color: textColor,
+            }
         }}
         onChange={(e) => props.onChange(e.target.value)}
         value={props.defaultValue}
