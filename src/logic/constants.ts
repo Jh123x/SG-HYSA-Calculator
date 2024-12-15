@@ -5,6 +5,7 @@ import { uob_interest } from "./uob.ts"
 import { ocbc_interest } from "./ocbc360.ts"
 import { choco_finance } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
+import { default_ir } from "./common.ts"
 
 interface Info {
     interestFn: (profile: Profile) => ResultInterest
@@ -39,8 +40,14 @@ export const bankInfo: Record<string, Info> = {
         url: "https://www.sc.com/sg/save/current-accounts/bonussaver/?intcid=web_listing-sc_com_top_nav-homepg1-staticmedia_others-sng-homepage_new-bsaver-acquisition-sc_com_organic-sg-en",
         remarks: "For more information use the calculator on their website",
     },
-
-    // TODO
-    //dbs_finance,
-    //trust_bank,
+    "DBS Bank": {
+        interestFn: default_ir,
+        url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
+        remarks: "To be added"
+    },
+    "Trust Bank": {
+        interestFn: default_ir,
+        url: "https://trustbank.sg/savings-account/",
+        remarks: "To be added"
+    },
 }
