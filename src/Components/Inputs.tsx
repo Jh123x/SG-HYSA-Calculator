@@ -185,19 +185,11 @@ const Input = (props: Field) => {
             backgroundColor: bgColor,
             width: '100%',
             margin: "1px",
-            input: {
-                color: textColor,
-            },
-            label: {
-                color: textColor,
-            }
+            input: { color: textColor },
+            label: { color: textColor }
         }}
         onChange={(e) => props.onChange(e.target.value)}
         value={props.defaultValue}
-        slotProps={{
-            inputLabel: {
-                shrink: true,
-            },
-        }}
+        slotProps={{ inputLabel: { shrink: true } }}
     />
 }
