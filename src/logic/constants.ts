@@ -40,7 +40,7 @@ export const bankInfo: Record<string, Info> = {
         url: "https://www.sc.com/sg/save/current-accounts/bonussaver/?intcid=web_listing-sc_com_top_nav-homepg1-staticmedia_others-sng-homepage_new-bsaver-acquisition-sc_com_organic-sg-en",
         remarks: "For more information use the calculator on their website",
     },
-    "DBS Bank": {
+    "DBS Bank Multiplier Account": {
         interestFn: default_ir,
         url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
         remarks: "To be added"
@@ -50,4 +50,20 @@ export const bankInfo: Record<string, Info> = {
         url: "https://trustbank.sg/savings-account/",
         remarks: "To be added"
     },
+    "Bank of China SmartSaver": {
+        interestFn: default_ir,
+        url: "https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348761.html",
+        remarks: "To be added"
+    },
+    "Maybank Save Up": {
+        interestFn: default_ir,
+        url: "https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page",
+        remarks: "To be added"
+    },
+    "Citibank Wealth First Account": {
+        interestFn: default_ir,
+        url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
+        remarks: "To be added"
+
+    }
 }
