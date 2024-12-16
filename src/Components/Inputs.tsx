@@ -18,7 +18,7 @@ const makeDefaultValue = (value?: number): number | undefined => value === undef
 
 const attrs: Array<InputArg<number>> = [
     {
-        label: "Savings (To be transferred to bank)",
+        label: "Savings (To be deposited at bank)",
         inputType: "number",
         key: "savings",
         fn: (profile, v) => { return { ...profile, Savings: v } },
@@ -32,28 +32,28 @@ const attrs: Array<InputArg<number>> = [
         getDefault: (profile: Profile) => makeDefaultValue(profile.Age),
     },
     {
-        label: "Salary (Must be credited to bank)",
+        label: "Salary (Must be credited to bank monthly)",
         inputType: "number",
         key: "salary",
         fn: (profile, v) => { return { ...profile, Salary: v } },
         getDefault: (profile: Profile) => makeDefaultValue(profile.Salary),
     },
     {
-        label: "Investment (Willing to spend with bank)",
+        label: "Investment (Willing to spend with bank yearly)",
         inputType: "number",
         key: "investment",
         fn: (profile, v) => { return { ...profile, Investment: v } },
         getDefault: (profile: Profile) => makeDefaultValue(profile.Investment),
     },
     {
-        label: "Insurance (Willing to spend with bank)",
+        label: "Insurance (Willing to spend with bank yearly)",
         inputType: "number",
         key: "insurance",
         fn: (profile, v) => { return { ...profile, Insurance: v } },
         getDefault: (profile: Profile) => makeDefaultValue(profile.Insurance),
     },
     {
-        label: "Spending (On eligible cards)",
+        label: "Spending (On eligible cards monthly)",
         inputType: "number",
         key: "spending",
         fn: (profile, v) => { return { ...profile, Spending: v } },

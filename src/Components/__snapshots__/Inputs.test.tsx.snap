@@ -31,7 +31,7 @@ Object {
             for=":r0:"
             id=":r0:-label"
           >
-            Savings (To be transferred to bank)
+            Savings (To be deposited at bank)
           </label>
           <div
             class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
@@ -77,7 +77,7 @@ Object {
             for=":r2:"
             id=":r2:-label"
           >
-            Salary (Must be credited to bank)
+            Salary (Must be credited to bank monthly)
           </label>
           <div
             class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
@@ -100,7 +100,7 @@ Object {
             for=":r3:"
             id=":r3:-label"
           >
-            Investment (Willing to spend with bank)
+            Investment (Willing to spend with bank yearly)
           </label>
           <div
             class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
@@ -123,7 +123,7 @@ Object {
             for=":r4:"
             id=":r4:-label"
           >
-            Insurance (Willing to spend with bank)
+            Insurance (Willing to spend with bank yearly)
           </label>
           <div
             class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
@@ -146,7 +146,7 @@ Object {
             for=":r5:"
             id=":r5:-label"
           >
-            Spending (On eligible cards)
+            Spending (On eligible cards monthly)
           </label>
           <div
             class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
@@ -266,7 +266,7 @@ Object {
           for=":r0:"
           id=":r0:-label"
         >
-          Savings (To be transferred to bank)
+          Savings (To be deposited at bank)
         </label>
         <div
           class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
@@ -312,7 +312,7 @@ Object {
           for=":r2:"
           id=":r2:-label"
         >
-          Salary (Must be credited to bank)
+          Salary (Must be credited to bank monthly)
         </label>
         <div
           class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
@@ -335,7 +335,7 @@ Object {
           for=":r3:"
           id=":r3:-label"
         >
-          Investment (Willing to spend with bank)
+          Investment (Willing to spend with bank yearly)
         </label>
         <div
           class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
@@ -358,7 +358,7 @@ Object {
           for=":r4:"
           id=":r4:-label"
         >
-          Insurance (Willing to spend with bank)
+          Insurance (Willing to spend with bank yearly)
         </label>
         <div
           class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
@@ -381,7 +381,7 @@ Object {
           for=":r5:"
           id=":r5:-label"
         >
-          Spending (On eligible cards)
+          Spending (On eligible cards monthly)
         </label>
         <div
           class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
