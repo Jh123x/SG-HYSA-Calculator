@@ -18,6 +18,7 @@ export const Result = ({ results }: {
                 <ThemedTableRow>
                     <ThemedTableCell>Bank Name</ThemedTableCell>
                     <ThemedTableCell>Yearly Interest</ThemedTableCell>
+                    <ThemedTableCell>Effective Interest Rate (%)</ThemedTableCell>
                     <ThemedTableCell>Remarks</ThemedTableCell>
                     <ThemedTableCell>Webpage</ThemedTableCell>
                 </ThemedTableRow>
@@ -33,6 +34,7 @@ const displayResult = (bankName: string, info: ResultProp) => {
     return <ThemedTableRow key={bankName}>
         <ThemedTableCell>{bankName}</ThemedTableCell>
         <ThemedTableCell>{info.interest.toYearly() ?? 0}</ThemedTableCell>
+        <ThemedTableCell>{info.interest.toYearlyPercent().toFixed(2) ?? ""}</ThemedTableCell>
         <ThemedTableCell>{info.remarks}</ThemedTableCell>
         <ThemedTableCell>
             <Link

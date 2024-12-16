@@ -6,8 +6,10 @@ export class ResultInterest {
         this.savings = savings
     }
 
-    toYearlyPercent(): number{
-        return this.yearly_interest / this.savings * 100
+    toYearlyPercent(): number {
+        if (this.savings === 0) return 0
+
+        return (this.yearly_interest / this.savings * 100);
     }
 
     toYearly(): number {

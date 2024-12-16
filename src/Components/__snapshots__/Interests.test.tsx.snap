@@ -33,6 +33,12 @@ Object {
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
                 scope="col"
               >
+                Effective Interest Rate (%)
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
+                scope="col"
+              >
                 Remarks
               </th>
               <th
@@ -58,6 +64,11 @@ Object {
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
                 1000
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
+              >
+                NaN
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -110,6 +121,12 @@ Object {
               class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
               scope="col"
             >
+              Effective Interest Rate (%)
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
+              scope="col"
+            >
               Remarks
             </th>
             <th
@@ -135,6 +152,11 @@ Object {
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
             >
               1000
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
+            >
+              NaN
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -244,6 +266,12 @@ Object {
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
                 scope="col"
               >
+                Effective Interest Rate (%)
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
+                scope="col"
+              >
                 Remarks
               </th>
               <th
@@ -285,6 +313,12 @@ Object {
               scope="col"
             >
               Yearly Interest
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
+              scope="col"
+            >
+              Effective Interest Rate (%)
             </th>
             <th
               class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
