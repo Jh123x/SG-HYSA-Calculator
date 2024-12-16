@@ -1,4 +1,3 @@
-import { Savings } from "@mui/icons-material";
 import { ResultInterest } from "../types/interest_result";
 import { NewProfile } from "../types/profile";
 import { ocbc_interest } from "./ocbc360";
