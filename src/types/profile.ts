@@ -7,6 +7,7 @@ export default interface Profile {
     Insurance: number
     GiroTransactions: number
     MonthlyAccIncrease: number
+    LoanInstallment: number
 }
 
 export const NewProfile = ({
@@ -18,6 +19,7 @@ export const NewProfile = ({
     Insurance = 0,
     GiroTransactions = 0,
     MonthlyAccIncrease = 0,
+    LoanInstallment = 0,
 }): Profile => {
     return {
         Savings,
@@ -28,5 +30,6 @@ export const NewProfile = ({
         Insurance,
         GiroTransactions,
         MonthlyAccIncrease,
+        LoanInstallment,
     }
 }
