@@ -2,8 +2,14 @@ import { ResultInterest } from "../types/interest_result";
 import { NewProfile } from "../types/profile";
 import { choco_finance } from "./choco_finance";
 
+interface TestCase {
+    name: string
+    savings: number
+    expected_ir: number
+}
+
 describe("Choco Finance", () => {
-    const tests = [
+    const tests: Array<TestCase> = [
         {
             name: "should return the correct i/r for < 20k",
             savings: 1000,
@@ -34,7 +40,7 @@ describe("Choco Finance", () => {
     for (const test of tests) {
         it(test.name, () => {
             const result = choco_finance(NewProfile({ Savings: test.savings }))
-            expect(result).toEqual(new ResultInterest(test.expected_ir))
+            expect(result).toEqual(new ResultInterest(test.expected_ir, test.savings))
         })
     }
 })

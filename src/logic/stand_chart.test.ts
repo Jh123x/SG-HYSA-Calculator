@@ -15,7 +15,7 @@ describe("Standard Chartered Interest Rates", () => {
             })
         )
 
-        expect(result).toEqual(new ResultInterest(7680))
+        expect(result).toEqual(new ResultInterest(7680, 100000))
     })
 
     it("should be correct for 200k balance with all interest rates", () => {
@@ -28,12 +28,12 @@ describe("Standard Chartered Interest Rates", () => {
             GiroTransactions: 3,
         }))
 
-        expect(result).toEqual(new ResultInterest(7730))
+        expect(result).toEqual(new ResultInterest(7730, 200000))
     })
 
     it("should be correct for 200k no condition", () => {
         const result = stand_chart_interest(NewProfile({ Savings: 200000 }))
-        expect(result).toEqual(new ResultInterest(100))
+        expect(result).toEqual(new ResultInterest(100, 200000))
     })
 
     it("should be correct for 100k balance with 3 req", () => {
@@ -44,13 +44,13 @@ describe("Standard Chartered Interest Rates", () => {
             GiroTransactions: 3,
         }))
 
-        expect(result).toEqual(new ResultInterest(3680))
+        expect(result).toEqual(new ResultInterest(3680, 100000))
     })
 
     it("should be correct for 100k balance with no condition", () => {
         const result = stand_chart_interest(NewProfile({ Savings: 100_000, }))
 
-        expect(result).toEqual(new ResultInterest(50))
+        expect(result).toEqual(new ResultInterest(50, 100_000))
     })
 
     it("should be correct for 100k balance with salary only", () => {
@@ -59,7 +59,7 @@ describe("Standard Chartered Interest Rates", () => {
             Salary: 3000,
         }))
 
-        expect(result).toEqual(new ResultInterest(2050))
+        expect(result).toEqual(new ResultInterest(2050, 100000))
     })
 
     it("should be correct for 50k balance with salary only", () => {
@@ -68,11 +68,11 @@ describe("Standard Chartered Interest Rates", () => {
             Salary: 3000,
         }))
 
-        expect(result).toEqual(new ResultInterest(1025))
+        expect(result).toEqual(new ResultInterest(1025, 50000))
     })
 
     it("no money should have no interest", () => {
         const result = stand_chart_interest(NewProfile({}))
-        expect(result).toEqual(new ResultInterest(0))
+        expect(result).toEqual(new ResultInterest(0, 0))
     })
 })

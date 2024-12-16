@@ -123,7 +123,7 @@ describe("UOB Interest Rates", () => {
                 GiroTransactions: tc.giroTxns
             }))
 
-            expect(result).toEqual(new ResultInterest(tc.expectedResult))
+            expect(result).toEqual(new ResultInterest(tc.expectedResult, tc.savings))
         })
     }
 })

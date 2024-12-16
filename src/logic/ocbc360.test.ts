@@ -1,3 +1,4 @@
+import { Savings } from "@mui/icons-material";
 import { ResultInterest } from "../types/interest_result";
 import { NewProfile } from "../types/profile";
 import { ocbc_interest } from "./ocbc360";
@@ -76,7 +77,7 @@ describe("OCBC Interest rates", () => {
                 MonthlyAccIncrease: tc.balanceIncrease,
             }))
 
-            expect(result).toEqual(new ResultInterest(tc.expectedResult))
+            expect(result).toEqual(new ResultInterest(tc.expectedResult, tc.savings))
         })
     }
 })

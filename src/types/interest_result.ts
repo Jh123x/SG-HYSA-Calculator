@@ -1,7 +1,13 @@
 export class ResultInterest {
     private yearly_interest: number
-    constructor(yearly: number) {
+    private savings: number
+    constructor(yearly: number, savings: number) {
         this.yearly_interest = parseFloat(yearly.toFixed(2)) ?? 0;
+        this.savings = savings
+    }
+
+    toYearlyPercent(): number{
+        return this.yearly_interest / this.savings * 100
     }
 
     toYearly(): number {
