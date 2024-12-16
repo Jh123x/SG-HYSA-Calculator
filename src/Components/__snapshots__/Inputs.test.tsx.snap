@@ -206,6 +206,29 @@ Object {
             />
           </div>
         </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="true"
+            for=":r8:"
+            id=":r8:-label"
+          >
+            Monthly Loan Installment from bank
+          </label>
+          <div
+            class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiFilledInput-input css-voecp4-MuiInputBase-input-MuiFilledInput-input"
+              id=":r8:"
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1rw7ax1-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
@@ -413,6 +436,29 @@ Object {
             aria-invalid="false"
             class="MuiInputBase-input MuiFilledInput-input css-voecp4-MuiInputBase-input-MuiFilledInput-input"
             id=":r7:"
+            type="number"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="MuiFormControl-root MuiTextField-root css-114it6m-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-filled css-eok8s2-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for=":r8:"
+          id=":r8:-label"
+        >
+          Monthly Loan Installment from bank
+        </label>
+        <div
+          class="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl css-1pht7va-MuiInputBase-root-MuiFilledInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiFilledInput-input css-voecp4-MuiInputBase-input-MuiFilledInput-input"
+            id=":r8:"
             type="number"
             value=""
           />

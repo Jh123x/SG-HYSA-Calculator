@@ -73,6 +73,13 @@ const attrs: Array<InputArg<number>> = [
         fn: (profile, v) => { return { ...profile, MonthlyAccIncrease: v } },
         getDefault: (profile: Profile) => makeDefaultValue(profile.MonthlyAccIncrease),
     },
+    {
+        label: "Monthly Loan Installment from bank",
+        inputType: "number",
+        key: "loan_installment",
+        fn: (profile, v) => { return { ...profile, LoanInstallment: v } },
+        getDefault: (profile: Profile) => makeDefaultValue(profile.LoanInstallment),
+    }
 ]
 
 const defaultValue = {
@@ -119,7 +126,7 @@ export const FormInputs = ({ updateResult }) => {
                     label={label}
                     key={label.replace(" ", "_")}
                     inputType={inputType}
-                    onChange={(value) => setState(fn(state, value))}
+                    onChange={(value) => setState(fn(state, Number(value)))}
                     defaultValue={getDefault(state)}
                 />
             )}
