@@ -11,6 +11,7 @@ export const Header = () => {
             backgroundColor: primaryColor,
         }}>
             <Toolbar>
+                <img src="logo.svg" alt="logo" style={{ maxWidth: '50px' }} />
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                     HYSA Calculator
                 </Typography>

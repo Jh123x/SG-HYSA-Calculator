@@ -12,6 +12,11 @@ Object {
         <div
           class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1ygil4i-MuiToolbar-root"
         >
+          <img
+            alt="logo"
+            src="logo.svg"
+            style="max-width: 50px;"
+          />
           <div
             class="MuiTypography-root MuiTypography-h6 css-1bv5yfe-MuiTypography-root"
           >
@@ -29,6 +34,11 @@ Object {
       <div
         class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1ygil4i-MuiToolbar-root"
       >
+        <img
+          alt="logo"
+          src="logo.svg"
+          style="max-width: 50px;"
+        />
         <div
           class="MuiTypography-root MuiTypography-h6 css-1bv5yfe-MuiTypography-root"
         >

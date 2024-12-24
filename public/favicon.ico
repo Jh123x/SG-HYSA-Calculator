@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Piggy Bank -->
+  <circle cx="30" cy="50" r="20" stroke="#0074D9" stroke-width="2" fill="#7FDBFF" />
+  <rect x="15" y="45" width="10" height="10" rx="2" fill="#001f3f" />
+  <circle cx="25" cy="47" r="1.5" fill="#001f3f" />
+
+  <!-- Growth Arrow -->
+  <path d="M60 70 L80 50 L90 60" stroke="#2ECC40" stroke-width="2" fill="none" />
+  <path d="M80 50 L80 40 L90 50 Z" fill="#2ECC40" />
+
+  <!-- Calculator -->
+  <rect x="60" y="20" width="20" height="30" rx="3" fill="#FFDC00" stroke="#FF851B" stroke-width="2" />
+  <line x1="65" y1="25" x2="75" y2="25" stroke="#FF851B" stroke-width="1.5" />
+  <circle cx="65" cy="35" r="2" fill="#FF851B" />
+  <circle cx="75" cy="35" r="2" fill="#FF851B" />
+  <circle cx="65" cy="45" r="2" fill="#FF851B" />
+  <circle cx="75" cy="45" r="2" fill="#FF851B" />
+</svg>
