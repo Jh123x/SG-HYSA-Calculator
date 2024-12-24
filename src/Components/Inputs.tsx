@@ -1,10 +1,9 @@
-import { TextField, Button, FormControl, Typography, Alert, Collapse, IconButton } from "@mui/material";
+import { Button, FormControl, Typography, Alert, Collapse, IconButton, TextField, Box } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Profile from "../types/profile.ts";
 import { STORE_KEY } from "../logic/constants.ts";
 import { Check, Close } from "@mui/icons-material";
 import { primaryColor, bgColor, textColor } from "../consts/colors.ts";
-
 
 interface InputArg<Type> {
     label: string
@@ -120,9 +119,17 @@ export const FormInputs = ({ updateResult }) => {
                 Key in your information below and view the interest you will get every year.
             </p>
         </Typography>
-        <FormControl sx={{ width: '100%' }} >
+        <FormControl sx={{
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'center',
+            alignContent: 'center',
+        }} >
             {attrs.map(
-                ({ label, inputType, getDefault, fn }) => <Input
+                ({ label, inputType, getDefault, fn }) => <InputField
                     label={label}
                     key={label.replace(" ", "_")}
                     inputType={inputType}
@@ -130,14 +137,22 @@ export const FormInputs = ({ updateResult }) => {
                     defaultValue={getDefault(state)}
                 />
             )}
+        </FormControl>
+        <Box textAlign='center'>
             <Button
                 key="submit-btn"
-                sx={{ backgroundColor: bgColor, color: textColor }}
+                sx={{
+                    backgroundColor: primaryColor,
+                    color: textColor,
+                    width: '50%',
+                    justifySelf: 'center',
+                    margin: '20px',
+                }}
                 type="submit"
                 onClick={onSubmit}>
                 Save locally
             </Button>
-        </FormControl>
+        </Box>
         {!hideModel && <SaveAlert hideModel={hideModel} setHideModal={setHideModal} />}
     </>
 }
@@ -183,20 +198,33 @@ interface Field {
     key?: string
 }
 
-const Input = (props: Field) => {
+const InputField = ({ label, inputType, onChange, defaultValue, key }: Field) => {
     return <TextField
-        label={props.label}
-        type={props.inputType ?? ''}
+        label={label}
+        type={inputType ?? ''}
         variant="filled"
+        key={key}
         sx={{
             backgroundColor: bgColor,
-            width: '100%',
-            margin: "1px",
-            input: { color: textColor },
-            label: { color: textColor }
+            width: '25vh',
+            minWidth: '25vh',
+            margin: "3px",
+            padding: "2px",
+            input: {
+                color: textColor,
+                backgroundColor: bgColor,
+            },
+            label: {
+                color: textColor,
+                ":focus":{
+                    color: primaryColor,
+                }
+            }
         }}
-        onChange={(e) => props.onChange(e.target.value)}
-        value={props.defaultValue}
-        slotProps={{ inputLabel: { shrink: true } }}
+        onChange={(e) => onChange(e.target.value)}
+        value={defaultValue}
+        slotProps={{
+            inputLabel: { shrink: true },
+        }}
     />
 }
