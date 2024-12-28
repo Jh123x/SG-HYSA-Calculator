@@ -112,11 +112,13 @@ export const FormInputs = ({ updateResult }) => {
         <Typography variant="h4" sx={{ margin: "10px 0px", color: textColor }}>
             High Yield Savings Account Calculator
         </Typography>
-        <Typography variant="h6" sx={{ margin: "10px 0px", color: textColor }}>
+        <Typography variant="body1" sx={{ margin: "10px 0px", color: textColor }}>
             <p>
                 This is a calculator to show you which banks in Singapore have the best interest rates.
                 <br />
                 Key in your information below and view the interest you will get every year.
+                <br />
+                The interests is last updated on 2024-12-19.
             </p>
         </Typography>
         <FormControl sx={{
