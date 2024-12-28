@@ -8,6 +8,7 @@ import { Result } from './Components/Interests.tsx';
 import { ThemeProvider } from '@mui/material/styles';
 import { ResultProp } from './types/props.ts';
 import { bgColor, theme } from './consts/colors.ts';
+import {Footer} from './Components/Footer.tsx';
 
 
 
@@ -46,6 +47,7 @@ export const App = () => {
         <FormInputs updateResult={updateResult} />
         <Result results={interests} />
       </Container>
+      <Footer />
     </ThemeProvider>
   );
 }
