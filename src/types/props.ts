@@ -5,5 +5,5 @@ export interface ResultProp {
     interest: ResultInterest,
     url: string
     remarks: string | ReactElement
-    lastUpdated: Date
+    lastUpdated: string
 }

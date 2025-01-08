@@ -29,6 +29,7 @@ export const Result = ({ results }: {
     </Container>
 
 const displayResult = (bankName: string, info: ResultProp) => {
+    const lastUpdated = info.lastUpdated
     return <ThemedTableRow key={bankName}>
         <ThemedTableCell>{bankName}</ThemedTableCell>
         <ThemedTableCell>{info.interest.toYearly() ?? 0}</ThemedTableCell>
@@ -37,7 +38,7 @@ const displayResult = (bankName: string, info: ResultProp) => {
             <Link href={info.url} target="_blank" sx={{ color: textColor }}>Official Website</Link>
         </ThemedTableCell>
         <ThemedTableCell>{info.remarks}</ThemedTableCell>
-        <ThemedTableCell>{`${info.lastUpdated.getFullYear()}-${info.lastUpdated.getUTCMonth() + 1}-${info.lastUpdated.getDate()}`}</ThemedTableCell>
+        <ThemedTableCell>{lastUpdated}</ThemedTableCell>
     </ThemedTableRow>
 }
 
