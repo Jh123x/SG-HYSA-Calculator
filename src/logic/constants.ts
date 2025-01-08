@@ -1,6 +1,6 @@
 import { ResultInterest } from "../types/interest_result"
 import Profile from "../types/profile"
-import { maribank_interest } from "./maribank.ts"
+import { maribank_interest, mariInterestRate } from "./maribank.ts"
 import { uob_interest } from "./uob.ts"
 import { ocbc_interest } from "./ocbc360.ts"
 import { choco_finance } from "./choco_finance.ts"
@@ -23,7 +23,7 @@ export const bankInfo: Record<string, Info> = {
     "Maribank": {
         interestFn: maribank_interest,
         url: "https://www.maribank.sg/product/mari-savings-account",
-        remarks: "Interest rates are a flat 2.7%",
+        remarks: `Interest rates are a flat ${mariInterestRate}%`,
     },
     "OCBC Bank": {
         interestFn: ocbc_interest,
