@@ -1,16 +1,18 @@
-import { ResultInterest } from "../types/interest_result"
-import Profile from "../types/profile"
+import * as React from "react"
+import { ResultInterest } from "../types/interest_result.ts"
+import Profile from "../types/profile.ts"
 import { maribank_interest, mariInterestRate } from "./maribank.ts"
 import { uob_interest } from "./uob.ts"
 import { ocbc_interest } from "./ocbc360.ts"
 import { choco_finance } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
 import { default_ir } from "./common.ts"
+import { ReactElement } from "react"
 
 interface Info {
     interestFn: (profile: Profile) => ResultInterest
     url: string
-    remarks?: string
+    remarks: string | ReactElement
     lastUpdated: Date
 }
 
@@ -19,8 +21,8 @@ export const bankInfo: Record<string, Info> = {
     "UOB Bank": {
         interestFn: uob_interest,
         url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
-        remarks: "The calculation here excludes spending rebates included in their calculator. (You get extra 200 a year if you spend 500/mth for a year)",
-        lastUpdated: new Date("2024-12-01"),
+        remarks: <p>The calculation here excludes <br /> spending rebates included in their calculator.<br /> (Extra 200 a year if you spend 500/mth for a year)</p>,
+        lastUpdated: new Date("2025-01-08"),
     },
     "Maribank": {
         interestFn: maribank_interest,
@@ -37,7 +39,7 @@ export const bankInfo: Record<string, Info> = {
     "Chocolate Finance": {
         interestFn: choco_finance,
         url: "https://www.chocolatefinance.com/",
-        remarks: "Amounts above 50k are investments and not included in this calculator",
+        remarks: <p>1st 20k 3.6% p.a, next 30k 3.2% p.a. <br /> Amounts above 50k are investments and not included.</p>,
         lastUpdated: new Date("2024-12-01"),
     },
     "Trust Bank": {
@@ -58,22 +60,22 @@ export const bankInfo: Record<string, Info> = {
         remarks: "To be added",
         lastUpdated: new Date("2024-12-01"),
     },
-    // "Citibank Wealth first Account": {
-    //     interestFn: default_ir,
-    //     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
-    //     remarks: "To be added",
-    //     lastUpdated: new Date("2024-12-01"),
-    // },
-    // "Standard Chartered": {
-    //     interestFn: stand_chart_interest,
-    //     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/?intcid=web_listing-sc_com_top_nav-homepg1-staticmedia_others-sng-homepage_new-bsaver-acquisition-sc_com_organic-sg-en",
-    //     remarks: "To be added",
-    //     lastUpdated: new Date("2024-12-01"),
-    // },
-    // "DBS Multiplier Account": {
-    //     interestFn: default_ir,
-    //     url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
-    //     remarks: "To be added",
-    //     lastUpdated: new Date("2024-12-01"),
-    // },
+    "Citi Wealth first Account": {
+        interestFn: default_ir,
+        url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
+        remarks: "To be added",
+        lastUpdated: new Date("2024-12-01"),
+    },
+    "Standard Chartered": {
+        interestFn: stand_chart_interest,
+        url: "https://www.sc.com/sg/save/current-accounts/bonussaver/?intcid=web_listing-sc_com_top_nav-homepg1-staticmedia_others-sng-homepage_new-bsaver-acquisition-sc_com_organic-sg-en",
+        remarks: "To be added",
+        lastUpdated: new Date("2024-12-01"),
+    },
+    "DBS Multiplier Account": {
+        interestFn: default_ir,
+        url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
+        remarks: "To be added",
+        lastUpdated: new Date("2024-12-01"),
+    },
 }

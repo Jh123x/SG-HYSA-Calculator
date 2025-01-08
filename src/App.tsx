@@ -3,7 +3,7 @@ import { Container, GlobalStyles } from '@mui/material';
 import { Header } from './Components/Header.tsx';
 import { FormInputs } from './Components/Inputs.tsx';
 import Profile from './types/profile.ts';
-import { bankInfo } from './logic/constants.ts';
+import { bankInfo } from './logic/constants.tsx';
 import { Result } from './Components/Interests.tsx';
 import { ThemeProvider } from '@mui/material/styles';
 import { ResultProp } from './types/props.ts';
@@ -35,8 +35,6 @@ export const App = () => {
             backgroundColor: bgColor,
             margin: '0px',
             padding: '0px',
-            height: '100vh',
-            width: '100vw',
           },
         }}
       />

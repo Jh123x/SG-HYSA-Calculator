@@ -1,27 +1,21 @@
 import React, { ReactElement } from "react"
-import { Link, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material"
+import { Container, Link, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material"
 import { ResultProp } from "../types/props"
 import { primaryColor, bgColor, textColor } from "../consts/colors.ts"
 
 export const Result = ({ results }: {
     results: Record<string, ResultProp>
-}) => {
-    return <>
-        <TableContainer
-            sx={{
-                margin: "10px 0px",
-                color: primaryColor,
-            }}
-        >
+}) => <Container sx={{ color: primaryColor, width: "100%", maxWidth: "100%" }}>
+        <TableContainer>
             <Table>
                 <TableHead>
                     <ThemedTableRow>
-                        <ThemedTableCell>Bank Name</ThemedTableCell>
+                        <ThemedTableCell>Account Name</ThemedTableCell>
                         <ThemedTableCell>Yearly Interest</ThemedTableCell>
-                        <ThemedTableCell>EIR (%)</ThemedTableCell>
-                        <ThemedTableCell>Remarks</ThemedTableCell>
+                        <ThemedTableCell>Effective Interest Rate</ThemedTableCell>
                         <ThemedTableCell>Webpage</ThemedTableCell>
-                        <ThemedTableCell>Last Updated</ThemedTableCell>
+                        <ThemedTableCell>Remarks</ThemedTableCell>
+                        <ThemedTableCell>Updated at</ThemedTableCell>
                     </ThemedTableRow>
                 </TableHead>
                 <TableBody>
@@ -29,36 +23,29 @@ export const Result = ({ results }: {
                 </TableBody>
             </Table>
         </TableContainer>
-        <Typography variant="caption" sx={{ color: textColor }}>
-            * EIR: Effective Interest Rate
+        <Typography variant="caption" sx={{ color: textColor, margin: "10px 0px" }}>
+            * Interest rates on their respective websites are subject to change without notice
         </Typography>
-    </>
-}
+    </Container>
 
 const displayResult = (bankName: string, info: ResultProp) => {
     return <ThemedTableRow key={bankName}>
         <ThemedTableCell>{bankName}</ThemedTableCell>
         <ThemedTableCell>{info.interest.toYearly() ?? 0}</ThemedTableCell>
         <ThemedTableCell>{info.interest.toYearlyPercent().toFixed(2) ?? ""}</ThemedTableCell>
-        <ThemedTableCell>{info.remarks}</ThemedTableCell>
         <ThemedTableCell>
-            <Link href={info.url} target="_blank" sx={{ color: textColor }}>
-                Official Website
-            </Link>
+            <Link href={info.url} target="_blank" sx={{ color: textColor }}>Official Website</Link>
         </ThemedTableCell>
-        <ThemedTableCell>{info.lastUpdated.toDateString()}</ThemedTableCell>
+        <ThemedTableCell>{info.remarks}</ThemedTableCell>
+        <ThemedTableCell>{`${info.lastUpdated.getFullYear()}-${info.lastUpdated.getUTCMonth() + 1}-${info.lastUpdated.getDate()}`}</ThemedTableCell>
     </ThemedTableRow>
 }
 
 const ThemedTableRow = ({ children, bankName }: {
     children: Array<ReactElement>
     bankName?: string
-}) => <TableRow
-    key={bankName}
-    sx={{ color: textColor, backgroundColor: bgColor }}>{children}</TableRow>
+}) => <TableRow key={bankName} sx={{ color: textColor, backgroundColor: bgColor }}>{children}</TableRow>
 
-const ThemedTableCell = ({ children }) => <TableCell
-    sx={{ color: textColor, backgroundColor: bgColor }}
->
-    {children}
-</TableCell>
+const ThemedTableCell = ({ children }: {
+    children: string | number | ReactElement
+}) => <TableCell sx={{ color: textColor, backgroundColor: bgColor }}>{children}</TableCell>

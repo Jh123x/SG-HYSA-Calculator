@@ -1,7 +1,7 @@
 import { Button, FormControl, Typography, Alert, Collapse, IconButton, TextField, Box } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Profile from "../types/profile.ts";
-import { STORE_KEY } from "../logic/constants.ts";
+import { STORE_KEY } from "../logic/constants.tsx";
 import { Check, Close } from "@mui/icons-material";
 import { primaryColor, bgColor, textColor } from "../consts/colors.ts";
 
