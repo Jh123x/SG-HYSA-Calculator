@@ -13,13 +13,11 @@ Object {
       <p
         class="MuiTypography-root MuiTypography-body1 css-y1qmhu-MuiTypography-root"
       >
-        <p>
-          This is a calculator to show you which banks in Singapore have the best interest rates.
-          <br />
-          Key in your information below and view the interest you will get every year.
-          <br />
-          The interests is last updated on 2024-12-19.
-        </p>
+        This is a calculator to show you which banks in Singapore have the best interest rates.
+        <br />
+        Key in your information below and view the interest you will get every year.
+        <br />
+        The interests is last updated on 2024-12-19.
       </p>
       <div
         class="MuiFormControl-root css-1swwar8-MuiFormControl-root"
@@ -254,13 +252,11 @@ Object {
     <p
       class="MuiTypography-root MuiTypography-body1 css-y1qmhu-MuiTypography-root"
     >
-      <p>
-        This is a calculator to show you which banks in Singapore have the best interest rates.
-        <br />
-        Key in your information below and view the interest you will get every year.
-        <br />
-        The interests is last updated on 2024-12-19.
-      </p>
+      This is a calculator to show you which banks in Singapore have the best interest rates.
+      <br />
+      Key in your information below and view the interest you will get every year.
+      <br />
+      The interests is last updated on 2024-12-19.
     </p>
     <div
       class="MuiFormControl-root css-1swwar8-MuiFormControl-root"

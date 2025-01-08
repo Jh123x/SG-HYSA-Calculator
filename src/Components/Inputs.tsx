@@ -113,13 +113,11 @@ export const FormInputs = ({ updateResult }) => {
             High Yield Savings Account Calculator
         </Typography>
         <Typography variant="body1" sx={{ margin: "10px 0px", color: textColor }}>
-            <p>
-                This is a calculator to show you which banks in Singapore have the best interest rates.
-                <br />
-                Key in your information below and view the interest you will get every year.
-                <br />
-                The interests is last updated on 2024-12-19.
-            </p>
+            This is a calculator to show you which banks in Singapore have the best interest rates.
+            <br />
+            Key in your information below and view the interest you will get every year.
+            <br />
+            The interests is last updated on 2024-12-19.
         </Typography>
         <FormControl sx={{
             width: '100%',
@@ -133,7 +131,8 @@ export const FormInputs = ({ updateResult }) => {
             {attrs.map(
                 ({ label, inputType, getDefault, fn }) => <InputField
                     label={label}
-                    key={label.replace(" ", "_")}
+                    key={label.replace(" ", "_") + "_input_field"}
+                    textKey={label.replace(" ", "_")}
                     inputType={inputType}
                     onChange={(value) => setState(fn(state, Number(value)))}
                     defaultValue={getDefault(state)}
@@ -197,15 +196,15 @@ interface Field {
     defaultValue?: number
     inputType?: React.HTMLInputTypeAttribute
     subTest?: string
-    key?: string
+    textKey: string
 }
 
-const InputField = ({ label, inputType, onChange, defaultValue, key }: Field) => {
+const InputField = ({ label, inputType, onChange, defaultValue, textKey }: Field) => {
     return <TextField
         label={label}
         type={inputType ?? ''}
         variant="filled"
-        key={key}
+        key={textKey}
         sx={{
             backgroundColor: bgColor,
             width: '25vh',
@@ -218,7 +217,7 @@ const InputField = ({ label, inputType, onChange, defaultValue, key }: Field) =>
             },
             label: {
                 color: textColor,
-                ":focus":{
+                ":focus": {
                     color: primaryColor,
                 }
             }
