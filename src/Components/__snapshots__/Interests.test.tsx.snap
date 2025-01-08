@@ -248,7 +248,7 @@ Object {
             class="MuiTableHead-root css-1a7iywq-MuiTableHead-root"
           >
             <tr
-              class="MuiTableRow-root MuiTableRow-head css-1r57mmw-MuiTableRow-root"
+              class="MuiTableRow-root MuiTableRow-head css-knhdqb-MuiTableRow-root"
             >
               <th
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
@@ -280,6 +280,12 @@ Object {
               >
                 Webpage
               </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
+                scope="col"
+              >
+                Last Updated
+              </th>
             </tr>
           </thead>
           <tbody
@@ -300,7 +306,7 @@ Object {
           class="MuiTableHead-root css-1a7iywq-MuiTableHead-root"
         >
           <tr
-            class="MuiTableRow-root MuiTableRow-head css-1r57mmw-MuiTableRow-root"
+            class="MuiTableRow-root MuiTableRow-head css-knhdqb-MuiTableRow-root"
           >
             <th
               class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
@@ -331,6 +337,12 @@ Object {
               scope="col"
             >
               Webpage
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
+              scope="col"
+            >
+              Last Updated
             </th>
           </tr>
         </thead>

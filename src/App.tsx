@@ -8,7 +8,7 @@ import { Result } from './Components/Interests.tsx';
 import { ThemeProvider } from '@mui/material/styles';
 import { ResultProp } from './types/props.ts';
 import { bgColor, theme } from './consts/colors.ts';
-import {Footer} from './Components/Footer.tsx';
+import { Footer } from './Components/Footer.tsx';
 
 
 
@@ -20,7 +20,8 @@ export const App = () => {
       results[name] = {
         interest: info.interestFn(profile),
         url: info.url,
-        remarks: info.remarks
+        remarks: info.remarks,
+        lastUpdated: info.lastUpdated,
       }
     }
     setInterests(results)
@@ -40,10 +41,7 @@ export const App = () => {
         }}
       />
       <Header />
-      <Container
-        maxWidth={false}
-        sx={{ height: '100%', width: '100%' }}
-      >
+      <Container>
         <FormInputs updateResult={updateResult} />
         <Result results={interests} />
       </Container>
