@@ -16,7 +16,7 @@ export const App = () => {
   const [interests, setInterests] = useState<Record<string, ResultProp>>({})
   const updateResult = (profile: Profile) => {
     const results: Record<string, ResultProp> = {}
-    for (let [name, info] of Object.entries(bankInfo)) {
+    for (const [name, info] of Object.entries(bankInfo)) {
       results[name] = {
         interest: info.interestFn(profile),
         url: info.url,
@@ -36,7 +36,7 @@ export const App = () => {
             margin: '0px',
             padding: '0px',
             height: '100vh',
-            width: '100vw',
+            width: '100%',
           },
         }}
       />
