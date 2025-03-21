@@ -6,7 +6,7 @@ import { uob_interest } from "./uob.ts"
 import { ocbc_interest } from "./ocbc360.ts"
 import { choco_finance } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
-import { default_ir } from "./common.ts"
+import { placeholder_ir } from "./common.ts"
 import { ReactElement } from "react"
 
 interface Info {
@@ -43,25 +43,25 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2024-12-01",
     },
     "Trust Bank": {
-        interestFn: default_ir,
+        interestFn: placeholder_ir,
         url: "https://trustbank.sg/savings-account/",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
     },
     "Bank of China SmartSaver": {
-        interestFn: default_ir,
+        interestFn: placeholder_ir,
         url: "https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348761.html",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
     },
     "Maybank Save Up": {
-        interestFn: default_ir,
+        interestFn: placeholder_ir,
         url: "https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
     },
     "Citi Wealth first Account": {
-        interestFn: default_ir,
+        interestFn: placeholder_ir,
         url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
@@ -73,7 +73,7 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2024-12-01",
     },
     "DBS Multiplier Account": {
-        interestFn: default_ir,
+        interestFn: placeholder_ir,
         url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
