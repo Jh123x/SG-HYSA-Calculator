@@ -1,12 +1,12 @@
 import * as React from "react"
 import { ResultInterest } from "../types/interest_result.ts"
 import Profile from "../types/profile.ts"
-import { maribank_interest, mariInterestRate } from "./maribank.ts"
+import { maribank_interest, mariInterestRate, maribank_new_interest, mariNewInterestRate } from "./maribank.ts"
 import { uob_interest } from "./uob.ts"
-import { ocbc_interest } from "./ocbc360.ts"
+import { ocbc_interest, ocbc_new_interest } from "./ocbc360.ts"
 import { choco_finance } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
-import { default_ir } from "./common.ts"
+import { placeholder_ir } from "./common.ts"
 import { ReactElement } from "react"
 
 interface Info {
@@ -30,38 +30,50 @@ export const bankInfo: Record<string, Info> = {
         remarks: `Interest rates are a flat ${mariInterestRate}%`,
         lastUpdated: "2025-01-08",
     },
+    "Maribank (After 2025/04)": {
+        interestFn: maribank_new_interest,
+        url: "https://www.maribank.sg/product/mari-savings-account",
+        remarks: `Interest rates are a flat ${mariNewInterestRate}%`,
+        lastUpdated: "2025-03-21",
+    },
     "OCBC Bank": {
         interestFn: ocbc_interest,
         url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
         remarks: "For more information use the calculator on their website",
         lastUpdated: "2024-12-01",
     },
+    "OCBC Bank (After 2025/05)": {
+        interestFn: ocbc_new_interest,
+        url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
+        remarks: "Their website has not updated yet.",
+        lastUpdated: "2025-03-21",
+    },
     "Chocolate Finance": {
         interestFn: choco_finance,
         url: "https://www.chocolatefinance.com/",
-        remarks: <p>1st 20k 3.6% p.a, next 30k 3.2% p.a. <br /> Amounts above 50k are investments and not included.</p>,
+        remarks: <p>1st 20k 3.3% p.a, next 30k 3% p.a. <br /> Amounts above 50k are investments and not included.</p>,
         lastUpdated: "2024-12-01",
     },
     "Trust Bank": {
-        interestFn: default_ir,
+        interestFn: placeholder_ir,
         url: "https://trustbank.sg/savings-account/",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
     },
     "Bank of China SmartSaver": {
-        interestFn: default_ir,
+        interestFn: placeholder_ir,
         url: "https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348761.html",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
     },
     "Maybank Save Up": {
-        interestFn: default_ir,
+        interestFn: placeholder_ir,
         url: "https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
     },
     "Citi Wealth first Account": {
-        interestFn: default_ir,
+        interestFn: placeholder_ir,
         url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
@@ -73,7 +85,7 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2024-12-01",
     },
     "DBS Multiplier Account": {
-        interestFn: default_ir,
+        interestFn: placeholder_ir,
         url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
