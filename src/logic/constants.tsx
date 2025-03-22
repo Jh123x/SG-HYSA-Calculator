@@ -8,6 +8,7 @@ import { choco_finance } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
 import { placeholder_ir } from "./common.ts"
 import { ReactElement } from "react"
+import { trust_bank } from "./trust_bank.ts"
 
 interface Info {
     interestFn: (profile: Profile) => ResultInterest
@@ -27,13 +28,13 @@ export const bankInfo: Record<string, Info> = {
     "Maribank": {
         interestFn: maribank_interest,
         url: "https://www.maribank.sg/product/mari-savings-account",
-        remarks: `Interest rates are a flat ${mariInterestRate}%`,
+        remarks: <p>Interest rates are a flat {mariInterestRate}%<br />Capped at $100k</p>,
         lastUpdated: "2025-01-08",
     },
     "Maribank (After 2025/04)": {
         interestFn: maribank_new_interest,
         url: "https://www.maribank.sg/product/mari-savings-account",
-        remarks: `Interest rates are a flat ${mariNewInterestRate}%`,
+        remarks: <p>Interest rates are a flat {mariNewInterestRate}%<br />Capped at $100k</p>,
         lastUpdated: "2025-03-21",
     },
     "OCBC Bank": {
@@ -45,7 +46,7 @@ export const bankInfo: Record<string, Info> = {
     "OCBC Bank (After 2025/05)": {
         interestFn: ocbc_new_interest,
         url: "https://www.ocbc.com/personal-banking/notices",
-        remarks: "Under the 21 March 2025 notice.",
+        remarks: <p>More info Under the 21 March 2025 notice on their website</p>,
         lastUpdated: "2025-03-22",
     },
     "Chocolate Finance": {
@@ -67,10 +68,10 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2025-03-22",
     },
     "Trust Bank": {
-        interestFn: placeholder_ir,
+        interestFn: trust_bank,
         url: "https://trustbank.sg/savings-account/",
-        remarks: "To be added",
-        lastUpdated: "2024-12-01",
+        remarks: <p>Spending assumes 5 x $30 if spending is more than 150.</p>,
+        lastUpdated: "2025-03-23",
     },
     "Bank of China SmartSaver": {
         interestFn: placeholder_ir,

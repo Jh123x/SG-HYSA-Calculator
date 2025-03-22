@@ -23,7 +23,7 @@ export const Result = ({ profile }: { profile: Profile }) => {
                     <ThemedTableRow>
                         <ThemedTableCell>Account Name</ThemedTableCell>
                         <ThemedTableCell>Yearly Interest</ThemedTableCell>
-                        <ThemedTableCell>Effective Interest Rate</ThemedTableCell>
+                        <ThemedTableCell><>Effective Interest<br />Rate (EIR)</></ThemedTableCell>
                         <ThemedTableCell>Webpage</ThemedTableCell>
                         <ThemedTableCell>Remarks</ThemedTableCell>
                         <ThemedTableCell>Updated at</ThemedTableCell>

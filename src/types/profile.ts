@@ -8,6 +8,7 @@ export default interface Profile {
     GiroTransactions: number
     MonthlyAccIncrease: number
     LoanInstallment: number
+    IsNTUCMember: boolean
 }
 
 export const NewProfile = ({
@@ -20,6 +21,7 @@ export const NewProfile = ({
     GiroTransactions = 0,
     MonthlyAccIncrease = 0,
     LoanInstallment = 0,
+    IsNTUCMember = false,
 }): Profile => {
     return {
         Savings,
@@ -31,5 +33,6 @@ export const NewProfile = ({
         GiroTransactions,
         MonthlyAccIncrease,
         LoanInstallment,
+        IsNTUCMember,
     }
 }
