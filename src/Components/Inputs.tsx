@@ -8,9 +8,8 @@ import { primaryColor, bgColor, textColor } from "../consts/colors.ts";
 interface InputArg<Type> {
     label: string
     inputType?: React.HTMLInputTypeAttribute
-    key: string
     fn: (profile: Profile, value: Type) => Profile
-    getDefault: (profile: Profile) => Type | undefined
+    getStateFromProfile: (profile: Profile) => Type | undefined
 }
 
 const makeDefaultValue = (value?: number): number | undefined => value === undefined || value === 0 ? undefined : value
@@ -19,69 +18,60 @@ const attrs: Array<InputArg<number>> = [
     {
         label: "Savings (To be deposited at bank)",
         inputType: "number",
-        key: "savings",
         fn: (profile, v) => { return { ...profile, Savings: v } },
-        getDefault: (profile: Profile) => makeDefaultValue(profile.Savings),
+        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Savings),
     },
     {
         label: "Age",
         inputType: "number",
-        key: "age",
         fn: (profile, v) => { return { ...profile, Age: v } },
-        getDefault: (profile: Profile) => makeDefaultValue(profile.Age),
+        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Age),
     },
     {
         label: "Salary (Must be credited to bank monthly)",
         inputType: "number",
-        key: "salary",
         fn: (profile, v) => { return { ...profile, Salary: v } },
-        getDefault: (profile: Profile) => makeDefaultValue(profile.Salary),
+        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Salary),
     },
     {
         label: "Investment (Willing to spend with bank yearly)",
         inputType: "number",
-        key: "investment",
         fn: (profile, v) => { return { ...profile, Investment: v } },
-        getDefault: (profile: Profile) => makeDefaultValue(profile.Investment),
+        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Investment),
     },
     {
         label: "Insurance (Willing to spend with bank yearly)",
         inputType: "number",
-        key: "insurance",
         fn: (profile, v) => { return { ...profile, Insurance: v } },
-        getDefault: (profile: Profile) => makeDefaultValue(profile.Insurance),
+        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Insurance),
     },
     {
         label: "Spending (On eligible cards monthly)",
         inputType: "number",
-        key: "spending",
         fn: (profile, v) => { return { ...profile, Spending: v } },
-        getDefault: (profile: Profile) => makeDefaultValue(profile.Spending),
+        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Spending),
     },
     {
         label: "Giro Transactions (Monthly)",
         inputType: "number",
-        key: "giro",
         fn: (profile, v) => { return { ...profile, GiroTransactions: v } },
-        getDefault: (profile: Profile) => makeDefaultValue(profile.GiroTransactions),
+        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.GiroTransactions),
     },
     {
         label: "Monthly Account Value Increment",
         inputType: "number",
-        key: "monthly-acc-value",
         fn: (profile, v) => { return { ...profile, MonthlyAccIncrease: v } },
-        getDefault: (profile: Profile) => makeDefaultValue(profile.MonthlyAccIncrease),
+        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.MonthlyAccIncrease),
     },
     {
         label: "Monthly Loan Installment from bank",
         inputType: "number",
-        key: "loan_installment",
         fn: (profile, v) => { return { ...profile, LoanInstallment: v } },
-        getDefault: (profile: Profile) => makeDefaultValue(profile.LoanInstallment),
+        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.LoanInstallment),
     }
 ]
 
-const defaultValue = {
+const defaultValue: Profile = {
     Age: 0,
     Salary: 0,
     Savings: 0,
@@ -90,17 +80,20 @@ const defaultValue = {
     Spending: 0,
     GiroTransactions: 0,
     MonthlyAccIncrease: 0,
+    LoanInstallment: 0,
 }
 
 export const FormInputs = ({ updateResult }) => {
-    const [hideModel, setHideModal] = useState<boolean>(true);
     const localData = localStorage.getItem(STORE_KEY) ?? ""
     const localValue = localData ? JSON.parse(localData) : undefined
-    const [state, setState] = useState<Profile>(localValue ?? defaultValue)
+    const [currProfile, setCurrProfile] = useState<Profile>(localValue ?? defaultValue)
+    const [hideModel, setHideModal] = useState<boolean>(true);
+    const [modelMsg, setModalMsg] = useState<string>("");
 
-    useEffect(() => updateResult(state), [state, updateResult])
+    useEffect(() => updateResult(currProfile), [currProfile, updateResult])
     const onSubmit = () => {
-        localStorage.setItem(STORE_KEY, JSON.stringify(state))
+        localStorage.setItem(STORE_KEY, JSON.stringify(currProfile))
+        setModalMsg("Save Success")
         setHideModal(false)
         setTimeout(() => {
             if (!hideModel) return
@@ -116,8 +109,6 @@ export const FormInputs = ({ updateResult }) => {
             This is a calculator to show you which banks in Singapore have the best interest rates.
             <br />
             Key in your information below and view the interest you will get every year.
-            <br />
-            The interests is last updated on 2024-12-19.
         </Typography>
         <FormControl sx={{
             width: '100%',
@@ -129,39 +120,48 @@ export const FormInputs = ({ updateResult }) => {
             alignContent: 'center',
         }} >
             {attrs.map(
-                ({ label, inputType, getDefault, fn }) => <InputField
+                ({ label, inputType, getStateFromProfile, fn }) => <InputField
                     label={label}
                     key={label.replace(" ", "_") + "_input_field"}
                     textKey={label.replace(" ", "_")}
                     inputType={inputType}
-                    onChange={(value) => setState(fn(state, Number(value)))}
-                    defaultValue={getDefault(state)}
+                    onChange={(value) => setCurrProfile(fn(currProfile, Number(value)))}
+                    value={getStateFromProfile(currProfile)}
                 />
             )}
         </FormControl>
-        <Box textAlign='center'>
+        <Box textAlign='center' sx={{
+            height: "100%",
+            padding: "0px",
+            margin: "0px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "auto",
+        }}>
             <Button
                 key="submit-btn"
                 sx={{
                     backgroundColor: primaryColor,
                     color: textColor,
-                    width: '50%',
-                    justifySelf: 'center',
-                    margin: '20px',
+                    margin: '10px',
+                    textAlign: "center",
                 }}
                 type="submit"
                 onClick={onSubmit}>
                 Save locally
             </Button>
         </Box>
-        {!hideModel && <SaveAlert hideModel={hideModel} setHideModal={setHideModal} />}
+        {!hideModel && <SaveAlert hideModel={hideModel} setHideModal={setHideModal} value={modelMsg} />}
     </>
 }
 
 const SaveAlert = ({
+    value,
     hideModel,
     setHideModal,
 }: {
+    value: string,
     hideModel: boolean,
     setHideModal: (boolean) => void
 }) => {
@@ -186,20 +186,20 @@ const SaveAlert = ({
                     <Close fontSize="inherit" />
                 </IconButton>
             }
-        > Save Success</Alert >
+        >{value}</Alert >
     </Collapse >
 }
 
 interface Field {
     label: string
     onChange: (string) => any
-    defaultValue?: number
+    value?: number
     inputType?: React.HTMLInputTypeAttribute
     subTest?: string
     textKey: string
 }
 
-const InputField = ({ label, inputType, onChange, defaultValue, textKey }: Field) => {
+const InputField = ({ label, inputType, onChange, value: defaultValue, textKey }: Field) => {
     return <TextField
         label={label}
         type={inputType ?? ''}

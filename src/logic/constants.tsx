@@ -56,7 +56,7 @@ export const bankInfo: Record<string, Info> = {
             <br />
             Amounts above 50k are not included.
             <br />
-            <b>Note: This is not a banks</b>
+            <b>Note: This is not a bank</b>
         </p>,
         lastUpdated: "2024-12-01",
     },

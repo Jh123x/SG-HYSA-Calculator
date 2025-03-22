@@ -14,6 +14,7 @@ import { Footer } from './Components/Footer.tsx';
 
 export const App = () => {
   const [interests, setInterests] = useState<Record<string, ResultProp>>({})
+
   const updateResult = (profile: Profile) => {
     const results: Record<string, ResultProp> = {}
     for (const [name, info] of Object.entries(bankInfo)) {
