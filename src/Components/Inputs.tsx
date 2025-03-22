@@ -149,12 +149,13 @@ export const FormInputs = ({
             >
                 <FormControlLabel
                     control={<Checkbox
-                        onChange={() => setCurrProfile({ ...currProfile, IsNTUCMember: !currProfile.IsNTUCMember })}
+                        onChange={() => setCurrProfile({
+                            ...currProfile,
+                            IsNTUCMember: !currProfile.IsNTUCMember,
+                        })}
                     />}
                     label="NTUC Member"
-                    sx={{
-                        color: textColor,
-                    }}
+                    sx={{ color: textColor }}
                 />
             </FormGroup>
         </FormControl>
