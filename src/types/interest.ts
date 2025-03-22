@@ -3,7 +3,6 @@ export interface CutoffInterest {
     InterestRatePercent: number
 }
 
-
 export interface Interest {
     cutoffs: Array<CutoffInterest>
     baseRatePercent: number

@@ -2,14 +2,14 @@ import { ResultInterest } from "../types/interest_result.ts";
 import Profile from "../types/profile.ts";
 import { calculate_ir } from "./common.ts";
 
-export const stand_chart_interest = (profile: Profile): ResultInterest => {
-    const { Savings, Salary, Spending, GiroTransactions, Insurance, Investment } = profile
-    var interest = 0.05;
+const baseInterest = 0.05
 
-    if (Salary >= 3000) interest += 2
-    if (Spending >= 500 && Spending < 2000) interest += 0.6
-    if (Spending >= 2000) interest += 1.4
-    if (GiroTransactions >= 3) interest += 0.23
+export const stand_chart_interest = (profile: Profile): ResultInterest => {
+    const { Savings, Salary, Spending, Insurance, Investment } = profile
+    var interest = baseInterest
+
+    if (Salary >= 3000) interest += 1
+    if (Spending >= 1000) interest += 1
     if (Insurance >= 12000) interest += 2
     if (Investment >= 30000) interest += 2
 
@@ -17,7 +17,7 @@ export const stand_chart_interest = (profile: Profile): ResultInterest => {
         Savings,
         {
             cutoffs: [{ Cutoff: 100_000, InterestRatePercent: interest }],
-            baseRatePercent: 0.05
+            baseRatePercent: baseInterest
         },
     )
 }

@@ -51,8 +51,20 @@ export const bankInfo: Record<string, Info> = {
     "Chocolate Finance": {
         interestFn: choco_finance,
         url: "https://www.chocolatefinance.com/",
-        remarks: <p>1st 20k 3.3% p.a, next 30k 3% p.a. <br /> Amounts above 50k are investments and not included.</p>,
+        remarks: <p>
+            1st 20k 3.3% p.a, next 30k 3% p.a.
+            <br />
+            Amounts above 50k are not included.
+            <br />
+            <b>Note: This is not a bank</b>
+        </p>,
         lastUpdated: "2024-12-01",
+    },
+    "Standard Chartered": {
+        interestFn: stand_chart_interest,
+        url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
+        remarks: <p>Insurance and Investment only<br />fulfils interest for 6 months</p>,
+        lastUpdated: "2025-03-22",
     },
     "Trust Bank": {
         interestFn: placeholder_ir,
@@ -75,12 +87,6 @@ export const bankInfo: Record<string, Info> = {
     "Citi Wealth first Account": {
         interestFn: placeholder_ir,
         url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
-        remarks: "To be added",
-        lastUpdated: "2024-12-01",
-    },
-    "Standard Chartered": {
-        interestFn: stand_chart_interest,
-        url: "https://www.sc.com/sg/save/current-accounts/bonussaver/?intcid=web_listing-sc_com_top_nav-homepg1-staticmedia_others-sng-homepage_new-bsaver-acquisition-sc_com_organic-sg-en",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
     },
