@@ -2,10 +2,21 @@ import React, { ReactElement } from "react"
 import { Container, Link, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material"
 import { ResultProp } from "../types/props"
 import { primaryColor, bgColor, textColor } from "../consts/colors.ts"
+import Profile from "../types/profile.ts"
+import { bankInfo } from "../logic/constants.tsx"
 
-export const Result = ({ results }: {
-    results: Record<string, ResultProp>
-}) => <Container sx={{ color: primaryColor, width: "100%", maxWidth: "100%" }}>
+export const Result = ({ profile }: { profile: Profile }) => {
+    const results: Record<string, ResultProp> = {}
+    for (const [name, info] of Object.entries(bankInfo)) {
+        results[name] = {
+            interest: info.interestFn(profile),
+            url: info.url,
+            remarks: info.remarks,
+            lastUpdated: info.lastUpdated,
+        }
+    }
+
+    return <Container sx={{ color: primaryColor, width: "100%", maxWidth: "100%" }}>
         <TableContainer>
             <Table>
                 <TableHead>
@@ -27,6 +38,7 @@ export const Result = ({ results }: {
             * Interest rates on their respective websites are subject to change without notice
         </Typography>
     </Container>
+}
 
 const displayResult = (bankName: string, info: ResultProp) => {
     const lastUpdated = info.lastUpdated

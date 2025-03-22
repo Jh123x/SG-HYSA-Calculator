@@ -1,18 +1,18 @@
 import { Button, FormControl, Typography, Alert, Collapse, IconButton, TextField, Box } from "@mui/material";
-import React, { useEffect, useState } from "react";
-import Profile from "../types/profile.ts";
+import React, { useState } from "react";
+import Profile, { NewProfile } from "../types/profile.ts";
 import { STORE_KEY } from "../logic/constants.tsx";
 import { Check, Close } from "@mui/icons-material";
-import { primaryColor, bgColor, textColor } from "../consts/colors.ts";
+import { primaryColor, bgColor, textColor, dangerColor } from "../consts/colors.ts";
 
 interface InputArg<Type> {
     label: string
     inputType?: React.HTMLInputTypeAttribute
     fn: (profile: Profile, value: Type) => Profile
-    getStateFromProfile: (profile: Profile) => Type | undefined
+    getStateFromProfile: (profile: Profile) => Type
 }
 
-const makeDefaultValue = (value?: number): number | undefined => value === undefined || value === 0 ? undefined : value
+const makeDefaultValue = (value?: number): number => value === undefined || value === 0 ? 0 : value
 
 const attrs: Array<InputArg<number>> = [
     {
@@ -71,29 +71,23 @@ const attrs: Array<InputArg<number>> = [
     }
 ]
 
-const defaultValue: Profile = {
-    Age: 0,
-    Salary: 0,
-    Savings: 0,
-    Investment: 0,
-    Insurance: 0,
-    Spending: 0,
-    GiroTransactions: 0,
-    MonthlyAccIncrease: 0,
-    LoanInstallment: 0,
-}
-
-export const FormInputs = ({ updateResult }) => {
-    const localData = localStorage.getItem(STORE_KEY) ?? ""
-    const localValue = localData ? JSON.parse(localData) : undefined
-    const [currProfile, setCurrProfile] = useState<Profile>(localValue ?? defaultValue)
+export const FormInputs = ({ currProfile, setCurrProfile }) => {
     const [hideModel, setHideModal] = useState<boolean>(true);
     const [modelMsg, setModalMsg] = useState<string>("");
 
-    useEffect(() => updateResult(currProfile), [currProfile, updateResult])
     const onSubmit = () => {
         localStorage.setItem(STORE_KEY, JSON.stringify(currProfile))
         setModalMsg("Save Success")
+        setHideModal(false)
+        setTimeout(() => {
+            if (!hideModel) return
+            setHideModal(true)
+        }, 1500)
+    }
+
+    const onClear = () => {
+        setCurrProfile(NewProfile({}))
+        setModalMsg("Cleared")
         setHideModal(false)
         setTimeout(() => {
             if (!hideModel) return
@@ -120,14 +114,17 @@ export const FormInputs = ({ updateResult }) => {
             alignContent: 'center',
         }} >
             {attrs.map(
-                ({ label, inputType, getStateFromProfile, fn }) => <InputField
-                    label={label}
-                    key={label.replace(" ", "_") + "_input_field"}
-                    textKey={label.replace(" ", "_")}
-                    inputType={inputType}
-                    onChange={(value) => setCurrProfile(fn(currProfile, Number(value)))}
-                    value={getStateFromProfile(currProfile)}
-                />
+                ({ label, inputType, getStateFromProfile, fn }) => {
+                    const value = getStateFromProfile(currProfile)
+                    return <InputField
+                        label={label}
+                        key={label.replace(" ", "_") + "_input_field"}
+                        textKey={label.replace(" ", "_")}
+                        inputType={inputType}
+                        onChange={(value) => setCurrProfile(fn(currProfile, Number(value)))}
+                        value={value === 0 ? '' : value}
+                    />
+                }
             )}
         </FormControl>
         <Box textAlign='center' sx={{
@@ -150,6 +147,19 @@ export const FormInputs = ({ updateResult }) => {
                 type="submit"
                 onClick={onSubmit}>
                 Save locally
+            </Button>
+            <Button
+                key="clear-btn"
+                sx={{
+                    backgroundColor: dangerColor,
+                    color: textColor,
+                    margin: '10px',
+                    textAlign: "center",
+                }}
+                type="button"
+                onClick={onClear}
+            >
+                Clear
             </Button>
         </Box>
         {!hideModel && <SaveAlert hideModel={hideModel} setHideModal={setHideModal} value={modelMsg} />}
@@ -193,13 +203,13 @@ const SaveAlert = ({
 interface Field {
     label: string
     onChange: (string) => any
-    value?: number
+    value: number | ''
     inputType?: React.HTMLInputTypeAttribute
     subTest?: string
     textKey: string
 }
 
-const InputField = ({ label, inputType, onChange, value: defaultValue, textKey }: Field) => {
+const InputField = ({ label, inputType, onChange, value, textKey }: Field) => {
     return <TextField
         label={label}
         type={inputType ?? ''}
@@ -223,7 +233,7 @@ const InputField = ({ label, inputType, onChange, value: defaultValue, textKey }
             }
         }}
         onChange={(e) => onChange(e.target.value)}
-        value={defaultValue}
+        value={value}
         slotProps={{
             inputLabel: { shrink: true },
         }}
