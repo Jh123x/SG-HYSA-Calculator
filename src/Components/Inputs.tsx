@@ -1,4 +1,4 @@
-import { Button, FormControl, Typography, Alert, Collapse, IconButton, TextField, Box } from "@mui/material";
+import { Button, FormControl, Typography, Alert, Collapse, IconButton, TextField, Box, Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 import React, { useState } from "react";
 import Profile, { NewProfile } from "../types/profile.ts";
 import { STORE_KEY } from "../logic/constants.tsx";
@@ -71,7 +71,13 @@ const attrs: Array<InputArg<number>> = [
     }
 ]
 
-export const FormInputs = ({ currProfile, setCurrProfile }) => {
+export const FormInputs = ({
+    currProfile,
+    setCurrProfile,
+}: {
+    currProfile: Profile,
+    setCurrProfile: (_: Profile) => void
+}) => {
     const [hideModel, setHideModal] = useState<boolean>(true);
     const [modelMsg, setModalMsg] = useState<string>("");
 
@@ -104,28 +110,54 @@ export const FormInputs = ({ currProfile, setCurrProfile }) => {
             <br />
             Key in your information below and view the interest you will get every year.
         </Typography>
-        <FormControl sx={{
-            width: '100%',
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            alignItems: 'center',
-            justifyContent: 'center',
-            alignContent: 'center',
-        }} >
-            {attrs.map(
-                ({ label, inputType, getStateFromProfile, fn }) => {
-                    const value = getStateFromProfile(currProfile)
-                    return <InputField
-                        label={label}
-                        key={label.replace(" ", "_") + "_input_field"}
-                        textKey={label.replace(" ", "_")}
-                        inputType={inputType}
-                        onChange={(value) => setCurrProfile(fn(currProfile, Number(value)))}
-                        value={value === 0 ? '' : value}
-                    />
-                }
-            )}
+        <FormControl >
+            <FormGroup
+                sx={{
+                    width: '100%',
+                    display: 'flex',
+                    flexDirection: 'row',
+                    flexWrap: 'wrap',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    alignContent: 'center',
+                }}
+            >
+                {attrs.map(
+                    ({ label, inputType, getStateFromProfile, fn }) => {
+                        const value = getStateFromProfile(currProfile)
+                        return <InputField
+                            label={label}
+                            key={label.replace(" ", "_") + "_input_field"}
+                            textKey={label.replace(" ", "_")}
+                            inputType={inputType}
+                            onChange={(value) => setCurrProfile(fn(currProfile, Number(value)))}
+                            value={value === 0 ? '' : value}
+                        />
+                    }
+                )}
+            </FormGroup>
+            <FormGroup
+                sx={{
+                    width: '100%',
+                    display: 'flex',
+                    flexDirection: 'row',
+                    flexWrap: 'wrap',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    alignContent: 'center',
+                }}
+            >
+                <FormControlLabel
+                    control={<Checkbox
+                        onChange={() => setCurrProfile({
+                            ...currProfile,
+                            IsNTUCMember: !currProfile.IsNTUCMember,
+                        })}
+                    />}
+                    label="NTUC Member"
+                    sx={{ color: textColor }}
+                />
+            </FormGroup>
         </FormControl>
         <Box textAlign='center' sx={{
             height: "100%",

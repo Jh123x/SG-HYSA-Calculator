@@ -2,6 +2,10 @@ import { Interest } from "../types/interest.ts";
 import { ResultInterest } from "../types/interest_result.ts";
 import Profile from "../types/profile.ts";
 
+/* 
+    calculate_ir calculates the interest rates with the given savings and interest amounts.
+    The Interest rates in each cutoff does not additionally add on the base interest.
+*/
 export const calculate_ir = (savings: number, interest: Interest): ResultInterest => {
     var total_interest = 0;
     const total_savings = savings

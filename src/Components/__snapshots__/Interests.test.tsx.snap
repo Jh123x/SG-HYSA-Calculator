@@ -36,7 +36,9 @@ Object {
                   class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
                   scope="col"
                 >
-                  Effective Interest Rate
+                  Effective Interest
+                  <br />
+                  Rate (EIR)
                 </th>
                 <th
                   class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
@@ -139,7 +141,13 @@ Object {
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  Interest rates are a flat 2.5%
+                  <p>
+                    Interest rates are a flat 
+                    2.5
+                    %
+                    <br />
+                    Capped at $100k
+                  </p>
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -179,7 +187,13 @@ Object {
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  Interest rates are a flat 2.28%
+                  <p>
+                    Interest rates are a flat 
+                    2.28
+                    %
+                    <br />
+                    Capped at $100k
+                  </p>
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -259,7 +273,9 @@ Object {
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  Under the 21 March 2025 notice.
+                  <p>
+                    More info Under the 21 March 2025 notice on their website
+                  </p>
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -370,12 +386,12 @@ Object {
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  0
+                  2400
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  0.00
+                  2.40
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -391,12 +407,14 @@ Object {
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  To be added
+                  <p>
+                    Spending assumes 5 x $30 if spending is more than 150.
+                  </p>
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  2024-12-01
+                  2025-03-23
                 </td>
               </tr>
               <tr
@@ -602,7 +620,9 @@ Object {
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
                 scope="col"
               >
-                Effective Interest Rate
+                Effective Interest
+                <br />
+                Rate (EIR)
               </th>
               <th
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
@@ -705,7 +725,13 @@ Object {
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                Interest rates are a flat 2.5%
+                <p>
+                  Interest rates are a flat 
+                  2.5
+                  %
+                  <br />
+                  Capped at $100k
+                </p>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -745,7 +771,13 @@ Object {
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                Interest rates are a flat 2.28%
+                <p>
+                  Interest rates are a flat 
+                  2.28
+                  %
+                  <br />
+                  Capped at $100k
+                </p>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -825,7 +857,9 @@ Object {
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                Under the 21 March 2025 notice.
+                <p>
+                  More info Under the 21 March 2025 notice on their website
+                </p>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -936,12 +970,12 @@ Object {
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                0
+                2400
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                0.00
+                2.40
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -957,12 +991,14 @@ Object {
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                To be added
+                <p>
+                  Spending assumes 5 x $30 if spending is more than 150.
+                </p>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                2024-12-01
+                2025-03-23
               </td>
             </tr>
             <tr
@@ -1225,7 +1261,9 @@ Object {
                   class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
                   scope="col"
                 >
-                  Effective Interest Rate
+                  Effective Interest
+                  <br />
+                  Rate (EIR)
                 </th>
                 <th
                   class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
@@ -1328,7 +1366,13 @@ Object {
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  Interest rates are a flat 2.5%
+                  <p>
+                    Interest rates are a flat 
+                    2.5
+                    %
+                    <br />
+                    Capped at $100k
+                  </p>
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -1368,7 +1412,13 @@ Object {
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  Interest rates are a flat 2.28%
+                  <p>
+                    Interest rates are a flat 
+                    2.28
+                    %
+                    <br />
+                    Capped at $100k
+                  </p>
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -1448,7 +1498,9 @@ Object {
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  Under the 21 March 2025 notice.
+                  <p>
+                    More info Under the 21 March 2025 notice on their website
+                  </p>
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -1580,12 +1632,14 @@ Object {
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  To be added
+                  <p>
+                    Spending assumes 5 x $30 if spending is more than 150.
+                  </p>
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
                 >
-                  2024-12-01
+                  2025-03-23
                 </td>
               </tr>
               <tr
@@ -1791,7 +1845,9 @@ Object {
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
                 scope="col"
               >
-                Effective Interest Rate
+                Effective Interest
+                <br />
+                Rate (EIR)
               </th>
               <th
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-j77fgu-MuiTableCell-root"
@@ -1894,7 +1950,13 @@ Object {
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                Interest rates are a flat 2.5%
+                <p>
+                  Interest rates are a flat 
+                  2.5
+                  %
+                  <br />
+                  Capped at $100k
+                </p>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -1934,7 +1996,13 @@ Object {
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                Interest rates are a flat 2.28%
+                <p>
+                  Interest rates are a flat 
+                  2.28
+                  %
+                  <br />
+                  Capped at $100k
+                </p>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -2014,7 +2082,9 @@ Object {
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                Under the 21 March 2025 notice.
+                <p>
+                  More info Under the 21 March 2025 notice on their website
+                </p>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
@@ -2146,12 +2216,14 @@ Object {
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                To be added
+                <p>
+                  Spending assumes 5 x $30 if spending is more than 150.
+                </p>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1mmjt0s-MuiTableCell-root"
               >
-                2024-12-01
+                2025-03-23
               </td>
             </tr>
             <tr
