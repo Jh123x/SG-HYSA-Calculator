@@ -24,6 +24,13 @@ Object {
             </a>
              
             2025
+            <br />
+            <a
+              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-i9kmoy-MuiTypography-root-MuiLink-root"
+              href="https://github.com/Jh123x/SG-HYSA-Calculator/issues"
+            >
+              Suggest a change
+            </a>
           </p>
         </div>
       </footer>
@@ -49,6 +56,13 @@ Object {
           </a>
            
           2025
+          <br />
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-i9kmoy-MuiTypography-root-MuiLink-root"
+            href="https://github.com/Jh123x/SG-HYSA-Calculator/issues"
+          >
+            Suggest a change
+          </a>
         </p>
       </div>
     </footer>
