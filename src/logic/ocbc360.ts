@@ -59,7 +59,7 @@ export const ocbc_new_interest = (profile: Profile): ResultInterest => {
     }
 
     if (MonthlyAccIncrease >= 500) {
-        interest[0] += 0.7
+        interest[0] += 0.6
         interest[1] += 1.2
     }
 
@@ -79,8 +79,8 @@ export const ocbc_new_interest = (profile: Profile): ResultInterest => {
     }
 
     if (Savings >= 200000) {
-        interest[0] += 2.4
-        interest[1] += 2.4
+        interest[0] += 2.2
+        interest[1] += 2.2
     }
 
     return calculate_ir(
