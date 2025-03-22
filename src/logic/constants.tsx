@@ -44,9 +44,9 @@ export const bankInfo: Record<string, Info> = {
     },
     "OCBC Bank (After 2025/05)": {
         interestFn: ocbc_new_interest,
-        url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
-        remarks: "Their website has not updated yet.",
-        lastUpdated: "2025-03-21",
+        url: "https://www.ocbc.com/personal-banking/notices",
+        remarks: "Under the 21 March 2025 notice.",
+        lastUpdated: "2025-03-22",
     },
     "Chocolate Finance": {
         interestFn: choco_finance,
