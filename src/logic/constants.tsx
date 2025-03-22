@@ -51,7 +51,13 @@ export const bankInfo: Record<string, Info> = {
     "Chocolate Finance": {
         interestFn: choco_finance,
         url: "https://www.chocolatefinance.com/",
-        remarks: <p>1st 20k 3.3% p.a, next 30k 3% p.a. <br /> Amounts above 50k are investments and not included.</p>,
+        remarks: <p>
+            1st 20k 3.3% p.a, next 30k 3% p.a.
+            <br />
+            Amounts above 50k are not included.
+            <br />
+            <b>Note: This is not a banks</b>
+        </p>,
         lastUpdated: "2024-12-01",
     },
     "Standard Chartered": {
