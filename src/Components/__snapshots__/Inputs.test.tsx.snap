@@ -5,18 +5,6 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h4
-        class="MuiTypography-root MuiTypography-h4 css-1pk9sz2-MuiTypography-root"
-      >
-        High Yield Savings Account Calculator
-      </h4>
-      <p
-        class="MuiTypography-root MuiTypography-body1 css-y1qmhu-MuiTypography-root"
-      >
-        This is a calculator to show you which banks in Singapore have the best interest rates.
-        <br />
-        Key in your information below and view the interest you will get every year.
-      </p>
       <div
         class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
       >
@@ -286,18 +274,6 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <h4
-      class="MuiTypography-root MuiTypography-h4 css-1pk9sz2-MuiTypography-root"
-    >
-      High Yield Savings Account Calculator
-    </h4>
-    <p
-      class="MuiTypography-root MuiTypography-body1 css-y1qmhu-MuiTypography-root"
-    >
-      This is a calculator to show you which banks in Singapore have the best interest rates.
-      <br />
-      Key in your information below and view the interest you will get every year.
-    </p>
     <div
       class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
     >
@@ -624,18 +600,6 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <h4
-        class="MuiTypography-root MuiTypography-h4 css-1pk9sz2-MuiTypography-root"
-      >
-        High Yield Savings Account Calculator
-      </h4>
-      <p
-        class="MuiTypography-root MuiTypography-body1 css-y1qmhu-MuiTypography-root"
-      >
-        This is a calculator to show you which banks in Singapore have the best interest rates.
-        <br />
-        Key in your information below and view the interest you will get every year.
-      </p>
       <div
         class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
       >
@@ -905,18 +869,6 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <h4
-      class="MuiTypography-root MuiTypography-h4 css-1pk9sz2-MuiTypography-root"
-    >
-      High Yield Savings Account Calculator
-    </h4>
-    <p
-      class="MuiTypography-root MuiTypography-body1 css-y1qmhu-MuiTypography-root"
-    >
-      This is a calculator to show you which banks in Singapore have the best interest rates.
-      <br />
-      Key in your information below and view the interest you will get every year.
-    </p>
     <div
       class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
     >

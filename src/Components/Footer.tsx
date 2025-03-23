@@ -17,10 +17,6 @@ export const Footer = () => {
                     Jh123x
                 </Link>
                 {" "}{new Date().getFullYear()}
-                <br />
-                <Link color="inherit" href="https://github.com/Jh123x/SG-HYSA-Calculator/issues">
-                    Suggest a change
-                </Link>
             </Typography>
         </Container>
     </Box>

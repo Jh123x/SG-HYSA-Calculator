@@ -1,4 +1,4 @@
-import { Button, FormControl, Typography, Alert, Collapse, IconButton, TextField, Box, Checkbox, FormControlLabel, FormGroup } from "@mui/material";
+import { Button, FormControl, Alert, Collapse, IconButton, TextField, Box, Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 import React, { useState } from "react";
 import Profile, { NewProfile } from "../types/profile.ts";
 import { STORE_KEY } from "../logic/constants.tsx";
@@ -102,14 +102,6 @@ export const FormInputs = ({
     }
 
     return <>
-        <Typography variant="h4" sx={{ margin: "10px 0px", color: textColor }}>
-            High Yield Savings Account Calculator
-        </Typography>
-        <Typography variant="body1" sx={{ margin: "10px 0px", color: textColor }}>
-            This is a calculator to show you which banks in Singapore have the best interest rates.
-            <br />
-            Key in your information below and view the interest you will get every year.
-        </Typography>
         <FormControl >
             <FormGroup
                 sx={{
