@@ -1,6 +1,6 @@
 import React from 'react';
 import { LineChart } from '@mui/x-charts/LineChart';
-import { Paper, useTheme, useMediaQuery } from '@mui/material';
+import { Paper, useTheme, useMediaQuery, Box, Typography } from '@mui/material';
 import { bankInfo } from "../logic/constants.tsx"
 import { textColor } from '../consts/colors.ts';
 import Profile from '../types/profile.ts';
@@ -14,7 +14,19 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
     const isSmallScreen = useMediaQuery('(max-width:640px)');
 
     if (isSmallScreen) {
-        return null;
+        return (<Paper sx={{
+            padding: "20px",
+            borderRadius: "10px",
+            boxShadow: theme.shadows[3],
+            backgroundColor: theme.palette.background.paper,
+            textAlign: "center"
+        }}>
+            <Box sx={{ py: 4 }}>
+                <Typography variant="body1" color={textColor}>
+                    Please view on a larger screen to see the interest comparison graph.
+                </Typography>
+            </Box>
+        </Paper>);
     }
 
     // Generate savings data points

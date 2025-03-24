@@ -8,7 +8,7 @@ import { primaryColor, bgColor, textColor, dangerColor } from "../consts/colors.
 interface InputArg<Type> {
     label: string;
     inputType?: React.HTMLInputTypeAttribute;
-    tooltip?: string;
+    tooltip: string;
     fn: (profile: Profile, value: Type) => Profile;
     getStateFromProfile: (profile: Profile) => Type;
 }
@@ -26,6 +26,7 @@ const attrs: Array<InputArg<number>> = [
     {
         label: "Age",
         inputType: "number",
+        tooltip: "Current age",
         fn: (profile, v) => ({ ...profile, Age: v }),
         getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Age),
     },
@@ -60,21 +61,21 @@ const attrs: Array<InputArg<number>> = [
     {
         label: "Giro Transactions",
         inputType: "number",
-        tooltip: "Number of GIRO Transactions monthly",
+        tooltip: "No. of GIRO Transactions",
         fn: (profile, v) => ({ ...profile, GiroTransactions: v }),
         getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.GiroTransactions),
     },
     {
         label: "Account Increment",
         inputType: "number",
-        tooltip: "How much your bank account value increases monthly",
+        tooltip: "Bank account increase per month",
         fn: (profile, v) => ({ ...profile, MonthlyAccIncrease: v }),
         getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.MonthlyAccIncrease),
     },
     {
         label: "Loan Installment",
         inputType: "number",
-        tooltip: "The amount of loan you pay to the bank monthly",
+        tooltip: "Monthly loan payment",
         fn: (profile, v) => ({ ...profile, LoanInstallment: v }),
         getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.LoanInstallment),
     },
@@ -303,45 +304,38 @@ interface Field {
 
 const InputField = ({ label, inputType, onChange, value, textKey, tooltip }: Field) => {
     return (
-        <Tooltip
-            title={tooltip}
-            placement="top"
-            arrow
-            enterTouchDelay={0}
-            leaveTouchDelay={3000}
-        >
-            <TextField
-                label={label}
-                type={inputType ?? ""}
-                variant="outlined"
-                key={textKey}
-                sx={{
-                    width: { xs: "100%", sm: "250px" },
-                    backgroundColor: bgColor,
+        <TextField
+            label={label}
+            type={inputType ?? ""}
+            variant="outlined"
+            key={textKey}
+            placeholder={tooltip}
+            sx={{
+                width: { xs: "100%", sm: "250px" },
+                backgroundColor: bgColor,
+                borderRadius: "8px",
+                "& .MuiInputBase-root": {
                     borderRadius: "8px",
-                    "& .MuiInputBase-root": {
-                        borderRadius: "8px",
-                        fontSize: { xs: "0.9rem", sm: "1rem" },
+                    fontSize: { xs: "0.9rem", sm: "1rem" },
+                },
+                "& .MuiInputLabel-root": {
+                    color: textColor,
+                    fontSize: { xs: "0.9rem", sm: "1rem" },
+                },
+                "& .MuiOutlinedInput-root": {
+                    "&:hover .MuiOutlinedInput-notchedOutline": {
+                        borderColor: primaryColor,
                     },
-                    "& .MuiInputLabel-root": {
-                        color: textColor,
-                        fontSize: { xs: "0.9rem", sm: "1rem" },
+                    "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                        borderColor: primaryColor,
                     },
-                    "& .MuiOutlinedInput-root": {
-                        "&:hover .MuiOutlinedInput-notchedOutline": {
-                            borderColor: primaryColor,
-                        },
-                        "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-                            borderColor: primaryColor,
-                        },
-                    },
-                    "& .MuiInputLabel-root.Mui-focused": {
-                        color: primaryColor,
-                    },
-                }}
-                onChange={(e) => onChange(e.target.value)}
-                value={value}
-            />
-        </Tooltip>
+                },
+                "& .MuiInputLabel-root.Mui-focused": {
+                    color: primaryColor,
+                },
+            }}
+            onChange={(e) => onChange(e.target.value)}
+            value={value}
+        />
     );
 };

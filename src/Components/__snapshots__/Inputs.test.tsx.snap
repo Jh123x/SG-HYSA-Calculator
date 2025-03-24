@@ -12,15 +12,13 @@ Object {
           class="MuiFormGroup-root css-107elia-MuiFormGroup-root"
         >
           <div
-            aria-label="To be deposited at bank"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":r1:"
-              id=":r1:-label"
+              for=":r0:"
+              id=":r0:-label"
             >
               Savings
             </label>
@@ -30,7 +28,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r1:"
+                id=":r0:"
+                placeholder="To be deposited at bank"
                 type="number"
                 value=""
               />
@@ -50,13 +49,12 @@ Object {
           </div>
           <div
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":r3:"
-              id=":r3:-label"
+              for=":r1:"
+              id=":r1:-label"
             >
               Age
             </label>
@@ -66,7 +64,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r3:"
+                id=":r1:"
+                placeholder="Current age"
                 type="number"
                 value=""
               />
@@ -85,15 +84,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="Must be credited to bank monthly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":r5:"
-              id=":r5:-label"
+              for=":r2:"
+              id=":r2:-label"
             >
               Salary
             </label>
@@ -103,7 +100,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r5:"
+                id=":r2:"
+                placeholder="Must be credited to bank monthly"
                 type="number"
                 value=""
               />
@@ -122,15 +120,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="Willing to spend with bank yearly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":r7:"
-              id=":r7:-label"
+              for=":r3:"
+              id=":r3:-label"
             >
               Investment
             </label>
@@ -140,7 +136,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r7:"
+                id=":r3:"
+                placeholder="Willing to spend with bank yearly"
                 type="number"
                 value=""
               />
@@ -159,15 +156,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="Willing to spend with bank yearly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":r9:"
-              id=":r9:-label"
+              for=":r4:"
+              id=":r4:-label"
             >
               Insurance
             </label>
@@ -177,7 +172,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r9:"
+                id=":r4:"
+                placeholder="Willing to spend with bank yearly"
                 type="number"
                 value=""
               />
@@ -196,15 +192,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="On eligible cards monthly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":rb:"
-              id=":rb:-label"
+              for=":r5:"
+              id=":r5:-label"
             >
               Spending
             </label>
@@ -214,7 +208,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rb:"
+                id=":r5:"
+                placeholder="On eligible cards monthly"
                 type="number"
                 value=""
               />
@@ -233,15 +228,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="Number of GIRO Transactions monthly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":rd:"
-              id=":rd:-label"
+              for=":r6:"
+              id=":r6:-label"
             >
               Giro Transactions
             </label>
@@ -251,7 +244,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rd:"
+                id=":r6:"
+                placeholder="No. of GIRO Transactions"
                 type="number"
                 value=""
               />
@@ -270,15 +264,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="How much your bank account value increases monthly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":rf:"
-              id=":rf:-label"
+              for=":r7:"
+              id=":r7:-label"
             >
               Account Increment
             </label>
@@ -288,7 +280,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rf:"
+                id=":r7:"
+                placeholder="Bank account increase per month"
                 type="number"
                 value=""
               />
@@ -307,15 +300,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="The amount of loan you pay to the bank monthly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":rh:"
-              id=":rh:-label"
+              for=":r8:"
+              id=":r8:-label"
             >
               Loan Installment
             </label>
@@ -325,7 +316,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rh:"
+                id=":r8:"
+                placeholder="Monthly loan payment"
                 type="number"
                 value=""
               />
@@ -408,15 +400,13 @@ Object {
         class="MuiFormGroup-root css-107elia-MuiFormGroup-root"
       >
         <div
-          aria-label="To be deposited at bank"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":r1:"
-            id=":r1:-label"
+            for=":r0:"
+            id=":r0:-label"
           >
             Savings
           </label>
@@ -426,7 +416,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r1:"
+              id=":r0:"
+              placeholder="To be deposited at bank"
               type="number"
               value=""
             />
@@ -446,13 +437,12 @@ Object {
         </div>
         <div
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":r3:"
-            id=":r3:-label"
+            for=":r1:"
+            id=":r1:-label"
           >
             Age
           </label>
@@ -462,7 +452,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r3:"
+              id=":r1:"
+              placeholder="Current age"
               type="number"
               value=""
             />
@@ -481,15 +472,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="Must be credited to bank monthly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":r5:"
-            id=":r5:-label"
+            for=":r2:"
+            id=":r2:-label"
           >
             Salary
           </label>
@@ -499,7 +488,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r5:"
+              id=":r2:"
+              placeholder="Must be credited to bank monthly"
               type="number"
               value=""
             />
@@ -518,15 +508,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="Willing to spend with bank yearly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":r7:"
-            id=":r7:-label"
+            for=":r3:"
+            id=":r3:-label"
           >
             Investment
           </label>
@@ -536,7 +524,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r7:"
+              id=":r3:"
+              placeholder="Willing to spend with bank yearly"
               type="number"
               value=""
             />
@@ -555,15 +544,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="Willing to spend with bank yearly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":r9:"
-            id=":r9:-label"
+            for=":r4:"
+            id=":r4:-label"
           >
             Insurance
           </label>
@@ -573,7 +560,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r9:"
+              id=":r4:"
+              placeholder="Willing to spend with bank yearly"
               type="number"
               value=""
             />
@@ -592,15 +580,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="On eligible cards monthly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":rb:"
-            id=":rb:-label"
+            for=":r5:"
+            id=":r5:-label"
           >
             Spending
           </label>
@@ -610,7 +596,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rb:"
+              id=":r5:"
+              placeholder="On eligible cards monthly"
               type="number"
               value=""
             />
@@ -629,15 +616,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="Number of GIRO Transactions monthly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":rd:"
-            id=":rd:-label"
+            for=":r6:"
+            id=":r6:-label"
           >
             Giro Transactions
           </label>
@@ -647,7 +632,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rd:"
+              id=":r6:"
+              placeholder="No. of GIRO Transactions"
               type="number"
               value=""
             />
@@ -666,15 +652,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="How much your bank account value increases monthly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":rf:"
-            id=":rf:-label"
+            for=":r7:"
+            id=":r7:-label"
           >
             Account Increment
           </label>
@@ -684,7 +668,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rf:"
+              id=":r7:"
+              placeholder="Bank account increase per month"
               type="number"
               value=""
             />
@@ -703,15 +688,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="The amount of loan you pay to the bank monthly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":rh:"
-            id=":rh:-label"
+            for=":r8:"
+            id=":r8:-label"
           >
             Loan Installment
           </label>
@@ -721,7 +704,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rh:"
+              id=":r8:"
+              placeholder="Monthly loan payment"
               type="number"
               value=""
             />
@@ -861,15 +845,13 @@ Object {
           class="MuiFormGroup-root css-107elia-MuiFormGroup-root"
         >
           <div
-            aria-label="To be deposited at bank"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":rk:"
-              id=":rk:-label"
+              for=":ra:"
+              id=":ra:-label"
             >
               Savings
             </label>
@@ -879,7 +861,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rk:"
+                id=":ra:"
+                placeholder="To be deposited at bank"
                 type="number"
                 value="100000"
               />
@@ -899,13 +882,12 @@ Object {
           </div>
           <div
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":rm:"
-              id=":rm:-label"
+              for=":rb:"
+              id=":rb:-label"
             >
               Age
             </label>
@@ -915,7 +897,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rm:"
+                id=":rb:"
+                placeholder="Current age"
                 type="number"
                 value="10"
               />
@@ -934,15 +917,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="Must be credited to bank monthly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":ro:"
-              id=":ro:-label"
+              for=":rc:"
+              id=":rc:-label"
             >
               Salary
             </label>
@@ -952,7 +933,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":ro:"
+                id=":rc:"
+                placeholder="Must be credited to bank monthly"
                 type="number"
                 value="3000"
               />
@@ -971,15 +953,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="Willing to spend with bank yearly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":rq:"
-              id=":rq:-label"
+              for=":rd:"
+              id=":rd:-label"
             >
               Investment
             </label>
@@ -989,7 +969,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rq:"
+                id=":rd:"
+                placeholder="Willing to spend with bank yearly"
                 type="number"
                 value=""
               />
@@ -1008,15 +989,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="Willing to spend with bank yearly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":rs:"
-              id=":rs:-label"
+              for=":re:"
+              id=":re:-label"
             >
               Insurance
             </label>
@@ -1026,7 +1005,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rs:"
+                id=":re:"
+                placeholder="Willing to spend with bank yearly"
                 type="number"
                 value=""
               />
@@ -1045,15 +1025,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="On eligible cards monthly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":ru:"
-              id=":ru:-label"
+              for=":rf:"
+              id=":rf:-label"
             >
               Spending
             </label>
@@ -1063,7 +1041,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":ru:"
+                id=":rf:"
+                placeholder="On eligible cards monthly"
                 type="number"
                 value="1000"
               />
@@ -1082,15 +1061,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="Number of GIRO Transactions monthly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":r10:"
-              id=":r10:-label"
+              for=":rg:"
+              id=":rg:-label"
             >
               Giro Transactions
             </label>
@@ -1100,7 +1077,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r10:"
+                id=":rg:"
+                placeholder="No. of GIRO Transactions"
                 type="number"
                 value=""
               />
@@ -1119,15 +1097,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="How much your bank account value increases monthly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":r12:"
-              id=":r12:-label"
+              for=":rh:"
+              id=":rh:-label"
             >
               Account Increment
             </label>
@@ -1137,7 +1113,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r12:"
+                id=":rh:"
+                placeholder="Bank account increase per month"
                 type="number"
                 value="500"
               />
@@ -1156,15 +1133,13 @@ Object {
             </div>
           </div>
           <div
-            aria-label="The amount of loan you pay to the bank monthly"
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-            data-mui-internal-clone-element="true"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":r14:"
-              id=":r14:-label"
+              for=":ri:"
+              id=":ri:-label"
             >
               Loan Installment
             </label>
@@ -1174,7 +1149,8 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r14:"
+                id=":ri:"
+                placeholder="Monthly loan payment"
                 type="number"
                 value=""
               />
@@ -1257,15 +1233,13 @@ Object {
         class="MuiFormGroup-root css-107elia-MuiFormGroup-root"
       >
         <div
-          aria-label="To be deposited at bank"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":rk:"
-            id=":rk:-label"
+            for=":ra:"
+            id=":ra:-label"
           >
             Savings
           </label>
@@ -1275,7 +1249,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rk:"
+              id=":ra:"
+              placeholder="To be deposited at bank"
               type="number"
               value="100000"
             />
@@ -1295,13 +1270,12 @@ Object {
         </div>
         <div
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":rm:"
-            id=":rm:-label"
+            for=":rb:"
+            id=":rb:-label"
           >
             Age
           </label>
@@ -1311,7 +1285,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rm:"
+              id=":rb:"
+              placeholder="Current age"
               type="number"
               value="10"
             />
@@ -1330,15 +1305,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="Must be credited to bank monthly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":ro:"
-            id=":ro:-label"
+            for=":rc:"
+            id=":rc:-label"
           >
             Salary
           </label>
@@ -1348,7 +1321,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":ro:"
+              id=":rc:"
+              placeholder="Must be credited to bank monthly"
               type="number"
               value="3000"
             />
@@ -1367,15 +1341,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="Willing to spend with bank yearly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":rq:"
-            id=":rq:-label"
+            for=":rd:"
+            id=":rd:-label"
           >
             Investment
           </label>
@@ -1385,7 +1357,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rq:"
+              id=":rd:"
+              placeholder="Willing to spend with bank yearly"
               type="number"
               value=""
             />
@@ -1404,15 +1377,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="Willing to spend with bank yearly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":rs:"
-            id=":rs:-label"
+            for=":re:"
+            id=":re:-label"
           >
             Insurance
           </label>
@@ -1422,7 +1393,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rs:"
+              id=":re:"
+              placeholder="Willing to spend with bank yearly"
               type="number"
               value=""
             />
@@ -1441,15 +1413,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="On eligible cards monthly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":ru:"
-            id=":ru:-label"
+            for=":rf:"
+            id=":rf:-label"
           >
             Spending
           </label>
@@ -1459,7 +1429,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":ru:"
+              id=":rf:"
+              placeholder="On eligible cards monthly"
               type="number"
               value="1000"
             />
@@ -1478,15 +1449,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="Number of GIRO Transactions monthly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":r10:"
-            id=":r10:-label"
+            for=":rg:"
+            id=":rg:-label"
           >
             Giro Transactions
           </label>
@@ -1496,7 +1465,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r10:"
+              id=":rg:"
+              placeholder="No. of GIRO Transactions"
               type="number"
               value=""
             />
@@ -1515,15 +1485,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="How much your bank account value increases monthly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":r12:"
-            id=":r12:-label"
+            for=":rh:"
+            id=":rh:-label"
           >
             Account Increment
           </label>
@@ -1533,7 +1501,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r12:"
+              id=":rh:"
+              placeholder="Bank account increase per month"
               type="number"
               value="500"
             />
@@ -1552,15 +1521,13 @@ Object {
           </div>
         </div>
         <div
-          aria-label="The amount of loan you pay to the bank monthly"
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
-          data-mui-internal-clone-element="true"
         >
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":r14:"
-            id=":r14:-label"
+            for=":ri:"
+            id=":ri:-label"
           >
             Loan Installment
           </label>
@@ -1570,7 +1537,8 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r14:"
+              id=":ri:"
+              placeholder="Monthly loan payment"
               type="number"
               value=""
             />

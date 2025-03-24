@@ -6,65 +6,74 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-jb83sv-MuiPaper-root-MuiAppBar-root"
-        style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-10hp9qx-MuiPaper-root-MuiAppBar-root"
+        style="--Paper-shadow: none;"
       >
         <div
-          class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-h9njcz-MuiToolbar-root"
+          class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-yg49xf-MuiToolbar-root"
         >
-          <div
-            class="MuiBox-root css-1h2sv0j"
+          <h5
+            class="MuiTypography-root MuiTypography-h5 css-ylfd6q-MuiTypography-root"
           >
-            <img
-              alt="logo"
-              src="logo.svg"
-              style="max-width: 40px; border-radius: 50%;"
-            />
-            <div
-              class="MuiTypography-root MuiTypography-h6 css-1i9khe4-MuiTypography-root"
-            >
-              HYSA Calculator
-            </div>
-          </div>
+            SG HYSA Calculator
+          </h5>
           <div
-            class="MuiBox-root css-0"
+            class="MuiBox-root css-70qvj9"
           >
-            <button
-              aria-label="tips"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeLarge css-1i3my5j-MuiButtonBase-root-MuiIconButton-root"
+            <a
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-qtcx1a-MuiButtonBase-root-MuiIconButton-root"
+              href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
               tabindex="0"
-              type="button"
+              target="_blank"
             >
               <svg
                 aria-hidden="true"
                 class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                data-testid="TipsAndUpdatesIcon"
+                data-testid="ArticleIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M7 20h4c0 1.1-.9 2-2 2s-2-.9-2-2m-2-1h8v-2H5zm11.5-9.5c0 3.82-2.66 5.86-3.77 6.5H5.27c-1.11-.64-3.77-2.68-3.77-6.5C1.5 5.36 4.86 2 9 2s7.5 3.36 7.5 7.5m4.87-2.13L20 8l1.37.63L22 10l.63-1.37L24 8l-1.37-.63L22 6zM19 6l.94-2.06L22 3l-2.06-.94L19 0l-.94 2.06L16 3l2.06.94z"
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-5 14H7v-2h7zm3-4H7v-2h10zm0-4H7V7h10z"
                 />
               </svg>
-            </button>
-            <button
-              aria-label="info"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeLarge css-1i3my5j-MuiButtonBase-root-MuiIconButton-root"
+            </a>
+            <a
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-qtcx1a-MuiButtonBase-root-MuiIconButton-root"
+              href="https://jh123x.com"
               tabindex="0"
-              type="button"
+              target="_blank"
             >
               <svg
                 aria-hidden="true"
                 class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                data-testid="InfoIcon"
+                data-testid="HomeIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-6h2zm0-8h-2V7h2z"
+                  d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
                 />
               </svg>
-            </button>
+            </a>
+            <a
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-qtcx1a-MuiButtonBase-root-MuiIconButton-root"
+              href="https://github.com/jh123x/SG-HYSA-Calculator"
+              tabindex="0"
+              target="_blank"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="GitHubIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </header>
@@ -121,65 +130,74 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-jb83sv-MuiPaper-root-MuiAppBar-root"
-      style="--Paper-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-10hp9qx-MuiPaper-root-MuiAppBar-root"
+      style="--Paper-shadow: none;"
     >
       <div
-        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-h9njcz-MuiToolbar-root"
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-yg49xf-MuiToolbar-root"
       >
-        <div
-          class="MuiBox-root css-1h2sv0j"
+        <h5
+          class="MuiTypography-root MuiTypography-h5 css-ylfd6q-MuiTypography-root"
         >
-          <img
-            alt="logo"
-            src="logo.svg"
-            style="max-width: 40px; border-radius: 50%;"
-          />
-          <div
-            class="MuiTypography-root MuiTypography-h6 css-1i9khe4-MuiTypography-root"
-          >
-            HYSA Calculator
-          </div>
-        </div>
+          SG HYSA Calculator
+        </h5>
         <div
-          class="MuiBox-root css-0"
+          class="MuiBox-root css-70qvj9"
         >
-          <button
-            aria-label="tips"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeLarge css-1i3my5j-MuiButtonBase-root-MuiIconButton-root"
+          <a
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-qtcx1a-MuiButtonBase-root-MuiIconButton-root"
+            href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
             tabindex="0"
-            type="button"
+            target="_blank"
           >
             <svg
               aria-hidden="true"
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="TipsAndUpdatesIcon"
+              data-testid="ArticleIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M7 20h4c0 1.1-.9 2-2 2s-2-.9-2-2m-2-1h8v-2H5zm11.5-9.5c0 3.82-2.66 5.86-3.77 6.5H5.27c-1.11-.64-3.77-2.68-3.77-6.5C1.5 5.36 4.86 2 9 2s7.5 3.36 7.5 7.5m4.87-2.13L20 8l1.37.63L22 10l.63-1.37L24 8l-1.37-.63L22 6zM19 6l.94-2.06L22 3l-2.06-.94L19 0l-.94 2.06L16 3l2.06.94z"
+                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-5 14H7v-2h7zm3-4H7v-2h10zm0-4H7V7h10z"
               />
             </svg>
-          </button>
-          <button
-            aria-label="info"
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeLarge css-1i3my5j-MuiButtonBase-root-MuiIconButton-root"
+          </a>
+          <a
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-qtcx1a-MuiButtonBase-root-MuiIconButton-root"
+            href="https://jh123x.com"
             tabindex="0"
-            type="button"
+            target="_blank"
           >
             <svg
               aria-hidden="true"
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="InfoIcon"
+              data-testid="HomeIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-6h2zm0-8h-2V7h2z"
+                d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
               />
             </svg>
-          </button>
+          </a>
+          <a
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-qtcx1a-MuiButtonBase-root-MuiIconButton-root"
+            href="https://github.com/jh123x/SG-HYSA-Calculator"
+            tabindex="0"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="GitHubIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+              />
+            </svg>
+          </a>
         </div>
       </div>
     </header>
