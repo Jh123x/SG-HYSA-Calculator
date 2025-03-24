@@ -28,7 +28,12 @@ export const App = () => {
         }}
       />
       <Header />
-      <Container>
+      <Container
+        sx={{
+          marginTop: '20px', // Add spacing between the Header and the content
+          paddingBottom: '20px', // Add padding at the bottom for better spacing
+        }}
+      >
         <FormInputs currProfile={currProfile} setCurrProfile={setCurrProfile} />
         <Result profile={currProfile} />
       </Container>

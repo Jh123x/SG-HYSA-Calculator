@@ -1,16 +1,16 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { FormInputs } from "./Inputs";
-import Profile, { NewProfile } from "../types/profile";
+import { InterestGraph } from "./InterestGraph";
+import { NewProfile } from "../types/profile";
 
-describe("Form Inputs", () => {
+describe("Interest Graph", () => {
     it("should match snapshot if profile is empty", () => {
-        const tree = render(<FormInputs currProfile={NewProfile({})} setCurrProfile={(_: Profile) => { }}></FormInputs>)
+        const tree = render(<InterestGraph profile={NewProfile({})} />)
         expect(tree).toMatchSnapshot()
     })
     it("should match snapshot if profile is not empty", () => {
-        const tree = render(<FormInputs
-            currProfile={NewProfile({
+        const tree = render(<InterestGraph
+            profile={NewProfile({
                 Savings: 100000,
                 Salary: 3000,
                 Spending: 1000,
@@ -21,8 +21,7 @@ describe("Form Inputs", () => {
                 MonthlyAccIncrease: 500,
                 GiroTransactions: 0,
             })}
-            setCurrProfile={(_: Profile) => { }}
-        ></FormInputs>)
+        />)
         expect(tree).toMatchSnapshot()
     })
 })

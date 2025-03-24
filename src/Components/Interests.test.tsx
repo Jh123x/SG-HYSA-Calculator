@@ -10,7 +10,7 @@ describe("Result Table", () => {
 
     it("should match snapshot when results are full", () => {
         expect(
-            render(<Result profile={{
+            render(<Result profile={NewProfile({
                 Savings: 100000,
                 Salary: 3000,
                 Spending: 1000,
@@ -20,7 +20,8 @@ describe("Result Table", () => {
                 Age: 10,
                 MonthlyAccIncrease: 500,
                 GiroTransactions: 0,
-            }} />)
+                IsNTUCMember: false
+            })} />)
         ).toMatchSnapshot()
     })
 })
