@@ -25,7 +25,7 @@ export const bankInfo: Record<string, Info> = {
         remarks: <p>The calculation here excludes <br /> spending rebates included in their calculator.<br /> (Extra 200 a year if you spend 500/mth for a year)</p>,
         lastUpdated: "2025-01-08",
     },
-    "Maribank": {
+    "Maribank (Before 2025/04)": {
         interestFn: maribank_interest,
         url: "https://www.maribank.sg/product/mari-savings-account",
         remarks: <p>Interest rates are a flat {mariInterestRate}%<br />Capped at $100k</p>,
@@ -37,7 +37,7 @@ export const bankInfo: Record<string, Info> = {
         remarks: <p>Interest rates are a flat {mariNewInterestRate}%<br />Capped at $100k</p>,
         lastUpdated: "2025-03-21",
     },
-    "OCBC Bank": {
+    "OCBC Bank (Before 2025/05)": {
         interestFn: ocbc_interest,
         url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
         remarks: "For more information use the calculator on their website",

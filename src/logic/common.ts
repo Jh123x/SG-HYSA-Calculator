@@ -22,6 +22,4 @@ export const calculate_ir = (savings: number, interest: Interest): ResultInteres
     return new ResultInterest(total_interest + savings * interest.baseRatePercent / 100, total_savings)
 }
 
-export const placeholder_ir = (profile: Profile): ResultInterest => {
-    return new ResultInterest(0, 0)
-}
+export const placeholder_ir = (profile: Profile): ResultInterest => new ResultInterest(0, 0)

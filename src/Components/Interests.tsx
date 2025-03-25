@@ -5,6 +5,33 @@ import { primaryColor, bgColor, textColor } from "../consts/colors.ts"
 import Profile from "../types/profile.ts"
 import { bankInfo } from "../logic/constants.tsx"
 import { InterestGraph } from "./InterestGraph.tsx"
+import { ResultInterest } from "../types/interest_result.ts"
+
+function descendingComparator<T>(a: T, b: T, orderBy: keyof T) {
+    if (b[orderBy] < a[orderBy]) {
+        return -1;
+    }
+    if (b[orderBy] > a[orderBy]) {
+        return 1;
+    }
+    return 0;
+}
+
+type Order = 'asc' | 'desc';
+
+function getComparator<Key extends keyof any>(
+    order: Order,
+    orderBy: Key,
+): (
+    a: { [key in Key]: number | string },
+    b: { [key in Key]: number | string },
+) => number {
+    return order === 'desc'
+        ? (a, b) => descendingComparator(a, b, orderBy)
+        : (a, b) => -descendingComparator(a, b, orderBy);
+}
+
+
 
 export const Result = ({ profile }: { profile: Profile }) => {
     const results: Record<string, ResultProp> = {}
@@ -34,12 +61,12 @@ export const Result = ({ profile }: { profile: Profile }) => {
                 <Table>
                     <TableHead>
                         <ThemedTableRow>
-                            <ThemedTableCell>Account Name</ThemedTableCell>
-                            <ThemedTableCell>Yearly Interest</ThemedTableCell>
-                            <ThemedTableCell><>Effective Interest<br />Rate (EIR)</></ThemedTableCell>
-                            <ThemedTableCell>Webpage</ThemedTableCell>
-                            <ThemedTableCell>Remarks</ThemedTableCell>
-                            <ThemedTableCell>Updated at</ThemedTableCell>
+                            <ThemedHeader key="account_name">Account Name</ThemedHeader>
+                            <ThemedHeader key="yearly_interest">Yearly Interest</ThemedHeader>
+                            <ThemedHeader key="effective_interest"><>Effective Interest<br />Rate (EIR)</></ThemedHeader>
+                            <ThemedHeader key="webpage">Webpage</ThemedHeader>
+                            <ThemedHeader key="remark">Remarks</ThemedHeader>
+                            <ThemedHeader key="updated_at">Updated at</ThemedHeader>
                         </ThemedTableRow>
                     </TableHead>
                     <TableBody>
@@ -71,6 +98,19 @@ const displayResult = (bankName: string, info: ResultProp) => {
             <ThemedTableCell>{lastUpdated}</ThemedTableCell>
         </ThemedTableRow>
     )
+}
+
+const ThemedHeader = ({ children }: { children: ReactElement | string }) => {
+    return <TableCell
+        sx={{
+            color: textColor,
+            backgroundColor: bgColor,
+            "&:hover": { backgroundColor: primaryColor },
+            transition: "background-color 0.3s ease",
+        }}
+    >
+        {children}
+    </TableCell>
 }
 
 const ThemedTableRow = ({ children, bankName }: { children: Array<ReactElement>, bankName?: string }) => (
