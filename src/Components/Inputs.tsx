@@ -1,5 +1,5 @@
 import { Button, FormControl, Alert, Collapse, IconButton, TextField, Box, Checkbox, FormControlLabel, FormGroup, Tooltip, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Profile, { NewProfile } from "../types/profile.ts";
 import { STORE_KEY } from "../logic/constants.tsx";
 import { Check, Close, HelpOutline } from "@mui/icons-material";
@@ -97,15 +97,7 @@ export const FormInputs = ({
     const [hideModel, setHideModal] = useState<boolean>(true);
     const [modelMsg, setModalMsg] = useState<string>("");
 
-    const onSubmit = () => {
-        localStorage.setItem(STORE_KEY, JSON.stringify(currProfile));
-        setModalMsg("Save Success");
-        setHideModal(false);
-        setTimeout(() => {
-            if (!hideModel) return;
-            setHideModal(true);
-        }, 1500);
-    };
+    useEffect(() => { localStorage.setItem(STORE_KEY, JSON.stringify(currProfile)) }, [currProfile])
 
     const onClear = () => {
         setCurrProfile(NewProfile({}));
@@ -173,22 +165,6 @@ export const FormInputs = ({
                     gap: "15px",
                 }}
             >
-                <Button
-                    key="submit-btn"
-                    sx={{
-                        backgroundColor: primaryColor,
-                        color: "#fff",
-                        padding: "10px 20px",
-                        borderRadius: "8px",
-                        "&:hover": {
-                            backgroundColor: "#0056b3",
-                        },
-                    }}
-                    type="submit"
-                    onClick={onSubmit}
-                >
-                    Save locally
-                </Button>
                 <Button
                     key="clear-btn"
                     sx={{
@@ -308,24 +284,22 @@ const InputBooleanField = ({ tooltip, value, label, onChange }: Field<boolean>) 
 }
 
 const InputNumberField = ({ label, onChange, value, tooltip }: Field<number>) => {
-    const [inputValue, setInputValue] = useState<string>(value === 0 ? "" : value.toString());
-    const [isFocused, setIsFocused] = useState<boolean>(false);
+    const [inputValue, setInputValue] = useState<string>(value === 0 ? "" : value.toString())
+    const [isFocused, setIsFocused] = useState<boolean>(false)
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const newValue = e.target.value;
-        setInputValue(newValue);
+        const newValue = e.target.value
+        setInputValue(newValue)
 
-        // If empty string or 0, pass 0 to parent
         if (newValue === "" || newValue === "0") {
-            onChange(0);
-            return;
+            onChange(0)
+            return
         }
 
-        // Convert to number and validate
-        const numValue = Number(newValue);
-        if (!isNaN(numValue) && numValue >= 0) {
-            onChange(numValue);
-        }
+        const numValue = Number(newValue)
+        if (isNaN(numValue)) return
+        if (numValue <= 0) return
+        onChange(numValue)
     };
 
     return (
