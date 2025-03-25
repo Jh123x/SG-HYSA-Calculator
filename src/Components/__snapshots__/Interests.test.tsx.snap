@@ -2582,6 +2582,11 @@ Object {
               </clippath>
             </svg>
           </div>
+          <span
+            class="MuiTypography-root MuiTypography-caption css-u1vmxs-MuiTypography-root"
+          >
+            * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+          </span>
         </div>
       </div>
     </div>
@@ -5157,6 +5162,11 @@ Object {
             </clippath>
           </svg>
         </div>
+        <span
+          class="MuiTypography-root MuiTypography-caption css-u1vmxs-MuiTypography-root"
+        >
+          * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+        </span>
       </div>
     </div>
   </div>,
@@ -7693,6 +7703,11 @@ Object {
               </clippath>
             </svg>
           </div>
+          <span
+            class="MuiTypography-root MuiTypography-caption css-u1vmxs-MuiTypography-root"
+          >
+            * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+          </span>
         </div>
       </div>
     </div>
@@ -10179,6 +10194,11 @@ Object {
             </clippath>
           </svg>
         </div>
+        <span
+          class="MuiTypography-root MuiTypography-caption css-u1vmxs-MuiTypography-root"
+        >
+          * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+        </span>
       </div>
     </div>
   </div>,

@@ -13,7 +13,6 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleIcon from '@mui/icons-material/Article';
-import HomeIcon from '@mui/icons-material/Home';
 import { textColor } from '../consts/colors.ts';
 
 export const CustomAppBar = () => {
@@ -58,25 +57,35 @@ export const CustomAppBar = () => {
                 anchorEl={anchorEl}
                 open={Boolean(anchorEl)}
                 onClose={handleClose}
-                PaperProps={{
-                  elevation: 0,
-                  sx: {
-                    backgroundColor: theme.palette.background.paper,
-                    borderRadius: 2,
-                  },
+                slotProps={{
+                  paper: {
+                    elevation: 0,
+                    sx: {
+                      backgroundColor: theme.palette.background.paper,
+                      borderRadius: 2,
+                    },
+                  }
                 }}
               >
-                <MenuItem onClick={() => window.open('https://jh123x.com/blog/2024/high-yield-saving-accounts/', '_blank')}>
-                  <ArticleIcon sx={{ mr: 1 }} />
-                  Blog Post
+                <MenuItem>
+                  <IconButton
+                    href='https://jh123x.com'
+                    target='_blank'
+                    size='small'
+                  >
+                    <ArticleIcon sx={{ mr: 1 }} />
+                    Blog Post (2024)
+                  </IconButton>
                 </MenuItem>
-                <MenuItem onClick={() => window.open('https://jh123x.com', '_blank')}>
-                  <HomeIcon sx={{ mr: 1 }} />
-                  Website
-                </MenuItem>
-                <MenuItem onClick={() => window.open('https://github.com/jh123x/SG-HYSA-Calculator', '_blank')}>
-                  <GitHubIcon sx={{ mr: 1 }} />
-                  GitHub
+                <MenuItem>
+                  <IconButton
+                    href='https://github.com/jh123x/SG-HYSA-Calculator'
+                    target='_blank'
+                    size='small'
+                  >
+                    <GitHubIcon sx={{ mr: 1 }} />
+                    GitHub
+                  </IconButton>
                 </MenuItem>
               </Menu>
             </>
@@ -89,14 +98,6 @@ export const CustomAppBar = () => {
                 sx={{ color: textColor }}
               >
                 <ArticleIcon />
-              </IconButton>
-              <IconButton
-                size="large"
-                href="https://jh123x.com"
-                target='_blank'
-                sx={{ color: textColor }}
-              >
-                <HomeIcon />
               </IconButton>
               <IconButton
                 size="large"

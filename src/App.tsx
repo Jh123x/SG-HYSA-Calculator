@@ -30,8 +30,8 @@ export const App = () => {
       <Header />
       <Container
         sx={{
-          marginTop: '20px', // Add spacing between the Header and the content
-          paddingBottom: '20px', // Add padding at the bottom for better spacing
+          marginTop: '20px',
+          paddingBottom: '20px',
         }}
       >
         <FormInputs currProfile={currProfile} setCurrProfile={setCurrProfile} />

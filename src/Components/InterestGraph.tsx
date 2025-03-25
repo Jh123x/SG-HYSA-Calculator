@@ -29,20 +29,19 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
         </Paper>);
     }
 
-    // Generate savings data points
     const data: GraphData[] = Array.from({ length: 21 }, (_, i) => {
-        const savings = i * 10000;
+        const savings = i * 10_000
         const tmpProfile = {
             ...profile,
             Savings: savings
         }
-        const dataPoint: GraphData = { savings };
+        const dataPoint: GraphData = { savings }
 
         Object.entries(bankInfo).forEach(([key, value]) => {
             dataPoint[key] = value.interestFn(tmpProfile).toYearly();
-        });
+        })
 
-        return dataPoint;
+        return dataPoint
     });
 
     const series = Object.keys(bankInfo)
@@ -99,6 +98,18 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
                     },
                 }}
             />
+            <Typography
+                variant="caption"
+                sx={{
+                    color: textColor,
+                    display: "block",
+                    textAlign: "center",
+                    marginTop: "10px",
+                    opacity: 0.8,
+                }}
+            >
+                * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+            </Typography>
         </Paper>
     );
 };

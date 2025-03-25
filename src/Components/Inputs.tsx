@@ -32,21 +32,21 @@ const attrs: Array<InputArg<number>> = [
     },
     {
         label: "Salary",
-        tooltip: "Must be credited to bank monthly",
+        tooltip: "Credited to bank monthlys",
         inputType: "number",
         fn: (profile, v) => ({ ...profile, Salary: v }),
         getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Salary),
     },
     {
         label: "Investment",
-        tooltip: "Willing to spend with bank yearly",
+        tooltip: "Pay to bank yearly",
         inputType: "number",
         fn: (profile, v) => ({ ...profile, Investment: v }),
         getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Investment),
     },
     {
         label: "Insurance",
-        tooltip: "Willing to spend with bank yearly",
+        tooltip: "Pay to bank yearly",
         inputType: "number",
         fn: (profile, v) => ({ ...profile, Insurance: v }),
         getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Insurance),
@@ -68,7 +68,7 @@ const attrs: Array<InputArg<number>> = [
     {
         label: "Account Increment",
         inputType: "number",
-        tooltip: "Bank account increase per month",
+        tooltip: "Balance increase monthly",
         fn: (profile, v) => ({ ...profile, MonthlyAccIncrease: v }),
         getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.MonthlyAccIncrease),
     },
@@ -141,7 +141,7 @@ export const FormInputs = ({
                                 inputType={inputType}
                                 tooltip={tooltip}
                                 onChange={(value) => setCurrProfile(fn(currProfile, Number(value)))}
-                                value={value === 0 ? "" : value}
+                                value={value}
                             />
                         );
                     })}

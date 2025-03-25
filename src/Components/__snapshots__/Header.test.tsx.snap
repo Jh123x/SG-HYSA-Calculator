@@ -100,7 +100,7 @@ Object {
         <div
           class="MuiAlert-message css-zioonp-MuiAlert-message"
         >
-          You do not need to key in 0 values.
+          Tip: Leave fields empty instead of entering zeros
         </div>
         <div
           class="MuiAlert-action css-rgppqo-MuiAlert-action"
@@ -224,7 +224,7 @@ Object {
       <div
         class="MuiAlert-message css-zioonp-MuiAlert-message"
       >
-        You do not need to key in 0 values.
+        Tip: Leave fields empty instead of entering zeros
       </div>
       <div
         class="MuiAlert-action css-rgppqo-MuiAlert-action"

@@ -23,7 +23,7 @@ export const Header = () => {
                     }}
                     onClose={() => setShowAlert(false)}
                 >
-                    You do not need to key in 0 values.
+                    Tip: Leave fields empty instead of entering zeros
                 </Alert>
             )}
         </>
