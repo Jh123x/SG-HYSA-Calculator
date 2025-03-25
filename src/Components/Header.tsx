@@ -9,6 +9,7 @@ import {
   Menu,
   MenuItem,
   useMediaQuery,
+  Alert,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -19,6 +20,7 @@ export const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery('(max-width:600px)');
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [showAlert, setShowAlert] = React.useState(true)
 
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -111,6 +113,21 @@ export const Header = () => {
           )}
         </Box>
       </Toolbar>
+      <Alert
+        severity="info"
+        sx={{
+          display: showAlert ? '' : 'none',
+          position: 'fixed',
+          bottom: "10px",
+          color: "#fff",
+          right: "10px",
+          borderRadius: "8px",
+          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+        }}
+        onClose={() => setShowAlert(false)}
+      >
+        You do not need to key in 0 values
+      </Alert>
     </AppBar>
   );
 };
