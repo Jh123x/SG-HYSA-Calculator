@@ -40,24 +40,6 @@ Object {
             </a>
             <a
               class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-qtcx1a-MuiButtonBase-root-MuiIconButton-root"
-              href="https://jh123x.com"
-              tabindex="0"
-              target="_blank"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-                data-testid="HomeIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
-                />
-              </svg>
-            </a>
-            <a
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-qtcx1a-MuiButtonBase-root-MuiIconButton-root"
               href="https://github.com/jh123x/SG-HYSA-Calculator"
               tabindex="0"
               target="_blank"
@@ -159,24 +141,6 @@ Object {
             >
               <path
                 d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-5 14H7v-2h7zm3-4H7v-2h10zm0-4H7V7h10z"
-              />
-            </svg>
-          </a>
-          <a
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-qtcx1a-MuiButtonBase-root-MuiIconButton-root"
-            href="https://jh123x.com"
-            tabindex="0"
-            target="_blank"
-          >
-            <svg
-              aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-              data-testid="HomeIcon"
-              focusable="false"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
               />
             </svg>
           </a>
