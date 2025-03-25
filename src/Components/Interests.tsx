@@ -6,11 +6,11 @@ import Profile from "../types/profile.ts"
 import { bankInfo } from "../logic/constants.tsx"
 import { InterestGraph } from "./InterestGraph.tsx"
 
-type SortableColumns = 'name' | 'yearlyInterest' | 'effectiveInterest';
+type SortableColumns = 'name' | 'yearlyInterest' | 'effectiveInterest' | undefined;
 
 export const Result = ({ profile }: { profile: Profile }) => {
-    const [orderBy, setOrderBy] = useState<SortableColumns>('yearlyInterest');
-    const [order, setOrder] = useState<'asc' | 'desc'>('desc');
+    const [orderBy, setOrderBy] = useState<SortableColumns>(undefined);
+    const [order, setOrder] = useState<'asc' | 'desc' | undefined>('desc');
 
     const results: Record<string, ResultProp> = {}
     for (const [name, info] of Object.entries(bankInfo)) {
@@ -23,9 +23,18 @@ export const Result = ({ profile }: { profile: Profile }) => {
     }
 
     const handleSort = (column: SortableColumns) => {
-        const isAsc = orderBy === column && order === 'asc';
-        setOrder(isAsc ? 'desc' : 'asc');
+        if (orderBy === column) {
+            // Cycle through 'asc', 'desc', and ''
+            const nextOrder = order === 'asc' ? 'desc' : order === 'desc' ? undefined : 'asc';
+            setOrder(nextOrder);
+            if (nextOrder === undefined) {
+                setOrderBy(undefined); // Disable sorting
+            }
+            return
+        }
+
         setOrderBy(column);
+        setOrder('asc'); // Default to 'asc' when switching columns
     };
 
     const sortedResults = Object.entries(results).sort((a, b) => {

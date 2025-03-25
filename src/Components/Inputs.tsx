@@ -337,7 +337,7 @@ const InputNumberField = ({ label, onChange, value, tooltip }: Field<number>) =>
                 }}
             >
                 <Typography>{label}</Typography>
-                {(isFocused || value != 0) && (
+                {(isFocused || value !== 0) && (
                     <Tooltip title={tooltip} placement="right">
                         <HelpOutline
                             fontSize="small"
@@ -355,6 +355,8 @@ const InputNumberField = ({ label, onChange, value, tooltip }: Field<number>) =>
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
             sx={{
+                '& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button': { display: 'none' },
+                '& input[type=number]': { MozAppearance: 'textfield' },
                 width: { xs: "100%", sm: "250px" },
                 backgroundColor: bgColor,
                 borderRadius: "8px",

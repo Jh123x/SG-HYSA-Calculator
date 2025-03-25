@@ -44,6 +44,19 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
         return dataPoint
     });
 
+    // Add user's actual data point
+    const userPoint: GraphData = { savings: profile.Savings }
+    Object.entries(bankInfo).forEach(([key, value]) => {
+        userPoint[key] = value.interestFn(profile).toYearly();
+    });
+
+    const insertIndex = data.findIndex((point) => point.savings > profile.Savings);
+    if (insertIndex >= 0) {
+        data.splice(insertIndex, 0, userPoint);
+    } else {
+        data.push(userPoint);
+    }
+
     const series = Object.keys(bankInfo)
         .filter(bankName => data.some(point => point[bankName] > 0))
         .map((bankName) => ({
