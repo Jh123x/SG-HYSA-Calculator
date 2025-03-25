@@ -36,7 +36,7 @@ const numericalInputs: Array<InputArg<number>> = [
     },
     {
         label: "Salary",
-        tooltip: "Credited to bank monthlys",
+        tooltip: "Credited to bank monthly",
         fn: (profile, v) => ({ ...profile, Salary: v }),
         getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.Salary),
     },
