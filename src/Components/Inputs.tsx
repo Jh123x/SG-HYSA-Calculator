@@ -12,6 +12,13 @@ interface InputArg<Type> {
     getStateFromProfile: (profile: Profile) => Type;
 }
 
+interface Field<Type> {
+    label: string
+    onChange: (Type) => void
+    value: Type | ""
+    tooltip?: string
+}
+
 const makeDefaultNumber = (value?: number): number => (value === undefined || value === 0 ? 0 : value);
 
 const numericalInputs: Array<InputArg<number>> = [
@@ -244,13 +251,6 @@ const SaveAlert = ({
     );
 };
 
-interface Field<Type> {
-    label: string | React.ReactNode
-    onChange: (Type) => void
-    value: Type | ""
-    tooltip?: string
-}
-
 const InputBooleanField = ({ tooltip, value, label, onChange }: Field<boolean>) => {
     return (
         <Tooltip
@@ -307,7 +307,7 @@ const InputBooleanField = ({ tooltip, value, label, onChange }: Field<boolean>) 
     )
 }
 
-const InputNumberField = ({ label, onChange, value,  tooltip }: Field<number>) => {
+const InputNumberField = ({ label, onChange, value, tooltip }: Field<number>) => {
     return (
         <TextField
             label={<div
