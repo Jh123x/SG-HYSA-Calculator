@@ -337,7 +337,7 @@ const InputNumberField = ({ label, onChange, value, tooltip }: Field<number>) =>
                 }}
             >
                 <Typography>{label}</Typography>
-                {isFocused && (
+                {(isFocused || value != 0) && (
                     <Tooltip title={tooltip} placement="right">
                         <HelpOutline
                             fontSize="small"
