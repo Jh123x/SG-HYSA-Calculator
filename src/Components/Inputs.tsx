@@ -1,83 +1,82 @@
-import { Button, FormControl, Alert, Collapse, IconButton, TextField, Box, Checkbox, FormControlLabel, FormGroup, Tooltip } from "@mui/material";
+import { Button, FormControl, Alert, Collapse, IconButton, TextField, Box, Checkbox, FormControlLabel, FormGroup, Tooltip, Typography } from "@mui/material";
 import React, { useState } from "react";
 import Profile, { NewProfile } from "../types/profile.ts";
 import { STORE_KEY } from "../logic/constants.tsx";
-import { Check, Close } from "@mui/icons-material";
+import { Check, Close, HelpOutline } from "@mui/icons-material";
 import { primaryColor, bgColor, textColor, dangerColor } from "../consts/colors.ts";
 
 interface InputArg<Type> {
-    label: string;
-    inputType?: React.HTMLInputTypeAttribute;
-    tooltip: string;
+    label: Readonly<string>;
+    tooltip: Readonly<string>;
     fn: (profile: Profile, value: Type) => Profile;
     getStateFromProfile: (profile: Profile) => Type;
 }
 
-const makeDefaultValue = (value?: number): number => (value === undefined || value === 0 ? 0 : value);
+const makeDefaultNumber = (value?: number): number => (value === undefined || value === 0 ? 0 : value);
 
-const attrs: Array<InputArg<number>> = [
+const numericalInputs: Array<InputArg<number>> = [
     {
         label: "Savings",
         tooltip: "To be deposited at bank",
-        inputType: "number",
         fn: (profile, v) => ({ ...profile, Savings: v }),
-        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Savings),
+        getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.Savings),
     },
     {
         label: "Age",
-        inputType: "number",
         tooltip: "Current age",
         fn: (profile, v) => ({ ...profile, Age: v }),
-        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Age),
+        getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.Age),
     },
     {
         label: "Salary",
         tooltip: "Credited to bank monthlys",
-        inputType: "number",
         fn: (profile, v) => ({ ...profile, Salary: v }),
-        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Salary),
+        getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.Salary),
     },
     {
         label: "Investment",
         tooltip: "Pay to bank yearly",
-        inputType: "number",
         fn: (profile, v) => ({ ...profile, Investment: v }),
-        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Investment),
+        getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.Investment),
     },
     {
         label: "Insurance",
         tooltip: "Pay to bank yearly",
-        inputType: "number",
         fn: (profile, v) => ({ ...profile, Insurance: v }),
-        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Insurance),
+        getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.Insurance),
     },
     {
         label: "Spending",
-        inputType: "number",
         tooltip: "On eligible cards monthly",
         fn: (profile, v) => ({ ...profile, Spending: v }),
-        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.Spending),
+        getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.Spending),
     },
     {
         label: "Giro Transactions",
-        inputType: "number",
         tooltip: "No. of GIRO Transactions",
         fn: (profile, v) => ({ ...profile, GiroTransactions: v }),
-        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.GiroTransactions),
+        getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.GiroTransactions),
     },
     {
         label: "Account Increment",
-        inputType: "number",
         tooltip: "Balance increase monthly",
         fn: (profile, v) => ({ ...profile, MonthlyAccIncrease: v }),
-        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.MonthlyAccIncrease),
+        getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.MonthlyAccIncrease),
     },
     {
         label: "Loan Installment",
-        inputType: "number",
         tooltip: "Monthly loan payment",
         fn: (profile, v) => ({ ...profile, LoanInstallment: v }),
-        getStateFromProfile: (profile: Profile) => makeDefaultValue(profile.LoanInstallment),
+        getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.LoanInstallment),
+    },
+];
+
+const booleanInputs: Array<InputArg<boolean>> = [
+    {
+        label: "NTUC Member?",
+        tooltip: "Is/Willing to be NTUC Member",
+        fn: (profile, v) => ({ ...profile, IsNTUCMember: v }),
+        getStateFromProfile: (profile: Profile) => profile.IsNTUCMember,
     },
 ];
 
@@ -131,79 +130,31 @@ export const FormInputs = ({
                         justifyContent: "center",
                     }}
                 >
-                    {attrs.map(({ label, inputType, getStateFromProfile, fn, tooltip }) => {
+                    {numericalInputs.map(({ label, getStateFromProfile, fn, tooltip }) => {
                         const value = getStateFromProfile(currProfile);
                         return (
-                            <InputField
-                                label={label}
+                            <InputNumberField
                                 key={label.replace(" ", "_") + "_input_field"}
-                                textKey={label.replace(" ", "_")}
-                                inputType={inputType}
+                                label={label}
                                 tooltip={tooltip}
                                 onChange={(value) => setCurrProfile(fn(currProfile, Number(value)))}
                                 value={value}
                             />
                         );
                     })}
-                    <Tooltip
-                        title="Is/Willing to join NTUC membership"
-                        placement="top"
-                        arrow
-                        enterTouchDelay={0}
-                        leaveTouchDelay={3000}
-                    >
-                        <Box
-                            sx={{
-                                width: { xs: "100%", sm: "250px" },
-                                display: "flex",
-                                justifyContent: "center",
-                            }}
-                        >
-                            <FormControlLabel
-                                control={
-                                    <Checkbox
-                                        checked={currProfile.IsNTUCMember}
-                                        onChange={() =>
-                                            setCurrProfile({
-                                                ...currProfile,
-                                                IsNTUCMember: !currProfile.IsNTUCMember,
-                                            })
-                                        }
-                                        sx={{
-                                            color: textColor,
-                                            '&.Mui-checked': {
-                                                color: primaryColor,
-                                            },
-                                            '& .MuiSvgIcon-root': {
-                                                fontSize: { xs: "1.2rem", sm: "1.4rem" },
-                                            },
-                                        }}
-                                    />
-                                }
-                                label="NTUC Member"
-                                sx={{
-                                    width: "100%",
-                                    margin: 0,
-                                    backgroundColor: bgColor,
-                                    padding: "8px 16px",
-                                    borderRadius: "8px",
-                                    border: '1px solid rgba(0, 0, 0, 0.12)',
-                                    transition: 'all 0.2s ease-in-out',
-                                    '@media (hover: hover)': {
-                                        '&:hover': {
-                                            borderColor: primaryColor,
-                                            backgroundColor: 'rgba(0, 0, 0, 0.04)',
-                                        },
-                                    },
-                                    '& .MuiFormControlLabel-label': {
-                                        color: textColor,
-                                        fontSize: { xs: "0.9rem", sm: "1rem" },
-                                        fontWeight: 500,
-                                    },
-                                }}
+                    {
+                        booleanInputs.map(({ label, getStateFromProfile, fn, tooltip }) => {
+                            const value = getStateFromProfile(currProfile)
+                            return <InputBooleanField
+                                key={label.replace(" ", "_") + "_input_field"}
+                                label={label}
+                                tooltip={tooltip}
+                                onChange={(value) => setCurrProfile(fn(currProfile, !value))}
+                                value={value}
                             />
-                        </Box>
-                    </Tooltip>
+                        })
+                    }
+
                 </FormGroup>
             </FormControl>
             <Box
@@ -293,22 +244,91 @@ const SaveAlert = ({
     );
 };
 
-interface Field {
-    label: string
-    onChange: (string) => any
-    value: number | ""
-    inputType?: React.HTMLInputTypeAttribute
-    textKey: string
+interface Field<Type> {
+    label: string | React.ReactNode
+    onChange: (Type) => void
+    value: Type | ""
     tooltip?: string
 }
 
-const InputField = ({ label, inputType, onChange, value, textKey, tooltip }: Field) => {
+const InputBooleanField = ({ tooltip, value, label, onChange }: Field<boolean>) => {
+    return (
+        <Tooltip
+            title={tooltip}
+            placement="top"
+            enterTouchDelay={0}
+            leaveTouchDelay={3000}
+        >
+            <Box
+                sx={{
+                    width: { xs: "100%", sm: "250px" },
+                    display: "flex",
+                    justifyContent: "center",
+                }}
+            >
+                <FormControlLabel
+                    control={
+                        <Checkbox
+                            checked={value === "" ? false : value}
+                            onChange={() => onChange(value)}
+                            sx={{
+                                color: textColor,
+                                '&.Mui-checked': { color: primaryColor, },
+                                '& .MuiSvgIcon-root': {
+                                    fontSize: { xs: "1.2rem", sm: "1.4rem" },
+                                },
+                            }}
+                        />
+                    }
+                    label={label}
+                    sx={{
+                        width: "100%",
+                        margin: 0,
+                        backgroundColor: bgColor,
+                        padding: "8px 16px",
+                        borderRadius: "8px",
+                        border: '1px solid rgba(0, 0, 0, 0.12)',
+                        transition: 'all 0.2s ease-in-out',
+                        '@media (hover: hover)': {
+                            '&:hover': {
+                                borderColor: primaryColor,
+                                backgroundColor: 'rgba(0, 0, 0, 0.04)',
+                            },
+                        },
+                        '& .MuiFormControlLabel-label': {
+                            color: textColor,
+                            fontSize: { xs: "0.9rem", sm: "1rem" },
+                            fontWeight: 500,
+                        },
+                    }}
+                />
+            </Box>
+        </Tooltip>
+    )
+}
+
+const InputNumberField = ({ label, onChange, value,  tooltip }: Field<number>) => {
     return (
         <TextField
-            label={label}
-            type={inputType ?? ""}
+            label={<div
+                style={{
+                    display: "flex",
+                    flexDirection: "row",
+                }}
+            >
+                <Typography>{label}</Typography>
+                <Tooltip
+                    title={tooltip}
+                    placement="right"
+                >
+                    <HelpOutline
+                        fontSize="small"
+                        sx={{ p: "0px 5px" }}
+                    />
+                </Tooltip>
+            </div>}
+            type="number"
             variant="outlined"
-            key={textKey}
             placeholder={tooltip}
             sx={{
                 width: { xs: "100%", sm: "250px" },
@@ -334,7 +354,11 @@ const InputField = ({ label, inputType, onChange, value, textKey, tooltip }: Fie
                     color: primaryColor,
                 },
             }}
-            onChange={(e) => onChange(e.target.value)}
+            onChange={(e) => {
+                const targetValue = Number(e.target.value)
+                if (targetValue < 0) return
+                onChange(targetValue)
+            }}
             value={value}
         />
     );
