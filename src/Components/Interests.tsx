@@ -1,39 +1,17 @@
-import React, { ReactElement } from "react"
-import { Container, Link, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, Paper } from "@mui/material"
+import React, { ReactElement, useState } from "react"
+import { Container, Link, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, Paper, TableSortLabel } from "@mui/material"
 import { ResultProp } from "../types/props"
 import { primaryColor, bgColor, textColor } from "../consts/colors.ts"
 import Profile from "../types/profile.ts"
 import { bankInfo } from "../logic/constants.tsx"
 import { InterestGraph } from "./InterestGraph.tsx"
-import { ResultInterest } from "../types/interest_result.ts"
 
-function descendingComparator<T>(a: T, b: T, orderBy: keyof T) {
-    if (b[orderBy] < a[orderBy]) {
-        return -1;
-    }
-    if (b[orderBy] > a[orderBy]) {
-        return 1;
-    }
-    return 0;
-}
-
-type Order = 'asc' | 'desc';
-
-function getComparator<Key extends keyof any>(
-    order: Order,
-    orderBy: Key,
-): (
-    a: { [key in Key]: number | string },
-    b: { [key in Key]: number | string },
-) => number {
-    return order === 'desc'
-        ? (a, b) => descendingComparator(a, b, orderBy)
-        : (a, b) => -descendingComparator(a, b, orderBy);
-}
-
-
+type SortableColumns = 'name' | 'yearlyInterest' | 'effectiveInterest';
 
 export const Result = ({ profile }: { profile: Profile }) => {
+    const [orderBy, setOrderBy] = useState<SortableColumns>('yearlyInterest');
+    const [order, setOrder] = useState<'asc' | 'desc'>('desc');
+
     const results: Record<string, ResultProp> = {}
     for (const [name, info] of Object.entries(bankInfo)) {
         results[name] = {
@@ -43,6 +21,31 @@ export const Result = ({ profile }: { profile: Profile }) => {
             lastUpdated: info.lastUpdated,
         }
     }
+
+    const handleSort = (column: SortableColumns) => {
+        const isAsc = orderBy === column && order === 'asc';
+        setOrder(isAsc ? 'desc' : 'asc');
+        setOrderBy(column);
+    };
+
+    const sortedResults = Object.entries(results).sort((a, b) => {
+        switch (orderBy) {
+            case 'name':
+                return order === 'asc'
+                    ? a[0].localeCompare(b[0])
+                    : b[0].localeCompare(a[0]);
+            case 'yearlyInterest':
+                return order === 'asc'
+                    ? a[1].interest.toYearly() - b[1].interest.toYearly()
+                    : b[1].interest.toYearly() - a[1].interest.toYearly();
+            case 'effectiveInterest':
+                return order === 'asc'
+                    ? a[1].interest.toYearlyPercent() - b[1].interest.toYearlyPercent()
+                    : b[1].interest.toYearlyPercent() - a[1].interest.toYearlyPercent();
+            default:
+                return 0;
+        }
+    });
 
     return (
         <Container sx={{
@@ -61,16 +64,55 @@ export const Result = ({ profile }: { profile: Profile }) => {
                 <Table>
                     <TableHead>
                         <ThemedTableRow>
-                            <ThemedHeader key="account_name">Account Name</ThemedHeader>
-                            <ThemedHeader key="yearly_interest">Yearly Interest</ThemedHeader>
-                            <ThemedHeader key="effective_interest"><>Effective Interest<br />Rate (EIR)</></ThemedHeader>
+                            <ThemedHeader key="account_name">
+                                <TableSortLabel
+                                    active={orderBy === 'name'}
+                                    direction={orderBy === 'name' ? order : 'asc'}
+                                    onClick={() => handleSort('name')}
+                                    sx={{
+                                        '& .MuiTableSortLabel-icon': {
+                                            color: `${textColor} !important`,
+                                        },
+                                    }}
+                                >
+                                    Account Name
+                                </TableSortLabel>
+                            </ThemedHeader>
+                            <ThemedHeader key="yearly_interest">
+                                <TableSortLabel
+                                    active={orderBy === 'yearlyInterest'}
+                                    direction={orderBy === 'yearlyInterest' ? order : 'asc'}
+                                    onClick={() => handleSort('yearlyInterest')}
+                                    sx={{
+                                        '& .MuiTableSortLabel-icon': {
+                                            color: `${textColor} !important`,
+                                        },
+                                    }}
+                                >
+                                    Yearly Interest
+                                </TableSortLabel>
+                            </ThemedHeader>
+                            <ThemedHeader key="effective_interest">
+                                <TableSortLabel
+                                    active={orderBy === 'effectiveInterest'}
+                                    direction={orderBy === 'effectiveInterest' ? order : 'asc'}
+                                    onClick={() => handleSort('effectiveInterest')}
+                                    sx={{
+                                        '& .MuiTableSortLabel-icon': {
+                                            color: `${textColor} !important`,
+                                        },
+                                    }}
+                                >
+                                    Effective Interest<br />Rate (EIR)
+                                </TableSortLabel>
+                            </ThemedHeader>
                             <ThemedHeader key="webpage">Webpage</ThemedHeader>
                             <ThemedHeader key="remark">Remarks</ThemedHeader>
                             <ThemedHeader key="updated_at">Updated at</ThemedHeader>
                         </ThemedTableRow>
                     </TableHead>
                     <TableBody>
-                        {Object.entries(results).map(([bankName, interest]) => displayResult(bankName, interest))}
+                        {sortedResults.map(([bankName, interest]) => displayResult(bankName, interest))}
                     </TableBody>
                 </Table>
             </TableContainer>
@@ -105,13 +147,15 @@ const ThemedHeader = ({ children }: { children: ReactElement | string }) => {
         sx={{
             color: textColor,
             backgroundColor: bgColor,
+            padding: "10px 15px",
             "&:hover": { backgroundColor: primaryColor },
             transition: "background-color 0.3s ease",
+            cursor: "pointer",
         }}
     >
         {children}
     </TableCell>
-}
+};
 
 const ThemedTableRow = ({ children, bankName }: { children: Array<ReactElement>, bankName?: string }) => (
     <TableRow

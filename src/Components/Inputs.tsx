@@ -308,6 +308,26 @@ const InputBooleanField = ({ tooltip, value, label, onChange }: Field<boolean>) 
 }
 
 const InputNumberField = ({ label, onChange, value, tooltip }: Field<number>) => {
+    const [inputValue, setInputValue] = useState<string>(value === 0 ? "" : value.toString());
+    const [isFocused, setIsFocused] = useState<boolean>(false);
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const newValue = e.target.value;
+        setInputValue(newValue);
+
+        // If empty string or 0, pass 0 to parent
+        if (newValue === "" || newValue === "0") {
+            onChange(0);
+            return;
+        }
+
+        // Convert to number and validate
+        const numValue = Number(newValue);
+        if (!isNaN(numValue) && numValue >= 0) {
+            onChange(numValue);
+        }
+    };
+
     return (
         <TextField
             label={<div
@@ -317,19 +337,23 @@ const InputNumberField = ({ label, onChange, value, tooltip }: Field<number>) =>
                 }}
             >
                 <Typography>{label}</Typography>
-                <Tooltip
-                    title={tooltip}
-                    placement="right"
-                >
-                    <HelpOutline
-                        fontSize="small"
-                        sx={{ p: "0px 5px" }}
-                    />
-                </Tooltip>
+                {isFocused && (
+                    <Tooltip title={tooltip} placement="right">
+                        <HelpOutline
+                            fontSize="small"
+                            sx={{
+                                p: "0px 5px",
+                                transition: 'opacity 0.2s ease-in-out',
+                            }}
+                        />
+                    </Tooltip>
+                )}
             </div>}
             type="number"
             variant="outlined"
             placeholder={tooltip}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
             sx={{
                 width: { xs: "100%", sm: "250px" },
                 backgroundColor: bgColor,
@@ -354,12 +378,8 @@ const InputNumberField = ({ label, onChange, value, tooltip }: Field<number>) =>
                     color: primaryColor,
                 },
             }}
-            onChange={(e) => {
-                const targetValue = Number(e.target.value)
-                if (targetValue < 0) return
-                onChange(targetValue)
-            }}
-            value={value}
+            onChange={handleChange}
+            value={inputValue}
         />
     );
 };

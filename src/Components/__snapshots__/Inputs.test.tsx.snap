@@ -15,8 +15,8 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
               for=":r0:"
               id=":r0:-label"
             >
@@ -28,19 +28,6 @@ Object {
                 >
                   Savings
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="To be deposited at bank"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -52,14 +39,14 @@ Object {
                 id=":r0:"
                 placeholder="To be deposited at bank"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -70,19 +57,6 @@ Object {
                       >
                         Savings
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="To be deposited at bank"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -93,10 +67,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":r3:"
-              id=":r3:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":r1:"
+              id=":r1:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -106,19 +80,6 @@ Object {
                 >
                   Age
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Current age"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -127,17 +88,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r3:"
+                id=":r1:"
                 placeholder="Current age"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -148,19 +109,6 @@ Object {
                       >
                         Age
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Current age"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -171,10 +119,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":r6:"
-              id=":r6:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":r2:"
+              id=":r2:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -184,19 +132,6 @@ Object {
                 >
                   Salary
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Credited to bank monthlys"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -205,17 +140,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r6:"
+                id=":r2:"
                 placeholder="Credited to bank monthlys"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -226,19 +161,6 @@ Object {
                       >
                         Salary
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Credited to bank monthlys"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -249,10 +171,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":r9:"
-              id=":r9:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":r3:"
+              id=":r3:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -262,19 +184,6 @@ Object {
                 >
                   Investment
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Pay to bank yearly"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -283,17 +192,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r9:"
+                id=":r3:"
                 placeholder="Pay to bank yearly"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -304,19 +213,6 @@ Object {
                       >
                         Investment
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Pay to bank yearly"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -327,10 +223,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":rc:"
-              id=":rc:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":r4:"
+              id=":r4:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -340,19 +236,6 @@ Object {
                 >
                   Insurance
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Pay to bank yearly"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -361,17 +244,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rc:"
+                id=":r4:"
                 placeholder="Pay to bank yearly"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -382,19 +265,6 @@ Object {
                       >
                         Insurance
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Pay to bank yearly"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -405,10 +275,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":rf:"
-              id=":rf:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":r5:"
+              id=":r5:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -418,19 +288,6 @@ Object {
                 >
                   Spending
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="On eligible cards monthly"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -439,17 +296,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rf:"
+                id=":r5:"
                 placeholder="On eligible cards monthly"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -460,19 +317,6 @@ Object {
                       >
                         Spending
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="On eligible cards monthly"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -483,10 +327,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":ri:"
-              id=":ri:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":r6:"
+              id=":r6:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -496,19 +340,6 @@ Object {
                 >
                   Giro Transactions
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="No. of GIRO Transactions"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -517,17 +348,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":ri:"
+                id=":r6:"
                 placeholder="No. of GIRO Transactions"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -538,19 +369,6 @@ Object {
                       >
                         Giro Transactions
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="No. of GIRO Transactions"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -561,10 +379,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":rl:"
-              id=":rl:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":r7:"
+              id=":r7:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -574,19 +392,6 @@ Object {
                 >
                   Account Increment
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Balance increase monthly"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -595,17 +400,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rl:"
+                id=":r7:"
                 placeholder="Balance increase monthly"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -616,19 +421,6 @@ Object {
                       >
                         Account Increment
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Balance increase monthly"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -639,10 +431,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":ro:"
-              id=":ro:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":r8:"
+              id=":r8:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -652,19 +444,6 @@ Object {
                 >
                   Loan Installment
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Monthly loan payment"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -673,17 +452,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":ro:"
+                id=":r8:"
                 placeholder="Monthly loan payment"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -694,19 +473,6 @@ Object {
                       >
                         Loan Installment
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Monthly loan payment"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -781,8 +547,8 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
             for=":r0:"
             id=":r0:-label"
           >
@@ -794,19 +560,6 @@ Object {
               >
                 Savings
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="To be deposited at bank"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -818,14 +571,14 @@ Object {
               id=":r0:"
               placeholder="To be deposited at bank"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -836,19 +589,6 @@ Object {
                     >
                       Savings
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="To be deposited at bank"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -859,10 +599,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":r3:"
-            id=":r3:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r1:"
+            id=":r1:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -872,19 +612,6 @@ Object {
               >
                 Age
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Current age"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -893,17 +620,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r3:"
+              id=":r1:"
               placeholder="Current age"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -914,19 +641,6 @@ Object {
                     >
                       Age
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Current age"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -937,10 +651,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":r6:"
-            id=":r6:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r2:"
+            id=":r2:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -950,19 +664,6 @@ Object {
               >
                 Salary
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Credited to bank monthlys"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -971,17 +672,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r6:"
+              id=":r2:"
               placeholder="Credited to bank monthlys"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -992,19 +693,6 @@ Object {
                     >
                       Salary
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Credited to bank monthlys"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -1015,10 +703,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":r9:"
-            id=":r9:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r3:"
+            id=":r3:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -1028,19 +716,6 @@ Object {
               >
                 Investment
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Pay to bank yearly"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -1049,17 +724,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r9:"
+              id=":r3:"
               placeholder="Pay to bank yearly"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -1070,19 +745,6 @@ Object {
                     >
                       Investment
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Pay to bank yearly"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -1093,10 +755,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":rc:"
-            id=":rc:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r4:"
+            id=":r4:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -1106,19 +768,6 @@ Object {
               >
                 Insurance
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Pay to bank yearly"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -1127,17 +776,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rc:"
+              id=":r4:"
               placeholder="Pay to bank yearly"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -1148,19 +797,6 @@ Object {
                     >
                       Insurance
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Pay to bank yearly"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -1171,10 +807,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":rf:"
-            id=":rf:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r5:"
+            id=":r5:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -1184,19 +820,6 @@ Object {
               >
                 Spending
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="On eligible cards monthly"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -1205,17 +828,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rf:"
+              id=":r5:"
               placeholder="On eligible cards monthly"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -1226,19 +849,6 @@ Object {
                     >
                       Spending
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="On eligible cards monthly"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -1249,10 +859,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":ri:"
-            id=":ri:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r6:"
+            id=":r6:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -1262,19 +872,6 @@ Object {
               >
                 Giro Transactions
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="No. of GIRO Transactions"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -1283,17 +880,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":ri:"
+              id=":r6:"
               placeholder="No. of GIRO Transactions"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -1304,19 +901,6 @@ Object {
                     >
                       Giro Transactions
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="No. of GIRO Transactions"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -1327,10 +911,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":rl:"
-            id=":rl:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r7:"
+            id=":r7:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -1340,19 +924,6 @@ Object {
               >
                 Account Increment
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Balance increase monthly"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -1361,17 +932,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rl:"
+              id=":r7:"
               placeholder="Balance increase monthly"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -1382,19 +953,6 @@ Object {
                     >
                       Account Increment
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Balance increase monthly"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -1405,10 +963,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":ro:"
-            id=":ro:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r8:"
+            id=":r8:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -1418,19 +976,6 @@ Object {
               >
                 Loan Installment
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Monthly loan payment"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -1439,17 +984,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":ro:"
+              id=":r8:"
               placeholder="Monthly loan payment"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -1460,19 +1005,6 @@ Object {
                     >
                       Loan Installment
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Monthly loan payment"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -1606,8 +1138,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":rs:"
-              id=":rs:-label"
+              for=":ra:"
+              id=":ra:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1617,19 +1149,6 @@ Object {
                 >
                   Savings
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="To be deposited at bank"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -1638,7 +1157,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rs:"
+                id=":ra:"
                 placeholder="To be deposited at bank"
                 type="number"
                 value="100000"
@@ -1659,19 +1178,6 @@ Object {
                       >
                         Savings
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="To be deposited at bank"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -1684,8 +1190,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":rv:"
-              id=":rv:-label"
+              for=":rb:"
+              id=":rb:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1695,19 +1201,6 @@ Object {
                 >
                   Age
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Current age"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -1716,7 +1209,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rv:"
+                id=":rb:"
                 placeholder="Current age"
                 type="number"
                 value="10"
@@ -1737,19 +1230,6 @@ Object {
                       >
                         Age
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Current age"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -1762,8 +1242,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":r12:"
-              id=":r12:-label"
+              for=":rc:"
+              id=":rc:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1773,19 +1253,6 @@ Object {
                 >
                   Salary
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Credited to bank monthlys"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -1794,7 +1261,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r12:"
+                id=":rc:"
                 placeholder="Credited to bank monthlys"
                 type="number"
                 value="3000"
@@ -1815,19 +1282,6 @@ Object {
                       >
                         Salary
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Credited to bank monthlys"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -1838,10 +1292,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":r15:"
-              id=":r15:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":rd:"
+              id=":rd:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1851,19 +1305,6 @@ Object {
                 >
                   Investment
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Pay to bank yearly"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -1872,17 +1313,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r15:"
+                id=":rd:"
                 placeholder="Pay to bank yearly"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -1893,19 +1334,6 @@ Object {
                       >
                         Investment
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Pay to bank yearly"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -1916,10 +1344,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":r18:"
-              id=":r18:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":re:"
+              id=":re:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1929,19 +1357,6 @@ Object {
                 >
                   Insurance
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Pay to bank yearly"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -1950,17 +1365,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r18:"
+                id=":re:"
                 placeholder="Pay to bank yearly"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -1971,19 +1386,6 @@ Object {
                       >
                         Insurance
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Pay to bank yearly"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -1996,8 +1398,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":r1b:"
-              id=":r1b:-label"
+              for=":rf:"
+              id=":rf:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -2007,19 +1409,6 @@ Object {
                 >
                   Spending
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="On eligible cards monthly"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -2028,7 +1417,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r1b:"
+                id=":rf:"
                 placeholder="On eligible cards monthly"
                 type="number"
                 value="1000"
@@ -2049,19 +1438,6 @@ Object {
                       >
                         Spending
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="On eligible cards monthly"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -2072,10 +1448,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":r1e:"
-              id=":r1e:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":rg:"
+              id=":rg:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -2085,19 +1461,6 @@ Object {
                 >
                   Giro Transactions
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="No. of GIRO Transactions"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -2106,17 +1469,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r1e:"
+                id=":rg:"
                 placeholder="No. of GIRO Transactions"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -2127,19 +1490,6 @@ Object {
                       >
                         Giro Transactions
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="No. of GIRO Transactions"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -2152,8 +1502,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":r1h:"
-              id=":r1h:-label"
+              for=":rh:"
+              id=":rh:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -2163,19 +1513,6 @@ Object {
                 >
                   Account Increment
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Balance increase monthly"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -2184,7 +1521,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r1h:"
+                id=":rh:"
                 placeholder="Balance increase monthly"
                 type="number"
                 value="500"
@@ -2205,19 +1542,6 @@ Object {
                       >
                         Account Increment
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Balance increase monthly"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -2228,10 +1552,10 @@ Object {
             class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
           >
             <label
-              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-              data-shrink="true"
-              for=":r1k:"
-              id=":r1k:-label"
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":ri:"
+              id=":ri:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -2241,19 +1565,6 @@ Object {
                 >
                   Loan Installment
                 </p>
-                <svg
-                  aria-hidden="true"
-                  aria-label="Monthly loan payment"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                  data-mui-internal-clone-element="true"
-                  data-testid="HelpOutlineIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                  />
-                </svg>
               </div>
             </label>
             <div
@@ -2262,17 +1573,17 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":r1k:"
+                id=":ri:"
                 placeholder="Monthly loan payment"
                 type="number"
-                value="0"
+                value=""
               />
               <fieldset
                 aria-hidden="true"
                 class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
               >
                 <legend
-                  class="css-w1u3ce"
+                  class="css-81qg8w"
                 >
                   <span>
                     <div
@@ -2283,19 +1594,6 @@ Object {
                       >
                         Loan Installment
                       </p>
-                      <svg
-                        aria-hidden="true"
-                        aria-label="Monthly loan payment"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                        data-mui-internal-clone-element="true"
-                        data-testid="HelpOutlineIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                        />
-                      </svg>
                     </div>
                   </span>
                 </legend>
@@ -2372,8 +1670,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":rs:"
-            id=":rs:-label"
+            for=":ra:"
+            id=":ra:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2383,19 +1681,6 @@ Object {
               >
                 Savings
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="To be deposited at bank"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -2404,7 +1689,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rs:"
+              id=":ra:"
               placeholder="To be deposited at bank"
               type="number"
               value="100000"
@@ -2425,19 +1710,6 @@ Object {
                     >
                       Savings
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="To be deposited at bank"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -2450,8 +1722,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":rv:"
-            id=":rv:-label"
+            for=":rb:"
+            id=":rb:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2461,19 +1733,6 @@ Object {
               >
                 Age
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Current age"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -2482,7 +1741,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rv:"
+              id=":rb:"
               placeholder="Current age"
               type="number"
               value="10"
@@ -2503,19 +1762,6 @@ Object {
                     >
                       Age
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Current age"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -2528,8 +1774,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":r12:"
-            id=":r12:-label"
+            for=":rc:"
+            id=":rc:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2539,19 +1785,6 @@ Object {
               >
                 Salary
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Credited to bank monthlys"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -2560,7 +1793,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r12:"
+              id=":rc:"
               placeholder="Credited to bank monthlys"
               type="number"
               value="3000"
@@ -2581,19 +1814,6 @@ Object {
                     >
                       Salary
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Credited to bank monthlys"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -2604,10 +1824,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":r15:"
-            id=":r15:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":rd:"
+            id=":rd:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2617,19 +1837,6 @@ Object {
               >
                 Investment
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Pay to bank yearly"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -2638,17 +1845,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r15:"
+              id=":rd:"
               placeholder="Pay to bank yearly"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -2659,19 +1866,6 @@ Object {
                     >
                       Investment
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Pay to bank yearly"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -2682,10 +1876,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":r18:"
-            id=":r18:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":re:"
+            id=":re:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2695,19 +1889,6 @@ Object {
               >
                 Insurance
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Pay to bank yearly"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -2716,17 +1897,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r18:"
+              id=":re:"
               placeholder="Pay to bank yearly"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -2737,19 +1918,6 @@ Object {
                     >
                       Insurance
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Pay to bank yearly"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -2762,8 +1930,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":r1b:"
-            id=":r1b:-label"
+            for=":rf:"
+            id=":rf:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2773,19 +1941,6 @@ Object {
               >
                 Spending
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="On eligible cards monthly"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -2794,7 +1949,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r1b:"
+              id=":rf:"
               placeholder="On eligible cards monthly"
               type="number"
               value="1000"
@@ -2815,19 +1970,6 @@ Object {
                     >
                       Spending
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="On eligible cards monthly"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -2838,10 +1980,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":r1e:"
-            id=":r1e:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":rg:"
+            id=":rg:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2851,19 +1993,6 @@ Object {
               >
                 Giro Transactions
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="No. of GIRO Transactions"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -2872,17 +2001,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r1e:"
+              id=":rg:"
               placeholder="No. of GIRO Transactions"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -2893,19 +2022,6 @@ Object {
                     >
                       Giro Transactions
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="No. of GIRO Transactions"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -2918,8 +2034,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":r1h:"
-            id=":r1h:-label"
+            for=":rh:"
+            id=":rh:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2929,19 +2045,6 @@ Object {
               >
                 Account Increment
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Balance increase monthly"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -2950,7 +2053,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r1h:"
+              id=":rh:"
               placeholder="Balance increase monthly"
               type="number"
               value="500"
@@ -2971,19 +2074,6 @@ Object {
                     >
                       Account Increment
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Balance increase monthly"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
@@ -2994,10 +2084,10 @@ Object {
           class="MuiFormControl-root MuiTextField-root css-13y3hfb-MuiFormControl-root-MuiTextField-root"
         >
           <label
-            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
-            data-shrink="true"
-            for=":r1k:"
-            id=":r1k:-label"
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":ri:"
+            id=":ri:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -3007,19 +2097,6 @@ Object {
               >
                 Loan Installment
               </p>
-              <svg
-                aria-hidden="true"
-                aria-label="Monthly loan payment"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                data-mui-internal-clone-element="true"
-                data-testid="HelpOutlineIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                />
-              </svg>
             </div>
           </label>
           <div
@@ -3028,17 +2105,17 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":r1k:"
+              id=":ri:"
               placeholder="Monthly loan payment"
               type="number"
-              value="0"
+              value=""
             />
             <fieldset
               aria-hidden="true"
               class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
             >
               <legend
-                class="css-w1u3ce"
+                class="css-81qg8w"
               >
                 <span>
                   <div
@@ -3049,19 +2126,6 @@ Object {
                     >
                       Loan Installment
                     </p>
-                    <svg
-                      aria-hidden="true"
-                      aria-label="Monthly loan payment"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-v7pqk7-MuiSvgIcon-root"
-                      data-mui-internal-clone-element="true"
-                      data-testid="HelpOutlineIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
-                      />
-                    </svg>
                   </div>
                 </span>
               </legend>
