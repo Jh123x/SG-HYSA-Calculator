@@ -9,6 +9,7 @@ import { stand_chart_interest } from "./stand_chart.ts"
 import { placeholder_ir } from "./common.ts"
 import { ReactElement } from "react"
 import { trust_bank } from "./trust_bank.ts"
+import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
 
 interface Info {
     interestFn: (profile: Profile) => ResultInterest
@@ -73,6 +74,12 @@ export const bankInfo: Record<string, Info> = {
         remarks: <p>Spending assumes 5 x $30 if spending is more than 150.</p>,
         lastUpdated: "2025-03-23",
     },
+    "DBS Multiplier Account": {
+        interestFn: dbs_multiplier_interest,
+        url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
+        remarks: <p>No eligible if you are younger than 18.<br />Spending includes credit card / paylah retail spend</p>,
+        lastUpdated: "2025-03-26s",
+    },
     "Bank of China SmartSaver": {
         interestFn: placeholder_ir,
         url: "https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348761.html",
@@ -88,12 +95,6 @@ export const bankInfo: Record<string, Info> = {
     "Citi Wealth first Account": {
         interestFn: placeholder_ir,
         url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
-        remarks: "To be added",
-        lastUpdated: "2024-12-01",
-    },
-    "DBS Multiplier Account": {
-        interestFn: placeholder_ir,
-        url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
         remarks: "To be added",
         lastUpdated: "2024-12-01",
     },
