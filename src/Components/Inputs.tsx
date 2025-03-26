@@ -292,7 +292,7 @@ const InputNumberField = ({ label, onChange, value, tooltip }: Field<number>) =>
     const [isFocused, setIsFocused] = useState<boolean>(false)
 
     useEffect(() => {
-        if (value == 0) {
+        if (value === 0) {
             setInputValue("")
             return
         }
