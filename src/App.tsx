@@ -28,7 +28,12 @@ export const App = () => {
         }}
       />
       <Header />
-      <Container>
+      <Container
+        sx={{
+          marginTop: '20px',
+          paddingBottom: '20px',
+        }}
+      >
         <FormInputs currProfile={currProfile} setCurrProfile={setCurrProfile} />
         <Result profile={currProfile} />
       </Container>

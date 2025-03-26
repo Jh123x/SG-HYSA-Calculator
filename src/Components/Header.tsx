@@ -1,122 +1,133 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import { primaryColor, textColor } from '../consts/colors.ts';
-import { Alert, Box, Button, IconButton, Link, Modal } from '@mui/material';
-import InfoIcon from '@mui/icons-material/Info';
-import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
-import CloseIcon from '@mui/icons-material/Close';
+import React from 'react';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  IconButton,
+  Box,
+  useTheme,
+  Menu,
+  MenuItem,
+  useMediaQuery,
+  Alert,
+} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import ArticleIcon from '@mui/icons-material/Article';
+import { textColor } from '../consts/colors.ts';
 
 export const Header = () => {
-    const [showAlert, setShowAlert] = React.useState(true)
-    const [showInfoModal, setShowModal] = React.useState(false)
-    return (
-        <>
-            <AppBar
-                position="static"
-                sx={{
-                    color: textColor,
-                    backgroundColor: primaryColor,
+  const theme = useTheme();
+  const isMobile = useMediaQuery('(max-width:600px)');
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [showAlert, setShowAlert] = React.useState(true)
+
+  const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <AppBar position="static" elevation={0} sx={{ backgroundColor: 'transparent' }}>
+      <Toolbar sx={{ justifyContent: 'space-between' }}>
+        <Typography
+          variant={isMobile ? "h6" : "h5"}
+          sx={{
+            color: textColor,
+            fontWeight: 600,
+            flexGrow: 1,
+          }}
+        >
+          SG HYSA Calculator
+        </Typography>
+
+        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          {isMobile ? (
+            <>
+              <IconButton
+                size="large"
+                onClick={handleMenu}
+                color="inherit"
+                sx={{ color: textColor }}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                anchorEl={anchorEl}
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+                slotProps={{
+                  paper: {
+                    elevation: 0,
+                    sx: {
+                      backgroundColor: theme.palette.background.paper,
+                      borderRadius: 2,
+                    },
+                  }
                 }}
-            >
-                <Toolbar>
-                    <img src="logo.svg" alt="logo" style={{ maxWidth: '50px' }} />
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        HYSA Calculator
-                    </Typography>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="open drawer"
-                        sx={{ mr: 2 }}
-                        onClick={() => {
-                            setShowAlert(true)
-                        }}
-                    >
-                        <TipsAndUpdatesIcon />
-                    </IconButton>
-                    <IconButton
-                        size="large"
-                        edge="start"
-                        color="inherit"
-                        aria-label="open drawer"
-                        sx={{ mr: 2 }}
-                        onClick={() => {
-                            setShowModal(true)
-                        }}
-                    >
-                        <InfoIcon />
-                    </IconButton>
-                </Toolbar>
-            </AppBar>
-            <Alert
-                severity="info"
-                sx={{ display: showAlert ? '' : 'none' }}
-                onClose={() => setShowAlert(false)}
-            >
-                You do not need to key in 0 values
-            </Alert>
-            <Modal
-                open={showInfoModal}
-                onClose={() => setShowModal(false)}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-            >
-                <Box sx={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
-                    width: '50vw',
-                    color: textColor,
-                    bgcolor: primaryColor,
-                    boxShadow: "20px",
-                    padding: '25px',
-                    borderRadius: '25px'
-                }}>
-                    <div
-                        style={{
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                        }}
-                    >
-                        <Typography
-                            id="modal-modal-title"
-                            variant="h6"
-                            sx={{
-                                margin: "0px",
-                                padding: "0px",
-                            }}
-                        >
-                            HYSA Calculator
-                        </Typography>
-                        <Button
-                            onClick={() => setShowModal(false)}
-                            sx={{
-                                padding: '0px',
-                                margin: '0px',
-                            }}
-                        >
-                            <CloseIcon
-                                sx={{ color: 'white' }}
-                            />
-                        </Button>
-                    </div>
-                    <Typography
-                        id="modal-modal-description"
-                        sx={{ mt: 2 }}
-                    >
-                        This is a high yield savings account calculator for Singpore Banks.
-                        <br />
-                        For any feature requests, suggest a change {" "}
-                        <Link color="inherit" href="https://github.com/Jh123x/SG-HYSA-Calculator/issues">
-                            here
-                        </Link>.
-                    </Typography>
-                </Box>
-            </Modal>
-        </>
-    );
-}
+              >
+                <MenuItem>
+                  <IconButton
+                    href='https://jh123x.com'
+                    target='_blank'
+                    size='small'
+                  >
+                    <ArticleIcon sx={{ mr: 1 }} />
+                    Blog Post (2024)
+                  </IconButton>
+                </MenuItem>
+                <MenuItem>
+                  <IconButton
+                    href='https://github.com/jh123x/SG-HYSA-Calculator'
+                    target='_blank'
+                    size='small'
+                  >
+                    <GitHubIcon sx={{ mr: 1 }} />
+                    GitHub
+                  </IconButton>
+                </MenuItem>
+              </Menu>
+            </>
+          ) : (
+            <>
+              <IconButton
+                size="large"
+                href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
+                target='_blank'
+                sx={{ color: textColor }}
+              >
+                <ArticleIcon />
+              </IconButton>
+              <IconButton
+                size="large"
+                href="https://github.com/jh123x/SG-HYSA-Calculator"
+                target='_blank'
+                sx={{ color: textColor }}
+              >
+                <GitHubIcon />
+              </IconButton>
+            </>
+          )}
+        </Box>
+      </Toolbar>
+      <Alert
+        severity="info"
+        sx={{
+          display: showAlert ? '' : 'none',
+          position: 'fixed',
+          bottom: "10px",
+          color: "#fff",
+          right: "10px",
+          borderRadius: "8px",
+          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+        }}
+        onClose={() => setShowAlert(false)}
+      >
+        You do not need to key in 0 values
+      </Alert>
+    </AppBar>
+  );
+};

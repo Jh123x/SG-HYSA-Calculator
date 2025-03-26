@@ -7,7 +7,7 @@ import { bgColor } from "../consts/colors.ts";
 
 export const Footer = () => {
     return <Box
-        sx={{ backgroundColor: bgColor, p: 6, }}
+        sx={{ backgroundColor: bgColor, p: 6 }}
         component="footer"
     >
         <Container maxWidth="sm">
