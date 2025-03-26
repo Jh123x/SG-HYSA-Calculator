@@ -10,7 +10,7 @@ const table: Array<Array<number>> = [
 ]
 
 export const dbs_multiplier_interest = (profile: Profile): ResultInterest => {
-    if (profile.Age < 18) return calculate_ir(profile.Savings, { cutoffs: [], baseRatePercent: 0, }); screenLeft
+    if (profile.Age < 18) return calculate_ir(profile.Savings, { cutoffs: [], baseRatePercent: 0, });
 
     if (profile.Salary <= 0) {
         if (profile.Age <= 29) return calculate_ir(

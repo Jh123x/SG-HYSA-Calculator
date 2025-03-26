@@ -19,8 +19,6 @@ interface Field<Type> {
     tooltip?: string
 }
 
-const makeDefaultNumber = (value?: number): number => (value === undefined || value === 0 ? 0 : value);
-
 const numericalInputs: Array<InputArg<number>> = [
     {
         label: "Savings",
@@ -87,6 +85,8 @@ const booleanInputs: Array<InputArg<boolean>> = [
     },
 ];
 
+const makeDefaultNumber = (value?: number): number => (value === undefined || value === 0 ? 0 : value);
+
 export const FormInputs = ({
     currProfile,
     setCurrProfile,
@@ -96,8 +96,12 @@ export const FormInputs = ({
 }) => {
     const [hideModel, setHideModal] = useState<boolean>(true);
     const [modelMsg, setModalMsg] = useState<string>("");
+    const [profile, setProfile] = useState<Profile>(currProfile);
 
-    useEffect(() => { localStorage.setItem(STORE_KEY, JSON.stringify(currProfile)) }, [currProfile])
+    useEffect(() => {
+        localStorage.setItem(STORE_KEY, JSON.stringify(currProfile))
+        setProfile(currProfile)
+    }, [currProfile])
 
     const onClear = () => {
         setCurrProfile(NewProfile({}));
@@ -130,25 +134,25 @@ export const FormInputs = ({
                     }}
                 >
                     {numericalInputs.map(({ label, getStateFromProfile, fn, tooltip }) => {
-                        const value = getStateFromProfile(currProfile);
+                        const value = getStateFromProfile(profile);
                         return (
                             <InputNumberField
                                 key={label.replace(" ", "_") + "_input_field"}
                                 label={label}
                                 tooltip={tooltip}
-                                onChange={(value) => setCurrProfile(fn(currProfile, Number(value)))}
+                                onChange={(value) => setCurrProfile(fn(profile, Number(value)))}
                                 value={value}
                             />
                         );
                     })}
                     {
                         booleanInputs.map(({ label, getStateFromProfile, fn, tooltip }) => {
-                            const value = getStateFromProfile(currProfile)
+                            const value = getStateFromProfile(profile)
                             return <InputBooleanField
                                 key={label.replace(" ", "_") + "_input_field"}
                                 label={label}
                                 tooltip={tooltip}
-                                onChange={(value) => setCurrProfile(fn(currProfile, !value))}
+                                onChange={(value) => setCurrProfile(fn(profile, !value))}
                                 value={value}
                             />
                         })
@@ -286,6 +290,15 @@ const InputBooleanField = ({ tooltip, value, label, onChange }: Field<boolean>) 
 const InputNumberField = ({ label, onChange, value, tooltip }: Field<number>) => {
     const [inputValue, setInputValue] = useState<string>(value === 0 ? "" : value.toString())
     const [isFocused, setIsFocused] = useState<boolean>(false)
+
+    useEffect(() => {
+        if (value == 0) {
+            setInputValue("")
+            return
+        }
+        setInputValue(value.toString())
+
+    }, [value])
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const newValue = e.target.value
