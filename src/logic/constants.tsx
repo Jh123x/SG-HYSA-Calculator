@@ -78,7 +78,7 @@ export const bankInfo: Record<string, Info> = {
         interestFn: dbs_multiplier_interest,
         url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
         remarks: <p>No eligible if you are younger than 18.<br />Spending includes credit card / paylah retail spend</p>,
-        lastUpdated: "2025-03-26s",
+        lastUpdated: "2025-03-26",
     },
     "Bank of China SmartSaver": {
         interestFn: placeholder_ir,
