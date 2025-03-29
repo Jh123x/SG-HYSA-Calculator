@@ -11,6 +11,9 @@ import { ReactElement } from "react"
 import { trust_bank } from "./trust_bank.ts"
 import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
 import { gxs_interest } from "./gxs.ts"
+import { Link } from "@mui/material"
+import { primaryColor } from "../consts/colors.ts"
+import { bank_of_china } from "./bank_of_china.ts"
 
 interface Info {
     interestFn: (profile: Profile) => ResultInterest
@@ -19,12 +22,17 @@ interface Info {
     lastUpdated: string
 }
 
-export const STORE_KEY = "current_profile"
 export const bankInfo: Record<string, Info> = {
     "UOB Bank": {
         interestFn: uob_interest,
         url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
-        remarks: <p>The calculation here excludes <br /> spending rebates included in their calculator.<br /> (Extra 200 a year if you spend 500/mth for a year)</p>,
+        remarks: <p>
+            The calculation here excludes
+            <br />
+            spending rebates included in their calculator.
+            <br />
+            (Extra 200 a year if you spend 500/mth for a year)
+        </p>,
         lastUpdated: "2025-01-08",
     },
     "OCBC Bank (Pre 2025/05)": {
@@ -96,9 +104,27 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2024-12-01",
     },
     "Bank of China SmartSaver": {
-        interestFn: placeholder_ir,
+        interestFn: bank_of_china,
         url: "https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348761.html",
-        remarks: "To be added",
+        remarks: <p>
+            This account is effective from 2024-11-01.
+            <br />
+            Giro Transactions are assumed to be $30 worth each.
+            <br />
+            <Link
+                href="https://www.bankofchina.com/sg/bocinfo/bi3/bi33/202404/t20240401_24845706.html"
+                target="_blank"
+                sx={{
+                    color: primaryColor,
+                    textDecoration: "none",
+                    "&:hover": { textDecoration: "underline" },
+                }}
+            >
+                Bank of China Prevailing interest rates.
+            </Link>
+            <br />
+            For more information read the information on their website.
+        </p>,
         lastUpdated: "2024-12-01",
     },
     "Maybank Save Up": {
