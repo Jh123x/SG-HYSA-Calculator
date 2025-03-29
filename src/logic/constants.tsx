@@ -1,7 +1,7 @@
 import * as React from "react"
 import { ResultInterest } from "../types/interest_result.ts"
 import Profile from "../types/profile.ts"
-import { maribank_interest, mariInterestRate, maribank_new_interest, mariNewInterestRate } from "./maribank.ts"
+import { maribank_new_interest, mariNewInterestRate } from "./maribank.ts"
 import { uob_interest } from "./uob.ts"
 import { ocbc_interest, ocbc_new_interest } from "./ocbc360.ts"
 import { choco_finance } from "./choco_finance.ts"
@@ -38,16 +38,10 @@ export const bankInfo: Record<string, Info> = {
         remarks: <p>More info Under the 21 March 2025 notice on their website</p>,
         lastUpdated: "2025-03-22",
     },
-    "Maribank (Before 2025/04)": {
-        interestFn: maribank_interest,
-        url: "https://www.maribank.sg/product/mari-savings-account",
-        remarks: <p>Interest rates are a flat {mariInterestRate}%<br />Capped at $100k</p>,
-        lastUpdated: "2025-01-08",
-    },
-    "Maribank (After 2025/04)": {
+    "Maribank": {
         interestFn: maribank_new_interest,
         url: "https://www.maribank.sg/product/mari-savings-account",
-        remarks: <p>Interest rates are a flat {mariNewInterestRate}%<br />Capped at $100k</p>,
+        remarks: <p>Interest rates are a flat {mariNewInterestRate}%<br />Capped at $100k<br />Referral code: <b>4QTP99MT</b></p>,
         lastUpdated: "2025-03-21",
     },
     "Chocolate Finance": {
