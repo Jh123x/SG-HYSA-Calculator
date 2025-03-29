@@ -2,7 +2,7 @@ import { ResultInterest } from "../types/interest_result.ts";
 import Profile from "../types/profile";
 import { calculate_ir } from "./common.ts";
 
-export const bank_of_china = (profile: Profile) => {
+export const bank_of_china_smart_saver = (profile: Profile): ResultInterest => {
     const { Savings, Insurance, Spending, Salary, GiroTransactions } = profile;
     if (Savings < 1_500) return new ResultInterest(0, Savings);
 
@@ -45,4 +45,21 @@ const getBaseInterest = (savings: number): number => {
     if (savings < 20_000) return 0.2;
     if (savings < 100_000) return 0.3;
     return 0.4;
+}
+
+export const bank_of_china_super_saver = (profile: Profile): ResultInterest => {
+    const { Savings } = profile;
+    if (Savings < 200) return new ResultInterest(0, Savings);
+
+    return calculate_ir(
+        Savings,
+        {
+            cutoffs: [
+                { Cutoff: 20_000, InterestRatePercent: 1.5 },
+                { Cutoff: 40_000, InterestRatePercent: 2.2 },
+                { Cutoff: 40_000, InterestRatePercent: 3.6 },
+            ],
+            baseRatePercent: 1.2,
+        }
+    )
 }

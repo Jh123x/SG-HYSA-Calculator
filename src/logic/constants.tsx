@@ -13,7 +13,7 @@ import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
 import { gxs_interest } from "./gxs.ts"
 import { Link } from "@mui/material"
 import { primaryColor } from "../consts/colors.ts"
-import { bank_of_china } from "./bank_of_china.ts"
+import { bank_of_china_smart_saver, bank_of_china_super_saver } from "./bank_of_china.ts"
 
 interface Info {
     interestFn: (profile: Profile) => ResultInterest
@@ -104,10 +104,10 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2024-12-01",
     },
     "Bank of China SmartSaver": {
-        interestFn: bank_of_china,
+        interestFn: bank_of_china_smart_saver,
         url: "https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348761.html",
         remarks: <p>
-            This account is effective from 2024-11-01.
+            This account is valid from 2024-11-01 onwards.
             <br />
             Giro Transactions are assumed to be $30 worth each.
             <br />
@@ -124,6 +124,16 @@ export const bankInfo: Record<string, Info> = {
             </Link>
             <br />
             For more information read the information on their website.
+        </p>,
+        lastUpdated: "2024-12-01",
+    },
+    "Bank of China SuperSaver": {
+        interestFn: bank_of_china_super_saver,
+        url: "https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348756.html",
+        remarks: <p>
+            This account is valid from 2024-08-01 onwards.
+            <br />
+            You have to link your paynow to this account to qualify for the sale.
         </p>,
         lastUpdated: "2024-12-01",
     },
