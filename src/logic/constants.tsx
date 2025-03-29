@@ -10,6 +10,7 @@ import { placeholder_ir } from "./common.ts"
 import { ReactElement } from "react"
 import { trust_bank } from "./trust_bank.ts"
 import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
+import { gxs_interest } from "./gxs.ts"
 
 interface Info {
     interestFn: (profile: Profile) => ResultInterest
@@ -26,13 +27,13 @@ export const bankInfo: Record<string, Info> = {
         remarks: <p>The calculation here excludes <br /> spending rebates included in their calculator.<br /> (Extra 200 a year if you spend 500/mth for a year)</p>,
         lastUpdated: "2025-01-08",
     },
-    "OCBC Bank (Before 2025/05)": {
+    "OCBC Bank (Pre 2025/05)": {
         interestFn: ocbc_interest,
         url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
         remarks: "For more information use the calculator on their website",
         lastUpdated: "2024-12-01",
     },
-    "OCBC Bank (After 2025/05)": {
+    "OCBC Bank (Post 2025/05)": {
         interestFn: ocbc_new_interest,
         url: "https://www.ocbc.com/personal-banking/notices",
         remarks: <p>More info Under the 21 March 2025 notice on their website</p>,
@@ -41,20 +42,14 @@ export const bankInfo: Record<string, Info> = {
     "Maribank": {
         interestFn: maribank_new_interest,
         url: "https://www.maribank.sg/product/mari-savings-account",
-        remarks: <p>Interest rates are a flat {mariNewInterestRate}%<br />Capped at $100k<br />Referral code: <b>4QTP99MT</b></p>,
-        lastUpdated: "2025-03-21",
-    },
-    "Chocolate Finance": {
-        interestFn: choco_finance,
-        url: "https://www.chocolatefinance.com/",
         remarks: <p>
-            1st 20k 3.3% p.a, next 30k 3% p.a.
+            Interest rates are a flat {mariNewInterestRate}%
             <br />
-            Amounts above 50k are not included.
+            Capped at $100k
             <br />
-            <b>Note: This is not a bank</b>
+            Referral code: <b>4QTP99MT</b>
         </p>,
-        lastUpdated: "2024-12-01",
+        lastUpdated: "2025-03-21",
     },
     "Standard Chartered": {
         interestFn: stand_chart_interest,
@@ -73,6 +68,32 @@ export const bankInfo: Record<string, Info> = {
         url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
         remarks: <p>No eligible if you are younger than 18.<br />Spending includes credit card / paylah retail spend</p>,
         lastUpdated: "2025-03-26",
+    },
+    "GXS": {
+        interestFn: gxs_interest,
+        url: "https://www.gxs.com.sg/savings-account",
+        remarks: <p>
+            Assume using boost pocket (3 months) as much as possible.
+            <br />
+            Remaining balance in main account
+            <br />
+            The max amount limit is $95000.
+            <br />
+            <b>Note: The max amount depends on each individual</b>
+        </p>,
+        lastUpdated: "2025-03-29",
+    },
+    "Chocolate Finance": {
+        interestFn: choco_finance,
+        url: "https://www.chocolatefinance.com/",
+        remarks: <p>
+            1st 20k 3.3% p.a, next 30k 3% p.a.
+            <br />
+            Amounts above 50k are not included.
+            <br />
+            <b>Note: This is not a bank</b>
+        </p>,
+        lastUpdated: "2024-12-01",
     },
     "Bank of China SmartSaver": {
         interestFn: placeholder_ir,
