@@ -9,12 +9,12 @@ import {
   Menu,
   MenuItem,
   useMediaQuery,
-  Alert,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleIcon from '@mui/icons-material/Article';
 import { textColor } from '../consts/colors.ts';
+import { WebAlert } from './Alert.tsx';
 
 export const Header = () => {
   const theme = useTheme();
@@ -113,21 +113,9 @@ export const Header = () => {
           )}
         </Box>
       </Toolbar>
-      <Alert
-        severity="info"
-        sx={{
-          display: showAlert ? '' : 'none',
-          position: 'fixed',
-          bottom: "10px",
-          color: "#fff",
-          right: "10px",
-          borderRadius: "8px",
-          boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
-        }}
-        onClose={() => setShowAlert(false)}
-      >
+      <WebAlert severity="info" onClose={() => setShowAlert(false)} hideModel={!showAlert}>
         You do not need to key in 0 values
-      </Alert>
+      </WebAlert>
     </AppBar>
   );
 };
