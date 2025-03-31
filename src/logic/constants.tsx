@@ -81,13 +81,9 @@ export const bankInfo: Record<string, Info> = {
         interestFn: gxs_interest,
         url: "https://www.gxs.com.sg/savings-account",
         remarks: <p>
-            Assume using boost pocket (3 months) as much as possible.
+            Caculated using boost pocket (3 months) up to $60,000 with remaining balance in main account
             <br />
-            Remaining balance in main account
-            <br />
-            The max amount limit is $95000.
-            <br />
-            <b>Note: The max amount depends on each individual</b>
+            <b>Note: The max amount deposited depends on individual (up to $95,000)</b>
         </p>,
         lastUpdated: "2025-03-29",
     },
@@ -114,16 +110,15 @@ export const bankInfo: Record<string, Info> = {
             <Link
                 href="https://www.bankofchina.com/sg/bocinfo/bi3/bi33/202404/t20240401_24845706.html"
                 target="_blank"
+                rel="noopener noreferrer"
                 sx={{
                     color: primaryColor,
                     textDecoration: "none",
                     "&:hover": { textDecoration: "underline" },
                 }}
             >
-                Bank of China Prevailing interest rates.
+                BOC base interest rates.
             </Link>
-            <br />
-            For more information read the information on their website.
         </p>,
         lastUpdated: "2024-12-01",
     },
@@ -133,7 +128,7 @@ export const bankInfo: Record<string, Info> = {
         remarks: <p>
             This account is valid from 2024-08-01 onwards.
             <br />
-            You have to link your paynow to this account to qualify for the sale.
+            <b>Note: You have to link your paynow to this account to qualify for the sale.</b>
         </p>,
         lastUpdated: "2024-12-01",
     },

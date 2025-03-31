@@ -464,14 +464,10 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
                 >
                   <p>
-                    Assume using boost pocket (3 months) as much as possible.
-                    <br />
-                    Remaining balance in main account
-                    <br />
-                    The max amount limit is $95000.
+                    Caculated using boost pocket (3 months) up to $60,000 with remaining balance in main account
                     <br />
                     <b>
-                      Note: The max amount depends on each individual
+                      Note: The max amount deposited depends on individual (up to $95,000)
                     </b>
                   </p>
                 </td>
@@ -569,12 +565,11 @@ Object {
                     <a
                       class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                       href="https://www.bankofchina.com/sg/bocinfo/bi3/bi33/202404/t20240401_24845706.html"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Bank of China Prevailing interest rates.
+                      BOC base interest rates.
                     </a>
-                    <br />
-                    For more information read the information on their website.
                   </p>
                 </td>
                 <td
@@ -618,7 +613,9 @@ Object {
                   <p>
                     This account is valid from 2024-08-01 onwards.
                     <br />
-                    You have to link your paynow to this account to qualify for the sale.
+                    <b>
+                      Note: You have to link your paynow to this account to qualify for the sale.
+                    </b>
                   </p>
                 </td>
                 <td
@@ -714,6 +711,8 @@ Object {
           class="MuiTypography-root MuiTypography-caption css-p0b4sg-MuiTypography-root"
         >
           * Interest rates on their respective websites are subject to change without notice
+          <br />
+          ** Please do your own research before making any decisions, the numbers here serve as a guide.
         </span>
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-dz3rmd-MuiPaper-root"
@@ -3600,14 +3599,10 @@ Object {
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
               >
                 <p>
-                  Assume using boost pocket (3 months) as much as possible.
-                  <br />
-                  Remaining balance in main account
-                  <br />
-                  The max amount limit is $95000.
+                  Caculated using boost pocket (3 months) up to $60,000 with remaining balance in main account
                   <br />
                   <b>
-                    Note: The max amount depends on each individual
+                    Note: The max amount deposited depends on individual (up to $95,000)
                   </b>
                 </p>
               </td>
@@ -3705,12 +3700,11 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.bankofchina.com/sg/bocinfo/bi3/bi33/202404/t20240401_24845706.html"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
-                    Bank of China Prevailing interest rates.
+                    BOC base interest rates.
                   </a>
-                  <br />
-                  For more information read the information on their website.
                 </p>
               </td>
               <td
@@ -3754,7 +3748,9 @@ Object {
                 <p>
                   This account is valid from 2024-08-01 onwards.
                   <br />
-                  You have to link your paynow to this account to qualify for the sale.
+                  <b>
+                    Note: You have to link your paynow to this account to qualify for the sale.
+                  </b>
                 </p>
               </td>
               <td
@@ -3850,6 +3846,8 @@ Object {
         class="MuiTypography-root MuiTypography-caption css-p0b4sg-MuiTypography-root"
       >
         * Interest rates on their respective websites are subject to change without notice
+        <br />
+        ** Please do your own research before making any decisions, the numbers here serve as a guide.
       </span>
       <div
         class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-dz3rmd-MuiPaper-root"
@@ -6793,14 +6791,10 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
                 >
                   <p>
-                    Assume using boost pocket (3 months) as much as possible.
-                    <br />
-                    Remaining balance in main account
-                    <br />
-                    The max amount limit is $95000.
+                    Caculated using boost pocket (3 months) up to $60,000 with remaining balance in main account
                     <br />
                     <b>
-                      Note: The max amount depends on each individual
+                      Note: The max amount deposited depends on individual (up to $95,000)
                     </b>
                   </p>
                 </td>
@@ -6898,12 +6892,11 @@ Object {
                     <a
                       class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                       href="https://www.bankofchina.com/sg/bocinfo/bi3/bi33/202404/t20240401_24845706.html"
+                      rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Bank of China Prevailing interest rates.
+                      BOC base interest rates.
                     </a>
-                    <br />
-                    For more information read the information on their website.
                   </p>
                 </td>
                 <td
@@ -6947,7 +6940,9 @@ Object {
                   <p>
                     This account is valid from 2024-08-01 onwards.
                     <br />
-                    You have to link your paynow to this account to qualify for the sale.
+                    <b>
+                      Note: You have to link your paynow to this account to qualify for the sale.
+                    </b>
                   </p>
                 </td>
                 <td
@@ -7043,6 +7038,8 @@ Object {
           class="MuiTypography-root MuiTypography-caption css-p0b4sg-MuiTypography-root"
         >
           * Interest rates on their respective websites are subject to change without notice
+          <br />
+          ** Please do your own research before making any decisions, the numbers here serve as a guide.
         </span>
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-dz3rmd-MuiPaper-root"
@@ -9936,14 +9933,10 @@ Object {
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
               >
                 <p>
-                  Assume using boost pocket (3 months) as much as possible.
-                  <br />
-                  Remaining balance in main account
-                  <br />
-                  The max amount limit is $95000.
+                  Caculated using boost pocket (3 months) up to $60,000 with remaining balance in main account
                   <br />
                   <b>
-                    Note: The max amount depends on each individual
+                    Note: The max amount deposited depends on individual (up to $95,000)
                   </b>
                 </p>
               </td>
@@ -10041,12 +10034,11 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.bankofchina.com/sg/bocinfo/bi3/bi33/202404/t20240401_24845706.html"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
-                    Bank of China Prevailing interest rates.
+                    BOC base interest rates.
                   </a>
-                  <br />
-                  For more information read the information on their website.
                 </p>
               </td>
               <td
@@ -10090,7 +10082,9 @@ Object {
                 <p>
                   This account is valid from 2024-08-01 onwards.
                   <br />
-                  You have to link your paynow to this account to qualify for the sale.
+                  <b>
+                    Note: You have to link your paynow to this account to qualify for the sale.
+                  </b>
                 </p>
               </td>
               <td
@@ -10186,6 +10180,8 @@ Object {
         class="MuiTypography-root MuiTypography-caption css-p0b4sg-MuiTypography-root"
       >
         * Interest rates on their respective websites are subject to change without notice
+        <br />
+        ** Please do your own research before making any decisions, the numbers here serve as a guide.
       </span>
       <div
         class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-dz3rmd-MuiPaper-root"
