@@ -1,21 +1,19 @@
 import { Button, FormControl, TextField, Box, Checkbox, FormControlLabel, FormGroup, Tooltip, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Profile, { NewProfile } from "../types/profile.ts";
-import { STORE_KEY } from "../logic/constants.tsx";
+import { STORE_KEY } from '../consts/keys.ts';
 import { HelpOutline } from "@mui/icons-material";
 import { primaryColor, bgColor, textColor, dangerColor } from "../consts/colors.ts";
 import { Field } from "./types.ts";
 import { WebAlert } from "./Alert.tsx";
 import { booleanInputs, numericalInputs } from "./InputValues.ts";
 
-
-export const FormInputs = ({
-    currProfile,
-    setCurrProfile,
-}: {
+interface FormInput {
     currProfile: Profile;
     setCurrProfile: (_: Profile) => void;
-}) => {
+}
+
+export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
     const [hideModel, setHideModal] = useState<boolean>(true);
     const [modelMsg, setModalMsg] = useState<string>("");
     const [profile, setProfile] = useState<Profile>(currProfile);

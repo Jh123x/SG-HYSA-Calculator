@@ -11,6 +11,9 @@ import { ReactElement } from "react"
 import { trust_bank } from "./trust_bank.ts"
 import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
 import { gxs_interest } from "./gxs.ts"
+import { Link } from "@mui/material"
+import { primaryColor } from "../consts/colors.ts"
+import { bank_of_china_smart_saver, bank_of_china_super_saver } from "./bank_of_china.ts"
 
 interface Info {
     interestFn: (profile: Profile) => ResultInterest
@@ -19,12 +22,17 @@ interface Info {
     lastUpdated: string
 }
 
-export const STORE_KEY = "current_profile"
 export const bankInfo: Record<string, Info> = {
     "UOB Bank": {
         interestFn: uob_interest,
         url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
-        remarks: <p>The calculation here excludes <br /> spending rebates included in their calculator.<br /> (Extra 200 a year if you spend 500/mth for a year)</p>,
+        remarks: <p>
+            The calculation here excludes
+            <br />
+            spending rebates included in their calculator.
+            <br />
+            (Extra 200 a year if you spend 500/mth for a year)
+        </p>,
         lastUpdated: "2025-01-08",
     },
     "OCBC Bank (Pre 2025/05)": {
@@ -73,13 +81,9 @@ export const bankInfo: Record<string, Info> = {
         interestFn: gxs_interest,
         url: "https://www.gxs.com.sg/savings-account",
         remarks: <p>
-            Assume using boost pocket (3 months) as much as possible.
+            Caculated using boost pocket (3 months) up to $60,000 with remaining balance in main account
             <br />
-            Remaining balance in main account
-            <br />
-            The max amount limit is $95000.
-            <br />
-            <b>Note: The max amount depends on each individual</b>
+            <b>Note: The max amount deposited depends on individual (up to $95,000)</b>
         </p>,
         lastUpdated: "2025-03-29",
     },
@@ -96,21 +100,48 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2024-12-01",
     },
     "Bank of China SmartSaver": {
-        interestFn: placeholder_ir,
+        interestFn: bank_of_china_smart_saver,
         url: "https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348761.html",
-        remarks: "To be added",
+        remarks: <p>
+            This account is valid from 2024-11-01 onwards.
+            <br />
+            Giro Transactions are assumed to be $30 worth each.
+            <br />
+            <Link
+                href="https://www.bankofchina.com/sg/bocinfo/bi3/bi33/202404/t20240401_24845706.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                    color: primaryColor,
+                    textDecoration: "none",
+                    "&:hover": { textDecoration: "underline" },
+                }}
+            >
+                BOC base interest rates.
+            </Link>
+        </p>,
+        lastUpdated: "2024-12-01",
+    },
+    "Bank of China SuperSaver": {
+        interestFn: bank_of_china_super_saver,
+        url: "https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348756.html",
+        remarks: <p>
+            This account is valid from 2024-08-01 onwards.
+            <br />
+            <b>Note: You have to link your paynow to this account to qualify for the sale.</b>
+        </p>,
         lastUpdated: "2024-12-01",
     },
     "Maybank Save Up": {
         interestFn: placeholder_ir,
         url: "https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page",
-        remarks: "To be added",
+        remarks: <>To be added</>,
         lastUpdated: "2024-12-01",
     },
     "Citi Wealth first Account": {
         interestFn: placeholder_ir,
         url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
-        remarks: "To be added",
+        remarks: <>To be added</>,
         lastUpdated: "2024-12-01",
     },
 }

@@ -3,7 +3,7 @@ import { Container, GlobalStyles } from '@mui/material';
 import { Header } from './Components/Header.tsx';
 import { FormInputs } from './Components/Inputs.tsx';
 import Profile, { NewProfile } from './types/profile.ts';
-import { STORE_KEY } from './logic/constants.tsx';
+import { STORE_KEY } from './consts/keys.ts';
 import { Result } from './Components/Interests.tsx';
 import { ThemeProvider } from '@mui/material/styles';
 import { bgColor, theme } from './consts/colors.ts';
