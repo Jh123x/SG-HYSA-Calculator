@@ -135,13 +135,13 @@ export const bankInfo: Record<string, Info> = {
     "Maybank Save Up": {
         interestFn: placeholder_ir,
         url: "https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page",
-        remarks: "To be added",
+        remarks: <>To be added</>,
         lastUpdated: "2024-12-01",
     },
     "Citi Wealth first Account": {
         interestFn: placeholder_ir,
         url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
-        remarks: "To be added",
+        remarks: <>To be added</>,
         lastUpdated: "2024-12-01",
     },
 }
