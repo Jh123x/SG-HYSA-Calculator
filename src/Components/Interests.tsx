@@ -125,7 +125,7 @@ export const Result = ({ profile }: { profile: Profile }) => {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <Typography variant="caption" sx={{ color: textColor, margin: "10px 0px", display: "block", textAlign: "center" }}>
+            <Typography variant="caption" sx={{ color: textColor, margin: "10px 0px", display: "block", textAlign: "left" }}>
                 * Interest rates on their respective websites are subject to change without notice
                 <br />
                 ** Please do your own research before making any decisions, the numbers here serve as a guide.
