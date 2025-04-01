@@ -146,6 +146,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -192,6 +193,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -234,6 +236,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.ocbc.com/personal-banking/deposits/360-savings-account"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -274,6 +277,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.ocbc.com/personal-banking/notices"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -316,6 +320,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.maribank.sg/product/mari-savings-account"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -367,6 +372,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -411,6 +417,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://trustbank.sg/savings-account/"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -453,6 +460,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -497,6 +505,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.gxs.com.sg/savings-account"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -543,6 +552,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.chocolatefinance.com/"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -600,6 +610,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348761.html"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -653,6 +664,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348756.html"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -699,6 +711,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -739,6 +752,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -3527,6 +3541,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -3573,6 +3588,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -3615,6 +3631,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.ocbc.com/personal-banking/deposits/360-savings-account"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -3655,6 +3672,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.ocbc.com/personal-banking/notices"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -3697,6 +3715,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.maribank.sg/product/mari-savings-account"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -3748,6 +3767,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -3792,6 +3812,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://trustbank.sg/savings-account/"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -3834,6 +3855,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -3878,6 +3900,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.gxs.com.sg/savings-account"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -3924,6 +3947,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.chocolatefinance.com/"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -3981,6 +4005,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348761.html"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -4034,6 +4059,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348756.html"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -4080,6 +4106,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -4120,6 +4147,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -6965,6 +6993,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7011,6 +7040,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7053,6 +7083,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.ocbc.com/personal-banking/deposits/360-savings-account"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7093,6 +7124,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.ocbc.com/personal-banking/notices"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7135,6 +7167,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.maribank.sg/product/mari-savings-account"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7186,6 +7219,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7230,6 +7264,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://trustbank.sg/savings-account/"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7272,6 +7307,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7316,6 +7352,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.gxs.com.sg/savings-account"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7362,6 +7399,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.chocolatefinance.com/"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7419,6 +7457,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348761.html"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7472,6 +7511,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348756.html"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7518,6 +7558,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -7558,6 +7599,7 @@ Object {
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                     href="https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account"
+                    rel="noopener noreferrer"
                     target="_blank"
                   >
                     Official Website
@@ -10353,6 +10395,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10399,6 +10442,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10441,6 +10485,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.ocbc.com/personal-banking/deposits/360-savings-account"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10481,6 +10526,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.ocbc.com/personal-banking/notices"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10523,6 +10569,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.maribank.sg/product/mari-savings-account"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10574,6 +10621,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10618,6 +10666,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://trustbank.sg/savings-account/"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10660,6 +10709,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10704,6 +10754,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.gxs.com.sg/savings-account"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10750,6 +10801,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.chocolatefinance.com/"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10807,6 +10859,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348761.html"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10860,6 +10913,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.bankofchina.com/sg/pbservice/pb1/202212/t20221230_22348756.html"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10906,6 +10960,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website
@@ -10946,6 +11001,7 @@ Object {
                 <a
                   class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
                   href="https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   Official Website

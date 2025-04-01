@@ -11,9 +11,8 @@ import { ReactElement } from "react"
 import { trust_bank } from "./trust_bank.ts"
 import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
 import { gxs_interest } from "./gxs.ts"
-import { Link } from "@mui/material"
-import { primaryColor } from "../consts/colors.ts"
 import { bank_of_china_smart_saver, bank_of_china_super_saver } from "./bank_of_china.ts"
+import { LocalLink } from "../Components/LocalLink.tsx"
 
 interface Info {
     interestFn: (profile: Profile) => ResultInterest
@@ -105,16 +104,7 @@ export const bankInfo: Record<string, Info> = {
             <br />
             <b>Note: This is not a bank</b>
             <br />
-            <Link
-                href="https://share.chocolate.app/nxW9/l0tqqxem"
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                    color: primaryColor,
-                    textDecoration: "none",
-                    "&:hover": { textDecoration: "underline" },
-                }}
-            >Referral link</Link>
+            <LocalLink href="https://share.chocolate.app/nxW9/l0tqqxem">Referral link</LocalLink>
         </p>,
         lastUpdated: "2024-12-01",
     },
@@ -126,18 +116,9 @@ export const bankInfo: Record<string, Info> = {
             <br />
             Giro Transactions are assumed to be $30 worth each.
             <br />
-            <Link
-                href="https://www.bankofchina.com/sg/bocinfo/bi3/bi33/202404/t20240401_24845706.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                    color: primaryColor,
-                    textDecoration: "none",
-                    "&:hover": { textDecoration: "underline" },
-                }}
-            >
+            <LocalLink href="https://www.bankofchina.com/sg/bocinfo/bi3/bi33/202404/t20240401_24845706.html"            >
                 BOC base interest rates.
-            </Link>
+            </LocalLink>
         </p>,
         lastUpdated: "2024-12-01",
     },

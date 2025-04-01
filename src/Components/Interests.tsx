@@ -1,10 +1,11 @@
 import React, { ReactElement, useState } from "react"
-import { Container, Link, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, Paper, TableSortLabel } from "@mui/material"
+import { Container, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography, Paper, TableSortLabel } from "@mui/material"
 import { ResultProp } from "../types/props"
 import { primaryColor, bgColor, textColor } from "../consts/colors.ts"
 import Profile from "../types/profile.ts"
 import { bankInfo } from "../logic/constants.tsx"
 import { InterestGraph } from "./InterestGraph.tsx"
+import { LocalLink } from "./LocalLink.tsx"
 
 type SortableColumns = 'name' | 'yearlyInterest' | 'effectiveInterest' | undefined;
 
@@ -145,9 +146,9 @@ const displayResult = (bankName: string, info: ResultProp) => {
             <ThemedTableCell>{info.interest.toYearly() ?? 0}</ThemedTableCell>
             <ThemedTableCell>{info.interest.toYearlyPercent().toFixed(2) ?? ""}</ThemedTableCell>
             <ThemedTableCell>
-                <Link href={info.url} target="_blank" sx={{ color: primaryColor, textDecoration: "none", "&:hover": { textDecoration: "underline" } }}>
+                <LocalLink href={info.url}>
                     Official Website
-                </Link>
+                </LocalLink>
             </ThemedTableCell>
             <ThemedTableCell>{info.remarks}</ThemedTableCell>
             <ThemedTableCell>{lastUpdated}</ThemedTableCell>
