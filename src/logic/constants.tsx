@@ -104,6 +104,17 @@ export const bankInfo: Record<string, Info> = {
             Amounts above 50k are not included.
             <br />
             <b>Note: This is not a bank</b>
+            <br />
+            <Link
+                href="https://share.chocolate.app/nxW9/l0tqqxem"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                    color: primaryColor,
+                    textDecoration: "none",
+                    "&:hover": { textDecoration: "underline" },
+                }}
+            >Referral link</Link>
         </p>,
         lastUpdated: "2024-12-01",
     },

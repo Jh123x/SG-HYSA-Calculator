@@ -129,6 +129,8 @@ export const Result = ({ profile }: { profile: Profile }) => {
                 * Interest rates on their respective websites are subject to change without notice
                 <br />
                 ** Please do your own research before making any decisions, the numbers here serve as a guide.
+                <br />
+                *** Please ask around in your friend group for referrals to get additional bonuses, you can use the my referral code if your friends do not have any.
             </Typography>
             <InterestGraph profile={profile} />
         </Container>
