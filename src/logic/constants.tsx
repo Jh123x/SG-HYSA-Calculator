@@ -2,7 +2,7 @@ import * as React from "react"
 import { ResultInterest } from "../types/interest_result.ts"
 import Profile from "../types/profile.ts"
 import { maribank_new_interest, mariNewInterestRate } from "./maribank.ts"
-import { uob_interest } from "./uob.ts"
+import { uob_interest, uob_new_interest } from "./uob.ts"
 import { ocbc_interest, ocbc_new_interest } from "./ocbc360.ts"
 import { choco_finance } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
@@ -23,7 +23,7 @@ interface Info {
 }
 
 export const bankInfo: Record<string, Info> = {
-    "UOB Bank": {
+    "UOB Bank (Pre 2025/05)": {
         interestFn: uob_interest,
         url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
         remarks: <p>
@@ -34,6 +34,14 @@ export const bankInfo: Record<string, Info> = {
             (Extra 200 a year if you spend 500/mth for a year)
         </p>,
         lastUpdated: "2025-01-08",
+    },
+    "UOB Bank (Post 2025/05)": {
+        interestFn: uob_new_interest,
+        url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
+        remarks: <p>
+            More info under their PDF
+        </p>,
+        lastUpdated: "2025-04-01",
     },
     "OCBC Bank (Pre 2025/05)": {
         interestFn: ocbc_interest,
