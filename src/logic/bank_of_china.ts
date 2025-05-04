@@ -10,31 +10,39 @@ export const bank_of_china_smart_saver = (profile: Profile): ResultInterest => {
     var hasExtraSavingsInterest = false;
     var interest = baseInterest;
 
-    if (Insurance > 120_000) interest += 2.4;
-    if (Spending >= 500) interest += 0.5;
+    if (Insurance > 150_000) interest += 2.75;
 
-    if (Spending > 1500) {
-        interest += 0.3;
+    if (Spending >= 750) interest += 0.75;
+
+    if (Spending > 2500) {
+        interest += 0.5;
         hasExtraSavingsInterest = true;
     }
 
     if (Salary >= 2000) {
-        interest += 2.5
+        interest += 1.5
         hasExtraSavingsInterest = true;
     };
 
     if (Spending >= 90 && GiroTransactions >= 3) {
-        interest += 0.9;
+        interest += 0.1;
         hasExtraSavingsInterest = true;
     };
 
     return calculate_ir(
-        Savings > 1_000_000 ? 1_000_000 : Savings,
+        Savings,
         {
             cutoffs: [
-                { Cutoff: 100_000, InterestRatePercent: interest }
+                {
+                    Cutoff: 100_000,
+                    InterestRatePercent: interest,
+                },
+                {
+                    Cutoff: 1_000_000,
+                    InterestRatePercent: hasExtraSavingsInterest ? baseInterest + 0.6 : baseInterest,
+                },
             ],
-            baseRatePercent: hasExtraSavingsInterest ? baseInterest + 0.6 : baseInterest,
+            baseRatePercent: baseInterest,
         }
     )
 }

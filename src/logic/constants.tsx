@@ -24,17 +24,15 @@ interface Info {
 export const bankInfo: Record<string, Info> = {
     "UOB Bank": {
         interestFn: uob_interest,
-        url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
-        remarks: <p>
-            More info under their PDF
-        </p>,
-        lastUpdated: "2025-04-01",
+        url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
+        remarks: <p>Visit their official website to find out more</p>,
+        lastUpdated: "2025-05-05",
     },
     "OCBC Bank": {
         interestFn: ocbc_interest,
-        url: "https://www.ocbc.com/personal-banking/notices",
-        remarks: <p>More info Under the 21 March 2025 notice on their website</p>,
-        lastUpdated: "2025-03-22",
+        url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
+        remarks: <p>Visit their official website to find out more</p>,
+        lastUpdated: "2025-05-05",
     },
     "Maribank": {
         interestFn: maribank_new_interest,
@@ -46,25 +44,25 @@ export const bankInfo: Record<string, Info> = {
             <br />
             Referral code: <b>4QTP99MT</b>
         </p>,
-        lastUpdated: "2025-03-21",
+        lastUpdated: "2025-05-05",
     },
     "Standard Chartered": {
         interestFn: stand_chart_interest,
         url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
         remarks: <p>Insurance and Investment only<br />fulfils interest for 6 months</p>,
-        lastUpdated: "2025-03-22",
+        lastUpdated: "2025-05-05",
     },
     "Trust Bank": {
         interestFn: trust_bank,
         url: "https://trustbank.sg/savings-account/",
         remarks: <p>Spending assumes 5 x $30 if spending is more than 150.</p>,
-        lastUpdated: "2025-03-23",
+        lastUpdated: "2025-05-05",
     },
     "DBS Multiplier Account": {
         interestFn: dbs_multiplier_interest,
         url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
         remarks: <p>No eligible if you are younger than 18.<br />Spending includes credit card / paylah retail spend</p>,
-        lastUpdated: "2025-03-26",
+        lastUpdated: "2025-05-05",
     },
     "GXS": {
         interestFn: gxs_interest,
@@ -74,7 +72,7 @@ export const bankInfo: Record<string, Info> = {
             <br />
             <b>Note: The max amount deposited depends on individual (up to $95,000)</b>
         </p>,
-        lastUpdated: "2025-05-04",
+        lastUpdated: "2025-05-05",
     },
     "Chocolate Finance": {
         interestFn: choco_finance,
@@ -88,7 +86,7 @@ export const bankInfo: Record<string, Info> = {
             <br />
             <LocalLink href="https://share.chocolate.app/nxW9/l0tqqxem">Referral link</LocalLink>
         </p>,
-        lastUpdated: "2024-12-01",
+        lastUpdated: "2025-05-05",
     },
     "Bank of China SmartSaver": {
         interestFn: bank_of_china_smart_saver,
@@ -102,7 +100,7 @@ export const bankInfo: Record<string, Info> = {
                 BOC base interest rates.
             </LocalLink>
         </p>,
-        lastUpdated: "2024-12-01",
+        lastUpdated: "2025-05-01",
     },
     "Bank of China SuperSaver": {
         interestFn: bank_of_china_super_saver,
@@ -112,7 +110,7 @@ export const bankInfo: Record<string, Info> = {
             <br />
             <b>Note: You have to link your paynow to this account to qualify for the sale.</b>
         </p>,
-        lastUpdated: "2024-12-01",
+        lastUpdated: "2025-05-05",
     },
     "Maybank Save Up": {
         interestFn: placeholder_ir,

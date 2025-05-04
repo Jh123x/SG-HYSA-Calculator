@@ -5,8 +5,8 @@ import { calculate_ir } from "./common.ts";
 export const ocbc_interest = (profile: Profile): ResultInterest => {
     const { Savings, Salary, MonthlyAccIncrease, Spending, Insurance, Investment } = profile
 
-    // 1st 75k, next 25k
-    const interest = [0.05, 0.05]
+    
+    const interest = [0.05, 0.05]// [1st 75k, next 25k]
     if (Salary >= 1800) {
         interest[0] += 1.6
         interest[1] += 3.2
@@ -32,7 +32,7 @@ export const ocbc_interest = (profile: Profile): ResultInterest => {
         interest[1] += 2.4
     }
 
-    if (Savings >= 200000) {
+    if (Savings >= 250000) {
         interest[0] += 2.2
         interest[1] += 2.2
     }

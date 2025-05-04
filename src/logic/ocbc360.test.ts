@@ -18,16 +18,15 @@ interface testCase {
 describe("OCBC Interest rates", () => {
     const testCases: Array<testCase> = [
         {
-            caseName: "200k and all criteria",
-
-            savings: 200_000,
+            caseName: "250k and all criteria",
+            savings: 250_000,
             salary: 1800,
             balanceIncrease: 500,
             spending: 500,
             insurance: true,
             investment: true,
 
-            expectedResult: 8550,
+            expectedResult: 8575,
         },
         {
             caseName: "100k and all criteria",
