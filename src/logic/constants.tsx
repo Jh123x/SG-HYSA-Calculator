@@ -6,7 +6,6 @@ import { uob_interest } from "./uob.ts"
 import { ocbc_interest } from "./ocbc360.ts"
 import { choco_finance } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
-import { placeholder_ir } from "./common.ts"
 import { ReactElement } from "react"
 import { trust_bank } from "./trust_bank.ts"
 import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
@@ -131,7 +130,7 @@ export const bankInfo: Record<string, Info> = {
         remarks: <>
             Only Citigold and above members can access this perk (IE: more than 250k avg balance)
             <br />
-            *Assumes Citigold.
+            *Assumes Citigold level, Citi Private has a higher level.
         </>,
         lastUpdated: "2025-05-05",
     },
