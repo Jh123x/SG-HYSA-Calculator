@@ -22,19 +22,7 @@ interface Info {
 }
 
 export const bankInfo: Record<string, Info> = {
-    "UOB Bank (Pre 2025/05)": {
-        interestFn: uob_interest,
-        url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
-        remarks: <p>
-            The calculation here excludes
-            <br />
-            spending rebates included in their calculator.
-            <br />
-            (Extra 200 a year if you spend 500/mth for a year)
-        </p>,
-        lastUpdated: "2025-01-08",
-    },
-    "UOB Bank (Post 2025/05)": {
+    "UOB Bank": {
         interestFn: uob_new_interest,
         url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
         remarks: <p>
@@ -42,13 +30,7 @@ export const bankInfo: Record<string, Info> = {
         </p>,
         lastUpdated: "2025-04-01",
     },
-    "OCBC Bank (Pre 2025/05)": {
-        interestFn: ocbc_interest,
-        url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
-        remarks: "For more information use the calculator on their website",
-        lastUpdated: "2024-12-01",
-    },
-    "OCBC Bank (Post 2025/05)": {
+    "OCBC Bank": {
         interestFn: ocbc_new_interest,
         url: "https://www.ocbc.com/personal-banking/notices",
         remarks: <p>More info Under the 21 March 2025 notice on their website</p>,
