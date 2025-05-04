@@ -38,7 +38,7 @@ describe("UOB Interest Rates", () => {
             salaryCredit: 1600,
             giroTxns: 0,
             spending: 500,
-            expectedResult: 3375,
+            expectedResult: 2675,
         },
         {
             caseName: "150k + salary + spend",
@@ -46,7 +46,7 @@ describe("UOB Interest Rates", () => {
             salaryCredit: 1600,
             giroTxns: 0,
             spending: 500,
-            expectedResult: 6000,
+            expectedResult: 4950,
         },
         {
             caseName: "100k + giro + spend",
@@ -54,7 +54,7 @@ describe("UOB Interest Rates", () => {
             salaryCredit: 0,
             giroTxns: 3,
             spending: 500,
-            expectedResult: 2250,
+            expectedResult: 1750,
         },
         {
             caseName: "150k + giro + spend",
@@ -62,7 +62,7 @@ describe("UOB Interest Rates", () => {
             salaryCredit: 0,
             giroTxns: 3,
             spending: 500,
-            expectedResult: 3012.5,
+            expectedResult: 2387.5,
         },
         {
             caseName: "100k + salary",

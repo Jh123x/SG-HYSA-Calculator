@@ -2,8 +2,8 @@ import * as React from "react"
 import { ResultInterest } from "../types/interest_result.ts"
 import Profile from "../types/profile.ts"
 import { maribank_new_interest, mariNewInterestRate } from "./maribank.ts"
-import { uob_interest, uob_new_interest } from "./uob.ts"
-import { ocbc_interest, ocbc_new_interest } from "./ocbc360.ts"
+import { uob_interest } from "./uob.ts"
+import { ocbc_interest } from "./ocbc360.ts"
 import { choco_finance } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
 import { placeholder_ir } from "./common.ts"
@@ -23,7 +23,7 @@ interface Info {
 
 export const bankInfo: Record<string, Info> = {
     "UOB Bank": {
-        interestFn: uob_new_interest,
+        interestFn: uob_interest,
         url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
         remarks: <p>
             More info under their PDF
@@ -31,7 +31,7 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2025-04-01",
     },
     "OCBC Bank": {
-        interestFn: ocbc_new_interest,
+        interestFn: ocbc_interest,
         url: "https://www.ocbc.com/personal-banking/notices",
         remarks: <p>More info Under the 21 March 2025 notice on their website</p>,
         lastUpdated: "2025-03-22",

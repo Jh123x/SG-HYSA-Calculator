@@ -27,7 +27,7 @@ describe("OCBC Interest rates", () => {
             insurance: true,
             investment: true,
 
-            expectedResult: 10_100,
+            expectedResult: 8550,
         },
         {
             caseName: "100k and all criteria",
@@ -39,7 +39,7 @@ describe("OCBC Interest rates", () => {
             insurance: true,
             investment: true,
 
-            expectedResult: 7650,
+            expectedResult: 6300,
         },
         {
             caseName: "100k + salary + save",
@@ -51,7 +51,7 @@ describe("OCBC Interest rates", () => {
             insurance: false,
             investment: false,
 
-            expectedResult: 4650,
+            expectedResult: 3300,
         },
         {
             caseName: "0 should return 0",
