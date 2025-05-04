@@ -684,6 +684,8 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
                 >
                   Only Citigold and above members can access this perk (IE: more than 250k avg balance)
+                  <br />
+                  *Assumes Citigold.
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
@@ -3712,6 +3714,8 @@ Object {
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
               >
                 Only Citigold and above members can access this perk (IE: more than 250k avg balance)
+                <br />
+                *Assumes Citigold.
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
@@ -6797,6 +6801,8 @@ Object {
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
                 >
                   Only Citigold and above members can access this perk (IE: more than 250k avg balance)
+                  <br />
+                  *Assumes Citigold.
                 </td>
                 <td
                   class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
@@ -9928,6 +9934,8 @@ Object {
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
               >
                 Only Citigold and above members can access this perk (IE: more than 250k avg balance)
+                <br />
+                *Assumes Citigold.
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"

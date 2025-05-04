@@ -6,6 +6,10 @@ export class ResultInterest {
         this.savings = savings
     }
 
+    addInterest(no: number) {
+        this.yearly_interest += no
+    }
+
     toYearlyPercent(): number {
         if (this.savings === 0) return 0
 

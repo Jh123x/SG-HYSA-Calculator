@@ -12,14 +12,19 @@ export const citi_wealth_first = (profile: Profile): ResultInterest => {
     var ir = baseInterest
     if (profile.Spending >= 250) ir += 1.5
     if (profile.Investment >= 50_000) ir += 1.5
+    if (profile.Insurance >= 50_000) ir += 1.5
     if (profile.OneTimeLoan >= 500_000) ir += 1.5
-    if (profile.MonthlyAccIncrease >= 3000) ir += 1.5
 
-    return calculate_ir(profile.Savings, {
+    const additionalIr = profile.MonthlyAccIncrease * 0.015
+
+    const result = calculate_ir(profile.Savings, {
         cutoffs: [
             { Cutoff: 250_000, InterestRatePercent: ir },
         ],
         baseRatePercent: 0.01,
     })
+
+    result.addInterest(additionalIr)
+    return result
 }
 

@@ -128,7 +128,11 @@ export const bankInfo: Record<string, Info> = {
     "Citi Wealth first Account": {
         interestFn: citi_wealth_first,
         url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
-        remarks: <>Only Citigold and above members can access this perk (IE: more than 250k avg balance)</>,
+        remarks: <>
+            Only Citigold and above members can access this perk (IE: more than 250k avg balance)
+            <br />
+            *Assumes Citigold.
+        </>,
         lastUpdated: "2025-05-05",
     },
 }
