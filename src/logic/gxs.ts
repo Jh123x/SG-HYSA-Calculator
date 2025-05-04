@@ -12,7 +12,7 @@ export const gxs_interest = (profile: Profile): ResultInterest => {
         Savings > 95_000 ? 95_000 : Savings,
         {
             cutoffs: [
-                { Cutoff: 60_000, InterestRatePercent: 2.78 }, // Boost Pocket
+                { Cutoff: 60_000, InterestRatePercent: 2.58 }, // Boost Pocket
                 { Cutoff: 95_000, InterestRatePercent: 2.08 }, // Base Interest rates
             ],
             baseRatePercent: 0,

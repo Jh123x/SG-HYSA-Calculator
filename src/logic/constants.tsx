@@ -92,7 +92,7 @@ export const bankInfo: Record<string, Info> = {
             <br />
             <b>Note: The max amount deposited depends on individual (up to $95,000)</b>
         </p>,
-        lastUpdated: "2025-03-29",
+        lastUpdated: "2025-05-04",
     },
     "Chocolate Finance": {
         interestFn: choco_finance,
