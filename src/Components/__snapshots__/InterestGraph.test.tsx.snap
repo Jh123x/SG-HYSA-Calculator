@@ -285,6 +285,25 @@ Object {
                     d="M70,350C70.333,346,70.667,342,71,338C71.333,334,71.667,330.933,72,326C72.333,321.067,72.667,314.267,73,308.4C73.333,302.533,73.667,296.667,74,290.8C74.333,284.933,74.667,279.067,75,273.2C75.333,267.333,75.667,263.333,76,255.6C76.333,247.867,76.667,236.4,77,226.8C77.333,217.2,77.667,207.6,78,198C78.333,188.4,78.667,178.8,79,169.2C79.333,159.6,79.667,146.8,80,140.4C80.333,134,80.667,134,81,130.8C81.333,127.6,81.667,124.4,82,121.2C82.333,118,82.667,114.8,83,111.6C83.333,108.4,83.667,105.2,84,102C84.333,98.8,84.667,95.6,85,92.4C85.333,89.2,85.667,86,86,82.8C86.333,79.6,86.667,76.4,87,73.2C87.333,70,87.667,66.8,88,63.6C88.333,60.4,88.667,57.2,89,54C89.333,50.8,89.667,47.6,90,44.4"
                   />
                 </g>
+                <clippath
+                  id=":r1:-auto-generated-id-9-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:r1:-auto-generated-id-9-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-9 css-u0sr46-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,349.533,70.667,349.067,71,348.48C71.333,347.893,71.667,347.147,72,346.48C72.333,345.813,72.667,345.147,73,344.48C73.333,343.813,73.667,343.147,74,342.48C74.333,341.813,74.667,341.147,75,340.48C75.333,339.813,75.667,339.147,76,338.48C76.333,337.813,76.667,337.147,77,336.48C77.333,335.813,77.667,335.147,78,334.48C78.333,333.813,78.667,333.147,79,332.48C79.333,331.813,79.667,331.147,80,330.48C80.333,329.813,80.667,329.147,81,328.48C81.333,327.813,81.667,327.147,82,326.48C82.333,325.813,82.667,325.147,83,324.48C83.333,323.813,83.667,323.147,84,322.48C84.333,321.813,84.667,321.147,85,320.48C85.333,319.813,85.667,319.147,86,318.48C86.333,317.813,86.667,317.147,87,316.48C87.333,315.813,87.667,315.147,88,314.48C88.333,313.813,88.667,313.147,89,312.48C89.333,311.813,89.667,311.147,90,310.48"
+                  />
+                </g>
               </g>
             </g>
             <g
@@ -1875,6 +1894,142 @@ Object {
                     style="transform: translate(90px, 44.40000000000001px); transform-origin: 90px 44.40000000000001px;"
                   />
                 </g>
+                <g
+                  clip-path="url(#:r1:-auto-generated-id-9-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 348.47999999999996px); transform-origin: 71px 348.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 346.47999999999996px); transform-origin: 72px 346.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 344.47999999999996px); transform-origin: 73px 344.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 342.48px); transform-origin: 74px 342.48px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 340.48px); transform-origin: 75px 340.48px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 338.47999999999996px); transform-origin: 76px 338.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 336.47999999999996px); transform-origin: 77px 336.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 334.47999999999996px); transform-origin: 78px 334.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 332.48px); transform-origin: 79px 332.48px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 330.48px); transform-origin: 80px 330.48px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 328.47999999999996px); transform-origin: 81px 328.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 326.47999999999996px); transform-origin: 82px 326.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 324.47999999999996px); transform-origin: 83px 324.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 322.48px); transform-origin: 84px 322.48px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 320.48px); transform-origin: 85px 320.48px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 318.47999999999996px); transform-origin: 86px 318.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 316.47999999999996px); transform-origin: 87px 316.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 314.47999999999996px); transform-origin: 88px 314.47999999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 312.48px); transform-origin: 89px 312.48px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 310.48px); transform-origin: 90px 310.48px;"
+                  />
+                </g>
               </g>
             </g>
             <g
@@ -2222,6 +2377,44 @@ Object {
                   </tspan>
                 </text>
               </g>
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-9"
+                transform="translate(50 475)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#60009B"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    Maybank Save Up
+                  </tspan>
+                </text>
+              </g>
             </g>
             <clippath
               id=":r0:-clip-path"
@@ -2529,6 +2722,25 @@ Object {
                   class="MuiLineElement-root MuiLineElement-series-auto-generated-id-8 css-1l0ye40-MuiLineElement-root"
                   cursor="unset"
                   d="M70,350C70.333,346,70.667,342,71,338C71.333,334,71.667,330.933,72,326C72.333,321.067,72.667,314.267,73,308.4C73.333,302.533,73.667,296.667,74,290.8C74.333,284.933,74.667,279.067,75,273.2C75.333,267.333,75.667,263.333,76,255.6C76.333,247.867,76.667,236.4,77,226.8C77.333,217.2,77.667,207.6,78,198C78.333,188.4,78.667,178.8,79,169.2C79.333,159.6,79.667,146.8,80,140.4C80.333,134,80.667,134,81,130.8C81.333,127.6,81.667,124.4,82,121.2C82.333,118,82.667,114.8,83,111.6C83.333,108.4,83.667,105.2,84,102C84.333,98.8,84.667,95.6,85,92.4C85.333,89.2,85.667,86,86,82.8C86.333,79.6,86.667,76.4,87,73.2C87.333,70,87.667,66.8,88,63.6C88.333,60.4,88.667,57.2,89,54C89.333,50.8,89.667,47.6,90,44.4"
+                />
+              </g>
+              <clippath
+                id=":r1:-auto-generated-id-9-line-clip"
+              >
+                <rect
+                  height="500"
+                  width="70"
+                  x="0"
+                  y="0"
+                />
+              </clippath>
+              <g
+                clip-path="url(#:r1:-auto-generated-id-9-line-clip)"
+              >
+                <path
+                  class="MuiLineElement-root MuiLineElement-series-auto-generated-id-9 css-u0sr46-MuiLineElement-root"
+                  cursor="unset"
+                  d="M70,350C70.333,349.533,70.667,349.067,71,348.48C71.333,347.893,71.667,347.147,72,346.48C72.333,345.813,72.667,345.147,73,344.48C73.333,343.813,73.667,343.147,74,342.48C74.333,341.813,74.667,341.147,75,340.48C75.333,339.813,75.667,339.147,76,338.48C76.333,337.813,76.667,337.147,77,336.48C77.333,335.813,77.667,335.147,78,334.48C78.333,333.813,78.667,333.147,79,332.48C79.333,331.813,79.667,331.147,80,330.48C80.333,329.813,80.667,329.147,81,328.48C81.333,327.813,81.667,327.147,82,326.48C82.333,325.813,82.667,325.147,83,324.48C83.333,323.813,83.667,323.147,84,322.48C84.333,321.813,84.667,321.147,85,320.48C85.333,319.813,85.667,319.147,86,318.48C86.333,317.813,86.667,317.147,87,316.48C87.333,315.813,87.667,315.147,88,314.48C88.333,313.813,88.667,313.147,89,312.48C89.333,311.813,89.667,311.147,90,310.48"
                 />
               </g>
             </g>
@@ -4121,6 +4333,142 @@ Object {
                   style="transform: translate(90px, 44.40000000000001px); transform-origin: 90px 44.40000000000001px;"
                 />
               </g>
+              <g
+                clip-path="url(#:r1:-auto-generated-id-9-line-clip)"
+              >
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(71px, 348.47999999999996px); transform-origin: 71px 348.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(72px, 346.47999999999996px); transform-origin: 72px 346.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(73px, 344.47999999999996px); transform-origin: 73px 344.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(74px, 342.48px); transform-origin: 74px 342.48px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(75px, 340.48px); transform-origin: 75px 340.48px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(76px, 338.47999999999996px); transform-origin: 76px 338.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(77px, 336.47999999999996px); transform-origin: 77px 336.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(78px, 334.47999999999996px); transform-origin: 78px 334.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(79px, 332.48px); transform-origin: 79px 332.48px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(80px, 330.48px); transform-origin: 80px 330.48px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(81px, 328.47999999999996px); transform-origin: 81px 328.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(82px, 326.47999999999996px); transform-origin: 82px 326.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(83px, 324.47999999999996px); transform-origin: 83px 324.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(84px, 322.48px); transform-origin: 84px 322.48px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(85px, 320.48px); transform-origin: 85px 320.48px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(86px, 318.47999999999996px); transform-origin: 86px 318.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(87px, 316.47999999999996px); transform-origin: 87px 316.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(88px, 314.47999999999996px); transform-origin: 88px 314.47999999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(89px, 312.48px); transform-origin: 89px 312.48px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(90px, 310.48px); transform-origin: 90px 310.48px;"
+                />
+              </g>
             </g>
           </g>
           <g
@@ -4468,6 +4816,44 @@ Object {
                 </tspan>
               </text>
             </g>
+            <g
+              class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-9"
+              transform="translate(50 475)"
+            >
+              <rect
+                class="MuiChartsLegend-itemBackground"
+                fill="transparent"
+                height="24"
+                style="pointer-events: none; cursor: unset;"
+                width="29"
+                x="-2"
+                y="-12"
+              />
+              <rect
+                class="MuiChartsLegend-mark"
+                fill="#60009B"
+                height="20"
+                style="pointer-events: none;"
+                width="20"
+                x="0"
+                y="-10"
+              />
+              <text
+                dominant-baseline="central"
+                style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                text-anchor="start"
+                x="25"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="25"
+                >
+                  Maybank Save Up
+                </tspan>
+              </text>
+            </g>
           </g>
           <clippath
             id=":r0:-clip-path"
@@ -4811,6 +5197,25 @@ Object {
                     class="MuiLineElement-root MuiLineElement-series-auto-generated-id-8 css-1l0ye40-MuiLineElement-root"
                     cursor="unset"
                     d="M70,350C70.333,346.8,70.667,343.6,71,340.4C71.333,337.2,71.667,334.747,72,330.8C72.333,326.853,72.667,321.413,73,316.72C73.333,312.027,73.667,307.333,74,302.64C74.333,297.947,74.667,293.253,75,288.56C75.333,283.867,75.667,280.667,76,274.48C76.333,268.293,76.667,259.12,77,251.44C77.333,243.76,77.667,236.08,78,228.4C78.333,220.72,78.667,213.04,79,205.36C79.333,197.68,79.667,187.44,80,182.32C80.333,177.2,80.667,177.2,81,174.64C81.333,172.08,81.667,169.52,82,166.96C82.333,164.4,82.667,161.84,83,159.28C83.333,156.72,83.667,154.16,84,151.6C84.333,149.04,84.667,146.48,85,143.92C85.333,141.36,85.667,138.8,86,136.24C86.333,133.68,86.667,131.12,87,128.56C87.333,126,87.667,123.44,88,120.88C88.333,118.32,88.667,115.76,89,113.2C89.333,110.64,89.667,108.08,90,105.52"
+                  />
+                </g>
+                <clippath
+                  id=":r3:-auto-generated-id-9-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:r3:-auto-generated-id-9-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-9 css-u0sr46-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,347.493,70.667,344.987,71,342.384C71.333,339.781,71.667,337.051,72,334.384C72.333,331.717,72.667,329.051,73,326.384C73.333,323.717,73.667,321.051,74,318.384C74.333,315.717,74.667,313.584,75,310.384C75.333,307.184,75.667,302.917,76,299.184C76.333,295.451,76.667,290.917,77,287.984C77.333,285.051,77.667,282.651,78,281.584C78.333,280.517,78.667,280.517,79,279.984C79.333,279.451,79.667,278.917,80,278.384C80.333,277.851,80.667,277.317,81,276.784C81.333,276.251,81.667,275.717,82,275.184C82.333,274.651,82.667,274.117,83,273.584C83.333,273.051,83.667,272.517,84,271.984C84.333,271.451,84.667,270.917,85,270.384C85.333,269.851,85.667,269.317,86,268.784C86.333,268.251,86.667,267.717,87,267.184C87.333,266.651,87.667,266.117,88,265.584C88.333,265.051,88.667,264.517,89,263.984C89.333,263.451,89.667,262.917,90,262.384"
                   />
                 </g>
               </g>
@@ -6328,6 +6733,142 @@ Object {
                     style="transform: translate(90px, 105.52px); transform-origin: 90px 105.52px;"
                   />
                 </g>
+                <g
+                  clip-path="url(#:r3:-auto-generated-id-9-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 342.38399999999996px); transform-origin: 71px 342.38399999999996px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 334.384px); transform-origin: 72px 334.384px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 326.384px); transform-origin: 73px 326.384px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 318.384px); transform-origin: 74px 318.384px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 310.384px); transform-origin: 75px 310.384px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 299.18399999999997px); transform-origin: 76px 299.18399999999997px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 287.98400000000004px); transform-origin: 77px 287.98400000000004px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 281.584px); transform-origin: 78px 281.584px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 279.98400000000004px); transform-origin: 79px 279.98400000000004px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 278.384px); transform-origin: 80px 278.384px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 278.384px); transform-origin: 80px 278.384px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 276.784px); transform-origin: 81px 276.784px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 275.184px); transform-origin: 82px 275.184px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 273.584px); transform-origin: 83px 273.584px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 271.98400000000004px); transform-origin: 84px 271.98400000000004px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 270.384px); transform-origin: 85px 270.384px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 268.784px); transform-origin: 86px 268.784px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 267.184px); transform-origin: 87px 267.184px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 265.584px); transform-origin: 88px 265.584px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 263.98400000000004px); transform-origin: 89px 263.98400000000004px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 262.384px); transform-origin: 90px 262.384px;"
+                  />
+                </g>
               </g>
             </g>
             <g
@@ -6675,6 +7216,44 @@ Object {
                   </tspan>
                 </text>
               </g>
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-9"
+                transform="translate(50 475)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#60009B"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    Maybank Save Up
+                  </tspan>
+                </text>
+              </g>
             </g>
             <clippath
               id=":r2:-clip-path"
@@ -6954,6 +7533,25 @@ Object {
                   class="MuiLineElement-root MuiLineElement-series-auto-generated-id-8 css-1l0ye40-MuiLineElement-root"
                   cursor="unset"
                   d="M70,350C70.333,346.8,70.667,343.6,71,340.4C71.333,337.2,71.667,334.747,72,330.8C72.333,326.853,72.667,321.413,73,316.72C73.333,312.027,73.667,307.333,74,302.64C74.333,297.947,74.667,293.253,75,288.56C75.333,283.867,75.667,280.667,76,274.48C76.333,268.293,76.667,259.12,77,251.44C77.333,243.76,77.667,236.08,78,228.4C78.333,220.72,78.667,213.04,79,205.36C79.333,197.68,79.667,187.44,80,182.32C80.333,177.2,80.667,177.2,81,174.64C81.333,172.08,81.667,169.52,82,166.96C82.333,164.4,82.667,161.84,83,159.28C83.333,156.72,83.667,154.16,84,151.6C84.333,149.04,84.667,146.48,85,143.92C85.333,141.36,85.667,138.8,86,136.24C86.333,133.68,86.667,131.12,87,128.56C87.333,126,87.667,123.44,88,120.88C88.333,118.32,88.667,115.76,89,113.2C89.333,110.64,89.667,108.08,90,105.52"
+                />
+              </g>
+              <clippath
+                id=":r3:-auto-generated-id-9-line-clip"
+              >
+                <rect
+                  height="500"
+                  width="70"
+                  x="0"
+                  y="0"
+                />
+              </clippath>
+              <g
+                clip-path="url(#:r3:-auto-generated-id-9-line-clip)"
+              >
+                <path
+                  class="MuiLineElement-root MuiLineElement-series-auto-generated-id-9 css-u0sr46-MuiLineElement-root"
+                  cursor="unset"
+                  d="M70,350C70.333,347.493,70.667,344.987,71,342.384C71.333,339.781,71.667,337.051,72,334.384C72.333,331.717,72.667,329.051,73,326.384C73.333,323.717,73.667,321.051,74,318.384C74.333,315.717,74.667,313.584,75,310.384C75.333,307.184,75.667,302.917,76,299.184C76.333,295.451,76.667,290.917,77,287.984C77.333,285.051,77.667,282.651,78,281.584C78.333,280.517,78.667,280.517,79,279.984C79.333,279.451,79.667,278.917,80,278.384C80.333,277.851,80.667,277.317,81,276.784C81.333,276.251,81.667,275.717,82,275.184C82.333,274.651,82.667,274.117,83,273.584C83.333,273.051,83.667,272.517,84,271.984C84.333,271.451,84.667,270.917,85,270.384C85.333,269.851,85.667,269.317,86,268.784C86.333,268.251,86.667,267.717,87,267.184C87.333,266.651,87.667,266.117,88,265.584C88.333,265.051,88.667,264.517,89,263.984C89.333,263.451,89.667,262.917,90,262.384"
                 />
               </g>
             </g>
@@ -8471,6 +9069,142 @@ Object {
                   style="transform: translate(90px, 105.52px); transform-origin: 90px 105.52px;"
                 />
               </g>
+              <g
+                clip-path="url(#:r3:-auto-generated-id-9-line-clip)"
+              >
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(71px, 342.38399999999996px); transform-origin: 71px 342.38399999999996px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(72px, 334.384px); transform-origin: 72px 334.384px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(73px, 326.384px); transform-origin: 73px 326.384px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(74px, 318.384px); transform-origin: 74px 318.384px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(75px, 310.384px); transform-origin: 75px 310.384px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(76px, 299.18399999999997px); transform-origin: 76px 299.18399999999997px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(77px, 287.98400000000004px); transform-origin: 77px 287.98400000000004px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(78px, 281.584px); transform-origin: 78px 281.584px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(79px, 279.98400000000004px); transform-origin: 79px 279.98400000000004px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(80px, 278.384px); transform-origin: 80px 278.384px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(80px, 278.384px); transform-origin: 80px 278.384px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(81px, 276.784px); transform-origin: 81px 276.784px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(82px, 275.184px); transform-origin: 82px 275.184px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(83px, 273.584px); transform-origin: 83px 273.584px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(84px, 271.98400000000004px); transform-origin: 84px 271.98400000000004px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(85px, 270.384px); transform-origin: 85px 270.384px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(86px, 268.784px); transform-origin: 86px 268.784px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(87px, 267.184px); transform-origin: 87px 267.184px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(88px, 265.584px); transform-origin: 88px 265.584px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(89px, 263.98400000000004px); transform-origin: 89px 263.98400000000004px;"
+                />
+                <path
+                  class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-nn4ksu-MuiMarkElement-root"
+                  cursor="unset"
+                  d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                  style="transform: translate(90px, 262.384px); transform-origin: 90px 262.384px;"
+                />
+              </g>
             </g>
           </g>
           <g
@@ -8815,6 +9549,44 @@ Object {
                   x="25"
                 >
                   Bank of China SuperSaver
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-9"
+              transform="translate(50 475)"
+            >
+              <rect
+                class="MuiChartsLegend-itemBackground"
+                fill="transparent"
+                height="24"
+                style="pointer-events: none; cursor: unset;"
+                width="29"
+                x="-2"
+                y="-12"
+              />
+              <rect
+                class="MuiChartsLegend-mark"
+                fill="#60009B"
+                height="20"
+                style="pointer-events: none;"
+                width="20"
+                x="0"
+                y="-10"
+              />
+              <text
+                dominant-baseline="central"
+                style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+                text-anchor="start"
+                x="25"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="25"
+                >
+                  Maybank Save Up
                 </tspan>
               </text>
             </g>

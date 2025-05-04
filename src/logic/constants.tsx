@@ -13,6 +13,7 @@ import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
 import { gxs_interest } from "./gxs.ts"
 import { bank_of_china_smart_saver, bank_of_china_super_saver } from "./bank_of_china.ts"
 import { LocalLink } from "../Components/LocalLink.tsx"
+import { maybank_save_up } from "./maybank.ts"
 
 interface Info {
     interestFn: (profile: Profile) => ResultInterest
@@ -113,10 +114,15 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2025-05-05",
     },
     "Maybank Save Up": {
-        interestFn: placeholder_ir,
+        interestFn: maybank_save_up,
         url: "https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page",
-        remarks: <>To be added</>,
-        lastUpdated: "2024-12-01",
+        remarks: <>
+            <p>*Assumes that Investment qualifies & within Interest period.</p>
+            <LocalLink href="https://sslsecure.maybank.com.sg/cgi-bin/mbs/JSPscripts/mbb_rates/mbb_rates_savings.jsp?_gl=1*o41w5v*_gcl_au*MzUxMjAzMzAwLjE3NDYzODE0OTQ.*_ga*MTc5ODIyMTQ3OS4xNzQ2MzgxNDk0*_ga_QME4P70W20*MTc0NjM4MTQ5NC4xLjAuMTc0NjM4MTQ5NC42MC4wLjA.#sav2">
+                Check the base interest rates here
+            </LocalLink>
+        </>,
+        lastUpdated: "2024-05-05",
     },
     "Citi Wealth first Account": {
         interestFn: placeholder_ir,
