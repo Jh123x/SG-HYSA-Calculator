@@ -14,6 +14,7 @@ import { gxs_interest } from "./gxs.ts"
 import { bank_of_china_smart_saver, bank_of_china_super_saver } from "./bank_of_china.ts"
 import { LocalLink } from "../Components/LocalLink.tsx"
 import { maybank_save_up } from "./maybank.ts"
+import { citi_wealth_first } from "./citibank.ts"
 
 interface Info {
     interestFn: (profile: Profile) => ResultInterest
@@ -122,12 +123,12 @@ export const bankInfo: Record<string, Info> = {
                 Check the base interest rates here
             </LocalLink>
         </>,
-        lastUpdated: "2024-05-05",
+        lastUpdated: "2025-05-05",
     },
     "Citi Wealth first Account": {
-        interestFn: placeholder_ir,
+        interestFn: citi_wealth_first,
         url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
-        remarks: <>To be added</>,
-        lastUpdated: "2024-12-01",
+        remarks: <>Only Citigold and above members can access this perk (IE: more than 250k avg balance)</>,
+        lastUpdated: "2025-05-05",
     },
 }

@@ -480,6 +480,58 @@ Object {
             </div>
           </div>
           <div
+            class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":r9:"
+              id=":r9:-label"
+            >
+              <div
+                style="display: flex; flex-direction: row;"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                >
+                  One Time Loan
+                </p>
+              </div>
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+                id=":r9:"
+                placeholder="Additional 1 time loan"
+                type="number"
+                value=""
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-81qg8w"
+                >
+                  <span>
+                    <div
+                      style="display: flex; flex-direction: row;"
+                    >
+                      <p
+                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                      >
+                        One Time Loan
+                      </p>
+                    </div>
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
             aria-label="Is/Willing to be NTUC Member"
             class="MuiBox-root css-1rfinzg"
             data-mui-internal-clone-element="true"
@@ -1005,6 +1057,58 @@ Object {
           </div>
         </div>
         <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r9:"
+            id=":r9:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                One Time Loan
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r9:"
+              placeholder="Additional 1 time loan"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-81qg8w"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      One Time Loan
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
           aria-label="Is/Willing to be NTUC Member"
           class="MuiBox-root css-1rfinzg"
           data-mui-internal-clone-element="true"
@@ -1124,8 +1228,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":ra:"
-              id=":ra:-label"
+              for=":rb:"
+              id=":rb:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1156,7 +1260,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":ra:"
+                id=":rb:"
                 placeholder="To be deposited at bank"
                 type="number"
                 value="100000"
@@ -1202,8 +1306,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":rd:"
-              id=":rd:-label"
+              for=":re:"
+              id=":re:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1234,7 +1338,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rd:"
+                id=":re:"
                 placeholder="Current age"
                 type="number"
                 value="10"
@@ -1280,8 +1384,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":rg:"
-              id=":rg:-label"
+              for=":rh:"
+              id=":rh:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1312,7 +1416,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rg:"
+                id=":rh:"
                 placeholder="Credited to bank monthly"
                 type="number"
                 value="3000"
@@ -1358,8 +1462,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":rj:"
-              id=":rj:-label"
+              for=":rk:"
+              id=":rk:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1377,7 +1481,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rj:"
+                id=":rk:"
                 placeholder="Pay to bank yearly"
                 type="number"
                 value=""
@@ -1410,8 +1514,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":rk:"
-              id=":rk:-label"
+              for=":rl:"
+              id=":rl:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1429,7 +1533,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rk:"
+                id=":rl:"
                 placeholder="Pay to bank yearly"
                 type="number"
                 value=""
@@ -1462,8 +1566,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":rl:"
-              id=":rl:-label"
+              for=":rm:"
+              id=":rm:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1494,7 +1598,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rl:"
+                id=":rm:"
                 placeholder="On eligible cards monthly"
                 type="number"
                 value="1000"
@@ -1540,8 +1644,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":ro:"
-              id=":ro:-label"
+              for=":rp:"
+              id=":rp:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1559,7 +1663,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":ro:"
+                id=":rp:"
                 placeholder="No. of GIRO Transactions"
                 type="number"
                 value=""
@@ -1592,8 +1696,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="true"
-              for=":rp:"
-              id=":rp:-label"
+              for=":rq:"
+              id=":rq:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1624,7 +1728,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rp:"
+                id=":rq:"
                 placeholder="Balance increase monthly"
                 type="number"
                 value="500"
@@ -1670,8 +1774,8 @@ Object {
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for=":rs:"
-              id=":rs:-label"
+              for=":rt:"
+              id=":rt:-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -1689,7 +1793,7 @@ Object {
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-                id=":rs:"
+                id=":rt:"
                 placeholder="Monthly loan payment"
                 type="number"
                 value=""
@@ -1709,6 +1813,58 @@ Object {
                         class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
                       >
                         Loan Installment
+                      </p>
+                    </div>
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+          <div
+            class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for=":ru:"
+              id=":ru:-label"
+            >
+              <div
+                style="display: flex; flex-direction: row;"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                >
+                  One Time Loan
+                </p>
+              </div>
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <input
+                aria-invalid="false"
+                class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+                id=":ru:"
+                placeholder="Additional 1 time loan"
+                type="number"
+                value=""
+              />
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-81qg8w"
+                >
+                  <span>
+                    <div
+                      style="display: flex; flex-direction: row;"
+                    >
+                      <p
+                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                      >
+                        One Time Loan
                       </p>
                     </div>
                   </span>
@@ -1779,8 +1935,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":ra:"
-            id=":ra:-label"
+            for=":rb:"
+            id=":rb:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -1811,7 +1967,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":ra:"
+              id=":rb:"
               placeholder="To be deposited at bank"
               type="number"
               value="100000"
@@ -1857,8 +2013,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":rd:"
-            id=":rd:-label"
+            for=":re:"
+            id=":re:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -1889,7 +2045,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rd:"
+              id=":re:"
               placeholder="Current age"
               type="number"
               value="10"
@@ -1935,8 +2091,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":rg:"
-            id=":rg:-label"
+            for=":rh:"
+            id=":rh:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -1967,7 +2123,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rg:"
+              id=":rh:"
               placeholder="Credited to bank monthly"
               type="number"
               value="3000"
@@ -2013,8 +2169,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":rj:"
-            id=":rj:-label"
+            for=":rk:"
+            id=":rk:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2032,7 +2188,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rj:"
+              id=":rk:"
               placeholder="Pay to bank yearly"
               type="number"
               value=""
@@ -2065,8 +2221,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":rk:"
-            id=":rk:-label"
+            for=":rl:"
+            id=":rl:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2084,7 +2240,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rk:"
+              id=":rl:"
               placeholder="Pay to bank yearly"
               type="number"
               value=""
@@ -2117,8 +2273,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":rl:"
-            id=":rl:-label"
+            for=":rm:"
+            id=":rm:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2149,7 +2305,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rl:"
+              id=":rm:"
               placeholder="On eligible cards monthly"
               type="number"
               value="1000"
@@ -2195,8 +2351,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":ro:"
-            id=":ro:-label"
+            for=":rp:"
+            id=":rp:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2214,7 +2370,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":ro:"
+              id=":rp:"
               placeholder="No. of GIRO Transactions"
               type="number"
               value=""
@@ -2247,8 +2403,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="true"
-            for=":rp:"
-            id=":rp:-label"
+            for=":rq:"
+            id=":rq:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2279,7 +2435,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rp:"
+              id=":rq:"
               placeholder="Balance increase monthly"
               type="number"
               value="500"
@@ -2325,8 +2481,8 @@ Object {
           <label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
             data-shrink="false"
-            for=":rs:"
-            id=":rs:-label"
+            for=":rt:"
+            id=":rt:-label"
           >
             <div
               style="display: flex; flex-direction: row;"
@@ -2344,7 +2500,7 @@ Object {
             <input
               aria-invalid="false"
               class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-              id=":rs:"
+              id=":rt:"
               placeholder="Monthly loan payment"
               type="number"
               value=""
@@ -2364,6 +2520,58 @@ Object {
                       class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
                     >
                       Loan Installment
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":ru:"
+            id=":ru:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                One Time Loan
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":ru:"
+              placeholder="Additional 1 time loan"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-81qg8w"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      One Time Loan
                     </p>
                   </div>
                 </span>

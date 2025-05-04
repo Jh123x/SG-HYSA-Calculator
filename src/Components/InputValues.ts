@@ -59,6 +59,12 @@ export const numericalInputs: Array<InputArg<number>> = [
         fn: (profile, v) => ({ ...profile, LoanInstallment: v }),
         getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.LoanInstallment),
     },
+    {
+        label: "One Time Loan",
+        tooltip: "Additional 1 time loan",
+        fn: (profile, v) => ({ ...profile, OneTimeLoan: v }),
+        getStateFromProfile: (profile: Profile) => makeDefaultNumber(profile.OneTimeLoan),
+    }
 ];
 
 export const booleanInputs: Array<InputArg<boolean>> = [
