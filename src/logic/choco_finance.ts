@@ -11,3 +11,13 @@ export const choco_finance = (profile: Profile): ResultInterest => {
         baseRatePercent: 0,
     })
 }
+
+export const choco_finance_new = (profile: Profile): ResultInterest => {
+    return calculate_ir(profile.Savings, {
+        cutoffs: [
+            { Cutoff: 20000, InterestRatePercent: 3 },
+            { Cutoff: 30000, InterestRatePercent: 2.7 },
+        ],
+        baseRatePercent: 0,
+    })
+}

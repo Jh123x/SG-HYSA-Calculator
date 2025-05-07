@@ -19,3 +19,21 @@ export const gxs_interest = (profile: Profile): ResultInterest => {
         },
     )
 }
+
+export const gxs_interest_new = (profile: Profile): ResultInterest => {
+    const { Savings } = profile
+    if (Savings < 200) {
+        return new ResultInterest(0, 0)
+    }
+
+    return calculate_ir(
+        Savings > 95_000 ? 95_000 : Savings,
+        {
+            cutoffs: [
+                { Cutoff: 60_000, InterestRatePercent: 2.58 }, // Boost Pocket
+                { Cutoff: 95_000, InterestRatePercent: 1.68 }, // Base Interest rates
+            ],
+            baseRatePercent: 0,
+        },
+    )
+}

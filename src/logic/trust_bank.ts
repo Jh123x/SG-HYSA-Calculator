@@ -24,3 +24,44 @@ export const trust_bank = (profile: Profile): ResultInterest => {
         }
     )
 }
+
+const newbaseInterest = 0.5
+
+export const trust_bank_june = (profile: Profile): ResultInterest => {
+    const { Savings, Salary, Spending, IsNTUCMember } = profile
+
+    var currentInterest = newbaseInterest
+
+    if (Spending >= 150) currentInterest += 0.3
+    if (Spending >= 150 && IsNTUCMember) currentInterest += 0.2
+    if (Savings >= 100_000) currentInterest += 0.75
+    if (Salary >= 1500) currentInterest += 0.5
+
+
+    return calculate_ir(
+        Savings,
+        {
+            cutoffs: [{ Cutoff: 1_200_000, InterestRatePercent: currentInterest, }],
+            baseRatePercent: 0.05,
+        }
+    )
+}
+
+export const trust_bank_aug = (profile: Profile): ResultInterest => {
+    const { Savings, Salary, Spending, IsNTUCMember } = profile
+
+    var currentInterest = newbaseInterest
+
+    if (Spending >= 150) currentInterest += 0.3
+    if (Spending >= 150 && IsNTUCMember) currentInterest += 0.2
+    if (Savings >= 100_000) currentInterest += 0.5
+    if (Salary >= 1500) currentInterest += 0.5
+
+    return calculate_ir(
+        Savings,
+        {
+            cutoffs: [{ Cutoff: 1_200_000, InterestRatePercent: currentInterest, }],
+            baseRatePercent: 0.05,
+        }
+    )
+}
