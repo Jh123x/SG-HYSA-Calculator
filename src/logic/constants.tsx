@@ -1,7 +1,7 @@
 import * as React from "react"
 import { ResultInterest } from "../types/interest_result.ts"
 import Profile from "../types/profile.ts"
-import { maribank_new_interest, mariNewInterestRate } from "./maribank.ts"
+import { maribank_interest, mariInterestRate, maribank_new_interest, mariNewInterestRate } from "./maribank.ts"
 import { uob_interest } from "./uob.ts"
 import { ocbc_interest } from "./ocbc360.ts"
 import { choco_finance, choco_finance_new } from "./choco_finance.ts"
@@ -36,8 +36,20 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2025-05-05",
     },
     "Maribank": {
-        interestFn: maribank_new_interest,
+        interestFn: maribank_interest,
         url: "https://www.maribank.sg/product/mari-savings-account",
+        remarks: <p>
+            Interest rates are a flat {mariInterestRate}%
+            <br />
+            Capped at $100k
+            <br />
+            Referral code: <b>4QTP99MT</b>
+        </p>,
+        lastUpdated: "2025-05-05",
+    },
+    "Maribank (After 15th June 2025)": {
+        interestFn: maribank_new_interest,
+        url: "https://banking-aka-storage.maribank.com.sg/maribank/sg/website-content/Update_to_Mari_Savings_Account_(16_May_2025).pdf",
         remarks: <p>
             Interest rates are a flat {mariNewInterestRate}%
             <br />
@@ -45,7 +57,7 @@ export const bankInfo: Record<string, Info> = {
             <br />
             Referral code: <b>4QTP99MT</b>
         </p>,
-        lastUpdated: "2025-05-05",
+        lastUpdated: "2025-05-17",
     },
     "Standard Chartered": {
         interestFn: stand_chart_interest,
