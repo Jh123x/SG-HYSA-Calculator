@@ -26,7 +26,7 @@ describe("GXS Interest rates", () => {
         {
             caseName: "Max amount deposited",
             savings: 95000,
-            expectedResult: 2276,
+            expectedResult: 2136,
         },
     ]
 

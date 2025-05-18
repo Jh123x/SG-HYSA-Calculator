@@ -9,7 +9,7 @@ import { stand_chart_interest } from "./stand_chart.ts"
 import { ReactElement } from "react"
 import { trust_bank, trust_bank_aug, trust_bank_june } from "./trust_bank.ts"
 import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
-import { gxs_interest, gxs_interest_new } from "./gxs.ts"
+import { gxs_interest } from "./gxs.ts"
 import { bank_of_china_smart_saver, bank_of_china_super_saver } from "./bank_of_china.ts"
 import { LocalLink } from "../Components/LocalLink.tsx"
 import { maybank_save_up } from "./maybank.ts"
@@ -99,23 +99,14 @@ export const bankInfo: Record<string, Info> = {
         remarks: <p>No eligible if you are younger than 18.<br />Spending includes credit card / paylah retail spend</p>,
         lastUpdated: "2025-05-05",
     },
-    "GXS (Before 05/25)": {
+    "GXS": {
         interestFn: gxs_interest,
         url: "https://www.gxs.com.sg/savings-account",
         remarks: <p>
             Calculated using boost pocket (3 months) up to $60,000 with remaining balance in main account
             <br />
             <b>Note: The max amount deposited depends on individual (up to $95,000)</b>
-        </p>,
-        lastUpdated: "2025-05-05",
-    },
-    "GXS (After 05/25)": {
-        interestFn: gxs_interest_new,
-        url: "https://www.gxs.com.sg/savings-account",
-        remarks: <p>
-            Calculated using boost pocket (3 months) up to $60,000 with remaining balance in main account
-            <br />
-            <b>Note: The max amount deposited depends on individual (up to $95,000)</b>
+            View other <LocalLink href="https://www.gxs.com.sg/notices">Notices here</LocalLink>
         </p>,
         lastUpdated: "2025-05-07",
     },
