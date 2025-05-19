@@ -178,7 +178,7 @@ export const bankInfo: Record<string, Info> = {
         interestFn: citi_wealth_first,
         url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
         remarks: <>
-            Only Citigold and above members can access this perk (IE: more than 250k avg balance)
+            Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)
             <br />
             *Assumes Citigold level, Citi Private has a higher level.
         </>,
