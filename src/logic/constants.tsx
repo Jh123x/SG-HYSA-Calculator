@@ -1,13 +1,12 @@
-import * as React from "react"
 import { ResultInterest } from "../types/interest_result.ts"
 import Profile from "../types/profile.ts"
-import { maribank_interest, mariInterestRate, maribank_new_interest, mariNewInterestRate } from "./maribank.ts"
+import { maribank_interest_pre_06_2025, mariInterestRate_pre_06_2025, maribank_interest, mariInterestRate } from "./maribank.ts"
 import { uob_interest } from "./uob.ts"
 import { ocbc_interest } from "./ocbc360.ts"
-import { choco_finance, choco_finance_new } from "./choco_finance.ts"
+import { choco_finance_pre_06_2025, choco_finance } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
 import { ReactElement } from "react"
-import { trust_bank, trust_bank_aug, trust_bank_june } from "./trust_bank.ts"
+import { trust_bank_pre_06_2025, trust_bank, trust_bank_pre_08_2025 } from "./trust_bank.ts"
 import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
 import { gxs_interest } from "./gxs.ts"
 import { bank_of_china_smart_saver, bank_of_china_super_saver } from "./bank_of_china.ts"
@@ -35,11 +34,11 @@ export const bankInfo: Record<string, Info> = {
         remarks: <p>Visit their official website to find out more</p>,
         lastUpdated: "2025-05-05",
     },
-    "Maribank": {
-        interestFn: maribank_interest,
+    "Maribank (Before 15th June 2025)": {
+        interestFn: maribank_interest_pre_06_2025,
         url: "https://www.maribank.sg/product/mari-savings-account",
         remarks: <p>
-            Interest rates are a flat {mariInterestRate}%
+            Interest rates are a flat {mariInterestRate_pre_06_2025}%
             <br />
             Capped at $100k
             <br />
@@ -48,10 +47,10 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2025-05-05",
     },
     "Maribank (After 15th June 2025)": {
-        interestFn: maribank_new_interest,
+        interestFn: maribank_interest,
         url: "https://banking-aka-storage.maribank.com.sg/maribank/sg/website-content/Update_to_Mari_Savings_Account_(16_May_2025).pdf",
         remarks: <p>
-            Interest rates are a flat {mariNewInterestRate}%
+            Interest rates are a flat {mariInterestRate}%
             <br />
             Capped at $100k
             <br />
@@ -66,7 +65,7 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2025-05-07",
     },
     "Trust Bank (Before 06/25)": {
-        interestFn: trust_bank,
+        interestFn: trust_bank_pre_06_2025,
         url: "https://trustbank.sg/savings-account/",
         remarks: <>
         Spending assumes 5 x $30 if spending is more than 150.
@@ -77,7 +76,7 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2025-05-07",
     },
     "Trust Bank (After 06/25 before 08/25)": {
-        interestFn: trust_bank_june,
+        interestFn: trust_bank_pre_08_2025,
         url: "https://trustbank.sg/savings-account/",
         remarks: <p>
             Spending assumes 5 x $30 if spending is more than 150.
@@ -88,7 +87,7 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2025-05-07",
     },
     "Trust Bank (After 08/25)": {
-        interestFn: trust_bank_aug,
+        interestFn: trust_bank,
         url: "https://trustbank.sg/savings-account/",
         remarks: <p>Spending assumes 5 x $30 if spending is more than 150.</p>,
         lastUpdated: "2025-05-05",
@@ -111,7 +110,7 @@ export const bankInfo: Record<string, Info> = {
         lastUpdated: "2025-05-07",
     },
     "Chocolate Finance (Before 06/25)": {
-        interestFn: choco_finance,
+        interestFn: choco_finance_pre_06_2025,
         url: "https://www.chocolatefinance.com/",
         remarks: <p>
             1st 20k 3.3% p.a, next 30k 3% p.a.
@@ -126,7 +125,7 @@ export const bankInfo: Record<string, Info> = {
     },
 
     "Chocolate Finance (After 06/25)": {
-        interestFn: choco_finance_new,
+        interestFn: choco_finance,
         url: "https://www.chocolatefinance.com/",
         remarks: <p>
             1st 20k 3.0% p.a, next 30k 2.7% p.a.

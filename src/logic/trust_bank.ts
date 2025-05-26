@@ -5,7 +5,7 @@ import { calculate_ir } from "./common.ts";
 
 const baseInterest = 0.75
 
-export const trust_bank = (profile: Profile): ResultInterest => {
+export const trust_bank_pre_06_2025 = (profile: Profile): ResultInterest => {
     const { Savings, Salary, Spending, IsNTUCMember } = profile
 
     var currentInterest = baseInterest
@@ -27,7 +27,7 @@ export const trust_bank = (profile: Profile): ResultInterest => {
 
 const newbaseInterest = 0.5
 
-export const trust_bank_june = (profile: Profile): ResultInterest => {
+export const trust_bank_pre_08_2025 = (profile: Profile): ResultInterest => {
     const { Savings, Salary, Spending, IsNTUCMember } = profile
 
     var currentInterest = newbaseInterest
@@ -47,7 +47,7 @@ export const trust_bank_june = (profile: Profile): ResultInterest => {
     )
 }
 
-export const trust_bank_aug = (profile: Profile): ResultInterest => {
+export const trust_bank = (profile: Profile): ResultInterest => {
     const { Savings, Salary, Spending, IsNTUCMember } = profile
 
     var currentInterest = newbaseInterest
