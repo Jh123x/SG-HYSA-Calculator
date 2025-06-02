@@ -64,18 +64,7 @@ export const bankInfo: Record<string, Info> = {
         remarks: <p>Insurance and Investment only<br />fulfils interest for 6 months</p>,
         lastUpdated: "2025-05-07",
     },
-    "Trust Bank (Before 06/25)": {
-        interestFn: trust_bank_pre_06_2025,
-        url: "https://trustbank.sg/savings-account/",
-        remarks: <>
-        Spending assumes 5 x $30 if spending is more than 150.
-        For more info, see <LocalLink href="https://trustbank.sg/legal/key-facts-sheet-savings-account/#perks-and-features---what's-in-it-for-you-(from-1-june-2025)">
-            the new interest rates
-        </LocalLink>
-        </>,
-        lastUpdated: "2025-05-07",
-    },
-    "Trust Bank (After 06/25 before 08/25)": {
+    "Trust Bank (before 08/25)": {
         interestFn: trust_bank_pre_08_2025,
         url: "https://trustbank.sg/savings-account/",
         remarks: <p>
@@ -109,22 +98,7 @@ export const bankInfo: Record<string, Info> = {
         </p>,
         lastUpdated: "2025-05-07",
     },
-    "Chocolate Finance (Before 06/25)": {
-        interestFn: choco_finance_pre_06_2025,
-        url: "https://www.chocolatefinance.com/",
-        remarks: <p>
-            1st 20k 3.3% p.a, next 30k 3% p.a.
-            <br />
-            Amounts above 50k are not included.
-            <br />
-            <b>Note: This is not a bank</b>
-            <br />
-            <LocalLink href="https://share.chocolate.app/nxW9/l0tqqxem">Referral link</LocalLink>
-        </p>,
-        lastUpdated: "2025-05-07",
-    },
-
-    "Chocolate Finance (After 06/25)": {
+    "Chocolate Finance": {
         interestFn: choco_finance,
         url: "https://www.chocolatefinance.com/",
         remarks: <p>
