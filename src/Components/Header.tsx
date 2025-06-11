@@ -14,13 +14,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArticleIcon from '@mui/icons-material/Article';
 import { textColor } from '../consts/colors.ts';
-import { WebAlert } from './Alert.tsx';
 
 export const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery('(max-width:600px)');
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const [showAlert, setShowAlert] = React.useState(true)
 
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -113,9 +111,6 @@ export const Header = () => {
           )}
         </Box>
       </Toolbar>
-      <WebAlert severity="info" onClose={() => setShowAlert(false)} hideModel={!showAlert}>
-        You do not need to key in 0 values
-      </WebAlert>
     </AppBar>
   );
 };
