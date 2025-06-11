@@ -13,27 +13,27 @@ describe("Choco Finance", () => {
         {
             name: "should return the correct i/r for < 20k",
             savings: 1000,
-            expected_ir: 33,
+            expected_ir: 30,
         },
         {
             name: "should return the correct i/r for 20k",
             savings: 20000,
-            expected_ir: 660,
+            expected_ir: 600,
         },
         {
             name: "should return the correct i/r for > 20k and < 50k",
             savings: 30000,
-            expected_ir: 960,
+            expected_ir: 870,
         },
         {
             name: "should return the correct i/r for 50k",
             savings: 50000,
-            expected_ir: 1560,
+            expected_ir: 1410,
         },
         {
             name: "should return the i/r for 50k for > 50k",
             savings: 100000,
-            expected_ir: 1560,
+            expected_ir: 1410,
         }
     ]
 
