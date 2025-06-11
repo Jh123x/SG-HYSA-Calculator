@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { FormInputs } from "./Inputs";
 import Profile, { NewProfile } from "../types/profile";
