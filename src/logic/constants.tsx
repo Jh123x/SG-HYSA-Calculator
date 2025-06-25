@@ -36,7 +36,7 @@ export const bankInfo: Record<string, Info> = {
     },
     "Maribank": {
         interestFn: maribank_interest,
-        url: "https://banking-aka-storage.maribank.com.sg/maribank/sg/website-content/Update_to_Mari_Savings_Account_(16_May_2025).pdf",
+        url: "https://www.maribank.sg/product/mari-savings-account",
         remarks: <p>
             Interest rates are a flat {mariInterestRate}%
             <br />
