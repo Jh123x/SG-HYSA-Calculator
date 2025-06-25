@@ -1,6 +1,6 @@
 import { ResultInterest } from "../types/interest_result.ts"
 import Profile from "../types/profile.ts"
-import { maribank_interest_pre_06_2025, mariInterestRate_pre_06_2025, maribank_interest, mariInterestRate } from "./maribank.ts"
+import { maribank_interest, mariInterestRate } from "./maribank.ts"
 import { uob_interest } from "./uob.ts"
 import { ocbc_interest } from "./ocbc360.ts"
 import { choco_finance } from "./choco_finance.ts"
@@ -34,19 +34,7 @@ export const bankInfo: Record<string, Info> = {
         remarks: <p>Visit their official website to find out more</p>,
         lastUpdated: "2025-05-05",
     },
-    "Maribank (Before 15th June 2025)": {
-        interestFn: maribank_interest_pre_06_2025,
-        url: "https://www.maribank.sg/product/mari-savings-account",
-        remarks: <p>
-            Interest rates are a flat {mariInterestRate_pre_06_2025}%
-            <br />
-            Capped at $100k
-            <br />
-            Referral code: <b>4QTP99MT</b>
-        </p>,
-        lastUpdated: "2025-05-05",
-    },
-    "Maribank (After 15th June 2025)": {
+    "Maribank": {
         interestFn: maribank_interest,
         url: "https://banking-aka-storage.maribank.com.sg/maribank/sg/website-content/Update_to_Mari_Savings_Account_(16_May_2025).pdf",
         remarks: <p>
