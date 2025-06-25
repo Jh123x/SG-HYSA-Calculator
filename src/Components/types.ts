@@ -9,7 +9,7 @@ export interface InputArg<Type> {
 
 export interface Field<Type> {
     label: string
-    onChange: (v: Type) => void
+    onChange: (v: Type | "") => void
     value: Type | ""
     tooltip?: string
 }
