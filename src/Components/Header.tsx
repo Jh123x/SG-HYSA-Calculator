@@ -20,13 +20,8 @@ export const Header = () => {
   const isMobile = useMediaQuery('(max-width:600px)');
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
-  const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  const handleMenu = (event: React.MouseEvent<HTMLElement>) => { setAnchorEl(event.currentTarget); };
+  const handleClose = () => { setAnchorEl(null) };
 
   return (
     <AppBar position="static" elevation={0} sx={{ backgroundColor: 'transparent' }}>

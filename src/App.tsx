@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Container, GlobalStyles } from '@mui/material';
 import { Header } from './Components/Header.tsx';
 import { FormInputs } from './Components/Inputs.tsx';
