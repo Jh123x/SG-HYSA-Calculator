@@ -3,7 +3,7 @@ import Profile from "../types/profile.ts"
 import { ResultInterest } from "../types/interest_result.ts"
 import { uob_interest } from "./uob.ts"
 import { gxs_interest } from "./gxs.ts"
-import { ocbc_interest } from "./ocbc360.ts"
+import { ocbc_interest, ocbc_interest_pre_08_2025 } from "./ocbc360.ts"
 import { maybank_save_up } from "./maybank.ts"
 import { citi_wealth_first } from "./citibank.ts"
 import { choco_finance } from "./choco_finance.ts"
@@ -26,9 +26,15 @@ export const bankInfo: Record<string, Info> = {
         interestFn: uob_interest,
         url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
         remarks: <p>Visit their official website to find out more</p>,
-        lastUpdated: "2025-05-05",
+        lastUpdated: "2025-06-28",
     },
-    "OCBC Bank": {
+    "OCBC Bank (Before 08/25)": {
+        interestFn: ocbc_interest_pre_08_2025,
+        url: "https://www.ocbc.com/personal-banking/notices#27june2025",
+        remarks: <p>Visit the 27 July Notice to learn more.</p>,
+        lastUpdated: "2025-06-28",
+    },
+    "OCBC Bank (After 08/25)": {
         interestFn: ocbc_interest,
         url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
         remarks: <p>Visit their official website to find out more</p>,
