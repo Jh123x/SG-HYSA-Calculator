@@ -56,7 +56,7 @@ export const bankInfo: Record<string, Info> = {
         interestFn: stand_chart_interest,
         url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
         remarks: <p>Insurance and Investment only<br />fulfils interest for 6 months</p>,
-        lastUpdated: "2025-05-07",
+        lastUpdated: "2025-07-10",
     },
     "Trust Bank (before 08/25)": {
         interestFn: trust_bank_pre_08_2025,
