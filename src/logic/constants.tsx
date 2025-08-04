@@ -11,7 +11,7 @@ import { LocalLink } from "../Components/LocalLink.tsx"
 import { stand_chart_interest } from "./stand_chart.ts"
 import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
 import { trust_bank } from "./trust_bank.ts"
-import { maribank_interest, mariInterestRate } from "./maribank.ts"
+import { maribank_interest, mariInterestRate, maribank_interest_pre_09_2025, mariInterestRate_pre_09_2025 } from "./maribank.ts"
 import { bank_of_china_smart_saver, bank_of_china_super_saver } from "./bank_of_china.ts"
 
 interface Info {
@@ -40,9 +40,21 @@ export const bankInfo: Record<string, Info> = {
 		remarks: <p>Visit their official website to find out more</p>,
 		lastUpdated: "2025-05-05",
 	},
-	"Maribank": {
-		interestFn: maribank_interest,
+	"Maribank (Before 9/25)": {
+		interestFn: maribank_interest_pre_09_2025,
 		url: "https://www.maribank.sg/product/mari-savings-account",
+		remarks: <p>
+			Interest rates are a flat {mariInterestRate_pre_09_2025}%
+			<br />
+			Capped at $100k
+			<br />
+			Referral code: <b>4QTP99MT</b>
+		</p>,
+		lastUpdated: "2025-08-04",
+	},
+	"Maribank (After 9/25)": {
+		interestFn: maribank_interest,
+		url: "https://banking-aka-storage.maribank.com.sg/maribank/sg/website-content/Update_to_Mari_Savings_Account_(1_Aug_2025).pdf",
 		remarks: <p>
 			Interest rates are a flat {mariInterestRate}%
 			<br />
@@ -50,7 +62,7 @@ export const bankInfo: Record<string, Info> = {
 			<br />
 			Referral code: <b>4QTP99MT</b>
 		</p>,
-		lastUpdated: "2025-05-17",
+		lastUpdated: "2025-08-04",
 	},
 	"Standard Chartered": {
 		interestFn: stand_chart_interest,
