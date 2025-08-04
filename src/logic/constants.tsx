@@ -28,7 +28,7 @@ export const bankInfo: Record<string, Info> = {
 		remarks: <p>Visit their official website to find out more</p>,
 		lastUpdated: "2025-08-04",
 	},
-	"UOB Bank": {
+	"UOB Bank (Before 09/25)": {
 		interestFn: uob_interest_2025_09,
 		url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
 		remarks: <p>Visit their official website to find out more</p>,
