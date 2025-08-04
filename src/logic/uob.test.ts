@@ -1,5 +1,5 @@
 import { ResultInterest } from "../types/interest_result";
-import { uob_interest } from "./uob";
+import { uob_interest_2025_09 } from "./uob";
 import { NewProfile } from "../types/profile";
 
 
@@ -116,7 +116,7 @@ describe("UOB Interest Rates", () => {
 
     for (const tc of testCases) {
         it(tc.caseName, () => {
-            const result = uob_interest(NewProfile({
+            const result = uob_interest_2025_09(NewProfile({
                 Savings: tc.savings,
                 Salary: tc.salaryCredit,
                 Spending: tc.spending,

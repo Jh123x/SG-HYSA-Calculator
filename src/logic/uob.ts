@@ -7,17 +7,17 @@ const ir_cutoff: Array<Interest> = [
 	// Spend 500 + Salary Credit
 	{
 		cutoffs: [
-			{ Cutoff: 75000, InterestRatePercent: 2.3 },
-			{ Cutoff: 50000, InterestRatePercent: 3.8 },
-			{ Cutoff: 25000, InterestRatePercent: 5.3 },
+			{ Cutoff: 75000, InterestRatePercent: 1.5 },
+			{ Cutoff: 50000, InterestRatePercent: 3 },
+			{ Cutoff: 25000, InterestRatePercent: 4.5 },
 		],
 		baseRatePercent: 0.05,
 	},
 	// Spend 500 + 3 Giro Txns
 	{
 		cutoffs: [
-			{ Cutoff: 75000, InterestRatePercent: 1.5 },
-			{ Cutoff: 50000, InterestRatePercent: 2.5 },
+			{ Cutoff: 75000, InterestRatePercent: 1 },
+			{ Cutoff: 50000, InterestRatePercent: 2 },
 		],
 		baseRatePercent: 0.05,
 	},
