@@ -26,9 +26,8 @@ export const bankInfo: Record<string, Info> = {
 		interestFn: uob_interest,
 		url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
 		remarks: <p>Visit their official website to find out more</p>,
-		lastUpdated: "2025-06-28",
+		lastUpdated: "2025-08-04",
 	},
-
 	"UOB Bank": {
 		interestFn: uob_interest_2025_09,
 		url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
