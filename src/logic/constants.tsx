@@ -10,7 +10,7 @@ import { choco_finance } from "./choco_finance.ts"
 import { LocalLink } from "../Components/LocalLink.tsx"
 import { stand_chart_interest } from "./stand_chart.ts"
 import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
-import { trust_bank, trust_bank_pre_08_2025 } from "./trust_bank.ts"
+import { trust_bank } from "./trust_bank.ts"
 import { maribank_interest, mariInterestRate } from "./maribank.ts"
 import { bank_of_china_smart_saver, bank_of_china_super_saver } from "./bank_of_china.ts"
 
