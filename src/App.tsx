@@ -8,6 +8,7 @@ import { Result } from './Components/Interests.tsx';
 import { ThemeProvider } from '@mui/material/styles';
 import { bgColor, theme } from './consts/colors.ts';
 import { Footer } from './Components/Footer.tsx';
+import { Ads } from './Components/Ads.tsx';
 
 export const App = () => {
   const localData = localStorage.getItem(STORE_KEY) ?? ""
@@ -27,6 +28,7 @@ export const App = () => {
           },
         }}
       />
+      <Ads />
       <Header />
       <Container
         sx={{
