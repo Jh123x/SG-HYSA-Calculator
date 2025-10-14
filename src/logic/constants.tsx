@@ -22,17 +22,11 @@ interface Info {
 }
 
 export const bankInfo: Record<string, Info> = {
-	"UOB Bank (After 09/25)": {
+	"UOB Bank": {
 		interestFn: uob_interest,
 		url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
 		remarks: <p>Visit their official website to find out more</p>,
 		lastUpdated: "2025-08-04",
-	},
-	"UOB Bank (Before 09/25)": {
-		interestFn: uob_interest_2025_09,
-		url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
-		remarks: <p>Visit their official website to find out more</p>,
-		lastUpdated: "2025-06-28",
 	},
 	"OCBC Bank": {
 		interestFn: ocbc_interest,
@@ -40,19 +34,7 @@ export const bankInfo: Record<string, Info> = {
 		remarks: <p>Visit their official website to find out more</p>,
 		lastUpdated: "2025-05-05",
 	},
-	"Maribank (Before 9/25)": {
-		interestFn: maribank_interest_pre_09_2025,
-		url: "https://www.maribank.sg/product/mari-savings-account",
-		remarks: <p>
-			Interest rates are a flat {mariInterestRate_pre_09_2025}%
-			<br />
-			Capped at $100k
-			<br />
-			Referral code: <b>4QTP99MT</b>
-		</p>,
-		lastUpdated: "2025-08-04",
-	},
-	"Maribank (After 9/25)": {
+	"Maribank": {
 		interestFn: maribank_interest,
 		url: "https://banking-aka-storage.maribank.com.sg/maribank/sg/website-content/Update_to_Mari_Savings_Account_(1_Aug_2025).pdf",
 		remarks: <p>
