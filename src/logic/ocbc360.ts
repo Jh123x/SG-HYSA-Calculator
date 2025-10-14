@@ -2,7 +2,7 @@ import { ResultInterest } from "../types/interest_result.ts";
 import Profile from "../types/profile.ts";
 import { calculate_ir } from "./common.ts";
 
-export const ocbc_interest_pre_08_2025 = (profile: Profile): ResultInterest => {
+export const ocbc_interest_07_2025 = (profile: Profile): ResultInterest => {
 	const { Savings, Salary, MonthlyAccIncrease, Spending, Insurance, Investment } = profile
 
 
@@ -49,7 +49,7 @@ export const ocbc_interest_pre_08_2025 = (profile: Profile): ResultInterest => {
 }
 
 
-export const ocbc_interest = (profile: Profile): ResultInterest => {
+export const ocbc_interest_08_2025 = (profile: Profile): ResultInterest => {
 	const { Savings, Salary, MonthlyAccIncrease, Spending, Insurance, Investment } = profile
 
 

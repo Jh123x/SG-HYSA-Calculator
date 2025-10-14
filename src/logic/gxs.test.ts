@@ -1,6 +1,6 @@
 import { ResultInterest } from "../types/interest_result"
 import { NewProfile } from "../types/profile"
-import { gxs_interest } from "./gxs"
+import { gxs_interest_07_2025 } from "./gxs"
 
 
 interface testCase {
@@ -32,7 +32,7 @@ describe("GXS Interest rates", () => {
 
     for (const tc of testCases) {
         it(tc.caseName, () => {
-            const result = gxs_interest(NewProfile({
+            const result = gxs_interest_07_2025(NewProfile({
                 Savings: tc.savings,
             }))
 

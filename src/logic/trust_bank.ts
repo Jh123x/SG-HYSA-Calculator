@@ -5,7 +5,7 @@ import { calculate_ir } from "./common.ts";
 
 const baseInterest = 0.75
 
-export const trust_bank_pre_06_2025 = (profile: Profile): ResultInterest => {
+export const trust_bank_05_2025 = (profile: Profile): ResultInterest => {
     const { Savings, Salary, Spending, IsNTUCMember } = profile
 
     var currentInterest = baseInterest
@@ -27,7 +27,7 @@ export const trust_bank_pre_06_2025 = (profile: Profile): ResultInterest => {
 
 const newbaseInterest = 0.5
 
-export const trust_bank_pre_08_2025 = (profile: Profile): ResultInterest => {
+export const trust_bank_06_2025 = (profile: Profile): ResultInterest => {
     const { Savings, Salary, Spending, IsNTUCMember } = profile
 
     var currentInterest = newbaseInterest
@@ -47,7 +47,7 @@ export const trust_bank_pre_08_2025 = (profile: Profile): ResultInterest => {
     )
 }
 
-export const trust_bank = (profile: Profile): ResultInterest => {
+export const trust_bank_08_2025 = (profile: Profile): ResultInterest => {
     const { Savings, Salary, Spending, IsNTUCMember } = profile
 
     var currentInterest = newbaseInterest
@@ -55,6 +55,25 @@ export const trust_bank = (profile: Profile): ResultInterest => {
     if (Spending >= 150) currentInterest += 0.3
     if (Spending >= 150 && IsNTUCMember) currentInterest += 0.2
     if (Savings >= 100_000) currentInterest += 0.5
+    if (Salary >= 1500) currentInterest += 0.5
+
+    return calculate_ir(
+        Savings,
+        {
+            cutoffs: [{ Cutoff: 1_200_000, InterestRatePercent: currentInterest, }],
+            baseRatePercent: 0.05,
+        }
+    )
+}
+
+export const trust_bank_signature_10_2025 = (profile: Profile): ResultInterest => {
+    const { Savings, Salary, Spending, IsNTUCMember } = profile
+
+    var currentInterest = 0.1
+
+    if (Spending >= 150) currentInterest += 0.2
+    if (Spending >= 150 && IsNTUCMember) currentInterest += 0.1
+    if (Savings >= 100_000) currentInterest += 0.4
     if (Salary >= 1500) currentInterest += 0.5
 
     return calculate_ir(

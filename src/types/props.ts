@@ -1,5 +1,5 @@
-import { ReactElement } from "react"
-import { ResultInterest } from "./interest_result"
+import type { ReactElement } from "react"
+import type { ResultInterest } from "./interest_result"
 
 export interface ResultProp {
     interest: ResultInterest

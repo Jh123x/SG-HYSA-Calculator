@@ -3,7 +3,7 @@ import { LineChart } from '@mui/x-charts/LineChart';
 import { Paper, useTheme, useMediaQuery, Box, Typography } from '@mui/material';
 import { bankInfo } from "../logic/constants.tsx"
 import { textColor } from '../consts/colors.ts';
-import Profile from '../types/profile.ts';
+import type Profile from '../types/profile.ts';
 
 interface GraphData {
     [key: string]: number;

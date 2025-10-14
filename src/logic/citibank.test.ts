@@ -1,6 +1,6 @@
 import { ResultInterest } from "../types/interest_result";
 import Profile, { NewProfile } from "../types/profile";
-import { citi_wealth_first } from "./citibank";
+import { citi_wealth_first_05_2025 } from "./citibank";
 
 interface TestCase {
     name: string
@@ -103,7 +103,7 @@ describe("Citibank", () => {
 
     for (const test of tests) {
         it(test.name, () => {
-            const result = citi_wealth_first(test.profile)
+            const result = citi_wealth_first_05_2025(test.profile)
             expect(result).toEqual(new ResultInterest(test.expected_ir, test.profile.Savings))
         })
     }

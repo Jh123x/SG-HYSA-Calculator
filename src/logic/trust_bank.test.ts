@@ -1,6 +1,6 @@
 import { ResultInterest } from "../types/interest_result";
 import Profile, { NewProfile } from "../types/profile";
-import { trust_bank_pre_08_2025 } from "./trust_bank";
+import { trust_bank_06_2025 } from "./trust_bank";
 
 interface testCases {
     name: string
@@ -54,7 +54,7 @@ describe("trust_bank", () => {
 
     for (const testCase of tests) {
         it(testCase.name, () => {
-            const result = trust_bank_pre_08_2025(testCase.profile)
+            const result = trust_bank_06_2025(testCase.profile)
             expect(result).toEqual(testCase.expectedInterest)
         })
     }

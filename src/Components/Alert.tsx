@@ -1,6 +1,8 @@
+import type { AlertColor } from "@mui/material";
+
 import React from "react";
 import { Check, Close } from "@mui/icons-material";
-import { Alert, AlertColor, Collapse, IconButton } from "@mui/material";
+import { Alert, Collapse, IconButton } from "@mui/material";
 
 interface AlertProps {
     children: string,

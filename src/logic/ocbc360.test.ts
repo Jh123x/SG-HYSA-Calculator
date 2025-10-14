@@ -1,6 +1,6 @@
 import { ResultInterest } from "../types/interest_result";
 import { NewProfile } from "../types/profile";
-import { ocbc_interest_pre_08_2025 } from "./ocbc360";
+import { ocbc_interest_07_2025 } from "./ocbc360";
 
 interface testCase {
     caseName: string
@@ -66,7 +66,7 @@ describe("OCBC Interest rates", () => {
     ]
     for (const tc of testCases) {
         it(tc.caseName, () => {
-            const result = ocbc_interest_pre_08_2025(NewProfile({
+            const result = ocbc_interest_07_2025(NewProfile({
                 Savings: tc.savings,
                 Salary: tc.salary,
                 Spending: tc.spending,

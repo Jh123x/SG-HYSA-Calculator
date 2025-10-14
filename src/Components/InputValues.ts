@@ -1,5 +1,5 @@
-import Profile from "../types/profile";
-import { InputArg } from "./types";
+import type Profile from "../types/profile";
+import type { InputArg } from "./types";
 
 
 const makeDefaultNumber = (value?: number): number => (value === undefined || value === 0 ? 0 : value);

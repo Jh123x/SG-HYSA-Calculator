@@ -1,10 +1,11 @@
 import { Button, FormControl, TextField, Box, Checkbox, FormControlLabel, FormGroup, Tooltip, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import Profile, { NewProfile } from "../types/profile.ts";
+import type Profile from "../types/profile.ts";
+import { NewProfile } from "../types/profile.ts";
 import { STORE_KEY } from '../consts/keys.ts';
 import { HelpOutline } from "@mui/icons-material";
 import { primaryColor, bgColor, textColor, dangerColor } from "../consts/colors.ts";
-import { Field } from "./types.ts";
+import type { Field } from "./types.ts";
 import { WebAlert } from "./Alert.tsx";
 import { booleanInputs, numericalInputs } from "./InputValues.ts";
 

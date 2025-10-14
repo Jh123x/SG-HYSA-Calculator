@@ -1,17 +1,15 @@
-import { Link } from "@mui/material"
 import React from "react"
+import { Link } from "@mui/material"
+import type { ReactNode } from "react"
 import { primaryColor } from "../consts/colors.ts"
 
 
 interface LocalLinkProps {
     href: string
-    children?: React.ReactNode
+    children?: ReactNode
 }
 
-export const LocalLink = ({
-    href,
-    children,
-}: LocalLinkProps) => {
+export const LocalLink = ({ href, children }: LocalLinkProps) => {
     return <Link
         href={href}
         target="_blank"

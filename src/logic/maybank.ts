@@ -3,10 +3,9 @@ import Profile from "../types/profile.ts";
 import { calculate_ir } from "./common.ts";
 
 const table_1st_50k = [0, 0.3, 1, 2.75]
-
 const table_nxt_25k = [0, 1, 1.5, 3.75]
 
-export const maybank_save_up = (profile: Profile): ResultInterest => {
+export const maybank_save_up_10_2025 = (profile: Profile): ResultInterest => {
     var count = 0
 
     // Giro / Salary

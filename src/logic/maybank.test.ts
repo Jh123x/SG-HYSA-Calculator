@@ -1,6 +1,6 @@
 import { ResultInterest } from "../types/interest_result"
 import Profile, { NewProfile } from "../types/profile"
-import { maybank_save_up } from "./maybank"
+import { maybank_save_up_10_2025 } from "./maybank"
 
 
 interface testCase {
@@ -91,7 +91,7 @@ describe("Maybank Save Up Interest rates", () => {
 
     for (const tc of testCases) {
         it(tc.caseName, () => {
-            const result = maybank_save_up(tc.profile)
+            const result = maybank_save_up_10_2025(tc.profile)
             expect(result).toEqual(new ResultInterest(tc.expectedResult, tc.profile.Savings))
         })
     }
