@@ -3,7 +3,7 @@ import type { ReactElement } from "react"
 import type { ResultInterest } from "../types/interest_result.ts"
 
 import { LocalLink } from "../Components/LocalLink.tsx"
-import { uob_interest_10_2025 } from "./uob.ts"
+import { uob_interest_10_2025, uob_interest_2025_12 } from "./uob.ts"
 import { gxs_interest_08_2025 } from "./gxs.ts"
 import { ocbc_interest_08_2025 } from "./ocbc360.ts"
 import { maybank_save_up_10_2025 } from "./maybank.ts"
@@ -23,7 +23,13 @@ interface Info {
 }
 
 export const bankInfo: Record<string, Info> = {
-	"UOB Bank": {
+  "UOB Bank (Post 12/25)": {
+    interestFn: uob_interest_2025_12,
+    url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
+		remarks: <p>Visit their official website to find out more</p>,
+		lastUpdated: "2025-11-14",
+  },
+	"UOB Bank (Pre 12/25)": {
 		interestFn: uob_interest_10_2025,
 		url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
 		remarks: <p>Visit their official website to find out more</p>,
