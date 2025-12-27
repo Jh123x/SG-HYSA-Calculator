@@ -56,7 +56,7 @@ export const ocbc_interest_08_2025 = (profile: Profile): ResultInterest => {
 	const interest = [0.05, 0.05]// [1st 75k, next 25k]
 	if (Salary >= 1800) {
 		interest[0] += 1.2
-		interest[1] += 2.5
+		interest[1] += 2.4
 	}
 
 	if (MonthlyAccIncrease >= 500) {
