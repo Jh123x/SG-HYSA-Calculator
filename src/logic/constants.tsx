@@ -136,7 +136,7 @@ export const bankInfo: Record<string, Info> = {
         </LocalLink>
       </p>
     ),
-    lastUpdated: "2025-10-14",
+    lastUpdated: "2025-12-27",
   },
   "Bank of China SuperSaver (Pre 11/25)": {
     interestFn: bank_of_china_super_saver_08_2025,
