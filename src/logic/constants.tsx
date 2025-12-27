@@ -22,7 +22,7 @@ import {
   bank_of_china_super_saver_08_2025,
   bank_of_china_super_saver_11_2025,
 } from "./bank_of_china.ts";
-import { choco_finance_12_2025 } from "./choco_finance";
+import { choco_finance_12_2025 } from "./choco_finance.ts";
 
 interface Info {
   interestFn: (profile: Profile) => ResultInterest;
