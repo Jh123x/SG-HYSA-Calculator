@@ -30,3 +30,13 @@ export const maribank_interest_09_2025 = (profile: Profile): ResultInterest => {
         { cutoffs: [], baseRatePercent: mariInterestRate_09_2025 },
     );
 }
+
+export const mariInterestRate_12_2025 = 0.88;
+
+export const maribank_interest_12_2025 = (profile: Profile): ResultInterest => {
+    return calculate_ir(
+        Math.min(profile.Savings, 100_000),
+        { cutoffs: [], baseRatePercent: mariInterestRate_12_2025 },
+    );
+}
+
