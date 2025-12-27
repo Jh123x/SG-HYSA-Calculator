@@ -12,7 +12,7 @@ import { choco_finance_10_2025 } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
 import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
 import { trust_bank_flex_12_2025, trust_bank_signature_10_2025 } from "./trust_bank.ts"
-import { maribank_interest_09_2025, mariInterestRate_09_2025 } from "./maribank.ts"
+import { maribank_interest_12_2025, mariInterestRate_12_2025 } from "./maribank.ts"
 import { bank_of_china_super_saver_08_2025, bank_of_china_super_saver_11_2025 } from "./bank_of_china.ts"
 
 interface Info {
@@ -42,16 +42,16 @@ export const bankInfo: Record<string, Info> = {
 		lastUpdated: "2025-12-27",
 	},
 	"Maribank": {
-		interestFn: maribank_interest_09_2025,
+		interestFn: maribank_interest_12_2025,
 		url: "https://www.maribank.sg/product/mari-savings-account/",
 		remarks: <p>
-			Interest rates are a flat {mariInterestRate_09_2025}%
+			Interest rates are a flat {mariInterestRate_12_2025}%
 			<br />
 			Capped at $100k
 			<br />
 			Referral code: <b>4QTP99MT</b>
 		</p>,
-		lastUpdated: "2025-10-14",
+		lastUpdated: "2025-12-27",
 	},
 	"Standard Chartered": {
 		interestFn: stand_chart_interest,
