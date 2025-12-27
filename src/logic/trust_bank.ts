@@ -84,3 +84,13 @@ export const trust_bank_signature_10_2025 = (profile: Profile): ResultInterest =
         }
     )
 }
+
+export const trust_bank_flex_12_2025 = (profile: Profile): ResultInterest => {
+  return calculate_ir(profile.Savings, {
+    cutoffs: [
+      {Cutoff: 1_200_000, InterestRatePercent: 0.5},
+    ],
+    baseRatePercent: 0.05,
+  })
+}
+

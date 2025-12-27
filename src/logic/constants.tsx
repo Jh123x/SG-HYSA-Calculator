@@ -11,7 +11,7 @@ import { citi_wealth_first_10_2025 } from "./citibank.ts"
 import { choco_finance_10_2025 } from "./choco_finance.ts"
 import { stand_chart_interest } from "./stand_chart.ts"
 import { dbs_multiplier_interest } from "./dbs_multiplier.ts"
-import { trust_bank_signature_10_2025 } from "./trust_bank.ts"
+import { trust_bank_flex_12_2025, trust_bank_signature_10_2025 } from "./trust_bank.ts"
 import { maribank_interest_09_2025, mariInterestRate_09_2025 } from "./maribank.ts"
 import { bank_of_china_super_saver_08_2025, bank_of_china_super_saver_11_2025 } from "./bank_of_china.ts"
 
@@ -39,7 +39,7 @@ export const bankInfo: Record<string, Info> = {
 		interestFn: ocbc_interest_08_2025,
 		url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
 		remarks: <p>Visit their official website to find out more</p>,
-		lastUpdated: "2025-10-14",
+		lastUpdated: "2025-12-27",
 	},
 	"Maribank": {
 		interestFn: maribank_interest_09_2025,
@@ -65,6 +65,12 @@ export const bankInfo: Record<string, Info> = {
 		remarks: <p>Spending assumes 5 x $30 if spending is more than 150.</p>,
 		lastUpdated: "2025-10-14",
 	},
+  "Trust Bank (Flex)": {
+    interestFn: trust_bank_flex_12_2025,
+    url: "https://trustbank.sg/savings-account/",
+    remarks: "A Flat 0.5% interest rate up to 1.2 million",
+    lastUpdated: "2025-12-27",
+  },
 	"DBS Multiplier Account": {
 		interestFn: dbs_multiplier_interest,
 		url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
