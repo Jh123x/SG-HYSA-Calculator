@@ -32,17 +32,11 @@ interface Info {
 }
 
 export const bankInfo: Record<string, Info> = {
-  "UOB Bank (Post 12/25)": {
+  "UOB Bank": {
     interestFn: uob_interest_2025_12,
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     remarks: <p>Visit their official website to find out more</p>,
     lastUpdated: "2025-11-14",
-  },
-  "UOB Bank (Pre 12/25)": {
-    interestFn: uob_interest_10_2025,
-    url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
-    remarks: <p>Visit their official website to find out more</p>,
-    lastUpdated: "2025-10-14",
   },
   "OCBC Bank": {
     interestFn: ocbc_interest_08_2025,
