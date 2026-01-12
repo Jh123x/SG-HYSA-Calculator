@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   AppBar,
   Toolbar,
@@ -9,23 +9,31 @@ import {
   Menu,
   MenuItem,
   useMediaQuery,
-} from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import ArticleIcon from '@mui/icons-material/Article';
-import { textColor } from '../consts/colors.ts';
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import ArticleIcon from "@mui/icons-material/Article";
+import { textColor } from "../consts/colors";
 
 export const Header = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery('(max-width:600px)');
+  const isMobile = useMediaQuery("(max-width:600px)");
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
-  const handleMenu = (event: React.MouseEvent<HTMLElement>) => { setAnchorEl(event.currentTarget); };
-  const handleClose = () => { setAnchorEl(null) };
+  const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
-    <AppBar position="static" elevation={0} sx={{ backgroundColor: 'transparent' }}>
-      <Toolbar sx={{ justifyContent: 'space-between' }}>
+    <AppBar
+      position="static"
+      elevation={0}
+      sx={{ backgroundColor: "transparent" }}
+    >
+      <Toolbar sx={{ justifyContent: "space-between" }}>
         <Typography
           variant={isMobile ? "h6" : "h5"}
           sx={{
@@ -37,7 +45,7 @@ export const Header = () => {
           SG HYSA Calculator
         </Typography>
 
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        <Box sx={{ display: "flex", alignItems: "center" }}>
           {isMobile ? (
             <>
               <IconButton
@@ -59,14 +67,14 @@ export const Header = () => {
                       backgroundColor: theme.palette.background.paper,
                       borderRadius: 2,
                     },
-                  }
+                  },
                 }}
               >
                 <MenuItem>
                   <IconButton
-                    href='https://jh123x.com'
-                    target='_blank'
-                    size='small'
+                    href="https://jh123x.com"
+                    target="_blank"
+                    size="small"
                   >
                     <ArticleIcon sx={{ mr: 1 }} />
                     Blog Post (2024)
@@ -74,9 +82,9 @@ export const Header = () => {
                 </MenuItem>
                 <MenuItem>
                   <IconButton
-                    href='https://github.com/jh123x/SG-HYSA-Calculator'
-                    target='_blank'
-                    size='small'
+                    href="https://github.com/jh123x/SG-HYSA-Calculator"
+                    target="_blank"
+                    size="small"
                   >
                     <GitHubIcon sx={{ mr: 1 }} />
                     GitHub
@@ -89,7 +97,7 @@ export const Header = () => {
               <IconButton
                 size="large"
                 href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
-                target='_blank'
+                target="_blank"
                 sx={{ color: textColor }}
               >
                 <ArticleIcon />
@@ -97,7 +105,7 @@ export const Header = () => {
               <IconButton
                 size="large"
                 href="https://github.com/jh123x/SG-HYSA-Calculator"
-                target='_blank'
+                target="_blank"
                 sx={{ color: textColor }}
               >
                 <GitHubIcon />

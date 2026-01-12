@@ -1,108 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer should match snapshot 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <footer
-        class="MuiBox-root css-1b6b4sh"
-      >
-        <div
-          class="MuiContainer-root MuiContainer-maxWidthSm css-zzzaw2-MuiContainer-root"
-        >
-          <p
-            class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1r4b5bp-MuiTypography-root"
-            style="--Typography-textAlign: center;"
-          >
-            Copyright © 
-            <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-i9kmoy-MuiTypography-root-MuiLink-root"
-              href="https://jh123x.com/"
-            >
-              Jh123x
-            </a>
-             
-            2026
-          </p>
-        </div>
-      </footer>
-    </div>
-  </body>,
-  "container": <div>
-    <footer
-      class="MuiBox-root css-1b6b4sh"
+<DocumentFragment>
+  <footer
+    class="MuiBox-root css-1b6b4sh"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthSm css-zzzaw2-MuiContainer-root"
     >
-      <div
-        class="MuiContainer-root MuiContainer-maxWidthSm css-zzzaw2-MuiContainer-root"
+      <p
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1r4b5bp-MuiTypography-root"
+        style="--Typography-textAlign: center;"
       >
-        <p
-          class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1r4b5bp-MuiTypography-root"
-          style="--Typography-textAlign: center;"
+        Copyright © 
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-i9kmoy-MuiTypography-root-MuiLink-root"
+          href="https://jh123x.com/"
         >
-          Copyright © 
-          <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-i9kmoy-MuiTypography-root-MuiLink-root"
-            href="https://jh123x.com/"
-          >
-            Jh123x
-          </a>
-           
-          2026
-        </p>
-      </div>
-    </footer>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
+          Jh123x
+        </a>
+         2026
+      </p>
+    </div>
+  </footer>
+</DocumentFragment>
 `;

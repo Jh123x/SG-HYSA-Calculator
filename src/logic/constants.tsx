@@ -1,28 +1,28 @@
-import type Profile from "../types/profile.ts";
+import type Profile from "../types/profile";
 import type { ReactElement } from "react";
-import type { ResultInterest } from "../types/interest_result.ts";
+import type { ResultInterest } from "../types/interest_result";
 
-import { LocalLink } from "../Components/LocalLink.tsx";
-import { uob_interest_2025_12 } from "./uob.ts";
-import { gxs_interest_08_2025 } from "./gxs.ts";
-import { ocbc_interest_08_2025 } from "./ocbc360.ts";
-import { maybank_save_up_10_2025 } from "./maybank.ts";
-import { citi_wealth_first_10_2025 } from "./citibank.ts";
-import { stand_chart_interest } from "./stand_chart.ts";
-import { dbs_multiplier_interest } from "./dbs_multiplier.ts";
+import { LocalLink } from "../Components/LocalLink";
+import { uob_interest_2025_12 } from "./uob";
+import { gxs_interest_08_2025 } from "./gxs";
+import { ocbc_interest_08_2025 } from "./ocbc360";
+import { maybank_save_up_10_2025 } from "./maybank";
+import { citi_wealth_first_10_2025 } from "./citibank";
+import { stand_chart_interest } from "./stand_chart";
+import { dbs_multiplier_interest } from "./dbs_multiplier";
 import {
   trust_bank_flex_12_2025,
   trust_bank_signature_10_2025,
-} from "./trust_bank.ts";
+} from "./trust_bank";
 import {
   maribank_interest_12_2025,
   mariInterestRate_12_2025,
-} from "./maribank.ts";
+} from "./maribank";
 import {
   bank_of_china_super_saver_08_2025,
   bank_of_china_super_saver_11_2025,
-} from "./bank_of_china.ts";
-import { choco_finance_12_2025 } from "./choco_finance.ts";
+} from "./bank_of_china";
+import { choco_finance_12_2025 } from "./choco_finance";
 
 interface Info {
   interestFn: (profile: Profile) => ResultInterest;
