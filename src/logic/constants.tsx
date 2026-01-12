@@ -3,7 +3,7 @@ import type { ReactElement } from "react";
 import type { ResultInterest } from "../types/interest_result.ts";
 
 import { LocalLink } from "../Components/LocalLink.tsx";
-import { uob_interest_10_2025, uob_interest_2025_12 } from "./uob.ts";
+import { uob_interest_2025_12 } from "./uob.ts";
 import { gxs_interest_08_2025 } from "./gxs.ts";
 import { ocbc_interest_08_2025 } from "./ocbc360.ts";
 import { maybank_save_up_10_2025 } from "./maybank.ts";
