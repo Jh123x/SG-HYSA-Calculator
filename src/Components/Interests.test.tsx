@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import { Result } from "./Interests";
 import { NewProfile } from "../types/profile";
+import * as React from "react";
 
 describe("Result Table", () => {
   it("should match snapshot when results is empty", () => {

@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import { FormInputs } from "./Inputs";
 import Profile, { NewProfile } from "../types/profile";
+import * as React from "react";
 
 describe("Form Inputs", () => {
   it("should match snapshot if profile is empty", () => {

@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import { InterestGraph } from "./InterestGraph";
 import { NewProfile } from "../types/profile";
+import * as React from "react";
 
 describe("Interest Graph", () => {
   it("should match snapshot if profile is empty", () => {
