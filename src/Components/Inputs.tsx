@@ -204,6 +204,7 @@ const InputNumberField = ({
   onChange,
   value,
   tooltip,
+  key,
 }: Field<number>) => {
   const [inputValue, setInputValue] = React.useState<string>(
     value === 0 ? "" : value.toString(),
@@ -235,6 +236,7 @@ const InputNumberField = ({
 
   return (
     <TextField
+      key={key}
       label={
         <div
           style={{
