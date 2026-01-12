@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import React, { useState } from "react";
+import * as React from "react";
 import {
   Container,
   Table,
@@ -26,8 +26,8 @@ type SortableColumns =
   | undefined;
 
 export const Result = ({ profile }: { profile: Profile }) => {
-  const [orderBy, setOrderBy] = useState<SortableColumns>(undefined);
-  const [order, setOrder] = useState<"asc" | "desc" | undefined>("desc");
+  const [orderBy, setOrderBy] = React.useState<SortableColumns>(undefined);
+  const [order, setOrder] = React.useState<"asc" | "desc" | undefined>("desc");
 
   const results: Record<string, ResultProp> = {};
   for (const [name, info] of Object.entries(bankInfo)) {

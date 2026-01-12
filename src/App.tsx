@@ -1,4 +1,4 @@
-import { useState } from "react";
+import * as React from "react";
 import { Container, GlobalStyles } from "@mui/material";
 import { Header } from "./Components/Header";
 import { FormInputs } from "./Components/Inputs";
@@ -12,7 +12,7 @@ import { Footer } from "./Components/Footer";
 export const App = () => {
   const localData = localStorage.getItem(STORE_KEY) ?? "";
   const localValue = localData ? JSON.parse(localData) : NewProfile({});
-  const [currProfile, setCurrProfile] = useState<Profile>(localValue);
+  const [currProfile, setCurrProfile] = React.useState<Profile>(localValue);
 
   return (
     <ThemeProvider theme={theme}>

@@ -9,7 +9,7 @@ import {
   Tooltip,
   Typography,
 } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import * as React from "react";
 import type Profile from "../types/profile";
 import { NewProfile } from "../types/profile";
 import { STORE_KEY } from "../consts/keys";
@@ -30,11 +30,11 @@ interface FormInput {
 }
 
 export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
-  const [hideModel, setHideModal] = useState<boolean>(true);
-  const [modelMsg, setModalMsg] = useState<string>("");
-  const [profile, setProfile] = useState<Profile>(currProfile);
+  const [hideModel, setHideModal] = React.useState<boolean>(true);
+  const [modelMsg, setModalMsg] = React.useState<string>("");
+  const [profile, setProfile] = React.useState<Profile>(currProfile);
 
-  useEffect(() => {
+  React.useEffect(() => {
     localStorage.setItem(STORE_KEY, JSON.stringify(currProfile));
     setProfile(currProfile);
   }, [currProfile]);
@@ -205,12 +205,12 @@ const InputNumberField = ({
   value,
   tooltip,
 }: Field<number>) => {
-  const [inputValue, setInputValue] = useState<string>(
+  const [inputValue, setInputValue] = React.useState<string>(
     value === 0 ? "" : value.toString(),
   );
-  const [isFocused, setIsFocused] = useState<boolean>(false);
+  const [isFocused, setIsFocused] = React.useState<boolean>(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (value === 0) {
       setInputValue("");
       return;

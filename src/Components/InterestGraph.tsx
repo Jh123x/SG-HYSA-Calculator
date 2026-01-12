@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { Paper, useTheme, useMediaQuery, Box, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";

@@ -1,3 +1,4 @@
+import * as React from "react";
 import type Profile from "../types/profile";
 import type { ReactElement } from "react";
 import type { ResultInterest } from "../types/interest_result";
