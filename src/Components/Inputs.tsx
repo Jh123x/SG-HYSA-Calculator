@@ -130,9 +130,8 @@ export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
           hideModel={hideModel}
           severity={"info"}
           onClose={() => setHideModal(true)}
-        >
-          {modelMsg}
-        </WebAlert>
+          children={modelMsg}
+        />
       )}
     </>
   );
