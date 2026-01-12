@@ -2,5 +2,6 @@
   "compilerOptions": {
     "allowJs": false,
     "noEmit": true,
+    "jsx": "react",
   },
 }
