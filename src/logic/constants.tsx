@@ -19,10 +19,7 @@ import {
   maribank_interest_12_2025,
   mariInterestRate_12_2025,
 } from "./maribank";
-import {
-  bank_of_china_super_saver_08_2025,
-  bank_of_china_super_saver_11_2025,
-} from "./bank_of_china";
+import { bank_of_china_super_saver_11_2025 } from "./bank_of_china";
 import { choco_finance_12_2025 } from "./choco_finance";
 
 interface Info {
@@ -133,22 +130,7 @@ export const bankInfo: Record<string, Info> = {
     ),
     lastUpdated: "2025-12-27",
   },
-  "Bank of China SuperSaver (Pre 11/25)": {
-    interestFn: bank_of_china_super_saver_08_2025,
-    url: "https://www.bankofchina.com/sg/bocinfo/bi1/202506/t20250620_25390361.html",
-    remarks: (
-      <p>
-        This account is valid from 2024-08-01 onwards.
-        <br />
-        <b>
-          Note: You have to link your paynow to this account to qualify for the
-          sale.
-        </b>
-      </p>
-    ),
-    lastUpdated: "2025-10-14",
-  },
-  "Bank of China SuperSaver (Aft 11/25)": {
+  "Bank of China SuperSaver": {
     interestFn: bank_of_china_super_saver_11_2025,
     url: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
     remarks: (
