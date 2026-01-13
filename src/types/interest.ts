@@ -1,9 +1,9 @@
 export interface CutoffInterest {
-    Cutoff: number
-    InterestRatePercent: number
+  Cutoff: number;
+  InterestRatePercent: number;
 }
 
 export interface Interest {
-    cutoffs: Array<CutoffInterest>
-    baseRatePercent: number
+  cutoffs: Array<CutoffInterest>;
+  baseRatePercent: number;
 }

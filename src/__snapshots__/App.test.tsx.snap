@@ -1,0 +1,3745 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > should render correctly 1`] = `
+<DocumentFragment>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-rw9h23-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: none; --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-yg49xf-MuiToolbar-root"
+    >
+      <h5
+        class="MuiTypography-root MuiTypography-h5 css-ylfd6q-MuiTypography-root"
+      >
+        SG HYSA Calculator
+      </h5>
+      <div
+        class="MuiBox-root css-70qvj9"
+      >
+        <a
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-ofervp-MuiButtonBase-root-MuiIconButton-root"
+          href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="ArticleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-5 14H7v-2h7zm3-4H7v-2h10zm0-4H7V7h10z"
+            />
+          </svg>
+        </a>
+        <a
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-ofervp-MuiButtonBase-root-MuiIconButton-root"
+          href="https://github.com/jh123x/SG-HYSA-Calculator"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="GitHubIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div
+    class="MuiContainer-root MuiContainer-maxWidthLg css-xsajrz-MuiContainer-root"
+  >
+    <div
+      class="MuiFormControl-root css-1hr5jum-MuiFormControl-root"
+    >
+      <div
+        class="MuiFormGroup-root css-107elia-MuiFormGroup-root"
+      >
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r3:"
+            id=":r3:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                Savings
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-5j1080-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r3:"
+              placeholder="To be deposited at bank"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-1n64csd-MuiNotchedOutlined-root"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      Savings
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r4:"
+            id=":r4:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                Age
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-5j1080-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r4:"
+              placeholder="Current age"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-1n64csd-MuiNotchedOutlined-root"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      Age
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r5:"
+            id=":r5:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                Salary
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-5j1080-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r5:"
+              placeholder="Credited to bank monthly"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-1n64csd-MuiNotchedOutlined-root"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      Salary
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r6:"
+            id=":r6:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                Investment
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-5j1080-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r6:"
+              placeholder="Pay to bank yearly"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-1n64csd-MuiNotchedOutlined-root"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      Investment
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r7:"
+            id=":r7:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                Insurance
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-5j1080-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r7:"
+              placeholder="Pay to bank yearly"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-1n64csd-MuiNotchedOutlined-root"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      Insurance
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r8:"
+            id=":r8:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                Spending
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-5j1080-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r8:"
+              placeholder="On eligible cards monthly"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-1n64csd-MuiNotchedOutlined-root"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      Spending
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":r9:"
+            id=":r9:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                Giro Transactions
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-5j1080-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":r9:"
+              placeholder="No. of GIRO Transactions"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-1n64csd-MuiNotchedOutlined-root"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      Giro Transactions
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":ra:"
+            id=":ra:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                Account Increment
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-5j1080-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":ra:"
+              placeholder="Balance increase monthly"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-1n64csd-MuiNotchedOutlined-root"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      Account Increment
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":rb:"
+            id=":rb:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                Loan Installment
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-5j1080-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":rb:"
+              placeholder="Monthly loan payment"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-1n64csd-MuiNotchedOutlined-root"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      Loan Installment
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
+        >
+          <label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
+            data-shrink="false"
+            for=":rc:"
+            id=":rc:-label"
+          >
+            <div
+              style="display: flex; flex-direction: row;"
+            >
+              <p
+                class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+              >
+                One Time Loan
+              </p>
+            </div>
+          </label>
+          <div
+            class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-5j1080-MuiInputBase-root-MuiOutlinedInput-root"
+          >
+            <input
+              aria-invalid="false"
+              class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
+              id=":rc:"
+              placeholder="Additional 1 time loan"
+              type="number"
+              value=""
+            />
+            <fieldset
+              aria-hidden="true"
+              class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+            >
+              <legend
+                class="css-1n64csd-MuiNotchedOutlined-root"
+              >
+                <span>
+                  <div
+                    style="display: flex; flex-direction: row;"
+                  >
+                    <p
+                      class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                    >
+                      One Time Loan
+                    </p>
+                  </div>
+                </span>
+              </legend>
+            </fieldset>
+          </div>
+        </div>
+        <div
+          aria-label="Is/Willing to be NTUC Member"
+          class="MuiBox-root css-1rfinzg"
+          data-mui-internal-clone-element="true"
+        >
+          <label
+            class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-kpgjgu-MuiFormControlLabel-root"
+          >
+            <span
+              class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-19func1-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
+            >
+              <input
+                class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
+                data-indeterminate="false"
+                type="checkbox"
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="CheckBoxOutlineBlankIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+            >
+              NTUC Member?
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiBox-root css-qwj14v"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-160ospa-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        Clear
+      </button>
+    </div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1jqmhqx-MuiContainer-root"
+    >
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-um22gm-MuiPaper-root-MuiTableContainer-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0.051), rgba(255, 255, 255, 0.051));"
+      >
+        <table
+          class="MuiTable-root css-15y9i9h-MuiTable-root"
+        >
+          <thead
+            class="MuiTableHead-root css-1a7iywq-MuiTableHead-root"
+          >
+            <tr
+              class="MuiTableRow-root MuiTableRow-head css-1r71ugr-MuiTableRow-root"
+            >
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-r9sy24-MuiTableCell-root"
+                scope="col"
+              >
+                <span
+                  class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-directionAsc css-1snbnv4-MuiButtonBase-root-MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Account Name
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon"
+                    data-testid="ArrowDownwardIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-r9sy24-MuiTableCell-root"
+                scope="col"
+              >
+                <span
+                  class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-directionAsc css-1snbnv4-MuiButtonBase-root-MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Yearly Interest
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon"
+                    data-testid="ArrowDownwardIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-r9sy24-MuiTableCell-root"
+                scope="col"
+              >
+                <span
+                  class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-directionAsc css-1snbnv4-MuiButtonBase-root-MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Effective Interest
+                  <br />
+                  Rate (EIR)
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon"
+                    data-testid="ArrowDownwardIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-r9sy24-MuiTableCell-root"
+                scope="col"
+              >
+                Webpage
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-r9sy24-MuiTableCell-root"
+                scope="col"
+              >
+                Remarks
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-r9sy24-MuiTableCell-root"
+                scope="col"
+              >
+                Updated at
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="MuiTableBody-root css-gmh7jj-MuiTableBody-root"
+          >
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                UOB Bank
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <p>
+                  Visit their official website to find out more
+                </p>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-11-14
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                OCBC Bank
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://www.ocbc.com/personal-banking/deposits/360-savings-account"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <p>
+                  Visit their official website to find out more
+                </p>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-12-27
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                Maribank
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://www.maribank.sg/product/mari-savings-account/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <p>
+                  Interest rates are a flat 0.88%
+                  <br />
+                  Capped at $100k
+                  <br />
+                  Referral code: 
+                  <b>
+                    4QTP99MT
+                  </b>
+                </p>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-12-27
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                Standard Chartered
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <p>
+                  Insurance and Investment only
+                  <br />
+                  fulfils interest for 6 months
+                </p>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-10-14
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                Trust Bank (Signature)
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://trustbank.sg/savings-account/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <p>
+                  Spending assumes 5 x $30 if spending is more than 150.
+                </p>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-10-14
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                Trust Bank (Flex)
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://trustbank.sg/savings-account/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                A Flat 0.5% interest rate up to 1.2 million
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-12-27
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                DBS Multiplier Account
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <p>
+                  No eligible if you are younger than 18.
+                  <br />
+                  Spending includes credit card / paylah retail spend
+                </p>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-10-14
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                GXS
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://www.gxs.com.sg/savings-account"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <p>
+                  Calculated using boost pocket (3 months) up to $85,000 with remaining balance in main account
+                  <br />
+                  <b>
+                    Note: The max amount deposited depends on individual (up to $95,000)
+                  </b>
+                  <br />
+                  View other 
+                  <a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                    href="https://www.gxs.com.sg/notices"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Notices here
+                  </a>
+                </p>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-10-14
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                Chocolate Finance
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://www.chocolatefinance.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <p>
+                  1st 20k 2% p.a, next 30k 1.8% p.a.
+                  <br />
+                  Amounts above 50k are not included.
+                  <br />
+                  <b>
+                    Note: This is not a bank
+                  </b>
+                  <br />
+                  <a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                    href="https://share.chocolate.app/nxW9/l0tqqxem"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Referral link
+                  </a>
+                </p>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-12-27
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                Bank of China SuperSaver
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <p>
+                  This account is valid from 2024-08-01 onwards.
+                  <br />
+                  <b>
+                    Note: You have to link your paynow to this account to qualify for the sale.
+                  </b>
+                </p>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-10-14
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                Maybank Save Up
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <p>
+                  *Assumes that Investment qualifies & within Interest period.
+                </p>
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://sslsecure.maybank.com.sg/cgi-bin/mbs/JSPscripts/mbb_rates/mbb_rates_savings.jsp?_gl=1*o41w5v*_gcl_au*MzUxMjAzMzAwLjE3NDYzODE0OTQ.*_ga*MTc5ODIyMTQ3OS4xNzQ2MzgxNDk0*_ga_QME4P70W20*MTc0NjM4MTQ5NC4xLjAuMTc0NjM4MTQ5NC42MC4wLjA.#sav2"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Check the base interest rates here
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-10-14
+              </td>
+            </tr>
+            <tr
+              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
+            >
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                Citi Wealth first Account
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                0.00
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                <a
+                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
+                  href="https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Official Website
+                </a>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)
+                <br />
+                *Assumes Citigold level, Citi Private has a higher level.
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
+              >
+                2025-10-14
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <span
+        class="MuiTypography-root MuiTypography-caption css-132l87a-MuiTypography-root"
+      >
+        * Interest rates on their respective websites are subject to change without notice
+        <br />
+        ** Please do your own research before making any decisions, the numbers here serve as a guide.
+        <br />
+        *** Please ask around in your friend group for referrals to get additional bonuses, you can use the my referral code if your friends do not have any.
+      </span>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1sn5ypk-MuiPaper-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0.051), rgba(255, 255, 255, 0.051));"
+      >
+        <div
+          class="css-fso5qs-MuiResponsiveChart-container"
+        >
+          <svg
+            class="css-14kw70p-MuiChartsSurface-root"
+            height="500"
+            viewBox="0 0 100 500"
+            width="100"
+          >
+            <title />
+            <desc />
+            <defs />
+            <g
+              class="MuiChartsGrid-root css-g2sgfh-MuiChartsGrid-root"
+            >
+              <line
+                class="MuiChartsGrid-line MuiChartsGrid-verticalLine css-13ts76t-MuiChartsGrid-line"
+                x1="70"
+                x2="70"
+                y1="30"
+                y2="350"
+              />
+              <line
+                class="MuiChartsGrid-line MuiChartsGrid-verticalLine css-13ts76t-MuiChartsGrid-line"
+                x1="80"
+                x2="80"
+                y1="30"
+                y2="350"
+              />
+              <line
+                class="MuiChartsGrid-line MuiChartsGrid-verticalLine css-13ts76t-MuiChartsGrid-line"
+                x1="90"
+                x2="90"
+                y1="30"
+                y2="350"
+              />
+              <line
+                class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-13ts76t-MuiChartsGrid-line"
+                x1="70"
+                x2="90"
+                y1="350"
+                y2="350"
+              />
+              <line
+                class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-13ts76t-MuiChartsGrid-line"
+                x1="70"
+                x2="90"
+                y1="304.2857142857143"
+                y2="304.2857142857143"
+              />
+              <line
+                class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-13ts76t-MuiChartsGrid-line"
+                x1="70"
+                x2="90"
+                y1="258.57142857142856"
+                y2="258.57142857142856"
+              />
+              <line
+                class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-13ts76t-MuiChartsGrid-line"
+                x1="70"
+                x2="90"
+                y1="212.85714285714286"
+                y2="212.85714285714286"
+              />
+              <line
+                class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-13ts76t-MuiChartsGrid-line"
+                x1="70"
+                x2="90"
+                y1="167.14285714285714"
+                y2="167.14285714285714"
+              />
+              <line
+                class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-13ts76t-MuiChartsGrid-line"
+                x1="70"
+                x2="90"
+                y1="121.42857142857143"
+                y2="121.42857142857143"
+              />
+              <line
+                class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-13ts76t-MuiChartsGrid-line"
+                x1="70"
+                x2="90"
+                y1="75.71428571428572"
+                y2="75.71428571428572"
+              />
+              <line
+                class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-13ts76t-MuiChartsGrid-line"
+                x1="70"
+                x2="90"
+                y1="30"
+                y2="30"
+              />
+            </g>
+            <g
+              clip-path="url(#:rf:-clip-path)"
+            >
+              <g />
+              <g>
+                <clippath
+                  id=":rg:-auto-generated-id-0-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-0-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-0 css-wn5hww-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,349.619,70.667,349.238,71,348.857C71.333,348.476,71.667,348.095,72,347.714C72.333,347.333,72.667,346.952,73,346.571C73.333,346.19,73.667,345.81,74,345.429C74.333,345.048,74.667,344.667,75,344.286C75.333,343.905,75.667,343.524,76,343.143C76.333,342.762,76.667,342.381,77,342C77.333,341.619,77.667,341.238,78,340.857C78.333,340.476,78.667,340.095,79,339.714C79.333,339.333,79.667,338.952,80,338.571C80.333,338.19,80.667,337.81,81,337.429C81.333,337.048,81.667,336.667,82,336.286C82.333,335.905,82.667,335.524,83,335.143C83.333,334.762,83.667,334.381,84,334C84.333,333.619,84.667,333.238,85,332.857C85.333,332.476,85.667,332.095,86,331.714C86.333,331.333,86.667,330.952,87,330.571C87.333,330.19,87.667,329.81,88,329.429C88.333,329.048,88.667,328.667,89,328.286C89.333,327.905,89.667,327.524,90,327.143"
+                  />
+                </g>
+                <clippath
+                  id=":rg:-auto-generated-id-1-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-1-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-1 css-1qzcpgg-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,349.619,70.667,349.238,71,348.857C71.333,348.476,71.667,348.095,72,347.714C72.333,347.333,72.667,346.952,73,346.571C73.333,346.19,73.667,345.81,74,345.429C74.333,345.048,74.667,344.667,75,344.286C75.333,343.905,75.667,343.524,76,343.143C76.333,342.762,76.667,342.381,77,342C77.333,341.619,77.667,341.238,78,340.857C78.333,340.476,78.667,340.095,79,339.714C79.333,339.333,79.667,338.952,80,338.571C80.333,338.19,80.667,337.81,81,337.429C81.333,337.048,81.667,336.667,82,336.286C82.333,335.905,82.667,335.524,83,335.143C83.333,334.762,83.667,334.381,84,334C84.333,333.619,84.667,333.238,85,332.857C85.333,332.476,85.667,332.095,86,331.714C86.333,331.333,86.667,330.952,87,330.571C87.333,330.19,87.667,329.81,88,329.429C88.333,329.048,88.667,328.667,89,328.286C89.333,327.905,89.667,327.524,90,327.143"
+                  />
+                </g>
+                <clippath
+                  id=":rg:-auto-generated-id-2-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-2-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-2 css-1jcdc55-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,343.295,70.667,336.59,71,329.886C71.333,323.181,71.667,316.476,72,309.771C72.333,303.067,72.667,296.362,73,289.657C73.333,282.952,73.667,276.248,74,269.543C74.333,262.838,74.667,256.133,75,249.429C75.333,242.724,75.667,236.019,76,229.314C76.333,222.61,76.667,215.905,77,209.2C77.333,202.495,77.667,195.79,78,189.086C78.333,182.381,78.667,175.676,79,168.971C79.333,162.267,79.667,148.857,80,148.857C80.333,148.857,80.667,148.857,81,148.857C81.333,148.857,81.667,148.857,82,148.857C82.333,148.857,82.667,148.857,83,148.857C83.333,148.857,83.667,148.857,84,148.857C84.333,148.857,84.667,148.857,85,148.857C85.333,148.857,85.667,148.857,86,148.857C86.333,148.857,86.667,148.857,87,148.857C87.333,148.857,87.667,148.857,88,148.857C88.333,148.857,88.667,148.857,89,148.857C89.333,148.857,89.667,148.857,90,148.857"
+                  />
+                </g>
+                <clippath
+                  id=":rg:-auto-generated-id-3-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-3-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-3 css-14say7m-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,349.619,70.667,349.238,71,348.857C71.333,348.476,71.667,348.095,72,347.714C72.333,347.333,72.667,346.952,73,346.571C73.333,346.19,73.667,345.81,74,345.429C74.333,345.048,74.667,344.667,75,344.286C75.333,343.905,75.667,343.524,76,343.143C76.333,342.762,76.667,342.381,77,342C77.333,341.619,77.667,341.238,78,340.857C78.333,340.476,78.667,340.095,79,339.714C79.333,339.333,79.667,338.952,80,338.571C80.333,338.19,80.667,337.81,81,337.429C81.333,337.048,81.667,336.667,82,336.286C82.333,335.905,82.667,335.524,83,335.143C83.333,334.762,83.667,334.381,84,334C84.333,333.619,84.667,333.238,85,332.857C85.333,332.476,85.667,332.095,86,331.714C86.333,331.333,86.667,330.952,87,330.571C87.333,330.19,87.667,329.81,88,329.429C88.333,329.048,88.667,328.667,89,328.286C89.333,327.905,89.667,327.524,90,327.143"
+                  />
+                </g>
+                <clippath
+                  id=":rg:-auto-generated-id-4-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-4-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-4 css-a8rcf6-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,349.238,70.667,348.476,71,347.714C71.333,346.952,71.667,346.19,72,345.429C72.333,344.667,72.667,343.905,73,343.143C73.333,342.381,73.667,341.619,74,340.857C74.333,340.095,74.667,339.333,75,338.571C75.333,337.81,75.667,337.048,76,336.286C76.333,335.524,76.667,334.762,77,334C77.333,333.238,77.667,332.476,78,331.714C78.333,330.952,78.667,330.952,79,329.429C79.333,327.905,79.667,243.333,80,235.714C80.333,228.095,80.667,228.095,81,224.286C81.333,220.476,81.667,216.667,82,212.857C82.333,209.048,82.667,205.238,83,201.429C83.333,197.619,83.667,193.81,84,190C84.333,186.19,84.667,182.381,85,178.571C85.333,174.762,85.667,170.952,86,167.143C86.333,163.333,86.667,159.524,87,155.714C87.333,151.905,87.667,148.095,88,144.286C88.333,140.476,88.667,136.667,89,132.857C89.333,129.048,89.667,125.238,90,121.429"
+                  />
+                </g>
+                <clippath
+                  id=":rg:-auto-generated-id-5-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-5-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-5 css-lwdis8-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,346.19,70.667,342.381,71,338.571C71.333,334.762,71.667,330.952,72,327.143C72.333,323.333,72.667,319.524,73,315.714C73.333,311.905,73.667,308.095,74,304.286C74.333,300.476,74.667,296.667,75,292.857C75.333,289.048,75.667,285.238,76,281.429C76.333,277.619,76.667,273.81,77,270C77.333,266.19,77.667,262.381,78,258.571C78.333,254.762,78.667,250.952,79,247.143C79.333,243.333,79.667,239.524,80,235.714C80.333,231.905,80.667,228.095,81,224.286C81.333,220.476,81.667,216.667,82,212.857C82.333,209.048,82.667,205.238,83,201.429C83.333,197.619,83.667,193.81,84,190C84.333,186.19,84.667,182.381,85,178.571C85.333,174.762,85.667,170.952,86,167.143C86.333,163.333,86.667,159.524,87,155.714C87.333,151.905,87.667,148.095,88,144.286C88.333,140.476,88.667,136.667,89,132.857C89.333,129.048,89.667,125.238,90,121.429"
+                  />
+                </g>
+                <clippath
+                  id=":rg:-auto-generated-id-6-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-6-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-6 css-wn5hww-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,339.486,70.667,328.971,71,318.457C71.333,307.943,71.667,297.429,72,286.914C72.333,276.4,72.667,265.886,73,255.371C73.333,244.857,73.667,234.343,74,223.829C74.333,213.314,74.667,202.8,75,192.286C75.333,181.771,75.667,171.257,76,160.743C76.333,150.229,76.667,139.714,77,129.2C77.333,118.686,77.667,107.6,78,97.657C78.333,87.714,78.667,76.286,79,69.543C79.333,62.8,79.667,57.2,80,57.2C80.333,57.2,80.667,57.2,81,57.2C81.333,57.2,81.667,57.2,82,57.2C82.333,57.2,82.667,57.2,83,57.2C83.333,57.2,83.667,57.2,84,57.2C84.333,57.2,84.667,57.2,85,57.2C85.333,57.2,85.667,57.2,86,57.2C86.333,57.2,86.667,57.2,87,57.2C87.333,57.2,87.667,57.2,88,57.2C88.333,57.2,88.667,57.2,89,57.2C89.333,57.2,89.667,57.2,90,57.2"
+                  />
+                </g>
+                <clippath
+                  id=":rg:-auto-generated-id-7-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-7-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-7 css-1qzcpgg-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,334.762,70.667,319.524,71,304.286C71.333,289.048,71.667,273.048,72,258.571C72.333,244.095,72.667,231.143,73,217.429C73.333,203.714,73.667,190,74,176.286C74.333,162.571,74.667,135.143,75,135.143C75.333,135.143,75.667,135.143,76,135.143C76.333,135.143,76.667,135.143,77,135.143C77.333,135.143,77.667,135.143,78,135.143C78.333,135.143,78.667,135.143,79,135.143C79.333,135.143,79.667,135.143,80,135.143C80.333,135.143,80.667,135.143,81,135.143C81.333,135.143,81.667,135.143,82,135.143C82.333,135.143,82.667,135.143,83,135.143C83.333,135.143,83.667,135.143,84,135.143C84.333,135.143,84.667,135.143,85,135.143C85.333,135.143,85.667,135.143,86,135.143C86.333,135.143,86.667,135.143,87,135.143C87.333,135.143,87.667,135.143,88,135.143C88.333,135.143,88.667,135.143,89,135.143C89.333,135.143,89.667,135.143,90,135.143"
+                  />
+                </g>
+                <clippath
+                  id=":rg:-auto-generated-id-8-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-8-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-8 css-1jcdc55-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,346.19,70.667,342.381,71,338.571C71.333,334.762,71.667,332.095,72,327.143C72.333,322.19,72.667,314.952,73,308.857C73.333,302.762,73.667,296.667,74,290.571C74.333,284.476,74.667,278.381,75,272.286C75.333,266.19,75.667,260.857,76,254C76.333,247.143,76.667,238.762,77,231.143C77.333,223.524,77.667,215.905,78,208.286C78.333,200.667,78.667,193.048,79,185.429C79.333,177.81,79.667,168.286,80,162.571C80.333,156.857,80.667,154.952,81,151.143C81.333,147.333,81.667,143.524,82,139.714C82.333,135.905,82.667,132.095,83,128.286C83.333,124.476,83.667,120.667,84,116.857C84.333,113.048,84.667,109.238,85,105.429C85.333,101.619,85.667,97.81,86,94C86.333,90.19,86.667,86.381,87,82.571C87.333,78.762,87.667,74.952,88,71.143C88.333,67.333,88.667,63.524,89,59.714C89.333,55.905,89.667,52.095,90,48.286"
+                  />
+                </g>
+                <clippath
+                  id=":rg:-auto-generated-id-9-line-clip"
+                >
+                  <rect
+                    height="500"
+                    width="70"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-9-line-clip)"
+                >
+                  <path
+                    class="MuiLineElement-root MuiLineElement-series-auto-generated-id-9 css-14say7m-MuiLineElement-root"
+                    cursor="unset"
+                    d="M70,350C70.333,348.667,70.667,347.333,71,345.657C71.333,343.981,71.667,341.848,72,339.943C72.333,338.038,72.667,336.133,73,334.229C73.333,332.324,73.667,330.419,74,328.514C74.333,326.61,74.667,324.705,75,322.8C75.333,320.895,75.667,318.99,76,317.086C76.333,315.181,76.667,313.276,77,311.371C77.333,309.467,77.667,307.562,78,305.657C78.333,303.752,78.667,301.848,79,299.943C79.333,298.038,79.667,296.133,80,294.229C80.333,292.324,80.667,290.419,81,288.514C81.333,286.61,81.667,284.705,82,282.8C82.333,280.895,82.667,278.99,83,277.086C83.333,275.181,83.667,273.276,84,271.371C84.333,269.467,84.667,267.562,85,265.657C85.333,263.752,85.667,261.848,86,259.943C86.333,258.038,86.667,256.133,87,254.229C87.333,252.324,87.667,250.419,88,248.514C88.333,246.61,88.667,244.705,89,242.8C89.333,240.895,89.667,238.99,90,237.086"
+                  />
+                </g>
+              </g>
+            </g>
+            <g
+              class="MuiChartsAxis-root MuiChartsAxis-directionX MuiChartsAxis-bottom css-1gu340z-MuiChartsAxis-root-MuiChartsXAxis-root"
+              transform="translate(0, 350)"
+            >
+              <line
+                class="MuiChartsAxis-line"
+                x1="70"
+                x2="90"
+              />
+              <g
+                class="MuiChartsAxis-tickContainer"
+                transform="translate(70, 0)"
+              >
+                <line
+                  class="MuiChartsAxis-tick"
+                  y2="6"
+                />
+                <text
+                  class="MuiChartsAxis-tickLabel"
+                  dominant-baseline="hanging"
+                  style="font-size: 12px;"
+                  text-anchor="middle"
+                  x="0"
+                  y="9"
+                >
+                  <tspan
+                    dominant-baseline="hanging"
+                    dy="0px"
+                    x="0"
+                  >
+                    $0k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsAxis-tickContainer"
+                transform="translate(80, 0)"
+              >
+                <line
+                  class="MuiChartsAxis-tick"
+                  y2="6"
+                />
+                <text
+                  class="MuiChartsAxis-tickLabel"
+                  dominant-baseline="hanging"
+                  style="font-size: 12px;"
+                  text-anchor="middle"
+                  x="0"
+                  y="9"
+                >
+                  <tspan
+                    dominant-baseline="hanging"
+                    dy="0px"
+                    x="0"
+                  >
+                    $100k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsAxis-tickContainer"
+                transform="translate(90, 0)"
+              >
+                <line
+                  class="MuiChartsAxis-tick"
+                  y2="6"
+                />
+                <text
+                  class="MuiChartsAxis-tickLabel"
+                  dominant-baseline="hanging"
+                  style="font-size: 12px;"
+                  text-anchor="middle"
+                  x="0"
+                  y="9"
+                >
+                  <tspan
+                    dominant-baseline="hanging"
+                    dy="0px"
+                    x="0"
+                  >
+                    $200k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsAxis-label"
+              >
+                <text
+                  dominant-baseline="hanging"
+                  style="font-size: 14px;"
+                  text-anchor="middle"
+                  x="80"
+                  y="28"
+                >
+                  <tspan
+                    dominant-baseline="hanging"
+                    dy="0px"
+                    x="80"
+                  >
+                    Savings ($)
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              class="MuiChartsAxis-root MuiChartsAxis-directionY MuiChartsAxis-left css-dirvq3-MuiChartsAxis-root-MuiChartsYAxis-root"
+              transform="translate(70, 0)"
+            >
+              <line
+                class="MuiChartsAxis-line"
+                stroke-linecap="square"
+                y1="30"
+                y2="350"
+              />
+              <g
+                class="MuiChartsAxis-tickContainer"
+                transform="translate(0, 350)"
+              >
+                <line
+                  class="MuiChartsAxis-tick"
+                  x2="-6"
+                />
+                <text
+                  class="MuiChartsAxis-tickLabel"
+                  dominant-baseline="central"
+                  style="font-size: 12px;"
+                  text-anchor="end"
+                  x="-8"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="-8"
+                  >
+                    $0k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsAxis-tickContainer"
+                transform="translate(0, 304.2857142857143)"
+              >
+                <line
+                  class="MuiChartsAxis-tick"
+                  x2="-6"
+                />
+                <text
+                  class="MuiChartsAxis-tickLabel"
+                  dominant-baseline="central"
+                  style="font-size: 12px;"
+                  text-anchor="end"
+                  x="-8"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="-8"
+                  >
+                    $0.2k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsAxis-tickContainer"
+                transform="translate(0, 258.57142857142856)"
+              >
+                <line
+                  class="MuiChartsAxis-tick"
+                  x2="-6"
+                />
+                <text
+                  class="MuiChartsAxis-tickLabel"
+                  dominant-baseline="central"
+                  style="font-size: 12px;"
+                  text-anchor="end"
+                  x="-8"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="-8"
+                  >
+                    $0.4k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsAxis-tickContainer"
+                transform="translate(0, 212.85714285714286)"
+              >
+                <line
+                  class="MuiChartsAxis-tick"
+                  x2="-6"
+                />
+                <text
+                  class="MuiChartsAxis-tickLabel"
+                  dominant-baseline="central"
+                  style="font-size: 12px;"
+                  text-anchor="end"
+                  x="-8"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="-8"
+                  >
+                    $0.6k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsAxis-tickContainer"
+                transform="translate(0, 167.14285714285714)"
+              >
+                <line
+                  class="MuiChartsAxis-tick"
+                  x2="-6"
+                />
+                <text
+                  class="MuiChartsAxis-tickLabel"
+                  dominant-baseline="central"
+                  style="font-size: 12px;"
+                  text-anchor="end"
+                  x="-8"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="-8"
+                  >
+                    $0.8k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsAxis-tickContainer"
+                transform="translate(0, 121.42857142857143)"
+              >
+                <line
+                  class="MuiChartsAxis-tick"
+                  x2="-6"
+                />
+                <text
+                  class="MuiChartsAxis-tickLabel"
+                  dominant-baseline="central"
+                  style="font-size: 12px;"
+                  text-anchor="end"
+                  x="-8"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="-8"
+                  >
+                    $1k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsAxis-tickContainer"
+                transform="translate(0, 75.71428571428572)"
+              >
+                <line
+                  class="MuiChartsAxis-tick"
+                  x2="-6"
+                />
+                <text
+                  class="MuiChartsAxis-tickLabel"
+                  dominant-baseline="central"
+                  style="font-size: 12px;"
+                  text-anchor="end"
+                  x="-8"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="-8"
+                  >
+                    $1.2k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsAxis-tickContainer"
+                transform="translate(0, 30)"
+              >
+                <line
+                  class="MuiChartsAxis-tick"
+                  x2="-6"
+                />
+                <text
+                  class="MuiChartsAxis-tickLabel"
+                  dominant-baseline="central"
+                  style="font-size: 12px;"
+                  text-anchor="end"
+                  x="-8"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="-8"
+                  >
+                    $1.4k
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsAxis-label"
+              >
+                <text
+                  dominant-baseline="auto"
+                  style="font-size: 14px; translate: -20px;"
+                  text-anchor="middle"
+                  transform="rotate(-90, -28, 190)"
+                  x="-28"
+                  y="190"
+                >
+                  <tspan
+                    dominant-baseline="auto"
+                    dy="0px"
+                    x="-28"
+                  >
+                    Yearly Interest ($)
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <g
+              data-drawing-container="true"
+            >
+              <g>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-0-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 348.85714285714283px); transform-origin: 71px 348.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 347.7142857142857px); transform-origin: 72px 347.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 346.57142857142856px); transform-origin: 73px 346.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 345.42857142857144px); transform-origin: 74px 345.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 344.2857142857143px); transform-origin: 75px 344.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 343.14285714285717px); transform-origin: 76px 343.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 342px); transform-origin: 77px 342px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 340.85714285714283px); transform-origin: 78px 340.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 339.7142857142857px); transform-origin: 79px 339.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 338.57142857142856px); transform-origin: 80px 338.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 337.42857142857144px); transform-origin: 81px 337.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 336.2857142857143px); transform-origin: 82px 336.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 335.14285714285717px); transform-origin: 83px 335.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 334px); transform-origin: 84px 334px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 332.85714285714283px); transform-origin: 85px 332.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 331.7142857142857px); transform-origin: 86px 331.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 330.57142857142856px); transform-origin: 87px 330.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 329.42857142857144px); transform-origin: 88px 329.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 328.2857142857143px); transform-origin: 89px 328.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-0 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 327.14285714285717px); transform-origin: 90px 327.14285714285717px;"
+                  />
+                </g>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-1-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 348.85714285714283px); transform-origin: 71px 348.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 347.7142857142857px); transform-origin: 72px 347.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 346.57142857142856px); transform-origin: 73px 346.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 345.42857142857144px); transform-origin: 74px 345.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 344.2857142857143px); transform-origin: 75px 344.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 343.14285714285717px); transform-origin: 76px 343.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 342px); transform-origin: 77px 342px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 340.85714285714283px); transform-origin: 78px 340.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 339.7142857142857px); transform-origin: 79px 339.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 338.57142857142856px); transform-origin: 80px 338.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 337.42857142857144px); transform-origin: 81px 337.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 336.2857142857143px); transform-origin: 82px 336.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 335.14285714285717px); transform-origin: 83px 335.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 334px); transform-origin: 84px 334px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 332.85714285714283px); transform-origin: 85px 332.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 331.7142857142857px); transform-origin: 86px 331.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 330.57142857142856px); transform-origin: 87px 330.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 329.42857142857144px); transform-origin: 88px 329.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 328.2857142857143px); transform-origin: 89px 328.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-1 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 327.14285714285717px); transform-origin: 90px 327.14285714285717px;"
+                  />
+                </g>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-2-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 329.8857142857143px); transform-origin: 71px 329.8857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 309.77142857142854px); transform-origin: 72px 309.77142857142854px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 289.65714285714284px); transform-origin: 73px 289.65714285714284px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 269.54285714285714px); transform-origin: 74px 269.54285714285714px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 249.42857142857142px); transform-origin: 75px 249.42857142857142px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 229.3142857142857px); transform-origin: 76px 229.3142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 209.20000000000002px); transform-origin: 77px 209.20000000000002px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 189.0857142857143px); transform-origin: 78px 189.0857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 168.97142857142856px); transform-origin: 79px 168.97142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 148.85714285714286px); transform-origin: 80px 148.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 148.85714285714286px); transform-origin: 81px 148.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 148.85714285714286px); transform-origin: 82px 148.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 148.85714285714286px); transform-origin: 83px 148.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 148.85714285714286px); transform-origin: 84px 148.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 148.85714285714286px); transform-origin: 85px 148.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 148.85714285714286px); transform-origin: 86px 148.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 148.85714285714286px); transform-origin: 87px 148.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 148.85714285714286px); transform-origin: 88px 148.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 148.85714285714286px); transform-origin: 89px 148.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-2 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 148.85714285714286px); transform-origin: 90px 148.85714285714286px;"
+                  />
+                </g>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-3-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 348.85714285714283px); transform-origin: 71px 348.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 347.7142857142857px); transform-origin: 72px 347.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 346.57142857142856px); transform-origin: 73px 346.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 345.42857142857144px); transform-origin: 74px 345.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 344.2857142857143px); transform-origin: 75px 344.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 343.14285714285717px); transform-origin: 76px 343.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 342px); transform-origin: 77px 342px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 340.85714285714283px); transform-origin: 78px 340.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 339.7142857142857px); transform-origin: 79px 339.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 338.57142857142856px); transform-origin: 80px 338.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 337.42857142857144px); transform-origin: 81px 337.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 336.2857142857143px); transform-origin: 82px 336.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 335.14285714285717px); transform-origin: 83px 335.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 334px); transform-origin: 84px 334px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 332.85714285714283px); transform-origin: 85px 332.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 331.7142857142857px); transform-origin: 86px 331.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 330.57142857142856px); transform-origin: 87px 330.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 329.42857142857144px); transform-origin: 88px 329.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 328.2857142857143px); transform-origin: 89px 328.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-3 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 327.14285714285717px); transform-origin: 90px 327.14285714285717px;"
+                  />
+                </g>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-4-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 347.7142857142857px); transform-origin: 71px 347.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 345.42857142857144px); transform-origin: 72px 345.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 343.14285714285717px); transform-origin: 73px 343.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 340.85714285714283px); transform-origin: 74px 340.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 338.57142857142856px); transform-origin: 75px 338.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 336.2857142857143px); transform-origin: 76px 336.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 334px); transform-origin: 77px 334px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 331.7142857142857px); transform-origin: 78px 331.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 329.42857142857144px); transform-origin: 79px 329.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 235.7142857142857px); transform-origin: 80px 235.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 224.2857142857143px); transform-origin: 81px 224.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 212.85714285714286px); transform-origin: 82px 212.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 201.42857142857142px); transform-origin: 83px 201.42857142857142px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 190px); transform-origin: 84px 190px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 178.57142857142856px); transform-origin: 85px 178.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 167.14285714285714px); transform-origin: 86px 167.14285714285714px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 155.71428571428575px); transform-origin: 87px 155.71428571428575px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 144.28571428571428px); transform-origin: 88px 144.28571428571428px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 132.85714285714283px); transform-origin: 89px 132.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-4 css-73fioa-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 121.42857142857143px); transform-origin: 90px 121.42857142857143px;"
+                  />
+                </g>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-5-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 338.57142857142856px); transform-origin: 71px 338.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 327.14285714285717px); transform-origin: 72px 327.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 315.7142857142857px); transform-origin: 73px 315.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 304.2857142857143px); transform-origin: 74px 304.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 292.85714285714283px); transform-origin: 75px 292.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 281.42857142857144px); transform-origin: 76px 281.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 270px); transform-origin: 77px 270px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 258.57142857142856px); transform-origin: 78px 258.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 247.14285714285714px); transform-origin: 79px 247.14285714285714px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 235.7142857142857px); transform-origin: 80px 235.7142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 224.2857142857143px); transform-origin: 81px 224.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 212.85714285714286px); transform-origin: 82px 212.85714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 201.42857142857142px); transform-origin: 83px 201.42857142857142px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 190px); transform-origin: 84px 190px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 178.57142857142856px); transform-origin: 85px 178.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 167.14285714285714px); transform-origin: 86px 167.14285714285714px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 155.71428571428575px); transform-origin: 87px 155.71428571428575px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 144.28571428571428px); transform-origin: 88px 144.28571428571428px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 132.85714285714283px); transform-origin: 89px 132.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-5 css-1ljw8yg-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 121.42857142857143px); transform-origin: 90px 121.42857142857143px;"
+                  />
+                </g>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-6-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 318.45714285714286px); transform-origin: 71px 318.45714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 286.9142857142857px); transform-origin: 72px 286.9142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 255.37142857142857px); transform-origin: 73px 255.37142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 223.8285714285714px); transform-origin: 74px 223.8285714285714px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 192.28571428571428px); transform-origin: 75px 192.28571428571428px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 160.74285714285713px); transform-origin: 76px 160.74285714285713px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 129.20000000000002px); transform-origin: 77px 129.20000000000002px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 97.65714285714286px); transform-origin: 78px 97.65714285714286px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 69.54285714285714px); transform-origin: 79px 69.54285714285714px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 57.19999999999999px); transform-origin: 80px 57.19999999999999px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 57.19999999999999px); transform-origin: 81px 57.19999999999999px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 57.19999999999999px); transform-origin: 82px 57.19999999999999px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 57.19999999999999px); transform-origin: 83px 57.19999999999999px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 57.19999999999999px); transform-origin: 84px 57.19999999999999px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 57.19999999999999px); transform-origin: 85px 57.19999999999999px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 57.19999999999999px); transform-origin: 86px 57.19999999999999px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 57.19999999999999px); transform-origin: 87px 57.19999999999999px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 57.19999999999999px); transform-origin: 88px 57.19999999999999px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 57.19999999999999px); transform-origin: 89px 57.19999999999999px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-6 css-1i0blse-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 57.19999999999999px); transform-origin: 90px 57.19999999999999px;"
+                  />
+                </g>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-7-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 304.2857142857143px); transform-origin: 71px 304.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 258.57142857142856px); transform-origin: 72px 258.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 217.4285714285714px); transform-origin: 73px 217.4285714285714px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 176.2857142857143px); transform-origin: 74px 176.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 135.14285714285717px); transform-origin: 75px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 135.14285714285717px); transform-origin: 76px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 135.14285714285717px); transform-origin: 77px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 135.14285714285717px); transform-origin: 78px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 135.14285714285717px); transform-origin: 79px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 135.14285714285717px); transform-origin: 80px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 135.14285714285717px); transform-origin: 81px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 135.14285714285717px); transform-origin: 82px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 135.14285714285717px); transform-origin: 83px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 135.14285714285717px); transform-origin: 84px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 135.14285714285717px); transform-origin: 85px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 135.14285714285717px); transform-origin: 86px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 135.14285714285717px); transform-origin: 87px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 135.14285714285717px); transform-origin: 88px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 135.14285714285717px); transform-origin: 89px 135.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-7 css-9k5qtf-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 135.14285714285717px); transform-origin: 90px 135.14285714285717px;"
+                  />
+                </g>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-8-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 338.57142857142856px); transform-origin: 71px 338.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 327.14285714285717px); transform-origin: 72px 327.14285714285717px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 308.85714285714283px); transform-origin: 73px 308.85714285714283px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 290.57142857142856px); transform-origin: 74px 290.57142857142856px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 272.2857142857143px); transform-origin: 75px 272.2857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 253.99999999999997px); transform-origin: 76px 253.99999999999997px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 231.14285714285714px); transform-origin: 77px 231.14285714285714px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 208.28571428571428px); transform-origin: 78px 208.28571428571428px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 185.42857142857144px); transform-origin: 79px 185.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 162.57142857142858px); transform-origin: 80px 162.57142857142858px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 151.14285714285714px); transform-origin: 81px 151.14285714285714px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 139.71428571428572px); transform-origin: 82px 139.71428571428572px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 128.28571428571428px); transform-origin: 83px 128.28571428571428px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 116.85714285714288px); transform-origin: 84px 116.85714285714288px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 105.42857142857144px); transform-origin: 85px 105.42857142857144px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 93.99999999999999px); transform-origin: 86px 93.99999999999999px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 82.57142857142857px); transform-origin: 87px 82.57142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 71.14285714285714px); transform-origin: 88px 71.14285714285714px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 59.714285714285715px); transform-origin: 89px 59.714285714285715px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-8 css-16x4fwi-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 48.28571428571429px); transform-origin: 90px 48.28571428571429px;"
+                  />
+                </g>
+                <g
+                  clip-path="url(#:rg:-auto-generated-id-9-line-clip)"
+                >
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(70px, 350px); transform-origin: 70px 350px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(71px, 345.65714285714284px); transform-origin: 71px 345.65714285714284px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(72px, 339.9428571428571px); transform-origin: 72px 339.9428571428571px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(73px, 334.22857142857146px); transform-origin: 73px 334.22857142857146px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(74px, 328.51428571428573px); transform-origin: 74px 328.51428571428573px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(75px, 322.8px); transform-origin: 75px 322.8px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(76px, 317.0857142857143px); transform-origin: 76px 317.0857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(77px, 311.37142857142857px); transform-origin: 77px 311.37142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(78px, 305.65714285714284px); transform-origin: 78px 305.65714285714284px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(79px, 299.9428571428571px); transform-origin: 79px 299.9428571428571px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(80px, 294.22857142857146px); transform-origin: 80px 294.22857142857146px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(81px, 288.51428571428573px); transform-origin: 81px 288.51428571428573px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(82px, 282.8px); transform-origin: 82px 282.8px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(83px, 277.0857142857143px); transform-origin: 83px 277.0857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(84px, 271.37142857142857px); transform-origin: 84px 271.37142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(85px, 265.65714285714284px); transform-origin: 85px 265.65714285714284px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(86px, 259.9428571428572px); transform-origin: 86px 259.9428571428572px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(87px, 254.22857142857143px); transform-origin: 87px 254.22857142857143px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(88px, 248.5142857142857px); transform-origin: 88px 248.5142857142857px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(89px, 242.8px); transform-origin: 89px 242.8px;"
+                  />
+                  <path
+                    class="MuiMarkElement-root MuiMarkElement-series-auto-generated-id-9 css-1swn0iw-MuiMarkElement-root"
+                    cursor="unset"
+                    d="M4.514,0A4.514,4.514,0,1,1,-4.514,0A4.514,4.514,0,1,1,4.514,0"
+                    style="transform: translate(90px, 237.0857142857143px); transform-origin: 90px 237.0857142857143px;"
+                  />
+                </g>
+              </g>
+            </g>
+            <g
+              class="MuiChartsLegend-root MuiChartsLegend-row css-nsbw82-MuiChartsLegend-root"
+            >
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-0"
+                transform="translate(15 355)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#02B2AF"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: #fff;"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    UOB Bank
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-1"
+                transform="translate(50 355)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#72CCFF"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: #fff;"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    OCBC Bank
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-2"
+                transform="translate(15 385)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#DA00FF"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: #fff;"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    Maribank
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-3"
+                transform="translate(50 385)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#9001CB"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: #fff;"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    Standard Chartered
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-4"
+                transform="translate(15 415)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#2E96FF"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: #fff;"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    Trust Bank (Signature)
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-5"
+                transform="translate(50 415)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#3B48E0"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: #fff;"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    Trust Bank (Flex)
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-6"
+                transform="translate(15 445)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#02B2AF"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: #fff;"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    GXS
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-7"
+                transform="translate(50 445)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#72CCFF"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: #fff;"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    Chocolate Finance
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-8"
+                transform="translate(15 475)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#DA00FF"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: #fff;"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    Bank of China SuperSaver
+                  </tspan>
+                </text>
+              </g>
+              <g
+                class="MuiChartsLegend-series MuiChartsLegend-series-auto-generated-id-9"
+                transform="translate(50 475)"
+              >
+                <rect
+                  class="MuiChartsLegend-itemBackground"
+                  fill="transparent"
+                  height="24"
+                  style="pointer-events: none; cursor: unset;"
+                  width="29"
+                  x="-2"
+                  y="-12"
+                />
+                <rect
+                  class="MuiChartsLegend-mark"
+                  fill="#9001CB"
+                  height="20"
+                  style="pointer-events: none;"
+                  width="20"
+                  x="0"
+                  y="-10"
+                />
+                <text
+                  dominant-baseline="central"
+                  style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: #fff;"
+                  text-anchor="start"
+                  x="25"
+                  y="0"
+                >
+                  <tspan
+                    dominant-baseline="central"
+                    dy="0px"
+                    x="25"
+                  >
+                    Maybank Save Up
+                  </tspan>
+                </text>
+              </g>
+            </g>
+            <clippath
+              id=":rf:-clip-path"
+            >
+              <rect
+                height="320"
+                width="20"
+                x="70"
+                y="30"
+              />
+            </clippath>
+          </svg>
+        </div>
+        <span
+          class="MuiTypography-root MuiTypography-caption css-u1vmxs-MuiTypography-root"
+        >
+          * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+        </span>
+      </div>
+    </div>
+  </div>
+  <footer
+    class="MuiBox-root css-1b6b4sh"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthSm css-zzzaw2-MuiContainer-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1j30ft7-MuiTypography-root"
+        style="--Typography-textAlign: center;"
+      >
+        Copyright © 
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-i9kmoy-MuiTypography-root-MuiLink-root"
+          href="https://jh123x.com/"
+        >
+          Jh123x
+        </a>
+         2026
+      </p>
+    </div>
+  </footer>
+</DocumentFragment>
+`;

@@ -1,6 +1,6 @@
-import { ResultInterest } from "../types/interest_result.ts";
-import Profile from "../types/profile.ts";
-import { calculate_ir } from "./common.ts";
+import { ResultInterest } from "../types/interest_result";
+import Profile from "../types/profile";
+import { calculate_ir } from "./common";
 
 export const choco_finance_05_2025 = (profile: Profile): ResultInterest => {
   return calculate_ir(profile.Savings, {

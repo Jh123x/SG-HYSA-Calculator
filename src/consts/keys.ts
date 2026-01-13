@@ -1,1 +1,1 @@
-export const STORE_KEY = "current_profile"
+export const STORE_KEY = "current_profile";

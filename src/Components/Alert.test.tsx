@@ -1,14 +1,15 @@
+import * as React from "react";
 import { render } from "@testing-library/react";
 import { WebAlert } from "./Alert";
+import { expect, describe, it } from "vitest";
 
 describe("Web Alert", () => {
-    it("should match snapshot", () => {
-        const tree = render(<WebAlert
-            severity="success"
-            hideModel={false}
-            onClose={() => { }}
-            children="Test Alert"
-        />)
-        expect(tree).toMatchSnapshot()
-    })
-})
+  it("should match snapshot", () => {
+    const { asFragment } = render(
+      <WebAlert severity="success" hideModel={false} onClose={() => {}}>
+        Test Alert
+      </WebAlert>,
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+});

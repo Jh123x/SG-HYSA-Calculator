@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
-Sitemap: https://job.jh123x.com/sitemap.xml
+Sitemap: https://hysa.jh123x.com/sitemap.xml

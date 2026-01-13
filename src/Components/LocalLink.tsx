@@ -1,23 +1,26 @@
-import React from "react"
-import { Link } from "@mui/material"
-import type { ReactNode } from "react"
-import { primaryColor } from "../consts/colors.ts"
-
+import * as React from "react";
+import { Link } from "@mui/material";
+import type { ReactNode } from "react";
+import { primaryColor } from "../consts/colors";
 
 interface LocalLinkProps {
-    href: string
-    children?: ReactNode
+  href: string;
+  children?: ReactNode;
 }
 
 export const LocalLink = ({ href, children }: LocalLinkProps) => {
-    return <Link
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        sx={{
-            color: primaryColor,
-            textDecoration: "none",
-            "&:hover": { textDecoration: "underline" },
-        }}
-    >{children}</Link>
-}
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      sx={{
+        color: primaryColor,
+        textDecoration: "none",
+        "&:hover": { textDecoration: "underline" },
+      }}
+    >
+      {children}
+    </Link>
+  );
+};
