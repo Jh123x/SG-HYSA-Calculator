@@ -4,7 +4,6 @@
     "moduleResolution": "node",
     "allowJs": false,
     "noEmit": true,
-    "jsx": "react",
-    "jsxImportSource": "react",
+    "jsx": "react-jsx",
   },
 }

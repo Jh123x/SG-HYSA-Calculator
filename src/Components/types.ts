@@ -12,5 +12,4 @@ export interface Field<Type> {
   onChange: (v: Type | "") => void;
   value: Type | "";
   tooltip?: string;
-  key: string;
 }
