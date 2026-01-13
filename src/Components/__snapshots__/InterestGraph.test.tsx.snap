@@ -570,7 +570,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
           >
             <text
               dominant-baseline="auto"
-              style="font-size: 14px;"
+              style="font-size: 14px; translate: -20px;"
               text-anchor="middle"
               transform="rotate(-90, -28, 190)"
               x="-28"
@@ -2115,7 +2115,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -2153,7 +2153,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -2191,7 +2191,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -2229,7 +2229,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -2267,7 +2267,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -2305,7 +2305,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -2343,7 +2343,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -2381,7 +2381,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -2419,7 +2419,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -2457,7 +2457,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -2495,7 +2495,7 @@ exports[`Interest Graph should match snapshot if profile is empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -3165,7 +3165,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
           >
             <text
               dominant-baseline="auto"
-              style="font-size: 14px;"
+              style="font-size: 14px; translate: -20px;"
               text-anchor="middle"
               transform="rotate(-90, -28, 190)"
               x="-28"
@@ -4710,7 +4710,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -4748,7 +4748,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -4786,7 +4786,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -4824,7 +4824,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -4862,7 +4862,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -4900,7 +4900,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -4938,7 +4938,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -4976,7 +4976,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -5014,7 +5014,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -5052,7 +5052,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
@@ -5090,7 +5090,7 @@ exports[`Interest Graph should match snapshot if profile is not empty 1`] = `
             />
             <text
               dominant-baseline="central"
-              style="pointer-events: none; font-family: \\"Roboto\\", \\"Helvetica\\", \\"Arial\\", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; fill: rgba(0, 0, 0, 0.87);"
+              style="pointer-events: none; font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 1rem; line-height: 1; letter-spacing: 0.00938em; color: inherit; fill: rgba(0, 0, 0, 0.87);"
               text-anchor="start"
               x="25"
               y="0"
