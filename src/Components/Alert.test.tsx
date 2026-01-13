@@ -1,6 +1,7 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
 import { WebAlert } from "./Alert";
+import { expect, describe, it } from "vitest";
 
 describe("Web Alert", () => {
   it("should match snapshot", () => {

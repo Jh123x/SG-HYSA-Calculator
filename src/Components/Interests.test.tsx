@@ -2,6 +2,7 @@ import { render } from "@testing-library/react";
 import { Result } from "./Interests";
 import { NewProfile } from "../types/profile";
 import * as React from "react";
+import { expect, describe, it } from "vitest";
 
 describe("Result Table", () => {
   it("should match snapshot when results is empty", () => {
