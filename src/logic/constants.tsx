@@ -6,7 +6,7 @@ import type { ResultInterest } from "../types/interest_result";
 import { LocalLink } from "../Components/LocalLink";
 import { uob_interest_2025_12 } from "./uob";
 import { gxs_interest_08_2025 } from "./gxs";
-import { ocbc_interest_08_2025 } from "./ocbc360";
+import { ocbc_interest_05_2026, ocbc_interest_08_2025 } from "./ocbc360";
 import { maybank_save_up_10_2025 } from "./maybank";
 import { citi_wealth_first_10_2025 } from "./citibank";
 import { stand_chart_interest } from "./stand_chart";
@@ -33,14 +33,20 @@ export const bankInfo: Record<string, Info> = {
   "UOB Bank": {
     interestFn: uob_interest_2025_12,
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
-    remarks: <p>Visit their official website to find out more</p>,
+    remarks: "Visit their official website to find out more",
     lastUpdated: "2025-11-14",
   },
-  "OCBC Bank": {
+  "OCBC Bank (Pre 05/26)": {
     interestFn: ocbc_interest_08_2025,
     url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
-    remarks: <p>Visit their official website to find out more</p>,
+    remarks: "Visit their official website to find out more",
     lastUpdated: "2025-12-27",
+  },
+  "OCBC Bank (Post 05/26)": {
+    interestFn: ocbc_interest_05_2026,
+    url: "https://www.ocbc.com/personal-banking/notices",
+    remarks: "Visit the official website to find our more",
+    lastUpdated: "2026-04-05",
   },
   Maribank: {
     interestFn: maribank_interest_12_2025,
