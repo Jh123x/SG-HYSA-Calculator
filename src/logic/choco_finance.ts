@@ -48,6 +48,6 @@ export const choco_finance_06_2026 = (profile: Profile): ResultInterest => {
       { Cutoff: 20000, InterestRatePercent: 2 },
       { Cutoff: 80000, InterestRatePercent: 1.8 },
     ],
-    baseRatePercent: 0, // 0 for remaining as the rest is investment
+    baseRatePercent: 1.8,
   });
 };
