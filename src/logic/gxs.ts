@@ -29,3 +29,16 @@ export const gxs_interest_07_2025 = (profile: Profile): ResultInterest => {
     baseRatePercent: 0,
   });
 };
+
+export const gxs_interest_06_2026 = (profile: Profile): ResultInterest => {
+  const { Savings } = profile;
+  if (Savings < 200) return new ResultInterest(0, 0);
+
+  return calculate_ir(Savings > 95_000 ? 95_000 : Savings, {
+    cutoffs: [
+      { Cutoff: 85_000, InterestRatePercent: 1.22 }, // Boost Pocket (3-month)
+      { Cutoff: 10_000, InterestRatePercent: 1.08 }, // Saving Pockets (Main Account: 0.88%)
+    ],
+    baseRatePercent: 0,
+  });
+};

@@ -4,7 +4,9 @@ import { calculate_ir } from "./common";
 
 const baseInterest = 0.05;
 
-export const stand_chart_interest = (profile: Profile): ResultInterest => {
+export const stand_chart_interest_10_2025 = (
+  profile: Profile,
+): ResultInterest => {
   const { Savings, Salary, Spending, Insurance, Investment } = profile;
   var interest = baseInterest;
 
@@ -12,6 +14,23 @@ export const stand_chart_interest = (profile: Profile): ResultInterest => {
   if (Spending >= 1000) interest += 1.5;
   if (Insurance >= 12000) interest += 2.5;
   if (Investment >= 20000) interest += 2.5;
+
+  return calculate_ir(Savings, {
+    cutoffs: [{ Cutoff: 100_000, InterestRatePercent: interest }],
+    baseRatePercent: baseInterest,
+  });
+};
+
+export const stand_chart_interest_06_2026 = (
+  profile: Profile,
+): ResultInterest => {
+  const { Savings, Salary, Spending, Insurance, Investment } = profile;
+  var interest = baseInterest;
+
+  if (Salary >= 3000) interest += 0.9;
+  if (Spending >= 1000) interest += 0.9;
+  if (Insurance >= 12000) interest += 2;
+  if (Investment >= 20000) interest += 2;
 
   return calculate_ir(Savings, {
     cutoffs: [{ Cutoff: 100_000, InterestRatePercent: interest }],

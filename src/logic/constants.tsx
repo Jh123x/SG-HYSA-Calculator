@@ -5,22 +5,24 @@ import type { ResultInterest } from "../types/interest_result";
 
 import { LocalLink } from "../Components/LocalLink";
 import { uob_interest_2025_12 } from "./uob";
-import { gxs_interest_08_2025 } from "./gxs";
+import { gxs_interest_08_2025, gxs_interest_06_2026 } from "./gxs";
 import { ocbc_interest_05_2026, ocbc_interest_08_2025 } from "./ocbc360";
 import { maybank_save_up_10_2025 } from "./maybank";
-import { citi_wealth_first_10_2025 } from "./citibank";
-import { stand_chart_interest } from "./stand_chart";
+import { citi_wealth_first_10_2025, citi_wealth_first_06_2026 } from "./citibank";
+import { stand_chart_interest_06_2026 } from "./stand_chart";
 import { dbs_multiplier_interest } from "./dbs_multiplier";
 import {
   trust_bank_flex_12_2025,
   trust_bank_signature_10_2025,
+  trust_bank_signature_06_2026,
+  trust_bank_zen_06_2026,
 } from "./trust_bank";
 import {
   maribank_interest_12_2025,
   mariInterestRate_12_2025,
 } from "./maribank";
 import { bank_of_china_super_saver_11_2025 } from "./bank_of_china";
-import { choco_finance_12_2025 } from "./choco_finance";
+import { choco_finance_12_2025, choco_finance_06_2026 } from "./choco_finance";
 
 interface Info {
   interestFn: (profile: Profile) => ResultInterest;
@@ -63,7 +65,7 @@ export const bankInfo: Record<string, Info> = {
     lastUpdated: "2025-12-27",
   },
   "Standard Chartered": {
-    interestFn: stand_chart_interest,
+    interestFn: stand_chart_interest_06_2026,
     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
     remarks: (
       <p>
@@ -72,19 +74,19 @@ export const bankInfo: Record<string, Info> = {
         fulfils interest for 6 months
       </p>
     ),
-    lastUpdated: "2025-10-14",
+    lastUpdated: "2026-06-05",
   },
   "Trust Bank (Signature)": {
-    interestFn: trust_bank_signature_10_2025,
+    interestFn: trust_bank_signature_06_2026,
     url: "https://trustbank.sg/savings-account/",
     remarks: <p>Spending assumes 5 x $30 if spending is more than 150.</p>,
-    lastUpdated: "2025-10-14",
+    lastUpdated: "2026-06-05",
   },
-  "Trust Bank (Flex)": {
-    interestFn: trust_bank_flex_12_2025,
+  "Trust Bank (Zen)": {
+    interestFn: trust_bank_zen_06_2026,
     url: "https://trustbank.sg/savings-account/",
-    remarks: "A Flat 0.5% interest rate up to 1.2 million",
-    lastUpdated: "2025-12-27",
+    remarks: "A Flat 0.4% interest rate up to 1.2 million",
+    lastUpdated: "2026-06-05",
   },
   "DBS Multiplier Account": {
     interestFn: dbs_multiplier_interest,
@@ -99,12 +101,12 @@ export const bankInfo: Record<string, Info> = {
     lastUpdated: "2025-10-14",
   },
   GXS: {
-    interestFn: gxs_interest_08_2025,
+    interestFn: gxs_interest_06_2026,
     url: "https://www.gxs.com.sg/savings-account",
     remarks: (
       <p>
         Calculated using boost pocket (3 months) up to $85,000 with remaining
-        balance in main account
+        balance in saving pockets
         <br />
         <b>
           Note: The max amount deposited depends on individual (up to $95,000)
@@ -116,16 +118,16 @@ export const bankInfo: Record<string, Info> = {
         </LocalLink>
       </p>
     ),
-    lastUpdated: "2025-10-14",
+    lastUpdated: "2026-06-05",
   },
   "Chocolate Finance": {
-    interestFn: choco_finance_12_2025,
+    interestFn: choco_finance_06_2026,
     url: "https://www.chocolatefinance.com/",
     remarks: (
       <p>
-        1st 20k 2% p.a, next 30k 1.8% p.a.
+        1st 20k 2% p.a, next 80k 1.8% p.a.
         <br />
-        Amounts above 50k are not included.
+        Amounts above 100k at 1.8% p.a.
         <br />
         <b>Note: This is not a bank</b>
         <br />
@@ -134,7 +136,7 @@ export const bankInfo: Record<string, Info> = {
         </LocalLink>
       </p>
     ),
-    lastUpdated: "2025-12-27",
+    lastUpdated: "2026-06-05",
   },
   "Bank of China SuperSaver": {
     interestFn: bank_of_china_super_saver_11_2025,
@@ -165,16 +167,18 @@ export const bankInfo: Record<string, Info> = {
     lastUpdated: "2025-10-14",
   },
   "Citi Wealth first Account": {
-    interestFn: citi_wealth_first_10_2025,
+    interestFn: citi_wealth_first_06_2026,
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks: (
       <>
         Only Citigold and above members above 18 years old can access this perk
         (IE: more than 250k avg balance)
         <br />
+        Bonus interest capped at first $500k.
+        <br />
         *Assumes Citigold level, Citi Private has a higher level.
       </>
     ),
-    lastUpdated: "2025-10-14",
+    lastUpdated: "2026-06-05",
   },
 };

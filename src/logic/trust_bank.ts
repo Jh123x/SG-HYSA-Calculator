@@ -78,3 +78,32 @@ export const trust_bank_flex_12_2025 = (profile: Profile): ResultInterest => {
     baseRatePercent: 0.05,
   });
 };
+
+// === June 2026 Rates ===
+
+export const trust_bank_signature_06_2026 = (
+  profile: Profile,
+): ResultInterest => {
+  const { Savings, Salary, Spending, IsNTUCMember } = profile;
+
+  var currentInterest = 0.05;
+
+  // 5 x $30 card spends (modeled as Spending >= 150)
+  if (Spending >= 150) {
+    currentInterest += IsNTUCMember ? 0.2 : 0.1;
+  }
+  if (Savings >= 100_000) currentInterest += 0.3;
+  if (Salary >= 1500) currentInterest += 0.45;
+
+  return calculate_ir(Savings, {
+    cutoffs: [{ Cutoff: 1_200_000, InterestRatePercent: currentInterest }],
+    baseRatePercent: 0.05,
+  });
+};
+
+export const trust_bank_zen_06_2026 = (profile: Profile): ResultInterest => {
+  return calculate_ir(profile.Savings, {
+    cutoffs: [{ Cutoff: 1_200_000, InterestRatePercent: 0.4 }],
+    baseRatePercent: 0.05,
+  });
+};
