@@ -41,3 +41,13 @@ export const choco_finance_12_2025 = (profile: Profile): ResultInterest => {
     baseRatePercent: 0,
   });
 };
+
+export const choco_finance_06_2026 = (profile: Profile): ResultInterest => {
+  return calculate_ir(profile.Savings, {
+    cutoffs: [
+      { Cutoff: 20000, InterestRatePercent: 2 },
+      { Cutoff: 80000, InterestRatePercent: 1.8 },
+    ],
+    baseRatePercent: 1.8,
+  });
+};
