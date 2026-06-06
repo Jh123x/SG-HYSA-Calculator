@@ -9,11 +9,11 @@ import {
   Tooltip,
   Typography,
 } from "@mui/material";
-import * as React from "react";
+import { useState, useEffect } from "react";
 import type Profile from "../types/profile";
 import { NewProfile } from "../types/profile";
 import { STORE_KEY } from "../consts/keys";
-import { HelpOutline } from "@mui/icons-material";
+import { HelpOutlined } from "@mui/icons-material";
 import {
   primaryColor,
   bgColor,
@@ -30,11 +30,11 @@ interface FormInput {
 }
 
 export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
-  const [hideModel, setHideModal] = React.useState<boolean>(true);
-  const [modelMsg, setModalMsg] = React.useState<string>("");
-  const [profile, setProfile] = React.useState<Profile>(currProfile);
+  const [hideModel, setHideModal] = useState<boolean>(true);
+  const [modelMsg, setModalMsg] = useState<string>("");
+  const [profile, setProfile] = useState<Profile>(currProfile);
 
-  React.useEffect(() => {
+  useEffect(() => {
     localStorage.setItem(STORE_KEY, JSON.stringify(currProfile));
     setProfile(currProfile);
   }, [currProfile]);
@@ -100,7 +100,6 @@ export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
         </FormGroup>
       </FormControl>
       <Box
-        textAlign="center"
         sx={{
           marginTop: "20px",
           display: "flex",
@@ -205,12 +204,12 @@ const InputNumberField = ({
   value,
   tooltip,
 }: Field<number>) => {
-  const [inputValue, setInputValue] = React.useState<string>(
+  const [inputValue, setInputValue] = useState<string>(
     value === 0 ? "" : value.toString(),
   );
-  const [isFocused, setIsFocused] = React.useState<boolean>(false);
+  const [isFocused, setIsFocused] = useState<boolean>(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (value === 0) {
       setInputValue("");
       return;
@@ -245,7 +244,7 @@ const InputNumberField = ({
           <Typography>{label}</Typography>
           {(isFocused || value !== 0) && (
             <Tooltip title={tooltip} placement="right">
-              <HelpOutline
+              <HelpOutlined
                 fontSize="small"
                 sx={{
                   p: "0px 5px",

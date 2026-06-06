@@ -1,5 +1,4 @@
-import type { ReactElement } from "react";
-import * as React from "react";
+import { type ReactElement, useState } from "react";
 import {
   Container,
   Table,
@@ -26,8 +25,8 @@ type SortableColumns =
   | undefined;
 
 export const Result = ({ profile }: { profile: Profile }) => {
-  const [orderBy, setOrderBy] = React.useState<SortableColumns>(undefined);
-  const [order, setOrder] = React.useState<"asc" | "desc" | undefined>("desc");
+  const [orderBy, setOrderBy] = useState<SortableColumns>(undefined);
+  const [order, setOrder] = useState<"asc" | "desc" | undefined>("desc");
 
   const results: Record<string, ResultProp> = {};
   for (const [name, info] of Object.entries(bankInfo)) {
@@ -179,12 +178,16 @@ const displayResult = (bankName: string, info: ResultProp) => {
   return (
     <ThemedTableRow key={bankName}>
       <ThemedTableCell>{bankName}</ThemedTableCell>
-      <ThemedTableCell>{info.interest.toYearly() ?? 0}</ThemedTableCell>
       <ThemedTableCell>
-        {info.interest.toYearlyPercent().toFixed(2) ?? ""}
+        {"$"}
+        {info.interest.toYearly().toFixed(2) ?? "0"}
       </ThemedTableCell>
       <ThemedTableCell>
-        <LocalLink href={info.url}>Official Website</LocalLink>
+        {info.interest.toYearlyPercent().toFixed(2) ?? "0"}
+        {"%"}
+      </ThemedTableCell>
+      <ThemedTableCell>
+        <LocalLink href={info.url}>Website</LocalLink>
       </ThemedTableCell>
       <ThemedTableCell>{info.remarks}</ThemedTableCell>
       <ThemedTableCell>{lastUpdated}</ThemedTableCell>
@@ -232,7 +235,7 @@ const ThemedTableRow = ({
 const ThemedTableCell = ({
   children,
 }: {
-  children: string | number | ReactElement;
+  children: string | number | ReactElement | string[];
 }) => (
   <TableCell
     sx={{

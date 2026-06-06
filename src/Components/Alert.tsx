@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Check, Close } from "@mui/icons-material";
 import type { AlertColor } from "@mui/material";
 import { Alert, Collapse, IconButton } from "@mui/material";
