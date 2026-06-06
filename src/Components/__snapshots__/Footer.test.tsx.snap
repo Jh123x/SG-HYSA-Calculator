@@ -9,12 +9,12 @@ exports[`Footer > should match snapshot 1`] = `
       class="MuiContainer-root MuiContainer-maxWidthSm css-zzzaw2-MuiContainer-root"
     >
       <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1r4b5bp-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-13mdizf-MuiTypography-root"
         style="--Typography-textAlign: center;"
       >
         Copyright © 
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-i9kmoy-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ghx3tx-MuiTypography-root-MuiLink-root"
           href="https://jh123x.com/"
         >
           Jh123x

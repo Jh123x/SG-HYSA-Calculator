@@ -13,7 +13,7 @@ import * as React from "react";
 import type Profile from "../types/profile";
 import { NewProfile } from "../types/profile";
 import { STORE_KEY } from "../consts/keys";
-import { HelpOutline } from "@mui/icons-material";
+import { HelpOutlined } from "@mui/icons-material";
 import {
   primaryColor,
   bgColor,
@@ -100,7 +100,6 @@ export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
         </FormGroup>
       </FormControl>
       <Box
-        textAlign="center"
         sx={{
           marginTop: "20px",
           display: "flex",
@@ -245,7 +244,7 @@ const InputNumberField = ({
           <Typography>{label}</Typography>
           {(isFocused || value !== 0) && (
             <Tooltip title={tooltip} placement="right">
-              <HelpOutline
+              <HelpOutlined
                 fontSize="small"
                 sx={{
                   p: "0px 5px",

@@ -4,6 +4,32 @@ export const primaryColor = "#9550ff";
 export const bgColor = "#282828";
 export const textColor = "#FFFFFF";
 export const dangerColor = "red";
+export const lineColors = [
+  "#e6194b",
+  "#3cb44b",
+  "#ffe119",
+  "#4363d8",
+  "#f58231",
+  "#911eb4",
+  "#42d4f4",
+  "#f032e6",
+  "#bfef45",
+  "#fabed4",
+  "#469990",
+  "#9a6324", // Brown
+  "#fffac8", // Beige
+  "#800000", // Maroon
+  "#aaffc3", // Mint
+  "#808000", // Olive
+  "#ffd8b1", // Apricot
+  "#000075", // Navy
+  "#a9a9a9", // Grey
+  "#ffffff", // White
+  "#000000", // Black
+  "#e6beff", // Lavender
+  "#dcbeff", // Mauve
+  "#911eb4", // Deep Purple
+];
 
 export const theme = createTheme({
   palette: {

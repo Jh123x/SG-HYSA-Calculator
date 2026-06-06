@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { LineChart } from "@mui/x-charts/LineChart";
+import { LineChart, LineChartProps } from "@mui/x-charts/LineChart";
 import { Paper, useTheme, useMediaQuery, Box, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
-import { textColor } from "../consts/colors";
+import { lineColors, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
 
 interface GraphData {
@@ -64,11 +64,13 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
     data.push(userPoint);
   }
 
-  const series = Object.keys(bankInfo)
+  const series: LineChartProps["series"] = Object.keys(bankInfo)
     .filter((bankName) => data.some((point) => point[bankName] > 0))
-    .map((bankName) => ({
+    .map((bankName, idx) => ({
       dataKey: bankName,
       label: bankName,
+      showMark: true,
+      color: lineColors[idx % lineColors.length],
     }));
 
   return (
@@ -103,13 +105,11 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
           },
         ]}
         height={500}
-        margin={{ left: 70, right: 10, top: 30, bottom: 150 }}
         grid={{ vertical: true, horizontal: true }}
         slotProps={{
           legend: {
-            direction: "row",
-            position: { vertical: "bottom", horizontal: "middle" },
-            padding: 10,
+            direction: "horizontal",
+            position: { vertical: "bottom", horizontal: "center" },
             toggleVisibilityOnClick: true,
           },
         }}

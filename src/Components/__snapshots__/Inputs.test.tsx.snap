@@ -12,10 +12,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r0:"
-          id=":r0:-label"
+          for="_r_0_"
+          id="_r_0_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -33,7 +33,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r0:"
+            id="_r_0_"
             placeholder="To be deposited at bank"
             type="number"
             value=""
@@ -64,10 +64,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r1:"
-          id=":r1:-label"
+          for="_r_1_"
+          id="_r_1_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -85,7 +85,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r1:"
+            id="_r_1_"
             placeholder="Current age"
             type="number"
             value=""
@@ -116,10 +116,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r2:"
-          id=":r2:-label"
+          for="_r_2_"
+          id="_r_2_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -137,7 +137,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r2:"
+            id="_r_2_"
             placeholder="Credited to bank monthly"
             type="number"
             value=""
@@ -168,10 +168,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r3:"
-          id=":r3:-label"
+          for="_r_3_"
+          id="_r_3_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -189,7 +189,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r3:"
+            id="_r_3_"
             placeholder="Pay to bank yearly"
             type="number"
             value=""
@@ -220,10 +220,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r4:"
-          id=":r4:-label"
+          for="_r_4_"
+          id="_r_4_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -241,7 +241,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r4:"
+            id="_r_4_"
             placeholder="Pay to bank yearly"
             type="number"
             value=""
@@ -272,10 +272,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r5:"
-          id=":r5:-label"
+          for="_r_5_"
+          id="_r_5_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -293,7 +293,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r5:"
+            id="_r_5_"
             placeholder="On eligible cards monthly"
             type="number"
             value=""
@@ -324,10 +324,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r6:"
-          id=":r6:-label"
+          for="_r_6_"
+          id="_r_6_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -345,7 +345,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r6:"
+            id="_r_6_"
             placeholder="No. of GIRO Transactions"
             type="number"
             value=""
@@ -376,10 +376,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r7:"
-          id=":r7:-label"
+          for="_r_7_"
+          id="_r_7_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -397,7 +397,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r7:"
+            id="_r_7_"
             placeholder="Balance increase monthly"
             type="number"
             value=""
@@ -428,10 +428,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r8:"
-          id=":r8:-label"
+          for="_r_8_"
+          id="_r_8_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -449,7 +449,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r8:"
+            id="_r_8_"
             placeholder="Monthly loan payment"
             type="number"
             value=""
@@ -480,10 +480,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":r9:"
-          id=":r9:-label"
+          for="_r_9_"
+          id="_r_9_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -501,7 +501,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":r9:"
+            id="_r_9_"
             placeholder="Additional 1 time loan"
             type="number"
             value=""
@@ -566,10 +566,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
     </div>
   </div>
   <div
-    class="MuiBox-root css-qwj14v"
+    class="MuiBox-root css-1423sdf"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-13rq0se-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-13rq0se-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
@@ -591,10 +591,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for=":rc:"
-          id=":rc:-label"
+          for="_r_c_"
+          id="_r_c_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -609,12 +609,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
               aria-label="To be deposited at bank"
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-fdfndu-MuiSvgIcon-root"
               data-mui-internal-clone-element="true"
-              data-testid="HelpOutlineIcon"
+              data-testid="HelpOutlinedIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
               />
             </svg>
           </div>
@@ -625,7 +625,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rc:"
+            id="_r_c_"
             placeholder="To be deposited at bank"
             type="number"
             value="100000"
@@ -651,12 +651,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
                     aria-label="To be deposited at bank"
                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-fdfndu-MuiSvgIcon-root"
                     data-mui-internal-clone-element="true"
-                    data-testid="HelpOutlineIcon"
+                    data-testid="HelpOutlinedIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
                     <path
-                      d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
                     />
                   </svg>
                 </div>
@@ -669,10 +669,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for=":rf:"
-          id=":rf:-label"
+          for="_r_f_"
+          id="_r_f_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -687,12 +687,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
               aria-label="Current age"
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-fdfndu-MuiSvgIcon-root"
               data-mui-internal-clone-element="true"
-              data-testid="HelpOutlineIcon"
+              data-testid="HelpOutlinedIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
               />
             </svg>
           </div>
@@ -703,7 +703,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rf:"
+            id="_r_f_"
             placeholder="Current age"
             type="number"
             value="10"
@@ -729,12 +729,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
                     aria-label="Current age"
                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-fdfndu-MuiSvgIcon-root"
                     data-mui-internal-clone-element="true"
-                    data-testid="HelpOutlineIcon"
+                    data-testid="HelpOutlinedIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
                     <path
-                      d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
                     />
                   </svg>
                 </div>
@@ -747,10 +747,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for=":ri:"
-          id=":ri:-label"
+          for="_r_i_"
+          id="_r_i_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -765,12 +765,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
               aria-label="Credited to bank monthly"
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-fdfndu-MuiSvgIcon-root"
               data-mui-internal-clone-element="true"
-              data-testid="HelpOutlineIcon"
+              data-testid="HelpOutlinedIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
               />
             </svg>
           </div>
@@ -781,7 +781,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":ri:"
+            id="_r_i_"
             placeholder="Credited to bank monthly"
             type="number"
             value="3000"
@@ -807,12 +807,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
                     aria-label="Credited to bank monthly"
                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-fdfndu-MuiSvgIcon-root"
                     data-mui-internal-clone-element="true"
-                    data-testid="HelpOutlineIcon"
+                    data-testid="HelpOutlinedIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
                     <path
-                      d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
                     />
                   </svg>
                 </div>
@@ -825,10 +825,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":rl:"
-          id=":rl:-label"
+          for="_r_l_"
+          id="_r_l_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -846,7 +846,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rl:"
+            id="_r_l_"
             placeholder="Pay to bank yearly"
             type="number"
             value=""
@@ -877,10 +877,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":rm:"
-          id=":rm:-label"
+          for="_r_m_"
+          id="_r_m_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -898,7 +898,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rm:"
+            id="_r_m_"
             placeholder="Pay to bank yearly"
             type="number"
             value=""
@@ -929,10 +929,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for=":rn:"
-          id=":rn:-label"
+          for="_r_n_"
+          id="_r_n_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -947,12 +947,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
               aria-label="On eligible cards monthly"
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-fdfndu-MuiSvgIcon-root"
               data-mui-internal-clone-element="true"
-              data-testid="HelpOutlineIcon"
+              data-testid="HelpOutlinedIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
               />
             </svg>
           </div>
@@ -963,7 +963,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rn:"
+            id="_r_n_"
             placeholder="On eligible cards monthly"
             type="number"
             value="1000"
@@ -989,12 +989,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
                     aria-label="On eligible cards monthly"
                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-fdfndu-MuiSvgIcon-root"
                     data-mui-internal-clone-element="true"
-                    data-testid="HelpOutlineIcon"
+                    data-testid="HelpOutlinedIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
                     <path
-                      d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
                     />
                   </svg>
                 </div>
@@ -1007,10 +1007,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":rq:"
-          id=":rq:-label"
+          for="_r_q_"
+          id="_r_q_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -1028,7 +1028,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rq:"
+            id="_r_q_"
             placeholder="No. of GIRO Transactions"
             type="number"
             value=""
@@ -1059,10 +1059,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for=":rr:"
-          id=":rr:-label"
+          for="_r_r_"
+          id="_r_r_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -1077,12 +1077,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
               aria-label="Balance increase monthly"
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-fdfndu-MuiSvgIcon-root"
               data-mui-internal-clone-element="true"
-              data-testid="HelpOutlineIcon"
+              data-testid="HelpOutlinedIcon"
               focusable="false"
               viewBox="0 0 24 24"
             >
               <path
-                d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
               />
             </svg>
           </div>
@@ -1093,7 +1093,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rr:"
+            id="_r_r_"
             placeholder="Balance increase monthly"
             type="number"
             value="500"
@@ -1119,12 +1119,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
                     aria-label="Balance increase monthly"
                     class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-fdfndu-MuiSvgIcon-root"
                     data-mui-internal-clone-element="true"
-                    data-testid="HelpOutlineIcon"
+                    data-testid="HelpOutlinedIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
                     <path
-                      d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 17h-2v-2h2zm2.07-7.75-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25"
                     />
                   </svg>
                 </div>
@@ -1137,10 +1137,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":ru:"
-          id=":ru:-label"
+          for="_r_u_"
+          id="_r_u_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -1158,7 +1158,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":ru:"
+            id="_r_u_"
             placeholder="Monthly loan payment"
             type="number"
             value=""
@@ -1189,10 +1189,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for=":rv:"
-          id=":rv:-label"
+          for="_r_v_"
+          id="_r_v_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -1210,7 +1210,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id=":rv:"
+            id="_r_v_"
             placeholder="Additional 1 time loan"
             type="number"
             value=""
@@ -1275,10 +1275,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
     </div>
   </div>
   <div
-    class="MuiBox-root css-qwj14v"
+    class="MuiBox-root css-1423sdf"
   >
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-13rq0se-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-13rq0se-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
