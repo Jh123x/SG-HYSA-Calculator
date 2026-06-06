@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Link } from "@mui/material";
 import type { ReactNode } from "react";
 import { primaryColor } from "../consts/colors";

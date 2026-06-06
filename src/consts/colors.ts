@@ -1,10 +1,10 @@
-import { createTheme } from "@mui/material";
+import { createTheme, Theme } from "@mui/material";
 
-export const primaryColor = "#9550ff";
-export const bgColor = "#282828";
-export const textColor = "#FFFFFF";
-export const dangerColor = "red";
-export const lineColors = [
+export const primaryColor: string = "#9550ff";
+export const bgColor: string = "#282828";
+export const textColor: string = "#FFFFFF";
+export const dangerColor: string = "red";
+export const lineColors: string[] = [
   "#e6194b",
   "#3cb44b",
   "#ffe119",
@@ -31,7 +31,7 @@ export const lineColors = [
   "#911eb4", // Deep Purple
 ];
 
-export const theme = createTheme({
+export const theme: Theme = createTheme({
   palette: {
     mode: "dark",
     background: {

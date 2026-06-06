@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -18,7 +18,7 @@ import { textColor } from "../consts/colors";
 export const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery("(max-width:600px)");
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
