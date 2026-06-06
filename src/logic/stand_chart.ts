@@ -12,8 +12,8 @@ export const stand_chart_interest_10_2025 = (
 
   if (Salary >= 3000) interest += 1.5;
   if (Spending >= 1000) interest += 1.5;
-  if (Insurance >= 24000) interest += 2.5;
-  if (Investment >= 30000) interest += 2.5;
+  if (Insurance >= 12000) interest += 2.5;
+  if (Investment >= 20000) interest += 2.5;
 
   return calculate_ir(Savings, {
     cutoffs: [{ Cutoff: 100_000, InterestRatePercent: interest }],
@@ -46,7 +46,7 @@ export const stand_chart_interest_before_06_25 = (
 
   if (Salary >= 3000) interest += 1;
   if (Spending >= 1000) interest += 1;
-  if (Insurance >= 24000) interest += 2;
+  if (Insurance >= 12000) interest += 2;
   if (Investment >= 30000) interest += 2;
 
   return calculate_ir(Savings, {
