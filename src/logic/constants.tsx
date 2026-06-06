@@ -8,7 +8,10 @@ import { uob_interest_2025_12 } from "./uob";
 import { gxs_interest_08_2025, gxs_interest_06_2026 } from "./gxs";
 import { ocbc_interest_05_2026, ocbc_interest_08_2025 } from "./ocbc360";
 import { maybank_save_up_10_2025 } from "./maybank";
-import { citi_wealth_first_10_2025, citi_wealth_first_06_2026 } from "./citibank";
+import {
+  citi_wealth_first_10_2025,
+  citi_wealth_first_06_2026,
+} from "./citibank";
 import { stand_chart_interest_06_2026 } from "./stand_chart";
 import { dbs_multiplier_interest } from "./dbs_multiplier";
 import {
@@ -127,7 +130,7 @@ export const bankInfo: Record<string, Info> = {
       <p>
         1st 20k 2% p.a, next 80k 1.8% p.a.
         <br />
-        Amounts above 100k at 1.8% p.a.
+        Amounts above 100k are invested and will not be counted here.
         <br />
         <b>Note: This is not a bank</b>
         <br />

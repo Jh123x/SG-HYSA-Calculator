@@ -74,12 +74,12 @@ describe("Choco Finance (Jun 2026)", () => {
     {
       name: "should return correct i/r for 150k (above 100k)",
       savings: 150000,
-      expected_ir: 2740,
+      expected_ir: 1840,
     },
     {
       name: "should return correct i/r for 200k",
       savings: 200000,
-      expected_ir: 3640,
+      expected_ir: 1840,
     },
   ];
 
