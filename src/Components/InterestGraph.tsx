@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { Paper, useTheme, useMediaQuery, Box, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
@@ -12,6 +12,7 @@ interface GraphData {
 export const InterestGraph = ({ profile }: { profile: Profile }) => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery("(max-width:640px)");
+  const [selectedItem, setSelectedItem] = useState(null);
 
   if (isSmallScreen) {
     return (
@@ -109,6 +110,7 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
             direction: "row",
             position: { vertical: "bottom", horizontal: "middle" },
             padding: 10,
+            toggleVisibilityOnClick: true,
           },
         }}
         sx={{

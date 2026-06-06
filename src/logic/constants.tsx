@@ -1,22 +1,16 @@
-import * as React from "react";
 import type Profile from "../types/profile";
 import type { ReactElement } from "react";
 import type { ResultInterest } from "../types/interest_result";
 
 import { LocalLink } from "../Components/LocalLink";
 import { uob_interest_2025_12 } from "./uob";
-import { gxs_interest_08_2025, gxs_interest_06_2026 } from "./gxs";
-import { ocbc_interest_05_2026, ocbc_interest_08_2025 } from "./ocbc360";
+import { gxs_interest_06_2026 } from "./gxs";
+import { ocbc_interest_05_2026 } from "./ocbc360";
 import { maybank_save_up_10_2025 } from "./maybank";
-import {
-  citi_wealth_first_10_2025,
-  citi_wealth_first_06_2026,
-} from "./citibank";
+import { citi_wealth_first_06_2026 } from "./citibank";
 import { stand_chart_interest_06_2026 } from "./stand_chart";
 import { dbs_multiplier_interest } from "./dbs_multiplier";
 import {
-  trust_bank_flex_12_2025,
-  trust_bank_signature_10_2025,
   trust_bank_signature_06_2026,
   trust_bank_zen_06_2026,
 } from "./trust_bank";
@@ -25,7 +19,7 @@ import {
   mariInterestRate_12_2025,
 } from "./maribank";
 import { bank_of_china_super_saver_11_2025 } from "./bank_of_china";
-import { choco_finance_12_2025, choco_finance_06_2026 } from "./choco_finance";
+import { choco_finance_06_2026 } from "./choco_finance";
 
 interface Info {
   interestFn: (profile: Profile) => ResultInterest;
@@ -41,13 +35,7 @@ export const bankInfo: Record<string, Info> = {
     remarks: "Visit their official website to find out more",
     lastUpdated: "2025-11-14",
   },
-  "OCBC Bank (Pre 05/26)": {
-    interestFn: ocbc_interest_08_2025,
-    url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
-    remarks: "Visit their official website to find out more",
-    lastUpdated: "2025-12-27",
-  },
-  "OCBC Bank (Post 05/26)": {
+  "OCBC Bank": {
     interestFn: ocbc_interest_05_2026,
     url: "https://www.ocbc.com/personal-banking/notices",
     remarks: "Visit the official website to find our more",
@@ -159,14 +147,7 @@ export const bankInfo: Record<string, Info> = {
   "Maybank Save Up": {
     interestFn: maybank_save_up_10_2025,
     url: "https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page",
-    remarks: (
-      <>
-        <p>*Assumes that Investment qualifies & within Interest period.</p>
-        <LocalLink href="https://sslsecure.maybank.com.sg/cgi-bin/mbs/JSPscripts/mbb_rates/mbb_rates_savings.jsp?_gl=1*o41w5v*_gcl_au*MzUxMjAzMzAwLjE3NDYzODE0OTQ.*_ga*MTc5ODIyMTQ3OS4xNzQ2MzgxNDk0*_ga_QME4P70W20*MTc0NjM4MTQ5NC4xLjAuMTc0NjM4MTQ5NC42MC4wLjA.#sav2">
-          Check the base interest rates here
-        </LocalLink>
-      </>
-    ),
+    remarks: "Assumes that Investment qualifies & within Interest period.",
     lastUpdated: "2025-10-14",
   },
   "Citi Wealth first Account": {

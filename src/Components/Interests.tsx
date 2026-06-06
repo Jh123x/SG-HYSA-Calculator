@@ -179,12 +179,16 @@ const displayResult = (bankName: string, info: ResultProp) => {
   return (
     <ThemedTableRow key={bankName}>
       <ThemedTableCell>{bankName}</ThemedTableCell>
-      <ThemedTableCell>{info.interest.toYearly() ?? 0}</ThemedTableCell>
       <ThemedTableCell>
-        {info.interest.toYearlyPercent().toFixed(2) ?? ""}
+        {"$"}
+        {info.interest.toYearly().toFixed(2) ?? "0"}
       </ThemedTableCell>
       <ThemedTableCell>
-        <LocalLink href={info.url}>Official Website</LocalLink>
+        {info.interest.toYearlyPercent().toFixed(2) ?? "0"}
+        {"%"}
+      </ThemedTableCell>
+      <ThemedTableCell>
+        <LocalLink href={info.url}>Website</LocalLink>
       </ThemedTableCell>
       <ThemedTableCell>{info.remarks}</ThemedTableCell>
       <ThemedTableCell>{lastUpdated}</ThemedTableCell>
@@ -232,7 +236,7 @@ const ThemedTableRow = ({
 const ThemedTableCell = ({
   children,
 }: {
-  children: string | number | ReactElement;
+  children: string | number | ReactElement | string[];
 }) => (
   <TableCell
     sx={{
