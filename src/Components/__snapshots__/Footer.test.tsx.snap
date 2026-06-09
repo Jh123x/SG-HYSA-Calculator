@@ -14,7 +14,7 @@ exports[`Footer > should match snapshot 1`] = `
       >
         Copyright © 
         <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ghx3tx-MuiTypography-root-MuiLink-root"
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-i9kmoy-MuiTypography-root-MuiLink-root"
           href="https://jh123x.com/"
         >
           Jh123x
