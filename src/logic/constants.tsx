@@ -7,7 +7,7 @@ import { LocalLink } from "../Components/LocalLink";
 import { uob_interest_2025_12 } from "./uob";
 import { gxs_interest_08_2025, gxs_interest_06_2026 } from "./gxs";
 import { ocbc_interest_05_2026, ocbc_interest_08_2025 } from "./ocbc360";
-import { maybank_save_up_10_2025, maybank_save_up_06_2026, maybank_isavvy_06_2026, maybank_isavvy_plus_06_2026, maybank_isavvy_promo_06_2026 } from "./maybank";
+import { maybank_save_up_06_2026, maybank_isavvy_06_2026, maybank_isavvy_plus_06_2026, maybank_isavvy_promo_06_2026 } from "./maybank";
 import { citi_wealth_first_10_2025, citi_wealth_first_06_2026 } from "./citibank";
 import { stand_chart_interest_06_2026 } from "./stand_chart";
 import { dbs_multiplier_interest } from "./dbs_multiplier";
@@ -150,19 +150,6 @@ export const bankInfo: Record<string, Info> = {
           sale.
         </b>
       </p>
-    ),
-    lastUpdated: "2025-10-14",
-  },
-  "Maybank Save Up (Pre 06/26)": {
-    interestFn: maybank_save_up_10_2025,
-    url: "https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page",
-    remarks: (
-      <>
-        <p>*Assumes that Investment qualifies & within Interest period.</p>
-        <LocalLink href="https://sslsecure.maybank.com.sg/cgi-bin/mbs/JSPscripts/mbb_rates/mbb_rates_savings.jsp?_gl=1*o41w5v*_gcl_au*MzUxMjAzMzAwLjE3NDYzODE0OTQ.*_ga*MTc5ODIyMTQ3OS4xNzQ2MzgxNDk0*_ga_QME4P70W20*MTc0NjM4MTQ5NC4xLjAuMTc0NjM4MTQ5NC42MC4wLjA.#sav2">
-          Check the base interest rates here
-        </LocalLink>
-      </>
     ),
     lastUpdated: "2025-10-14",
   },
