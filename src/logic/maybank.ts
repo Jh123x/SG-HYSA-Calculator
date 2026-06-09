@@ -67,76 +67,60 @@ export const maybank_save_up_06_2026 = (profile: Profile): ResultInterest => {
 };
 
 /**
- * Maybank iSAVvy Savings Account (effective 9 June 2026)
+ * Maybank iSAVvy Savings Account (effective 1 May 2026)
  *
- * Tiered rates with interest-on-interest bonus:
- *   Below S$5,000:                 0.1875% p.a. (no bonus)
- *   S$5,000 to below S$50,000:     0.30% p.a. + 6% interest-on-interest → effective ~0.31%
- *   S$50,000 to below S$100,000:   0.38% p.a. + 6% interest-on-interest → effective ~0.39%
- *   S$100,000 and above:           0.38% p.a. + 18% interest-on-interest → effective ~0.42%
+ * Flat tiered rates — entire daily balance earns the rate of the tier it falls into:
+ *   Below S$20,000:                  0.05% p.a.
+ *   S$20,000 to below S$50,000:      0.20% p.a.
+ *   S$50,000 to below S$200,000:     0.20% p.a.
+ *   S$200,000 and above:             0.80% p.a.
  *
- * Interest-on-interest requires average monthly balance ≥ S$5,000 (6%) or ≥ S$100,000 (18%).
- * Interest-on-interest is paid every 6 months on the interest earned.
+ * Rates are NOT additive (not cumulative tiered).
  */
 export const maybank_isavvy_06_2026 = (profile: Profile): ResultInterest => {
-  const result = calculate_ir(profile.Savings, {
-    cutoffs: [
-      { Cutoff: 5000, InterestRatePercent: 0.1875 },
-      { Cutoff: 45_000, InterestRatePercent: 0.3 },
-    ],
-    baseRatePercent: 0.38,
-  });
+  const s = profile.Savings;
+  let rate: number;
 
-  // Apply interest-on-interest multiplier
-  // ≥S$100K gets 18%, ≥S$5K gets 6%, below S$5K gets 0%
-  if (profile.Savings >= 100_000) {
-    result.addInterest(result.toYearly() * 0.18);
-  } else if (profile.Savings >= 5_000) {
-    result.addInterest(result.toYearly() * 0.06);
+  if (s < 20_000) {
+    rate = 0.05;
+  } else if (s < 50_000) {
+    rate = 0.20;
+  } else if (s < 200_000) {
+    rate = 0.20;
+  } else {
+    rate = 0.80;
   }
 
-  return result;
+  return new ResultInterest(s * (rate / 100), s);
 };
 
 /**
  * Maybank iSAVvy Savings Plus Account (effective 9 June 2026)
  *
- * Same base tiers as iSAVvy plus 1.52% p.a. bonus interest paid every 6 months.
- *   Below S$5,000:      0.1875% p.a.
- *   S$5,000 to S$50,000: 0.30% + 1.52% = 1.82% p.a.
- *   S$50,000 and above:  0.38% + 1.52% = 1.90% p.a.
+ * Flat tiered base rates + 1.52% p.a. bonus paid every 6 months:
+ *   Below S$5,000:      0.1875% + 1.52% = 1.7075% p.a.
+ *   S$5,000 to <S$50K:  0.30%   + 1.52% = 1.82% p.a.
+ *   S$50,000 and above: 0.38%   + 1.52% = 1.90% p.a.
+ *
+ * Rates are NOT additive (not cumulative tiered) — entire daily balance
+ * earns the single rate for its tier.
  */
 export const maybank_isavvy_plus_06_2026 = (
   profile: Profile,
 ): ResultInterest => {
-  const bonusRate = 1.52;
+  const s = profile.Savings;
+  const bonus = 1.52;
+  let base: number;
 
-  return calculate_ir(profile.Savings, {
-    cutoffs: [
-      { Cutoff: 5000, InterestRatePercent: 0.1875 + bonusRate },
-      { Cutoff: 45_000, InterestRatePercent: 0.3 + bonusRate },
-    ],
-    baseRatePercent: 0.38 + bonusRate,
-  });
+  if (s < 5_000) {
+    base = 0.1875;
+  } else if (s < 50_000) {
+    base = 0.30;
+  } else {
+    base = 0.38;
+  }
+
+  return new ResultInterest(s * ((base + bonus) / 100), s);
 };
 
-/**
- * Maybank iSAVvy Promo (1 May – 30 June 2026)
- *
- * Up to 1.50% p.a. on incremental deposits (fresh funds ≥ S$20,000 vs April 2026 balance).
- *   S$20K–S$200K incremental: 0.20% base + 1.30% bonus = 1.50%
- *   Above S$200K incremental:  0.80% base + 0.70% bonus = 1.50%
- *
- * Note: This promo applies only to NEW funds above your April 2026 balance.
- * The calculator assumes ALL your savings qualify as incremental deposits.
- */
-export const maybank_isavvy_promo_06_2026 = (
-  profile: Profile,
-): ResultInterest => {
-  return calculate_ir(profile.Savings, {
-    cutoffs: [
-      { Cutoff: 200_000, InterestRatePercent: 1.5 },
-    ],
-    baseRatePercent: 1.5,
-  });
-};
+

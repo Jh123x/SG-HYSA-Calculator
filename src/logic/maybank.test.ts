@@ -5,7 +5,6 @@ import {
   maybank_save_up_06_2026,
   maybank_isavvy_06_2026,
   maybank_isavvy_plus_06_2026,
-  maybank_isavvy_promo_06_2026,
 } from "./maybank";
 
 interface testCase {
@@ -145,7 +144,7 @@ describe("Maybank Save Up Interest rates (Post 06/26)", () => {
   }
 });
 
-describe("Maybank iSAVvy Interest rates (06/26)", () => {
+describe("Maybank iSAVvy Interest rates (Post 05/26)", () => {
   const testCases: Array<testCase> = [
     {
       caseName: "No savings",
@@ -153,24 +152,34 @@ describe("Maybank iSAVvy Interest rates (06/26)", () => {
       expectedResult: 0,
     },
     {
-      caseName: "$2,000 (below $5K, no bonus)",
+      caseName: "$2,000 (below $20K → 0.05%)",
       profile: NewProfile({ Savings: 2000 }),
-      expectedResult: 3.75, // 2000 * 0.1875%
+      expectedResult: 1.0, // 2000 * 0.05%
     },
     {
-      caseName: "$10,000 ($5K-$50K, 6% bonus)",
+      caseName: "$10,000 (below $20K → 0.05%)",
       profile: NewProfile({ Savings: 10_000 }),
-      expectedResult: 25.84, // base=24.375 + 6% bonus
+      expectedResult: 5.0, // 10000 * 0.05%
     },
     {
-      caseName: "$75,000 ($50K-$100K, 6% bonus)",
+      caseName: "$30,000 ($20K-$50K → 0.20%)",
+      profile: NewProfile({ Savings: 30_000 }),
+      expectedResult: 60.0, // 30000 * 0.20%
+    },
+    {
+      caseName: "$75,000 ($50K-$200K → 0.20%)",
       profile: NewProfile({ Savings: 75_000 }),
-      expectedResult: 253.74, // base=239.375 + 6% bonus
+      expectedResult: 150.0, // 75000 * 0.20%
     },
     {
-      caseName: "$120,000 (≥$100K, 18% bonus)",
+      caseName: "$120,000 ($50K-$200K → 0.20%)",
       profile: NewProfile({ Savings: 120_000 }),
-      expectedResult: 484.25, // base=410.375 + 18% bonus
+      expectedResult: 240.0, // 120000 * 0.20%
+    },
+    {
+      caseName: "$250,000 (≥$200K → 0.80%)",
+      profile: NewProfile({ Savings: 250_000 }),
+      expectedResult: 2000.0, // 250000 * 0.80%
     },
   ];
 
@@ -190,19 +199,19 @@ describe("Maybank iSAVvy Plus Interest rates (06/26)", () => {
       expectedResult: 0,
     },
     {
-      caseName: "$2,000 (below $5K tier)",
+      caseName: "$2,000 (below $5K → 1.7075%)",
       profile: NewProfile({ Savings: 2000 }),
       expectedResult: 34.15, // 2000 * 1.7075%
     },
     {
-      caseName: "$10,000 ($5K-$50K tier)",
+      caseName: "$10,000 ($5K-$50K → 1.82%)",
       profile: NewProfile({ Savings: 10_000 }),
-      expectedResult: 176.38, // 5000*1.7075% + 5000*1.82%
+      expectedResult: 182.0, // 10000 * 1.82%
     },
     {
-      caseName: "$75,000 (≥$50K tier)",
+      caseName: "$75,000 (≥$50K → 1.90%)",
       profile: NewProfile({ Savings: 75_000 }),
-      expectedResult: 1379.38, // 5000*1.7075% + 45000*1.82% + 25000*1.90%
+      expectedResult: 1425.0, // 75000 * 1.90%
     },
   ];
 
@@ -214,34 +223,3 @@ describe("Maybank iSAVvy Plus Interest rates (06/26)", () => {
   }
 });
 
-describe("Maybank iSAVvy Promo Interest rates (May–Jun 2026)", () => {
-  const testCases: Array<testCase> = [
-    {
-      caseName: "No savings",
-      profile: NewProfile({ Savings: 0 }),
-      expectedResult: 0,
-    },
-    {
-      caseName: "$10,000",
-      profile: NewProfile({ Savings: 10_000 }),
-      expectedResult: 150, // 10000 * 1.50%
-    },
-    {
-      caseName: "$75,000",
-      profile: NewProfile({ Savings: 75_000 }),
-      expectedResult: 1125, // 75000 * 1.50%
-    },
-    {
-      caseName: "$250,000",
-      profile: NewProfile({ Savings: 250_000 }),
-      expectedResult: 3750, // 250000 * 1.50%
-    },
-  ];
-
-  for (const tc of testCases) {
-    it(tc.caseName, () => {
-      const result = maybank_isavvy_promo_06_2026(tc.profile);
-      expect(result.toYearly()).toBeCloseTo(tc.expectedResult, 2);
-    });
-  }
-});

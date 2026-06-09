@@ -1290,9 +1290,9 @@ exports[`App > should render correctly 1`] = `
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
               >
                 <p>
-                  Tiered rates with interest-on-interest bonus (6–18% on interest earned every 6 months).
+                  Flat tiered rates (non-additive): 0.05% (&lt;$20K), 0.20% ($20K–$200K), 0.80% (≥$200K).
                   <br />
-                  Effective rates: 0.19% (&lt;$5K), 0.31% ($5K–$50K), 0.39% ($50K–$100K), 0.42% (≥$100K).
+                  Rates effective from 1 May 2026.
                 </p>
               </td>
               <td
@@ -1335,59 +1335,9 @@ exports[`App > should render correctly 1`] = `
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
               >
                 <p>
-                  Same tiers as iSAVvy + 1.52% p.a. bonus every 6 months.
+                  Flat tiered base rates + 1.52% p.a. bonus every 6 months.
                   <br />
-                  Effective: 1.82% ($5K–$50K), 1.90% (≥$50K).
-                </p>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
-              >
-                2026-06-09
-              </td>
-            </tr>
-            <tr
-              class="MuiTableRow-root css-1r71ugr-MuiTableRow-root"
-            >
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
-              >
-                Maybank iSAVvy Promo
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
-              >
-                $0.00
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
-              >
-                0.00%
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
-              >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://www.maybank2u.com.sg/en/personal/about_us/important-notices/2026/changes-current-savings-accounts-interest-hibah-tiers-rates.page"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-zlt6sc-MuiTableCell-root"
-              >
-                <p>
-                  <b>
-                    Promo: 1 May – 30 June 2026.
-                  </b>
-                   Up to 1.50% p.a. on incremental deposits.
-                  <br />
-                  Requires ≥$20K fresh funds vs April 2026 balance.
-                  <br />
-                  Capped at $200K for the 1.50% bonus tier.
+                  Effective: 1.7075% (&lt;$5K), 1.82% ($5K–$50K), 1.90% (≥$50K).
                 </p>
               </td>
               <td
@@ -1943,46 +1893,6 @@ exports[`App > should render correctly 1`] = `
                 </span>
               </button>
             </li>
-            <li
-              class="MuiChartsLegend-item"
-              data-series="auto-generated-id-12"
-            >
-              <button
-                class="MuiChartsLegend-series"
-                type="button"
-              >
-                <div
-                  aria-hidden="true"
-                  class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
-                >
-                  <svg
-                    preserveAspectRatio="none"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      class="MuiChartsLabelMark-fill"
-                      d="M 1 8 L 15 8"
-                      stroke="#fffac8"
-                      stroke-linecap="round"
-                      stroke-width="2"
-                      vector-effect="non-scaling-stroke"
-                    />
-                    <path
-                      d="M0,-4.963L4.298,2.482L-4.298,2.482Z"
-                      fill="#121212"
-                      stroke="#fffac8"
-                      stroke-width="2"
-                      transform="translate(8, 8) "
-                    />
-                  </svg>
-                </div>
-                <span
-                  class="MuiChartsLabel-root MuiChartsLegend-label"
-                >
-                  Maybank iSAVvy Promo
-                </span>
-              </button>
-            </li>
           </ul>
           <div
             class="MuiChartsSurface-root MuiChartsSurface-root css-1p1kxwd-MuiChartsLayerContainer-root"
@@ -2380,7 +2290,7 @@ exports[`App > should render correctly 1`] = `
                     <path
                       class="MuiLineChart-line"
                       cursor="unset"
-                      d="M85,435C84.917,434.158,84.833,433.316,84.75,432.319C84.667,431.322,84.583,430.119,84.5,429.02C84.417,427.92,84.333,426.82,84.25,425.72C84.167,424.621,84.083,423.521,84,422.421C83.917,421.321,83.833,420.368,83.75,419.122C83.667,417.875,83.583,416.336,83.5,414.943C83.417,413.55,83.333,412.157,83.25,410.764C83.167,409.371,83.083,407.978,83,406.585C82.917,405.192,82.833,404.492,82.75,402.406C82.667,400.319,82.583,396.229,82.5,394.064C82.417,391.898,82.333,390.962,82.25,389.411C82.167,387.861,82.083,386.31,82,384.759C81.917,383.209,81.833,381.658,81.75,380.107C81.667,378.556,81.583,377.006,81.5,375.455C81.417,373.904,81.333,372.353,81.25,370.803C81.167,369.252,81.083,367.701,81,366.151C80.917,364.6,80.833,363.049,80.75,361.498C80.667,359.948,80.583,358.397,80.5,356.846C80.417,355.296,80.333,353.745,80.25,352.194C80.167,350.643,80.083,349.093,80,347.542"
+                      d="M85,435C84.917,434.914,84.833,434.827,84.75,434.481C84.667,434.135,84.583,431.801,84.5,430.85C84.417,429.899,84.333,429.467,84.25,428.775C84.167,428.083,84.083,427.392,84,426.7C83.917,426.008,83.833,425.317,83.75,424.625C83.667,423.933,83.583,423.242,83.5,422.55C83.417,421.858,83.333,421.167,83.25,420.475C83.167,419.783,83.083,419.092,83,418.4C82.917,417.708,82.833,417.017,82.75,416.325C82.667,415.633,82.583,414.942,82.5,414.25C82.417,413.558,82.333,412.867,82.25,412.175C82.167,411.483,82.083,410.792,82,410.1C81.917,409.408,81.833,408.717,81.75,408.025C81.667,407.333,81.583,406.642,81.5,405.95C81.417,405.258,81.333,404.567,81.25,403.875C81.167,403.183,81.083,402.492,81,401.8C80.917,401.108,80.833,400.417,80.75,399.725C80.667,399.033,80.583,398.342,80.5,397.65C80.417,396.958,80.333,396.958,80.25,395.575C80.167,394.192,80.083,331.596,80,269"
                       data-series="auto-generated-id-10"
                       data-series-id="auto-generated-id-10"
                       fill="none"
@@ -2407,39 +2317,12 @@ exports[`App > should render correctly 1`] = `
                     <path
                       class="MuiLineChart-line"
                       cursor="unset"
-                      d="M85,435C84.917,428.949,84.833,422.898,84.75,416.701C84.667,410.504,84.583,404.112,84.5,397.818C84.417,391.524,84.333,385.23,84.25,378.936C84.167,372.641,84.083,366.347,84,360.053C83.917,353.759,83.833,347.603,83.75,341.171C83.667,334.738,83.583,328.029,83.5,321.458C83.417,314.887,83.333,308.316,83.25,301.746C83.167,295.175,83.083,288.604,83,282.033C82.917,275.462,82.833,268.891,82.75,262.321C82.667,255.75,82.583,249.179,82.5,242.608C82.417,236.037,82.333,229.466,82.25,222.896C82.167,216.325,82.083,209.754,82,203.183C81.917,196.612,81.833,190.041,81.75,183.471C81.667,176.9,81.583,170.329,81.5,163.758C81.417,157.187,81.333,150.616,81.25,144.046C81.167,137.475,81.083,130.904,81,124.333C80.917,117.762,80.833,111.191,80.75,104.621C80.667,98.05,80.583,91.479,80.5,84.908C80.417,78.337,80.333,71.766,80.25,65.196C80.167,58.625,80.083,52.054,80,45.483"
+                      d="M85,435C84.917,428.706,84.833,422.412,84.75,416.118C84.667,409.823,84.583,403.529,84.5,397.235C84.417,390.941,84.333,384.647,84.25,378.352C84.167,372.058,84.083,366.456,84,359.47C83.917,352.484,83.833,343.562,83.75,336.438C83.667,329.313,83.583,323.296,83.5,316.725C83.417,310.154,83.333,303.583,83.25,297.013C83.167,290.442,83.083,283.871,83,277.3C82.917,270.729,82.833,264.158,82.75,257.587C82.667,251.017,82.583,244.446,82.5,237.875C82.417,231.304,82.333,224.733,82.25,218.163C82.167,211.592,82.083,205.021,82,198.45C81.917,191.879,81.833,185.308,81.75,178.737C81.667,172.167,81.583,165.596,81.5,159.025C81.417,152.454,81.333,145.883,81.25,139.313C81.167,132.742,81.083,126.171,81,119.6C80.917,113.029,80.833,106.458,80.75,99.887C80.667,93.317,80.583,86.746,80.5,80.175C80.417,73.604,80.333,67.033,80.25,60.463C80.167,53.892,80.083,47.321,80,40.75"
                       data-series="auto-generated-id-11"
                       data-series-id="auto-generated-id-11"
                       fill="none"
                       opacity="1"
                       stroke="#9a6324"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    />
-                  </g>
-                  <clippath
-                    id="_r_g_-auto-generated-id-12-line-clip"
-                  >
-                    <rect
-                      class="css-dbuw8t"
-                      height="500"
-                      width="100"
-                      x="0"
-                      y="0"
-                    />
-                  </clippath>
-                  <g
-                    clip-path="url(#_r_g_-auto-generated-id-12-line-clip)"
-                  >
-                    <path
-                      class="MuiLineChart-line"
-                      cursor="unset"
-                      d="M85,435C84.917,429.813,84.833,424.625,84.75,419.438C84.667,414.25,84.583,409.063,84.5,403.875C84.417,398.688,84.333,393.5,84.25,388.313C84.167,383.125,84.083,377.938,84,372.75C83.917,367.563,83.833,362.375,83.75,357.188C83.667,352,83.583,346.813,83.5,341.625C83.417,336.438,83.333,331.25,83.25,326.063C83.167,320.875,83.083,315.688,83,310.5C82.917,305.313,82.833,300.125,82.75,294.938C82.667,289.75,82.583,284.563,82.5,279.375C82.417,274.188,82.333,269,82.25,263.813C82.167,258.625,82.083,253.438,82,248.25C81.917,243.063,81.833,237.875,81.75,232.687C81.667,227.5,81.583,222.313,81.5,217.125C81.417,211.938,81.333,206.75,81.25,201.563C81.167,196.375,81.083,191.188,81,186C80.917,180.813,80.833,175.625,80.75,170.438C80.667,165.25,80.583,160.062,80.5,154.875C80.417,149.687,80.333,144.5,80.25,139.313C80.167,134.125,80.083,128.938,80,123.75"
-                      data-series="auto-generated-id-12"
-                      data-series-id="auto-generated-id-12"
-                      fill="none"
-                      opacity="1"
-                      stroke="#fffac8"
                       stroke-linejoin="round"
                       stroke-width="2"
                     />
@@ -2786,10 +2669,6 @@ exports[`App > should render correctly 1`] = `
                   <g
                     clip-path="url(#_r_g_-auto-generated-id-11-line-clip)"
                     data-series="auto-generated-id-11"
-                  />
-                  <g
-                    clip-path="url(#_r_g_-auto-generated-id-12-line-clip)"
-                    data-series="auto-generated-id-12"
                   />
                 </g>
               </g>
