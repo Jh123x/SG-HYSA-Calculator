@@ -6,7 +6,7 @@ import { LocalLink } from "../Components/LocalLink";
 import { uob_interest_2025_12 } from "./uob";
 import { gxs_interest_06_2026 } from "./gxs";
 import { ocbc_interest_05_2026 } from "./ocbc360";
-import { maybank_save_up_10_2025 } from "./maybank";
+import { maybank_save_up_10_2025, maybank_save_up_06_2026, maybank_isavvy_06_2026, maybank_isavvy_plus_06_2026, maybank_isavvy_promo_06_2026 } from "./maybank";
 import { citi_wealth_first_06_2026 } from "./citibank";
 import { stand_chart_interest_06_2026 } from "./stand_chart";
 import { dbs_multiplier_interest } from "./dbs_multiplier";
@@ -145,10 +145,58 @@ export const bankInfo: Record<string, Info> = {
     lastUpdated: "2025-10-14",
   },
   "Maybank Save Up": {
-    interestFn: maybank_save_up_10_2025,
-    url: "https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page",
-    remarks: "Assumes that Investment qualifies & within Interest period.",
-    lastUpdated: "2025-10-14",
+    interestFn: maybank_save_up_06_2026,
+    url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
+    remarks: (
+      <p>
+        Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125%
+        (above $50K).
+        <br />
+        No more category-based bonus system.
+      </p>
+    ),
+    lastUpdated: "2026-06-09",
+  },
+  "Maybank iSAVvy": {
+    interestFn: maybank_isavvy_06_2026,
+    url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
+    remarks: (
+      <p>
+        Tiered rates with interest-on-interest bonus (6–18% on interest earned
+        every 6 months).
+        <br />
+        Effective rates: 0.19% (&lt;$5K), 0.31% ($5K–$50K), 0.39%
+        ($50K–$100K), 0.42% (≥$100K).
+      </p>
+    ),
+    lastUpdated: "2026-06-09",
+  },
+  "Maybank iSAVvy Plus": {
+    interestFn: maybank_isavvy_plus_06_2026,
+    url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
+    remarks: (
+      <p>
+        Same tiers as iSAVvy + 1.52% p.a. bonus every 6 months.
+        <br />
+        Effective: 1.82% ($5K–$50K), 1.90% (≥$50K).
+      </p>
+    ),
+    lastUpdated: "2026-06-09",
+  },
+  "Maybank iSAVvy Promo": {
+    interestFn: maybank_isavvy_promo_06_2026,
+    url: "https://www.maybank2u.com.sg/en/personal/about_us/important-notices/2026/changes-current-savings-accounts-interest-hibah-tiers-rates.page",
+    remarks: (
+      <p>
+        <b>Promo: 1 May – 30 June 2026.</b> Up to 1.50% p.a. on incremental
+        deposits.
+        <br />
+        Requires ≥$20K fresh funds vs April 2026 balance.
+        <br />
+        Capped at $200K for the 1.50% bonus tier.
+      </p>
+    ),
+    lastUpdated: "2026-06-09",
   },
   "Citi Wealth first Account": {
     interestFn: citi_wealth_first_06_2026,
