@@ -6,7 +6,7 @@ export const gxs_interest_08_2025 = (profile: Profile): ResultInterest => {
   const { Savings } = profile;
   if (Savings < 200) return new ResultInterest(0, 0);
 
-  return calculate_ir(Savings > 95_000 ? 95_000 : Savings, {
+  return calculate_ir(Savings, {
     cutoffs: [
       { Cutoff: 85_000, InterestRatePercent: 1.38 }, // Boost Pocket
       { Cutoff: 10_000, InterestRatePercent: 1.08 }, // Base Interest rates
@@ -21,7 +21,7 @@ export const gxs_interest_07_2025 = (profile: Profile): ResultInterest => {
     return new ResultInterest(0, 0);
   }
 
-  return calculate_ir(Savings > 95_000 ? 95_000 : Savings, {
+  return calculate_ir(Savings, {
     cutoffs: [
       { Cutoff: 60_000, InterestRatePercent: 2.58 }, // Boost Pocket
       { Cutoff: 35_000, InterestRatePercent: 1.68 }, // Base Interest rates
@@ -34,7 +34,7 @@ export const gxs_interest_06_2026 = (profile: Profile): ResultInterest => {
   const { Savings } = profile;
   if (Savings < 200) return new ResultInterest(0, 0);
 
-  return calculate_ir(Savings > 95_000 ? 95_000 : Savings, {
+  return calculate_ir(Savings, {
     cutoffs: [
       { Cutoff: 85_000, InterestRatePercent: 1.22 }, // Boost Pocket (3-month)
       { Cutoff: 10_000, InterestRatePercent: 1.08 }, // Saving Pockets (Main Account: 0.88%)
