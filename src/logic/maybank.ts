@@ -97,10 +97,14 @@ export const maybank_isavvy_06_2026 = (profile: Profile): ResultInterest => {
 /**
  * Maybank iSAVvy Savings Plus Account (effective 9 June 2026)
  *
- * Flat tiered base rates + 1.52% p.a. bonus paid every 6 months:
- *   Below S$5,000:      0.1875% + 1.52% = 1.7075% p.a.
- *   S$5,000 to <S$50K:  0.30%   + 1.52% = 1.82% p.a.
- *   S$50,000 and above: 0.38%   + 1.52% = 1.90% p.a.
+ * Flat tiered base rates:
+ *   Below S$5,000:      0.1875% p.a.
+ *   S$5,000 to <S$50K:  0.30% p.a.
+ *   S$50,000 and above: 0.38% p.a.
+ *
+ * Bonus rate of 1.52% p.a. applies ONLY if the average daily balance
+ * increases every month (proxied by MonthlyAccIncrease > 0).
+ * Bonus is paid every 6 months.
  *
  * Rates are NOT additive (not cumulative tiered) — entire daily balance
  * earns the single rate for its tier.
@@ -109,7 +113,7 @@ export const maybank_isavvy_plus_06_2026 = (
   profile: Profile,
 ): ResultInterest => {
   const s = profile.Savings;
-  const bonus = 1.52;
+  const bonus = profile.MonthlyAccIncrease > 0 ? 1.52 : 0;
   let base: number;
 
   if (s < 5_000) {

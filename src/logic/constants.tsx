@@ -175,12 +175,14 @@ export const bankInfo: Record<string, Info> = {
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks: (
       <p>
-        Flat tiered base rates + 1.52% p.a. bonus every 6 months.
+        Flat tiered base rates: 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
         <br />
-        Effective: 1.7075% (&lt;$5K), 1.82% ($5K–$50K), 1.90% (≥$50K).
+        +1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.
+        <br />
+        <b>Set "Account Increment" &gt; 0 to qualify for the bonus.</b>
       </p>
     ),
-    lastUpdated: "2026-06-09",
+    lastUpdated: "2026-06-11",
   },
   "Citi Wealth first Account": {
     interestFn: citi_wealth_first_06_2026,

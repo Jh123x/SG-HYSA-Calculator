@@ -194,24 +194,39 @@ describe("Maybank iSAVvy Interest rates (Post 05/26)", () => {
 describe("Maybank iSAVvy Plus Interest rates (06/26)", () => {
   const testCases: Array<testCase> = [
     {
-      caseName: "No savings",
+      caseName: "No savings, no increase",
       profile: NewProfile({ Savings: 0 }),
       expectedResult: 0,
     },
     {
-      caseName: "$2,000 (below $5K → 1.7075%)",
-      profile: NewProfile({ Savings: 2000 }),
-      expectedResult: 34.15, // 2000 * 1.7075%
+      caseName: "$2,000 — NO monthly increase → base rate only (0.1875%)",
+      profile: NewProfile({ Savings: 2000, MonthlyAccIncrease: 0 }),
+      expectedResult: 3.75, // 2000 * 0.1875%
     },
     {
-      caseName: "$10,000 ($5K-$50K → 1.82%)",
-      profile: NewProfile({ Savings: 10_000 }),
-      expectedResult: 182.0, // 10000 * 1.82%
+      caseName: "$10,000 — NO monthly increase → base rate only (0.30%)",
+      profile: NewProfile({ Savings: 10_000, MonthlyAccIncrease: 0 }),
+      expectedResult: 30.0, // 10000 * 0.30%
     },
     {
-      caseName: "$75,000 (≥$50K → 1.90%)",
-      profile: NewProfile({ Savings: 75_000 }),
-      expectedResult: 1425.0, // 75000 * 1.90%
+      caseName: "$75,000 — NO monthly increase → base rate only (0.38%)",
+      profile: NewProfile({ Savings: 75_000, MonthlyAccIncrease: 0 }),
+      expectedResult: 285.0, // 75000 * 0.38%
+    },
+    {
+      caseName: "$2,000 — WITH monthly increase → base + bonus (1.7075%)",
+      profile: NewProfile({ Savings: 2000, MonthlyAccIncrease: 100 }),
+      expectedResult: 34.15, // 2000 * (0.1875 + 1.52)%
+    },
+    {
+      caseName: "$10,000 — WITH monthly increase → base + bonus (1.82%)",
+      profile: NewProfile({ Savings: 10_000, MonthlyAccIncrease: 500 }),
+      expectedResult: 182.0, // 10000 * (0.30 + 1.52)%
+    },
+    {
+      caseName: "$75,000 — WITH monthly increase → base + bonus (1.90%)",
+      profile: NewProfile({ Savings: 75_000, MonthlyAccIncrease: 1000 }),
+      expectedResult: 1425.0, // 75000 * (0.38 + 1.52)%
     },
   ];
 
