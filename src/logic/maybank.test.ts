@@ -144,7 +144,7 @@ describe("Maybank Save Up Interest rates (Post 06/26)", () => {
   }
 });
 
-describe("Maybank iSAVvy Interest rates (Post 05/26)", () => {
+describe("Maybank iSAVvy Interest rates (Post 06/26)", () => {
   const testCases: Array<testCase> = [
     {
       caseName: "No savings",
@@ -152,34 +152,44 @@ describe("Maybank iSAVvy Interest rates (Post 05/26)", () => {
       expectedResult: 0,
     },
     {
-      caseName: "$2,000 (below $20K → 0.05%)",
+      caseName: "$2,000 (below $5K → 0.1875%)",
       profile: NewProfile({ Savings: 2000 }),
-      expectedResult: 1.0, // 2000 * 0.05%
+      expectedResult: 3.75, // 2000 * 0.1875%
     },
     {
-      caseName: "$10,000 (below $20K → 0.05%)",
-      profile: NewProfile({ Savings: 10_000 }),
-      expectedResult: 5.0, // 10000 * 0.05%
+      caseName: "$4,500 (below $5K → 0.1875%)",
+      profile: NewProfile({ Savings: 4500 }),
+      expectedResult: 8.44, // 4500 * 0.1875% = 8.4375
     },
     {
-      caseName: "$30,000 ($20K-$50K → 0.20%)",
-      profile: NewProfile({ Savings: 30_000 }),
-      expectedResult: 60.0, // 30000 * 0.20%
+      caseName: "$5,000 (boundary → 0.30%)",
+      profile: NewProfile({ Savings: 5_000 }),
+      expectedResult: 15.0, // 5000 * 0.30%
     },
     {
-      caseName: "$75,000 ($50K-$200K → 0.20%)",
+      caseName: "$25,000 ($5K-$50K → 0.30%)",
+      profile: NewProfile({ Savings: 25_000 }),
+      expectedResult: 75.0, // 25000 * 0.30%
+    },
+    {
+      caseName: "$50,000 (boundary → 0.38%)",
+      profile: NewProfile({ Savings: 50_000 }),
+      expectedResult: 190.0, // 50000 * 0.38%
+    },
+    {
+      caseName: "$75,000 (≥$50K → 0.38%)",
       profile: NewProfile({ Savings: 75_000 }),
-      expectedResult: 150.0, // 75000 * 0.20%
+      expectedResult: 285.0, // 75000 * 0.38%
     },
     {
-      caseName: "$120,000 ($50K-$200K → 0.20%)",
+      caseName: "$120,000 (≥$50K → 0.38%)",
       profile: NewProfile({ Savings: 120_000 }),
-      expectedResult: 240.0, // 120000 * 0.20%
+      expectedResult: 456.0, // 120000 * 0.38%
     },
     {
-      caseName: "$250,000 (≥$200K → 0.80%)",
+      caseName: "$250,000 (≥$50K → 0.38%)",
       profile: NewProfile({ Savings: 250_000 }),
-      expectedResult: 2000.0, // 250000 * 0.80%
+      expectedResult: 950.0, // 250000 * 0.38%
     },
   ];
 
