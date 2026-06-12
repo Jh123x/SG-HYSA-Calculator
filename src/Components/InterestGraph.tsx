@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LineChart, LineChartProps } from "@mui/x-charts/LineChart";
+import { ChartsReferenceLine } from "@mui/x-charts";
 import { Paper, useTheme, useMediaQuery, Box, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
 import { lineColors, textColor } from "../consts/colors";
@@ -124,7 +125,17 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
             fill: textColor,
           },
         }}
-      />
+      >
+        <ChartsReferenceLine
+          x={profile.Savings}
+          label="Your savings"
+          lineStyle={{
+            stroke: lineColors[0],
+            strokeWidth: 2,
+            strokeDasharray: "6 3",
+          }}
+        />
+      </LineChart>
       <Typography
         variant="caption"
         sx={{
