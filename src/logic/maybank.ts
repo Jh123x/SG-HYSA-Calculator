@@ -103,7 +103,6 @@ export const maybank_isavvy_06_2026 = (profile: Profile): ResultInterest => {
  *
  * Bonus rate of 1.52% p.a. applies ONLY if the average daily balance
  * increases every month (proxied by MonthlyAccIncrease > 0).
- * Bonus is paid every 6 months.
  *
  * Rates are NOT additive (not cumulative tiered) — entire daily balance
  * earns the single rate for its tier.
