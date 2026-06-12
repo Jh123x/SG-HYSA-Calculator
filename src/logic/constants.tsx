@@ -162,13 +162,13 @@ export const bankInfo: Record<string, Info> = {
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks: (
       <p>
-        Flat tiered rates (non-additive): 0.05% (&lt;$20K), 0.20%
-        ($20K–$200K), 0.80% (≥$200K).
+        Flat tiered rates (non-additive): 0.1875% (&lt;$5K), 0.30%
+        ($5K–$50K), 0.38% (≥$50K).
         <br />
-        Rates effective from 1 May 2026.
+        Rates effective from 11 June 2026.
       </p>
     ),
-    lastUpdated: "2026-06-09",
+    lastUpdated: "2026-06-11",
   },
   "Maybank iSAVvy Plus": {
     interestFn: maybank_isavvy_plus_06_2026,

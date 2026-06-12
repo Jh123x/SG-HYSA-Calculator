@@ -69,17 +69,12 @@ export const maybank_save_up_06_2026 = (profile: Profile): ResultInterest => {
 /**
  * Maybank iSAVvy Savings Account (effective 11 June 2026)
  *
- * Flat tiered rates — entire daily balance earns the rate of the tier it falls into:
- *   Below S$5,000:                    0.1875% p.a.
- *   S$5,000 to below S$50,000:        0.30% p.a.
- *   S$50,000 and above:               0.38% p.a.
- *
- * Interest-on-interest bonus (every 6 months):
- *   +6%  of interest earned for ADB ≥ S$5,000 → effective ~0.31% / 0.39% p.a.
- *   +18% of interest earned for ADB ≥ S$100,000 → effective ~0.42% p.a.
+ * Flat tiered rates — entire daily balance earns the rate of its tier:
+ *   Below S$5,000:             0.1875% p.a.
+ *   S$5,000 to below S$50,000: 0.30% p.a.
+ *   S$50,000 and above:        0.38% p.a.
  *
  * Rates are NOT additive (not cumulative tiered).
- * Interest-on-interest bonus is not modelled here — this function returns base rates only.
  */
 export const maybank_isavvy_06_2026 = (profile: Profile): ResultInterest => {
   const s = profile.Savings;
