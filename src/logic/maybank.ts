@@ -1,4 +1,3 @@
-import { ResultInterest } from "../types/interest_result";
 import Profile from "../types/profile";
 import { calculate_ir } from "./common";
 
@@ -47,3 +46,85 @@ export const maybank_save_up_10_2025 = (profile: Profile): ResultInterest => {
     baseRatePercent: 0.25,
   });
 };
+
+/**
+ * Maybank SaveUp Account (effective 11 June 2026)
+ *
+ * No more category-based bonus system. Flat tiered rates:
+ *   First S$3,000:    0.1875% p.a.
+ *   Next S$47,000:     0.25% p.a.
+ *   Above S$50,000:    0.3125% p.a.
+ */
+export const maybank_save_up_06_2026 = (profile: Profile): ResultInterest => {
+  return calculate_ir(profile.Savings, {
+    cutoffs: [
+      { Cutoff: 3000, InterestRatePercent: 0.1875 },
+      { Cutoff: 47_000, InterestRatePercent: 0.25 },
+    ],
+    baseRatePercent: 0.3125,
+  });
+};
+
+/**
+ * Maybank iSAVvy Savings Account (effective 11 June 2026)
+ *
+ * Flat tiered rates — entire daily balance earns the rate of its tier:
+ *   Below S$5,000:             0.1875% p.a.
+ *   S$5,000 to below S$50,000: 0.30% p.a.
+ *   S$50,000 and above:        0.38% p.a.
+ *
+ * Rates are NOT additive (not cumulative tiered).
+ */
+export const maybank_isavvy_06_2026 = (profile: Profile): ResultInterest => {
+  const s = profile.Savings;
+  let rate: number;
+
+  if (s < 5_000) {
+    rate = 0.1875;
+  } else if (s < 50_000) {
+    rate = 0.30;
+  } else {
+    rate = 0.38;
+  }
+
+  return calculate_ir(s, {
+    cutoffs: [],
+    baseRatePercent: rate,
+  });
+};
+
+/**
+ * Maybank iSAVvy Savings Plus Account (effective 11 June 2026)
+ *
+ * Flat tiered base rates:
+ *   Below S$5,000:      0.1875% p.a.
+ *   S$5,000 to <S$50K:  0.30% p.a.
+ *   S$50,000 and above: 0.38% p.a.
+ *
+ * Rates are NOT additive (not cumulative tiered) — entire daily balance
+ * earns the single rate for its tier.
+ *
+ * Note: A +1.52% p.a. bonus is available (paid every 6 months) but is
+ * not included here — see constants.tsx remarks for details.
+ */
+export const maybank_isavvy_plus_06_2026 = (
+  profile: Profile,
+): ResultInterest => {
+  const s = profile.Savings;
+  let rate: number;
+
+  if (s < 5_000) {
+    rate = 0.1875;
+  } else if (s < 50_000) {
+    rate = 0.30;
+  } else {
+    rate = 0.38;
+  }
+
+  return calculate_ir(s, {
+    cutoffs: [],
+    baseRatePercent: rate,
+  });
+};
+
+

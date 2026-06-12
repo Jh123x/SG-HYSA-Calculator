@@ -6,7 +6,7 @@ import { LocalLink } from "../Components/LocalLink";
 import { uob_interest_2025_12 } from "./uob";
 import { gxs_interest_06_2026 } from "./gxs";
 import { ocbc_interest_05_2026 } from "./ocbc360";
-import { maybank_save_up_10_2025 } from "./maybank";
+import { maybank_save_up_10_2025, maybank_save_up_06_2026, maybank_isavvy_06_2026, maybank_isavvy_plus_06_2026 } from "./maybank";
 import { citi_wealth_first_06_2026 } from "./citibank";
 import { stand_chart_interest_06_2026 } from "./stand_chart";
 import { dbs_multiplier_interest } from "./dbs_multiplier";
@@ -145,10 +145,44 @@ export const bankInfo: Record<string, Info> = {
     lastUpdated: "2025-10-14",
   },
   "Maybank Save Up": {
-    interestFn: maybank_save_up_10_2025,
-    url: "https://www.maybank2u.com.sg/en/personal/saveup/save-up-programme.page",
-    remarks: "Assumes that Investment qualifies & within Interest period.",
-    lastUpdated: "2025-10-14",
+    interestFn: maybank_save_up_06_2026,
+    url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
+    remarks: (
+      <p>
+        Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125%
+        (above $50K).
+        <br />
+        No more category-based bonus system.
+      </p>
+    ),
+    lastUpdated: "2026-06-09",
+  },
+  "Maybank iSAVvy": {
+    interestFn: maybank_isavvy_06_2026,
+    url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
+    remarks: (
+      <p>
+        Flat tiered rates (non-additive): 0.1875% (&lt;$5K), 0.30%
+        ($5K–$50K), 0.38% (≥$50K).
+        <br />
+        Rates effective from 11 June 2026.
+      </p>
+    ),
+    lastUpdated: "2026-06-11",
+  },
+  "Maybank iSAVvy Plus": {
+    interestFn: maybank_isavvy_plus_06_2026,
+    url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
+    remarks: (
+      <p>
+        Flat tiered base rates: 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
+        <br />
+        +1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.
+        <br />
+        <b>Set "Account Increment" &gt; 0 to qualify for the bonus.</b>
+      </p>
+    ),
+    lastUpdated: "2026-06-11",
   },
   "Citi Wealth first Account": {
     interestFn: citi_wealth_first_06_2026,
