@@ -1,4 +1,3 @@
-import { ResultInterest } from "../types/interest_result";
 import Profile from "../types/profile";
 import { calculate_ir } from "./common";
 
@@ -88,7 +87,10 @@ export const maybank_isavvy_06_2026 = (profile: Profile): ResultInterest => {
     rate = 0.38;
   }
 
-  return new ResultInterest(s * (rate / 100), s);
+  return calculate_ir(s, {
+    cutoffs: [],
+    baseRatePercent: rate,
+  });
 };
 
 /**
@@ -121,7 +123,10 @@ export const maybank_isavvy_plus_06_2026 = (
     base = 0.38;
   }
 
-  return new ResultInterest(s * ((base + bonus) / 100), s);
+  return calculate_ir(s, {
+    cutoffs: [],
+    baseRatePercent: base + bonus,
+  });
 };
 
 
