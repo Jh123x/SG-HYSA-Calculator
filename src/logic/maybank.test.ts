@@ -234,29 +234,29 @@ describe("Maybank iSAVvy Plus Interest rates (06/26)", () => {
       expectedResult: 285.0, // 75000 * 0.38%
     },
     {
-      caseName: "$2,000 — WITH monthly increase → base + bonus (1.7075%)",
+      caseName: "$2,000 — WITH monthly increase → base rate only (0.1875%)",
       profile: NewProfile({ Savings: 2000, MonthlyAccIncrease: 100 }),
-      expectedResult: 34.15, // 2000 * (0.1875 + 1.52)%
+      expectedResult: 3.75, // 2000 * 0.1875% (bonus not included — paid every 6 months)
     },
     {
-      caseName: "$10,000 — WITH monthly increase → base + bonus (1.82%)",
+      caseName: "$10,000 — WITH monthly increase → base rate only (0.30%)",
       profile: NewProfile({ Savings: 10_000, MonthlyAccIncrease: 500 }),
-      expectedResult: 182.0, // 10000 * (0.30 + 1.52)%
+      expectedResult: 30.0, // 10000 * 0.30% (bonus not included)
     },
     {
-      caseName: "$75,000 — WITH monthly increase → base + bonus (1.90%)",
+      caseName: "$75,000 — WITH monthly increase → base rate only (0.38%)",
       profile: NewProfile({ Savings: 75_000, MonthlyAccIncrease: 1000 }),
-      expectedResult: 1425.0, // 75000 * (0.38 + 1.52)%
+      expectedResult: 285.0, // 75000 * 0.38% (bonus not included)
     },
     {
-      caseName: "$5,000 — negative ADB change → NO bonus (base 0.30%)",
+      caseName: "$5,000 — negative ADB change → base rate only (0.30%)",
       profile: NewProfile({ Savings: 5_000, MonthlyAccIncrease: -200 }),
-      expectedResult: 15.0, // 5000 * 0.30% (no bonus, -200 is NOT > 0)
+      expectedResult: 15.0, // 5000 * 0.30%
     },
     {
-      caseName: "$50,000 — minimal positive increase ($1) → gets bonus (1.90%)",
+      caseName: "$50,000 — minimal positive increase ($1) → base rate only (0.38%)",
       profile: NewProfile({ Savings: 50_000, MonthlyAccIncrease: 1 }),
-      expectedResult: 950.0, // 50000 * (0.38 + 1.52)%
+      expectedResult: 190.0, // 50000 * 0.38% (bonus not included)
     },
   ];
 

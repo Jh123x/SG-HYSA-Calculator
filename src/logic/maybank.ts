@@ -101,30 +101,29 @@ export const maybank_isavvy_06_2026 = (profile: Profile): ResultInterest => {
  *   S$5,000 to <S$50K:  0.30% p.a.
  *   S$50,000 and above: 0.38% p.a.
  *
- * Bonus rate of 1.52% p.a. applies ONLY if the average daily balance
- * increases every month (proxied by MonthlyAccIncrease > 0).
- *
  * Rates are NOT additive (not cumulative tiered) — entire daily balance
  * earns the single rate for its tier.
+ *
+ * Note: A +1.52% p.a. bonus is available (paid every 6 months) but is
+ * not included here — see constants.tsx remarks for details.
  */
 export const maybank_isavvy_plus_06_2026 = (
   profile: Profile,
 ): ResultInterest => {
   const s = profile.Savings;
-  const bonus = profile.MonthlyAccIncrease > 0 ? 1.52 : 0;
-  let base: number;
+  let rate: number;
 
   if (s < 5_000) {
-    base = 0.1875;
+    rate = 0.1875;
   } else if (s < 50_000) {
-    base = 0.30;
+    rate = 0.30;
   } else {
-    base = 0.38;
+    rate = 0.38;
   }
 
   return calculate_ir(s, {
     cutoffs: [],
-    baseRatePercent: base + bonus,
+    baseRatePercent: rate,
   });
 };
 
