@@ -1,6 +1,7 @@
 import { ResultInterest } from "../types/interest_result";
 import Profile from "../types/profile";
 import { calculate_ir } from "./common";
+import type { RateSnapshot } from "../types/history";
 
 export const gxs_interest_08_2025 = (profile: Profile): ResultInterest => {
   const { Savings } = profile;
@@ -42,3 +43,21 @@ export const gxs_interest_06_2026 = (profile: Profile): ResultInterest => {
     baseRatePercent: 0,
   });
 };
+
+export const gxsHistory: RateSnapshot[] = [
+  {
+    effectiveDate: "2025-07-01",
+    interestFn: gxs_interest_07_2025,
+    changeSummary: "Boost Pocket: $60K at 2.58%, Saving Pockets: $35K at 1.68%.",
+  },
+  {
+    effectiveDate: "2025-08-01",
+    interestFn: gxs_interest_08_2025,
+    changeSummary: "Boost Pocket: $85K at 1.38% (reduced from 2.58%). Saving Pockets: $10K at 1.08%.",
+  },
+  {
+    effectiveDate: "2026-06-05",
+    interestFn: gxs_interest_06_2026,
+    changeSummary: "Boost Pocket: $85K at 1.22% (reduced from 1.38%). Saving Pockets unchanged.",
+  },
+];

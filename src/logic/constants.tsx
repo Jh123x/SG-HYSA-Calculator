@@ -1,31 +1,35 @@
 import type Profile from "../types/profile";
 import type { ReactElement } from "react";
 import type { ResultInterest } from "../types/interest_result";
+import type { RateSnapshot } from "../types/history";
 
 import { LocalLink } from "../Components/LocalLink";
-import { uob_interest_2025_12 } from "./uob";
-import { gxs_interest_06_2026 } from "./gxs";
-import { ocbc_interest_05_2026 } from "./ocbc360";
-import { maybank_save_up_10_2025, maybank_save_up_06_2026, maybank_isavvy_06_2026, maybank_isavvy_plus_06_2026 } from "./maybank";
-import { citi_wealth_first_06_2026 } from "./citibank";
-import { stand_chart_interest_06_2026 } from "./stand_chart";
+import { uob_interest_2025_12, uobHistory } from "./uob";
+import { gxs_interest_06_2026, gxsHistory } from "./gxs";
+import { ocbc_interest_05_2026, ocbcHistory } from "./ocbc360";
+import { maybank_save_up_06_2026, maybankSaveUpHistory, maybank_isavvy_06_2026, maybank_isavvy_plus_06_2026 } from "./maybank";
+import { citi_wealth_first_06_2026, citiHistory } from "./citibank";
+import { stand_chart_interest_06_2026, standChartHistory } from "./stand_chart";
 import { dbs_multiplier_interest } from "./dbs_multiplier";
 import {
   trust_bank_signature_06_2026,
   trust_bank_zen_06_2026,
+  trustBankSignatureHistory,
 } from "./trust_bank";
 import {
   maribank_interest_12_2025,
   mariInterestRate_12_2025,
+  maribankHistory,
 } from "./maribank";
-import { bank_of_china_super_saver_11_2025 } from "./bank_of_china";
-import { choco_finance_06_2026 } from "./choco_finance";
+import { bank_of_china_super_saver_11_2025, bocSuperSaverHistory } from "./bank_of_china";
+import { choco_finance_06_2026, chocoFinanceHistory } from "./choco_finance";
 
 interface Info {
   interestFn: (profile: Profile) => ResultInterest;
   url: string;
   remarks: string | ReactElement;
   lastUpdated: string;
+  history: RateSnapshot[];
 }
 
 export const bankInfo: Record<string, Info> = {
@@ -34,12 +38,14 @@ export const bankInfo: Record<string, Info> = {
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     remarks: "Visit their official website to find out more",
     lastUpdated: "2025-11-14",
+    history: uobHistory,
   },
   "OCBC Bank": {
     interestFn: ocbc_interest_05_2026,
     url: "https://www.ocbc.com/personal-banking/notices",
     remarks: "Visit the official website to find our more",
     lastUpdated: "2026-04-05",
+    history: ocbcHistory,
   },
   Maribank: {
     interestFn: maribank_interest_12_2025,
@@ -54,6 +60,7 @@ export const bankInfo: Record<string, Info> = {
       </p>
     ),
     lastUpdated: "2025-12-27",
+    history: maribankHistory,
   },
   "Standard Chartered": {
     interestFn: stand_chart_interest_06_2026,
@@ -66,18 +73,21 @@ export const bankInfo: Record<string, Info> = {
       </p>
     ),
     lastUpdated: "2026-06-05",
+    history: standChartHistory,
   },
   "Trust Bank (Signature)": {
     interestFn: trust_bank_signature_06_2026,
     url: "https://trustbank.sg/savings-account/",
     remarks: <p>Spending assumes 5 x $30 if spending is more than 150.</p>,
     lastUpdated: "2026-06-05",
+    history: trustBankSignatureHistory,
   },
   "Trust Bank (Zen)": {
     interestFn: trust_bank_zen_06_2026,
     url: "https://trustbank.sg/savings-account/",
     remarks: "A Flat 0.4% interest rate up to 1.2 million",
     lastUpdated: "2026-06-05",
+    history: [],
   },
   "DBS Multiplier Account": {
     interestFn: dbs_multiplier_interest,
@@ -90,6 +100,7 @@ export const bankInfo: Record<string, Info> = {
       </p>
     ),
     lastUpdated: "2025-10-14",
+    history: [],
   },
   GXS: {
     interestFn: gxs_interest_06_2026,
@@ -110,6 +121,7 @@ export const bankInfo: Record<string, Info> = {
       </p>
     ),
     lastUpdated: "2026-06-05",
+    history: gxsHistory,
   },
   "Chocolate Finance": {
     interestFn: choco_finance_06_2026,
@@ -128,6 +140,7 @@ export const bankInfo: Record<string, Info> = {
       </p>
     ),
     lastUpdated: "2026-06-05",
+    history: chocoFinanceHistory,
   },
   "Bank of China SuperSaver": {
     interestFn: bank_of_china_super_saver_11_2025,
@@ -143,6 +156,7 @@ export const bankInfo: Record<string, Info> = {
       </p>
     ),
     lastUpdated: "2025-10-14",
+    history: bocSuperSaverHistory,
   },
   "Maybank Save Up": {
     interestFn: maybank_save_up_06_2026,
@@ -156,6 +170,7 @@ export const bankInfo: Record<string, Info> = {
       </p>
     ),
     lastUpdated: "2026-06-09",
+    history: maybankSaveUpHistory,
   },
   "Maybank iSAVvy": {
     interestFn: maybank_isavvy_06_2026,
@@ -169,6 +184,7 @@ export const bankInfo: Record<string, Info> = {
       </p>
     ),
     lastUpdated: "2026-06-11",
+    history: [],
   },
   "Maybank iSAVvy Plus": {
     interestFn: maybank_isavvy_plus_06_2026,
@@ -183,6 +199,7 @@ export const bankInfo: Record<string, Info> = {
       </p>
     ),
     lastUpdated: "2026-06-11",
+    history: [],
   },
   "Citi Wealth first Account": {
     interestFn: citi_wealth_first_06_2026,
@@ -198,5 +215,6 @@ export const bankInfo: Record<string, Info> = {
       </>
     ),
     lastUpdated: "2026-06-05",
+    history: citiHistory,
   },
 };
