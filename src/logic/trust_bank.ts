@@ -109,6 +109,14 @@ export const trust_bank_zen_06_2026 = (profile: Profile): ResultInterest => {
   });
 };
 
+export const trustBankZenHistory: RateSnapshot[] = [
+  {
+    effectiveDate: "2026-06-05",
+    interestFn: trust_bank_zen_06_2026,
+    changeSummary: "Flat 0.4% p.a. up to S$1.2 million",
+  },
+];
+
 export const trustBankSignatureHistory: RateSnapshot[] = [
   {
     effectiveDate: "2025-05-01",

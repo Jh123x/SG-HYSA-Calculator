@@ -7,12 +7,12 @@ import { LocalLink } from "../Components/LocalLink";
 import { uobHistory } from "./uob";
 import { gxsHistory } from "./gxs";
 import { ocbcHistory } from "./ocbc360";
-import { maybankSaveUpHistory, maybank_isavvy_06_2026, maybank_isavvy_plus_06_2026 } from "./maybank";
+import { maybankSaveUpHistory, maybankIsavvyHistory, maybankIsavvyPlusHistory } from "./maybank";
 import { citiHistory } from "./citibank";
 import { standChartHistory } from "./stand_chart";
-import { dbs_multiplier_interest } from "./dbs_multiplier";
+import { dbsMultiplierHistory } from "./dbs_multiplier";
 import {
-  trust_bank_zen_06_2026,
+  trustBankZenHistory,
   trustBankSignatureHistory,
 } from "./trust_bank";
 import {
@@ -71,13 +71,7 @@ export const bankInfo: Record<string, BankDef> = {
   "Trust Bank (Zen)": {
     url: "https://trustbank.sg/savings-account/",
     remarks: "A Flat 0.4% interest rate up to 1.2 million",
-    history: [
-      {
-        effectiveDate: "2026-06-05",
-        interestFn: trust_bank_zen_06_2026,
-        changeSummary: "Flat 0.4% p.a. up to S$1.2 million",
-      },
-    ],
+    history: trustBankZenHistory,
   },
   "DBS Multiplier Account": {
     url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
@@ -88,13 +82,7 @@ export const bankInfo: Record<string, BankDef> = {
         Spending includes credit card / paylah retail spend
       </p>
     ),
-    history: [
-      {
-        effectiveDate: "2025-10-14",
-        interestFn: dbs_multiplier_interest,
-        changeSummary: "Multiplier rates based on eligible transaction categories",
-      },
-    ],
+    history: dbsMultiplierHistory,
   },
   GXS: {
     url: "https://www.gxs.com.sg/savings-account",
@@ -168,14 +156,7 @@ export const bankInfo: Record<string, BankDef> = {
         Rates effective from 11 June 2026.
       </p>
     ),
-    history: [
-      {
-        effectiveDate: "2026-06-11",
-        interestFn: maybank_isavvy_06_2026,
-        changeSummary:
-          "Simplified tiered rates: 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K)",
-      },
-    ],
+    history: maybankIsavvyHistory,
   },
   "Maybank iSAVvy Plus": {
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
@@ -188,14 +169,7 @@ export const bankInfo: Record<string, BankDef> = {
         <b>Set "Account Increment" &gt; 0 to qualify for the bonus.</b>
       </p>
     ),
-    history: [
-      {
-        effectiveDate: "2026-06-11",
-        interestFn: maybank_isavvy_plus_06_2026,
-        changeSummary:
-          "Flat tiered base (0.1875%–0.38%) + 1.52% top-up bonus with monthly ADB increment",
-      },
-    ],
+    history: maybankIsavvyPlusHistory,
   },
   "Citi Wealth first Account": {
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",

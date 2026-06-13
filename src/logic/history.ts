@@ -1,6 +1,6 @@
 import type Profile from "../types/profile";
 import type { RateSnapshot } from "../types/history";
-import type { ResultInterest } from "../types/interest_result";
+import { ResultInterest } from "../types/interest_result";
 
 /** A resolved snapshot ready for charting / display */
 export interface ResolvedHistoryItem {
@@ -12,9 +12,16 @@ export interface ResolvedHistoryItem {
   changeSummary: string;
 }
 
+/** Zero-interest fallback function for banks with no history entries yet. */
+const ZERO_INTEREST = (_profile: Profile): ResultInterest =>
+  new ResultInterest(0, 0);
+
 /**
  * Derive the "current" interest function and last-updated date from the
  * last entry in a bank's rate history array.
+ *
+ * When history is empty (bank not yet active / coming soon), returns a
+ * zero-interest fallback so the bank still renders without crashing.
  */
 export function deriveCurrentFromHistory(
   history: RateSnapshot[],
@@ -22,6 +29,12 @@ export function deriveCurrentFromHistory(
   interestFn: (profile: Profile) => ResultInterest;
   lastUpdated: string;
 } {
+  if (history.length === 0) {
+    return {
+      interestFn: ZERO_INTEREST,
+      lastUpdated: "Coming soon",
+    };
+  }
   const latest = history[history.length - 1];
   return {
     interestFn: latest.interestFn,
@@ -34,11 +47,22 @@ export function deriveCurrentFromHistory(
  *
  * Each RateSnapshot is computed against the profile to produce
  * EIR percentages for charts and changelogs.
+ *
+ * When history is empty, returns a single "Coming soon" placeholder.
  */
 export function resolveHistoryForChart(
   history: RateSnapshot[],
   profile: Profile,
 ): ResolvedHistoryItem[] {
+  if (history.length === 0) {
+    return [
+      {
+        date: "TBD",
+        eir: 0,
+        changeSummary: "Coming soon",
+      },
+    ];
+  }
   return history.map((snapshot) => ({
     date: snapshot.effectiveDate,
     eir: Number(

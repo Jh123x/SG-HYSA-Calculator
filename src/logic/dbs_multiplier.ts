@@ -1,6 +1,7 @@
 import { calculate_ir } from "./common";
 import { ResultInterest } from "../types/interest_result";
 import Profile from "../types/profile";
+import type { RateSnapshot } from "../types/history";
 
 const table: Array<Array<number>> = [
   [1.8, 2.1, 2.4],
@@ -61,3 +62,12 @@ const get_categories = (profile: Profile): number => {
     .map((b: boolean) => (b ? 1 : 0))
     .reduce((a: number, b: number) => a + b, 0);
 };
+
+export const dbsMultiplierHistory: RateSnapshot[] = [
+  {
+    effectiveDate: "2025-10-14",
+    interestFn: dbs_multiplier_interest,
+    changeSummary:
+      "Multiplier rates based on eligible transaction categories",
+  },
+];

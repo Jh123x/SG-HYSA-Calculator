@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { resolveHistoryForChart, deriveCurrentFromHistory } from "./history";
+import { ResultInterest } from "../types/interest_result";
 import type Profile from "../types/profile";
-import type { ResultInterest } from "../types/interest_result";
 import type { RateSnapshot } from "../types/history";
 
 function makeResult(yearlyPercent: number): ResultInterest {
@@ -9,7 +9,7 @@ function makeResult(yearlyPercent: number): ResultInterest {
     total: yearlyPercent,
     details: [],
     toYearlyPercent: () => yearlyPercent,
-  };
+  } as unknown as ResultInterest;
 }
 
 const emptyProfile: Profile = {
@@ -44,6 +44,12 @@ describe("deriveCurrentFromHistory", () => {
     const result = deriveCurrentFromHistory(history);
     expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(4.0);
     expect(result.lastUpdated).toBe("2026-01-01");
+  });
+
+  it("returns zero-interest fallback when history is empty", () => {
+    const result = deriveCurrentFromHistory([]);
+    expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(0);
+    expect(result.lastUpdated).toBe("Coming soon");
   });
 });
 
@@ -98,5 +104,15 @@ describe("resolveHistoryForChart", () => {
       richProfile,
     );
     expect(result[0].eir).toBe(3.0);
+  });
+
+  it("returns Coming Soon placeholder when history is empty", () => {
+    const result = resolveHistoryForChart([], emptyProfile);
+    expect(result).toHaveLength(1);
+    expect(result[0]).toEqual({
+      date: "TBD",
+      eir: 0,
+      changeSummary: "Coming soon",
+    });
   });
 });
