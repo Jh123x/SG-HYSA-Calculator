@@ -49,12 +49,7 @@ export const HistoryTab = ({ profile }: Props) => {
   const selectedBanks = readBanksFromParams(searchParams);
   const isSmallScreen = useMediaQuery("(max-width:640px)");
 
-  const handleBankChange = (banks: string[]) => {
-    setSearchParams(writeBanksToParams(banks, searchParams), {
-      replace: true,
-    });
-  };
-
+  // Guard early — avoid creating handleBankChange on small screens
   if (isSmallScreen) {
     return (
       <Paper
@@ -71,6 +66,12 @@ export const HistoryTab = ({ profile }: Props) => {
       </Paper>
     );
   }
+
+  const handleBankChange = (banks: string[]) => {
+    setSearchParams(writeBanksToParams(banks, searchParams), {
+      replace: true,
+    });
+  };
 
   return (
     <Box sx={{ mt: 3 }}>

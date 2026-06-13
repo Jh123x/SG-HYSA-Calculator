@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -9,14 +10,36 @@ import {
   Menu,
   MenuItem,
   useMediaQuery,
+  Tabs,
+  Tab,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ArticleIcon from "@mui/icons-material/Article";
-import { textColor } from "../consts/colors";
+import { textColor, primaryColor } from "../consts/colors";
 
+const tabSx = {
+  color: `${textColor}99`,
+  textTransform: "none" as const,
+  fontWeight: 500,
+  fontSize: "0.85rem",
+  minWidth: "auto",
+  "&.Mui-selected": {
+    color: primaryColor,
+    fontWeight: 600,
+  },
+};
+
+/**
+ * Shared header with app title and navigation tabs.
+ *
+ * Tabs navigate between /current and /history routes,
+ * replacing the old in-page ToggleButtonGroup from MainPage.
+ */
 export const Header = () => {
   const theme = useTheme();
+  const location = useLocation();
+  const navigate = useNavigate();
   const isMobile = useMediaQuery("(max-width:600px)");
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
@@ -27,23 +50,44 @@ export const Header = () => {
     setAnchorEl(null);
   };
 
+  // Determine active tab from current path
+  const tabValue = location.pathname.startsWith("/history")
+    ? "history"
+    : "current";
+
   return (
     <AppBar
       position="static"
       elevation={0}
       sx={{ backgroundColor: "transparent" }}
     >
-      <Toolbar sx={{ justifyContent: "space-between" }}>
+      <Toolbar sx={{ justifyContent: "space-between", flexWrap: "wrap" }}>
         <Typography
           variant={isMobile ? "h6" : "h5"}
           sx={{
             color: textColor,
             fontWeight: 600,
-            flexGrow: 1,
           }}
         >
           SG HYSA Calculator
         </Typography>
+
+        {/* Tab navigation — replaces in-page toggle */}
+        {!isMobile && (
+          <Tabs
+            value={tabValue}
+            onChange={(_, v) => navigate(`/${v}`)}
+            sx={{
+              minHeight: "auto",
+              "& .MuiTabs-indicator": {
+                backgroundColor: primaryColor,
+              },
+            }}
+          >
+            <Tab label="Current Rates" value="current" sx={tabSx} />
+            <Tab label="Rate History" value="history" sx={tabSx} />
+          </Tabs>
+        )}
 
         <Box sx={{ display: "flex", alignItems: "center" }}>
           {isMobile ? (
@@ -70,6 +114,12 @@ export const Header = () => {
                   },
                 }}
               >
+                <MenuItem onClick={() => { navigate("/current"); handleClose(); }}>
+                  Current Rates
+                </MenuItem>
+                <MenuItem onClick={() => { navigate("/history"); handleClose(); }}>
+                  Rate History
+                </MenuItem>
                 <MenuItem>
                   <IconButton
                     href="https://jh123x.com"

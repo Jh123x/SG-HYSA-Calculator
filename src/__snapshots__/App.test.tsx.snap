@@ -7,13 +7,49 @@ exports[`App > should render correctly 1`] = `
     style="--Paper-shadow: none; --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));"
   >
     <div
-      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-yg49xf-MuiToolbar-root"
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-13jmmrb-MuiToolbar-root"
     >
       <h5
-        class="MuiTypography-root MuiTypography-h5 css-ylfd6q-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-h5 css-13lvrsa-MuiTypography-root"
       >
         SG HYSA Calculator
       </h5>
+      <div
+        class="MuiTabs-root css-1aj64px-MuiTabs-root"
+      >
+        <div
+          class="MuiTabs-scroller MuiTabs-fixed css-s2t35c-MuiTabs-scroller"
+          style="overflow: hidden; margin-bottom: 0px;"
+        >
+          <div
+            class="MuiTabs-list css-hzcega-MuiTabs-list"
+            role="tablist"
+          >
+            <button
+              aria-selected="true"
+              class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1p6srvu-MuiButtonBase-root-MuiTab-root"
+              role="tab"
+              tabindex="0"
+              type="button"
+            >
+              Current Rates
+            </button>
+            <button
+              aria-selected="false"
+              class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1p6srvu-MuiButtonBase-root-MuiTab-root"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Rate History
+            </button>
+          </div>
+          <span
+            class="MuiTabs-indicator css-imd4kt-MuiTabs-indicator"
+            style="left: 0px; width: 0px;"
+          />
+        </div>
+      </div>
       <div
         class="MuiBox-root css-70qvj9"
       >
@@ -631,29 +667,6 @@ exports[`App > should render correctly 1`] = `
         type="button"
       >
         Clear
-      </button>
-    </div>
-    <div
-      class="MuiToggleButtonGroup-root MuiToggleButtonGroup-horizontal css-1t6ckv8-MuiToggleButtonGroup-root"
-      role="group"
-    >
-      <button
-        aria-pressed="true"
-        class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeMedium MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-wqwp7v-MuiButtonBase-root-MuiToggleButton-root"
-        tabindex="0"
-        type="button"
-        value="current"
-      >
-        Current Rates
-      </button>
-      <button
-        aria-pressed="false"
-        class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeMedium MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-wqwp7v-MuiButtonBase-root-MuiToggleButton-root"
-        tabindex="0"
-        type="button"
-        value="history"
-      >
-        Rate History
       </button>
     </div>
     <div
