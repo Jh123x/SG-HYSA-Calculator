@@ -28,8 +28,16 @@ const emptyProfile: Profile = {
 describe("deriveCurrentFromHistory", () => {
   it("returns last history entry when history has items", () => {
     const history: RateSnapshot[] = [
-      { effectiveDate: "2024-06-01", interestFn: () => makeResult(2.0), changeSummary: "Old" },
-      { effectiveDate: "2025-03-01", interestFn: () => makeResult(3.0), changeSummary: "New" },
+      {
+        effectiveDate: "2024-06-01",
+        interestFn: () => makeResult(2.0),
+        changeSummary: "Old",
+      },
+      {
+        effectiveDate: "2025-03-01",
+        interestFn: () => makeResult(3.0),
+        changeSummary: "New",
+      },
     ];
     const result = deriveCurrentFromHistory(history);
     expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(3.0);
@@ -38,7 +46,11 @@ describe("deriveCurrentFromHistory", () => {
 
   it("works with single-entry history", () => {
     const history: RateSnapshot[] = [
-      { effectiveDate: "2026-01-01", interestFn: () => makeResult(4.0), changeSummary: "Only" },
+      {
+        effectiveDate: "2026-01-01",
+        interestFn: () => makeResult(4.0),
+        changeSummary: "Only",
+      },
     ];
     const result = deriveCurrentFromHistory(history);
     expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(4.0);
@@ -53,24 +65,110 @@ describe("deriveCurrentFromHistory", () => {
 
   it("skips future-dated entries and returns latest effective one", () => {
     const history: RateSnapshot[] = [
-      { effectiveDate: "2024-06-01", interestFn: () => makeResult(2.0), changeSummary: "Old" },
-      { effectiveDate: "2025-03-01", interestFn: () => makeResult(3.0), changeSummary: "Current" },
-      { effectiveDate: "2035-01-01", interestFn: () => makeResult(5.0), changeSummary: "Future" },
-      { effectiveDate: "2036-06-01", interestFn: () => makeResult(7.0), changeSummary: "Far future" },
+      {
+        effectiveDate: "2024-06-01",
+        interestFn: () => makeResult(2.0),
+        changeSummary: "Old",
+      },
+      {
+        effectiveDate: "2025-03-01",
+        interestFn: () => makeResult(3.0),
+        changeSummary: "Current",
+      },
+      {
+        effectiveDate: "2035-01-01",
+        interestFn: () => makeResult(5.0),
+        changeSummary: "Future",
+      },
+      {
+        effectiveDate: "2036-06-01",
+        interestFn: () => makeResult(7.0),
+        changeSummary: "Far future",
+      },
     ];
     const result = deriveCurrentFromHistory(history);
-    // Should return the 2025-03-01 entry (latest that is ≤ today), NOT the 2035/2036 entries
     expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(3.0);
     expect(result.lastUpdated).toBe("2025-03-01");
   });
 
   it("returns zero-interest with 'Effective' message when all entries are future-dated", () => {
     const history: RateSnapshot[] = [
-      { effectiveDate: "2030-01-01", interestFn: () => makeResult(4.0), changeSummary: "Not yet" },
+      {
+        effectiveDate: "2030-01-01",
+        interestFn: () => makeResult(4.0),
+        changeSummary: "Not yet",
+      },
     ];
     const result = deriveCurrentFromHistory(history);
     expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(0);
     expect(result.lastUpdated).toBe("Effective 2030-01-01");
+  });
+
+  // ── Date validation tests ──
+
+  it("throws on malformed effectiveDate (empty string)", () => {
+    const history: RateSnapshot[] = [
+      {
+        effectiveDate: "",
+        interestFn: () => makeResult(3.0),
+        changeSummary: "bad",
+      },
+    ];
+    expect(() => deriveCurrentFromHistory(history)).toThrow(
+      "Invalid date string",
+    );
+  });
+
+  it("throws on malformed effectiveDate (gibberish)", () => {
+    const history: RateSnapshot[] = [
+      {
+        effectiveDate: "not-a-date",
+        interestFn: () => makeResult(3.0),
+        changeSummary: "bad",
+      },
+    ];
+    expect(() => deriveCurrentFromHistory(history)).toThrow(
+      "Invalid date string",
+    );
+  });
+
+  it("throws on malformed effectiveDate (wrong format)", () => {
+    const history: RateSnapshot[] = [
+      {
+        effectiveDate: "2025/03/15",
+        interestFn: () => makeResult(3.0),
+        changeSummary: "bad",
+      },
+    ];
+    expect(() => deriveCurrentFromHistory(history)).toThrow(
+      "Invalid date string",
+    );
+  });
+
+  it("throws on non-existent date (Feb 30)", () => {
+    const history: RateSnapshot[] = [
+      {
+        effectiveDate: "2025-02-30",
+        interestFn: () => makeResult(3.0),
+        changeSummary: "bad",
+      },
+    ];
+    expect(() => deriveCurrentFromHistory(history)).toThrow(
+      "Invalid date string",
+    );
+  });
+
+  it("accepts valid leap year date", () => {
+    const history: RateSnapshot[] = [
+      {
+        effectiveDate: "2024-02-29",
+        interestFn: () => makeResult(2.0),
+        changeSummary: "leap day",
+      },
+    ];
+    // Should not throw
+    const result = deriveCurrentFromHistory(history);
+    expect(result.lastUpdated).toBe("2024-02-29");
   });
 });
 
@@ -94,8 +192,10 @@ describe("resolveHistoryForChart", () => {
     expect(result).toHaveLength(2);
     expect(result[0].eir).toBe(2.5);
     expect(result[0].changeSummary).toBe("Base rate increase");
+    expect(result[0].date).toBeInstanceOf(Date);
     expect(result[1].eir).toBe(1.8);
     expect(result[1].changeSummary).toBe("Initial rate");
+    expect(result[1].date).toBeInstanceOf(Date);
   });
 
   it("rounds EIR to 2 decimal places", () => {
@@ -130,11 +230,76 @@ describe("resolveHistoryForChart", () => {
   it("returns Coming Soon placeholder when history is empty", () => {
     const result = resolveHistoryForChart([], emptyProfile);
     expect(result).toHaveLength(1);
-    expect(result[0]).toEqual({
-      date: "TBD",
-      yearlyInterest: 0,
-      eir: 0,
-      changeSummary: "Coming soon",
-    });
+    expect(result[0].date.getTime()).toBe(0); // epoch
+    expect(result[0].yearlyInterest).toBe(0);
+    expect(result[0].eir).toBe(0);
+    expect(result[0].changeSummary).toBe("Coming soon");
+  });
+
+  // ── Date validation tests ──
+
+  it("throws on malformed effectiveDate", () => {
+    expect(() =>
+      resolveHistoryForChart(
+        [
+          {
+            effectiveDate: "bad-date",
+            interestFn: () => makeResult(2.0),
+            changeSummary: "nope",
+          },
+        ],
+        emptyProfile,
+      ),
+    ).toThrow("Invalid date string");
+  });
+
+  it("throws on empty effectiveDate string", () => {
+    expect(() =>
+      resolveHistoryForChart(
+        [
+          {
+            effectiveDate: "",
+            interestFn: () => makeResult(2.0),
+            changeSummary: "nope",
+          },
+        ],
+        emptyProfile,
+      ),
+    ).toThrow("Invalid date string");
+  });
+
+  it("throws on non-existent date", () => {
+    expect(() =>
+      resolveHistoryForChart(
+        [
+          {
+            effectiveDate: "2025-13-01",
+            interestFn: () => makeResult(2.0),
+            changeSummary: "nope",
+          },
+        ],
+        emptyProfile,
+      ),
+    ).toThrow("Invalid date string");
+  });
+
+  it("throws when one entry has bad date among good ones", () => {
+    expect(() =>
+      resolveHistoryForChart(
+        [
+          {
+            effectiveDate: "2025-01-01",
+            interestFn: () => makeResult(2.0),
+            changeSummary: "good",
+          },
+          {
+            effectiveDate: "invalid!",
+            interestFn: () => makeResult(3.0),
+            changeSummary: "bad",
+          },
+        ],
+        emptyProfile,
+      ),
+    ).toThrow("Invalid date string");
   });
 });

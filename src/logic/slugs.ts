@@ -13,6 +13,13 @@
 import { bankInfo } from "./constants";
 
 /**
+ * Sentinel slug returned by slugToBankName when the input slug
+ * does not match any known bank.  Contains underscores so it
+ * can never collide with a real slug (which only has hyphens).
+ */
+export const ERROR_SLUG = "__error__";
+
+/**
  * Convert a bank display name (the key in `bankInfo`) to a URL-safe slug.
  */
 export function bankNameToSlug(name: string): string {
@@ -24,13 +31,13 @@ export function bankNameToSlug(name: string): string {
 
 /**
  * Convert a URL slug back to the bank display name.
- * Returns `undefined` when the slug is unknown.
+ * Returns the {@link ERROR_SLUG} sentinel when no bank matches.
  */
-export function slugToBankName(slug: string): string | undefined {
+export function slugToBankName(slug: string): string {
   for (const name of Object.keys(bankInfo)) {
     if (bankNameToSlug(name) === slug) return name;
   }
-  return undefined;
+  return ERROR_SLUG;
 }
 
 /**

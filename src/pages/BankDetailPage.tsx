@@ -13,10 +13,12 @@ import {
   Typography,
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import HomeIcon from "@mui/icons-material/Home";
 import { textColor, bgColor, primaryColor, lineColors } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
-import { slugToBankName } from "../logic/slugs";
+import { slugToBankName, ERROR_SLUG } from "../logic/slugs";
 import { resolveHistoryForChart } from "../logic/history";
+import { formatDate } from "../logic/dates";
 import { InterestVsSavingsChart, type ChartLine } from "../Components/InterestVsSavingsChart";
 import type Profile from "../types/profile";
 
@@ -36,9 +38,10 @@ interface BankDetailPageProps {
 export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
-  const bankName = slug ? slugToBankName(slug) : undefined;
+  const bankName = slug ? slugToBankName(slug) : ERROR_SLUG;
 
-  if (!bankName || !bankInfo[bankName]) {
+  // Unknown bank — show error page with reset option
+  if (bankName === ERROR_SLUG || !bankInfo[bankName]) {
     return (
       <Paper
         sx={{
@@ -49,16 +52,30 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           mt: 3,
         }}
       >
-        <Typography variant="h6" color={textColor}>
-          Bank not found
+        <Typography variant="h5" color={textColor} sx={{ mb: 2 }}>
+          Bank Not Found
         </Typography>
-        <Button
-          variant="outlined"
-          onClick={() => navigate(-1)}
-          sx={{ mt: 2, color: textColor, borderColor: `${textColor}40` }}
-        >
-          Go Back
-        </Button>
+        <Typography variant="body1" color={textColor} sx={{ mb: 3, opacity: 0.7 }}>
+          The bank you're looking for doesn't exist or may have been removed.
+        </Typography>
+        <Box sx={{ display: "flex", gap: 2, justifyContent: "center" }}>
+          <Button
+            variant="outlined"
+            startIcon={<ArrowBackIcon />}
+            onClick={() => navigate(-1)}
+            sx={{ color: textColor, borderColor: `${textColor}40` }}
+          >
+            Go Back
+          </Button>
+          <Button
+            variant="contained"
+            startIcon={<HomeIcon />}
+            onClick={() => navigate("/")}
+            sx={{ backgroundColor: primaryColor, color: "#fff" }}
+          >
+            Go to Calculator
+          </Button>
+        </Box>
       </Paper>
     );
   }
@@ -114,7 +131,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           {bankName}
         </Typography>
         <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 2 }}>
-          {resolved.length > 0 && resolved[resolved.length - 1].date !== "TBD" && (
+          {resolved.length > 0 && resolved[resolved.length - 1].date.getTime() !== 0 && (
             <Chip
               label={`Current EIR: ${resolved[resolved.length - 1].eir.toFixed(2)}%`}
               size="small"
@@ -212,29 +229,31 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
             <TableBody>
               {resolved
                 .sort(
-                  (a, b) =>
-                    new Date(b.date).getTime() - new Date(a.date).getTime(),
+                  (a, b) => b.date.getTime() - a.date.getTime(),
                 )
-                .map((snapshot, idx) => (
+                .map((snapshot, idx) => {
+                  const isTbd = snapshot.date.getTime() === 0;
+                  return (
                   <TableRow key={idx}>
                     <TableCell sx={{ color: textColor }}>
-                      {snapshot.date}
+                      {isTbd ? "TBD" : formatDate(snapshot.date)}
                     </TableCell>
                     <TableCell sx={{ color: textColor }}>
                       {snapshot.changeSummary}
                     </TableCell>
                     <TableCell sx={{ color: textColor, textAlign: "right" }}>
-                      {snapshot.date === "TBD"
+                      {isTbd
                         ? "—"
                         : `$${snapshot.yearlyInterest.toFixed(2)}`}
                     </TableCell>
                     <TableCell sx={{ color: textColor, textAlign: "right" }}>
-                      {snapshot.date === "TBD"
+                      {isTbd
                         ? "—"
                         : `${snapshot.eir.toFixed(2)}%`}
                     </TableCell>
                   </TableRow>
-                ))}
+                );
+                })}
             </TableBody>
           </Table>
         </TableContainer>

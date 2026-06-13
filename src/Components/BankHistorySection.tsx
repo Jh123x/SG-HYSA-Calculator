@@ -12,10 +12,11 @@ import {
   Button,
 } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import { textColor, bgColor } from "../consts/colors";
+import { textColor, bgColor, dangerColor } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
 import { resolveHistoryForChart } from "../logic/history";
+import { formatDate } from "../logic/dates";
 import { bankNameToSlug } from "../logic/slugs";
 
 interface BankHistorySectionProps {
@@ -26,6 +27,9 @@ interface BankHistorySectionProps {
 /**
  * Detail section for a single bank shown in the History tab.
  * Displays the rate change log table + a link to the full detail page.
+ *
+ * When `bankInfo` has no entry for the bank, an error placeholder is shown
+ * instead of silently rendering nothing.
  */
 export const BankHistorySection = ({
   bankName,
@@ -33,7 +37,40 @@ export const BankHistorySection = ({
 }: BankHistorySectionProps) => {
   const navigate = useNavigate();
   const info = bankInfo[bankName];
-  if (!info) return null;
+
+  // ── Error fallback: bank not found in bankInfo ──
+  if (!info) {
+    return (
+      <Paper
+        sx={{
+          p: { xs: 1.5, sm: 2 },
+          borderRadius: "10px",
+          backgroundColor: bgColor,
+          mb: 2,
+          border: `1px solid ${dangerColor}40`,
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: 1,
+          }}
+        >
+          <Typography
+            component="span"
+            sx={{ color: dangerColor, fontWeight: 700, fontSize: 18 }}
+          >
+            !
+          </Typography>
+          <Typography variant="body2" sx={{ color: textColor, opacity: 0.8 }}>
+            Unable to load history for "{bankName}". The bank may have been
+            removed or renamed.
+          </Typography>
+        </Box>
+      </Paper>
+    );
+  }
 
   const resolved = resolveHistoryForChart(info.history, profile);
 
@@ -100,29 +137,31 @@ export const BankHistorySection = ({
           <TableBody>
             {resolved
               .sort(
-                (a, b) =>
-                  new Date(b.date).getTime() - new Date(a.date).getTime(),
+                (a, b) => b.date.getTime() - a.date.getTime(),
               )
-              .map((snapshot, idx) => (
-                <TableRow key={idx}>
-                  <TableCell sx={{ color: textColor }}>
-                    {snapshot.date}
-                  </TableCell>
-                  <TableCell sx={{ color: textColor }}>
-                    {snapshot.changeSummary}
-                  </TableCell>
-                  <TableCell sx={{ color: textColor, textAlign: "right" }}>
-                    {snapshot.date === "TBD"
-                      ? "—"
-                      : `$${snapshot.yearlyInterest.toFixed(2)}`}
-                  </TableCell>
-                  <TableCell sx={{ color: textColor, textAlign: "right" }}>
-                    {snapshot.date === "TBD"
-                      ? "—"
-                      : `${snapshot.eir.toFixed(2)}%`}
-                  </TableCell>
-                </TableRow>
-              ))}
+              .map((snapshot, idx) => {
+                const isTbd = snapshot.date.getTime() === 0;
+                return (
+                  <TableRow key={idx}>
+                    <TableCell sx={{ color: textColor }}>
+                      {isTbd ? "TBD" : formatDate(snapshot.date)}
+                    </TableCell>
+                    <TableCell sx={{ color: textColor }}>
+                      {snapshot.changeSummary}
+                    </TableCell>
+                    <TableCell sx={{ color: textColor, textAlign: "right" }}>
+                      {isTbd
+                        ? "—"
+                        : `$${snapshot.yearlyInterest.toFixed(2)}`}
+                    </TableCell>
+                    <TableCell sx={{ color: textColor, textAlign: "right" }}>
+                      {isTbd
+                        ? "—"
+                        : `${snapshot.eir.toFixed(2)}%`}
+                    </TableCell>
+                  </TableRow>
+                );
+              })}
           </TableBody>
         </Table>
       </TableContainer>

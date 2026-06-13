@@ -27,9 +27,10 @@ describe("BankDetailPage", () => {
     expect(screen.getByText("Back")).toBeDefined();
   });
 
-  it("shows 'Bank not found' for invalid slug", () => {
+  it("shows 'Bank Not Found' for invalid slug", () => {
     renderAt("/bank/nonexistent-bank");
-    expect(screen.getByText("Bank not found")).toBeDefined();
+    expect(screen.getByText("Bank Not Found")).toBeDefined();
+    expect(screen.getByText("Go to Calculator")).toBeDefined();
   });
 
   it("shows summary chip with current EIR", () => {

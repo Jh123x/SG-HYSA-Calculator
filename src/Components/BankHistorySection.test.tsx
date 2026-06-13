@@ -23,12 +23,13 @@ describe("BankHistorySection", () => {
     expect(screen.getByText("View Full Page")).toBeDefined();
   });
 
-  it("returns null for unknown bank", () => {
-    const { container } = render(
+  it("renders error fallback for unknown bank", () => {
+    render(
       <MemoryRouter>
         <BankHistorySection bankName="Fake Bank" profile={profile} />
       </MemoryRouter>,
     );
-    expect(container.innerHTML).toBe("");
+    // Should show error message, not empty
+    expect(screen.getByText(/Unable to load history/)).toBeDefined();
   });
 });

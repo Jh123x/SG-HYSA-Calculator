@@ -1,11 +1,12 @@
 import type Profile from "../types/profile";
 import type { RateSnapshot } from "../types/history";
 import { ResultInterest } from "../types/interest_result";
+import { parseISODate, todayISO } from "./dates";
 
 /** A resolved snapshot ready for charting / display */
 export interface ResolvedHistoryItem {
-  /** ISO date string (YYYY-MM-DD) */
-  date: string;
+  /** Parsed date */
+  date: Date;
   /** Yearly interest in SGD (e.g. 1234.56) */
   yearlyInterest: number;
   /** EIR as a percentage number (e.g. 2.50 for 2.5%) */
@@ -34,18 +35,27 @@ export interface DerivedCurrent {
  *
  * When history is empty or all entries are future-dated, returns a
  * zero-interest fallback.
+ *
+ * All effectiveDate strings are validated via parseISODate — a malformed
+ * date will throw rather than silently produce wrong results.
  */
 export function deriveCurrentFromHistory(
   history: RateSnapshot[],
 ): DerivedCurrent {
-  const today = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
+  const today = todayISO();
 
-  // Walk backwards to find the latest entry that is not in the future
+  // Walk backwards to find the latest entry that is not in the future.
+  // effectiveDate is validated before comparison so invalid dates surface early.
   for (let i = history.length - 1; i >= 0; i--) {
-    if (history[i].effectiveDate <= today) {
+    const entry = history[i];
+
+    // Validate the date before using it — throws on malformed strings
+    parseISODate(entry.effectiveDate);
+
+    if (entry.effectiveDate <= today) {
       return {
-        interestFn: history[i].interestFn,
-        lastUpdated: history[i].effectiveDate,
+        interestFn: entry.interestFn,
+        lastUpdated: entry.effectiveDate,
       };
     }
   }
@@ -53,7 +63,10 @@ export function deriveCurrentFromHistory(
   // Empty history or all entries are future-dated
   return {
     interestFn: ZERO_INTEREST,
-    lastUpdated: history.length > 0 ? `Effective ${history[0].effectiveDate}` : "Coming soon",
+    lastUpdated:
+      history.length > 0
+        ? `Effective ${history[0].effectiveDate}`
+        : "Coming soon",
   };
 }
 
@@ -63,7 +76,11 @@ export function deriveCurrentFromHistory(
  * Each RateSnapshot is computed against the profile to produce
  * EIR percentages for charts and changelogs.
  *
- * When history is empty, returns a single "Coming soon" placeholder.
+ * effectiveDate strings are validated via parseISODate — invalid
+ * dates will throw an error.
+ *
+ * When history is empty, returns a single "Coming soon" placeholder
+ * with a zero-date (epoch).
  */
 export function resolveHistoryForChart(
   history: RateSnapshot[],
@@ -72,7 +89,7 @@ export function resolveHistoryForChart(
   if (history.length === 0) {
     return [
       {
-        date: "TBD",
+        date: new Date(0), // epoch — displayed as "TBD"
         yearlyInterest: 0,
         eir: 0,
         changeSummary: "Coming soon",
@@ -80,9 +97,12 @@ export function resolveHistoryForChart(
     ];
   }
   return history.map((snapshot) => {
+    // Validate date — throws on malformed strings
+    const date = parseISODate(snapshot.effectiveDate);
+
     const result = snapshot.interestFn(profile);
     return {
-      date: snapshot.effectiveDate,
+      date,
       yearlyInterest: result.toYearly(),
       eir: Number(result.toYearlyPercent().toFixed(2)),
       changeSummary: snapshot.changeSummary,

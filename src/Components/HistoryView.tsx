@@ -23,6 +23,7 @@ import { lineColors, textColor, bgColor } from "../consts/colors";
 import type Profile from "../types/profile";
 import type { RateSnapshot } from "../types/history";
 import { resolveHistoryForChart } from "../logic/history";
+import { formatDate } from "../logic/dates";
 import {
   InterestVsSavingsChart,
   type ChartLine,
@@ -164,13 +165,14 @@ const BankAccordion = ({
             <TableBody>
               {resolved
                 .sort(
-                  (a, b) =>
-                    new Date(b.date).getTime() - new Date(a.date).getTime(),
+                  (a, b) => b.date.getTime() - a.date.getTime(),
                 )
-                .map((snapshot, idx) => (
+                .map((snapshot, idx) => {
+                  const isTbd = snapshot.date.getTime() === 0;
+                  return (
                   <TableRow key={idx}>
                     <TableCell sx={{ color: textColor }}>
-                      {snapshot.date}
+                      {isTbd ? "TBD" : formatDate(snapshot.date)}
                     </TableCell>
                     <TableCell sx={{ color: textColor }}>
                       {snapshot.changeSummary}
@@ -178,19 +180,20 @@ const BankAccordion = ({
                     <TableCell
                       sx={{ color: textColor, textAlign: "right" }}
                     >
-                      {snapshot.date === "TBD"
+                      {isTbd
                         ? "—"
                         : `$${snapshot.yearlyInterest.toFixed(2)}`}
                     </TableCell>
                     <TableCell
                       sx={{ color: textColor, textAlign: "right" }}
                     >
-                      {snapshot.date === "TBD"
+                      {isTbd
                         ? "—"
                         : `${snapshot.eir.toFixed(2)}%`}
                     </TableCell>
                   </TableRow>
-                ))}
+                );
+                })}
             </TableBody>
           </Table>
         </TableContainer>

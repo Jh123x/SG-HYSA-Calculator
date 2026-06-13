@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { bankNameToSlug, slugToBankName } from "./slugs";
+import { bankNameToSlug, slugToBankName, ERROR_SLUG } from "./slugs";
 import { bankInfo } from "./constants";
 
 describe("bankNameToSlug", () => {
@@ -35,7 +35,16 @@ describe("slugToBankName", () => {
     }
   });
 
-  it("returns undefined for unknown slug", () => {
-    expect(slugToBankName("nonexistent-bank")).toBeUndefined();
+  it("returns ERROR_SLUG sentinel for unknown slug", () => {
+    expect(slugToBankName("nonexistent-bank")).toBe(ERROR_SLUG);
+  });
+
+  it("returns ERROR_SLUG for empty slug", () => {
+    expect(slugToBankName("")).toBe(ERROR_SLUG);
+  });
+
+  it("ERROR_SLUG cannot collide with real slugs", () => {
+    const allSlugs = Object.keys(bankInfo).map(bankNameToSlug);
+    expect(allSlugs).not.toContain(ERROR_SLUG);
   });
 });
