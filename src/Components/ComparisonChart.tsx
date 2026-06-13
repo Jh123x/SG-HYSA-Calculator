@@ -29,12 +29,8 @@ interface ComparisonChartProps {
  * Time-series step chart comparing yearly interest ($) or EIR (%) across
  * selected banks over time.
  *
- * - X-axis: time (proportional gaps between dates via time scale)
- * - Y-axis: yearly interest ($) or EIR (%)
- * - Lines: stepAfter curve — flat until the next rate change, then a vertical step
- * - Forward-fill: each bank's current rate is shown at every other bank's
- *   change dates so users can compare rates at any point in time.
- * - Toggle between yearly interest ($) and EIR (%)
+ * Validation runs first — when it fails an error Paper is returned and the
+ * data useMemo short-circuits to avoid unnecessary computation.
  */
 export const ComparisonChart = ({
   selectedBanks,
@@ -47,36 +43,28 @@ export const ComparisonChart = ({
     if (selectedBanks.length === 0) {
       return { valid: false, error: "noBanks" } as const;
     }
-    // Check for unknown banks
     const unknown = selectedBanks.filter((b) => !bankInfo[b]);
     if (unknown.length > 0) {
-      return {
-        valid: false,
-        error: "unknownBanks",
-        banks: unknown,
-      } as const;
+      return { valid: false, error: "unknownBanks", banks: unknown } as const;
     }
-    // Check for banks with no history
     const noHistory = selectedBanks.filter(
       (b) => bankInfo[b] && bankInfo[b].history.length === 0,
     );
     if (noHistory.length === selectedBanks.length) {
-      return {
-        valid: false,
-        error: "noHistory",
-      } as const;
+      return { valid: false, error: "noHistory" } as const;
     }
     return { valid: true } as const;
   }, [selectedBanks]);
 
   // ── Data computation ─────────────────────────────────────────────────
+  // Short-circuits when validation fails — returns empty arrays immediately
   const { dataset, series } = useMemo(() => {
     if (!validation.valid) return { dataset: [], series: [] };
 
-    // Step 1: Collect bank points
+    // Collect bank points
     const bankPoints = collectBankPoints(selectedBanks, profile);
 
-    // Step 2: All unique dates, with today appended so lines extend to now
+    // All unique dates, with today appended so lines extend to now
     const allDates = collectAllDates(bankPoints);
     const today = todayISO();
     if (allDates.length > 0 && allDates[allDates.length - 1] !== today) {
@@ -85,14 +73,14 @@ export const ComparisonChart = ({
 
     if (allDates.length === 0) return { dataset: [], series: [] };
 
-    // Step 3: Build dataset with forward/back fill
+    // Build dataset with forward/back fill
     const datasetArr = buildComparisonDataset(
       selectedBanks,
       bankPoints,
       allDates,
     );
 
-    // Step 4: Build series
+    // Build series
     const seriesArr = buildComparisonSeries(selectedBanks, metric);
 
     return { dataset: datasetArr, series: seriesArr };

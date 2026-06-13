@@ -1,5 +1,9 @@
 import { describe, it, expect } from "vitest";
-import { collectBankPoints, collectAllDates, buildComparisonDataset } from "./buildDataset";
+import {
+  collectBankPoints,
+  collectAllDates,
+  buildComparisonDataset,
+} from "./buildDataset";
 import type Profile from "../../types/profile";
 
 const emptyProfile: Profile = {
@@ -147,5 +151,25 @@ describe("buildComparisonDataset", () => {
     // Before A's first date, back-fill to earliest
     expect(dataset[0]["A_yearlyInterest"]).toBe(200);
     expect(dataset[0]["A_eir"]).toBe(2.5);
+  });
+
+  // ── Date validation tests ──
+
+  it("throws on malformed date in bankPoints (via collectBankPoints sort)", () => {
+    // collectAllDates sorts dates; need ≥2 items to trigger the comparator
+    const bankPoints = {
+      A: [{ date: "not-a-date", yearlyInterest: 100, eir: 2.0 }],
+      B: [{ date: "2025-01-01", yearlyInterest: 200, eir: 3.0 }],
+    };
+    expect(() => collectAllDates(bankPoints)).toThrow("Invalid date string");
+  });
+
+  it("throws on malformed date in allDates", () => {
+    const bankPoints = {
+      A: [{ date: "2025-01-01", yearlyInterest: 100, eir: 2.0 }],
+    };
+    expect(() =>
+      buildComparisonDataset(["A"], bankPoints, ["bad-date"]),
+    ).toThrow("Invalid date string");
   });
 });

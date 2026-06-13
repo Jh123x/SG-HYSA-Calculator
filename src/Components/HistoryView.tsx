@@ -23,7 +23,7 @@ import { lineColors, textColor, bgColor } from "../consts/colors";
 import type Profile from "../types/profile";
 import type { RateSnapshot } from "../types/history";
 import { resolveHistoryForChart } from "../logic/history";
-import { formatDate } from "../logic/dates";
+import { formatDate, TBD_DATE } from "../logic/dates";
 import {
   InterestVsSavingsChart,
   type ChartLine,
@@ -163,12 +163,13 @@ const BankAccordion = ({
               </TableRow>
             </TableHead>
             <TableBody>
-              {resolved
-                .sort(
-                  (a, b) => b.date.getTime() - a.date.getTime(),
-                )
+              {/* resolved is already chronologically sorted (oldest first);
+                  reverse for display (latest first) */}
+              {[...resolved]
+                .reverse()
                 .map((snapshot, idx) => {
-                  const isTbd = snapshot.date.getTime() === 0;
+                  const isTbd =
+                    snapshot.date.getTime() === TBD_DATE.getTime();
                   return (
                   <TableRow key={idx}>
                     <TableCell sx={{ color: textColor }}>
@@ -212,13 +213,8 @@ const BankHistoryChart = ({
 }) => {
   if (history.length === 0) return null;
 
-  const sorted = [...history].sort(
-    (a, b) =>
-      new Date(a.effectiveDate).getTime() -
-      new Date(b.effectiveDate).getTime(),
-  );
-
-  const lines: ChartLine[] = sorted.map((snapshot, idx) => ({
+  // history is already chronologically sorted (oldest first)
+  const lines: ChartLine[] = history.map((snapshot, idx) => ({
     dataKey: snapshot.effectiveDate,
     label: snapshot.effectiveDate,
     interestFn: snapshot.interestFn,

@@ -15,9 +15,8 @@ interface Props {
  * Rate History tab.
  *
  * - Bank filter chips (synced to ?banks= URL param)
- * - Prompts user to select banks when none are chosen
- * - Comparison overlay chart when 1+ banks selected (max 3)
- * - Per-bank detail sections below
+ * - Comparison overlay chart when 1+ banks selected (desktop only)
+ * - Per-bank detail sections always visible (with drop-down on mobile)
  */
 
 const BANKS_PARAM = "banks";
@@ -48,24 +47,6 @@ export const HistoryTab = ({ profile }: Props) => {
   const [searchParams, setSearchParams] = useSearchParams();
   const selectedBanks = readBanksFromParams(searchParams);
   const isSmallScreen = useMediaQuery("(max-width:640px)");
-
-  // Guard early — avoid creating handleBankChange on small screens
-  if (isSmallScreen) {
-    return (
-      <Paper
-        sx={{
-          padding: "20px",
-          borderRadius: "10px",
-          textAlign: "center",
-          mt: 3,
-        }}
-      >
-        <Typography variant="body1" color={textColor}>
-          Please view on a larger screen to see the rate history charts.
-        </Typography>
-      </Paper>
-    );
-  }
 
   const handleBankChange = (banks: string[]) => {
     setSearchParams(writeBanksToParams(banks, searchParams), {
@@ -99,8 +80,8 @@ export const HistoryTab = ({ profile }: Props) => {
         profile={profile}
       />
 
-      {/* Show chart when 1+ banks selected */}
-      {selectedBanks.length >= 1 && (
+      {/* Comparison chart — desktop only */}
+      {!isSmallScreen && selectedBanks.length >= 1 && (
         <ComparisonChart
           selectedBanks={selectedBanks}
           profile={profile}
@@ -123,7 +104,7 @@ export const HistoryTab = ({ profile }: Props) => {
         </Paper>
       )}
 
-      {/* Per-bank detail sections */}
+      {/* Per-bank detail sections — always visible */}
       {selectedBanks.length > 0 && (
         <Box sx={{ mt: 1 }}>
           <Typography

@@ -1,7 +1,7 @@
 import type Profile from "../types/profile";
 import type { RateSnapshot } from "../types/history";
 import { ResultInterest } from "../types/interest_result";
-import { parseISODate, todayISO } from "./dates";
+import { parseISODate, todayISO, TBD_DATE } from "./dates";
 
 /** A resolved snapshot ready for charting / display */
 export interface ResolvedHistoryItem {
@@ -89,7 +89,7 @@ export function resolveHistoryForChart(
   if (history.length === 0) {
     return [
       {
-        date: new Date(0), // epoch — displayed as "TBD"
+        date: TBD_DATE,
         yearlyInterest: 0,
         eir: 0,
         changeSummary: "Coming soon",

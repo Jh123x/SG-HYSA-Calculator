@@ -18,6 +18,14 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import ArticleIcon from "@mui/icons-material/Article";
 import { textColor, primaryColor } from "../consts/colors";
 
+/** Navigation tab configuration — single source of truth for routing */
+const TAB_CONFIG = {
+  current: { path: "/", label: "Current Rates" },
+  history: { path: "/history", label: "Rate History" },
+} as const;
+
+type TabKey = keyof typeof TAB_CONFIG;
+
 const tabSx = {
   color: `${textColor}99`,
   textTransform: "none" as const,
@@ -33,6 +41,9 @@ const tabSx = {
 /**
  * Shared header with app title (left), centered navigation tabs (middle),
  * and external links (right).
+ *
+ * Navigation tabs and mobile menu items are generated from TAB_CONFIG
+ * so adding a new tab only requires adding a new entry to the map.
  *
  * Desktop: three-column layout — title | tabs | icons
  * Mobile: title + hamburger menu
@@ -51,10 +62,10 @@ export const Header = () => {
     setAnchorEl(null);
   };
 
-  // Active tab: /history → "history", everything else → "current"
-  const tabValue = location.pathname.startsWith("/history")
-    ? "history"
-    : "current";
+  // Determine active tab from current path using TAB_CONFIG
+  const activeTab = (Object.keys(TAB_CONFIG) as TabKey[]).find(
+    (key) => location.pathname === TAB_CONFIG[key].path,
+  ) ?? "current";
 
   return (
     <AppBar
@@ -86,9 +97,9 @@ export const Header = () => {
         {!isMobile && (
           <Box sx={{ flex: 1, display: "flex", justifyContent: "center" }}>
             <Tabs
-              value={tabValue}
+              value={activeTab}
               onChange={(_, v) => {
-                navigate(v === "current" ? "/" : `/${v}`);
+                navigate(TAB_CONFIG[v as TabKey].path);
               }}
               sx={{
                 minHeight: "auto",
@@ -97,8 +108,14 @@ export const Header = () => {
                 },
               }}
             >
-              <Tab label="Current Rates" value="current" sx={tabSx} />
-              <Tab label="Rate History" value="history" sx={tabSx} />
+              {(Object.keys(TAB_CONFIG) as TabKey[]).map((key) => (
+                <Tab
+                  key={key}
+                  label={TAB_CONFIG[key].label}
+                  value={key}
+                  sx={tabSx}
+                />
+              ))}
             </Tabs>
           </Box>
         )}
@@ -129,22 +146,18 @@ export const Header = () => {
                   },
                 }}
               >
-                <MenuItem
-                  onClick={() => {
-                    navigate("/");
-                    handleClose();
-                  }}
-                >
-                  Current Rates
-                </MenuItem>
-                <MenuItem
-                  onClick={() => {
-                    navigate("/history");
-                    handleClose();
-                  }}
-                >
-                  Rate History
-                </MenuItem>
+                {(Object.keys(TAB_CONFIG) as TabKey[]).map((key) => (
+                  <MenuItem
+                    key={key}
+                    onClick={() => {
+                      navigate(TAB_CONFIG[key].path);
+                      handleClose();
+                    }}
+                    selected={activeTab === key}
+                  >
+                    {TAB_CONFIG[key].label}
+                  </MenuItem>
+                ))}
                 <MenuItem>
                   <IconButton
                     href="https://jh123x.com"

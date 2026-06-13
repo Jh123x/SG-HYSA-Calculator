@@ -3,6 +3,7 @@ import { resolveHistoryForChart, deriveCurrentFromHistory } from "./history";
 import { ResultInterest } from "../types/interest_result";
 import type Profile from "../types/profile";
 import type { RateSnapshot } from "../types/history";
+import { bankInfo } from "./constants";
 
 function makeResult(yearlyPercent: number): ResultInterest {
   return {
@@ -301,5 +302,45 @@ describe("resolveHistoryForChart", () => {
         emptyProfile,
       ),
     ).toThrow("Invalid date string");
+  });
+
+  // ── Sorted-order tests ──
+
+  it("preserves chronological order from input", () => {
+    const result = resolveHistoryForChart(
+      [
+        {
+          effectiveDate: "2024-01-15",
+          interestFn: () => makeResult(1.0),
+          changeSummary: "First",
+        },
+        {
+          effectiveDate: "2024-06-01",
+          interestFn: () => makeResult(2.0),
+          changeSummary: "Second",
+        },
+        {
+          effectiveDate: "2025-03-01",
+          interestFn: () => makeResult(3.0),
+          changeSummary: "Third",
+        },
+      ],
+      emptyProfile,
+    );
+    expect(result[0].date.getTime()).toBeLessThan(result[1].date.getTime());
+    expect(result[1].date.getTime()).toBeLessThan(result[2].date.getTime());
+  });
+
+  it("all bankInfo histories are chronologically sorted (oldest first)", () => {
+    const invalid: string[] = [];
+    for (const [name, info] of Object.entries(bankInfo)) {
+      const dates = info.history.map((h) => h.effectiveDate);
+      for (let i = 1; i < dates.length; i++) {
+        if (dates[i] < dates[i - 1]) {
+          invalid.push(`${name}: ${dates[i - 1]} > ${dates[i]}`);
+        }
+      }
+    }
+    expect(invalid).toEqual([]);
   });
 });

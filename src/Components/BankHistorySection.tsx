@@ -16,7 +16,7 @@ import { textColor, bgColor, dangerColor } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
 import { resolveHistoryForChart } from "../logic/history";
-import { formatDate } from "../logic/dates";
+import { formatDate, TBD_DATE } from "../logic/dates";
 import { bankNameToSlug } from "../logic/slugs";
 
 interface BankHistorySectionProps {
@@ -135,12 +135,13 @@ export const BankHistorySection = ({
             </TableRow>
           </TableHead>
           <TableBody>
-            {resolved
-              .sort(
-                (a, b) => b.date.getTime() - a.date.getTime(),
-              )
+            {/* resolved is already chronologically sorted (oldest first);
+                reverse for display (latest first) */}
+            {[...resolved]
+              .reverse()
               .map((snapshot, idx) => {
-                const isTbd = snapshot.date.getTime() === 0;
+                const isTbd =
+                  snapshot.date.getTime() === TBD_DATE.getTime();
                 return (
                   <TableRow key={idx}>
                     <TableCell sx={{ color: textColor }}>

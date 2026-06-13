@@ -6,6 +6,13 @@
  */
 
 /**
+ * Sentinel date used as a placeholder when a bank has no rate history.
+ * Displayed as "TBD" / "Coming soon". Epoch (1970-01-01) is
+ * intentionally zero so `getTime() === 0` acts as a fast isTbd check.
+ */
+export const TBD_DATE = new Date(0);
+
+/**
  * Parse an ISO date string (YYYY-MM-DD) into a Date object.
  * Throws if the string does not strictly match the format or is
  * not a valid calendar date.

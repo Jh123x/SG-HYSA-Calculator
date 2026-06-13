@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { parseISODate, formatDate, todayISO } from "./dates";
+import { parseISODate, formatDate, todayISO, TBD_DATE } from "./dates";
 
 describe("parseISODate", () => {
   it("parses a valid ISO date string", () => {
@@ -88,5 +88,16 @@ describe("todayISO", () => {
 
   it("matches YYYY-MM-DD format", () => {
     expect(todayISO()).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+  });
+});
+
+describe("TBD_DATE", () => {
+  it("is the epoch sentinel", () => {
+    expect(TBD_DATE.getTime()).toBe(0);
+  });
+
+  it("is distinct from a valid parsed date", () => {
+    const real = parseISODate("2025-01-15");
+    expect(real.getTime()).not.toBe(0);
   });
 });
