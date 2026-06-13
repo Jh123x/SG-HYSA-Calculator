@@ -150,7 +150,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
             >
-              2025-11-14
+              2025-12-01
             </td>
           </tr>
           <tr
@@ -577,7 +577,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
             >
-              2025-10-14
+              2025-11-01
             </td>
           </tr>
           <tr
@@ -622,7 +622,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
             >
-              2026-06-09
+              2026-06-11
             </td>
           </tr>
           <tr
@@ -2157,7 +2157,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
             >
-              2025-11-14
+              2025-12-01
             </td>
           </tr>
           <tr
@@ -2584,7 +2584,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
             >
-              2025-10-14
+              2025-11-01
             </td>
           </tr>
           <tr
@@ -2629,7 +2629,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-45js5g-MuiTableCell-root"
             >
-              2026-06-09
+              2026-06-11
             </td>
           </tr>
           <tr

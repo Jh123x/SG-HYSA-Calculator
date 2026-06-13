@@ -1,5 +1,6 @@
 import type Profile from "../types/profile";
 import type { RateSnapshot } from "../types/history";
+import type { ResultInterest } from "../types/interest_result";
 
 /** A resolved snapshot ready for charting / display */
 export interface ResolvedHistoryItem {
@@ -9,6 +10,41 @@ export interface ResolvedHistoryItem {
   eir: number;
   /** Human-readable description of the change */
   changeSummary: string;
+}
+
+/**
+ * Derive the "current" interest function and last-updated date from the
+ * history array.  When history is present the latest entry wins; otherwise
+ * an explicit fallback is used.
+ *
+ * Usage in constants.tsx:
+ *   "Bank Name": {
+ *     ...deriveCurrentFromHistory(bankHistory, fallbackFn, "2025-01-01"),
+ *     url: "...",
+ *     remarks: "...",
+ *     history: bankHistory,
+ *   }
+ *
+ * This means adding a new RateSnapshot to the history array automatically
+ * updates both the chart *and* the top-level current-rate display — no
+ * manual syncing of interestFn or lastUpdated required.
+ */
+export function deriveCurrentFromHistory(
+  history: RateSnapshot[],
+  fallbackFn: (profile: Profile) => ResultInterest,
+  fallbackDate: string,
+): {
+  interestFn: (profile: Profile) => ResultInterest;
+  lastUpdated: string;
+} {
+  if (history.length > 0) {
+    const latest = history[history.length - 1];
+    return {
+      interestFn: latest.interestFn,
+      lastUpdated: latest.effectiveDate,
+    };
+  }
+  return { interestFn: fallbackFn, lastUpdated: fallbackDate };
 }
 
 /**
