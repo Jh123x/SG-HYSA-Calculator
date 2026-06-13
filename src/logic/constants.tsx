@@ -23,21 +23,18 @@ import { bocSuperSaverHistory } from "./bank_of_china";
 import { chocoFinanceHistory } from "./choco_finance";
 import { deriveCurrentFromHistory } from "./history";
 
-interface Info {
-  interestFn: (profile: Profile) => ResultInterest;
+interface BankDef {
   url: string;
   remarks: string | ReactElement;
-  lastUpdated: string;
   history: RateSnapshot[];
 }
 
-/** Input type: interestFn/lastUpdated optional — filled in by post-processing below */
-type RawInfo = Omit<Info, "interestFn" | "lastUpdated"> & {
-  interestFn?: (profile: Profile) => ResultInterest;
-  lastUpdated?: string;
-};
+interface BankInfo extends BankDef {
+  interestFn: (profile: Profile) => ResultInterest;
+  lastUpdated: string;
+}
 
-const _rawBankInfo: Record<string, RawInfo> = {
+const _rawBankInfo: Record<string, BankDef> = {
   "UOB Bank": {
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     remarks: "Visit their official website to find out more",
@@ -78,14 +75,17 @@ const _rawBankInfo: Record<string, RawInfo> = {
     history: trustBankSignatureHistory,
   },
   "Trust Bank (Zen)": {
-    interestFn: trust_bank_zen_06_2026,
     url: "https://trustbank.sg/savings-account/",
     remarks: "A Flat 0.4% interest rate up to 1.2 million",
-    lastUpdated: "2026-06-05",
-    history: [],
+    history: [
+      {
+        effectiveDate: "2026-06-05",
+        interestFn: trust_bank_zen_06_2026,
+        changeSummary: "Flat 0.4% p.a. up to S$1.2 million",
+      },
+    ],
   },
   "DBS Multiplier Account": {
-    interestFn: dbs_multiplier_interest,
     url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
     remarks: (
       <p>
@@ -94,8 +94,13 @@ const _rawBankInfo: Record<string, RawInfo> = {
         Spending includes credit card / paylah retail spend
       </p>
     ),
-    lastUpdated: "2025-10-14",
-    history: [],
+    history: [
+      {
+        effectiveDate: "2025-10-14",
+        interestFn: dbs_multiplier_interest,
+        changeSummary: "Multiplier rates based on eligible transaction categories",
+      },
+    ],
   },
   GXS: {
     url: "https://www.gxs.com.sg/savings-account",
@@ -160,7 +165,6 @@ const _rawBankInfo: Record<string, RawInfo> = {
     history: maybankSaveUpHistory,
   },
   "Maybank iSAVvy": {
-    interestFn: maybank_isavvy_06_2026,
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks: (
       <p>
@@ -170,11 +174,16 @@ const _rawBankInfo: Record<string, RawInfo> = {
         Rates effective from 11 June 2026.
       </p>
     ),
-    lastUpdated: "2026-06-11",
-    history: [],
+    history: [
+      {
+        effectiveDate: "2026-06-11",
+        interestFn: maybank_isavvy_06_2026,
+        changeSummary:
+          "Simplified tiered rates: 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K)",
+      },
+    ],
   },
   "Maybank iSAVvy Plus": {
-    interestFn: maybank_isavvy_plus_06_2026,
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks: (
       <p>
@@ -185,8 +194,14 @@ const _rawBankInfo: Record<string, RawInfo> = {
         <b>Set "Account Increment" &gt; 0 to qualify for the bonus.</b>
       </p>
     ),
-    lastUpdated: "2026-06-11",
-    history: [],
+    history: [
+      {
+        effectiveDate: "2026-06-11",
+        interestFn: maybank_isavvy_plus_06_2026,
+        changeSummary:
+          "Flat tiered base (0.1875%–0.38%) + 1.52% top-up bonus with monthly ADB increment",
+      },
+    ],
   },
   "Citi Wealth first Account": {
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
@@ -204,12 +219,11 @@ const _rawBankInfo: Record<string, RawInfo> = {
   },
 };
 
-// Fill in interestFn + lastUpdated from history for banks that have it.
-// Banks without history already set these explicitly above.
+// Derive current interestFn + lastUpdated from the latest history entry.
 for (const info of Object.values(_rawBankInfo)) {
   if (info.history.length > 0) {
     Object.assign(info, deriveCurrentFromHistory(info.history));
   }
 }
 
-export const bankInfo = _rawBankInfo as Record<string, Info>;
+export const bankInfo = _rawBankInfo as Record<string, BankInfo>;
