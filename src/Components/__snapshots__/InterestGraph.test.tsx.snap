@@ -13,14 +13,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
         class="css-w3kal1-MuiChartsWrapper-root"
       >
         <ul
-          class="MuiChartsLegend-root MuiChartsLegend-horizontal css-6qmeuq-MuiChartsLegend-root"
+          class="MuiChartsLegend-root MuiChartsLegend-horizontal css-pdrdb0-MuiChartsLegend-root"
         >
           <li
             class="MuiChartsLegend-item"
             data-series="UOB Bank"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -52,14 +53,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 UOB Bank
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="OCBC Bank"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -91,14 +93,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 OCBC Bank
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Maribank"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -130,14 +133,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 Maribank
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Standard Chartered"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -169,14 +173,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 Standard Chartered
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Trust Bank (Signature)"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -208,14 +213,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 Trust Bank (Signature)
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Trust Bank (Zen)"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -247,14 +253,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 Trust Bank (Zen)
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="DBS Multiplier Account"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -286,14 +293,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 DBS Multiplier Account
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="GXS"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -325,14 +333,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 GXS
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Chocolate Finance"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -364,14 +373,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 Chocolate Finance
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Bank of China SuperSaver"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -403,14 +413,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 Bank of China SuperSaver
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Maybank Save Up"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -442,14 +453,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 Maybank Save Up
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Maybank iSAVvy"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -481,14 +493,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 Maybank iSAVvy
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Maybank iSAVvy Plus"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -520,14 +533,15 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 Maybank iSAVvy Plus
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Citi Wealth first Account"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -559,7 +573,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               >
                 Citi Wealth first Account
               </span>
-            </div>
+            </button>
           </li>
         </ul>
         <div
@@ -1505,14 +1519,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
         class="css-w3kal1-MuiChartsWrapper-root"
       >
         <ul
-          class="MuiChartsLegend-root MuiChartsLegend-horizontal css-6qmeuq-MuiChartsLegend-root"
+          class="MuiChartsLegend-root MuiChartsLegend-horizontal css-pdrdb0-MuiChartsLegend-root"
         >
           <li
             class="MuiChartsLegend-item"
             data-series="UOB Bank"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1544,14 +1559,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 UOB Bank
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="OCBC Bank"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1583,14 +1599,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 OCBC Bank
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Maribank"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1622,14 +1639,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 Maribank
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Standard Chartered"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1661,14 +1679,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 Standard Chartered
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Trust Bank (Signature)"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1700,14 +1719,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 Trust Bank (Signature)
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Trust Bank (Zen)"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1739,14 +1759,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 Trust Bank (Zen)
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="DBS Multiplier Account"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1778,14 +1799,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 DBS Multiplier Account
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="GXS"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1817,14 +1839,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 GXS
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Chocolate Finance"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1856,14 +1879,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 Chocolate Finance
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Bank of China SuperSaver"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1895,14 +1919,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 Bank of China SuperSaver
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Maybank Save Up"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1934,14 +1959,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 Maybank Save Up
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Maybank iSAVvy"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -1973,14 +1999,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 Maybank iSAVvy
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Maybank iSAVvy Plus"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -2012,14 +2039,15 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 Maybank iSAVvy Plus
               </span>
-            </div>
+            </button>
           </li>
           <li
             class="MuiChartsLegend-item"
             data-series="Citi Wealth first Account"
           >
-            <div
+            <button
               class="MuiChartsLegend-series"
+              type="button"
             >
               <div
                 aria-hidden="true"
@@ -2051,7 +2079,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               >
                 Citi Wealth first Account
               </span>
-            </div>
+            </button>
           </li>
         </ul>
         <div

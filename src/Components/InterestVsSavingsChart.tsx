@@ -1,4 +1,3 @@
-import { useState, useCallback } from "react";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { Box } from "@mui/material";
 import { lineColors, textColor } from "../consts/colors";
@@ -29,7 +28,7 @@ interface Props {
  * - Y-axis: Yearly Interest ($), starts at 0
  * - One line per entry in `lines`
  * - When `enableLegendToggle` is true, clicking a legend label toggles
- *   that line on/off.
+ *   that line on/off using MUI X Charts' built-in `toggleVisibilityOnClick`.
  */
 export const InterestVsSavingsChart = ({
   lines,
@@ -38,28 +37,6 @@ export const InterestVsSavingsChart = ({
   enableLegendToggle = true,
   children,
 }: Props) => {
-  // Track which series are hidden (by dataKey).  Clicking a legend
-  // item toggles its visibility.
-  const [hiddenKeys, setHiddenKeys] = useState<Set<string>>(new Set());
-
-  const handleLegendClick = useCallback(
-    (_event: React.MouseEvent, legendItem: { id?: string }) => {
-      // In @mui/x-charts, the legend onClick callback receives { id } where
-      // id matches the `id` we set on each series.
-      const key = legendItem.id;
-      if (!key) return;
-      setHiddenKeys((prev) => {
-        const next = new Set(prev);
-        if (next.has(key)) {
-          next.delete(key);
-        } else {
-          next.add(key);
-        }
-        return next;
-      });
-    },
-    [],
-  );
 
   // Build data points from $0 to $200,000 in $10,000 steps
   const data: Record<string, number>[] = Array.from({ length: 21 }, (_, i) => {
@@ -89,7 +66,6 @@ export const InterestVsSavingsChart = ({
     dataKey: line.dataKey,
     label: line.label,
     showMark: true,
-    hidden: enableLegendToggle ? hiddenKeys.has(line.dataKey) : false,
     color: line.color ?? lineColors[idx % lineColors.length],
     valueFormatter: (v: number | null) =>
       v !== null ? `$${v.toFixed(2)}` : "",
@@ -99,7 +75,7 @@ export const InterestVsSavingsChart = ({
     ? ({
         direction: "horizontal" as const,
         position: { vertical: "bottom" as const, horizontal: "center" as const },
-        onClick: handleLegendClick,
+        toggleVisibilityOnClick: true,
       } as any)
     : {
         direction: "horizontal" as const,
