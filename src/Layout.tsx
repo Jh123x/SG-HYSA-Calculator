@@ -14,9 +14,11 @@ interface LayoutProps {
 }
 
 /**
- * Shared layout: Header (always), Profile inputs (always), then page content via <Outlet>.
- * Page content is wrapped in an ErrorBoundary so a single component's
- * rendering error (e.g. a bad date string) doesn't crash the whole app.
+ * Shared layout: Header (always), Profile inputs (error-bounded), then
+ * page content via <Outlet> (error-bounded).
+ *
+ * Each section has its own ErrorBoundary so a crash in one doesn't take
+ * down the other.
  */
 export const Layout = ({ currProfile, setCurrProfile }: LayoutProps) => (
   <ThemeProvider theme={theme}>
@@ -33,7 +35,9 @@ export const Layout = ({ currProfile, setCurrProfile }: LayoutProps) => (
     />
     <Header />
     <Container sx={{ marginTop: "20px", paddingBottom: "20px" }}>
-      <FormInputs currProfile={currProfile} setCurrProfile={setCurrProfile} />
+      <ErrorBoundary>
+        <FormInputs currProfile={currProfile} setCurrProfile={setCurrProfile} />
+      </ErrorBoundary>
       <ErrorBoundary>
         <Outlet />
       </ErrorBoundary>

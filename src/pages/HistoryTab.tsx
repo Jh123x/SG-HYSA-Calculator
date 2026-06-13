@@ -1,5 +1,6 @@
+import { useEffect, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
-import { Box, Typography, useMediaQuery, Paper } from "@mui/material";
+import { Box, Typography, Paper } from "@mui/material";
 import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
 import { BankToggleChips } from "../Components/BankToggleChips";
@@ -14,44 +15,76 @@ interface Props {
 /**
  * Rate History tab.
  *
- * - Bank filter chips (synced to ?banks= URL param)
- * - Comparison overlay chart when 1+ banks selected (desktop only)
- * - Per-bank detail sections always visible (with drop-down on mobile)
+ * - Bank filter chips (primary state lives in sessionStorage)
+ * - Comparison overlay chart when 1+ banks selected
+ * - Per-bank detail sections always visible
+ *
+ * Bank selection persists across tab switches via sessionStorage.
+ * URL param (?banks=) is only consumed on initial load for shareability
+ * and then cleared — all subsequent updates go to sessionStorage only.
  */
 
 const BANKS_PARAM = "banks";
+const BANKS_SESSION_KEY = "history_selected_banks";
 
-function readBanksFromParams(params: URLSearchParams): string[] {
-  const raw = params.get(BANKS_PARAM);
-  if (!raw) return [];
+function parseBanksRaw(raw: string): string[] {
   return raw
     .split(",")
     .map((s) => s.trim())
     .filter((s) => s.length > 0 && bankInfo[s] !== undefined);
 }
 
-function writeBanksToParams(
-  banks: string[],
-  existingParams: URLSearchParams,
-): URLSearchParams {
-  const next = new URLSearchParams(existingParams);
-  if (banks.length === 0) {
-    next.delete(BANKS_PARAM);
-  } else {
-    next.set(BANKS_PARAM, banks.join(","));
+function readSessionBanks(): string[] {
+  try {
+    const stored = sessionStorage.getItem(BANKS_SESSION_KEY);
+    if (!stored) return [];
+    const parsed: unknown = JSON.parse(stored);
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter(
+      (s): s is string => typeof s === "string" && bankInfo[s] !== undefined,
+    );
+  } catch {
+    return [];
   }
-  return next;
 }
 
 export const HistoryTab = ({ profile }: Props) => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const selectedBanks = readBanksFromParams(searchParams);
-  const isSmallScreen = useMediaQuery("(max-width:640px)");
+  const selectedBanks = readSessionBanks();
+
+  // On first mount: if URL has ?banks=, hydrate sessionStorage and clean URL
+  const urlBanks = useMemo(
+    () => (searchParams.get(BANKS_PARAM) ? parseBanksRaw(searchParams.get(BANKS_PARAM)!) : null),
+    // Only run once — parseBanksRaw is stable, and we only care about initial URL
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [],
+  );
+
+  useEffect(() => {
+    if (urlBanks && urlBanks.length > 0) {
+      sessionStorage.setItem(BANKS_SESSION_KEY, JSON.stringify(urlBanks));
+      // Remove ?banks= from URL so subsequent navigations use sessionStorage
+      const next = new URLSearchParams(searchParams);
+      next.delete(BANKS_PARAM);
+      setSearchParams(next, { replace: true });
+    }
+    // Run once on mount only
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleBankChange = (banks: string[]) => {
-    setSearchParams(writeBanksToParams(banks, searchParams), {
-      replace: true,
-    });
+    sessionStorage.setItem(BANKS_SESSION_KEY, JSON.stringify(banks));
+    // Force re-read via state change — use searchParams trick
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      // Keep a minimal signal; actual value is in sessionStorage
+      if (banks.length > 0) {
+        next.set(BANKS_PARAM, banks.join(","));
+      } else {
+        next.delete(BANKS_PARAM);
+      }
+      return next;
+    }, { replace: true });
   };
 
   return (
@@ -80,8 +113,8 @@ export const HistoryTab = ({ profile }: Props) => {
         profile={profile}
       />
 
-      {/* Comparison chart — desktop only */}
-      {!isSmallScreen && selectedBanks.length >= 1 && (
+      {/* Comparison chart */}
+      {selectedBanks.length >= 1 && (
         <ComparisonChart
           selectedBanks={selectedBanks}
           profile={profile}
@@ -104,7 +137,7 @@ export const HistoryTab = ({ profile }: Props) => {
         </Paper>
       )}
 
-      {/* Per-bank detail sections — always visible */}
+      {/* Per-bank detail sections */}
       {selectedBanks.length > 0 && (
         <Box sx={{ mt: 1 }}>
           <Typography

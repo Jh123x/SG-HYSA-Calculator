@@ -5,11 +5,12 @@ import type Profile from "../types/profile";
 import type { RateSnapshot } from "../types/history";
 import { bankInfo } from "./constants";
 
+/**
+ * Creates a ResultInterest whose toYearlyPercent() returns `yearlyPercent`.
+ * Uses savings=100 so that yearlyPercent/savings * 100 = yearlyPercent.
+ */
 function makeResult(yearlyPercent: number): ResultInterest {
-  return {
-    toYearlyPercent: () => yearlyPercent,
-    toYearly: () => 0,
-  } as unknown as ResultInterest;
+  return new ResultInterest(yearlyPercent, 100);
 }
 
 const emptyProfile: Profile = {

@@ -7,10 +7,10 @@ import {
   Paper,
 } from "@mui/material";
 import { LineChart } from "@mui/x-charts/LineChart";
-import { textColor, lineColors, bgColor } from "../consts/colors";
+import { textColor, bgColor } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
-import { formatDate, todayISO } from "../logic/dates";
+import { todayISO } from "../logic/dates";
 import {
   collectBankPoints,
   collectAllDates,
@@ -29,15 +29,14 @@ interface ComparisonChartProps {
  * Time-series step chart comparing yearly interest ($) or EIR (%) across
  * selected banks over time.
  *
- * Validation runs first — when it fails an error Paper is returned and the
- * data useMemo short-circuits to avoid unnecessary computation.
+ * Validation runs first — when it fails an error Paper is returned immediately.
+ * The chart content (with its expensive data computation) is only mounted when
+ * validation passes.
  */
 export const ComparisonChart = ({
   selectedBanks,
   profile,
 }: ComparisonChartProps) => {
-  const [metric, setMetric] = useState<YAxisMetric>("yearlyInterest");
-
   // ── Validation ──────────────────────────────────────────────────────
   const validation = useMemo(() => {
     if (selectedBanks.length === 0) {
@@ -56,37 +55,7 @@ export const ComparisonChart = ({
     return { valid: true } as const;
   }, [selectedBanks]);
 
-  // ── Data computation ─────────────────────────────────────────────────
-  // Short-circuits when validation fails — returns empty arrays immediately
-  const { dataset, series } = useMemo(() => {
-    if (!validation.valid) return { dataset: [], series: [] };
-
-    // Collect bank points
-    const bankPoints = collectBankPoints(selectedBanks, profile);
-
-    // All unique dates, with today appended so lines extend to now
-    const allDates = collectAllDates(bankPoints);
-    const today = todayISO();
-    if (allDates.length > 0 && allDates[allDates.length - 1] !== today) {
-      allDates.push(today);
-    }
-
-    if (allDates.length === 0) return { dataset: [], series: [] };
-
-    // Build dataset with forward/back fill
-    const datasetArr = buildComparisonDataset(
-      selectedBanks,
-      bankPoints,
-      allDates,
-    );
-
-    // Build series
-    const seriesArr = buildComparisonSeries(selectedBanks, metric);
-
-    return { dataset: datasetArr, series: seriesArr };
-  }, [selectedBanks, profile, metric, validation]);
-
-  // ── Error states ────────────────────────────────────────────────────
+  // ── Error state — return early before mounting chart content ────────
   if (!validation.valid) {
     const msg =
       validation.error === "noBanks"
@@ -111,6 +80,44 @@ export const ComparisonChart = ({
     );
   }
 
+  return (
+    <ComparisonChartContent
+      selectedBanks={selectedBanks}
+      profile={profile}
+    />
+  );
+};
+
+// ── Chart content (only mounted when validation passes) ───────────────
+
+const ComparisonChartContent = ({
+  selectedBanks,
+  profile,
+}: ComparisonChartProps) => {
+  const [metric, setMetric] = useState<YAxisMetric>("yearlyInterest");
+
+  const { dataset, series } = useMemo(() => {
+    const bankPoints = collectBankPoints(selectedBanks, profile);
+
+    const allDates = collectAllDates(bankPoints);
+    const today = todayISO();
+    if (allDates.length > 0 && allDates[allDates.length - 1] !== today) {
+      allDates.push(today);
+    }
+
+    if (allDates.length === 0) return { dataset: [], series: [] };
+
+    const datasetArr = buildComparisonDataset(
+      selectedBanks,
+      bankPoints,
+      allDates,
+    );
+
+    const seriesArr = buildComparisonSeries(selectedBanks, metric);
+
+    return { dataset: datasetArr, series: seriesArr };
+  }, [selectedBanks, profile, metric]);
+
   if (dataset.length === 0) {
     return (
       <Paper
@@ -129,7 +136,6 @@ export const ComparisonChart = ({
     );
   }
 
-  // ── Main chart ──────────────────────────────────────────────────────
   return (
     <Paper
       sx={{
