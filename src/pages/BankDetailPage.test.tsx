@@ -22,7 +22,7 @@ function renderAt(path: string) {
 describe("BankDetailPage", () => {
   it("renders bank detail for a valid slug", () => {
     renderAt("/bank/gxs");
-    expect(screen.getByText("GXS")).toBeDefined();
+    expect(screen.getAllByText("GXS").length).toBeGreaterThan(0);
     expect(screen.getByText("Rate Change History")).toBeDefined();
     expect(screen.getByText("Back")).toBeDefined();
   });
@@ -39,8 +39,8 @@ describe("BankDetailPage", () => {
     expect(eirChip).toBeDefined();
   });
 
-  it("renders the interest vs savings chart section", () => {
+  it("renders the EIR over time chart section", () => {
     renderAt("/bank/gxs");
-    expect(screen.getByText("Interest vs Savings Over Time")).toBeDefined();
+    expect(screen.getByText("Interest Rate Over Time")).toBeDefined();
   });
 });

@@ -16,22 +16,26 @@ interface Props {
   lines: ChartLine[];
   profile: Profile;
   height?: number;
+  /** Enable click-to-toggle behaviour on legend items (default true). */
+  enableLegendToggle?: boolean;
   /** Optional children (e.g. ChartsReferenceLine) */
   children?: React.ReactNode;
 }
 
 /**
- * Reusable savings-vs-yearly-interest chart with click-to-toggle legends.
+ * Reusable savings-vs-yearly-interest chart.
  *
- * - X-axis: Savings ($0 - $200k)
+ * - X-axis: Savings ($0 — $200k)
  * - Y-axis: Yearly Interest ($), starts at 0
  * - One line per entry in `lines`
- * - Click a legend label to hide/show that line
+ * - When `enableLegendToggle` is true, clicking a legend label toggles
+ *   that line on/off.
  */
 export const InterestVsSavingsChart = ({
   lines,
   profile,
   height = 300,
+  enableLegendToggle = true,
   children,
 }: Props) => {
   // Track which series are hidden (by dataKey).  Clicking a legend
@@ -39,9 +43,10 @@ export const InterestVsSavingsChart = ({
   const [hiddenKeys, setHiddenKeys] = useState<Set<string>>(new Set());
 
   const handleLegendClick = useCallback(
-    (_event: React.MouseEvent, legendItem: { seriesId?: string }) => {
-      // seriesId matches the `id` we set on each series below
-      const key = legendItem.seriesId;
+    (_event: React.MouseEvent, legendItem: { id?: string }) => {
+      // In @mui/x-charts, the legend onClick callback receives { id } where
+      // id matches the `id` we set on each series.
+      const key = legendItem.id;
       if (!key) return;
       setHiddenKeys((prev) => {
         const next = new Set(prev);
@@ -84,11 +89,22 @@ export const InterestVsSavingsChart = ({
     dataKey: line.dataKey,
     label: line.label,
     showMark: true,
-    hidden: hiddenKeys.has(line.dataKey),
+    hidden: enableLegendToggle ? hiddenKeys.has(line.dataKey) : false,
     color: line.color ?? lineColors[idx % lineColors.length],
     valueFormatter: (v: number | null) =>
       v !== null ? `$${v.toFixed(2)}` : "",
   }));
+
+  const legendSlotProps = enableLegendToggle
+    ? ({
+        direction: "horizontal" as const,
+        position: { vertical: "bottom" as const, horizontal: "center" as const },
+        onClick: handleLegendClick,
+      } as any)
+    : {
+        direction: "horizontal" as const,
+        position: { vertical: "bottom" as const, horizontal: "center" as const },
+      };
 
   return (
     <Box>
@@ -113,17 +129,7 @@ export const InterestVsSavingsChart = ({
         ]}
         height={height}
         grid={{ vertical: true, horizontal: true }}
-        // MUI X Charts supports legend onClick at runtime but the
-        // type definitions for slotProps.legend are overly restrictive.
-        slotProps={
-          {
-            legend: {
-              direction: "horizontal",
-              position: { vertical: "bottom", horizontal: "center" },
-              onClick: handleLegendClick,
-            },
-          } as any
-        }
+        slotProps={{ legend: legendSlotProps } as any}
         sx={{
           ".MuiChartsAxis-label": { fill: textColor },
           ".MuiChartsAxis-tick": { fill: textColor },

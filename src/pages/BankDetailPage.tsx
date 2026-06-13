@@ -14,12 +14,12 @@ import {
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import HomeIcon from "@mui/icons-material/Home";
+import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, bgColor, primaryColor, lineColors } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
 import { slugToBankName, ERROR_SLUG } from "../logic/slugs";
 import { resolveHistoryForChart } from "../logic/history";
 import { formatDate } from "../logic/dates";
-import { InterestVsSavingsChart, type ChartLine } from "../Components/InterestVsSavingsChart";
 import type Profile from "../types/profile";
 
 interface BankDetailPageProps {
@@ -31,7 +31,7 @@ interface BankDetailPageProps {
  *
  * Shows:
  * - Summary card (bank name, current rate, last update)
- * - Time-series chart of yearly interest ($) vs savings across historical snapshots
+ * - Time-series chart of EIR (%) over time
  * - Full rate change log table
  * - Back navigation that restores previous query params
  */
@@ -83,20 +83,15 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   const info = bankInfo[bankName];
   const resolved = resolveHistoryForChart(info.history, profile);
 
-  // Latest snapshot (first chronologically, usable interestFn)
-  const sortedHistory = [...info.history].sort(
-    (a, b) =>
-      new Date(a.effectiveDate).getTime() -
-      new Date(b.effectiveDate).getTime(),
-  );
-
-  // Build chart lines: one per historical snapshot
-  const chartLines: ChartLine[] = sortedHistory.map((snapshot, idx) => ({
-    dataKey: snapshot.effectiveDate,
-    label: snapshot.effectiveDate,
-    interestFn: snapshot.interestFn,
-    color: lineColors[idx % lineColors.length],
-  }));
+  // Build time-series dataset for EIR chart (sorted chronologically,
+  // excluding TBD entries where date is epoch zero)
+  const eirChartData = resolved
+    .filter((r) => r.date.getTime() !== 0)
+    .sort((a, b) => a.date.getTime() - b.date.getTime())
+    .map((r) => ({
+      date: r.date,
+      eir: r.eir,
+    }));
 
   const handleBack = () => {
     navigate(-1);
@@ -150,8 +145,8 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         </Typography>
       </Paper>
 
-      {/* Time-series chart: yearly interest ($) vs savings, all historical snapshots overlaid */}
-      {info.history.length > 0 && (
+      {/* Time-series chart: EIR (%) over time */}
+      {eirChartData.length > 0 && (
         <Paper
           sx={{
             p: 3,
@@ -164,12 +159,47 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
             variant="h6"
             sx={{ color: textColor, fontWeight: 600, mb: 2 }}
           >
-            Interest vs Savings Over Time
+            Interest Rate Over Time
           </Typography>
-          <InterestVsSavingsChart
-            lines={chartLines}
-            profile={profile}
+          <LineChart
+            dataset={eirChartData}
+            xAxis={[
+              {
+                dataKey: "date",
+                label: "Date",
+                scaleType: "time",
+                tickLabelStyle: {
+                  angle: 45,
+                  textAnchor: "start" as const,
+                  fontSize: 11,
+                },
+              },
+            ]}
+            series={[
+              {
+                dataKey: "eir",
+                label: bankName,
+                color: lineColors[0],
+                showMark: true,
+                valueFormatter: (v: number | null) =>
+                  v !== null ? `${v.toFixed(2)}%` : "",
+              },
+            ]}
+            yAxis={[
+              {
+                label: "EIR (%)",
+                scaleType: "linear",
+                min: 0,
+                valueFormatter: (v: number) => `${v.toFixed(1)}%`,
+              },
+            ]}
             height={400}
+            grid={{ vertical: true, horizontal: true }}
+            sx={{
+              ".MuiChartsAxis-label": { fill: textColor },
+              ".MuiChartsAxis-tick": { fill: textColor },
+              ".MuiChartsLegend-label": { fill: textColor },
+            }}
           />
           <Typography
             variant="caption"
@@ -181,11 +211,12 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
               opacity: 0.6,
             }}
           >
-            * Each line represents a different rate snapshot. The legend label is
-            the date the snapshot became effective.
+            * Interest rate changes over time. EIR is calculated based on your
+            current savings amount (${profile.Savings.toLocaleString()}).
             <br />
-            ** The "updated at" date reflects when this calculator was updated,
-            which may differ from the date the bank published the change.
+            ** The &ldquo;updated at&rdquo; date reflects when this calculator
+            was updated, which may differ from the date the bank published the
+            change.
           </Typography>
         </Paper>
       )}

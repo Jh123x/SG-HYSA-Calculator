@@ -1,11 +1,13 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import {
   Box,
   Typography,
   Paper,
+  ToggleButton,
+  ToggleButtonGroup,
 } from "@mui/material";
 import { LineChart } from "@mui/x-charts/LineChart";
-import { textColor, bgColor } from "../consts/colors";
+import { textColor, bgColor, primaryColor } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
 import { todayISO } from "../logic/dates";
@@ -21,10 +23,27 @@ interface ComparisonChartProps {
   profile: Profile;
 }
 
+type ChartMode = "yearly" | "eir";
+
+const BUTTON_SX = {
+  color: textColor,
+  borderColor: `${textColor}40`,
+  textTransform: "none",
+  fontSize: "0.8rem",
+  "&.Mui-selected": {
+    color: "#fff",
+    backgroundColor: primaryColor,
+  },
+  "&.Mui-selected:hover": {
+    backgroundColor: primaryColor,
+    opacity: 0.9,
+  },
+};
+
 /**
- * Time-series step charts comparing yearly interest ($) and EIR (%) across
- * selected banks over time. Two charts are rendered stacked — the top chart
- * shows yearly dollar interest and the bottom chart shows EIR percentage.
+ * Time-series step chart comparing yearly interest ($) or EIR (%) across
+ * selected banks over time. Users toggle between the two metrics via
+ * button group.
  *
  * Validation runs first — when it fails an error Paper is returned immediately.
  * The chart content (with its expensive data computation) is only mounted when
@@ -87,7 +106,7 @@ export const ComparisonChart = ({
 
 // ── Chart content (only mounted when validation passes) ───────────────
 
-/** Shared x-axis config reused by both charts. */
+/** Shared x-axis config reused by both chart modes. */
 const X_AXIS = [
   {
     dataKey: "date" as const,
@@ -112,6 +131,8 @@ const ComparisonChartContent = ({
   selectedBanks,
   profile,
 }: ComparisonChartProps) => {
+  const [chartMode, setChartMode] = useState<ChartMode>("yearly");
+
   const { dataset, yearlySeries, eirSeries } = useMemo(() => {
     const bankPoints = collectBankPoints(selectedBanks, profile);
 
@@ -158,9 +179,33 @@ const ComparisonChartContent = ({
     );
   }
 
+  const isYearly = chartMode === "yearly";
+  const activeSeries = isYearly ? yearlySeries : eirSeries;
+  const yLabel = isYearly ? "Yearly Interest ($)" : "EIR (%)";
+  const yFormatter = isYearly
+    ? (v: number) => `$${v / 1000}k`
+    : (v: number) => `${v.toFixed(1)}%`;
+
   return (
     <>
-      {/* ── Yearly Interest ($) ──────────────────────────────────── */}
+      {/* ── Metric toggle ─────────────────────────────────────────── */}
+      <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
+        <ToggleButtonGroup
+          value={chartMode}
+          exclusive
+          onChange={(_e, v) => v && setChartMode(v)}
+          size="small"
+        >
+          <ToggleButton value="yearly" sx={BUTTON_SX}>
+            Yearly Interest ($)
+          </ToggleButton>
+          <ToggleButton value="eir" sx={BUTTON_SX}>
+            EIR (%)
+          </ToggleButton>
+        </ToggleButtonGroup>
+      </Box>
+
+      {/* ── Chart ─────────────────────────────────────────────────── */}
       <Paper
         sx={{
           p: 3,
@@ -169,60 +214,19 @@ const ComparisonChartContent = ({
           mb: 3,
         }}
       >
-        <Typography variant="h6" sx={{ color: textColor, fontWeight: 600, mb: 2 }}>
-          Yearly Interest ($)
-        </Typography>
-
         <LineChart
           dataset={dataset}
           xAxis={X_AXIS}
-          series={yearlySeries}
+          series={activeSeries}
           yAxis={[
             {
-              label: "Yearly Interest ($)",
+              label: yLabel,
               scaleType: "linear",
               min: 0,
-              valueFormatter: (v: number) => `$${v / 1000}k`,
+              valueFormatter: yFormatter,
             },
           ]}
-          height={350}
-          grid={{ vertical: true, horizontal: true }}
-          slotProps={{
-            legend: {
-              direction: "horizontal",
-              position: { vertical: "bottom", horizontal: "center" },
-            },
-          }}
-          sx={AXIS_SX}
-        />
-      </Paper>
-
-      {/* ── EIR (%) ─────────────────────────────────────────────── */}
-      <Paper
-        sx={{
-          p: 3,
-          borderRadius: "10px",
-          backgroundColor: bgColor,
-          mb: 3,
-        }}
-      >
-        <Typography variant="h6" sx={{ color: textColor, fontWeight: 600, mb: 2 }}>
-          EIR (%)
-        </Typography>
-
-        <LineChart
-          dataset={dataset}
-          xAxis={X_AXIS}
-          series={eirSeries}
-          yAxis={[
-            {
-              label: "EIR (%)",
-              scaleType: "linear",
-              min: 0,
-              valueFormatter: (v: number) => `${v.toFixed(1)}%`,
-            },
-          ]}
-          height={350}
+          height={400}
           grid={{ vertical: true, horizontal: true }}
           slotProps={{
             legend: {

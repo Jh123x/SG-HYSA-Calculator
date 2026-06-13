@@ -777,7 +777,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
       *** Please ask around in your friend group for referrals to get additional bonuses, you can use the my referral code if your friends do not have any.
     </span>
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-dz3rmd-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-f1exrx-MuiPaper-root"
       style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
     >
       <div
@@ -2916,7 +2916,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
       *** Please ask around in your friend group for referrals to get additional bonuses, you can use the my referral code if your friends do not have any.
     </span>
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-dz3rmd-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-f1exrx-MuiPaper-root"
       style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
     >
       <div

@@ -1,5 +1,4 @@
 import {
-  Paper,
   Table,
   TableBody,
   TableCell,
@@ -12,9 +11,6 @@ import {
   AccordionDetails,
   Box,
   Chip,
-  useTheme,
-  useMediaQuery,
-  type Theme,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ChartsReferenceLine } from "@mui/x-charts";
@@ -40,37 +36,6 @@ interface Props {
  * - A table showing Date, Change Summary, Yearly Interest, and EIR
  */
 export const HistoryView = ({ profile }: Props) => {
-  const theme = useTheme();
-  const isSmallScreen = useMediaQuery("(max-width:640px)");
-
-  if (isSmallScreen) {
-    return (
-      <Paper
-        sx={{
-          padding: "20px",
-          borderRadius: "10px",
-          boxShadow: theme.shadows[3],
-          textAlign: "center",
-          mt: 3,
-        }}
-      >
-        <Typography variant="body1" color={textColor}>
-          Please view on a larger screen to see the rate history charts.
-        </Typography>
-      </Paper>
-    );
-  }
-
-  return <HistoryViewContent profile={profile} theme={theme} />;
-};
-
-const HistoryViewContent = ({
-  profile,
-  theme,
-}: {
-  profile: Profile;
-  theme: Theme;
-}) => {
   return (
     <Box sx={{ mt: 3 }}>
       <Typography
