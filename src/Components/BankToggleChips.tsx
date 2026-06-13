@@ -1,13 +1,11 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import {
   Box,
-  Chip,
+  Autocomplete,
   TextField,
   Typography,
   Button,
-  InputAdornment,
 } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
 import { textColor, primaryColor, bgColor } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
@@ -21,23 +19,20 @@ interface BankToggleChipsProps {
 }
 
 /**
- * A responsive grid of toggleable chips for selecting banks.
+ * A searchable multi-select for banks, optimized for mobile and desktop.
  *
- * Features:
- * - Max {MAX_COMPARISON_BANKS} banks can be selected at once
- * - Text filter to narrow down visible chips
- * - Select All / Clear quick actions
- * - Each chip shows the bank name + current EIR
- * - Already-selected chips stay visible even when filter doesn't match
+ * - Autocomplete dropdown replaces the chip grid, saving screen real estate
+ * - Each option shows bank name + current EIR
+ * - Selected banks appear as chips in the input (limitTags=1 on mobile)
+ * - Max {MAX_COMPARISON_BANKS} selectable
+ * - "Select All" convenience button
  */
 export const BankToggleChips = ({
   selected,
   onChange,
   profile,
 }: BankToggleChipsProps) => {
-  const [filter, setFilter] = useState("");
-
-  // Pre-compute current EIR for display on chips
+  // Pre-compute current EIR for display in dropdown options
   const bankEirs = useMemo(() => {
     const eirs: Record<string, string> = {};
     for (const [name, info] of Object.entries(bankInfo)) {
@@ -48,38 +43,15 @@ export const BankToggleChips = ({
   }, [profile]);
 
   const allBankNames = Object.keys(bankInfo);
-
-  const handleToggle = (name: string) => {
-    if (selected.includes(name)) {
-      onChange(selected.filter((n) => n !== name));
-    } else if (selected.length < MAX_COMPARISON_BANKS) {
-      onChange([...selected, name]);
-    }
-    // If at max, ignore
-  };
+  const isMaxed = selected.length >= MAX_COMPARISON_BANKS;
 
   const handleSelectAll = () => {
     onChange(allBankNames.slice(0, MAX_COMPARISON_BANKS));
   };
 
-  const handleClear = () => {
-    onChange([]);
-  };
-
-  // Determine which chips to show based on filter
-  const lowerFilter = filter.toLowerCase();
-  const visibleBanks = filter
-    ? allBankNames.filter(
-        (name) =>
-          name.toLowerCase().includes(lowerFilter) || selected.includes(name),
-      )
-    : allBankNames;
-
-  const isMaxed = selected.length >= MAX_COMPARISON_BANKS;
-
   return (
     <Box sx={{ mb: 3 }}>
-      {/* Controls row */}
+      {/* Top row: Select All + counter */}
       <Box
         sx={{
           display: "flex",
@@ -89,30 +61,6 @@ export const BankToggleChips = ({
           flexWrap: "wrap",
         }}
       >
-        <TextField
-          size="small"
-          placeholder="Filter banks..."
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-          slotProps={{
-            input: {
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SearchIcon sx={{ color: textColor, opacity: 0.6 }} />
-                </InputAdornment>
-              ),
-            },
-          }}
-          sx={{
-            flex: "1 1 200px",
-            maxWidth: "300px",
-            "& .MuiOutlinedInput-root": {
-              color: textColor,
-              "& fieldset": { borderColor: `${textColor}40` },
-              "&:hover fieldset": { borderColor: primaryColor },
-            },
-          }}
-        />
         <Button
           size="small"
           variant="outlined"
@@ -122,75 +70,122 @@ export const BankToggleChips = ({
             color: textColor,
             borderColor: `${textColor}40`,
             textTransform: "none",
+            fontSize: "0.8rem",
+            px: 1.5,
           }}
         >
           Select All
-        </Button>
-        <Button
-          size="small"
-          variant="outlined"
-          onClick={handleClear}
-          disabled={selected.length === 0}
-          sx={{
-            color: textColor,
-            borderColor: `${textColor}40`,
-            textTransform: "none",
-          }}
-        >
-          Clear
         </Button>
         <Typography variant="caption" sx={{ color: textColor, opacity: 0.7 }}>
           {selected.length}/{MAX_COMPARISON_BANKS} selected
         </Typography>
       </Box>
 
-      {/* Chip grid */}
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: 1,
+      {/* Searchable multi-select */}
+      <Autocomplete
+        multiple
+        options={allBankNames}
+        value={selected}
+        onChange={(_event, newValue) => {
+          // Enforce max (shouldn't exceed due to getOptionDisabled, but guard anyway)
+          if (newValue.length <= MAX_COMPARISON_BANKS) {
+            onChange(newValue);
+          }
         }}
-      >
-        {visibleBanks.map((name) => {
-          const isSelected = selected.includes(name);
-          const eir = bankEirs[name];
-
-          return (
-            <Chip
-              key={name}
-              label={
-                <Box component="span" sx={{ display: "flex", gap: 0.5 }}>
-                  <span>{name}</span>
-                  <span
-                    style={{
-                      opacity: 0.7,
-                      fontSize: "0.8em",
-                    }}
-                  >
-                    {profile.Savings > 0 ? `${eir}%` : ""}
-                  </span>
-                </Box>
-              }
-              onClick={() => handleToggle(name)}
-              variant={isSelected ? "filled" : "outlined"}
+        getOptionDisabled={(option) =>
+          !selected.includes(option) && isMaxed
+        }
+        // Show EIR next to each bank in the dropdown
+        getOptionLabel={(option) => option}
+        renderOption={(props, option) => (
+          <li {...props} key={option}>
+            <Box
               sx={{
-                backgroundColor: isSelected ? primaryColor : "transparent",
-                color: isSelected ? "#fff" : textColor,
-                borderColor: isSelected ? primaryColor : `${textColor}30`,
-                opacity: !isSelected && isMaxed ? 0.5 : 1,
-                cursor: !isSelected && isMaxed ? "not-allowed" : "pointer",
-                fontWeight: isSelected ? 600 : 400,
-                "&:hover": {
-                  backgroundColor: isSelected
-                    ? primaryColor
-                    : `${primaryColor}20`,
-                },
+                display: "flex",
+                justifyContent: "space-between",
+                width: "100%",
+                alignItems: "center",
               }}
-            />
-          );
-        })}
-      </Box>
+            >
+              <Typography variant="body2">{option}</Typography>
+              <Typography
+                variant="body2"
+                sx={{ opacity: 0.65, fontSize: "0.85em", ml: 1 }}
+              >
+                {profile.Savings > 0 ? `${bankEirs[option]}%` : ""}
+              </Typography>
+            </Box>
+          </li>
+        )}
+        // Show "+N more" on narrow screens instead of wrapping chips
+        limitTags={1}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            placeholder={
+              selected.length === 0
+                ? "Search banks..."
+                : "Add more banks..."
+            }
+            size="small"
+            slotProps={{
+              ...params.slotProps,
+              input: {
+                ...params.slotProps.input,
+                sx: {
+                  color: textColor,
+                },
+              },
+            }}
+            sx={{
+              "& .MuiOutlinedInput-root": {
+                color: textColor,
+                backgroundColor: bgColor,
+                "& fieldset": { borderColor: `${textColor}40` },
+                "&:hover fieldset": { borderColor: primaryColor },
+                "&.Mui-focused fieldset": { borderColor: primaryColor },
+              },
+              "& .MuiInputBase-input::placeholder": {
+                color: textColor,
+                opacity: 0.5,
+              },
+            }}
+          />
+        )}
+        // Style the dropdown
+        slotProps={{
+          paper: {
+            sx: {
+              backgroundColor: bgColor,
+              border: `1px solid ${textColor}20`,
+              "& .MuiAutocomplete-listbox": {
+                "& .MuiAutocomplete-option": {
+                  color: textColor,
+                  "&.Mui-focused": {
+                    backgroundColor: `${primaryColor}20`,
+                  },
+                  '&[aria-selected="true"]': {
+                    backgroundColor: `${primaryColor}30`,
+                  },
+                  "&.Mui-disabled": {
+                    opacity: 0.35,
+                  },
+                },
+              },
+            },
+          },
+          popper: {
+            sx: {
+              "& .MuiAutocomplete-listbox": {
+                maxHeight: { xs: "60vh", sm: "40vh" },
+              },
+            },
+          },
+        }}
+        disableCloseOnSelect
+        noOptionsText="No banks match your search"
+        fullWidth
+      />
     </Box>
   );
 };

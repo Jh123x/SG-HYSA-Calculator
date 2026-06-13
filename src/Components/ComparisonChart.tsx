@@ -20,13 +20,14 @@ interface ComparisonChartProps {
 }
 
 /**
- * Time-series overlay chart comparing yearly interest ($) or EIR (%) across
+ * Time-series step chart comparing yearly interest ($) or EIR (%) across
  * selected banks over time.
  *
- * - X-axis: date (chronological)
+ * - X-axis: time (proportional gaps between dates via time scale)
  * - Y-axis: yearly interest ($) or EIR (%)
- * - One line per selected bank, max 3
- * - Legend includes bank name + last updated date
+ * - Lines: stepAfter curve — flat until the next rate change, then a vertical step
+ * - Forward-fill: each bank's current rate is shown at every other bank's
+ *   change dates so users can compare rates at any point in time.
  * - Toggle between yearly interest ($) and EIR (%)
  */
 export const ComparisonChart = ({
@@ -35,73 +36,92 @@ export const ComparisonChart = ({
 }: ComparisonChartProps) => {
   const [metric, setMetric] = useState<YAxisMetric>("yearlyInterest");
 
-  // Gather all unique dates across selected banks' histories
   const { dataset, series } = useMemo(() => {
     if (selectedBanks.length === 0) return { dataset: [], series: [] };
 
-    // Collect (date, bankName, value) tuples from history
-    const points: Array<{
-      date: string;
-      bankName: string;
-      yearlyInterest: number;
-      eir: number;
-    }> = [];
+    // ── 1. Collect all (date, bankName, yearlyInterest, eir) tuples ──
+    // Group by bank, sorted by date ascending
+    const bankPoints: Record<
+      string,
+      Array<{ date: string; yearlyInterest: number; eir: number }>
+    > = {};
 
     for (const bankName of selectedBanks) {
       const info = bankInfo[bankName];
       if (!info) continue;
 
-      for (const snapshot of info.history) {
-        const result = snapshot.interestFn(profile);
-        points.push({
-          date: snapshot.effectiveDate,
-          bankName,
-          yearlyInterest: result.toYearly(),
-          eir: parseFloat(result.toYearlyPercent().toFixed(2)),
-        });
-      }
+      bankPoints[bankName] = info.history
+        .map((snapshot) => {
+          const result = snapshot.interestFn(profile);
+          return {
+            date: snapshot.effectiveDate,
+            yearlyInterest: result.toYearly(),
+            eir: parseFloat(result.toYearlyPercent().toFixed(2)),
+          };
+        })
+        .sort(
+          (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
+        );
     }
 
-    // Sort by date
-    points.sort(
-      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
-    );
+    // ── 2. All unique dates across selected banks, sorted ──
+    const allDates = [
+      ...new Set(
+        Object.values(bankPoints).flatMap((pts) => pts.map((p) => p.date)),
+      ),
+    ].sort((a, b) => new Date(a).getTime() - new Date(b).getTime());
 
-    // Create dataset with one row per unique date
-    const dateMap = new Map<
-      string,
-      Record<string, number> & { date: string }
-    >();
-    for (const p of points) {
-      if (!dateMap.has(p.date)) {
-        dateMap.set(p.date, { date: p.date } as Record<string, number> & {
-          date: string;
-        });
+    if (allDates.length === 0) return { dataset: [], series: [] };
+
+    // ── 3. Build dataset: forward-fill each bank's value to every date ──
+    // A bank only gets values for dates ≥ its first data point (no back-fill).
+    const datasetArr = allDates.map((date) => {
+      const row: Record<string, number | Date | null> = {
+        date: new Date(date),
+      };
+
+      for (const bankName of selectedBanks) {
+        const pts = bankPoints[bankName];
+        if (!pts || pts.length === 0) continue;
+
+        // Find the latest point with date ≤ current date (forward-fill)
+        let valueYearly: number | null = null;
+        let valueEir: number | null = null;
+        for (let i = pts.length - 1; i >= 0; i--) {
+          if (pts[i].date <= date) {
+            valueYearly = pts[i].yearlyInterest;
+            valueEir = pts[i].eir;
+            break;
+          }
+        }
+
+        row[`${bankName}_yearlyInterest`] = valueYearly;
+        row[`${bankName}_eir`] = valueEir;
       }
-      const row = dateMap.get(p.date)!;
-      row[`${p.bankName}_yearlyInterest`] = p.yearlyInterest;
-      row[`${p.bankName}_eir`] = p.eir;
-    }
 
-    const datasetArr = Array.from(dateMap.values());
+      return row;
+    });
 
-    // Build series: one line per bank
+    // ── 4. Build series: one stepAfter line per bank ──
     const seriesArr = selectedBanks.map((bankName, idx) => {
       const info = bankInfo[bankName];
       const { lastUpdated } = info
         ? deriveCurrentFromHistory(info.history)
         : { lastUpdated: "" };
       const dataKey = `${bankName}_${metric}`;
+
       return {
         dataKey,
         label: `${bankName} (last: ${lastUpdated})`,
         showMark: true,
         color: lineColors[idx % lineColors.length],
-        connectNulls: true,
+        curve: "stepAfter" as const,
         valueFormatter:
           metric === "yearlyInterest"
-            ? (v: number | null) => (v !== null ? `$${v.toFixed(2)}` : "")
-            : (v: number | null) => (v !== null ? `${v.toFixed(2)}%` : ""),
+            ? (v: number | null) =>
+                v !== null ? `$${v.toFixed(2)}` : ""
+            : (v: number | null) =>
+                v !== null ? `${v.toFixed(2)}%` : "",
       };
     });
 
@@ -183,7 +203,7 @@ export const ComparisonChart = ({
           {
             dataKey: "date",
             label: "Date",
-            scaleType: "band",
+            scaleType: "time",
             tickLabelStyle: {
               angle: 45,
               textAnchor: "start",
@@ -229,8 +249,8 @@ export const ComparisonChart = ({
           opacity: 0.6,
         }}
       >
-        * The "updated at" date reflects when this calculator was updated, which
-        may differ from the date the bank published the change.
+        * The &ldquo;updated at&rdquo; date reflects when this calculator was
+        updated, which may differ from the date the bank published the change.
       </Typography>
     </Paper>
   );

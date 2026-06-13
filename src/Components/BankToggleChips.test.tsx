@@ -1,45 +1,66 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { BankToggleChips } from "./BankToggleChips";
 import { NewProfile } from "../types/profile";
 import { MAX_COMPARISON_BANKS } from "../consts/keys";
 
-/** A profile with non-zero savings so EIR percentages appear on chips. */
+/** A profile with non-zero savings so EIR percentages appear. */
 const profile = NewProfile({ Savings: 50000 });
 
+/** Helper: open the Autocomplete dropdown by clicking the input. */
+const openDropdown = (placeholder = "Search banks...") => {
+  const input = screen.getByRole("combobox");
+  fireEvent.mouseDown(input);
+};
+
 describe("BankToggleChips", () => {
-  it("renders all bank chips", () => {
+  it("renders the search input", () => {
     render(
       <BankToggleChips selected={[]} onChange={() => {}} profile={profile} />,
     );
-    expect(screen.getByText(/GXS/)).toBeDefined();
-    expect(screen.getByText(/Maribank/)).toBeDefined();
-    expect(screen.getByText(/UOB Bank/)).toBeDefined();
+    expect(screen.getByPlaceholderText("Search banks...")).toBeDefined();
   });
 
-  it("selects a bank chip on click", () => {
+  it("selects a bank from the dropdown", async () => {
     const onChange = vi.fn();
     render(
       <BankToggleChips selected={[]} onChange={onChange} profile={profile} />,
     );
-    fireEvent.click(screen.getByText(/GXS/));
+    openDropdown();
+
+    const gxsOption = await screen.findByRole("option", { name: /GXS/ });
+    fireEvent.click(gxsOption);
+
     expect(onChange).toHaveBeenCalledWith(["GXS"]);
   });
 
-  it("deselects a bank chip on second click", () => {
+  it("deselects a bank when chip delete is clicked", () => {
     const onChange = vi.fn();
-    render(
+    const { container } = render(
       <BankToggleChips
         selected={["GXS"]}
         onChange={onChange}
         profile={profile}
       />,
     );
-    fireEvent.click(screen.getByText(/GXS/));
+    // MUI Autocomplete chip has a CancelIcon SVG as the delete trigger.
+    // The chip itself has class MuiChip-deletable; the delete icon is inside it.
+    const chip = container.querySelector(".MuiChip-deletable");
+    expect(chip).toBeTruthy();
+    // Find the delete icon SVG within the chip and click its parent button
+    const svg = chip!.querySelector('[data-testid="CancelIcon"]');
+    if (svg) {
+      fireEvent.click(svg);
+    }
+    // If no CancelIcon found, try clicking the chip itself (some MUI versions handle this)
+    if (!svg) {
+      fireEvent.click(chip!);
+    }
     expect(onChange).toHaveBeenCalledWith([]);
   });
 
-  it("caps at MAX_COMPARISON_BANKS", () => {
+  it("caps at MAX_COMPARISON_BANKS — disabled options not clickable", async () => {
     const onChange = vi.fn();
     const maxed = ["GXS", "Maribank", "UOB Bank"].slice(
       0,
@@ -52,12 +73,17 @@ describe("BankToggleChips", () => {
         profile={profile}
       />,
     );
-    // Find a chip for a bank not in selected — click on OCBC
-    const ocbcChip = screen.queryByText(/OCBC Bank/);
-    if (ocbcChip) {
-      fireEvent.click(ocbcChip);
-      expect(onChange).not.toHaveBeenCalled();
-    }
+    openDropdown("Add more banks...");
+
+    // OCBC should be in the list but disabled
+    const ocbcOption = await screen.findByRole("option", {
+      name: /OCBC Bank/,
+    });
+    expect(ocbcOption.getAttribute("aria-disabled")).toBe("true");
+
+    // Clicking a disabled option should not fire onChange
+    fireEvent.click(ocbcOption);
+    expect(onChange).not.toHaveBeenCalled();
   });
 
   it("shows 'X/Y selected' counter", () => {
@@ -71,14 +97,19 @@ describe("BankToggleChips", () => {
     expect(screen.getByText(/2\/3 selected/)).toBeDefined();
   });
 
-  it("filters banks by search text", () => {
+  it("filters banks by search text", async () => {
     render(
       <BankToggleChips selected={[]} onChange={() => {}} profile={profile} />,
     );
-    const input = screen.getByPlaceholderText("Filter banks...");
-    fireEvent.change(input, { target: { value: "gxs" } });
-    expect(screen.getByText(/GXS/)).toBeDefined();
-    expect(screen.queryByText(/UOB Bank/)).toBeNull();
+    const input = screen.getByRole("combobox");
+    await userEvent.type(input, "gxs");
+
+    // After typing, the dropdown should show only matching options
+    const gxsOption = await screen.findByRole("option", { name: /GXS/ });
+    expect(gxsOption).toBeDefined();
+
+    // UOB Bank should not be in the list
+    expect(screen.queryByRole("option", { name: /UOB Bank/ })).toBeNull();
   });
 
   it("Select All fills up to MAX_COMPARISON_BANKS", () => {
@@ -89,18 +120,5 @@ describe("BankToggleChips", () => {
     fireEvent.click(screen.getByText("Select All"));
     const called = onChange.mock.calls[0][0];
     expect(called.length).toBe(MAX_COMPARISON_BANKS);
-  });
-
-  it("Clear deselects all", () => {
-    const onChange = vi.fn();
-    render(
-      <BankToggleChips
-        selected={["GXS", "Maribank"]}
-        onChange={onChange}
-        profile={profile}
-      />,
-    );
-    fireEvent.click(screen.getByText("Clear"));
-    expect(onChange).toHaveBeenCalledWith([]);
   });
 });
