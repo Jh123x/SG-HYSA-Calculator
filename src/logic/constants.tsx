@@ -4,25 +4,23 @@ import type { ResultInterest } from "../types/interest_result";
 import type { RateSnapshot } from "../types/history";
 
 import { LocalLink } from "../Components/LocalLink";
-import { uob_interest_2025_12, uobHistory } from "./uob";
-import { gxs_interest_06_2026, gxsHistory } from "./gxs";
-import { ocbc_interest_05_2026, ocbcHistory } from "./ocbc360";
-import { maybank_save_up_06_2026, maybankSaveUpHistory, maybank_isavvy_06_2026, maybank_isavvy_plus_06_2026 } from "./maybank";
-import { citi_wealth_first_06_2026, citiHistory } from "./citibank";
-import { stand_chart_interest_06_2026, standChartHistory } from "./stand_chart";
+import { uobHistory } from "./uob";
+import { gxsHistory } from "./gxs";
+import { ocbcHistory } from "./ocbc360";
+import { maybankSaveUpHistory, maybank_isavvy_06_2026, maybank_isavvy_plus_06_2026 } from "./maybank";
+import { citiHistory } from "./citibank";
+import { standChartHistory } from "./stand_chart";
 import { dbs_multiplier_interest } from "./dbs_multiplier";
 import {
-  trust_bank_signature_06_2026,
   trust_bank_zen_06_2026,
   trustBankSignatureHistory,
 } from "./trust_bank";
 import {
-  maribank_interest_12_2025,
   mariInterestRate_12_2025,
   maribankHistory,
 } from "./maribank";
-import { bank_of_china_super_saver_11_2025, bocSuperSaverHistory } from "./bank_of_china";
-import { choco_finance_06_2026, chocoFinanceHistory } from "./choco_finance";
+import { bocSuperSaverHistory } from "./bank_of_china";
+import { chocoFinanceHistory } from "./choco_finance";
 import { deriveCurrentFromHistory } from "./history";
 
 interface Info {
@@ -35,19 +33,19 @@ interface Info {
 
 export const bankInfo: Record<string, Info> = {
   "UOB Bank": {
-    ...deriveCurrentFromHistory(uobHistory, uob_interest_2025_12, "2025-11-14"),
+    ...deriveCurrentFromHistory(uobHistory),
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     remarks: "Visit their official website to find out more",
     history: uobHistory,
   },
   "OCBC Bank": {
-    ...deriveCurrentFromHistory(ocbcHistory, ocbc_interest_05_2026, "2026-04-05"),
+    ...deriveCurrentFromHistory(ocbcHistory),
     url: "https://www.ocbc.com/personal-banking/notices",
     remarks: "Visit the official website to find our more",
     history: ocbcHistory,
   },
   Maribank: {
-    ...deriveCurrentFromHistory(maribankHistory, maribank_interest_12_2025, "2025-12-27"),
+    ...deriveCurrentFromHistory(maribankHistory),
     url: "https://www.maribank.sg/product/mari-savings-account/",
     remarks: (
       <p>
@@ -61,7 +59,7 @@ export const bankInfo: Record<string, Info> = {
     history: maribankHistory,
   },
   "Standard Chartered": {
-    ...deriveCurrentFromHistory(standChartHistory, stand_chart_interest_06_2026, "2026-06-05"),
+    ...deriveCurrentFromHistory(standChartHistory),
     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
     remarks: (
       <p>
@@ -73,7 +71,7 @@ export const bankInfo: Record<string, Info> = {
     history: standChartHistory,
   },
   "Trust Bank (Signature)": {
-    ...deriveCurrentFromHistory(trustBankSignatureHistory, trust_bank_signature_06_2026, "2026-06-05"),
+    ...deriveCurrentFromHistory(trustBankSignatureHistory),
     url: "https://trustbank.sg/savings-account/",
     remarks: <p>Spending assumes 5 x $30 if spending is more than 150.</p>,
     history: trustBankSignatureHistory,
@@ -99,7 +97,7 @@ export const bankInfo: Record<string, Info> = {
     history: [],
   },
   GXS: {
-    ...deriveCurrentFromHistory(gxsHistory, gxs_interest_06_2026, "2026-06-05"),
+    ...deriveCurrentFromHistory(gxsHistory),
     url: "https://www.gxs.com.sg/savings-account",
     remarks: (
       <p>
@@ -119,7 +117,7 @@ export const bankInfo: Record<string, Info> = {
     history: gxsHistory,
   },
   "Chocolate Finance": {
-    ...deriveCurrentFromHistory(chocoFinanceHistory, choco_finance_06_2026, "2026-06-05"),
+    ...deriveCurrentFromHistory(chocoFinanceHistory),
     url: "https://www.chocolatefinance.com/",
     remarks: (
       <p>
@@ -137,7 +135,7 @@ export const bankInfo: Record<string, Info> = {
     history: chocoFinanceHistory,
   },
   "Bank of China SuperSaver": {
-    ...deriveCurrentFromHistory(bocSuperSaverHistory, bank_of_china_super_saver_11_2025, "2025-10-14"),
+    ...deriveCurrentFromHistory(bocSuperSaverHistory),
     url: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
     remarks: (
       <p>
@@ -152,7 +150,7 @@ export const bankInfo: Record<string, Info> = {
     history: bocSuperSaverHistory,
   },
   "Maybank Save Up": {
-    ...deriveCurrentFromHistory(maybankSaveUpHistory, maybank_save_up_06_2026, "2026-06-09"),
+    ...deriveCurrentFromHistory(maybankSaveUpHistory),
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks: (
       <p>
@@ -194,7 +192,7 @@ export const bankInfo: Record<string, Info> = {
     history: [],
   },
   "Citi Wealth first Account": {
-    ...deriveCurrentFromHistory(citiHistory, citi_wealth_first_06_2026, "2026-06-05"),
+    ...deriveCurrentFromHistory(citiHistory),
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks: (
       <>

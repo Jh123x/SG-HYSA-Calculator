@@ -14,37 +14,33 @@ export interface ResolvedHistoryItem {
 
 /**
  * Derive the "current" interest function and last-updated date from the
- * history array.  When history is present the latest entry wins; otherwise
- * an explicit fallback is used.
+ * last entry in a bank's rate history array.
  *
- * Usage in constants.tsx:
+ * Usage in constants.tsx (banks WITH recorded history):
  *   "Bank Name": {
- *     ...deriveCurrentFromHistory(bankHistory, fallbackFn, "2025-01-01"),
+ *     ...deriveCurrentFromHistory(bankHistory),
  *     url: "...",
  *     remarks: "...",
  *     history: bankHistory,
  *   }
  *
- * This means adding a new RateSnapshot to the history array automatically
- * updates both the chart *and* the top-level current-rate display — no
- * manual syncing of interestFn or lastUpdated required.
+ * Banks without history use explicit interestFn + lastUpdated fields.
+ *
+ * Adding a new RateSnapshot to the array automatically updates both the
+ * top-level current-rate display and the chart/changelog — no manual
+ * syncing required.
  */
 export function deriveCurrentFromHistory(
   history: RateSnapshot[],
-  fallbackFn: (profile: Profile) => ResultInterest,
-  fallbackDate: string,
 ): {
   interestFn: (profile: Profile) => ResultInterest;
   lastUpdated: string;
 } {
-  if (history.length > 0) {
-    const latest = history[history.length - 1];
-    return {
-      interestFn: latest.interestFn,
-      lastUpdated: latest.effectiveDate,
-    };
-  }
-  return { interestFn: fallbackFn, lastUpdated: fallbackDate };
+  const latest = history[history.length - 1];
+  return {
+    interestFn: latest.interestFn,
+    lastUpdated: latest.effectiveDate,
+  };
 }
 
 /**

@@ -27,30 +27,21 @@ const emptyProfile: Profile = {
 };
 
 describe("deriveCurrentFromHistory", () => {
-  const fallbackFn = () => makeResult(1.0);
-  const fallbackDate = "2025-01-01";
-
-  it("returns fallback when history is empty", () => {
-    const result = deriveCurrentFromHistory([], fallbackFn, fallbackDate);
-    expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(1.0);
-    expect(result.lastUpdated).toBe("2025-01-01");
-  });
-
   it("returns last history entry when history has items", () => {
     const history: RateSnapshot[] = [
       { effectiveDate: "2024-06-01", interestFn: () => makeResult(2.0), changeSummary: "Old" },
       { effectiveDate: "2025-03-01", interestFn: () => makeResult(3.0), changeSummary: "New" },
     ];
-    const result = deriveCurrentFromHistory(history, fallbackFn, fallbackDate);
+    const result = deriveCurrentFromHistory(history);
     expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(3.0);
     expect(result.lastUpdated).toBe("2025-03-01");
   });
 
-  it("ignores fallback when history is present", () => {
+  it("works with single-entry history", () => {
     const history: RateSnapshot[] = [
       { effectiveDate: "2026-01-01", interestFn: () => makeResult(4.0), changeSummary: "Only" },
     ];
-    const result = deriveCurrentFromHistory(history, fallbackFn, fallbackDate);
+    const result = deriveCurrentFromHistory(history);
     expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(4.0);
     expect(result.lastUpdated).toBe("2026-01-01");
   });
