@@ -9,8 +9,14 @@ import {
 import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, lineColors, bgColor } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
-import { deriveCurrentFromHistory } from "../logic/history";
 import type Profile from "../types/profile";
+import { formatDate } from "../logic/dates";
+import {
+  collectBankPoints,
+  collectAllDates,
+  buildComparisonDataset,
+} from "./comparison/buildDataset";
+import { buildComparisonSeries } from "./comparison/buildSeries";
 
 type YAxisMetric = "yearlyInterest" | "eir";
 
@@ -36,106 +42,66 @@ export const ComparisonChart = ({
 }: ComparisonChartProps) => {
   const [metric, setMetric] = useState<YAxisMetric>("yearlyInterest");
 
-  const { dataset, series } = useMemo(() => {
-    if (selectedBanks.length === 0) return { dataset: [], series: [] };
-
-    // ── 1. Collect all (date, bankName, yearlyInterest, eir) tuples ──
-    // Group by bank, sorted by date ascending
-    const bankPoints: Record<
-      string,
-      Array<{ date: string; yearlyInterest: number; eir: number }>
-    > = {};
-
-    for (const bankName of selectedBanks) {
-      const info = bankInfo[bankName];
-      if (!info) continue;
-
-      bankPoints[bankName] = info.history
-        .map((snapshot) => {
-          const result = snapshot.interestFn(profile);
-          return {
-            date: snapshot.effectiveDate,
-            yearlyInterest: result.toYearly(),
-            eir: parseFloat(result.toYearlyPercent().toFixed(2)),
-          };
-        })
-        .sort(
-          (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
-        );
+  // ── Validation ──────────────────────────────────────────────────────
+  const validation = useMemo(() => {
+    if (selectedBanks.length === 0) {
+      return { valid: false, error: "noBanks" } as const;
     }
+    // Check for unknown banks
+    const unknown = selectedBanks.filter((b) => !bankInfo[b]);
+    if (unknown.length > 0) {
+      return {
+        valid: false,
+        error: "unknownBanks",
+        banks: unknown,
+      } as const;
+    }
+    // Check for banks with no history
+    const noHistory = selectedBanks.filter(
+      (b) => bankInfo[b] && bankInfo[b].history.length === 0,
+    );
+    if (noHistory.length === selectedBanks.length) {
+      return {
+        valid: false,
+        error: "noHistory",
+      } as const;
+    }
+    return { valid: true } as const;
+  }, [selectedBanks]);
 
-    // ── 2. All unique dates across selected banks, sorted ──
-    const allDates = [
-      ...new Set(
-        Object.values(bankPoints).flatMap((pts) => pts.map((p) => p.date)),
-      ),
-    ].sort((a, b) => new Date(a).getTime() - new Date(b).getTime());
+  // ── Data computation ─────────────────────────────────────────────────
+  const { dataset, series } = useMemo(() => {
+    if (!validation.valid) return { dataset: [], series: [] };
+
+    // Step 1: Collect bank points
+    const bankPoints = collectBankPoints(selectedBanks, profile);
+
+    // Step 2: All unique dates
+    const allDates = collectAllDates(bankPoints);
 
     if (allDates.length === 0) return { dataset: [], series: [] };
 
-    // ── 3. Build dataset: forward- and back-fill each bank's value to every date ──
-    // For dates before a bank's first data point, use the earliest known rate.
-    // For dates after a bank's last data point, use the latest known rate.
-    const datasetArr = allDates.map((date) => {
-      const row: Record<string, number | Date | null> = {
-        date: new Date(date),
-      };
+    // Step 3: Build dataset with forward/back fill
+    const datasetArr = buildComparisonDataset(
+      selectedBanks,
+      bankPoints,
+      allDates,
+    );
 
-      for (const bankName of selectedBanks) {
-        const pts = bankPoints[bankName];
-        if (!pts || pts.length === 0) continue;
-
-        // Find the latest point with date ≤ current date (forward-fill)
-        let valueYearly: number | null = null;
-        let valueEir: number | null = null;
-        for (let i = pts.length - 1; i >= 0; i--) {
-          if (pts[i].date <= date) {
-            valueYearly = pts[i].yearlyInterest;
-            valueEir = pts[i].eir;
-            break;
-          }
-        }
-
-        // Back-fill: if no point ≤ date, use the earliest known rate
-        if (valueYearly === null) {
-          valueYearly = pts[0].yearlyInterest;
-          valueEir = pts[0].eir;
-        }
-
-        row[`${bankName}_yearlyInterest`] = valueYearly;
-        row[`${bankName}_eir`] = valueEir;
-      }
-
-      return row;
-    });
-
-    // ── 4. Build series: one stepAfter line per bank ──
-    const seriesArr = selectedBanks.map((bankName, idx) => {
-      const info = bankInfo[bankName];
-      const { lastUpdated } = info
-        ? deriveCurrentFromHistory(info.history)
-        : { lastUpdated: "" };
-      const dataKey = `${bankName}_${metric}`;
-
-      return {
-        dataKey,
-        label: `${bankName} (last: ${lastUpdated})`,
-        showMark: true,
-        color: lineColors[idx % lineColors.length],
-        curve: "stepAfter" as const,
-        valueFormatter:
-          metric === "yearlyInterest"
-            ? (v: number | null) =>
-                v !== null ? `$${v.toFixed(2)}` : ""
-            : (v: number | null) =>
-                v !== null ? `${v.toFixed(2)}%` : "",
-      };
-    });
+    // Step 4: Build series
+    const seriesArr = buildComparisonSeries(selectedBanks, metric);
 
     return { dataset: datasetArr, series: seriesArr };
-  }, [selectedBanks, profile, metric]);
+  }, [selectedBanks, profile, metric, validation]);
 
-  if (selectedBanks.length === 0) {
+  // ── Error states ────────────────────────────────────────────────────
+  if (!validation.valid) {
+    const msg =
+      validation.error === "noBanks"
+        ? "Select banks above to compare their rate history."
+        : validation.error === "unknownBanks"
+          ? `Unable to load data for: ${validation.banks?.join(", ")}.`
+          : "Selected banks have no rate history data yet.";
     return (
       <Paper
         sx={{
@@ -147,12 +113,31 @@ export const ComparisonChart = ({
         }}
       >
         <Typography variant="body1" color={textColor} sx={{ opacity: 0.7 }}>
-          Select banks above to compare their rate history.
+          {msg}
         </Typography>
       </Paper>
     );
   }
 
+  if (dataset.length === 0) {
+    return (
+      <Paper
+        sx={{
+          p: 4,
+          borderRadius: "10px",
+          backgroundColor: bgColor,
+          textAlign: "center",
+          mb: 3,
+        }}
+      >
+        <Typography variant="body1" color={textColor} sx={{ opacity: 0.7 }}>
+          No rate data available for the selected banks.
+        </Typography>
+      </Paper>
+    );
+  }
+
+  // ── Main chart ──────────────────────────────────────────────────────
   return (
     <Paper
       sx={{
