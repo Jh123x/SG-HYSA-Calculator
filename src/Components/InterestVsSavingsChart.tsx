@@ -1,3 +1,4 @@
+import { useState, useCallback } from "react";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { Box } from "@mui/material";
 import { lineColors, textColor } from "../consts/colors";
@@ -20,11 +21,12 @@ interface Props {
 }
 
 /**
- * Reusable savings-vs-yearly-interest chart.
+ * Reusable savings-vs-yearly-interest chart with click-to-toggle legends.
  *
- * - X-axis: Savings ($0 — $200k)
+ * - X-axis: Savings ($0 - $200k)
  * - Y-axis: Yearly Interest ($), starts at 0
  * - One line per entry in `lines`
+ * - Click a legend label to hide/show that line
  */
 export const InterestVsSavingsChart = ({
   lines,
@@ -32,6 +34,28 @@ export const InterestVsSavingsChart = ({
   height = 300,
   children,
 }: Props) => {
+  // Track which series are hidden (by dataKey).  Clicking a legend
+  // item toggles its visibility.
+  const [hiddenKeys, setHiddenKeys] = useState<Set<string>>(new Set());
+
+  const handleLegendClick = useCallback(
+    (_event: React.MouseEvent, legendItem: { seriesId?: string }) => {
+      // seriesId matches the `id` we set on each series below
+      const key = legendItem.seriesId;
+      if (!key) return;
+      setHiddenKeys((prev) => {
+        const next = new Set(prev);
+        if (next.has(key)) {
+          next.delete(key);
+        } else {
+          next.add(key);
+        }
+        return next;
+      });
+    },
+    [],
+  );
+
   // Build data points from $0 to $200,000 in $10,000 steps
   const data: Record<string, number>[] = Array.from({ length: 21 }, (_, i) => {
     const savings = i * 10_000;
@@ -56,9 +80,11 @@ export const InterestVsSavingsChart = ({
   }
 
   const series = lines.map((line, idx) => ({
+    id: line.dataKey,
     dataKey: line.dataKey,
     label: line.label,
     showMark: true,
+    hidden: hiddenKeys.has(line.dataKey),
     color: line.color ?? lineColors[idx % lineColors.length],
     valueFormatter: (v: number | null) =>
       v !== null ? `$${v.toFixed(2)}` : "",
@@ -87,12 +113,17 @@ export const InterestVsSavingsChart = ({
         ]}
         height={height}
         grid={{ vertical: true, horizontal: true }}
-        slotProps={{
-          legend: {
-            direction: "horizontal",
-            position: { vertical: "bottom", horizontal: "center" },
-          },
-        }}
+        // MUI X Charts supports legend onClick at runtime but the
+        // type definitions for slotProps.legend are overly restrictive.
+        slotProps={
+          {
+            legend: {
+              direction: "horizontal",
+              position: { vertical: "bottom", horizontal: "center" },
+              onClick: handleLegendClick,
+            },
+          } as any
+        }
         sx={{
           ".MuiChartsAxis-label": { fill: textColor },
           ".MuiChartsAxis-tick": { fill: textColor },

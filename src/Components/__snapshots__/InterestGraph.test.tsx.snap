@@ -17,7 +17,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
         >
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-0"
+            data-series="UOB Bank"
           >
             <div
               class="MuiChartsLegend-series"
@@ -56,7 +56,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-1"
+            data-series="OCBC Bank"
           >
             <div
               class="MuiChartsLegend-series"
@@ -95,7 +95,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-2"
+            data-series="Maribank"
           >
             <div
               class="MuiChartsLegend-series"
@@ -134,7 +134,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-3"
+            data-series="Standard Chartered"
           >
             <div
               class="MuiChartsLegend-series"
@@ -173,7 +173,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-4"
+            data-series="Trust Bank (Signature)"
           >
             <div
               class="MuiChartsLegend-series"
@@ -212,7 +212,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-5"
+            data-series="Trust Bank (Zen)"
           >
             <div
               class="MuiChartsLegend-series"
@@ -251,7 +251,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-6"
+            data-series="DBS Multiplier Account"
           >
             <div
               class="MuiChartsLegend-series"
@@ -290,7 +290,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-7"
+            data-series="GXS"
           >
             <div
               class="MuiChartsLegend-series"
@@ -329,7 +329,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-8"
+            data-series="Chocolate Finance"
           >
             <div
               class="MuiChartsLegend-series"
@@ -368,7 +368,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-9"
+            data-series="Bank of China SuperSaver"
           >
             <div
               class="MuiChartsLegend-series"
@@ -407,7 +407,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-10"
+            data-series="Maybank Save Up"
           >
             <div
               class="MuiChartsLegend-series"
@@ -446,7 +446,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-11"
+            data-series="Maybank iSAVvy"
           >
             <div
               class="MuiChartsLegend-series"
@@ -485,7 +485,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-12"
+            data-series="Maybank iSAVvy Plus"
           >
             <div
               class="MuiChartsLegend-series"
@@ -524,7 +524,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-13"
+            data-series="Citi Wealth first Account"
           >
             <div
               class="MuiChartsLegend-series"
@@ -686,7 +686,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                 class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
               >
                 <clippath
-                  id="_r_1_-auto-generated-id-0-line-clip"
+                  id="_r_1_-UOB_Bank-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -697,14 +697,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-0-line-clip)"
+                  clip-path="url(#_r_1_-UOB_Bank-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,434.654,84.833,434.308,84.75,433.963C84.667,433.617,84.583,433.271,84.5,432.925C84.417,432.579,84.333,432.233,84.25,431.888C84.167,431.542,84.083,431.196,84,430.85C83.917,430.504,83.833,430.158,83.75,429.813C83.667,429.467,83.583,429.121,83.5,428.775C83.417,428.429,83.333,428.083,83.25,427.738C83.167,427.392,83.083,427.046,83,426.7C82.917,426.354,82.833,426.008,82.75,425.663C82.667,425.317,82.583,424.971,82.5,424.625C82.417,424.279,82.333,423.933,82.25,423.588C82.167,423.242,82.083,422.896,82,422.55C81.917,422.204,81.833,421.858,81.75,421.513C81.667,421.167,81.583,420.821,81.5,420.475C81.417,420.129,81.333,419.783,81.25,419.438C81.167,419.092,81.083,418.746,81,418.4C80.917,418.054,80.833,417.708,80.75,417.363C80.667,417.017,80.583,416.671,80.5,416.325C80.417,415.979,80.333,415.633,80.25,415.288C80.167,414.942,80.083,414.596,80,414.25"
-                    data-series="auto-generated-id-0"
-                    data-series-id="auto-generated-id-0"
+                    data-series="UOB Bank"
+                    data-series-id="UOB Bank"
                     fill="none"
                     opacity="1"
                     stroke="#e6194b"
@@ -713,7 +713,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-1-line-clip"
+                  id="_r_1_-OCBC_Bank-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -724,14 +724,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-1-line-clip)"
+                  clip-path="url(#_r_1_-OCBC_Bank-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,434.654,84.833,434.308,84.75,433.963C84.667,433.617,84.583,433.271,84.5,432.925C84.417,432.579,84.333,432.233,84.25,431.888C84.167,431.542,84.083,431.196,84,430.85C83.917,430.504,83.833,430.158,83.75,429.813C83.667,429.467,83.583,429.121,83.5,428.775C83.417,428.429,83.333,428.083,83.25,427.738C83.167,427.392,83.083,427.046,83,426.7C82.917,426.354,82.833,426.008,82.75,425.663C82.667,425.317,82.583,424.971,82.5,424.625C82.417,424.279,82.333,423.933,82.25,423.588C82.167,423.242,82.083,422.896,82,422.55C81.917,422.204,81.833,421.858,81.75,421.513C81.667,421.167,81.583,420.821,81.5,420.475C81.417,420.129,81.333,419.783,81.25,419.438C81.167,419.092,81.083,418.746,81,418.4C80.917,418.054,80.833,417.708,80.75,417.363C80.667,417.017,80.583,416.671,80.5,416.325C80.417,415.979,80.333,415.633,80.25,415.288C80.167,414.942,80.083,414.596,80,414.25"
-                    data-series="auto-generated-id-1"
-                    data-series-id="auto-generated-id-1"
+                    data-series="OCBC Bank"
+                    data-series-id="OCBC Bank"
                     fill="none"
                     opacity="1"
                     stroke="#3cb44b"
@@ -740,7 +740,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-2-line-clip"
+                  id="_r_1_-Maribank-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -751,14 +751,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-2-line-clip)"
+                  clip-path="url(#_r_1_-Maribank-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,428.913,84.833,422.827,84.75,416.74C84.667,410.653,84.583,404.567,84.5,398.48C84.417,392.393,84.333,386.307,84.25,380.22C84.167,374.133,84.083,368.047,84,361.96C83.917,355.873,83.833,349.787,83.75,343.7C83.667,337.613,83.583,331.527,83.5,325.44C83.417,319.353,83.333,313.267,83.25,307.18C83.167,301.093,83.083,295.007,83,288.92C82.917,282.833,82.833,276.747,82.75,270.66C82.667,264.573,82.583,252.4,82.5,252.4C82.417,252.4,82.333,252.4,82.25,252.4C82.167,252.4,82.083,252.4,82,252.4C81.917,252.4,81.833,252.4,81.75,252.4C81.667,252.4,81.583,252.4,81.5,252.4C81.417,252.4,81.333,252.4,81.25,252.4C81.167,252.4,81.083,252.4,81,252.4C80.917,252.4,80.833,252.4,80.75,252.4C80.667,252.4,80.583,252.4,80.5,252.4C80.417,252.4,80.333,252.4,80.25,252.4C80.167,252.4,80.083,252.4,80,252.4"
-                    data-series="auto-generated-id-2"
-                    data-series-id="auto-generated-id-2"
+                    data-series="Maribank"
+                    data-series-id="Maribank"
                     fill="none"
                     opacity="1"
                     stroke="#ffe119"
@@ -767,7 +767,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-3-line-clip"
+                  id="_r_1_-Standard_Chartered-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -778,14 +778,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-3-line-clip)"
+                  clip-path="url(#_r_1_-Standard_Chartered-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,434.654,84.833,434.308,84.75,433.963C84.667,433.617,84.583,433.271,84.5,432.925C84.417,432.579,84.333,432.233,84.25,431.888C84.167,431.542,84.083,431.196,84,430.85C83.917,430.504,83.833,430.158,83.75,429.813C83.667,429.467,83.583,429.121,83.5,428.775C83.417,428.429,83.333,428.083,83.25,427.738C83.167,427.392,83.083,427.046,83,426.7C82.917,426.354,82.833,426.008,82.75,425.663C82.667,425.317,82.583,424.971,82.5,424.625C82.417,424.279,82.333,423.933,82.25,423.588C82.167,423.242,82.083,422.896,82,422.55C81.917,422.204,81.833,421.858,81.75,421.513C81.667,421.167,81.583,420.821,81.5,420.475C81.417,420.129,81.333,419.783,81.25,419.438C81.167,419.092,81.083,418.746,81,418.4C80.917,418.054,80.833,417.708,80.75,417.363C80.667,417.017,80.583,416.671,80.5,416.325C80.417,415.979,80.333,415.633,80.25,415.288C80.167,414.942,80.083,414.596,80,414.25"
-                    data-series="auto-generated-id-3"
-                    data-series-id="auto-generated-id-3"
+                    data-series="Standard Chartered"
+                    data-series-id="Standard Chartered"
                     fill="none"
                     opacity="1"
                     stroke="#4363d8"
@@ -794,7 +794,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-4-line-clip"
+                  id="_r_1_-Trust_Bank (Signature)-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -805,14 +805,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-4-line-clip)"
+                  clip-path="url(#_r_1_-Trust_Bank (Signature)-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,434.654,84.833,434.308,84.75,433.963C84.667,433.617,84.583,433.271,84.5,432.925C84.417,432.579,84.333,432.233,84.25,431.888C84.167,431.542,84.083,431.196,84,430.85C83.917,430.504,83.833,430.158,83.75,429.813C83.667,429.467,83.583,429.121,83.5,428.775C83.417,428.429,83.333,428.083,83.25,427.738C83.167,427.392,83.083,427.046,83,426.7C82.917,426.354,82.833,426.354,82.75,425.663C82.667,424.971,82.583,367.217,82.5,362.375C82.417,357.533,82.333,357.533,82.25,355.113C82.167,352.692,82.083,350.271,82,347.85C81.917,345.429,81.833,343.008,81.75,340.588C81.667,338.167,81.583,335.746,81.5,333.325C81.417,330.904,81.333,328.483,81.25,326.063C81.167,323.642,81.083,321.221,81,318.8C80.917,316.379,80.833,313.958,80.75,311.538C80.667,309.117,80.583,306.696,80.5,304.275C80.417,301.854,80.333,299.433,80.25,297.013C80.167,294.592,80.083,292.171,80,289.75"
-                    data-series="auto-generated-id-4"
-                    data-series-id="auto-generated-id-4"
+                    data-series="Trust Bank (Signature)"
+                    data-series-id="Trust Bank (Signature)"
                     fill="none"
                     opacity="1"
                     stroke="#f58231"
@@ -821,7 +821,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-5-line-clip"
+                  id="_r_1_-Trust_Bank (Zen)-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -832,14 +832,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-5-line-clip)"
+                  clip-path="url(#_r_1_-Trust_Bank (Zen)-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,432.233,84.833,429.467,84.75,426.7C84.667,423.933,84.583,421.167,84.5,418.4C84.417,415.633,84.333,412.867,84.25,410.1C84.167,407.333,84.083,404.567,84,401.8C83.917,399.033,83.833,396.267,83.75,393.5C83.667,390.733,83.583,387.967,83.5,385.2C83.417,382.433,83.333,379.667,83.25,376.9C83.167,374.133,83.083,371.367,83,368.6C82.917,365.833,82.833,363.067,82.75,360.3C82.667,357.533,82.583,354.767,82.5,352C82.417,349.233,82.333,346.467,82.25,343.7C82.167,340.933,82.083,338.167,82,335.4C81.917,332.633,81.833,329.867,81.75,327.1C81.667,324.333,81.583,321.567,81.5,318.8C81.417,316.033,81.333,313.267,81.25,310.5C81.167,307.733,81.083,304.967,81,302.2C80.917,299.433,80.833,296.667,80.75,293.9C80.667,291.133,80.583,288.367,80.5,285.6C80.417,282.833,80.333,280.067,80.25,277.3C80.167,274.533,80.083,271.767,80,269"
-                    data-series="auto-generated-id-5"
-                    data-series-id="auto-generated-id-5"
+                    data-series="Trust Bank (Zen)"
+                    data-series-id="Trust Bank (Zen)"
                     fill="none"
                     opacity="1"
                     stroke="#911eb4"
@@ -848,7 +848,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-6-line-clip"
+                  id="_r_1_-DBS_Multiplier Account-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -859,14 +859,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-6-line-clip)"
+                  clip-path="url(#_r_1_-DBS_Multiplier Account-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,435,84.833,435,84.75,435C84.667,435,84.583,435,84.5,435C84.417,435,84.333,435,84.25,435C84.167,435,84.083,435,84,435C83.917,435,83.833,435,83.75,435C83.667,435,83.583,435,83.5,435C83.417,435,83.333,435,83.25,435C83.167,435,83.083,435,83,435C82.917,435,82.833,435,82.75,435C82.667,435,82.583,435,82.5,435C82.417,435,82.333,435,82.25,435C82.167,435,82.083,435,82,435C81.917,435,81.833,435,81.75,435C81.667,435,81.583,435,81.5,435C81.417,435,81.333,435,81.25,435C81.167,435,81.083,435,81,435C80.917,435,80.833,435,80.75,435C80.667,435,80.583,435,80.5,435C80.417,435,80.333,435,80.25,435C80.167,435,80.083,435,80,435"
-                    data-series="auto-generated-id-6"
-                    data-series-id="auto-generated-id-6"
+                    data-series="DBS Multiplier Account"
+                    data-series-id="DBS Multiplier Account"
                     fill="none"
                     opacity="1"
                     stroke="#42d4f4"
@@ -875,7 +875,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-7-line-clip"
+                  id="_r_1_-GXS-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -886,14 +886,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-7-line-clip)"
+                  clip-path="url(#_r_1_-GXS-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,426.562,84.833,418.123,84.75,409.685C84.667,401.247,84.583,392.808,84.5,384.37C84.417,375.932,84.333,367.493,84.25,359.055C84.167,350.617,84.083,342.178,84,333.74C83.917,325.302,83.833,316.863,83.75,308.425C83.667,299.987,83.583,291.548,83.5,283.11C83.417,274.672,83.333,266.233,83.25,257.795C83.167,249.357,83.083,240.676,83,232.48C82.917,224.284,82.833,214.462,82.75,208.618C82.667,202.773,82.583,197.413,82.5,197.413C82.417,197.413,82.333,197.413,82.25,197.413C82.167,197.413,82.083,197.413,82,197.413C81.917,197.413,81.833,197.413,81.75,197.413C81.667,197.413,81.583,197.413,81.5,197.413C81.417,197.413,81.333,197.413,81.25,197.413C81.167,197.413,81.083,197.413,81,197.413C80.917,197.413,80.833,197.413,80.75,197.413C80.667,197.413,80.583,197.413,80.5,197.413C80.417,197.413,80.333,197.413,80.25,197.413C80.167,197.413,80.083,197.413,80,197.413"
-                    data-series="auto-generated-id-7"
-                    data-series-id="auto-generated-id-7"
+                    data-series="GXS"
+                    data-series-id="GXS"
                     fill="none"
                     opacity="1"
                     stroke="#f032e6"
@@ -902,7 +902,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-8-line-clip"
+                  id="_r_1_-Chocolate_Finance-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -913,14 +913,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-8-line-clip)"
+                  clip-path="url(#_r_1_-Chocolate_Finance-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,421.167,84.833,407.333,84.75,393.5C84.667,379.667,84.583,365.142,84.5,352C84.417,338.858,84.333,327.1,84.25,314.65C84.167,302.2,84.083,289.75,84,277.3C83.917,264.85,83.833,252.4,83.75,239.95C83.667,227.5,83.583,215.05,83.5,202.6C83.417,190.15,83.333,177.7,83.25,165.25C83.167,152.8,83.083,140.35,83,127.9C82.917,115.45,82.833,103,82.75,90.55C82.667,78.1,82.583,53.2,82.5,53.2C82.417,53.2,82.333,53.2,82.25,53.2C82.167,53.2,82.083,53.2,82,53.2C81.917,53.2,81.833,53.2,81.75,53.2C81.667,53.2,81.583,53.2,81.5,53.2C81.417,53.2,81.333,53.2,81.25,53.2C81.167,53.2,81.083,53.2,81,53.2C80.917,53.2,80.833,53.2,80.75,53.2C80.667,53.2,80.583,53.2,80.5,53.2C80.417,53.2,80.333,53.2,80.25,53.2C80.167,53.2,80.083,53.2,80,53.2"
-                    data-series="auto-generated-id-8"
-                    data-series-id="auto-generated-id-8"
+                    data-series="Chocolate Finance"
+                    data-series-id="Chocolate Finance"
                     fill="none"
                     opacity="1"
                     stroke="#bfef45"
@@ -929,7 +929,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-9-line-clip"
+                  id="_r_1_-Bank_of China SuperSaver-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -940,14 +940,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-9-line-clip)"
+                  clip-path="url(#_r_1_-Bank_of China SuperSaver-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,431.542,84.833,428.083,84.75,424.625C84.667,421.167,84.583,418.746,84.5,414.25C84.417,409.754,84.333,403.183,84.25,397.65C84.167,392.117,84.083,386.583,84,381.05C83.917,375.517,83.833,369.983,83.75,364.45C83.667,358.917,83.583,354.075,83.5,347.85C83.417,341.625,83.333,334.017,83.25,327.1C83.167,320.183,83.083,313.267,83,306.35C82.917,299.433,82.833,292.517,82.75,285.6C82.667,278.683,82.583,270.038,82.5,264.85C82.417,259.663,82.333,257.933,82.25,254.475C82.167,251.017,82.083,247.558,82,244.1C81.917,240.642,81.833,237.183,81.75,233.725C81.667,230.267,81.583,226.808,81.5,223.35C81.417,219.892,81.333,216.433,81.25,212.975C81.167,209.517,81.083,206.058,81,202.6C80.917,199.142,80.833,195.683,80.75,192.225C80.667,188.767,80.583,185.308,80.5,181.85C80.417,178.392,80.333,174.933,80.25,171.475C80.167,168.017,80.083,164.558,80,161.1"
-                    data-series="auto-generated-id-9"
-                    data-series-id="auto-generated-id-9"
+                    data-series="Bank of China SuperSaver"
+                    data-series-id="Bank of China SuperSaver"
                     fill="none"
                     opacity="1"
                     stroke="#fabed4"
@@ -956,7 +956,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-10-line-clip"
+                  id="_r_1_-Maybank_Save Up-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -967,14 +967,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-10-line-clip)"
+                  clip-path="url(#_r_1_-Maybank_Save Up-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,433.433,84.833,431.865,84.75,430.201C84.667,428.536,84.583,426.742,84.5,425.013C84.417,423.284,84.333,421.555,84.25,419.826C84.167,418.096,84.083,416.367,84,414.638C83.917,412.909,83.833,411.396,83.75,409.451C83.667,407.505,83.583,405.128,83.5,402.966C83.417,400.805,83.333,398.643,83.25,396.482C83.167,394.32,83.083,392.159,83,389.997C82.917,387.836,82.833,385.674,82.75,383.513C82.667,381.352,82.583,379.19,82.5,377.029C82.417,374.867,82.333,372.706,82.25,370.544C82.167,368.383,82.083,366.221,82,364.06C81.917,361.898,81.833,359.737,81.75,357.576C81.667,355.414,81.583,353.253,81.5,351.091C81.417,348.93,81.333,346.768,81.25,344.607C81.167,342.445,81.083,340.284,81,338.122C80.917,335.961,80.833,333.799,80.75,331.638C80.667,329.477,80.583,327.315,80.5,325.154C80.417,322.992,80.333,320.831,80.25,318.669C80.167,316.508,80.083,314.346,80,312.185"
-                    data-series="auto-generated-id-10"
-                    data-series-id="auto-generated-id-10"
+                    data-series="Maybank Save Up"
+                    data-series-id="Maybank Save Up"
                     fill="none"
                     opacity="1"
                     stroke="#469990"
@@ -983,7 +983,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-11-line-clip"
+                  id="_r_1_-Maybank_iSAVvy-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -994,14 +994,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-11-line-clip)"
+                  clip-path="url(#_r_1_-Maybank_iSAVvy-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,432.925,84.833,430.85,84.75,428.775C84.667,426.7,84.583,424.625,84.5,422.55C84.417,420.475,84.333,418.4,84.25,416.325C84.167,414.25,84.083,413.558,84,410.1C83.917,406.642,83.833,399.31,83.75,395.575C83.667,391.84,83.583,390.318,83.5,387.69C83.417,385.062,83.333,382.433,83.25,379.805C83.167,377.177,83.083,374.548,83,371.92C82.917,369.292,82.833,366.663,82.75,364.035C82.667,361.407,82.583,358.778,82.5,356.15C82.417,353.522,82.333,350.893,82.25,348.265C82.167,345.637,82.083,343.008,82,340.38C81.917,337.752,81.833,335.123,81.75,332.495C81.667,329.867,81.583,327.238,81.5,324.61C81.417,321.982,81.333,319.353,81.25,316.725C81.167,314.097,81.083,311.468,81,308.84C80.917,306.212,80.833,303.583,80.75,300.955C80.667,298.327,80.583,295.698,80.5,293.07C80.417,290.442,80.333,287.813,80.25,285.185C80.167,282.557,80.083,279.928,80,277.3"
-                    data-series="auto-generated-id-11"
-                    data-series-id="auto-generated-id-11"
+                    data-series="Maybank iSAVvy"
+                    data-series-id="Maybank iSAVvy"
                     fill="none"
                     opacity="1"
                     stroke="#9a6324"
@@ -1010,7 +1010,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-12-line-clip"
+                  id="_r_1_-Maybank_iSAVvy Plus-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -1021,14 +1021,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-12-line-clip)"
+                  clip-path="url(#_r_1_-Maybank_iSAVvy Plus-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,432.925,84.833,430.85,84.75,428.775C84.667,426.7,84.583,424.625,84.5,422.55C84.417,420.475,84.333,418.4,84.25,416.325C84.167,414.25,84.083,413.558,84,410.1C83.917,406.642,83.833,399.31,83.75,395.575C83.667,391.84,83.583,390.318,83.5,387.69C83.417,385.062,83.333,382.433,83.25,379.805C83.167,377.177,83.083,374.548,83,371.92C82.917,369.292,82.833,366.663,82.75,364.035C82.667,361.407,82.583,358.778,82.5,356.15C82.417,353.522,82.333,350.893,82.25,348.265C82.167,345.637,82.083,343.008,82,340.38C81.917,337.752,81.833,335.123,81.75,332.495C81.667,329.867,81.583,327.238,81.5,324.61C81.417,321.982,81.333,319.353,81.25,316.725C81.167,314.097,81.083,311.468,81,308.84C80.917,306.212,80.833,303.583,80.75,300.955C80.667,298.327,80.583,295.698,80.5,293.07C80.417,290.442,80.333,287.813,80.25,285.185C80.167,282.557,80.083,279.928,80,277.3"
-                    data-series="auto-generated-id-12"
-                    data-series-id="auto-generated-id-12"
+                    data-series="Maybank iSAVvy Plus"
+                    data-series-id="Maybank iSAVvy Plus"
                     fill="none"
                     opacity="1"
                     stroke="#fffac8"
@@ -1037,7 +1037,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-auto-generated-id-13-line-clip"
+                  id="_r_1_-Citi_Wealth first Account-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -1048,14 +1048,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-13-line-clip)"
+                  clip-path="url(#_r_1_-Citi_Wealth first Account-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,435,84.833,435,84.75,435C84.667,435,84.583,435,84.5,435C84.417,435,84.333,435,84.25,435C84.167,435,84.083,435,84,435C83.917,435,83.833,435,83.75,435C83.667,435,83.583,435,83.5,435C83.417,435,83.333,435,83.25,435C83.167,435,83.083,435,83,435C82.917,435,82.833,435,82.75,435C82.667,435,82.583,435,82.5,435C82.417,435,82.333,435,82.25,435C82.167,435,82.083,435,82,435C81.917,435,81.833,435,81.75,435C81.667,435,81.583,435,81.5,435C81.417,435,81.333,435,81.25,435C81.167,435,81.083,435,81,435C80.917,435,80.833,435,80.75,435C80.667,435,80.583,435,80.5,435C80.417,435,80.333,435,80.25,435C80.167,435,80.083,435,80,435"
-                    data-series="auto-generated-id-13"
-                    data-series-id="auto-generated-id-13"
+                    data-series="Citi Wealth first Account"
+                    data-series-id="Citi Wealth first Account"
                     fill="none"
                     opacity="1"
                     stroke="#800000"
@@ -1409,60 +1409,60 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                 class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
               >
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-0-line-clip)"
-                  data-series="auto-generated-id-0"
+                  clip-path="url(#_r_1_-UOB_Bank-line-clip)"
+                  data-series="UOB Bank"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-1-line-clip)"
-                  data-series="auto-generated-id-1"
+                  clip-path="url(#_r_1_-OCBC_Bank-line-clip)"
+                  data-series="OCBC Bank"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-2-line-clip)"
-                  data-series="auto-generated-id-2"
+                  clip-path="url(#_r_1_-Maribank-line-clip)"
+                  data-series="Maribank"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-3-line-clip)"
-                  data-series="auto-generated-id-3"
+                  clip-path="url(#_r_1_-Standard_Chartered-line-clip)"
+                  data-series="Standard Chartered"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-4-line-clip)"
-                  data-series="auto-generated-id-4"
+                  clip-path="url(#_r_1_-Trust_Bank (Signature)-line-clip)"
+                  data-series="Trust Bank (Signature)"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-5-line-clip)"
-                  data-series="auto-generated-id-5"
+                  clip-path="url(#_r_1_-Trust_Bank (Zen)-line-clip)"
+                  data-series="Trust Bank (Zen)"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-6-line-clip)"
-                  data-series="auto-generated-id-6"
+                  clip-path="url(#_r_1_-DBS_Multiplier Account-line-clip)"
+                  data-series="DBS Multiplier Account"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-7-line-clip)"
-                  data-series="auto-generated-id-7"
+                  clip-path="url(#_r_1_-GXS-line-clip)"
+                  data-series="GXS"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-8-line-clip)"
-                  data-series="auto-generated-id-8"
+                  clip-path="url(#_r_1_-Chocolate_Finance-line-clip)"
+                  data-series="Chocolate Finance"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-9-line-clip)"
-                  data-series="auto-generated-id-9"
+                  clip-path="url(#_r_1_-Bank_of China SuperSaver-line-clip)"
+                  data-series="Bank of China SuperSaver"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-10-line-clip)"
-                  data-series="auto-generated-id-10"
+                  clip-path="url(#_r_1_-Maybank_Save Up-line-clip)"
+                  data-series="Maybank Save Up"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-11-line-clip)"
-                  data-series="auto-generated-id-11"
+                  clip-path="url(#_r_1_-Maybank_iSAVvy-line-clip)"
+                  data-series="Maybank iSAVvy"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-12-line-clip)"
-                  data-series="auto-generated-id-12"
+                  clip-path="url(#_r_1_-Maybank_iSAVvy Plus-line-clip)"
+                  data-series="Maybank iSAVvy Plus"
                 />
                 <g
-                  clip-path="url(#_r_1_-auto-generated-id-13-line-clip)"
-                  data-series="auto-generated-id-13"
+                  clip-path="url(#_r_1_-Citi_Wealth first Account-line-clip)"
+                  data-series="Citi Wealth first Account"
                 />
               </g>
             </g>
@@ -1509,7 +1509,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
         >
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-0"
+            data-series="UOB Bank"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1548,7 +1548,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-1"
+            data-series="OCBC Bank"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1587,7 +1587,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-2"
+            data-series="Maribank"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1626,7 +1626,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-3"
+            data-series="Standard Chartered"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1665,7 +1665,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-4"
+            data-series="Trust Bank (Signature)"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1704,7 +1704,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-5"
+            data-series="Trust Bank (Zen)"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1743,7 +1743,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-6"
+            data-series="DBS Multiplier Account"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1782,7 +1782,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-7"
+            data-series="GXS"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1821,7 +1821,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-8"
+            data-series="Chocolate Finance"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1860,7 +1860,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-9"
+            data-series="Bank of China SuperSaver"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1899,7 +1899,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-10"
+            data-series="Maybank Save Up"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1938,7 +1938,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-11"
+            data-series="Maybank iSAVvy"
           >
             <div
               class="MuiChartsLegend-series"
@@ -1977,7 +1977,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-12"
+            data-series="Maybank iSAVvy Plus"
           >
             <div
               class="MuiChartsLegend-series"
@@ -2016,7 +2016,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="auto-generated-id-13"
+            data-series="Citi Wealth first Account"
           >
             <div
               class="MuiChartsLegend-series"
@@ -2150,7 +2150,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                 class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
               >
                 <clippath
-                  id="_r_4_-auto-generated-id-0-line-clip"
+                  id="_r_4_-UOB_Bank-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2161,14 +2161,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-0-line-clip)"
+                  clip-path="url(#_r_4_-UOB_Bank-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,430.389,84.833,425.778,84.75,421.167C84.667,416.556,84.583,411.944,84.5,407.333C84.417,402.722,84.333,398.111,84.25,393.5C84.167,388.889,84.083,384.278,84,379.667C83.917,375.056,83.833,370.444,83.75,365.833C83.667,361.222,83.583,356.611,83.5,352C83.417,347.389,83.333,344.507,83.25,338.167C83.167,331.826,83.083,323.757,83,313.958C82.917,304.16,82.833,290.903,82.75,279.375C82.667,267.847,82.583,256.319,82.5,244.792C82.417,233.264,82.333,221.736,82.25,210.208C82.167,198.681,82.083,188.19,82,175.625C81.917,163.06,81.833,149.457,81.75,134.817C81.667,120.176,81.583,103.461,81.5,87.783C81.417,72.106,81.333,41.211,81.25,40.75C81.167,40.289,81.083,40.289,81,40.058C80.917,39.828,80.833,39.597,80.75,39.367C80.667,39.136,80.583,38.906,80.5,38.675C80.417,38.444,80.333,38.214,80.25,37.983C80.167,37.753,80.083,37.522,80,37.292"
-                    data-series="auto-generated-id-0"
-                    data-series-id="auto-generated-id-0"
+                    data-series="UOB Bank"
+                    data-series-id="UOB Bank"
                     fill="none"
                     opacity="1"
                     stroke="#e6194b"
@@ -2177,7 +2177,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-1-line-clip"
+                  id="_r_4_-OCBC_Bank-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2188,14 +2188,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-1-line-clip)"
+                  clip-path="url(#_r_4_-OCBC_Bank-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,427.161,84.833,419.322,84.75,411.483C84.667,403.644,84.583,395.806,84.5,387.967C84.417,380.128,84.333,372.289,84.25,364.45C84.167,356.611,84.083,348.772,84,340.933C83.917,333.094,83.833,325.256,83.75,317.417C83.667,309.578,83.583,301.739,83.5,293.9C83.417,286.061,83.333,279.375,83.25,270.383C83.167,261.392,83.083,251.247,83,239.95C82.917,228.653,82.833,215.05,82.75,202.6C82.667,190.15,82.583,165.711,82.5,165.25C82.417,164.789,82.333,164.789,82.25,164.558C82.167,164.328,82.083,164.097,82,163.867C81.917,163.636,81.833,163.406,81.75,163.175C81.667,162.944,81.583,162.714,81.5,162.483C81.417,162.253,81.333,162.022,81.25,161.792C81.167,161.561,81.083,161.331,81,161.1C80.917,160.869,80.833,160.639,80.75,160.408C80.667,160.178,80.583,159.947,80.5,159.717C80.417,159.486,80.333,159.256,80.25,159.025C80.167,158.794,80.083,158.564,80,158.333"
-                    data-series="auto-generated-id-1"
-                    data-series-id="auto-generated-id-1"
+                    data-series="OCBC Bank"
+                    data-series-id="OCBC Bank"
                     fill="none"
                     opacity="1"
                     stroke="#3cb44b"
@@ -2204,7 +2204,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-2-line-clip"
+                  id="_r_4_-Maribank-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2215,14 +2215,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-2-line-clip)"
+                  clip-path="url(#_r_4_-Maribank-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,430.942,84.833,426.884,84.75,422.827C84.667,418.769,84.583,414.711,84.5,410.653C84.417,406.596,84.333,402.538,84.25,398.48C84.167,394.422,84.083,390.364,84,386.307C83.917,382.249,83.833,378.191,83.75,374.133C83.667,370.076,83.583,366.018,83.5,361.96C83.417,357.902,83.333,353.844,83.25,349.787C83.167,345.729,83.083,341.671,83,337.613C82.917,333.556,82.833,329.498,82.75,325.44C82.667,321.382,82.583,313.267,82.5,313.267C82.417,313.267,82.333,313.267,82.25,313.267C82.167,313.267,82.083,313.267,82,313.267C81.917,313.267,81.833,313.267,81.75,313.267C81.667,313.267,81.583,313.267,81.5,313.267C81.417,313.267,81.333,313.267,81.25,313.267C81.167,313.267,81.083,313.267,81,313.267C80.917,313.267,80.833,313.267,80.75,313.267C80.667,313.267,80.583,313.267,80.5,313.267C80.417,313.267,80.333,313.267,80.25,313.267C80.167,313.267,80.083,313.267,80,313.267"
-                    data-series="auto-generated-id-2"
-                    data-series-id="auto-generated-id-2"
+                    data-series="Maribank"
+                    data-series-id="Maribank"
                     fill="none"
                     opacity="1"
                     stroke="#ffe119"
@@ -2231,7 +2231,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-3-line-clip"
+                  id="_r_4_-Standard_Chartered-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2242,14 +2242,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-3-line-clip)"
+                  clip-path="url(#_r_4_-Standard_Chartered-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,426.469,84.833,417.939,84.75,409.408C84.667,400.878,84.583,392.347,84.5,383.817C84.417,375.286,84.333,366.756,84.25,358.225C84.167,349.694,84.083,341.164,84,332.633C83.917,324.103,83.833,315.572,83.75,307.042C83.667,298.511,83.583,289.981,83.5,281.45C83.417,272.919,83.333,264.389,83.25,255.858C83.167,247.328,83.083,238.797,83,230.267C82.917,221.736,82.833,213.206,82.75,204.675C82.667,196.144,82.583,179.544,82.5,179.083C82.417,178.622,82.333,178.622,82.25,178.392C82.167,178.161,82.083,177.931,82,177.7C81.917,177.469,81.833,177.239,81.75,177.008C81.667,176.778,81.583,176.547,81.5,176.317C81.417,176.086,81.333,175.856,81.25,175.625C81.167,175.394,81.083,175.164,81,174.933C80.917,174.703,80.833,174.472,80.75,174.242C80.667,174.011,80.583,173.781,80.5,173.55C80.417,173.319,80.333,173.089,80.25,172.858C80.167,172.628,80.083,172.397,80,172.167"
-                    data-series="auto-generated-id-3"
-                    data-series-id="auto-generated-id-3"
+                    data-series="Standard Chartered"
+                    data-series-id="Standard Chartered"
                     fill="none"
                     opacity="1"
                     stroke="#4363d8"
@@ -2258,7 +2258,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-4-line-clip"
+                  id="_r_4_-Trust_Bank (Signature)-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2269,14 +2269,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-4-line-clip)"
+                  clip-path="url(#_r_4_-Trust_Bank (Signature)-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,432.233,84.833,429.467,84.75,426.7C84.667,423.933,84.583,421.167,84.5,418.4C84.417,415.633,84.333,412.867,84.25,410.1C84.167,407.333,84.083,404.567,84,401.8C83.917,399.033,83.833,396.267,83.75,393.5C83.667,390.733,83.583,387.967,83.5,385.2C83.417,382.433,83.333,379.667,83.25,376.9C83.167,374.133,83.083,371.367,83,368.6C82.917,365.833,82.833,365.833,82.75,360.3C82.667,354.767,82.583,318.8,82.5,310.5C82.417,302.2,82.333,302.2,82.25,298.05C82.167,293.9,82.083,289.75,82,285.6C81.917,281.45,81.833,277.3,81.75,273.15C81.667,269,81.583,264.85,81.5,260.7C81.417,256.55,81.333,252.4,81.25,248.25C81.167,244.1,81.083,239.95,81,235.8C80.917,231.65,80.833,227.5,80.75,223.35C80.667,219.2,80.583,215.05,80.5,210.9C80.417,206.75,80.333,202.6,80.25,198.45C80.167,194.3,80.083,190.15,80,186"
-                    data-series="auto-generated-id-4"
-                    data-series-id="auto-generated-id-4"
+                    data-series="Trust Bank (Signature)"
+                    data-series-id="Trust Bank (Signature)"
                     fill="none"
                     opacity="1"
                     stroke="#f58231"
@@ -2285,7 +2285,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-5-line-clip"
+                  id="_r_4_-Trust_Bank (Zen)-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2296,14 +2296,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-5-line-clip)"
+                  clip-path="url(#_r_4_-Trust_Bank (Zen)-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,433.156,84.833,431.311,84.75,429.467C84.667,427.622,84.583,425.778,84.5,423.933C84.417,422.089,84.333,420.244,84.25,418.4C84.167,416.556,84.083,414.711,84,412.867C83.917,411.022,83.833,409.178,83.75,407.333C83.667,405.489,83.583,403.644,83.5,401.8C83.417,399.956,83.333,398.111,83.25,396.267C83.167,394.422,83.083,392.578,83,390.733C82.917,388.889,82.833,387.044,82.75,385.2C82.667,383.356,82.583,381.511,82.5,379.667C82.417,377.822,82.333,375.978,82.25,374.133C82.167,372.289,82.083,370.444,82,368.6C81.917,366.756,81.833,364.911,81.75,363.067C81.667,361.222,81.583,359.378,81.5,357.533C81.417,355.689,81.333,353.844,81.25,352C81.167,350.156,81.083,348.311,81,346.467C80.917,344.622,80.833,342.778,80.75,340.933C80.667,339.089,80.583,337.244,80.5,335.4C80.417,333.556,80.333,331.711,80.25,329.867C80.167,328.022,80.083,326.178,80,324.333"
-                    data-series="auto-generated-id-5"
-                    data-series-id="auto-generated-id-5"
+                    data-series="Trust Bank (Zen)"
+                    data-series-id="Trust Bank (Zen)"
                     fill="none"
                     opacity="1"
                     stroke="#911eb4"
@@ -2312,7 +2312,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-6-line-clip"
+                  id="_r_4_-DBS_Multiplier Account-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2323,14 +2323,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-6-line-clip)"
+                  clip-path="url(#_r_4_-DBS_Multiplier Account-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,435,84.833,435,84.75,435C84.667,435,84.583,435,84.5,435C84.417,435,84.333,435,84.25,435C84.167,435,84.083,435,84,435C83.917,435,83.833,435,83.75,435C83.667,435,83.583,435,83.5,435C83.417,435,83.333,435,83.25,435C83.167,435,83.083,435,83,435C82.917,435,82.833,435,82.75,435C82.667,435,82.583,435,82.5,435C82.417,435,82.333,435,82.25,435C82.167,435,82.083,435,82,435C81.917,435,81.833,435,81.75,435C81.667,435,81.583,435,81.5,435C81.417,435,81.333,435,81.25,435C81.167,435,81.083,435,81,435C80.917,435,80.833,435,80.75,435C80.667,435,80.583,435,80.5,435C80.417,435,80.333,435,80.25,435C80.167,435,80.083,435,80,435"
-                    data-series="auto-generated-id-6"
-                    data-series-id="auto-generated-id-6"
+                    data-series="DBS Multiplier Account"
+                    data-series-id="DBS Multiplier Account"
                     fill="none"
                     opacity="1"
                     stroke="#42d4f4"
@@ -2339,7 +2339,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-7-line-clip"
+                  id="_r_4_-GXS-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2350,14 +2350,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-7-line-clip)"
+                  clip-path="url(#_r_4_-GXS-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,429.374,84.833,423.749,84.75,418.123C84.667,412.498,84.583,406.872,84.5,401.247C84.417,395.621,84.333,389.996,84.25,384.37C84.167,378.744,84.083,373.119,84,367.493C83.917,361.868,83.833,356.242,83.75,350.617C83.667,344.991,83.583,339.366,83.5,333.74C83.417,328.114,83.333,322.489,83.25,316.863C83.167,311.238,83.083,305.451,83,299.987C82.917,294.523,82.833,287.975,82.75,284.078C82.667,280.182,82.583,276.608,82.5,276.608C82.417,276.608,82.333,276.608,82.25,276.608C82.167,276.608,82.083,276.608,82,276.608C81.917,276.608,81.833,276.608,81.75,276.608C81.667,276.608,81.583,276.608,81.5,276.608C81.417,276.608,81.333,276.608,81.25,276.608C81.167,276.608,81.083,276.608,81,276.608C80.917,276.608,80.833,276.608,80.75,276.608C80.667,276.608,80.583,276.608,80.5,276.608C80.417,276.608,80.333,276.608,80.25,276.608C80.167,276.608,80.083,276.608,80,276.608"
-                    data-series="auto-generated-id-7"
-                    data-series-id="auto-generated-id-7"
+                    data-series="GXS"
+                    data-series-id="GXS"
                     fill="none"
                     opacity="1"
                     stroke="#f032e6"
@@ -2366,7 +2366,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-8-line-clip"
+                  id="_r_4_-Chocolate_Finance-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2377,14 +2377,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-8-line-clip)"
+                  clip-path="url(#_r_4_-Chocolate_Finance-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,425.778,84.833,416.556,84.75,407.333C84.667,398.111,84.583,388.428,84.5,379.667C84.417,370.906,84.333,363.067,84.25,354.767C84.167,346.467,84.083,338.167,84,329.867C83.917,321.567,83.833,313.267,83.75,304.967C83.667,296.667,83.583,288.367,83.5,280.067C83.417,271.767,83.333,263.467,83.25,255.167C83.167,246.867,83.083,238.567,83,230.267C82.917,221.967,82.833,213.667,82.75,205.367C82.667,197.067,82.583,180.467,82.5,180.467C82.417,180.467,82.333,180.467,82.25,180.467C82.167,180.467,82.083,180.467,82,180.467C81.917,180.467,81.833,180.467,81.75,180.467C81.667,180.467,81.583,180.467,81.5,180.467C81.417,180.467,81.333,180.467,81.25,180.467C81.167,180.467,81.083,180.467,81,180.467C80.917,180.467,80.833,180.467,80.75,180.467C80.667,180.467,80.583,180.467,80.5,180.467C80.417,180.467,80.333,180.467,80.25,180.467C80.167,180.467,80.083,180.467,80,180.467"
-                    data-series="auto-generated-id-8"
-                    data-series-id="auto-generated-id-8"
+                    data-series="Chocolate Finance"
+                    data-series-id="Chocolate Finance"
                     fill="none"
                     opacity="1"
                     stroke="#bfef45"
@@ -2393,7 +2393,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-9-line-clip"
+                  id="_r_4_-Bank_of China SuperSaver-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2404,14 +2404,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-9-line-clip)"
+                  clip-path="url(#_r_4_-Bank_of China SuperSaver-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,432.694,84.833,430.389,84.75,428.083C84.667,425.778,84.583,424.164,84.5,421.167C84.417,418.169,84.333,413.789,84.25,410.1C84.167,406.411,84.083,402.722,84,399.033C83.917,395.344,83.833,391.656,83.75,387.967C83.667,384.278,83.583,381.05,83.5,376.9C83.417,372.75,83.333,367.678,83.25,363.067C83.167,358.456,83.083,353.844,83,349.233C82.917,344.622,82.833,340.011,82.75,335.4C82.667,330.789,82.583,325.025,82.5,321.567C82.417,318.108,82.333,316.956,82.25,314.65C82.167,312.344,82.083,310.039,82,307.733C81.917,305.428,81.833,303.122,81.75,300.817C81.667,298.511,81.583,296.206,81.5,293.9C81.417,291.594,81.333,289.289,81.25,286.983C81.167,284.678,81.083,282.372,81,280.067C80.917,277.761,80.833,275.456,80.75,273.15C80.667,270.844,80.583,268.539,80.5,266.233C80.417,263.928,80.333,261.622,80.25,259.317C80.167,257.011,80.083,254.706,80,252.4"
-                    data-series="auto-generated-id-9"
-                    data-series-id="auto-generated-id-9"
+                    data-series="Bank of China SuperSaver"
+                    data-series-id="Bank of China SuperSaver"
                     fill="none"
                     opacity="1"
                     stroke="#fabed4"
@@ -2420,7 +2420,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-10-line-clip"
+                  id="_r_4_-Maybank_Save Up-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2431,14 +2431,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-10-line-clip)"
+                  clip-path="url(#_r_4_-Maybank_Save Up-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,433.955,84.833,432.91,84.75,431.8C84.667,430.691,84.583,429.495,84.5,428.342C84.417,427.189,84.333,426.036,84.25,424.884C84.167,423.731,84.083,422.578,84,421.425C83.917,420.273,83.833,419.264,83.75,417.967C83.667,416.67,83.583,415.085,83.5,413.644C83.417,412.203,83.333,410.762,83.25,409.321C83.167,407.88,83.083,406.439,83,404.998C82.917,403.557,82.833,402.116,82.75,400.675C82.667,399.234,82.583,397.793,82.5,396.352C82.417,394.911,82.333,393.47,82.25,392.03C82.167,390.589,82.083,389.148,82,387.707C81.917,386.266,81.833,384.825,81.75,383.384C81.667,381.943,81.583,380.502,81.5,379.061C81.417,377.62,81.333,376.179,81.25,374.738C81.167,373.297,81.083,371.856,81,370.415C80.917,368.974,80.833,367.533,80.75,366.092C80.667,364.651,80.583,363.21,80.5,361.769C80.417,360.328,80.333,358.887,80.25,357.446C80.167,356.005,80.083,354.564,80,353.123"
-                    data-series="auto-generated-id-10"
-                    data-series-id="auto-generated-id-10"
+                    data-series="Maybank Save Up"
+                    data-series-id="Maybank Save Up"
                     fill="none"
                     opacity="1"
                     stroke="#469990"
@@ -2447,7 +2447,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-11-line-clip"
+                  id="_r_4_-Maybank_iSAVvy-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2458,14 +2458,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-11-line-clip)"
+                  clip-path="url(#_r_4_-Maybank_iSAVvy-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,433.617,84.833,432.233,84.75,430.85C84.667,429.467,84.583,428.083,84.5,426.7C84.417,425.317,84.333,423.933,84.25,422.55C84.167,421.167,84.083,420.706,84,418.4C83.917,416.094,83.833,411.207,83.75,408.717C83.667,406.227,83.583,405.212,83.5,403.46C83.417,401.708,83.333,399.956,83.25,398.203C83.167,396.451,83.083,394.699,83,392.947C82.917,391.194,82.833,389.442,82.75,387.69C82.667,385.938,82.583,384.186,82.5,382.433C82.417,380.681,82.333,378.929,82.25,377.177C82.167,375.424,82.083,373.672,82,371.92C81.917,370.168,81.833,368.416,81.75,366.663C81.667,364.911,81.583,363.159,81.5,361.407C81.417,359.654,81.333,357.902,81.25,356.15C81.167,354.398,81.083,352.646,81,350.893C80.917,349.141,80.833,347.389,80.75,345.637C80.667,343.884,80.583,342.132,80.5,340.38C80.417,338.628,80.333,336.876,80.25,335.123C80.167,333.371,80.083,331.619,80,329.867"
-                    data-series="auto-generated-id-11"
-                    data-series-id="auto-generated-id-11"
+                    data-series="Maybank iSAVvy"
+                    data-series-id="Maybank iSAVvy"
                     fill="none"
                     opacity="1"
                     stroke="#9a6324"
@@ -2474,7 +2474,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-12-line-clip"
+                  id="_r_4_-Maybank_iSAVvy Plus-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2485,14 +2485,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-12-line-clip)"
+                  clip-path="url(#_r_4_-Maybank_iSAVvy Plus-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,433.617,84.833,432.233,84.75,430.85C84.667,429.467,84.583,428.083,84.5,426.7C84.417,425.317,84.333,423.933,84.25,422.55C84.167,421.167,84.083,420.706,84,418.4C83.917,416.094,83.833,411.207,83.75,408.717C83.667,406.227,83.583,405.212,83.5,403.46C83.417,401.708,83.333,399.956,83.25,398.203C83.167,396.451,83.083,394.699,83,392.947C82.917,391.194,82.833,389.442,82.75,387.69C82.667,385.938,82.583,384.186,82.5,382.433C82.417,380.681,82.333,378.929,82.25,377.177C82.167,375.424,82.083,373.672,82,371.92C81.917,370.168,81.833,368.416,81.75,366.663C81.667,364.911,81.583,363.159,81.5,361.407C81.417,359.654,81.333,357.902,81.25,356.15C81.167,354.398,81.083,352.646,81,350.893C80.917,349.141,80.833,347.389,80.75,345.637C80.667,343.884,80.583,342.132,80.5,340.38C80.417,338.628,80.333,336.876,80.25,335.123C80.167,333.371,80.083,331.619,80,329.867"
-                    data-series="auto-generated-id-12"
-                    data-series-id="auto-generated-id-12"
+                    data-series="Maybank iSAVvy Plus"
+                    data-series-id="Maybank iSAVvy Plus"
                     fill="none"
                     opacity="1"
                     stroke="#fffac8"
@@ -2501,7 +2501,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-auto-generated-id-13-line-clip"
+                  id="_r_4_-Citi_Wealth first Account-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2512,14 +2512,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-13-line-clip)"
+                  clip-path="url(#_r_4_-Citi_Wealth first Account-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,435,84.833,435,84.75,435C84.667,435,84.583,435,84.5,435C84.417,435,84.333,435,84.25,435C84.167,435,84.083,435,84,435C83.917,435,83.833,435,83.75,435C83.667,435,83.583,435,83.5,435C83.417,435,83.333,435,83.25,435C83.167,435,83.083,435,83,435C82.917,435,82.833,435,82.75,435C82.667,435,82.583,435,82.5,435C82.417,435,82.333,435,82.25,435C82.167,435,82.083,435,82,435C81.917,435,81.833,435,81.75,435C81.667,435,81.583,435,81.5,435C81.417,435,81.333,435,81.25,435C81.167,435,81.083,435,81,435C80.917,435,80.833,435,80.75,435C80.667,435,80.583,435,80.5,435C80.417,435,80.333,435,80.25,435C80.167,435,80.083,435,80,435"
-                    data-series="auto-generated-id-13"
-                    data-series-id="auto-generated-id-13"
+                    data-series="Citi Wealth first Account"
+                    data-series-id="Citi Wealth first Account"
                     fill="none"
                     opacity="1"
                     stroke="#800000"
@@ -2773,60 +2773,60 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                 class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
               >
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-0-line-clip)"
-                  data-series="auto-generated-id-0"
+                  clip-path="url(#_r_4_-UOB_Bank-line-clip)"
+                  data-series="UOB Bank"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-1-line-clip)"
-                  data-series="auto-generated-id-1"
+                  clip-path="url(#_r_4_-OCBC_Bank-line-clip)"
+                  data-series="OCBC Bank"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-2-line-clip)"
-                  data-series="auto-generated-id-2"
+                  clip-path="url(#_r_4_-Maribank-line-clip)"
+                  data-series="Maribank"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-3-line-clip)"
-                  data-series="auto-generated-id-3"
+                  clip-path="url(#_r_4_-Standard_Chartered-line-clip)"
+                  data-series="Standard Chartered"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-4-line-clip)"
-                  data-series="auto-generated-id-4"
+                  clip-path="url(#_r_4_-Trust_Bank (Signature)-line-clip)"
+                  data-series="Trust Bank (Signature)"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-5-line-clip)"
-                  data-series="auto-generated-id-5"
+                  clip-path="url(#_r_4_-Trust_Bank (Zen)-line-clip)"
+                  data-series="Trust Bank (Zen)"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-6-line-clip)"
-                  data-series="auto-generated-id-6"
+                  clip-path="url(#_r_4_-DBS_Multiplier Account-line-clip)"
+                  data-series="DBS Multiplier Account"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-7-line-clip)"
-                  data-series="auto-generated-id-7"
+                  clip-path="url(#_r_4_-GXS-line-clip)"
+                  data-series="GXS"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-8-line-clip)"
-                  data-series="auto-generated-id-8"
+                  clip-path="url(#_r_4_-Chocolate_Finance-line-clip)"
+                  data-series="Chocolate Finance"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-9-line-clip)"
-                  data-series="auto-generated-id-9"
+                  clip-path="url(#_r_4_-Bank_of China SuperSaver-line-clip)"
+                  data-series="Bank of China SuperSaver"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-10-line-clip)"
-                  data-series="auto-generated-id-10"
+                  clip-path="url(#_r_4_-Maybank_Save Up-line-clip)"
+                  data-series="Maybank Save Up"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-11-line-clip)"
-                  data-series="auto-generated-id-11"
+                  clip-path="url(#_r_4_-Maybank_iSAVvy-line-clip)"
+                  data-series="Maybank iSAVvy"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-12-line-clip)"
-                  data-series="auto-generated-id-12"
+                  clip-path="url(#_r_4_-Maybank_iSAVvy Plus-line-clip)"
+                  data-series="Maybank iSAVvy Plus"
                 />
                 <g
-                  clip-path="url(#_r_4_-auto-generated-id-13-line-clip)"
-                  data-series="auto-generated-id-13"
+                  clip-path="url(#_r_4_-Citi_Wealth first Account-line-clip)"
+                  data-series="Citi Wealth first Account"
                 />
               </g>
             </g>
