@@ -4,4 +4,4 @@ export const STORE_KEY: string = "current_profile";
 export const FAVORITES_KEY: string = "favorited_banks";
 
 /** Maximum number of banks shown in the comparison overlay chart */
-export const MAX_COMPARISON_BANKS: number = 3;
+export const MAX_COMPARISON_BANKS: number = 5;

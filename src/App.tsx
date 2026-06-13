@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./Layout";
 import { MainPage } from "./MainPage";
 import { BankDetailPage } from "./pages/BankDetailPage";
@@ -19,11 +19,9 @@ export const App = () => {
             <Layout currProfile={currProfile} setCurrProfile={setCurrProfile} />
           }
         >
-          {/* Redirect root to /current */}
-          <Route path="/" element={<Navigate to="/current" replace />} />
-          {/* MainPage acts as router hub for current/history */}
+          {/* / is the default — shows current rates */}
           <Route
-            path="/current"
+            path="/"
             element={<MainPage tab="current" profile={currProfile} />}
           />
           <Route

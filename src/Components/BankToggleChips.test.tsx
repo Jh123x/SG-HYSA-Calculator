@@ -4,6 +4,7 @@ import userEvent from "@testing-library/user-event";
 import { BankToggleChips } from "./BankToggleChips";
 import { NewProfile } from "../types/profile";
 import { MAX_COMPARISON_BANKS } from "../consts/keys";
+import { bankInfo } from "../logic/constants";
 
 /** A profile with non-zero savings so EIR percentages appear. */
 const profile = NewProfile({ Savings: 50000 });
@@ -62,10 +63,8 @@ describe("BankToggleChips", () => {
 
   it("caps at MAX_COMPARISON_BANKS — disabled options not clickable", async () => {
     const onChange = vi.fn();
-    const maxed = ["GXS", "Maribank", "UOB Bank"].slice(
-      0,
-      MAX_COMPARISON_BANKS,
-    );
+    const allNames = Object.keys(bankInfo);
+    const maxed = allNames.slice(0, MAX_COMPARISON_BANKS);
     render(
       <BankToggleChips
         selected={maxed}
@@ -75,14 +74,15 @@ describe("BankToggleChips", () => {
     );
     openDropdown("Add more banks...");
 
-    // OCBC should be in the list but disabled
-    const ocbcOption = await screen.findByRole("option", {
-      name: /OCBC Bank/,
-    });
-    expect(ocbcOption.getAttribute("aria-disabled")).toBe("true");
+    // Wait for options, then find at least one disabled (unselected)
+    const options = await screen.findAllByRole("option");
+    const disabled = options.filter(
+      (o) => o.getAttribute("aria-disabled") === "true",
+    );
+    expect(disabled.length).toBeGreaterThan(0);
 
     // Clicking a disabled option should not fire onChange
-    fireEvent.click(ocbcOption);
+    fireEvent.click(disabled[0]);
     expect(onChange).not.toHaveBeenCalled();
   });
 
@@ -94,7 +94,9 @@ describe("BankToggleChips", () => {
         profile={profile}
       />,
     );
-    expect(screen.getByText(/2\/3 selected/)).toBeDefined();
+    expect(
+      screen.getByText(`2/${MAX_COMPARISON_BANKS} selected`),
+    ).toBeDefined();
   });
 
   it("filters banks by search text", async () => {

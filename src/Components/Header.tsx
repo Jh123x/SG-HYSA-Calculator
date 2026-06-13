@@ -31,10 +31,11 @@ const tabSx = {
 };
 
 /**
- * Shared header with app title and navigation tabs.
+ * Shared header with app title (left), centered navigation tabs (middle),
+ * and external links (right).
  *
- * Tabs navigate between /current and /history routes,
- * replacing the old in-page ToggleButtonGroup from MainPage.
+ * Desktop: three-column layout — title | tabs | icons
+ * Mobile: title + hamburger menu
  */
 export const Header = () => {
   const theme = useTheme();
@@ -50,7 +51,7 @@ export const Header = () => {
     setAnchorEl(null);
   };
 
-  // Determine active tab from current path
+  // Active tab: /history → "history", everything else → "current"
   const tabValue = location.pathname.startsWith("/history")
     ? "history"
     : "current";
@@ -61,35 +62,49 @@ export const Header = () => {
       elevation={0}
       sx={{ backgroundColor: "transparent" }}
     >
-      <Toolbar sx={{ justifyContent: "space-between", flexWrap: "wrap" }}>
+      <Toolbar
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+        }}
+      >
+        {/* Left: title */}
         <Typography
           variant={isMobile ? "h6" : "h5"}
           sx={{
             color: textColor,
             fontWeight: 600,
+            flexShrink: 0,
           }}
         >
           SG HYSA Calculator
         </Typography>
 
-        {/* Tab navigation — replaces in-page toggle */}
+        {/* Center: tab navigation */}
         {!isMobile && (
-          <Tabs
-            value={tabValue}
-            onChange={(_, v) => navigate(`/${v}`)}
-            sx={{
-              minHeight: "auto",
-              "& .MuiTabs-indicator": {
-                backgroundColor: primaryColor,
-              },
-            }}
-          >
-            <Tab label="Current Rates" value="current" sx={tabSx} />
-            <Tab label="Rate History" value="history" sx={tabSx} />
-          </Tabs>
+          <Box sx={{ flex: 1, display: "flex", justifyContent: "center" }}>
+            <Tabs
+              value={tabValue}
+              onChange={(_, v) => {
+                navigate(v === "current" ? "/" : `/${v}`);
+              }}
+              sx={{
+                minHeight: "auto",
+                "& .MuiTabs-indicator": {
+                  backgroundColor: primaryColor,
+                },
+              }}
+            >
+              <Tab label="Current Rates" value="current" sx={tabSx} />
+              <Tab label="Rate History" value="history" sx={tabSx} />
+            </Tabs>
+          </Box>
         )}
 
-        <Box sx={{ display: "flex", alignItems: "center" }}>
+        {/* Right: external links / mobile menu */}
+        <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
           {isMobile ? (
             <>
               <IconButton
@@ -114,10 +129,20 @@ export const Header = () => {
                   },
                 }}
               >
-                <MenuItem onClick={() => { navigate("/current"); handleClose(); }}>
+                <MenuItem
+                  onClick={() => {
+                    navigate("/");
+                    handleClose();
+                  }}
+                >
                   Current Rates
                 </MenuItem>
-                <MenuItem onClick={() => { navigate("/history"); handleClose(); }}>
+                <MenuItem
+                  onClick={() => {
+                    navigate("/history");
+                    handleClose();
+                  }}
+                >
                   Rate History
                 </MenuItem>
                 <MenuItem>

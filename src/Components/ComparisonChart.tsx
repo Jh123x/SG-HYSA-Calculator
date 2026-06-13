@@ -10,7 +10,7 @@ import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, lineColors, bgColor } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
-import { formatDate } from "../logic/dates";
+import { formatDate, todayISO } from "../logic/dates";
 import {
   collectBankPoints,
   collectAllDates,
@@ -76,8 +76,12 @@ export const ComparisonChart = ({
     // Step 1: Collect bank points
     const bankPoints = collectBankPoints(selectedBanks, profile);
 
-    // Step 2: All unique dates
+    // Step 2: All unique dates, with today appended so lines extend to now
     const allDates = collectAllDates(bankPoints);
+    const today = todayISO();
+    if (allDates.length > 0 && allDates[allDates.length - 1] !== today) {
+      allDates.push(today);
+    }
 
     if (allDates.length === 0) return { dataset: [], series: [] };
 
