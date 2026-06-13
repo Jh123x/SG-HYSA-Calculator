@@ -22,7 +22,7 @@ import { LineChart } from "@mui/x-charts/LineChart";
 import { bankInfo } from "../logic/constants";
 import { lineColors, textColor, bgColor } from "../consts/colors";
 import type Profile from "../types/profile";
-import type { RateSnapshot } from "../types/history";
+import { resolveHistoryForChart } from "../logic/history";
 
 interface Props {
   profile: Profile;
@@ -67,29 +67,35 @@ const HistoryViewContent = ({
   profile: Profile;
   theme: Theme;
 }) => {
-  // Build chart data: each bank with history contributes a line
+  // Build chart data: every bank contributes a line.
+  // Banks without recorded history get a single synthetic point
+  // so they still appear on the chart and changelog.
   const { chartSeries, dataset } = useMemo(() => {
     const dateSet = new Set<string>();
-    const banksWithHistory: {
+    const banksWithSnapshots: {
       name: string;
       snapshots: { date: string; eir: number }[];
     }[] = [];
 
     Object.entries(bankInfo).forEach(([name, info]) => {
-      if (!info.history || info.history.length === 0) return;
+      const resolved = resolveHistoryForChart(
+        info.history,
+        info.interestFn,
+        info.lastUpdated,
+        profile,
+      );
 
-      const snapshots = info.history
-        .map((s: RateSnapshot) => {
-          const yearly = s.interestFn(profile).toYearlyPercent();
-          dateSet.add(s.effectiveDate);
-          return { date: s.effectiveDate, eir: Number(yearly.toFixed(2)) };
+      const snapshots = resolved
+        .map((s) => {
+          dateSet.add(s.date);
+          return { date: s.date, eir: s.eir };
         })
         .sort(
           (a, b) =>
             new Date(a.date).getTime() - new Date(b.date).getTime(),
         );
 
-      banksWithHistory.push({ name, snapshots });
+      banksWithSnapshots.push({ name, snapshots });
     });
 
     const allDatesSorted = Array.from(dateSet).sort(
@@ -99,14 +105,14 @@ const HistoryViewContent = ({
     // Build dataset: one row per date, columns = bank EIR values
     const dataset = allDatesSorted.map((date) => {
       const row: Record<string, string | number> = { date };
-      banksWithHistory.forEach(({ name, snapshots }) => {
+      banksWithSnapshots.forEach(({ name, snapshots }) => {
         const snap = snapshots.find((s) => s.date === date);
         row[name] = snap ? snap.eir : null;
       });
       return row;
     });
 
-    const series = banksWithHistory.map(({ name }, idx) => ({
+    const series = banksWithSnapshots.map(({ name }, idx) => ({
       dataKey: name,
       label: name,
       showMark: true,
@@ -187,9 +193,15 @@ const HistoryViewContent = ({
       >
         Rate Change History
       </Typography>
-      {Object.entries(bankInfo)
-        .filter(([, info]) => info.history && info.history.length > 0)
-        .map(([name, info]) => (
+      {Object.entries(bankInfo).map(([name, info]) => {
+        const resolved = resolveHistoryForChart(
+          info.history,
+          info.interestFn,
+          info.lastUpdated,
+          profile,
+        );
+
+        return (
           <Accordion
             key={name}
             sx={{
@@ -203,7 +215,7 @@ const HistoryViewContent = ({
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography sx={{ fontWeight: 600 }}>{name}</Typography>
               <Chip
-                label={`${info.history.length} changes`}
+                label={`${resolved.length} change${resolved.length !== 1 ? "s" : ""}`}
                 size="small"
                 sx={{ ml: 2, backgroundColor: lineColors[0], color: "#fff" }}
               />
@@ -222,17 +234,16 @@ const HistoryViewContent = ({
                     </TableRow>
                   </TableHead>
                   <TableBody>
-                    {info.history
-                      .slice()
+                    {resolved
                       .sort(
                         (a, b) =>
-                          new Date(b.effectiveDate).getTime() -
-                          new Date(a.effectiveDate).getTime(),
+                          new Date(b.date).getTime() -
+                          new Date(a.date).getTime(),
                       )
-                      .map((snapshot: RateSnapshot, idx: number) => (
+                      .map((snapshot: { date: string; changeSummary: string }, idx: number) => (
                         <TableRow key={idx}>
                           <TableCell sx={{ color: textColor }}>
-                            {snapshot.effectiveDate}
+                            {snapshot.date}
                           </TableCell>
                           <TableCell sx={{ color: textColor }}>
                             {snapshot.changeSummary}
@@ -244,7 +255,8 @@ const HistoryViewContent = ({
               </TableContainer>
             </AccordionDetails>
           </Accordion>
-        ))}
+        );
+      })}
     </Box>
   );
 };
