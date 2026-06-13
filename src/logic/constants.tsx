@@ -31,21 +31,24 @@ interface Info {
   history: RateSnapshot[];
 }
 
-export const bankInfo: Record<string, Info> = {
+/** Input type: interestFn/lastUpdated optional — filled in by post-processing below */
+type RawInfo = Omit<Info, "interestFn" | "lastUpdated"> & {
+  interestFn?: (profile: Profile) => ResultInterest;
+  lastUpdated?: string;
+};
+
+const _rawBankInfo: Record<string, RawInfo> = {
   "UOB Bank": {
-    ...deriveCurrentFromHistory(uobHistory),
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     remarks: "Visit their official website to find out more",
     history: uobHistory,
   },
   "OCBC Bank": {
-    ...deriveCurrentFromHistory(ocbcHistory),
     url: "https://www.ocbc.com/personal-banking/notices",
     remarks: "Visit the official website to find our more",
     history: ocbcHistory,
   },
   Maribank: {
-    ...deriveCurrentFromHistory(maribankHistory),
     url: "https://www.maribank.sg/product/mari-savings-account/",
     remarks: (
       <p>
@@ -59,7 +62,6 @@ export const bankInfo: Record<string, Info> = {
     history: maribankHistory,
   },
   "Standard Chartered": {
-    ...deriveCurrentFromHistory(standChartHistory),
     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
     remarks: (
       <p>
@@ -71,7 +73,6 @@ export const bankInfo: Record<string, Info> = {
     history: standChartHistory,
   },
   "Trust Bank (Signature)": {
-    ...deriveCurrentFromHistory(trustBankSignatureHistory),
     url: "https://trustbank.sg/savings-account/",
     remarks: <p>Spending assumes 5 x $30 if spending is more than 150.</p>,
     history: trustBankSignatureHistory,
@@ -97,7 +98,6 @@ export const bankInfo: Record<string, Info> = {
     history: [],
   },
   GXS: {
-    ...deriveCurrentFromHistory(gxsHistory),
     url: "https://www.gxs.com.sg/savings-account",
     remarks: (
       <p>
@@ -117,7 +117,6 @@ export const bankInfo: Record<string, Info> = {
     history: gxsHistory,
   },
   "Chocolate Finance": {
-    ...deriveCurrentFromHistory(chocoFinanceHistory),
     url: "https://www.chocolatefinance.com/",
     remarks: (
       <p>
@@ -135,7 +134,6 @@ export const bankInfo: Record<string, Info> = {
     history: chocoFinanceHistory,
   },
   "Bank of China SuperSaver": {
-    ...deriveCurrentFromHistory(bocSuperSaverHistory),
     url: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
     remarks: (
       <p>
@@ -150,7 +148,6 @@ export const bankInfo: Record<string, Info> = {
     history: bocSuperSaverHistory,
   },
   "Maybank Save Up": {
-    ...deriveCurrentFromHistory(maybankSaveUpHistory),
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks: (
       <p>
@@ -192,7 +189,6 @@ export const bankInfo: Record<string, Info> = {
     history: [],
   },
   "Citi Wealth first Account": {
-    ...deriveCurrentFromHistory(citiHistory),
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks: (
       <>
@@ -207,3 +203,13 @@ export const bankInfo: Record<string, Info> = {
     history: citiHistory,
   },
 };
+
+// Fill in interestFn + lastUpdated from history for banks that have it.
+// Banks without history already set these explicitly above.
+for (const info of Object.values(_rawBankInfo)) {
+  if (info.history.length > 0) {
+    Object.assign(info, deriveCurrentFromHistory(info.history));
+  }
+}
+
+export const bankInfo = _rawBankInfo as Record<string, Info>;
