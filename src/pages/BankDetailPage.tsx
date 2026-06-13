@@ -181,6 +181,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
                 label: bankName,
                 color: lineColors[0],
                 showMark: true,
+                curve: "stepAfter",
                 valueFormatter: (v: number | null) =>
                   v !== null ? `${v.toFixed(2)}%` : "",
               },
