@@ -1,9 +1,7 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import {
   Box,
   Typography,
-  ToggleButton,
-  ToggleButtonGroup,
   Paper,
 } from "@mui/material";
 import { LineChart } from "@mui/x-charts/LineChart";
@@ -18,16 +16,15 @@ import {
 } from "./comparison/buildDataset";
 import { buildComparisonSeries } from "./comparison/buildSeries";
 
-type YAxisMetric = "yearlyInterest" | "eir";
-
 interface ComparisonChartProps {
   selectedBanks: string[];
   profile: Profile;
 }
 
 /**
- * Time-series step chart comparing yearly interest ($) or EIR (%) across
- * selected banks over time.
+ * Time-series step charts comparing yearly interest ($) and EIR (%) across
+ * selected banks over time. Two charts are rendered stacked — the top chart
+ * shows yearly dollar interest and the bottom chart shows EIR percentage.
  *
  * Validation runs first — when it fails an error Paper is returned immediately.
  * The chart content (with its expensive data computation) is only mounted when
@@ -90,13 +87,32 @@ export const ComparisonChart = ({
 
 // ── Chart content (only mounted when validation passes) ───────────────
 
+/** Shared x-axis config reused by both charts. */
+const X_AXIS = [
+  {
+    dataKey: "date" as const,
+    label: "Date",
+    scaleType: "time" as const,
+    tickLabelStyle: {
+      angle: 45,
+      textAnchor: "start" as const,
+      fontSize: 11,
+    },
+  },
+];
+
+/** Shared axis label colour. */
+const AXIS_SX = {
+  ".MuiChartsAxis-label": { fill: textColor },
+  ".MuiChartsAxis-tick": { fill: textColor },
+  ".MuiChartsLegend-label": { fill: textColor },
+};
+
 const ComparisonChartContent = ({
   selectedBanks,
   profile,
 }: ComparisonChartProps) => {
-  const [metric, setMetric] = useState<YAxisMetric>("yearlyInterest");
-
-  const { dataset, series } = useMemo(() => {
+  const { dataset, yearlySeries, eirSeries } = useMemo(() => {
     const bankPoints = collectBankPoints(selectedBanks, profile);
 
     const allDates = collectAllDates(bankPoints);
@@ -105,7 +121,8 @@ const ComparisonChartContent = ({
       allDates.push(today);
     }
 
-    if (allDates.length === 0) return { dataset: [], series: [] };
+    if (allDates.length === 0)
+      return { dataset: [], yearlySeries: [], eirSeries: [] };
 
     const datasetArr = buildComparisonDataset(
       selectedBanks,
@@ -113,10 +130,15 @@ const ComparisonChartContent = ({
       allDates,
     );
 
-    const seriesArr = buildComparisonSeries(selectedBanks, metric);
+    const yearlySeriesArr = buildComparisonSeries(selectedBanks, "yearlyInterest");
+    const eirSeriesArr = buildComparisonSeries(selectedBanks, "eir");
 
-    return { dataset: datasetArr, series: seriesArr };
-  }, [selectedBanks, profile, metric]);
+    return {
+      dataset: datasetArr,
+      yearlySeries: yearlySeriesArr,
+      eirSeries: eirSeriesArr,
+    };
+  }, [selectedBanks, profile]);
 
   if (dataset.length === 0) {
     return (
@@ -137,97 +159,80 @@ const ComparisonChartContent = ({
   }
 
   return (
-    <Paper
-      sx={{
-        p: 3,
-        borderRadius: "10px",
-        backgroundColor: bgColor,
-        mb: 3,
-      }}
-    >
-      <Box
+    <>
+      {/* ── Yearly Interest ($) ──────────────────────────────────── */}
+      <Paper
         sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          mb: 2,
-          flexWrap: "wrap",
-          gap: 1,
+          p: 3,
+          borderRadius: "10px",
+          backgroundColor: bgColor,
+          mb: 3,
         }}
       >
-        <Typography variant="h6" sx={{ color: textColor, fontWeight: 600 }}>
-          Rate History Comparison
+        <Typography variant="h6" sx={{ color: textColor, fontWeight: 600, mb: 2 }}>
+          Yearly Interest ($)
         </Typography>
-        <ToggleButtonGroup
-          value={metric}
-          exclusive
-          size="small"
-          onChange={(_, v) => v && setMetric(v)}
-        >
-          <ToggleButton
-            value="yearlyInterest"
-            sx={{
-              color: textColor,
-              fontSize: "0.75rem",
-              "&.Mui-selected": { color: "#fff" },
-            }}
-          >
-            Yearly Interest ($)
-          </ToggleButton>
-          <ToggleButton
-            value="eir"
-            sx={{
-              color: textColor,
-              fontSize: "0.75rem",
-              "&.Mui-selected": { color: "#fff" },
-            }}
-          >
-            EIR (%)
-          </ToggleButton>
-        </ToggleButtonGroup>
-      </Box>
 
-      <LineChart
-        dataset={dataset}
-        xAxis={[
-          {
-            dataKey: "date",
-            label: "Date",
-            scaleType: "time",
-            tickLabelStyle: {
-              angle: 45,
-              textAnchor: "start",
-              fontSize: 11,
+        <LineChart
+          dataset={dataset}
+          xAxis={X_AXIS}
+          series={yearlySeries}
+          yAxis={[
+            {
+              label: "Yearly Interest ($)",
+              scaleType: "linear",
+              min: 0,
+              valueFormatter: (v: number) => `$${v / 1000}k`,
             },
-          },
-        ]}
-        series={series}
-        yAxis={[
-          {
-            label:
-              metric === "yearlyInterest" ? "Yearly Interest ($)" : "EIR (%)",
-            scaleType: "linear",
-            min: 0,
-            valueFormatter:
-              metric === "yearlyInterest"
-                ? (v) => `$${v / 1000}k`
-                : (v) => `${v.toFixed(1)}%`,
-          },
-        ]}
-        height={350}
-        grid={{ vertical: true, horizontal: true }}
-        slotProps={{
-          legend: {
-            direction: "horizontal",
-            position: { vertical: "bottom", horizontal: "center" },
-          },
-        }}
+          ]}
+          height={350}
+          grid={{ vertical: true, horizontal: true }}
+          slotProps={{
+            legend: {
+              direction: "horizontal",
+              position: { vertical: "bottom", horizontal: "center" },
+            },
+          }}
+          sx={AXIS_SX}
+        />
+      </Paper>
+
+      {/* ── EIR (%) ─────────────────────────────────────────────── */}
+      <Paper
         sx={{
-          ".MuiChartsAxis-label": { fill: textColor },
-          ".MuiChartsAxis-tick": { fill: textColor },
-          ".MuiChartsLegend-label": { fill: textColor },
+          p: 3,
+          borderRadius: "10px",
+          backgroundColor: bgColor,
+          mb: 3,
         }}
-      />
+      >
+        <Typography variant="h6" sx={{ color: textColor, fontWeight: 600, mb: 2 }}>
+          EIR (%)
+        </Typography>
+
+        <LineChart
+          dataset={dataset}
+          xAxis={X_AXIS}
+          series={eirSeries}
+          yAxis={[
+            {
+              label: "EIR (%)",
+              scaleType: "linear",
+              min: 0,
+              valueFormatter: (v: number) => `${v.toFixed(1)}%`,
+            },
+          ]}
+          height={350}
+          grid={{ vertical: true, horizontal: true }}
+          slotProps={{
+            legend: {
+              direction: "horizontal",
+              position: { vertical: "bottom", horizontal: "center" },
+            },
+          }}
+          sx={AXIS_SX}
+        />
+      </Paper>
 
       <Typography
         variant="caption"
@@ -235,13 +240,14 @@ const ComparisonChartContent = ({
           color: textColor,
           display: "block",
           textAlign: "left",
-          mt: 1,
+          mt: -2,
+          mb: 3,
           opacity: 0.6,
         }}
       >
         * The &ldquo;updated at&rdquo; date reflects when this calculator was
         updated, which may differ from the date the bank published the change.
       </Typography>
-    </Paper>
+    </>
   );
 };
