@@ -1,4 +1,5 @@
-import { type ReactElement, useState } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Container,
   Table,
@@ -17,8 +18,9 @@ import { primaryColor, bgColor, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
-import { InterestGraph } from "./InterestGraph";
-import { LocalLink } from "./LocalLink";
+import { bankNameToSlug } from "../logic/slugs";
+import { InterestGraph } from "../Components/InterestGraph";
+import { LocalLink } from "../Components/LocalLink";
 
 type SortableColumns =
   | "name"
@@ -26,14 +28,22 @@ type SortableColumns =
   | "effectiveInterest"
   | undefined;
 
-/** Shared styling for all data table cells */
 const cellSx = {
   color: textColor,
   backgroundColor: bgColor,
   padding: "10px 15px",
 };
 
-export const Result = ({ profile }: { profile: Profile }) => {
+interface Props {
+  profile: Profile;
+}
+
+/**
+ * Current Rates tab — sortable table of all banks with their current EIR.
+ * Bank name cells are clickable and navigate to the bank detail page.
+ */
+export const CurrentRatesTab = ({ profile }: Props) => {
+  const navigate = useNavigate();
   const [orderBy, setOrderBy] = useState<SortableColumns>(undefined);
   const [order, setOrder] = useState<"asc" | "desc" | undefined>("desc");
 
@@ -79,7 +89,9 @@ export const Result = ({ profile }: { profile: Profile }) => {
     }
   });
 
-  const sortIconSx = { "& .MuiTableSortLabel-icon": { color: `${textColor} !important` } };
+  const sortIconSx = {
+    "& .MuiTableSortLabel-icon": { color: `${textColor} !important` },
+  };
 
   return (
     <Container
@@ -107,7 +119,14 @@ export const Result = ({ profile }: { profile: Profile }) => {
                 "&:hover": { backgroundColor: bgColor },
               }}
             >
-              <TableCell sx={{ ...cellSx, cursor: "pointer", "&:hover": { backgroundColor: primaryColor }, transition: "background-color 0.3s ease" }}>
+              <TableCell
+                sx={{
+                  ...cellSx,
+                  cursor: "pointer",
+                  "&:hover": { backgroundColor: primaryColor },
+                  transition: "background-color 0.3s ease",
+                }}
+              >
                 <TableSortLabel
                   active={orderBy === "name"}
                   direction={orderBy === "name" ? order : "asc"}
@@ -117,7 +136,14 @@ export const Result = ({ profile }: { profile: Profile }) => {
                   Account Name
                 </TableSortLabel>
               </TableCell>
-              <TableCell sx={{ ...cellSx, cursor: "pointer", "&:hover": { backgroundColor: primaryColor }, transition: "background-color 0.3s ease" }}>
+              <TableCell
+                sx={{
+                  ...cellSx,
+                  cursor: "pointer",
+                  "&:hover": { backgroundColor: primaryColor },
+                  transition: "background-color 0.3s ease",
+                }}
+              >
                 <TableSortLabel
                   active={orderBy === "yearlyInterest"}
                   direction={orderBy === "yearlyInterest" ? order : "asc"}
@@ -127,7 +153,14 @@ export const Result = ({ profile }: { profile: Profile }) => {
                   Yearly Interest
                 </TableSortLabel>
               </TableCell>
-              <TableCell sx={{ ...cellSx, cursor: "pointer", "&:hover": { backgroundColor: primaryColor }, transition: "background-color 0.3s ease" }}>
+              <TableCell
+                sx={{
+                  ...cellSx,
+                  cursor: "pointer",
+                  "&:hover": { backgroundColor: primaryColor },
+                  transition: "background-color 0.3s ease",
+                }}
+              >
                 <TableSortLabel
                   active={orderBy === "effectiveInterest"}
                   direction={orderBy === "effectiveInterest" ? order : "asc"}
@@ -145,12 +178,45 @@ export const Result = ({ profile }: { profile: Profile }) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {sortedResults.map(([bankName, interest]) =>
-              displayResult(bankName, interest),
-            )}
+            {sortedResults.map(([bankName, interest]) => (
+              <TableRow
+                key={bankName}
+                sx={{
+                  color: textColor,
+                  backgroundColor: bgColor,
+                  "&:hover": { backgroundColor: alpha(primaryColor, 0.1) },
+                  transition: "background-color 0.3s ease",
+                }}
+              >
+                <TableCell
+                  sx={{
+                    ...cellSx,
+                    cursor: "pointer",
+                    fontWeight: 600,
+                    "&:hover": { color: primaryColor },
+                  }}
+                  onClick={() => navigate(`/bank/${bankNameToSlug(bankName)}`)}
+                  title={`View ${bankName} rate history`}
+                >
+                  {bankName}
+                </TableCell>
+                <TableCell sx={cellSx}>
+                  ${(interest.interest.toYearly() ?? 0).toFixed(2)}
+                </TableCell>
+                <TableCell sx={cellSx}>
+                  {(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%
+                </TableCell>
+                <TableCell sx={cellSx}>
+                  <LocalLink href={interest.url}>Website</LocalLink>
+                </TableCell>
+                <TableCell sx={cellSx}>{interest.remarks}</TableCell>
+                <TableCell sx={cellSx}>{interest.lastUpdated}</TableCell>
+              </TableRow>
+            ))}
           </TableBody>
         </Table>
       </TableContainer>
+
       <Typography
         variant="caption"
         sx={{
@@ -174,28 +240,3 @@ export const Result = ({ profile }: { profile: Profile }) => {
     </Container>
   );
 };
-
-const displayResult = (bankName: string, info: ResultProp) => (
-  <TableRow
-    key={bankName}
-    sx={{
-      color: textColor,
-      backgroundColor: bgColor,
-      "&:hover": { backgroundColor: alpha(primaryColor, 0.1) },
-      transition: "background-color 0.3s ease",
-    }}
-  >
-    <TableCell sx={cellSx}>{bankName}</TableCell>
-    <TableCell sx={cellSx}>
-      ${info.interest.toYearly().toFixed(2) ?? "0"}
-    </TableCell>
-    <TableCell sx={cellSx}>
-      {info.interest.toYearlyPercent().toFixed(2) ?? "0"}%
-    </TableCell>
-    <TableCell sx={cellSx}>
-      <LocalLink href={info.url}>Website</LocalLink>
-    </TableCell>
-    <TableCell sx={cellSx}>{info.remarks}</TableCell>
-    <TableCell sx={cellSx}>{info.lastUpdated}</TableCell>
-  </TableRow>
-);

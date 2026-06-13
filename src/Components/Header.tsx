@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -9,14 +10,48 @@ import {
   Menu,
   MenuItem,
   useMediaQuery,
+  Tabs,
+  Tab,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ArticleIcon from "@mui/icons-material/Article";
-import { textColor } from "../consts/colors";
+import { textColor, primaryColor } from "../consts/colors";
 
+/** Navigation tab configuration — single source of truth for routing */
+const TAB_CONFIG = {
+  current: { path: "/", label: "Current Rates" },
+  history: { path: "/history", label: "Rate History" },
+} as const;
+
+type TabKey = keyof typeof TAB_CONFIG;
+
+const tabSx = {
+  color: `${textColor}99`,
+  textTransform: "none" as const,
+  fontWeight: 500,
+  fontSize: "0.85rem",
+  minWidth: "auto",
+  "&.Mui-selected": {
+    color: primaryColor,
+    fontWeight: 600,
+  },
+};
+
+/**
+ * Shared header with app title (left), centered navigation tabs (middle),
+ * and external links (right).
+ *
+ * Navigation tabs and mobile menu items are generated from TAB_CONFIG
+ * so adding a new tab only requires adding a new entry to the map.
+ *
+ * Desktop: three-column layout — title | tabs | icons
+ * Mobile: title + hamburger menu
+ */
 export const Header = () => {
   const theme = useTheme();
+  const location = useLocation();
+  const navigate = useNavigate();
   const isMobile = useMediaQuery("(max-width:600px)");
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
@@ -27,25 +62,66 @@ export const Header = () => {
     setAnchorEl(null);
   };
 
+  // Determine active tab from current path using TAB_CONFIG
+  const activeTab = (Object.keys(TAB_CONFIG) as TabKey[]).find(
+    (key) => location.pathname === TAB_CONFIG[key].path,
+  ) ?? "current";
+
   return (
     <AppBar
       position="static"
       elevation={0}
       sx={{ backgroundColor: "transparent" }}
     >
-      <Toolbar sx={{ justifyContent: "space-between" }}>
+      <Toolbar
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+        }}
+      >
+        {/* Left: title */}
         <Typography
           variant={isMobile ? "h6" : "h5"}
           sx={{
             color: textColor,
             fontWeight: 600,
-            flexGrow: 1,
+            flexShrink: 0,
           }}
         >
           SG HYSA Calculator
         </Typography>
 
-        <Box sx={{ display: "flex", alignItems: "center" }}>
+        {/* Center: tab navigation */}
+        {!isMobile && (
+          <Box sx={{ flex: 1, display: "flex", justifyContent: "center" }}>
+            <Tabs
+              value={activeTab}
+              onChange={(_, v) => {
+                navigate(TAB_CONFIG[v as TabKey].path);
+              }}
+              sx={{
+                minHeight: "auto",
+                "& .MuiTabs-indicator": {
+                  backgroundColor: primaryColor,
+                },
+              }}
+            >
+              {(Object.keys(TAB_CONFIG) as TabKey[]).map((key) => (
+                <Tab
+                  key={key}
+                  label={TAB_CONFIG[key].label}
+                  value={key}
+                  sx={tabSx}
+                />
+              ))}
+            </Tabs>
+          </Box>
+        )}
+
+        {/* Right: external links / mobile menu */}
+        <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
           {isMobile ? (
             <>
               <IconButton
@@ -70,6 +146,18 @@ export const Header = () => {
                   },
                 }}
               >
+                {(Object.keys(TAB_CONFIG) as TabKey[]).map((key) => (
+                  <MenuItem
+                    key={key}
+                    onClick={() => {
+                      navigate(TAB_CONFIG[key].path);
+                      handleClose();
+                    }}
+                    selected={activeTab === key}
+                  >
+                    {TAB_CONFIG[key].label}
+                  </MenuItem>
+                ))}
                 <MenuItem>
                   <IconButton
                     href="https://jh123x.com"

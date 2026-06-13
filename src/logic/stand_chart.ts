@@ -1,3 +1,4 @@
+import type { RateSnapshot } from "../types/history";
 import { ResultInterest } from "../types/interest_result";
 import Profile from "../types/profile";
 import { calculate_ir } from "./common";
@@ -54,3 +55,21 @@ export const stand_chart_interest_before_06_25 = (
     baseRatePercent: baseInterest,
   });
 };
+
+export const standChartHistory: RateSnapshot[] = [
+  {
+    effectiveDate: "2025-06-01",
+    interestFn: stand_chart_interest_before_06_25,
+    changeSummary: "Salary 1% / Spend 1% / Insurance 2% / Investment 2% on first $100K.",
+  },
+  {
+    effectiveDate: "2025-10-01",
+    interestFn: stand_chart_interest_10_2025,
+    changeSummary: "Salary ↑1.5%, Spend ↑1.5%, Insurance ↑2.5%, Investment ↑2.5%.",
+  },
+  {
+    effectiveDate: "2026-06-05",
+    interestFn: stand_chart_interest_06_2026,
+    changeSummary: "Salary ↓0.9%, Spend ↓0.9%. Insurance ($12K→$24K threshold) 2%, Investment ($20K→$30K threshold) 2%.",
+  },
+];

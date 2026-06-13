@@ -1,62 +1,62 @@
 import type Profile from "../types/profile";
 import type { ReactElement } from "react";
-import type { ResultInterest } from "../types/interest_result";
+import type { RateSnapshot } from "../types/history";
 
 import { LocalLink } from "../Components/LocalLink";
-import { uob_interest_2025_12 } from "./uob";
-import { gxs_interest_06_2026 } from "./gxs";
-import { ocbc_interest_05_2026 } from "./ocbc360";
-import { maybank_save_up_10_2025, maybank_save_up_06_2026, maybank_isavvy_06_2026, maybank_isavvy_plus_06_2026 } from "./maybank";
-import { citi_wealth_first_06_2026 } from "./citibank";
-import { stand_chart_interest_06_2026 } from "./stand_chart";
-import { dbs_multiplier_interest } from "./dbs_multiplier";
+import { uobHistory } from "./uob";
+import { gxsHistory } from "./gxs";
+import { ocbcHistory } from "./ocbc360";
+import { maybankSaveUpHistory, maybankIsavvyHistory, maybankIsavvyPlusHistory } from "./maybank";
+import { citiHistory } from "./citibank";
+import { standChartHistory } from "./stand_chart";
+import { dbsMultiplierHistory } from "./dbs_multiplier";
 import {
-  trust_bank_signature_06_2026,
-  trust_bank_zen_06_2026,
+  trustBankZenHistory,
+  trustBankSignatureHistory,
 } from "./trust_bank";
-import {
-  maribank_interest_12_2025,
-  mariInterestRate_12_2025,
-} from "./maribank";
-import { bank_of_china_super_saver_11_2025 } from "./bank_of_china";
-import { choco_finance_06_2026 } from "./choco_finance";
+import { maribankHistory } from "./maribank";
+import { bocSuperSaverHistory } from "./bank_of_china";
+import { chocoFinanceHistory } from "./choco_finance";
+import { deriveCurrentFromHistory } from "./history";
 
-interface Info {
-  interestFn: (profile: Profile) => ResultInterest;
+// --- Computed current rates (derived from history, so they auto-update) ---
+
+const mariCurrentRate = (() => {
+  const { interestFn } = deriveCurrentFromHistory(maribankHistory);
+  return interestFn({ Savings: 10000 } as Profile).toYearlyPercent().toFixed(2);
+})();
+
+export interface BankDef {
   url: string;
   remarks: string | ReactElement;
-  lastUpdated: string;
+  history: RateSnapshot[];
 }
 
-export const bankInfo: Record<string, Info> = {
+export const bankInfo: Record<string, BankDef> = {
   "UOB Bank": {
-    interestFn: uob_interest_2025_12,
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     remarks: "Visit their official website to find out more",
-    lastUpdated: "2025-11-14",
+    history: uobHistory,
   },
   "OCBC Bank": {
-    interestFn: ocbc_interest_05_2026,
     url: "https://www.ocbc.com/personal-banking/notices",
     remarks: "Visit the official website to find our more",
-    lastUpdated: "2026-04-05",
+    history: ocbcHistory,
   },
   Maribank: {
-    interestFn: maribank_interest_12_2025,
     url: "https://www.maribank.sg/product/mari-savings-account/",
     remarks: (
       <p>
-        Interest rates are a flat {mariInterestRate_12_2025}%
+        Interest rates are a flat {mariCurrentRate}%
         <br />
         Capped at $100k
         <br />
         Referral code: <b>4QTP99MT</b>
       </p>
     ),
-    lastUpdated: "2025-12-27",
+    history: maribankHistory,
   },
   "Standard Chartered": {
-    interestFn: stand_chart_interest_06_2026,
     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
     remarks: (
       <p>
@@ -65,22 +65,19 @@ export const bankInfo: Record<string, Info> = {
         fulfils interest for 6 months
       </p>
     ),
-    lastUpdated: "2026-06-05",
+    history: standChartHistory,
   },
   "Trust Bank (Signature)": {
-    interestFn: trust_bank_signature_06_2026,
     url: "https://trustbank.sg/savings-account/",
     remarks: <p>Spending assumes 5 x $30 if spending is more than 150.</p>,
-    lastUpdated: "2026-06-05",
+    history: trustBankSignatureHistory,
   },
   "Trust Bank (Zen)": {
-    interestFn: trust_bank_zen_06_2026,
     url: "https://trustbank.sg/savings-account/",
     remarks: "A Flat 0.4% interest rate up to 1.2 million",
-    lastUpdated: "2026-06-05",
+    history: trustBankZenHistory,
   },
   "DBS Multiplier Account": {
-    interestFn: dbs_multiplier_interest,
     url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
     remarks: (
       <p>
@@ -89,10 +86,9 @@ export const bankInfo: Record<string, Info> = {
         Spending includes credit card / paylah retail spend
       </p>
     ),
-    lastUpdated: "2025-10-14",
+    history: dbsMultiplierHistory,
   },
   GXS: {
-    interestFn: gxs_interest_06_2026,
     url: "https://www.gxs.com.sg/savings-account",
     remarks: (
       <p>
@@ -109,10 +105,9 @@ export const bankInfo: Record<string, Info> = {
         </LocalLink>
       </p>
     ),
-    lastUpdated: "2026-06-05",
+    history: gxsHistory,
   },
   "Chocolate Finance": {
-    interestFn: choco_finance_06_2026,
     url: "https://www.chocolatefinance.com/",
     remarks: (
       <p>
@@ -127,10 +122,9 @@ export const bankInfo: Record<string, Info> = {
         </LocalLink>
       </p>
     ),
-    lastUpdated: "2026-06-05",
+    history: chocoFinanceHistory,
   },
   "Bank of China SuperSaver": {
-    interestFn: bank_of_china_super_saver_11_2025,
     url: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
     remarks: (
       <p>
@@ -142,10 +136,9 @@ export const bankInfo: Record<string, Info> = {
         </b>
       </p>
     ),
-    lastUpdated: "2025-10-14",
+    history: bocSuperSaverHistory,
   },
   "Maybank Save Up": {
-    interestFn: maybank_save_up_06_2026,
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks: (
       <p>
@@ -155,10 +148,9 @@ export const bankInfo: Record<string, Info> = {
         No more category-based bonus system.
       </p>
     ),
-    lastUpdated: "2026-06-09",
+    history: maybankSaveUpHistory,
   },
   "Maybank iSAVvy": {
-    interestFn: maybank_isavvy_06_2026,
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks: (
       <p>
@@ -168,10 +160,9 @@ export const bankInfo: Record<string, Info> = {
         Rates effective from 11 June 2026.
       </p>
     ),
-    lastUpdated: "2026-06-11",
+    history: maybankIsavvyHistory,
   },
   "Maybank iSAVvy Plus": {
-    interestFn: maybank_isavvy_plus_06_2026,
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks: (
       <p>
@@ -182,10 +173,9 @@ export const bankInfo: Record<string, Info> = {
         <b>Set "Account Increment" &gt; 0 to qualify for the bonus.</b>
       </p>
     ),
-    lastUpdated: "2026-06-11",
+    history: maybankIsavvyPlusHistory,
   },
   "Citi Wealth first Account": {
-    interestFn: citi_wealth_first_06_2026,
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks: (
       <>
@@ -197,6 +187,6 @@ export const bankInfo: Record<string, Info> = {
         *Assumes Citigold level, Citi Private has a higher level.
       </>
     ),
-    lastUpdated: "2026-06-05",
+    history: citiHistory,
   },
 };

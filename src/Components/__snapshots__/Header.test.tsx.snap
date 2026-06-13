@@ -7,15 +7,55 @@ exports[`Header > should match snapshot 1`] = `
     style="--Paper-shadow: none;"
   >
     <div
-      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-yg49xf-MuiToolbar-root"
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-onx5yd-MuiToolbar-root"
     >
       <h5
-        class="MuiTypography-root MuiTypography-h5 css-ylfd6q-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-h5 css-1bnr0ho-MuiTypography-root"
       >
         SG HYSA Calculator
       </h5>
       <div
-        class="MuiBox-root css-70qvj9"
+        class="MuiBox-root css-t508yj"
+      >
+        <div
+          class="MuiTabs-root css-1aj64px-MuiTabs-root"
+        >
+          <div
+            class="MuiTabs-scroller MuiTabs-fixed css-s2t35c-MuiTabs-scroller"
+            style="overflow: hidden; margin-bottom: 0px;"
+          >
+            <div
+              class="MuiTabs-list css-hzcega-MuiTabs-list"
+              role="tablist"
+            >
+              <button
+                aria-selected="true"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1j3ayx4-MuiButtonBase-root-MuiTab-root"
+                role="tab"
+                tabindex="0"
+                type="button"
+              >
+                Current Rates
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1j3ayx4-MuiButtonBase-root-MuiTab-root"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                Rate History
+              </button>
+            </div>
+            <span
+              class="MuiTabs-indicator css-1qltlow-MuiTabs-indicator"
+              style="left: 0px; width: 0px;"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="MuiBox-root css-jma0kd"
       >
         <a
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-atqrz5-MuiButtonBase-root-MuiIconButton-root"

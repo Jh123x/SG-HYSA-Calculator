@@ -2,6 +2,7 @@ import { calculate_ir } from "./common";
 import { Interest } from "../types/interest";
 import { ResultInterest } from "../types/interest_result";
 import Profile from "../types/profile";
+import type { RateSnapshot } from "../types/history";
 
 const ir_cutoff: Array<Interest> = [
   // Spend 500 + Salary Credit
@@ -146,3 +147,24 @@ export const uob_interest_2025_12 = (profile: Profile): ResultInterest => {
 
   return calculate_ir(Savings, ir_2025_12_cutoff[3]);
 };
+
+export const uobHistory: RateSnapshot[] = [
+  {
+    effectiveDate: "2025-09-01",
+    interestFn: uob_interest_2025_09,
+    changeSummary:
+      "Top tier (Spend $500 + Salary): 1st $25K 5.3%→3.4%, next $50K 3.8%→2.5%, next $75K 2.3%→1%. Giros tier: 1st $50K 2.5%→1.5%.",
+  },
+  {
+    effectiveDate: "2025-10-15",
+    interestFn: uob_interest_10_2025,
+    changeSummary:
+      "Top tier partially restored: 1st $25K 3.4%→4.5%, next $50K 2.5%→3%, next $75K 1%→1.5%.",
+  },
+  {
+    effectiveDate: "2025-12-01",
+    interestFn: uob_interest_2025_12,
+    changeSummary:
+      "Top tier cut again: 1st $25K 4.5%→3.4%, next $50K 3%→2.5%.",
+  },
+];
