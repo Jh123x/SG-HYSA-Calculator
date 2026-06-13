@@ -634,6 +634,29 @@ exports[`App > should render correctly 1`] = `
       </button>
     </div>
     <div
+      class="MuiToggleButtonGroup-root MuiToggleButtonGroup-horizontal css-1t6ckv8-MuiToggleButtonGroup-root"
+      role="group"
+    >
+      <button
+        aria-pressed="true"
+        class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeMedium MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-wqwp7v-MuiButtonBase-root-MuiToggleButton-root"
+        tabindex="0"
+        type="button"
+        value="current"
+      >
+        Current Rates
+      </button>
+      <button
+        aria-pressed="false"
+        class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeMedium MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-wqwp7v-MuiButtonBase-root-MuiToggleButton-root"
+        tabindex="0"
+        type="button"
+        value="history"
+      >
+        Rate History
+      </button>
+    </div>
+    <div
       class="MuiContainer-root MuiContainer-maxWidthLg css-1jqmhqx-MuiContainer-root"
     >
       <div
