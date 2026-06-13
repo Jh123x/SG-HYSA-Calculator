@@ -94,12 +94,14 @@ export const BankToggleChips = ({
           placeholder="Filter banks..."
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchIcon sx={{ color: textColor, opacity: 0.6 }} />
-              </InputAdornment>
-            ),
+          slotProps={{
+            input: {
+              startAdornment: (
+                <InputAdornment position="start">
+                  <SearchIcon sx={{ color: textColor, opacity: 0.6 }} />
+                </InputAdornment>
+              ),
+            },
           }}
           sx={{
             flex: "1 1 200px",
