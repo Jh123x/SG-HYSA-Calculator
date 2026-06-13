@@ -17,6 +17,7 @@ import {
   type Theme,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { ChartsReferenceLine } from "@mui/x-charts";
 import { bankInfo } from "../logic/constants";
 import { lineColors, textColor, bgColor } from "../consts/colors";
 import type Profile from "../types/profile";
@@ -223,7 +224,17 @@ const BankHistoryChart = ({
 
   return (
     <Box sx={{ mb: 3 }}>
-      <InterestVsSavingsChart lines={lines} profile={profile} height={250} />
+      <InterestVsSavingsChart lines={lines} profile={profile} height={250}>
+        <ChartsReferenceLine
+          x={profile.Savings}
+          label="Your savings"
+          lineStyle={{
+            stroke: lineColors[0],
+            strokeWidth: 2,
+            strokeDasharray: "6 3",
+          }}
+        />
+      </InterestVsSavingsChart>
     </Box>
   );
 };
