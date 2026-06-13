@@ -770,7 +770,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View UOB Bank rate history"
               >
                 UOB Bank
               </td>
@@ -811,7 +812,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View OCBC Bank rate history"
               >
                 OCBC Bank
               </td>
@@ -852,7 +854,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View Maribank rate history"
               >
                 Maribank
               </td>
@@ -902,7 +905,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View Standard Chartered rate history"
               >
                 Standard Chartered
               </td>
@@ -947,7 +951,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View Trust Bank (Signature) rate history"
               >
                 Trust Bank (Signature)
               </td>
@@ -990,7 +995,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View Trust Bank (Zen) rate history"
               >
                 Trust Bank (Zen)
               </td>
@@ -1031,7 +1037,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View DBS Multiplier Account rate history"
               >
                 DBS Multiplier Account
               </td>
@@ -1076,7 +1083,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View GXS rate history"
               >
                 GXS
               </td>
@@ -1133,7 +1141,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View Chocolate Finance rate history"
               >
                 Chocolate Finance
               </td>
@@ -1191,7 +1200,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View Bank of China SuperSaver rate history"
               >
                 Bank of China SuperSaver
               </td>
@@ -1238,7 +1248,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View Maybank Save Up rate history"
               >
                 Maybank Save Up
               </td>
@@ -1283,7 +1294,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View Maybank iSAVvy rate history"
               >
                 Maybank iSAVvy
               </td>
@@ -1328,7 +1340,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View Maybank iSAVvy Plus rate history"
               >
                 Maybank iSAVvy Plus
               </td>
@@ -1377,7 +1390,8 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
+                title="View Citi Wealth first Account rate history"
               >
                 Citi Wealth first Account
               </td>

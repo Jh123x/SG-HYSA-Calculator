@@ -1,65 +1,31 @@
 import { useState } from "react";
-import { Container, GlobalStyles, ToggleButton, ToggleButtonGroup } from "@mui/material";
-import { Header } from "./Components/Header";
-import { FormInputs } from "./Components/Inputs";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Layout } from "./Layout";
+import { MainPage } from "./MainPage";
+import { BankDetailPage } from "./pages/BankDetailPage";
 import Profile, { NewProfile } from "./types/profile";
 import { STORE_KEY } from "./consts/keys";
-import { Result } from "./Components/Interests";
-import { ThemeProvider } from "@mui/material/styles";
-import { bgColor, theme, textColor } from "./consts/colors";
-import { Footer } from "./Components/Footer";
-import { HistoryView } from "./Components/HistoryView";
 
 export const App = () => {
   const localData = localStorage.getItem(STORE_KEY) ?? "";
   const localValue = localData ? JSON.parse(localData) : NewProfile({});
   const [currProfile, setCurrProfile] = useState<Profile>(localValue);
-  const [view, setView] = useState<"current" | "history">("current");
-
-  const toggleSx = {
-    color: textColor,
-    "&.Mui-selected": {
-      backgroundColor: theme.palette.primary.main,
-      color: "#fff",
-    },
-  };
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles
-        styles={{
-          body: {
-            backgroundColor: bgColor,
-            margin: "0px",
-            padding: "0px",
-            height: "100vh",
-            width: "100%",
-          },
-        }}
-      />
-      <Header />
-      <Container sx={{ marginTop: "20px", paddingBottom: "20px" }}>
-        <FormInputs currProfile={currProfile} setCurrProfile={setCurrProfile} />
-        <ToggleButtonGroup
-          value={view}
-          exclusive
-          onChange={(_, v) => v && setView(v)}
-          sx={{ mt: 2, mb: 2 }}
+    <BrowserRouter>
+      <Routes>
+        <Route
+          element={
+            <Layout currProfile={currProfile} setCurrProfile={setCurrProfile} />
+          }
         >
-          <ToggleButton value="current" sx={toggleSx}>
-            Current Rates
-          </ToggleButton>
-          <ToggleButton value="history" sx={toggleSx}>
-            Rate History
-          </ToggleButton>
-        </ToggleButtonGroup>
-        {view === "current" ? (
-          <Result profile={currProfile} />
-        ) : (
-          <HistoryView profile={currProfile} />
-        )}
-      </Container>
-      <Footer />
-    </ThemeProvider>
+          <Route path="/" element={<MainPage profile={currProfile} />} />
+          <Route
+            path="/bank/:slug"
+            element={<BankDetailPage profile={currProfile} />}
+          />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
