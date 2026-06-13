@@ -15,6 +15,7 @@ import {
   Chip,
   useTheme,
   useMediaQuery,
+  type Theme,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LineChart } from "@mui/x-charts/LineChart";
@@ -36,6 +37,36 @@ export const HistoryView = ({ profile }: Props) => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery("(max-width:640px)");
 
+  if (isSmallScreen) {
+    return (
+      <Paper
+        sx={{
+          padding: "20px",
+          borderRadius: "10px",
+          boxShadow: theme.shadows[3],
+          textAlign: "center",
+          mt: 3,
+        }}
+      >
+        <Typography variant="body1" color={textColor}>
+          Please view on a larger screen to see the rate history charts.
+        </Typography>
+      </Paper>
+    );
+  }
+
+  return <HistoryViewContent profile={profile} theme={theme} />;
+};
+
+// Extracted so the heavy useMemo computation runs only when
+// the view is actually rendered (not on small screens).
+const HistoryViewContent = ({
+  profile,
+  theme,
+}: {
+  profile: Profile;
+  theme: Theme;
+}) => {
   // Build chart data: each bank with history contributes a line
   const { chartSeries, dataset } = useMemo(() => {
     const dateSet = new Set<string>();
@@ -86,24 +117,6 @@ export const HistoryView = ({ profile }: Props) => {
 
     return { chartSeries: series, allDates: allDatesSorted, dataset };
   }, [profile]);
-
-  if (isSmallScreen) {
-    return (
-      <Paper
-        sx={{
-          padding: "20px",
-          borderRadius: "10px",
-          boxShadow: theme.shadows[3],
-          textAlign: "center",
-          mt: 3,
-        }}
-      >
-        <Typography variant="body1" color={textColor}>
-          Please view on a larger screen to see the rate history charts.
-        </Typography>
-      </Paper>
-    );
-  }
 
   return (
     <Box sx={{ mt: 3 }}>
