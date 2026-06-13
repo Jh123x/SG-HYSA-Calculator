@@ -106,7 +106,7 @@ export const Result = ({ profile }: { profile: Profile }) => {
                 "&:hover": { backgroundColor: bgColor },
               }}
             >
-              <TableCell sx={{ ...cellSx, cursor: "pointer" }}>
+              <TableCell sx={{ ...cellSx, cursor: "pointer", "&:hover": { backgroundColor: primaryColor }, transition: "background-color 0.3s ease" }}>
                 <TableSortLabel
                   active={orderBy === "name"}
                   direction={orderBy === "name" ? order : "asc"}
@@ -116,7 +116,7 @@ export const Result = ({ profile }: { profile: Profile }) => {
                   Account Name
                 </TableSortLabel>
               </TableCell>
-              <TableCell sx={{ ...cellSx, cursor: "pointer" }}>
+              <TableCell sx={{ ...cellSx, cursor: "pointer", "&:hover": { backgroundColor: primaryColor }, transition: "background-color 0.3s ease" }}>
                 <TableSortLabel
                   active={orderBy === "yearlyInterest"}
                   direction={orderBy === "yearlyInterest" ? order : "asc"}
@@ -126,7 +126,7 @@ export const Result = ({ profile }: { profile: Profile }) => {
                   Yearly Interest
                 </TableSortLabel>
               </TableCell>
-              <TableCell sx={{ ...cellSx, cursor: "pointer" }}>
+              <TableCell sx={{ ...cellSx, cursor: "pointer", "&:hover": { backgroundColor: primaryColor }, transition: "background-color 0.3s ease" }}>
                 <TableSortLabel
                   active={orderBy === "effectiveInterest"}
                   direction={orderBy === "effectiveInterest" ? order : "asc"}
@@ -181,6 +181,7 @@ const displayResult = (bankName: string, info: ResultProp) => (
       color: textColor,
       backgroundColor: bgColor,
       "&:hover": { backgroundColor: primaryColor, opacity: 0.1 },
+      transition: "background-color 0.3s ease",
     }}
   >
     <TableCell sx={cellSx}>{bankName}</TableCell>

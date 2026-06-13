@@ -673,7 +673,7 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root MuiTableRow-head css-zkb50a-MuiTableRow-root"
             >
               <th
-                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-wscldm-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1kdni9y-MuiTableCell-root"
                 scope="col"
               >
                 <span
@@ -696,7 +696,7 @@ exports[`App > should render correctly 1`] = `
                 </span>
               </th>
               <th
-                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-wscldm-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1kdni9y-MuiTableCell-root"
                 scope="col"
               >
                 <span
@@ -719,7 +719,7 @@ exports[`App > should render correctly 1`] = `
                 </span>
               </th>
               <th
-                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-wscldm-MuiTableCell-root"
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1kdni9y-MuiTableCell-root"
                 scope="col"
               >
                 <span
@@ -767,7 +767,7 @@ exports[`App > should render correctly 1`] = `
             class="MuiTableBody-root css-gmh7jj-MuiTableBody-root"
           >
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -808,7 +808,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -849,7 +849,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -899,7 +899,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -944,7 +944,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -987,7 +987,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1028,7 +1028,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1073,7 +1073,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1130,7 +1130,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1188,7 +1188,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1235,7 +1235,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1280,7 +1280,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1325,7 +1325,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1374,7 +1374,7 @@ exports[`App > should render correctly 1`] = `
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root css-170l4sl-MuiTableRow-root"
+              class="MuiTableRow-root css-jvbaa6-MuiTableRow-root"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"

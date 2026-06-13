@@ -25,25 +25,35 @@ export interface DerivedCurrent {
 }
 
 /**
- * Derive the "current" interest function and last-updated date from the
- * last entry in a bank's rate history array.
+ * Derive the "current" interest function and last-updated date from a
+ * bank's rate history array.
  *
- * When history is empty (bank not yet active / coming soon), returns a
- * zero-interest fallback so the bank still renders without crashing.
+ * Walks backwards through the (chronologically sorted) history to find
+ * the latest entry whose effectiveDate is not in the future. This
+ * prevents showing rates that haven't taken effect yet.
+ *
+ * When history is empty or all entries are future-dated, returns a
+ * zero-interest fallback.
  */
 export function deriveCurrentFromHistory(
   history: RateSnapshot[],
 ): DerivedCurrent {
-  if (history.length === 0) {
-    return {
-      interestFn: ZERO_INTEREST,
-      lastUpdated: "Coming soon",
-    };
+  const today = new Date().toISOString().split("T")[0]; // YYYY-MM-DD
+
+  // Walk backwards to find the latest entry that is not in the future
+  for (let i = history.length - 1; i >= 0; i--) {
+    if (history[i].effectiveDate <= today) {
+      return {
+        interestFn: history[i].interestFn,
+        lastUpdated: history[i].effectiveDate,
+      };
+    }
   }
-  const latest = history[history.length - 1];
+
+  // Empty history or all entries are future-dated
   return {
-    interestFn: latest.interestFn,
-    lastUpdated: latest.effectiveDate,
+    interestFn: ZERO_INTEREST,
+    lastUpdated: history.length > 0 ? `Effective ${history[0].effectiveDate}` : "Coming soon",
   };
 }
 

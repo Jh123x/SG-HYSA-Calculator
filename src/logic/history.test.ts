@@ -50,6 +50,28 @@ describe("deriveCurrentFromHistory", () => {
     expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(0);
     expect(result.lastUpdated).toBe("Coming soon");
   });
+
+  it("skips future-dated entries and returns latest effective one", () => {
+    const history: RateSnapshot[] = [
+      { effectiveDate: "2024-06-01", interestFn: () => makeResult(2.0), changeSummary: "Old" },
+      { effectiveDate: "2025-03-01", interestFn: () => makeResult(3.0), changeSummary: "Current" },
+      { effectiveDate: "2035-01-01", interestFn: () => makeResult(5.0), changeSummary: "Future" },
+      { effectiveDate: "2036-06-01", interestFn: () => makeResult(7.0), changeSummary: "Far future" },
+    ];
+    const result = deriveCurrentFromHistory(history);
+    // Should return the 2025-03-01 entry (latest that is ≤ today), NOT the 2035/2036 entries
+    expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(3.0);
+    expect(result.lastUpdated).toBe("2025-03-01");
+  });
+
+  it("returns zero-interest with 'Effective' message when all entries are future-dated", () => {
+    const history: RateSnapshot[] = [
+      { effectiveDate: "2030-01-01", interestFn: () => makeResult(4.0), changeSummary: "Not yet" },
+    ];
+    const result = deriveCurrentFromHistory(history);
+    expect(result.interestFn(emptyProfile).toYearlyPercent()).toBe(0);
+    expect(result.lastUpdated).toBe("Effective 2030-01-01");
+  });
 });
 
 describe("resolveHistoryForChart", () => {
