@@ -22,7 +22,6 @@ import { lineColors, textColor, bgColor } from "../consts/colors";
 import type Profile from "../types/profile";
 import type { RateSnapshot } from "../types/history";
 import { resolveHistoryForChart } from "../logic/history";
-import type { ResolvedHistoryItem } from "../logic/history";
 import {
   InterestVsSavingsChart,
   type ChartLine,

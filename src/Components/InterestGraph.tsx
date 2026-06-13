@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ChartsReferenceLine } from "@mui/x-charts";
 import { Paper, useTheme, useMediaQuery, Box, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
@@ -13,7 +12,6 @@ import {
 export const InterestGraph = ({ profile }: { profile: Profile }) => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery("(max-width:640px)");
-  const [selectedItem, setSelectedItem] = useState(null);
 
   if (isSmallScreen) {
     return (

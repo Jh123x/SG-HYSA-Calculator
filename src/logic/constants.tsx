@@ -14,12 +14,17 @@ import {
   trustBankZenHistory,
   trustBankSignatureHistory,
 } from "./trust_bank";
-import {
-  mariInterestRate_12_2025,
-  maribankHistory,
-} from "./maribank";
+import { maribankHistory } from "./maribank";
 import { bocSuperSaverHistory } from "./bank_of_china";
 import { chocoFinanceHistory } from "./choco_finance";
+import { deriveCurrentFromHistory } from "./history";
+
+// --- Computed current rates (derived from history, so they auto-update) ---
+
+const mariCurrentRate = (() => {
+  const { interestFn } = deriveCurrentFromHistory(maribankHistory);
+  return interestFn({ Savings: 10000 } as Profile).toYearlyPercent().toFixed(2);
+})();
 
 export interface BankDef {
   url: string;
@@ -42,7 +47,7 @@ export const bankInfo: Record<string, BankDef> = {
     url: "https://www.maribank.sg/product/mari-savings-account/",
     remarks: (
       <p>
-        Interest rates are a flat {mariInterestRate_12_2025}%
+        Interest rates are a flat {mariCurrentRate}%
         <br />
         Capped at $100k
         <br />

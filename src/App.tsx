@@ -16,6 +16,14 @@ export const App = () => {
   const [currProfile, setCurrProfile] = useState<Profile>(localValue);
   const [view, setView] = useState<"current" | "history">("current");
 
+  const toggleSx = {
+    color: textColor,
+    "&.Mui-selected": {
+      backgroundColor: theme.palette.primary.main,
+      color: "#fff",
+    },
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles
@@ -30,12 +38,7 @@ export const App = () => {
         }}
       />
       <Header />
-      <Container
-        sx={{
-          marginTop: "20px",
-          paddingBottom: "20px",
-        }}
-      >
+      <Container sx={{ marginTop: "20px", paddingBottom: "20px" }}>
         <FormInputs currProfile={currProfile} setCurrProfile={setCurrProfile} />
         <ToggleButtonGroup
           value={view}
@@ -43,22 +46,10 @@ export const App = () => {
           onChange={(_, v) => v && setView(v)}
           sx={{ mt: 2, mb: 2 }}
         >
-          <ToggleButton
-            value="current"
-            sx={{
-              color: textColor,
-              "&.Mui-selected": { backgroundColor: theme.palette.primary.main, color: "#fff" },
-            }}
-          >
+          <ToggleButton value="current" sx={toggleSx}>
             Current Rates
           </ToggleButton>
-          <ToggleButton
-            value="history"
-            sx={{
-              color: textColor,
-              "&.Mui-selected": { backgroundColor: theme.palette.primary.main, color: "#fff" },
-            }}
-          >
+          <ToggleButton value="history" sx={toggleSx}>
             Rate History
           </ToggleButton>
         </ToggleButtonGroup>

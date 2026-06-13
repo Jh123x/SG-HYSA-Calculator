@@ -25,6 +25,13 @@ type SortableColumns =
   | "effectiveInterest"
   | undefined;
 
+/** Shared styling for all data table cells */
+const cellSx = {
+  color: textColor,
+  backgroundColor: bgColor,
+  padding: "10px 15px",
+};
+
 export const Result = ({ profile }: { profile: Profile }) => {
   const [orderBy, setOrderBy] = useState<SortableColumns>(undefined);
   const [order, setOrder] = useState<"asc" | "desc" | undefined>("desc");
@@ -42,18 +49,14 @@ export const Result = ({ profile }: { profile: Profile }) => {
 
   const handleSort = (column: SortableColumns) => {
     if (orderBy === column) {
-      // Cycle through 'asc', 'desc', and ''
       const nextOrder =
         order === "asc" ? "desc" : order === "desc" ? undefined : "asc";
       setOrder(nextOrder);
-      if (nextOrder === undefined) {
-        setOrderBy(undefined); // Disable sorting
-      }
+      if (nextOrder === undefined) setOrderBy(undefined);
       return;
     }
-
     setOrderBy(column);
-    setOrder("asc"); // Default to 'asc' when switching columns
+    setOrder("asc");
   };
 
   const sortedResults = Object.entries(results).sort((a, b) => {
@@ -75,6 +78,8 @@ export const Result = ({ profile }: { profile: Profile }) => {
     }
   });
 
+  const sortIconSx = { "& .MuiTableSortLabel-icon": { color: `${textColor} !important` } };
+
   return (
     <Container
       sx={{
@@ -94,55 +99,49 @@ export const Result = ({ profile }: { profile: Profile }) => {
       >
         <Table>
           <TableHead>
-            <ThemedTableRow>
-              <ThemedHeader key="account_name">
+            <TableRow
+              sx={{
+                color: textColor,
+                backgroundColor: bgColor,
+                "&:hover": { backgroundColor: bgColor },
+              }}
+            >
+              <TableCell sx={{ ...cellSx, cursor: "pointer" }}>
                 <TableSortLabel
                   active={orderBy === "name"}
                   direction={orderBy === "name" ? order : "asc"}
                   onClick={() => handleSort("name")}
-                  sx={{
-                    "& .MuiTableSortLabel-icon": {
-                      color: `${textColor} !important`,
-                    },
-                  }}
+                  sx={sortIconSx}
                 >
                   Account Name
                 </TableSortLabel>
-              </ThemedHeader>
-              <ThemedHeader key="yearly_interest">
+              </TableCell>
+              <TableCell sx={{ ...cellSx, cursor: "pointer" }}>
                 <TableSortLabel
                   active={orderBy === "yearlyInterest"}
                   direction={orderBy === "yearlyInterest" ? order : "asc"}
                   onClick={() => handleSort("yearlyInterest")}
-                  sx={{
-                    "& .MuiTableSortLabel-icon": {
-                      color: `${textColor} !important`,
-                    },
-                  }}
+                  sx={sortIconSx}
                 >
                   Yearly Interest
                 </TableSortLabel>
-              </ThemedHeader>
-              <ThemedHeader key="effective_interest">
+              </TableCell>
+              <TableCell sx={{ ...cellSx, cursor: "pointer" }}>
                 <TableSortLabel
                   active={orderBy === "effectiveInterest"}
                   direction={orderBy === "effectiveInterest" ? order : "asc"}
                   onClick={() => handleSort("effectiveInterest")}
-                  sx={{
-                    "& .MuiTableSortLabel-icon": {
-                      color: `${textColor} !important`,
-                    },
-                  }}
+                  sx={sortIconSx}
                 >
                   Effective Interest
                   <br />
                   Rate (EIR)
                 </TableSortLabel>
-              </ThemedHeader>
-              <ThemedHeader key="webpage">Webpage</ThemedHeader>
-              <ThemedHeader key="remark">Remarks</ThemedHeader>
-              <ThemedHeader key="updated_at">Updated at</ThemedHeader>
-            </ThemedTableRow>
+              </TableCell>
+              <TableCell sx={cellSx}>Webpage</TableCell>
+              <TableCell sx={cellSx}>Remarks</TableCell>
+              <TableCell sx={cellSx}>Updated at</TableCell>
+            </TableRow>
           </TableHead>
           <TableBody>
             {sortedResults.map(([bankName, interest]) =>
@@ -175,78 +174,26 @@ export const Result = ({ profile }: { profile: Profile }) => {
   );
 };
 
-const displayResult = (bankName: string, info: ResultProp) => {
-  const lastUpdated = info.lastUpdated;
-  return (
-    <ThemedTableRow key={bankName}>
-      <ThemedTableCell>{bankName}</ThemedTableCell>
-      <ThemedTableCell>
-        {"$"}
-        {info.interest.toYearly().toFixed(2) ?? "0"}
-      </ThemedTableCell>
-      <ThemedTableCell>
-        {info.interest.toYearlyPercent().toFixed(2) ?? "0"}
-        {"%"}
-      </ThemedTableCell>
-      <ThemedTableCell>
-        <LocalLink href={info.url}>Website</LocalLink>
-      </ThemedTableCell>
-      <ThemedTableCell>{info.remarks}</ThemedTableCell>
-      <ThemedTableCell>{lastUpdated}</ThemedTableCell>
-    </ThemedTableRow>
-  );
-};
-
-const ThemedHeader = ({ children }: { children: ReactElement | string }) => {
-  return (
-    <TableCell
-      sx={{
-        color: textColor,
-        backgroundColor: bgColor,
-        padding: "10px 15px",
-        "&:hover": { backgroundColor: primaryColor },
-        transition: "background-color 0.3s ease",
-        cursor: "pointer",
-      }}
-    >
-      {children}
-    </TableCell>
-  );
-};
-
-const ThemedTableRow = ({
-  children,
-  bankName,
-}: {
-  children: Array<ReactElement>;
-  bankName?: string;
-}) => (
+const displayResult = (bankName: string, info: ResultProp) => (
   <TableRow
     key={bankName}
     sx={{
       color: textColor,
       backgroundColor: bgColor,
-      "&:hover": { backgroundColor: "#f5f5f5" },
-      transition: "background-color 0.3s ease",
+      "&:hover": { backgroundColor: primaryColor, opacity: 0.1 },
     }}
   >
-    {children}
+    <TableCell sx={cellSx}>{bankName}</TableCell>
+    <TableCell sx={cellSx}>
+      ${info.interest.toYearly().toFixed(2) ?? "0"}
+    </TableCell>
+    <TableCell sx={cellSx}>
+      {info.interest.toYearlyPercent().toFixed(2) ?? "0"}%
+    </TableCell>
+    <TableCell sx={cellSx}>
+      <LocalLink href={info.url}>Website</LocalLink>
+    </TableCell>
+    <TableCell sx={cellSx}>{info.remarks}</TableCell>
+    <TableCell sx={cellSx}>{info.lastUpdated}</TableCell>
   </TableRow>
-);
-
-const ThemedTableCell = ({
-  children,
-}: {
-  children: string | number | ReactElement | string[];
-}) => (
-  <TableCell
-    sx={{
-      color: textColor,
-      backgroundColor: bgColor,
-      padding: "10px 15px",
-      borderBottom: "1px solid #e0e0e0",
-    }}
-  >
-    {children}
-  </TableCell>
 );

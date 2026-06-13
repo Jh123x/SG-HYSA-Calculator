@@ -28,7 +28,6 @@ export const lineColors: string[] = [
   "#000000", // Black
   "#e6beff", // Lavender
   "#dcbeff", // Mauve
-  "#911eb4", // Deep Purple
 ];
 
 export const theme: Theme = createTheme({

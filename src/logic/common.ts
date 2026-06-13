@@ -1,6 +1,5 @@
 import { Interest } from "../types/interest";
 import { ResultInterest } from "../types/interest_result";
-import Profile from "../types/profile";
 
 /*
     calculate_ir calculates the interest rates with the given savings and interest amounts.
@@ -30,6 +29,3 @@ export const calculate_ir = (
     total_savings,
   );
 };
-
-export const placeholder_ir = (profile: Profile): ResultInterest =>
-  new ResultInterest(0, 0);
