@@ -6,9 +6,8 @@ import type { RateSnapshot } from "../types/history";
 
 function makeResult(yearlyPercent: number): ResultInterest {
   return {
-    total: yearlyPercent,
-    details: [],
     toYearlyPercent: () => yearlyPercent,
+    toYearly: () => 0,
   } as unknown as ResultInterest;
 }
 
@@ -111,6 +110,7 @@ describe("resolveHistoryForChart", () => {
     expect(result).toHaveLength(1);
     expect(result[0]).toEqual({
       date: "TBD",
+      yearlyInterest: 0,
       eir: 0,
       changeSummary: "Coming soon",
     });

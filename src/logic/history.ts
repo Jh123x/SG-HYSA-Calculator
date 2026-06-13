@@ -6,6 +6,8 @@ import { ResultInterest } from "../types/interest_result";
 export interface ResolvedHistoryItem {
   /** ISO date string (YYYY-MM-DD) */
   date: string;
+  /** Yearly interest in SGD (e.g. 1234.56) */
+  yearlyInterest: number;
   /** EIR as a percentage number (e.g. 2.50 for 2.5%) */
   eir: number;
   /** Human-readable description of the change */
@@ -61,16 +63,19 @@ export function resolveHistoryForChart(
     return [
       {
         date: "TBD",
+        yearlyInterest: 0,
         eir: 0,
         changeSummary: "Coming soon",
       },
     ];
   }
-  return history.map((snapshot) => ({
-    date: snapshot.effectiveDate,
-    eir: Number(
-      snapshot.interestFn(profile).toYearlyPercent().toFixed(2),
-    ),
-    changeSummary: snapshot.changeSummary,
-  }));
+  return history.map((snapshot) => {
+    const result = snapshot.interestFn(profile);
+    return {
+      date: snapshot.effectiveDate,
+      yearlyInterest: result.toYearly(),
+      eir: Number(result.toYearlyPercent().toFixed(2)),
+      changeSummary: snapshot.changeSummary,
+    };
+  });
 }
