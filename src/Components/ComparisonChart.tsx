@@ -73,8 +73,9 @@ export const ComparisonChart = ({
 
     if (allDates.length === 0) return { dataset: [], series: [] };
 
-    // ── 3. Build dataset: forward-fill each bank's value to every date ──
-    // A bank only gets values for dates ≥ its first data point (no back-fill).
+    // ── 3. Build dataset: forward- and back-fill each bank's value to every date ──
+    // For dates before a bank's first data point, use the earliest known rate.
+    // For dates after a bank's last data point, use the latest known rate.
     const datasetArr = allDates.map((date) => {
       const row: Record<string, number | Date | null> = {
         date: new Date(date),
@@ -93,6 +94,12 @@ export const ComparisonChart = ({
             valueEir = pts[i].eir;
             break;
           }
+        }
+
+        // Back-fill: if no point ≤ date, use the earliest known rate
+        if (valueYearly === null) {
+          valueYearly = pts[0].yearlyInterest;
+          valueEir = pts[0].eir;
         }
 
         row[`${bankName}_yearlyInterest`] = valueYearly;
