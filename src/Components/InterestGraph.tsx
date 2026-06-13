@@ -3,6 +3,7 @@ import { LineChart, LineChartProps } from "@mui/x-charts/LineChart";
 import { ChartsReferenceLine } from "@mui/x-charts";
 import { Paper, useTheme, useMediaQuery, Box, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
+import { deriveCurrentFromHistory } from "../logic/history";
 import { lineColors, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
 
@@ -44,7 +45,8 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
     const dataPoint: GraphData = { savings };
 
     Object.entries(bankInfo).forEach(([key, value]) => {
-      dataPoint[key] = value.interestFn(tmpProfile).toYearly();
+      const { interestFn } = deriveCurrentFromHistory(value.history);
+      dataPoint[key] = interestFn(tmpProfile).toYearly();
     });
 
     return dataPoint;
@@ -53,7 +55,8 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
   // Add user's actual data point
   const userPoint: GraphData = { savings: profile.Savings };
   Object.entries(bankInfo).forEach(([key, value]) => {
-    userPoint[key] = value.interestFn(profile).toYearly();
+    const { interestFn } = deriveCurrentFromHistory(value.history);
+    userPoint[key] = interestFn(profile).toYearly();
   });
 
   const insertIndex = data.findIndex(

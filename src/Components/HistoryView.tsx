@@ -68,8 +68,6 @@ const HistoryViewContent = ({
   theme: Theme;
 }) => {
   // Build chart data: every bank contributes a line.
-  // Banks without recorded history get a single synthetic point
-  // so they still appear on the chart and changelog.
   const { chartSeries, dataset } = useMemo(() => {
     const dateSet = new Set<string>();
     const banksWithSnapshots: {
@@ -78,12 +76,7 @@ const HistoryViewContent = ({
     }[] = [];
 
     Object.entries(bankInfo).forEach(([name, info]) => {
-      const resolved = resolveHistoryForChart(
-        info.history,
-        info.interestFn,
-        info.lastUpdated,
-        profile,
-      );
+      const resolved = resolveHistoryForChart(info.history, profile);
 
       const snapshots = resolved
         .map((s) => {
@@ -194,12 +187,7 @@ const HistoryViewContent = ({
         Rate Change History
       </Typography>
       {Object.entries(bankInfo).map(([name, info]) => {
-        const resolved = resolveHistoryForChart(
-          info.history,
-          info.interestFn,
-          info.lastUpdated,
-          profile,
-        );
+        const resolved = resolveHistoryForChart(info.history, profile);
 
         return (
           <Accordion

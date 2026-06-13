@@ -15,6 +15,7 @@ import type { ResultProp } from "../types/props";
 import { primaryColor, bgColor, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
+import { deriveCurrentFromHistory } from "../logic/history";
 import { InterestGraph } from "./InterestGraph";
 import { LocalLink } from "./LocalLink";
 
@@ -30,11 +31,12 @@ export const Result = ({ profile }: { profile: Profile }) => {
 
   const results: Record<string, ResultProp> = {};
   for (const [name, info] of Object.entries(bankInfo)) {
+    const { interestFn, lastUpdated } = deriveCurrentFromHistory(info.history);
     results[name] = {
-      interest: info.interestFn(profile),
+      interest: interestFn(profile),
       url: info.url,
       remarks: info.remarks,
-      lastUpdated: info.lastUpdated,
+      lastUpdated,
     };
   }
 

@@ -21,20 +21,14 @@ import {
 } from "./maribank";
 import { bocSuperSaverHistory } from "./bank_of_china";
 import { chocoFinanceHistory } from "./choco_finance";
-import { deriveCurrentFromHistory } from "./history";
 
-interface BankDef {
+export interface BankDef {
   url: string;
   remarks: string | ReactElement;
   history: RateSnapshot[];
 }
 
-interface BankInfo extends BankDef {
-  interestFn: (profile: Profile) => ResultInterest;
-  lastUpdated: string;
-}
-
-const _rawBankInfo: Record<string, BankDef> = {
+export const bankInfo: Record<string, BankDef> = {
   "UOB Bank": {
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     remarks: "Visit their official website to find out more",
@@ -218,12 +212,3 @@ const _rawBankInfo: Record<string, BankDef> = {
     history: citiHistory,
   },
 };
-
-// Derive current interestFn + lastUpdated from the latest history entry.
-for (const info of Object.values(_rawBankInfo)) {
-  if (info.history.length > 0) {
-    Object.assign(info, deriveCurrentFromHistory(info.history));
-  }
-}
-
-export const bankInfo = _rawBankInfo as Record<string, BankInfo>;

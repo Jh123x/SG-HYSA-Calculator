@@ -48,22 +48,7 @@ describe("deriveCurrentFromHistory", () => {
 });
 
 describe("resolveHistoryForChart", () => {
-  it("returns synthetic current-rate entry when history is empty", () => {
-    const result = resolveHistoryForChart(
-      [],
-      () => makeResult(0.4),
-      "2026-06-05",
-      emptyProfile,
-    );
-    expect(result).toHaveLength(1);
-    expect(result[0]).toEqual({
-      date: "2026-06-05",
-      eir: 0.4,
-      changeSummary: "Current rate",
-    });
-  });
-
-  it("computes EIR from each RateSnapshot when history is present", () => {
+  it("computes EIR from each RateSnapshot", () => {
     const result = resolveHistoryForChart(
       [
         {
@@ -77,8 +62,6 @@ describe("resolveHistoryForChart", () => {
           changeSummary: "Initial rate",
         },
       ],
-      () => makeResult(2.5),
-      "2025-01-01",
       emptyProfile,
     );
     expect(result).toHaveLength(2);
@@ -90,9 +73,13 @@ describe("resolveHistoryForChart", () => {
 
   it("rounds EIR to 2 decimal places", () => {
     const result = resolveHistoryForChart(
-      [],
-      () => makeResult(2.567),
-      "2026-01-01",
+      [
+        {
+          effectiveDate: "2026-01-01",
+          interestFn: () => makeResult(2.567),
+          changeSummary: "Test",
+        },
+      ],
       emptyProfile,
     );
     expect(result[0].eir).toBe(2.57);
@@ -101,9 +88,13 @@ describe("resolveHistoryForChart", () => {
   it("uses profile to compute EIR via interestFn", () => {
     const richProfile: Profile = { ...emptyProfile, Savings: 100000 };
     const result = resolveHistoryForChart(
-      [],
-      (p) => makeResult(p.Savings > 50000 ? 3.0 : 1.0),
-      "2026-06-13",
+      [
+        {
+          effectiveDate: "2026-06-13",
+          interestFn: (p) => makeResult(p.Savings > 50000 ? 3.0 : 1.0),
+          changeSummary: "Tiered rate",
+        },
+      ],
       richProfile,
     );
     expect(result[0].eir).toBe(3.0);
