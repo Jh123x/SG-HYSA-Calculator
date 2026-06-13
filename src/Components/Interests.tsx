@@ -10,6 +10,7 @@ import {
   Typography,
   Paper,
   TableSortLabel,
+  alpha,
 } from "@mui/material";
 import type { ResultProp } from "../types/props";
 import { primaryColor, bgColor, textColor } from "../consts/colors";
@@ -180,7 +181,7 @@ const displayResult = (bankName: string, info: ResultProp) => (
     sx={{
       color: textColor,
       backgroundColor: bgColor,
-      "&:hover": { backgroundColor: primaryColor, opacity: 0.1 },
+      "&:hover": { backgroundColor: alpha(primaryColor, 0.1) },
       transition: "background-color 0.3s ease",
     }}
   >
