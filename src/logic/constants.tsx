@@ -1,6 +1,5 @@
 import type Profile from "../types/profile";
 import type { ReactElement } from "react";
-import type { ResultInterest } from "../types/interest_result";
 import type { RateSnapshot } from "../types/history";
 
 import { LocalLink } from "../Components/LocalLink";

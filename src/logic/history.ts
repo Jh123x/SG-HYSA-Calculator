@@ -16,6 +16,12 @@ export interface ResolvedHistoryItem {
 const ZERO_INTEREST = (_profile: Profile): ResultInterest =>
   new ResultInterest(0, 0);
 
+/** The resolved "current" state for a bank: its interest function + when it was last updated. */
+export interface DerivedCurrent {
+  interestFn: (profile: Profile) => ResultInterest;
+  lastUpdated: string;
+}
+
 /**
  * Derive the "current" interest function and last-updated date from the
  * last entry in a bank's rate history array.
@@ -25,10 +31,7 @@ const ZERO_INTEREST = (_profile: Profile): ResultInterest =>
  */
 export function deriveCurrentFromHistory(
   history: RateSnapshot[],
-): {
-  interestFn: (profile: Profile) => ResultInterest;
-  lastUpdated: string;
-} {
+): DerivedCurrent {
   if (history.length === 0) {
     return {
       interestFn: ZERO_INTEREST,

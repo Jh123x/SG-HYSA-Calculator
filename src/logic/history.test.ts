@@ -14,16 +14,16 @@ function makeResult(yearlyPercent: number): ResultInterest {
 
 const emptyProfile: Profile = {
   Savings: 0,
-  Income: 0,
-  Spending: 0,
-  Insure: 0,
-  Invest: 0,
-  Save: 0,
-  Bills: [],
   Age: 25,
-  Giro: 0,
-  CardSpend: 0,
-  DailyAverageBalance: 0,
+  Salary: 0,
+  Spending: 0,
+  Investment: 0,
+  Insurance: 0,
+  GiroTransactions: 0,
+  MonthlyAccIncrease: 0,
+  LoanInstallment: 0,
+  OneTimeLoan: 0,
+  IsNTUCMember: false,
 };
 
 describe("deriveCurrentFromHistory", () => {
