@@ -1,15 +1,14 @@
 import { useState } from "react";
-import { LineChart, LineChartProps } from "@mui/x-charts/LineChart";
 import { ChartsReferenceLine } from "@mui/x-charts";
 import { Paper, useTheme, useMediaQuery, Box, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
 import { lineColors, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
-
-interface GraphData {
-  [key: string]: number;
-}
+import {
+  InterestVsSavingsChart,
+  type ChartLine,
+} from "./InterestVsSavingsChart";
 
 export const InterestGraph = ({ profile }: { profile: Profile }) => {
   const theme = useTheme();
@@ -36,46 +35,17 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
     );
   }
 
-  const data: GraphData[] = Array.from({ length: 21 }, (_, i) => {
-    const savings = i * 10_000;
-    const tmpProfile = {
-      ...profile,
-      Savings: savings,
-    };
-    const dataPoint: GraphData = { savings };
-
-    Object.entries(bankInfo).forEach(([key, value]) => {
+  const lines: ChartLine[] = Object.entries(bankInfo)
+    .filter(([, value]) => value.history.length > 0)
+    .map(([name, value], idx) => {
       const { interestFn } = deriveCurrentFromHistory(value.history);
-      dataPoint[key] = interestFn(tmpProfile).toYearly();
+      return {
+        dataKey: name,
+        label: name,
+        interestFn,
+        color: lineColors[idx % lineColors.length],
+      };
     });
-
-    return dataPoint;
-  });
-
-  // Add user's actual data point
-  const userPoint: GraphData = { savings: profile.Savings };
-  Object.entries(bankInfo).forEach(([key, value]) => {
-    const { interestFn } = deriveCurrentFromHistory(value.history);
-    userPoint[key] = interestFn(profile).toYearly();
-  });
-
-  const insertIndex = data.findIndex(
-    (point) => point.savings > profile.Savings,
-  );
-  if (insertIndex >= 0) {
-    data.splice(insertIndex, 0, userPoint);
-  } else {
-    data.push(userPoint);
-  }
-
-  const series: LineChartProps["series"] = Object.keys(bankInfo)
-    .filter((bankName) => data.some((point) => point[bankName] > 0))
-    .map((bankName, idx) => ({
-      dataKey: bankName,
-      label: bankName,
-      showMark: true,
-      color: lineColors[idx % lineColors.length],
-    }));
 
   return (
     <Paper
@@ -86,49 +56,7 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
         backgroundColor: theme.palette.background.paper,
       }}
     >
-      <LineChart
-        dataset={data}
-        xAxis={[
-          {
-            dataKey: "savings",
-            label: "Savings ($)",
-            scaleType: "linear",
-            valueFormatter: (v) => `$${v / 1000}k`,
-          },
-        ]}
-        series={series}
-        yAxis={[
-          {
-            label: "Yearly Interest ($)",
-            scaleType: "linear",
-            valueFormatter: (v) => `$${v / 1000}k`,
-            position: "left",
-            labelStyle: {
-              translate: "-20px",
-            },
-          },
-        ]}
-        height={500}
-        grid={{ vertical: true, horizontal: true }}
-        slotProps={{
-          legend: {
-            direction: "horizontal",
-            position: { vertical: "bottom", horizontal: "center" },
-            toggleVisibilityOnClick: true,
-          },
-        }}
-        sx={{
-          ".MuiChartsAxis-label": {
-            fill: textColor,
-          },
-          ".MuiChartsAxis-tick": {
-            fill: textColor,
-          },
-          ".MuiChartsLegend-label": {
-            fill: textColor,
-          },
-        }}
-      >
+      <InterestVsSavingsChart lines={lines} profile={profile} height={500}>
         <ChartsReferenceLine
           x={profile.Savings}
           label="Your savings"
@@ -138,7 +66,7 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
             strokeDasharray: "6 3",
           }}
         />
-      </LineChart>
+      </InterestVsSavingsChart>
       <Typography
         variant="caption"
         sx={{

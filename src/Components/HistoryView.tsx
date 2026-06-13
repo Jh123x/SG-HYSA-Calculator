@@ -17,12 +17,16 @@ import {
   type Theme,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { LineChart } from "@mui/x-charts/LineChart";
 import { bankInfo } from "../logic/constants";
 import { lineColors, textColor, bgColor } from "../consts/colors";
 import type Profile from "../types/profile";
+import type { RateSnapshot } from "../types/history";
 import { resolveHistoryForChart } from "../logic/history";
 import type { ResolvedHistoryItem } from "../logic/history";
+import {
+  InterestVsSavingsChart,
+  type ChartLine,
+} from "./InterestVsSavingsChart";
 
 interface Props {
   profile: Profile;
@@ -110,13 +114,6 @@ const BankAccordion = ({
   const resolved = resolveHistoryForChart(info.history, profile);
   const hasData = info.history.length > 0;
 
-  // Chart data (sorted chronologically, skip TBD placeholder)
-  const chartData = resolved
-    .filter((s) => s.date !== "TBD")
-    .sort(
-      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
-    );
-
   return (
     <Accordion
       sx={{
@@ -136,9 +133,9 @@ const BankAccordion = ({
         />
       </AccordionSummary>
       <AccordionDetails>
-        {/* Per-bank chart: yearly interest ($) over time */}
-        {hasData && chartData.length > 0 && (
-          <BankHistoryChart chartData={chartData} bankName={name} />
+        {/* Per-bank chart: yearly interest ($) vs savings, one line per historical snapshot */}
+        {hasData && info.history.length > 0 && (
+          <BankHistoryChart history={info.history} profile={profile} />
         )}
 
         {/* Table: Date | What Changed | Yearly Interest | EIR */}
@@ -202,64 +199,32 @@ const BankAccordion = ({
   );
 };
 
-/** Mini chart: yearly interest ($) over time for a single bank. */
+/** Mini chart: yearly interest ($) vs savings, one line per historical snapshot. */
 const BankHistoryChart = ({
-  chartData,
-  bankName,
+  history,
+  profile,
 }: {
-  chartData: ResolvedHistoryItem[];
-  bankName: string;
+  history: RateSnapshot[];
+  profile: Profile;
 }) => {
-  if (chartData.length === 0) return null;
+  if (history.length === 0) return null;
 
-  // Build plain-object dataset for the chart
-  const chartDataset = chartData.map((s) => ({
-    date: s.date,
-    yearlyInterest: s.yearlyInterest,
+  const sorted = [...history].sort(
+    (a, b) =>
+      new Date(a.effectiveDate).getTime() -
+      new Date(b.effectiveDate).getTime(),
+  );
+
+  const lines: ChartLine[] = sorted.map((snapshot, idx) => ({
+    dataKey: snapshot.effectiveDate,
+    label: snapshot.effectiveDate,
+    interestFn: snapshot.interestFn,
+    color: lineColors[idx % lineColors.length],
   }));
 
   return (
     <Box sx={{ mb: 3 }}>
-      <LineChart
-        dataset={chartDataset}
-        xAxis={[
-          {
-            dataKey: "date",
-            scaleType: "band",
-            label: "Effective Date",
-          },
-        ]}
-        series={[
-          {
-            dataKey: "yearlyInterest",
-            showMark: true,
-            color: lineColors[0],
-            label: `${bankName} — Yearly Interest ($)`,
-            valueFormatter: (v: number | null) =>
-              v !== null ? `$${v.toFixed(2)}` : "",
-          },
-        ]}
-        yAxis={[
-          {
-            scaleType: "linear",
-            min: 0,
-            valueFormatter: (v) => `$${v}`,
-          },
-        ]}
-        height={250}
-        grid={{ vertical: true, horizontal: true }}
-        slotProps={{
-          legend: {
-            direction: "horizontal",
-            position: { vertical: "bottom", horizontal: "center" },
-          },
-        }}
-        sx={{
-          ".MuiChartsAxis-label": { fill: textColor },
-          ".MuiChartsAxis-tick": { fill: textColor },
-          ".MuiChartsLegend-label": { fill: textColor },
-        }}
-      />
+      <InterestVsSavingsChart lines={lines} profile={profile} height={250} />
     </Box>
   );
 };
