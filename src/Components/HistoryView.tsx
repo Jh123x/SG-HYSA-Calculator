@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import {
   Paper,
   Table,
@@ -23,15 +22,16 @@ import { bankInfo } from "../logic/constants";
 import { lineColors, textColor, bgColor } from "../consts/colors";
 import type Profile from "../types/profile";
 import { resolveHistoryForChart } from "../logic/history";
+import type { ResolvedHistoryItem } from "../logic/history";
 
 interface Props {
   profile: Profile;
 }
 
 /**
- * HistoryView shows interest rate history across all banks:
- * - A time-series chart of EIR% over time for the user's profile
- * - An expandable changelog per bank
+ * HistoryView shows per-bank interest rate history:
+ * each bank gets its own expandable accordion with a time-series chart
+ * and a changelog table.
  */
 export const HistoryView = ({ profile }: Props) => {
   const theme = useTheme();
@@ -58,8 +58,6 @@ export const HistoryView = ({ profile }: Props) => {
   return <HistoryViewContent profile={profile} theme={theme} />;
 };
 
-// Extracted so the heavy useMemo computation runs only when
-// the view is actually rendered (not on small screens).
 const HistoryViewContent = ({
   profile,
   theme,
@@ -67,127 +65,28 @@ const HistoryViewContent = ({
   profile: Profile;
   theme: Theme;
 }) => {
-  // Build chart data: every bank contributes a line.
-  const { chartSeries, dataset } = useMemo(() => {
-    const dateSet = new Set<string>();
-    const banksWithSnapshots: {
-      name: string;
-      snapshots: { date: string; eir: number }[];
-    }[] = [];
-
-    Object.entries(bankInfo).forEach(([name, info]) => {
-      const resolved = resolveHistoryForChart(info.history, profile);
-
-      const snapshots = resolved
-        .map((s) => {
-          dateSet.add(s.date);
-          return { date: s.date, eir: s.eir };
-        })
-        .sort(
-          (a, b) =>
-            new Date(a.date).getTime() - new Date(b.date).getTime(),
-        );
-
-      banksWithSnapshots.push({ name, snapshots });
-    });
-
-    const allDatesSorted = Array.from(dateSet).sort(
-      (a, b) => new Date(a).getTime() - new Date(b).getTime(),
-    );
-
-    // Build dataset: one row per date, columns = bank EIR values
-    const dataset = allDatesSorted.map((date) => {
-      const row: Record<string, string | number> = { date };
-      banksWithSnapshots.forEach(({ name, snapshots }) => {
-        const snap = snapshots.find((s) => s.date === date);
-        row[name] = snap ? snap.eir : null;
-      });
-      return row;
-    });
-
-    const series = banksWithSnapshots.map(({ name }, idx) => ({
-      dataKey: name,
-      label: name,
-      showMark: true,
-      color: lineColors[idx % lineColors.length],
-      valueFormatter: (v: number | null) =>
-        v !== null ? `${v.toFixed(2)}%` : "",
-    }));
-
-    return { chartSeries: series, allDates: allDatesSorted, dataset };
-  }, [profile]);
-
   return (
     <Box sx={{ mt: 3 }}>
-      {/* Time-series chart */}
-      {chartSeries.length > 0 && (
-        <Paper
-          sx={{
-            padding: "30px",
-            borderRadius: "10px",
-            boxShadow: theme.shadows[3],
-            backgroundColor: theme.palette.background.paper,
-            mb: 3,
-          }}
-        >
-          <Typography
-            variant="h6"
-            sx={{ color: textColor, mb: 2, fontWeight: 600 }}
-          >
-            Historical Effective Interest Rate (%)
-          </Typography>
-          <Typography
-            variant="body2"
-            sx={{ color: textColor, mb: 2, opacity: 0.7 }}
-          >
-            EIR% calculated for your current profile ({profile.Savings
-              ? `$${profile.Savings.toLocaleString()} savings`
-              : "enter savings to see rates"}
-            )
-          </Typography>
-          <LineChart
-            dataset={dataset}
-            xAxis={[
-              {
-                dataKey: "date",
-                label: "Effective Date",
-                scaleType: "band",
-              },
-            ]}
-            series={chartSeries}
-            yAxis={[
-              {
-                label: "EIR %",
-                scaleType: "linear",
-                valueFormatter: (v) => `${v}%`,
-              },
-            ]}
-            height={450}
-            grid={{ vertical: true, horizontal: true }}
-            slotProps={{
-              legend: {
-                direction: "horizontal",
-                position: { vertical: "bottom", horizontal: "center" },
-              },
-            }}
-            sx={{
-              ".MuiChartsAxis-label": { fill: textColor },
-              ".MuiChartsAxis-tick": { fill: textColor },
-              ".MuiChartsLegend-label": { fill: textColor },
-            }}
-          />
-        </Paper>
-      )}
-
-      {/* Changelog per bank */}
       <Typography
         variant="h6"
         sx={{ color: textColor, mb: 2, fontWeight: 600 }}
       >
         Rate Change History
       </Typography>
+      <Typography
+        variant="body2"
+        sx={{ color: textColor, mb: 2, opacity: 0.7 }}
+      >
+        EIR% calculated for your current profile (
+        {profile.Savings
+          ? `$${profile.Savings.toLocaleString()} savings`
+          : "enter savings to see rates"}
+        )
+      </Typography>
+
       {Object.entries(bankInfo).map(([name, info]) => {
         const resolved = resolveHistoryForChart(info.history, profile);
+        const hasData = info.history.length > 0;
 
         return (
           <Accordion
@@ -209,6 +108,8 @@ const HistoryViewContent = ({
               />
             </AccordionSummary>
             <AccordionDetails>
+              {hasData && <BankHistoryChart resolved={resolved} />}
+
               <TableContainer>
                 <Table size="small">
                   <TableHead>
@@ -228,7 +129,7 @@ const HistoryViewContent = ({
                           new Date(b.date).getTime() -
                           new Date(a.date).getTime(),
                       )
-                      .map((snapshot: { date: string; changeSummary: string }, idx: number) => (
+                      .map((snapshot, idx) => (
                         <TableRow key={idx}>
                           <TableCell sx={{ color: textColor }}>
                             {snapshot.date}
@@ -245,6 +146,61 @@ const HistoryViewContent = ({
           </Accordion>
         );
       })}
+    </Box>
+  );
+};
+
+/** Mini chart showing a single bank's EIR history over time. */
+const BankHistoryChart = ({
+  resolved,
+}: {
+  resolved: ResolvedHistoryItem[];
+}) => {
+  const chartData = resolved
+    .map((s) => ({
+      date: s.date,
+      eir: s.eir,
+      label: s.changeSummary,
+    }))
+    .sort(
+      (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
+    );
+
+  if (chartData.length === 0) return null;
+
+  return (
+    <Box sx={{ mb: 2 }}>
+      <LineChart
+        dataset={chartData}
+        xAxis={[
+          {
+            dataKey: "date",
+            scaleType: "band",
+          },
+        ]}
+        series={[
+          {
+            dataKey: "eir",
+            showMark: true,
+            color: lineColors[0],
+            valueFormatter: (v: number | null) =>
+              v !== null ? `${v.toFixed(2)}%` : "",
+          },
+        ]}
+        yAxis={[
+          {
+            scaleType: "linear",
+            valueFormatter: (v) => `${v}%`,
+          },
+        ]}
+        height={200}
+        grid={{ vertical: true, horizontal: true }}
+        sx={{
+          ".MuiChartsAxis-label": { fill: textColor },
+          ".MuiChartsAxis-tick": { fill: textColor },
+          ".MuiChartsLegend-label": { fill: textColor },
+        }}
+      />
     </Box>
   );
 };
