@@ -280,6 +280,6 @@ export const uobHistory: RateSnapshot[] = [
     effectiveDate: "2025-12-01",
     interestFn: uob_interest_2025_12,
     changeSummary:
-      "Top tier cut again: 1st $25K 4.5%→3.4%, next $50K 3%→2.5%. Source: https://milelion.com/2025/11/01/uob-one-account-nerfing-interest-rates-to-1-9-p-a-from-december-2025/",
+      "Top tier cut again: 1st $25K 4.5%→3.4%, next $50K 3%→2.5%. Source: https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
   },
 ];

@@ -53,11 +53,11 @@ export const gxsHistory: RateSnapshot[] = [
   {
     effectiveDate: "2025-08-01",
     interestFn: gxs_interest_08_2025,
-    changeSummary: "Boost Pocket: $85K at 1.38% (reduced from 2.58%). Saving Pockets: $10K at 1.08%. Source: https://sethisfy.com/nerfed-gxs-slashes-interest-1-38-p-a-6th-august-2025/",
+    changeSummary: "Boost Pocket: $85K at 1.38% (reduced from 2.58%). Saving Pockets: $10K at 1.08%. Source: https://sethisfy.com/nerfed-gxs-slashes-interest-1-38-p-a-6th-august-2025/, https://www.gxs.com.sg/notices",
   },
   {
     effectiveDate: "2026-06-05",
     interestFn: gxs_interest_06_2026,
-    changeSummary: "Boost Pocket: $85K at 1.22% (reduced from 1.38%). Saving Pockets unchanged. Source: https://growbeansprout.com/gxs-bank-savings-account-review",
+    changeSummary: "Boost Pocket: $85K at 1.22% (reduced from 1.38%). Saving Pockets unchanged. Source: https://www.gxs.com.sg/notices",
   },
 ];
