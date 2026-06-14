@@ -65,9 +65,15 @@ const get_categories = (profile: Profile): number => {
 
 export const dbsMultiplierHistory: RateSnapshot[] = [
   {
+    effectiveDate: "2023-08-01",
+    interestFn: dbs_multiplier_interest,
+    changeSummary:
+      "Simplified structure: lowered eligible transaction threshold from S$2,000 to S$500, streamlined tiers (3×3 table), introduced age-based rules (under-29 bonus without salary). Max 4.10% p.a. on first S$100,000.\nSource: https://growbeansprout.com/dbs-multiplier-account-review",
+  },
+  {
     effectiveDate: "2025-10-14",
     interestFn: dbs_multiplier_interest,
     changeSummary:
-      "Multiplier rates based on eligible transaction categories",
+      "Multiplier rates based on eligible transaction categories.\nSource: https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
   },
 ];
