@@ -16,7 +16,7 @@ import {
   IconButton,
   Tooltip,
 } from "@mui/material";
-import { OpenInNew, InfoOutlined } from "@mui/icons-material";
+import { Link, ArrowForward } from "@mui/icons-material";
 import type { ResultProp } from "../types/props";
 import { primaryColor, bgColor, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
@@ -218,10 +218,10 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                           },
                         }}
                       >
-                        <OpenInNew fontSize="small" />
+                        <Link fontSize="small" />
                       </IconButton>
                     </Tooltip>
-                    <Tooltip title="View rate history" arrow>
+                    <Tooltip title="Detailed History" arrow>
                       <IconButton
                         size="small"
                         aria-label={`View ${bankName} rate history`}
@@ -233,7 +233,7 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                           },
                         }}
                       >
-                        <InfoOutlined fontSize="small" />
+                        <ArrowForward fontSize="small" />
                       </IconButton>
                     </Tooltip>
                   </Box>
