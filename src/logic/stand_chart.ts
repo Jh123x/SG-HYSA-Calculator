@@ -70,6 +70,6 @@ export const standChartHistory: RateSnapshot[] = [
   {
     effectiveDate: "2026-06-05",
     interestFn: stand_chart_interest_06_2026,
-    changeSummary: "Salary ↓0.9%, Spend ↓0.9%. Insurance ($12K→$24K threshold) 2%, Investment ($20K→$30K threshold) 2%. Source: https://sethisfy.com/nerfed-stanchart-bonusaver-reducing-interest-1st-may-2026/",
+    changeSummary: "Salary ↓0.9%, Spend ↓0.9%. Insurance ($12K→$24K threshold) 2%, Investment ($20K→$30K threshold) 2%. Source: https://www.sc.com/sg/important-information/revision-of-bonusaver-myway-jumpstartaccount/",
   },
 ];
