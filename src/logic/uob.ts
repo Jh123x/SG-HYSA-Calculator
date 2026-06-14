@@ -268,18 +268,18 @@ export const uobHistory: RateSnapshot[] = [
     effectiveDate: "2025-09-01",
     interestFn: uob_interest_2025_09,
     changeSummary:
-      "Top tier (Spend $500 + Salary): 1st $25K 5.3%→3.4%, next $50K 3.8%→2.5%, next $75K 2.3%→1%. Giros tier: 1st $50K 2.5%→1.5%.",
+      "Top tier (Spend $500 + Salary): 1st $25K 5.3%→3.4%, next $50K 3.8%→2.5%, next $75K 2.3%→1%. Giros tier: 1st $50K 2.5%→1.5%. Source: https://milelion.com/2025/08/01/uob-one-account-nerfing-interest-rates-to-2-5-p-a-from-september-2025/",
   },
   {
     effectiveDate: "2025-10-15",
     interestFn: uob_interest_10_2025,
     changeSummary:
-      "Top tier partially restored: 1st $25K 3.4%→4.5%, next $50K 2.5%→3%, next $75K 1%→1.5%.",
+      "Top tier partially restored: 1st $25K 3.4%→4.5%, next $50K 2.5%→3%, next $75K 1%→1.5%. Source: https://www.businesstimes.com.sg/companies-markets/uob-trims-one-account-interest-rate-again-maximum-2-5-annum-first-s150000",
   },
   {
     effectiveDate: "2025-12-01",
     interestFn: uob_interest_2025_12,
     changeSummary:
-      "Top tier cut again: 1st $25K 4.5%→3.4%, next $50K 3%→2.5%.",
+      "Top tier cut again: 1st $25K 4.5%→3.4%, next $50K 3%→2.5%. Source: https://milelion.com/2025/11/01/uob-one-account-nerfing-interest-rates-to-1-9-p-a-from-december-2025/",
   },
 ];
