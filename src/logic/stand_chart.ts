@@ -60,16 +60,16 @@ export const standChartHistory: RateSnapshot[] = [
   {
     effectiveDate: "2025-06-01",
     interestFn: stand_chart_interest_before_06_25,
-    changeSummary: "Salary 1% / Spend 1% / Insurance 2% / Investment 2% on first $100K.",
+    changeSummary: "Salary 1% / Spend 1% / Insurance 2% / Investment 2% on first $100K. Source: https://www.sc.com/sg/important-information/bonussaver-revision/",
   },
   {
     effectiveDate: "2025-10-01",
     interestFn: stand_chart_interest_10_2025,
-    changeSummary: "Salary ↑1.5%, Spend ↑1.5%, Insurance ↑2.5%, Investment ↑2.5%.",
+    changeSummary: "Salary ↑1.5%, Spend ↑1.5%, Insurance ↑2.5%, Investment ↑2.5%. Source: https://sethisfy.com/buffed-bonussaver-increases-rates-3-05-2-5-p-a-possible/",
   },
   {
     effectiveDate: "2026-06-05",
     interestFn: stand_chart_interest_06_2026,
-    changeSummary: "Salary ↓0.9%, Spend ↓0.9%. Insurance ($12K→$24K threshold) 2%, Investment ($20K→$30K threshold) 2%.",
+    changeSummary: "Salary ↓0.9%, Spend ↓0.9%. Insurance ($12K→$24K threshold) 2%, Investment ($20K→$30K threshold) 2%. Source: https://www.sc.com/sg/important-information/revision-of-bonusaver-myway-jumpstartaccount/",
   },
 ];

@@ -161,16 +161,16 @@ export const ocbcHistory: RateSnapshot[] = [
   {
     effectiveDate: "2025-07-01",
     interestFn: ocbc_interest_07_2025,
-    changeSummary: "Salary +1.6/+3.2%, Save +0.6/+1.2%, Spend +0.5% both tiers, Insurance +1.2/+2.4%, Invest +1.2/+2.4%, $250K +2.2% both.",
+    changeSummary: "Salary +1.6/+3.2%, Save +0.6/+1.2%, Spend +0.5% both tiers, Insurance +1.2/+2.4%, Invest +1.2/+2.4%, $250K +2.2% both. Source: https://milelion.com/2025/03/23/ocbc-360-account-cutting-interest-rates-from-may-2025/",
   },
   {
     effectiveDate: "2025-08-01",
     interestFn: ocbc_interest_08_2025,
-    changeSummary: "Salary ↓1.2/+2.4%, Save ↓0.4/+0.8%, Spend ↓0.4% both, Ins/Invest unchanged, $250K ↓2% both.",
+    changeSummary: "Salary ↓1.2/+2.4%, Save ↓0.4/+0.8%, Spend ↓0.4% both, Ins/Invest unchanged, $250K ↓2% both. Source: https://milelion.com/2025/06/28/ocbc-360-account-cuts-interest-rates-again-from-august-2025/",
   },
   {
     effectiveDate: "2026-04-05",
     interestFn: ocbc_interest_05_2026,
-    changeSummary: "Salary ↓1/+2%, Save unchanged, Spend ↓0.25% both, Ins/Invest ↓1/+2%, $250K ↓1.2% both.",
+    changeSummary: "Salary ↓1/+2%, Save unchanged, Spend ↓0.25% both, Ins/Invest ↓1/+2%, $250K ↓1.2% both. Source: https://milelion.com/2026/04/01/ocbc-360-account-cuts-interest-rates-from-may-2026/",
   },
 ];
