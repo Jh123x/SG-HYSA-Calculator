@@ -9,7 +9,7 @@
 **Live site:** [hysa.jh123x.com](https://hysa.jh123x.com/)  
 **Blog post:** [A look at high yield saving accounts in Singapore](https://jh123x.com/blog/2024/high-yield-saving-accounts/)
 
-![Home Page](./imgs/HYSA Page.png "Home Page")
+![Home Page](./imgs/HYSA%20Page.png "Home Page")
 
 ## Features
 
