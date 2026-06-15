@@ -12,7 +12,7 @@ describe("bankNameToSlug", () => {
   });
 
   it("handles multiple special characters", () => {
-    expect(bankNameToSlug("Citi Wealth first Account")).toBe(
+    expect(bankNameToSlug("CITI Wealth First Account")).toBe(
       "citi-wealth-first-account",
     );
   });

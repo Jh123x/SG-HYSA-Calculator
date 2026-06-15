@@ -537,7 +537,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="Citi Wealth first Account"
+            data-series="CITI Wealth First Account"
           >
             <button
               class="MuiChartsLegend-series"
@@ -571,7 +571,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Citi Wealth first Account
+                CITI Wealth First Account
               </span>
             </button>
           </li>
@@ -1051,7 +1051,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-Citi_Wealth first Account-line-clip"
+                  id="_r_1_-CITI_Wealth First Account-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -1062,14 +1062,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-Citi_Wealth first Account-line-clip)"
+                  clip-path="url(#_r_1_-CITI_Wealth First Account-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,435,84.833,435,84.75,435C84.667,435,84.583,435,84.5,435C84.417,435,84.333,435,84.25,435C84.167,435,84.083,435,84,435C83.917,435,83.833,435,83.75,435C83.667,435,83.583,435,83.5,435C83.417,435,83.333,435,83.25,435C83.167,435,83.083,435,83,435C82.917,435,82.833,435,82.75,435C82.667,435,82.583,435,82.5,435C82.417,435,82.333,435,82.25,435C82.167,435,82.083,435,82,435C81.917,435,81.833,435,81.75,435C81.667,435,81.583,435,81.5,435C81.417,435,81.333,435,81.25,435C81.167,435,81.083,435,81,435C80.917,435,80.833,435,80.75,435C80.667,435,80.583,435,80.5,435C80.417,435,80.333,435,80.25,435C80.167,435,80.083,435,80,435"
-                    data-series="Citi Wealth first Account"
-                    data-series-id="Citi Wealth first Account"
+                    data-series="CITI Wealth First Account"
+                    data-series-id="CITI Wealth First Account"
                     fill="none"
                     opacity="1"
                     stroke="#800000"
@@ -1475,8 +1475,8 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   data-series="Maybank iSAVvy Plus"
                 />
                 <g
-                  clip-path="url(#_r_1_-Citi_Wealth first Account-line-clip)"
-                  data-series="Citi Wealth first Account"
+                  clip-path="url(#_r_1_-CITI_Wealth First Account-line-clip)"
+                  data-series="CITI Wealth First Account"
                 />
               </g>
             </g>
@@ -2043,7 +2043,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="Citi Wealth first Account"
+            data-series="CITI Wealth First Account"
           >
             <button
               class="MuiChartsLegend-series"
@@ -2077,7 +2077,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Citi Wealth first Account
+                CITI Wealth First Account
               </span>
             </button>
           </li>
@@ -2529,7 +2529,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-Citi_Wealth first Account-line-clip"
+                  id="_r_4_-CITI_Wealth First Account-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2540,14 +2540,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-Citi_Wealth first Account-line-clip)"
+                  clip-path="url(#_r_4_-CITI_Wealth First Account-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,435,84.833,435,84.75,435C84.667,435,84.583,435,84.5,435C84.417,435,84.333,435,84.25,435C84.167,435,84.083,435,84,435C83.917,435,83.833,435,83.75,435C83.667,435,83.583,435,83.5,435C83.417,435,83.333,435,83.25,435C83.167,435,83.083,435,83,435C82.917,435,82.833,435,82.75,435C82.667,435,82.583,435,82.5,435C82.417,435,82.333,435,82.25,435C82.167,435,82.083,435,82,435C81.917,435,81.833,435,81.75,435C81.667,435,81.583,435,81.5,435C81.417,435,81.333,435,81.25,435C81.167,435,81.083,435,81,435C80.917,435,80.833,435,80.75,435C80.667,435,80.583,435,80.5,435C80.417,435,80.333,435,80.25,435C80.167,435,80.083,435,80,435"
-                    data-series="Citi Wealth first Account"
-                    data-series-id="Citi Wealth first Account"
+                    data-series="CITI Wealth First Account"
+                    data-series-id="CITI Wealth First Account"
                     fill="none"
                     opacity="1"
                     stroke="#800000"
@@ -2853,8 +2853,8 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   data-series="Maybank iSAVvy Plus"
                 />
                 <g
-                  clip-path="url(#_r_4_-Citi_Wealth first Account-line-clip)"
-                  data-series="Citi Wealth first Account"
+                  clip-path="url(#_r_4_-CITI_Wealth First Account-line-clip)"
+                  data-series="CITI Wealth First Account"
                 />
               </g>
             </g>

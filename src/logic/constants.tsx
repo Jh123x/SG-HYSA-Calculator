@@ -175,7 +175,7 @@ export const bankInfo: Record<string, BankDef> = {
     ),
     history: maybankIsavvyPlusHistory,
   },
-  "Citi Wealth first Account": {
+  "CITI Wealth First Account": {
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks: (
       <>
