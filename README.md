@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/hysa_logo.webp" alt="SG HYSA Calculator" width="200">
+</p>
+
 # [SG] High Yield Savings Account Calculator
 
 > Compare Singapore high-yield savings accounts side by side. Enter your profile and see which bank gives you the best returns.
@@ -13,9 +17,13 @@
 
 **Interest vs Savings chart** — interactive line chart plotting projected yearly interest from $0 to $200,000 across all accounts, with a reference line at your current savings amount.
 
+![Interest vs Savings Chart](./imgs/Graph%20Comparison.png "Interest vs Savings Chart")
+
 **Rate Change History** (`/history`) — compare multiple banks over time with a toggle between yearly interest ($) and EIR (%). Select banks via filter chips to plot rate changes forward-filled across the full timeline, with per-bank detail sections showing each rate snapshot and change summary.
 
 **Bank Detail Pages** (`/bank/<slug>`) — per-bank summary card with current EIR, rate snapshot count, and remarks, plus an EIR-over-time line chart with step-after interpolation and a full rate change log table sorted newest-first.
+
+![Bank Details](./imgs/Bank%20Details.png "Bank Details")
 
 **Personalised Profile Inputs** — Savings, Salary, Age, Spending, Investment, Insurance, GIRO transactions, Account Increment, Loan Installment, and NTUC membership. Interest is calculated per-bank based on the criteria you meet. Profile persists via `localStorage`.
 
