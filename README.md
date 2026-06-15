@@ -118,7 +118,7 @@ src/
 | 11  | **Maybank Save Up**               | Flat tiered: 0.1875%–0.3125%                                                             |
 | 12  | **Maybank iSAVvy**                | Flat tiered: 0.1875%–0.38%                                                               |
 | 13  | **Maybank iSAVvy Plus**           | Flat tiered base + 1.52% p.a. bonus (ADB growth required)                                |
-| 14  | **Citi Wealth First**             | Citigold+ only, bonus capped at $500k                                                    |
+| 14  | **CITI Wealth First**             | Citigold+ only, bonus capped at $500k                                                    |
 
 ---
 

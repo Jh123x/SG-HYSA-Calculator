@@ -47,7 +47,7 @@ export const numericalInputs: Array<InputArg<number>> = [
       makeDefaultNumber(profile.Spending),
   },
   {
-    label: "Giro Transactions",
+    label: "GIRO Transactions",
     tooltip: "No. of GIRO Transactions",
     fn: (profile, v) => ({ ...profile, GiroTransactions: v }),
     getStateFromProfile: (profile: Profile) =>

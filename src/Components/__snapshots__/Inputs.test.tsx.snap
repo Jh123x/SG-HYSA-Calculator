@@ -335,7 +335,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
             <p
               class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
             >
-              Giro Transactions
+              GIRO Transactions
             </p>
           </div>
         </label>
@@ -364,7 +364,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
                   <p
                     class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
                   >
-                    Giro Transactions
+                    GIRO Transactions
                   </p>
                 </div>
               </span>
@@ -1018,7 +1018,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
             <p
               class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
             >
-              Giro Transactions
+              GIRO Transactions
             </p>
           </div>
         </label>
@@ -1047,7 +1047,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
                   <p
                     class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
                   >
-                    Giro Transactions
+                    GIRO Transactions
                   </p>
                 </div>
               </span>
