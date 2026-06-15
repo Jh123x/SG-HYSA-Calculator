@@ -764,12 +764,6 @@ exports[`App > should render correctly 1`] = `
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1abj46h-MuiTableCell-root"
                 scope="col"
               >
-                Webpage
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1abj46h-MuiTableCell-root"
-                scope="col"
-              >
                 Remarks
               </th>
               <th
@@ -777,6 +771,12 @@ exports[`App > should render correctly 1`] = `
                 scope="col"
               >
                 Updated at
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1abj46h-MuiTableCell-root"
+                scope="col"
+              >
+                Actions
               </th>
             </tr>
           </thead>
@@ -787,8 +787,7 @@ exports[`App > should render correctly 1`] = `
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View UOB Bank rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 UOB Bank
               </td>
@@ -805,18 +804,6 @@ exports[`App > should render correctly 1`] = `
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
                 Visit their official website to find out more
               </td>
               <td
@@ -824,13 +811,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2025-12-01
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit UOB Bank official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View UOB Bank rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View OCBC Bank rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 OCBC Bank
               </td>
@@ -847,18 +881,6 @@ exports[`App > should render correctly 1`] = `
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://www.ocbc.com/personal-banking/notices"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
                 Visit the official website to find our more
               </td>
               <td
@@ -866,13 +888,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2026-04-05
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit OCBC Bank official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.ocbc.com/personal-banking/notices"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View OCBC Bank rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View Maribank rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 Maribank
               </td>
@@ -885,18 +954,6 @@ exports[`App > should render correctly 1`] = `
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
                 0.00%
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://www.maribank.sg/product/mari-savings-account/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -917,13 +974,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2025-12-27
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit Maribank official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.maribank.sg/product/mari-savings-account/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View Maribank rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View Standard Chartered rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 Standard Chartered
               </td>
@@ -940,18 +1044,6 @@ exports[`App > should render correctly 1`] = `
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
                 <p>
                   Insurance and Investment only
                   <br />
@@ -963,13 +1055,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2026-06-05
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit Standard Chartered official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View Standard Chartered rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View Trust Bank (Signature) rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 Trust Bank (Signature)
               </td>
@@ -986,18 +1125,6 @@ exports[`App > should render correctly 1`] = `
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://trustbank.sg/savings-account/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
                 <p>
                   Spending assumes 5 x $30 if spending is more than 150.
                 </p>
@@ -1007,13 +1134,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2026-06-05
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit Trust Bank (Signature) official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://trustbank.sg/savings-account/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View Trust Bank (Signature) rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View Trust Bank (Zen) rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 Trust Bank (Zen)
               </td>
@@ -1030,18 +1204,6 @@ exports[`App > should render correctly 1`] = `
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://trustbank.sg/savings-account/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
                 A Flat 0.4% interest rate up to 1.2 million
               </td>
               <td
@@ -1049,13 +1211,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2026-06-05
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit Trust Bank (Zen) official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://trustbank.sg/savings-account/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View Trust Bank (Zen) rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View DBS Multiplier Account rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 DBS Multiplier Account
               </td>
@@ -1072,18 +1281,6 @@ exports[`App > should render correctly 1`] = `
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
                 <p>
                   No eligible if you are younger than 18.
                   <br />
@@ -1095,13 +1292,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2025-10-14
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit DBS Multiplier Account official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View DBS Multiplier Account rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View GXS rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 GXS
               </td>
@@ -1114,18 +1358,6 @@ exports[`App > should render correctly 1`] = `
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
                 0.00%
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://www.gxs.com.sg/savings-account"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1153,13 +1385,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2026-06-05
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit GXS official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.gxs.com.sg/savings-account"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View GXS rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View Chocolate Finance rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 Chocolate Finance
               </td>
@@ -1172,18 +1451,6 @@ exports[`App > should render correctly 1`] = `
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
                 0.00%
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://www.chocolatefinance.com/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1212,13 +1479,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2026-06-05
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit Chocolate Finance official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.chocolatefinance.com/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View Chocolate Finance rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View Bank of China SuperSaver rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 Bank of China SuperSaver
               </td>
@@ -1231,18 +1545,6 @@ exports[`App > should render correctly 1`] = `
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
                 0.00%
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1260,13 +1562,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2025-11-01
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit Bank of China SuperSaver official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View Bank of China SuperSaver rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View Maybank Save Up rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 Maybank Save Up
               </td>
@@ -1283,18 +1632,6 @@ exports[`App > should render correctly 1`] = `
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
                 <p>
                   Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125% (above $50K).
                   <br />
@@ -1306,13 +1643,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2026-06-11
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit Maybank Save Up official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View Maybank Save Up rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View Maybank iSAVvy rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 Maybank iSAVvy
               </td>
@@ -1329,18 +1713,6 @@ exports[`App > should render correctly 1`] = `
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
                 <p>
                   Flat tiered rates (non-additive): 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
                   <br />
@@ -1352,13 +1724,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2026-06-11
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit Maybank iSAVvy official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View Maybank iSAVvy rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View Maybank iSAVvy Plus rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 Maybank iSAVvy Plus
               </td>
@@ -1371,18 +1790,6 @@ exports[`App > should render correctly 1`] = `
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
                 0.00%
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
               </td>
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1402,13 +1809,60 @@ exports[`App > should render correctly 1`] = `
               >
                 2026-06-11
               </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit Maybank iSAVvy Plus official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View Maybank iSAVvy Plus rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </td>
             </tr>
             <tr
               class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
             >
               <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1vwzbol-MuiTableCell-root"
-                title="View Citi Wealth first Account rate history"
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
               >
                 Citi Wealth first Account
               </td>
@@ -1425,18 +1879,6 @@ exports[`App > should render correctly 1`] = `
               <td
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                  href="https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Website
-                </a>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-              >
                 Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)
                 <br />
                 Bonus interest capped at first $500k.
@@ -1447,6 +1889,54 @@ exports[`App > should render correctly 1`] = `
                 class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
               >
                 2026-06-05
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+              >
+                <div
+                  class="MuiBox-root css-s3pf5w"
+                >
+                  <a
+                    aria-label="Visit Citi Wealth first Account official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LinkIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+                      />
+                    </svg>
+                  </a>
+                  <button
+                    aria-label="View Citi Wealth first Account rate history"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="ArrowForwardIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </td>
             </tr>
           </tbody>
@@ -2045,20 +2535,20 @@ exports[`App > should render correctly 1`] = `
                 tabindex="0"
               >
                 <div
-                  id="voiceover-_r_g_-1"
+                  id="voiceover-_r_28_-1"
                   style="display: none;"
                 />
                 <div
-                  id="voiceover-_r_g_-2"
+                  id="voiceover-_r_28_-2"
                   style="display: none;"
                 />
                 <div
-                  aria-labelledby="voiceover-_r_g_-1"
+                  aria-labelledby="voiceover-_r_28_-1"
                   role="img"
                   style="width: 100%; height: 100%; outline: none;"
                 />
                 <div
-                  aria-labelledby="voiceover-_r_g_-2"
+                  aria-labelledby="voiceover-_r_28_-2"
                   role="img"
                   style="width: 100%; height: 100%; outline: none;"
                 />
@@ -2150,7 +2640,7 @@ exports[`App > should render correctly 1`] = `
                   />
                 </g>
                 <g
-                  clip-path="url(#_r_f_-clip-path)"
+                  clip-path="url(#_r_27_-clip-path)"
                 >
                   <g
                     class="MuiLineChart-areaPlot css-94vonx-MuiAreaPlot-root"
@@ -2159,7 +2649,7 @@ exports[`App > should render correctly 1`] = `
                     class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
                   >
                     <clippath
-                      id="_r_g_-UOB_Bank-line-clip"
+                      id="_r_28_-UOB_Bank-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2170,7 +2660,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-UOB_Bank-line-clip)"
+                      clip-path="url(#_r_28_-UOB_Bank-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2186,7 +2676,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-OCBC_Bank-line-clip"
+                      id="_r_28_-OCBC_Bank-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2197,7 +2687,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-OCBC_Bank-line-clip)"
+                      clip-path="url(#_r_28_-OCBC_Bank-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2213,7 +2703,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-Maribank-line-clip"
+                      id="_r_28_-Maribank-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2224,7 +2714,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-Maribank-line-clip)"
+                      clip-path="url(#_r_28_-Maribank-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2240,7 +2730,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-Standard_Chartered-line-clip"
+                      id="_r_28_-Standard_Chartered-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2251,7 +2741,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-Standard_Chartered-line-clip)"
+                      clip-path="url(#_r_28_-Standard_Chartered-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2267,7 +2757,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-Trust_Bank (Signature)-line-clip"
+                      id="_r_28_-Trust_Bank (Signature)-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2278,7 +2768,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-Trust_Bank (Signature)-line-clip)"
+                      clip-path="url(#_r_28_-Trust_Bank (Signature)-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2294,7 +2784,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-Trust_Bank (Zen)-line-clip"
+                      id="_r_28_-Trust_Bank (Zen)-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2305,7 +2795,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-Trust_Bank (Zen)-line-clip)"
+                      clip-path="url(#_r_28_-Trust_Bank (Zen)-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2321,7 +2811,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-DBS_Multiplier Account-line-clip"
+                      id="_r_28_-DBS_Multiplier Account-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2332,7 +2822,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-DBS_Multiplier Account-line-clip)"
+                      clip-path="url(#_r_28_-DBS_Multiplier Account-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2348,7 +2838,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-GXS-line-clip"
+                      id="_r_28_-GXS-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2359,7 +2849,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-GXS-line-clip)"
+                      clip-path="url(#_r_28_-GXS-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2375,7 +2865,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-Chocolate_Finance-line-clip"
+                      id="_r_28_-Chocolate_Finance-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2386,7 +2876,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-Chocolate_Finance-line-clip)"
+                      clip-path="url(#_r_28_-Chocolate_Finance-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2402,7 +2892,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-Bank_of China SuperSaver-line-clip"
+                      id="_r_28_-Bank_of China SuperSaver-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2413,7 +2903,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-Bank_of China SuperSaver-line-clip)"
+                      clip-path="url(#_r_28_-Bank_of China SuperSaver-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2429,7 +2919,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-Maybank_Save Up-line-clip"
+                      id="_r_28_-Maybank_Save Up-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2440,7 +2930,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-Maybank_Save Up-line-clip)"
+                      clip-path="url(#_r_28_-Maybank_Save Up-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2456,7 +2946,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-Maybank_iSAVvy-line-clip"
+                      id="_r_28_-Maybank_iSAVvy-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2467,7 +2957,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-Maybank_iSAVvy-line-clip)"
+                      clip-path="url(#_r_28_-Maybank_iSAVvy-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2483,7 +2973,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-Maybank_iSAVvy Plus-line-clip"
+                      id="_r_28_-Maybank_iSAVvy Plus-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2494,7 +2984,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-Maybank_iSAVvy Plus-line-clip)"
+                      clip-path="url(#_r_28_-Maybank_iSAVvy Plus-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2510,7 +3000,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </g>
                     <clippath
-                      id="_r_g_-Citi_Wealth first Account-line-clip"
+                      id="_r_28_-Citi_Wealth first Account-line-clip"
                     >
                       <rect
                         class="css-dbuw8t"
@@ -2521,7 +3011,7 @@ exports[`App > should render correctly 1`] = `
                       />
                     </clippath>
                     <g
-                      clip-path="url(#_r_g_-Citi_Wealth first Account-line-clip)"
+                      clip-path="url(#_r_28_-Citi_Wealth first Account-line-clip)"
                     >
                       <path
                         class="MuiLineChart-line"
@@ -2882,65 +3372,65 @@ exports[`App > should render correctly 1`] = `
                     class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
                   >
                     <g
-                      clip-path="url(#_r_g_-UOB_Bank-line-clip)"
+                      clip-path="url(#_r_28_-UOB_Bank-line-clip)"
                       data-series="UOB Bank"
                     />
                     <g
-                      clip-path="url(#_r_g_-OCBC_Bank-line-clip)"
+                      clip-path="url(#_r_28_-OCBC_Bank-line-clip)"
                       data-series="OCBC Bank"
                     />
                     <g
-                      clip-path="url(#_r_g_-Maribank-line-clip)"
+                      clip-path="url(#_r_28_-Maribank-line-clip)"
                       data-series="Maribank"
                     />
                     <g
-                      clip-path="url(#_r_g_-Standard_Chartered-line-clip)"
+                      clip-path="url(#_r_28_-Standard_Chartered-line-clip)"
                       data-series="Standard Chartered"
                     />
                     <g
-                      clip-path="url(#_r_g_-Trust_Bank (Signature)-line-clip)"
+                      clip-path="url(#_r_28_-Trust_Bank (Signature)-line-clip)"
                       data-series="Trust Bank (Signature)"
                     />
                     <g
-                      clip-path="url(#_r_g_-Trust_Bank (Zen)-line-clip)"
+                      clip-path="url(#_r_28_-Trust_Bank (Zen)-line-clip)"
                       data-series="Trust Bank (Zen)"
                     />
                     <g
-                      clip-path="url(#_r_g_-DBS_Multiplier Account-line-clip)"
+                      clip-path="url(#_r_28_-DBS_Multiplier Account-line-clip)"
                       data-series="DBS Multiplier Account"
                     />
                     <g
-                      clip-path="url(#_r_g_-GXS-line-clip)"
+                      clip-path="url(#_r_28_-GXS-line-clip)"
                       data-series="GXS"
                     />
                     <g
-                      clip-path="url(#_r_g_-Chocolate_Finance-line-clip)"
+                      clip-path="url(#_r_28_-Chocolate_Finance-line-clip)"
                       data-series="Chocolate Finance"
                     />
                     <g
-                      clip-path="url(#_r_g_-Bank_of China SuperSaver-line-clip)"
+                      clip-path="url(#_r_28_-Bank_of China SuperSaver-line-clip)"
                       data-series="Bank of China SuperSaver"
                     />
                     <g
-                      clip-path="url(#_r_g_-Maybank_Save Up-line-clip)"
+                      clip-path="url(#_r_28_-Maybank_Save Up-line-clip)"
                       data-series="Maybank Save Up"
                     />
                     <g
-                      clip-path="url(#_r_g_-Maybank_iSAVvy-line-clip)"
+                      clip-path="url(#_r_28_-Maybank_iSAVvy-line-clip)"
                       data-series="Maybank iSAVvy"
                     />
                     <g
-                      clip-path="url(#_r_g_-Maybank_iSAVvy Plus-line-clip)"
+                      clip-path="url(#_r_28_-Maybank_iSAVvy Plus-line-clip)"
                       data-series="Maybank iSAVvy Plus"
                     />
                     <g
-                      clip-path="url(#_r_g_-Citi_Wealth first Account-line-clip)"
+                      clip-path="url(#_r_28_-Citi_Wealth first Account-line-clip)"
                       data-series="Citi Wealth first Account"
                     />
                   </g>
                 </g>
                 <clippath
-                  id="_r_f_-clip-path"
+                  id="_r_27_-clip-path"
                 >
                   <rect
                     height="415"

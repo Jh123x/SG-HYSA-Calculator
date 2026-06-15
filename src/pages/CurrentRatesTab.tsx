@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
+  Box,
   Container,
   Table,
   TableBody,
@@ -12,7 +13,10 @@ import {
   Paper,
   TableSortLabel,
   alpha,
+  IconButton,
+  Tooltip,
 } from "@mui/material";
+import { Link, ArrowForward } from "@mui/icons-material";
 import type { ResultProp } from "../types/props";
 import { primaryColor, bgColor, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
@@ -20,7 +24,6 @@ import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
 import { bankNameToSlug } from "../logic/slugs";
 import { InterestGraph } from "../Components/InterestGraph";
-import { LocalLink } from "../Components/LocalLink";
 
 type SortableColumns =
   | "name"
@@ -40,7 +43,7 @@ interface Props {
 
 /**
  * Current Rates tab — sortable table of all banks with their current EIR.
- * Bank name cells are clickable and navigate to the bank detail page.
+ * Actions column provides links to the official website and bank detail page.
  */
 export const CurrentRatesTab = ({ profile }: Props) => {
   const navigate = useNavigate();
@@ -172,9 +175,9 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                   Rate (EIR)
                 </TableSortLabel>
               </TableCell>
-              <TableCell sx={cellSx}>Webpage</TableCell>
               <TableCell sx={cellSx}>Remarks</TableCell>
               <TableCell sx={cellSx}>Updated at</TableCell>
+              <TableCell sx={cellSx}>Actions</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -188,16 +191,7 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                   transition: "background-color 0.3s ease",
                 }}
               >
-                <TableCell
-                  sx={{
-                    ...cellSx,
-                    cursor: "pointer",
-                    fontWeight: 600,
-                    "&:hover": { color: primaryColor },
-                  }}
-                  onClick={() => navigate(`/bank/${bankNameToSlug(bankName)}`)}
-                  title={`View ${bankName} rate history`}
-                >
+                <TableCell sx={{ ...cellSx, fontWeight: 600 }}>
                   {bankName}
                 </TableCell>
                 <TableCell sx={cellSx}>
@@ -206,11 +200,44 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                 <TableCell sx={cellSx}>
                   {(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%
                 </TableCell>
-                <TableCell sx={cellSx}>
-                  <LocalLink href={interest.url}>Website</LocalLink>
-                </TableCell>
                 <TableCell sx={cellSx}>{interest.remarks}</TableCell>
                 <TableCell sx={cellSx}>{interest.lastUpdated}</TableCell>
+                <TableCell sx={cellSx}>
+                  <Box sx={{ display: "flex", gap: 0.5, justifyContent: "center" }}>
+                    <Tooltip title="Official Website" arrow>
+                      <IconButton
+                        size="small"
+                        aria-label={`Visit ${bankName} official website`}
+                        href={interest.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{
+                          "&:hover": {
+                            backgroundColor: alpha(primaryColor, 0.15),
+                            color: primaryColor,
+                          },
+                        }}
+                      >
+                        <Link fontSize="small" />
+                      </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Detailed History" arrow>
+                      <IconButton
+                        size="small"
+                        aria-label={`View ${bankName} rate history`}
+                        onClick={() => navigate(`/bank/${bankNameToSlug(bankName)}`)}
+                        sx={{
+                          "&:hover": {
+                            backgroundColor: alpha(primaryColor, 0.15),
+                            color: primaryColor,
+                          },
+                        }}
+                      >
+                        <ArrowForward fontSize="small" />
+                      </IconButton>
+                    </Tooltip>
+                  </Box>
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>
