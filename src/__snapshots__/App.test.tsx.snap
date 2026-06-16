@@ -1965,15 +1965,6 @@ exports[`App > should render correctly 1`] = `
             </table>
           </div>
         </section>
-        <span
-          class="MuiTypography-root MuiTypography-caption css-132l87a-MuiTypography-root"
-        >
-          * Interest rates on their respective websites are subject to change without notice
-          <br />
-          ** Please do your own research before making any decisions, the numbers here serve as a guide.
-          <br />
-          *** Please ask around in your friend group for referrals to get additional bonuses, you can use the my referral code if your friends do not have any.
-        </span>
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-sxsq62-MuiPaper-root"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0.051), rgba(255, 255, 255, 0.051));"
@@ -3475,6 +3466,15 @@ exports[`App > should render correctly 1`] = `
             * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
           </span>
         </div>
+        <span
+          class="MuiTypography-root MuiTypography-caption css-132l87a-MuiTypography-root"
+        >
+          * Interest rates on their respective websites are subject to change without notice
+          <br />
+          ** Please do your own research before making any decisions, the numbers here serve as a guide.
+          <br />
+          *** Please ask around in your friend group for referrals to get additional bonuses, you can use the my referral code if your friends do not have any.
+        </span>
         <section
           aria-label="Frequently asked questions"
           class="MuiBox-root css-h5fkc8"
@@ -4093,7 +4093,7 @@ exports[`App > should render correctly 1`] = `
               tabindex="0"
               type="button"
             >
-              See all 19 FAQs
+              See all 20 FAQs
               <span
                 class="MuiButton-icon MuiButton-endIcon css-1gulhci-MuiButton-endIcon"
               >
@@ -4112,15 +4112,6 @@ exports[`App > should render correctly 1`] = `
             </button>
           </div>
         </section>
-        <span
-          class="MuiTypography-root MuiTypography-caption css-132l87a-MuiTypography-root"
-        >
-          * Interest rates on their respective websites are subject to change without notice
-          <br />
-          ** Please do your own research before making any decisions, the numbers here serve as a guide.
-          <br />
-          *** Please ask around in your friend group for referrals to get additional bonuses, you can use the my referral code if your friends do not have any.
-        </span>
       </div>
     </div>
   </main>

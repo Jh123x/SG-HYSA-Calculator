@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout } from "./Layout";
+import { Layout, WithInputs } from "./Layout";
 import { CurrentRatesTab } from "./pages/CurrentRatesTab";
 import { HistoryTab } from "./pages/HistoryTab";
 import { BankDetailPage } from "./pages/BankDetailPage";
@@ -21,12 +21,17 @@ export const App = () => {
             <Layout currProfile={currProfile} setCurrProfile={setCurrProfile} />
           }
         >
-          <Route path="/" element={<CurrentRatesTab profile={currProfile} />} />
-          <Route path="/history" element={<HistoryTab profile={currProfile} />} />
-          <Route
-            path="/bank/:slug"
-            element={<BankDetailPage profile={currProfile} />}
-          />
+          {/* Pages that need the savings inputs */}
+          <Route element={<WithInputs />}>
+            <Route path="/" element={<CurrentRatesTab profile={currProfile} />} />
+            <Route path="/history" element={<HistoryTab profile={currProfile} />} />
+            <Route
+              path="/bank/:slug"
+              element={<BankDetailPage profile={currProfile} />}
+            />
+          </Route>
+
+          {/* Pages that don't need inputs */}
           <Route path="/faq" element={<FaqPage />} />
         </Route>
       </Routes>
