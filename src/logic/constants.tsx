@@ -138,7 +138,7 @@ export const bankInfo: Record<string, BankDef> = {
     ),
     history: bocSuperSaverHistory,
   },
-  "Maybank Save Up": {
+  "Maybank SaveUp": {
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks: (
       <p>
