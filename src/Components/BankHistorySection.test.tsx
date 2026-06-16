@@ -10,10 +10,10 @@ describe("BankHistorySection", () => {
   it("renders bank name and rate history table", () => {
     render(
       <MemoryRouter>
-        <BankHistorySection bankName="GXS" profile={profile} />
+        <BankHistorySection bankName="GXS Savings Account" profile={profile} />
       </MemoryRouter>,
     );
-    expect(screen.getByText("GXS")).toBeDefined();
+    expect(screen.getByText("GXS Savings Account")).toBeDefined();
     // Should have date column headers
     expect(screen.getByText("Date")).toBeDefined();
     expect(screen.getByText("What Changed")).toBeDefined();

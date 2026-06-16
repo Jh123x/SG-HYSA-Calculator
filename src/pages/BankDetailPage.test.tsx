@@ -21,8 +21,8 @@ function renderAt(path: string) {
 
 describe("BankDetailPage", () => {
   it("renders bank detail for a valid slug", () => {
-    renderAt("/bank/gxs");
-    expect(screen.getAllByText("GXS").length).toBeGreaterThan(0);
+    renderAt("/bank/gxs-savings-account");
+    expect(screen.getAllByText("GXS Savings Account").length).toBeGreaterThan(0);
     expect(screen.getByText("Rate Change History")).toBeDefined();
     expect(screen.getByText("Back")).toBeDefined();
   });
@@ -34,13 +34,13 @@ describe("BankDetailPage", () => {
   });
 
   it("shows summary chip with current EIR", () => {
-    renderAt("/bank/gxs");
+    renderAt("/bank/gxs-savings-account");
     const eirChip = screen.queryByText(/Current EIR:/);
     expect(eirChip).toBeDefined();
   });
 
   it("renders the EIR over time chart section", () => {
-    renderAt("/bank/gxs");
+    renderAt("/bank/gxs-savings-account");
     expect(screen.getByText("Interest Rate Over Time")).toBeDefined();
   });
 });

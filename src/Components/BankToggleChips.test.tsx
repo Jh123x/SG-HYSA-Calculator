@@ -30,17 +30,17 @@ describe("BankToggleChips", () => {
     );
     openDropdown();
 
-    const gxsOption = await screen.findByRole("option", { name: /GXS/ });
+    const gxsOption = await screen.findByRole("option", { name: /GXS Savings Account/ });
     fireEvent.click(gxsOption);
 
-    expect(onChange).toHaveBeenCalledWith(["GXS"]);
+    expect(onChange).toHaveBeenCalledWith(["GXS Savings Account"]);
   });
 
   it("deselects a bank when chip delete is clicked", () => {
     const onChange = vi.fn();
     const { container } = render(
       <BankToggleChips
-        selected={["GXS"]}
+        selected={["GXS Savings Account"]}
         onChange={onChange}
         profile={profile}
       />,
@@ -89,7 +89,7 @@ describe("BankToggleChips", () => {
   it("shows 'X/Y selected' counter", () => {
     render(
       <BankToggleChips
-        selected={["GXS", "Mari Savings Account"]}
+        selected={["GXS Savings Account", "Mari Savings Account"]}
         onChange={() => {}}
         profile={profile}
       />,
@@ -107,7 +107,7 @@ describe("BankToggleChips", () => {
     await userEvent.type(input, "gxs");
 
     // After typing, the dropdown should show only matching options
-    const gxsOption = await screen.findByRole("option", { name: /GXS/ });
+    const gxsOption = await screen.findByRole("option", { name: /GXS Savings Account/ });
     expect(gxsOption).toBeDefined();
 
     // UOB One Account should not be in the list

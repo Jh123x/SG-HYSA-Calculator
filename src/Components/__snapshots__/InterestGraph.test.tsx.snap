@@ -297,7 +297,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="GXS"
+            data-series="GXS Savings Account"
           >
             <button
               class="MuiChartsLegend-series"
@@ -331,7 +331,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                GXS
+                GXS Savings Account
               </span>
             </button>
           </li>
@@ -377,7 +377,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="Bank of China SuperSaver"
+            data-series="BOC SuperSaver"
           >
             <button
               class="MuiChartsLegend-series"
@@ -411,7 +411,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Bank of China SuperSaver
+                BOC SuperSaver
               </span>
             </button>
           </li>
@@ -889,7 +889,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-GXS-line-clip"
+                  id="_r_1_-GXS_Savings Account-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -900,14 +900,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-GXS-line-clip)"
+                  clip-path="url(#_r_1_-GXS_Savings Account-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,426.562,84.833,418.123,84.75,409.685C84.667,401.247,84.583,392.808,84.5,384.37C84.417,375.932,84.333,367.493,84.25,359.055C84.167,350.617,84.083,342.178,84,333.74C83.917,325.302,83.833,316.863,83.75,308.425C83.667,299.987,83.583,291.548,83.5,283.11C83.417,274.672,83.333,266.233,83.25,257.795C83.167,249.357,83.083,240.676,83,232.48C82.917,224.284,82.833,214.462,82.75,208.618C82.667,202.773,82.583,197.413,82.5,197.413C82.417,197.413,82.333,197.413,82.25,197.413C82.167,197.413,82.083,197.413,82,197.413C81.917,197.413,81.833,197.413,81.75,197.413C81.667,197.413,81.583,197.413,81.5,197.413C81.417,197.413,81.333,197.413,81.25,197.413C81.167,197.413,81.083,197.413,81,197.413C80.917,197.413,80.833,197.413,80.75,197.413C80.667,197.413,80.583,197.413,80.5,197.413C80.417,197.413,80.333,197.413,80.25,197.413C80.167,197.413,80.083,197.413,80,197.413"
-                    data-series="GXS"
-                    data-series-id="GXS"
+                    data-series="GXS Savings Account"
+                    data-series-id="GXS Savings Account"
                     fill="none"
                     opacity="1"
                     stroke="#f032e6"
@@ -943,7 +943,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-Bank_of China SuperSaver-line-clip"
+                  id="_r_1_-BOC_SuperSaver-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -954,14 +954,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-Bank_of China SuperSaver-line-clip)"
+                  clip-path="url(#_r_1_-BOC_SuperSaver-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,431.542,84.833,428.083,84.75,424.625C84.667,421.167,84.583,418.746,84.5,414.25C84.417,409.754,84.333,403.183,84.25,397.65C84.167,392.117,84.083,386.583,84,381.05C83.917,375.517,83.833,369.983,83.75,364.45C83.667,358.917,83.583,354.075,83.5,347.85C83.417,341.625,83.333,334.017,83.25,327.1C83.167,320.183,83.083,313.267,83,306.35C82.917,299.433,82.833,292.517,82.75,285.6C82.667,278.683,82.583,270.038,82.5,264.85C82.417,259.663,82.333,257.933,82.25,254.475C82.167,251.017,82.083,247.558,82,244.1C81.917,240.642,81.833,237.183,81.75,233.725C81.667,230.267,81.583,226.808,81.5,223.35C81.417,219.892,81.333,216.433,81.25,212.975C81.167,209.517,81.083,206.058,81,202.6C80.917,199.142,80.833,195.683,80.75,192.225C80.667,188.767,80.583,185.308,80.5,181.85C80.417,178.392,80.333,174.933,80.25,171.475C80.167,168.017,80.083,164.558,80,161.1"
-                    data-series="Bank of China SuperSaver"
-                    data-series-id="Bank of China SuperSaver"
+                    data-series="BOC SuperSaver"
+                    data-series-id="BOC SuperSaver"
                     fill="none"
                     opacity="1"
                     stroke="#fabed4"
@@ -1451,16 +1451,16 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   data-series="DBS Multiplier Account"
                 />
                 <g
-                  clip-path="url(#_r_1_-GXS-line-clip)"
-                  data-series="GXS"
+                  clip-path="url(#_r_1_-GXS_Savings Account-line-clip)"
+                  data-series="GXS Savings Account"
                 />
                 <g
                   clip-path="url(#_r_1_-Chocolate_Finance-line-clip)"
                   data-series="Chocolate Finance"
                 />
                 <g
-                  clip-path="url(#_r_1_-Bank_of China SuperSaver-line-clip)"
-                  data-series="Bank of China SuperSaver"
+                  clip-path="url(#_r_1_-BOC_SuperSaver-line-clip)"
+                  data-series="BOC SuperSaver"
                 />
                 <g
                   clip-path="url(#_r_1_-Maybank_SaveUp-line-clip)"
@@ -1803,7 +1803,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="GXS"
+            data-series="GXS Savings Account"
           >
             <button
               class="MuiChartsLegend-series"
@@ -1837,7 +1837,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                GXS
+                GXS Savings Account
               </span>
             </button>
           </li>
@@ -1883,7 +1883,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="Bank of China SuperSaver"
+            data-series="BOC SuperSaver"
           >
             <button
               class="MuiChartsLegend-series"
@@ -1917,7 +1917,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Bank of China SuperSaver
+                BOC SuperSaver
               </span>
             </button>
           </li>
@@ -2367,7 +2367,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-GXS-line-clip"
+                  id="_r_4_-GXS_Savings Account-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2378,14 +2378,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-GXS-line-clip)"
+                  clip-path="url(#_r_4_-GXS_Savings Account-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,429.374,84.833,423.749,84.75,418.123C84.667,412.498,84.583,406.872,84.5,401.247C84.417,395.621,84.333,389.996,84.25,384.37C84.167,378.744,84.083,373.119,84,367.493C83.917,361.868,83.833,356.242,83.75,350.617C83.667,344.991,83.583,339.366,83.5,333.74C83.417,328.114,83.333,322.489,83.25,316.863C83.167,311.238,83.083,305.451,83,299.987C82.917,294.523,82.833,287.975,82.75,284.078C82.667,280.182,82.583,276.608,82.5,276.608C82.417,276.608,82.333,276.608,82.25,276.608C82.167,276.608,82.083,276.608,82,276.608C81.917,276.608,81.833,276.608,81.75,276.608C81.667,276.608,81.583,276.608,81.5,276.608C81.417,276.608,81.333,276.608,81.25,276.608C81.167,276.608,81.083,276.608,81,276.608C80.917,276.608,80.833,276.608,80.75,276.608C80.667,276.608,80.583,276.608,80.5,276.608C80.417,276.608,80.333,276.608,80.25,276.608C80.167,276.608,80.083,276.608,80,276.608"
-                    data-series="GXS"
-                    data-series-id="GXS"
+                    data-series="GXS Savings Account"
+                    data-series-id="GXS Savings Account"
                     fill="none"
                     opacity="1"
                     stroke="#f032e6"
@@ -2421,7 +2421,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-Bank_of China SuperSaver-line-clip"
+                  id="_r_4_-BOC_SuperSaver-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2432,14 +2432,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-Bank_of China SuperSaver-line-clip)"
+                  clip-path="url(#_r_4_-BOC_SuperSaver-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,432.694,84.833,430.389,84.75,428.083C84.667,425.778,84.583,424.164,84.5,421.167C84.417,418.169,84.333,413.789,84.25,410.1C84.167,406.411,84.083,402.722,84,399.033C83.917,395.344,83.833,391.656,83.75,387.967C83.667,384.278,83.583,381.05,83.5,376.9C83.417,372.75,83.333,367.678,83.25,363.067C83.167,358.456,83.083,353.844,83,349.233C82.917,344.622,82.833,340.011,82.75,335.4C82.667,330.789,82.583,325.025,82.5,321.567C82.417,318.108,82.333,316.956,82.25,314.65C82.167,312.344,82.083,310.039,82,307.733C81.917,305.428,81.833,303.122,81.75,300.817C81.667,298.511,81.583,296.206,81.5,293.9C81.417,291.594,81.333,289.289,81.25,286.983C81.167,284.678,81.083,282.372,81,280.067C80.917,277.761,80.833,275.456,80.75,273.15C80.667,270.844,80.583,268.539,80.5,266.233C80.417,263.928,80.333,261.622,80.25,259.317C80.167,257.011,80.083,254.706,80,252.4"
-                    data-series="Bank of China SuperSaver"
-                    data-series-id="Bank of China SuperSaver"
+                    data-series="BOC SuperSaver"
+                    data-series-id="BOC SuperSaver"
                     fill="none"
                     opacity="1"
                     stroke="#fabed4"
@@ -2829,16 +2829,16 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   data-series="DBS Multiplier Account"
                 />
                 <g
-                  clip-path="url(#_r_4_-GXS-line-clip)"
-                  data-series="GXS"
+                  clip-path="url(#_r_4_-GXS_Savings Account-line-clip)"
+                  data-series="GXS Savings Account"
                 />
                 <g
                   clip-path="url(#_r_4_-Chocolate_Finance-line-clip)"
                   data-series="Chocolate Finance"
                 />
                 <g
-                  clip-path="url(#_r_4_-Bank_of China SuperSaver-line-clip)"
-                  data-series="Bank of China SuperSaver"
+                  clip-path="url(#_r_4_-BOC_SuperSaver-line-clip)"
+                  data-series="BOC SuperSaver"
                 />
                 <g
                   clip-path="url(#_r_4_-Maybank_SaveUp-line-clip)"

@@ -88,7 +88,7 @@ export const bankInfo: Record<string, BankDef> = {
     ),
     history: dbsMultiplierHistory,
   },
-  GXS: {
+  "GXS Savings Account": {
     url: "https://www.gxs.com.sg/savings-account",
     remarks: (
       <p>
@@ -124,7 +124,7 @@ export const bankInfo: Record<string, BankDef> = {
     ),
     history: chocoFinanceHistory,
   },
-  "Bank of China SuperSaver": {
+  "BOC SuperSaver": {
     url: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
     remarks: (
       <p>

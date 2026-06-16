@@ -1393,7 +1393,7 @@ exports[`App > should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
                   >
-                    GXS
+                    GXS Savings Account
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1438,7 +1438,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit GXS official website"
+                        aria-label="Visit GXS Savings Account official website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.gxs.com.sg/savings-account"
@@ -1459,7 +1459,7 @@ exports[`App > should render correctly 1`] = `
                         </svg>
                       </a>
                       <button
-                        aria-label="View GXS rate history"
+                        aria-label="View GXS Savings Account rate history"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         tabindex="0"
@@ -1580,7 +1580,7 @@ exports[`App > should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
                   >
-                    Bank of China SuperSaver
+                    BOC SuperSaver
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1615,7 +1615,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit Bank of China SuperSaver official website"
+                        aria-label="Visit BOC SuperSaver official website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html"
@@ -1636,7 +1636,7 @@ exports[`App > should render correctly 1`] = `
                         </svg>
                       </a>
                       <button
-                        aria-label="View Bank of China SuperSaver rate history"
+                        aria-label="View BOC SuperSaver rate history"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         tabindex="0"
@@ -2284,7 +2284,7 @@ exports[`App > should render correctly 1`] = `
                 </li>
                 <li
                   class="MuiChartsLegend-item"
-                  data-series="GXS"
+                  data-series="GXS Savings Account"
                 >
                   <button
                     class="MuiChartsLegend-series"
@@ -2318,7 +2318,7 @@ exports[`App > should render correctly 1`] = `
                     <span
                       class="MuiChartsLabel-root MuiChartsLegend-label"
                     >
-                      GXS
+                      GXS Savings Account
                     </span>
                   </button>
                 </li>
@@ -2364,7 +2364,7 @@ exports[`App > should render correctly 1`] = `
                 </li>
                 <li
                   class="MuiChartsLegend-item"
-                  data-series="Bank of China SuperSaver"
+                  data-series="BOC SuperSaver"
                 >
                   <button
                     class="MuiChartsLegend-series"
@@ -2398,7 +2398,7 @@ exports[`App > should render correctly 1`] = `
                     <span
                       class="MuiChartsLabel-root MuiChartsLegend-label"
                     >
-                      Bank of China SuperSaver
+                      BOC SuperSaver
                     </span>
                   </button>
                 </li>
@@ -2876,7 +2876,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_28_-GXS-line-clip"
+                        id="_r_28_-GXS_Savings Account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2887,14 +2887,14 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_28_-GXS-line-clip)"
+                        clip-path="url(#_r_28_-GXS_Savings Account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
                           cursor="unset"
                           d="M85,435C84.917,426.562,84.833,418.123,84.75,409.685C84.667,401.247,84.583,392.808,84.5,384.37C84.417,375.932,84.333,367.493,84.25,359.055C84.167,350.617,84.083,342.178,84,333.74C83.917,325.302,83.833,316.863,83.75,308.425C83.667,299.987,83.583,291.548,83.5,283.11C83.417,274.672,83.333,266.233,83.25,257.795C83.167,249.357,83.083,240.676,83,232.48C82.917,224.284,82.833,214.462,82.75,208.618C82.667,202.773,82.583,197.413,82.5,197.413C82.417,197.413,82.333,197.413,82.25,197.413C82.167,197.413,82.083,197.413,82,197.413C81.917,197.413,81.833,197.413,81.75,197.413C81.667,197.413,81.583,197.413,81.5,197.413C81.417,197.413,81.333,197.413,81.25,197.413C81.167,197.413,81.083,197.413,81,197.413C80.917,197.413,80.833,197.413,80.75,197.413C80.667,197.413,80.583,197.413,80.5,197.413C80.417,197.413,80.333,197.413,80.25,197.413C80.167,197.413,80.083,197.413,80,197.413"
-                          data-series="GXS"
-                          data-series-id="GXS"
+                          data-series="GXS Savings Account"
+                          data-series-id="GXS Savings Account"
                           fill="none"
                           opacity="1"
                           stroke="#f032e6"
@@ -2930,7 +2930,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_28_-Bank_of China SuperSaver-line-clip"
+                        id="_r_28_-BOC_SuperSaver-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2941,14 +2941,14 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_28_-Bank_of China SuperSaver-line-clip)"
+                        clip-path="url(#_r_28_-BOC_SuperSaver-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
                           cursor="unset"
                           d="M85,435C84.917,431.542,84.833,428.083,84.75,424.625C84.667,421.167,84.583,418.746,84.5,414.25C84.417,409.754,84.333,403.183,84.25,397.65C84.167,392.117,84.083,386.583,84,381.05C83.917,375.517,83.833,369.983,83.75,364.45C83.667,358.917,83.583,354.075,83.5,347.85C83.417,341.625,83.333,334.017,83.25,327.1C83.167,320.183,83.083,313.267,83,306.35C82.917,299.433,82.833,292.517,82.75,285.6C82.667,278.683,82.583,270.038,82.5,264.85C82.417,259.663,82.333,257.933,82.25,254.475C82.167,251.017,82.083,247.558,82,244.1C81.917,240.642,81.833,237.183,81.75,233.725C81.667,230.267,81.583,226.808,81.5,223.35C81.417,219.892,81.333,216.433,81.25,212.975C81.167,209.517,81.083,206.058,81,202.6C80.917,199.142,80.833,195.683,80.75,192.225C80.667,188.767,80.583,185.308,80.5,181.85C80.417,178.392,80.333,174.933,80.25,171.475C80.167,168.017,80.083,164.558,80,161.1"
-                          data-series="Bank of China SuperSaver"
-                          data-series-id="Bank of China SuperSaver"
+                          data-series="BOC SuperSaver"
+                          data-series-id="BOC SuperSaver"
                           fill="none"
                           opacity="1"
                           stroke="#fabed4"
@@ -3438,16 +3438,16 @@ exports[`App > should render correctly 1`] = `
                         data-series="DBS Multiplier Account"
                       />
                       <g
-                        clip-path="url(#_r_28_-GXS-line-clip)"
-                        data-series="GXS"
+                        clip-path="url(#_r_28_-GXS_Savings Account-line-clip)"
+                        data-series="GXS Savings Account"
                       />
                       <g
                         clip-path="url(#_r_28_-Chocolate_Finance-line-clip)"
                         data-series="Chocolate Finance"
                       />
                       <g
-                        clip-path="url(#_r_28_-Bank_of China SuperSaver-line-clip)"
-                        data-series="Bank of China SuperSaver"
+                        clip-path="url(#_r_28_-BOC_SuperSaver-line-clip)"
+                        data-series="BOC SuperSaver"
                       />
                       <g
                         clip-path="url(#_r_28_-Maybank_SaveUp-line-clip)"
