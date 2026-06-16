@@ -8,8 +8,10 @@ import {
   FormGroup,
   Tooltip,
   Typography,
+  Chip,
 } from "@mui/material";
 import { useState, useEffect } from "react";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import type Profile from "../types/profile";
 import { NewProfile } from "../types/profile";
 import { STORE_KEY } from "../consts/keys";
@@ -51,6 +53,20 @@ export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
 
   return (
     <>
+      <Box sx={{ display: "flex", justifyContent: "center", mb: 1.5 }}>
+        <Chip
+          icon={<LockOutlinedIcon />}
+          label="All data stays on your device"
+          size="small"
+          variant="outlined"
+          sx={{
+            color: textColor,
+            borderColor: "rgba(255,255,255,0.15)",
+            opacity: 0.8,
+            fontSize: "0.75rem",
+          }}
+        />
+      </Box>
       <FormControl
         sx={{
           display: "flex",

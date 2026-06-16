@@ -589,6 +589,29 @@ const FULL: FaqEntry[] = [
     ],
   },
   {
+    question: "Is my financial data stored or tracked?",
+    answer:
+      "No. All calculations run entirely in your browser using JavaScript. Your balance, monthly deposit, and bonus criteria selections are stored " +
+      "only in your browser's localStorage — they never leave your device. There is no backend server, no database, and no user accounts. " +
+      "We do not use analytics trackers, cookies, or third-party scripts that could capture your financial inputs. " +
+      "The source code is fully open source on GitHub, so you can verify this yourself. " +
+      "When you clear your browser data or click 'Clear' in the app, all locally stored data is permanently removed.",
+    sources: [
+      {
+        label: "GitHub — SG HYSA Calculator Source Code",
+        url: "https://github.com/jh123x/SG-HYSA-Calculator",
+        confirms:
+          "The full source code is publicly available. No backend server, no API calls for user data, and no analytics integration. All logic is client-side React/TypeScript.",
+      },
+      {
+        label: "MDN — Web Storage API (localStorage)",
+        url: "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+        confirms:
+          "localStorage is a browser-native key-value store scoped to the origin. Data never transmitted to a server unless explicitly sent via JavaScript — which this app does not do.",
+      },
+    ],
+  },
+  {
     question: "How do referral bonuses work?",
     answer:
       "Many banks offer referral bonuses (S$20–S$50 cash or vouchers) when an existing customer refers a new customer who opens an account. " +
