@@ -24,7 +24,8 @@ export const Layout = ({ currProfile, setCurrProfile }: LayoutProps) => (
           backgroundColor: bgColor,
           margin: "0px",
           padding: "0px",
-          height: "100vh",
+          height: "100%",
+          minHeight: "100dvh",
           width: "100%",
         },
       }}
