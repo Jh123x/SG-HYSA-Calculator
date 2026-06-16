@@ -30,8 +30,7 @@ import { useDocumentTitle } from "../hooks/useDocumentTitle";
 type SortableColumns =
   | "name"
   | "yearlyInterest"
-  | "effectiveInterest"
-  | undefined;
+  | "effectiveInterest";
 
 const cellSx = {
   color: textColor,
@@ -49,8 +48,8 @@ interface Props {
  */
 export const CurrentRatesTab = ({ profile }: Props) => {
   const navigate = useNavigate();
-  const [orderBy, setOrderBy] = useState<SortableColumns>(undefined);
-  const [order, setOrder] = useState<"asc" | "desc" | undefined>("desc");
+  const [orderBy, setOrderBy] = useState<SortableColumns | undefined>(undefined);
+  const [order, setOrder] = useState<"asc" | "desc">("desc");
 
   useDocumentTitle("Compare Singapore High Yield Savings Accounts — Current Rates");
 
@@ -67,14 +66,11 @@ export const CurrentRatesTab = ({ profile }: Props) => {
 
   const handleSort = (column: SortableColumns) => {
     if (orderBy === column) {
-      const nextOrder =
-        order === "asc" ? "desc" : order === "desc" ? undefined : "asc";
-      setOrder(nextOrder);
-      if (nextOrder === undefined) setOrderBy(undefined);
-      return;
+      setOrder((prev) => (prev === "asc" ? "desc" : "asc"));
+    } else {
+      setOrderBy(column);
+      setOrder("asc");
     }
-    setOrderBy(column);
-    setOrder("asc");
   };
 
   const sortedResults = Object.entries(results).sort((a, b) => {
@@ -259,27 +255,7 @@ export const CurrentRatesTab = ({ profile }: Props) => {
 
       </Box>
 
-      <Typography
-        variant="caption"
-        sx={{
-          color: textColor,
-          margin: "10px 0px",
-          display: "block",
-          textAlign: "left",
-        }}
-      >
-        * Interest rates on their respective websites are subject to change
-        without notice
-        <br />
-        ** Please do your own research before making any decisions, the numbers
-        here serve as a guide.
-        <br />
-        *** Please ask around in your friend group for referrals to get
-        additional bonuses, you can use the my referral code if your friends do
-        not have any.
-      </Typography>
       <InterestGraph profile={profile} />
-      <FaqAccordion />
 
       <Typography
         variant="caption"
@@ -300,6 +276,8 @@ export const CurrentRatesTab = ({ profile }: Props) => {
         additional bonuses, you can use the my referral code if your friends do
         not have any.
       </Typography>
+
+      <FaqAccordion />
     </Container>
   );
 };
