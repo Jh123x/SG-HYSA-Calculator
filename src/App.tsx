@@ -4,6 +4,7 @@ import { Layout } from "./Layout";
 import { CurrentRatesTab } from "./pages/CurrentRatesTab";
 import { HistoryTab } from "./pages/HistoryTab";
 import { BankDetailPage } from "./pages/BankDetailPage";
+import { FaqPage } from "./pages/FaqPage";
 import Profile, { NewProfile } from "./types/profile";
 import { STORE_KEY } from "./consts/keys";
 
@@ -26,6 +27,7 @@ export const App = () => {
             path="/bank/:slug"
             element={<BankDetailPage profile={currProfile} />}
           />
+          <Route path="/faq" element={<FaqPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
