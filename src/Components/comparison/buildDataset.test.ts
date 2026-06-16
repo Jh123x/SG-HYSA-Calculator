@@ -46,10 +46,10 @@ describe("collectBankPoints", () => {
   });
 
   it("collects multiple banks", () => {
-    const result = collectBankPoints(["GXS", "MariBank"], emptyProfile);
+    const result = collectBankPoints(["GXS", "Mari Savings Account"], emptyProfile);
     expect(Object.keys(result)).toHaveLength(2);
     expect(result["GXS"]).toBeDefined();
-    expect(result["MariBank"]).toBeDefined();
+    expect(result["Mari Savings Account"]).toBeDefined();
   });
 
   it("each point has yearlyInterest and eir as numbers", () => {

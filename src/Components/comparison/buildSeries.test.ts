@@ -22,7 +22,7 @@ describe("buildComparisonSeries", () => {
 
   it("cycles colors from lineColors", () => {
     // Need at least 2 banks with valid data
-    const series = buildComparisonSeries(["GXS", "MariBank"], "yearlyInterest");
+    const series = buildComparisonSeries(["GXS", "Mari Savings Account"], "yearlyInterest");
     expect(series).toHaveLength(2);
     expect(series[0].color).toBeDefined();
     expect(series[1].color).toBeDefined();

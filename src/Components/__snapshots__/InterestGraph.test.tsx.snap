@@ -97,7 +97,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="MariBank"
+            data-series="Mari Savings Account"
           >
             <button
               class="MuiChartsLegend-series"
@@ -131,7 +131,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                MariBank
+                Mari Savings Account
               </span>
             </button>
           </li>
@@ -754,7 +754,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-MariBank-line-clip"
+                  id="_r_1_-Mari_Savings Account-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -765,14 +765,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-MariBank-line-clip)"
+                  clip-path="url(#_r_1_-Mari_Savings Account-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,428.913,84.833,422.827,84.75,416.74C84.667,410.653,84.583,404.567,84.5,398.48C84.417,392.393,84.333,386.307,84.25,380.22C84.167,374.133,84.083,368.047,84,361.96C83.917,355.873,83.833,349.787,83.75,343.7C83.667,337.613,83.583,331.527,83.5,325.44C83.417,319.353,83.333,313.267,83.25,307.18C83.167,301.093,83.083,295.007,83,288.92C82.917,282.833,82.833,276.747,82.75,270.66C82.667,264.573,82.583,252.4,82.5,252.4C82.417,252.4,82.333,252.4,82.25,252.4C82.167,252.4,82.083,252.4,82,252.4C81.917,252.4,81.833,252.4,81.75,252.4C81.667,252.4,81.583,252.4,81.5,252.4C81.417,252.4,81.333,252.4,81.25,252.4C81.167,252.4,81.083,252.4,81,252.4C80.917,252.4,80.833,252.4,80.75,252.4C80.667,252.4,80.583,252.4,80.5,252.4C80.417,252.4,80.333,252.4,80.25,252.4C80.167,252.4,80.083,252.4,80,252.4"
-                    data-series="MariBank"
-                    data-series-id="MariBank"
+                    data-series="Mari Savings Account"
+                    data-series-id="Mari Savings Account"
                     fill="none"
                     opacity="1"
                     stroke="#ffe119"
@@ -1431,8 +1431,8 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   data-series="OCBC 360 Account"
                 />
                 <g
-                  clip-path="url(#_r_1_-MariBank-line-clip)"
-                  data-series="MariBank"
+                  clip-path="url(#_r_1_-Mari_Savings Account-line-clip)"
+                  data-series="Mari Savings Account"
                 />
                 <g
                   clip-path="url(#_r_1_-Standard_Chartered-line-clip)"
@@ -1603,7 +1603,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="MariBank"
+            data-series="Mari Savings Account"
           >
             <button
               class="MuiChartsLegend-series"
@@ -1637,7 +1637,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                MariBank
+                Mari Savings Account
               </span>
             </button>
           </li>
@@ -2232,7 +2232,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-MariBank-line-clip"
+                  id="_r_4_-Mari_Savings Account-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2243,14 +2243,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-MariBank-line-clip)"
+                  clip-path="url(#_r_4_-Mari_Savings Account-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,430.942,84.833,426.884,84.75,422.827C84.667,418.769,84.583,414.711,84.5,410.653C84.417,406.596,84.333,402.538,84.25,398.48C84.167,394.422,84.083,390.364,84,386.307C83.917,382.249,83.833,378.191,83.75,374.133C83.667,370.076,83.583,366.018,83.5,361.96C83.417,357.902,83.333,353.844,83.25,349.787C83.167,345.729,83.083,341.671,83,337.613C82.917,333.556,82.833,329.498,82.75,325.44C82.667,321.382,82.583,313.267,82.5,313.267C82.417,313.267,82.333,313.267,82.25,313.267C82.167,313.267,82.083,313.267,82,313.267C81.917,313.267,81.833,313.267,81.75,313.267C81.667,313.267,81.583,313.267,81.5,313.267C81.417,313.267,81.333,313.267,81.25,313.267C81.167,313.267,81.083,313.267,81,313.267C80.917,313.267,80.833,313.267,80.75,313.267C80.667,313.267,80.583,313.267,80.5,313.267C80.417,313.267,80.333,313.267,80.25,313.267C80.167,313.267,80.083,313.267,80,313.267"
-                    data-series="MariBank"
-                    data-series-id="MariBank"
+                    data-series="Mari Savings Account"
+                    data-series-id="Mari Savings Account"
                     fill="none"
                     opacity="1"
                     stroke="#ffe119"
@@ -2809,8 +2809,8 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   data-series="OCBC 360 Account"
                 />
                 <g
-                  clip-path="url(#_r_4_-MariBank-line-clip)"
-                  data-series="MariBank"
+                  clip-path="url(#_r_4_-Mari_Savings Account-line-clip)"
+                  data-series="Mari Savings Account"
                 />
                 <g
                   clip-path="url(#_r_4_-Standard_Chartered-line-clip)"

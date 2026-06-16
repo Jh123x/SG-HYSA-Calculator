@@ -43,7 +43,7 @@ export const bankInfo: Record<string, BankDef> = {
     remarks: "Visit the official website to find our more",
     history: ocbcHistory,
   },
-  MariBank: {
+  "Mari Savings Account": {
     url: "https://www.maribank.sg/product/mari-savings-account/",
     remarks: (
       <p>

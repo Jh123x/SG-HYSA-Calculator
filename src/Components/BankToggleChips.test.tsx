@@ -89,7 +89,7 @@ describe("BankToggleChips", () => {
   it("shows 'X/Y selected' counter", () => {
     render(
       <BankToggleChips
-        selected={["GXS", "MariBank"]}
+        selected={["GXS", "Mari Savings Account"]}
         onChange={() => {}}
         profile={profile}
       />,
