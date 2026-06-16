@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import { ACCORDION_FAQ } from "../data/faq";
+import { ACCORDION_FAQ, FULL_FAQ } from "../data/faq";
 import { primaryColor, bgColor, textColor } from "../consts/colors";
 
 const accordionSx = {
@@ -115,7 +115,7 @@ export const FaqAccordion = () => {
             },
           }}
         >
-          See all 19 FAQs
+          See all {FULL_FAQ.length} FAQs
         </Button>
       </Box>
     </Box>
