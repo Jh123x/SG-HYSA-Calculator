@@ -22,6 +22,7 @@ import { textColor, primaryColor } from "../consts/colors";
 const TAB_CONFIG = {
   current: { path: "/", label: "Current Rates" },
   history: { path: "/history", label: "Rate History" },
+  faq: { path: "/faq", label: "FAQ" },
 } as const;
 
 type TabKey = keyof typeof TAB_CONFIG;
@@ -84,6 +85,7 @@ export const Header = () => {
         {/* Left: title */}
         <Typography
           variant={isMobile ? "h6" : "h5"}
+          component="h1"
           sx={{
             color: textColor,
             fontWeight: 600,
