@@ -89,7 +89,7 @@ describe("BankToggleChips", () => {
   it("shows 'X/Y selected' counter", () => {
     render(
       <BankToggleChips
-        selected={["GXS", "Maribank"]}
+        selected={["GXS", "MariBank"]}
         onChange={() => {}}
         profile={profile}
       />,
@@ -110,8 +110,8 @@ describe("BankToggleChips", () => {
     const gxsOption = await screen.findByRole("option", { name: /GXS/ });
     expect(gxsOption).toBeDefined();
 
-    // UOB Bank should not be in the list
-    expect(screen.queryByRole("option", { name: /UOB Bank/ })).toBeNull();
+    // UOB One Account should not be in the list
+    expect(screen.queryByRole("option", { name: /UOB One Account/ })).toBeNull();
   });
 
   it("Select All fills up to MAX_COMPARISON_BANKS", () => {

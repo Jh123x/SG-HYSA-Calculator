@@ -33,17 +33,17 @@ export interface BankDef {
 }
 
 export const bankInfo: Record<string, BankDef> = {
-  "UOB Bank": {
+  "UOB One Account": {
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     remarks: "Visit their official website to find out more",
     history: uobHistory,
   },
-  "OCBC Bank": {
+  "OCBC 360 Account": {
     url: "https://www.ocbc.com/personal-banking/notices",
     remarks: "Visit the official website to find our more",
     history: ocbcHistory,
   },
-  Maribank: {
+  MariBank: {
     url: "https://www.maribank.sg/product/mari-savings-account/",
     remarks: (
       <p>
@@ -175,7 +175,7 @@ export const bankInfo: Record<string, BankDef> = {
     ),
     history: maybankIsavvyPlusHistory,
   },
-  "CITI Wealth First Account": {
+  "Citi Wealth First Account": {
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks: (
       <>
