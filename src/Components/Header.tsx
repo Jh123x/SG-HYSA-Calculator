@@ -160,25 +160,23 @@ export const Header = () => {
                     {TAB_CONFIG[key].label}
                   </MenuItem>
                 ))}
-                <MenuItem>
-                  <IconButton
-                    href="https://jh123x.com"
-                    target="_blank"
-                    size="small"
-                  >
-                    <ArticleIcon sx={{ mr: 1 }} />
-                    Blog Post (2024)
-                  </IconButton>
+                <MenuItem
+                  component="a"
+                  href="https://jh123x.com"
+                  target="_blank"
+                  onClick={handleClose}
+                >
+                  <ArticleIcon sx={{ mr: 1 }} />
+                  Blog Post (2024)
                 </MenuItem>
-                <MenuItem>
-                  <IconButton
-                    href="https://github.com/jh123x/SG-HYSA-Calculator"
-                    target="_blank"
-                    size="small"
-                  >
-                    <GitHubIcon sx={{ mr: 1 }} />
-                    GitHub
-                  </IconButton>
+                <MenuItem
+                  component="a"
+                  href="https://github.com/jh123x/SG-HYSA-Calculator"
+                  target="_blank"
+                  onClick={handleClose}
+                >
+                  <GitHubIcon sx={{ mr: 1 }} />
+                  GitHub
                 </MenuItem>
               </Menu>
             </>
