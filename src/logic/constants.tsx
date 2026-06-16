@@ -56,7 +56,7 @@ export const bankInfo: Record<string, BankDef> = {
     ),
     history: maribankHistory,
   },
-  "Standard Chartered": {
+  "Standard Chartered Bonus$aver": {
     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
     remarks: (
       <p>

@@ -1075,7 +1075,7 @@ exports[`App > should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
                   >
-                    Standard Chartered
+                    Standard Chartered Bonus$aver
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -1108,7 +1108,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit Standard Chartered official website"
+                        aria-label="Visit Standard Chartered Bonus$aver official website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
@@ -1129,7 +1129,7 @@ exports[`App > should render correctly 1`] = `
                         </svg>
                       </a>
                       <button
-                        aria-label="View Standard Chartered rate history"
+                        aria-label="View Standard Chartered Bonus$aver rate history"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         tabindex="0"
@@ -2124,7 +2124,7 @@ exports[`App > should render correctly 1`] = `
                 </li>
                 <li
                   class="MuiChartsLegend-item"
-                  data-series="Standard Chartered"
+                  data-series="Standard Chartered Bonus$aver"
                 >
                   <button
                     class="MuiChartsLegend-series"
@@ -2158,7 +2158,7 @@ exports[`App > should render correctly 1`] = `
                     <span
                       class="MuiChartsLabel-root MuiChartsLegend-label"
                     >
-                      Standard Chartered
+                      Standard Chartered Bonus$aver
                     </span>
                   </button>
                 </li>
@@ -2768,7 +2768,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_28_-Standard_Chartered-line-clip"
+                        id="_r_28_-Standard_Chartered Bonus$aver-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2779,14 +2779,14 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_28_-Standard_Chartered-line-clip)"
+                        clip-path="url(#_r_28_-Standard_Chartered Bonus$aver-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
                           cursor="unset"
                           d="M85,435C84.917,434.654,84.833,434.308,84.75,433.963C84.667,433.617,84.583,433.271,84.5,432.925C84.417,432.579,84.333,432.233,84.25,431.888C84.167,431.542,84.083,431.196,84,430.85C83.917,430.504,83.833,430.158,83.75,429.813C83.667,429.467,83.583,429.121,83.5,428.775C83.417,428.429,83.333,428.083,83.25,427.738C83.167,427.392,83.083,427.046,83,426.7C82.917,426.354,82.833,426.008,82.75,425.663C82.667,425.317,82.583,424.971,82.5,424.625C82.417,424.279,82.333,423.933,82.25,423.588C82.167,423.242,82.083,422.896,82,422.55C81.917,422.204,81.833,421.858,81.75,421.513C81.667,421.167,81.583,420.821,81.5,420.475C81.417,420.129,81.333,419.783,81.25,419.438C81.167,419.092,81.083,418.746,81,418.4C80.917,418.054,80.833,417.708,80.75,417.363C80.667,417.017,80.583,416.671,80.5,416.325C80.417,415.979,80.333,415.633,80.25,415.288C80.167,414.942,80.083,414.596,80,414.25"
-                          data-series="Standard Chartered"
-                          data-series-id="Standard Chartered"
+                          data-series="Standard Chartered Bonus$aver"
+                          data-series-id="Standard Chartered Bonus$aver"
                           fill="none"
                           opacity="1"
                           stroke="#4363d8"
@@ -3422,8 +3422,8 @@ exports[`App > should render correctly 1`] = `
                         data-series="Mari Savings Account"
                       />
                       <g
-                        clip-path="url(#_r_28_-Standard_Chartered-line-clip)"
-                        data-series="Standard Chartered"
+                        clip-path="url(#_r_28_-Standard_Chartered Bonus$aver-line-clip)"
+                        data-series="Standard Chartered Bonus$aver"
                       />
                       <g
                         clip-path="url(#_r_28_-Trust_Bank (Signature)-line-clip)"

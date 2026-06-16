@@ -137,7 +137,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="Standard Chartered"
+            data-series="Standard Chartered Bonus$aver"
           >
             <button
               class="MuiChartsLegend-series"
@@ -171,7 +171,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Standard Chartered
+                Standard Chartered Bonus$aver
               </span>
             </button>
           </li>
@@ -781,7 +781,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_1_-Standard_Chartered-line-clip"
+                  id="_r_1_-Standard_Chartered Bonus$aver-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -792,14 +792,14 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_1_-Standard_Chartered-line-clip)"
+                  clip-path="url(#_r_1_-Standard_Chartered Bonus$aver-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,434.654,84.833,434.308,84.75,433.963C84.667,433.617,84.583,433.271,84.5,432.925C84.417,432.579,84.333,432.233,84.25,431.888C84.167,431.542,84.083,431.196,84,430.85C83.917,430.504,83.833,430.158,83.75,429.813C83.667,429.467,83.583,429.121,83.5,428.775C83.417,428.429,83.333,428.083,83.25,427.738C83.167,427.392,83.083,427.046,83,426.7C82.917,426.354,82.833,426.008,82.75,425.663C82.667,425.317,82.583,424.971,82.5,424.625C82.417,424.279,82.333,423.933,82.25,423.588C82.167,423.242,82.083,422.896,82,422.55C81.917,422.204,81.833,421.858,81.75,421.513C81.667,421.167,81.583,420.821,81.5,420.475C81.417,420.129,81.333,419.783,81.25,419.438C81.167,419.092,81.083,418.746,81,418.4C80.917,418.054,80.833,417.708,80.75,417.363C80.667,417.017,80.583,416.671,80.5,416.325C80.417,415.979,80.333,415.633,80.25,415.288C80.167,414.942,80.083,414.596,80,414.25"
-                    data-series="Standard Chartered"
-                    data-series-id="Standard Chartered"
+                    data-series="Standard Chartered Bonus$aver"
+                    data-series-id="Standard Chartered Bonus$aver"
                     fill="none"
                     opacity="1"
                     stroke="#4363d8"
@@ -1435,8 +1435,8 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   data-series="Mari Savings Account"
                 />
                 <g
-                  clip-path="url(#_r_1_-Standard_Chartered-line-clip)"
-                  data-series="Standard Chartered"
+                  clip-path="url(#_r_1_-Standard_Chartered Bonus$aver-line-clip)"
+                  data-series="Standard Chartered Bonus$aver"
                 />
                 <g
                   clip-path="url(#_r_1_-Trust_Bank (Signature)-line-clip)"
@@ -1643,7 +1643,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="Standard Chartered"
+            data-series="Standard Chartered Bonus$aver"
           >
             <button
               class="MuiChartsLegend-series"
@@ -1677,7 +1677,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Standard Chartered
+                Standard Chartered Bonus$aver
               </span>
             </button>
           </li>
@@ -2259,7 +2259,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
-                  id="_r_4_-Standard_Chartered-line-clip"
+                  id="_r_4_-Standard_Chartered Bonus$aver-line-clip"
                 >
                   <rect
                     class="css-dbuw8t"
@@ -2270,14 +2270,14 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </clippath>
                 <g
-                  clip-path="url(#_r_4_-Standard_Chartered-line-clip)"
+                  clip-path="url(#_r_4_-Standard_Chartered Bonus$aver-line-clip)"
                 >
                   <path
                     class="MuiLineChart-line"
                     cursor="unset"
                     d="M85,435C84.917,426.469,84.833,417.939,84.75,409.408C84.667,400.878,84.583,392.347,84.5,383.817C84.417,375.286,84.333,366.756,84.25,358.225C84.167,349.694,84.083,341.164,84,332.633C83.917,324.103,83.833,315.572,83.75,307.042C83.667,298.511,83.583,289.981,83.5,281.45C83.417,272.919,83.333,264.389,83.25,255.858C83.167,247.328,83.083,238.797,83,230.267C82.917,221.736,82.833,213.206,82.75,204.675C82.667,196.144,82.583,179.544,82.5,179.083C82.417,178.622,82.333,178.622,82.25,178.392C82.167,178.161,82.083,177.931,82,177.7C81.917,177.469,81.833,177.239,81.75,177.008C81.667,176.778,81.583,176.547,81.5,176.317C81.417,176.086,81.333,175.856,81.25,175.625C81.167,175.394,81.083,175.164,81,174.933C80.917,174.703,80.833,174.472,80.75,174.242C80.667,174.011,80.583,173.781,80.5,173.55C80.417,173.319,80.333,173.089,80.25,172.858C80.167,172.628,80.083,172.397,80,172.167"
-                    data-series="Standard Chartered"
-                    data-series-id="Standard Chartered"
+                    data-series="Standard Chartered Bonus$aver"
+                    data-series-id="Standard Chartered Bonus$aver"
                     fill="none"
                     opacity="1"
                     stroke="#4363d8"
@@ -2813,8 +2813,8 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   data-series="Mari Savings Account"
                 />
                 <g
-                  clip-path="url(#_r_4_-Standard_Chartered-line-clip)"
-                  data-series="Standard Chartered"
+                  clip-path="url(#_r_4_-Standard_Chartered Bonus$aver-line-clip)"
+                  data-series="Standard Chartered Bonus$aver"
                 />
                 <g
                   clip-path="url(#_r_4_-Trust_Bank (Signature)-line-clip)"
