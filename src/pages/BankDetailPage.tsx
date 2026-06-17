@@ -1,5 +1,5 @@
-import { useParams, useNavigate, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useParams, useNavigate, useLocation, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import {
   Box,
   Button,
@@ -22,10 +22,14 @@ import { resolveHistoryForChart } from "../logic/history";
 import { formatDate } from "../logic/dates";
 import type Profile from "../types/profile";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { findClosestBank } from "../logic/fuzzyMatch";
 
 interface BankDetailPageProps {
   profile: Profile;
 }
+
+/** Seconds before auto-redirecting to the suggested bank. */
+const AUTO_REDIRECT_SECONDS = 5;
 
 /**
  * Bank detail page at /bank/:slug.
@@ -41,6 +45,13 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   const navigate = useNavigate();
   const location = useLocation();
   const bankName = slug ? slugToBankName(slug) : ERROR_SLUG;
+
+  // Closest-match suggestion when bank slug is unknown
+  const [suggestion, setSuggestion] = useState<{
+    bankName: string;
+    slug: string;
+  } | null>(null);
+  const [countdown, setCountdown] = useState(AUTO_REDIRECT_SECONDS);
 
   useDocumentTitle(
     bankName !== ERROR_SLUG && bankInfo[slug ?? ""]
@@ -65,12 +76,75 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     }
   };
 
-  // Unknown bank — redirect to homepage
+  // Unknown bank — find closest match and suggest it
   useEffect(() => {
     if (bankName === ERROR_SLUG || !bankInfo[slug ?? ""]) {
-      navigate("/", { replace: true });
+      if (!slug) {
+        navigate("/", { replace: true });
+        return;
+      }
+      const closest = findClosestBank(slug);
+      if (!closest) {
+        navigate("/", { replace: true });
+        return;
+      }
+      setSuggestion({ bankName: closest.bank.name, slug: closest.slug });
+      setCountdown(AUTO_REDIRECT_SECONDS);
+    } else {
+      setSuggestion(null);
     }
   }, [bankName, slug, navigate]);
+
+  // Auto-redirect countdown when a suggestion is shown
+  useEffect(() => {
+    if (!suggestion) return;
+    if (countdown <= 0) {
+      navigate(`/bank/${suggestion.slug}`, { replace: true });
+      return;
+    }
+    const timer = setTimeout(() => setCountdown((c) => c - 1), 1000);
+    return () => clearTimeout(timer);
+  }, [suggestion, countdown, navigate]);
+
+  // Show "Did you mean?" suggestion when a close match exists
+  if (suggestion) {
+    return (
+      <Box
+        component="article"
+        aria-label="Bank suggestion"
+        sx={{ mt: 3, textAlign: "center" }}
+      >
+        <Paper
+          sx={{
+            p: 4,
+            borderRadius: "10px",
+            backgroundColor: bgColor,
+          }}
+        >
+          <Typography
+            variant="h5"
+            sx={{ color: textColor, mb: 2, fontWeight: 600 }}
+          >
+            Bank not found
+          </Typography>
+          <Typography variant="body1" sx={{ color: textColor, mb: 3 }}>
+            Did you mean{" "}
+            <Link
+              to={`/bank/${suggestion.slug}`}
+              style={{ color: primaryColor, fontWeight: 600 }}
+            >
+              {suggestion.bankName}
+            </Link>
+            ?
+          </Typography>
+          <Typography variant="body2" sx={{ color: textColor, opacity: 0.7 }}>
+            Redirecting in {countdown} second{countdown !== 1 ? "s" : ""}...
+          </Typography>
+        </Paper>
+      </Box>
+    );
+  }
+
   if (bankName === ERROR_SLUG || !bankInfo[slug ?? ""]) {
     return null;
   }
