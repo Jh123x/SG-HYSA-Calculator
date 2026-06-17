@@ -22,7 +22,7 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://hysa.jh123x.com/bank/uob-bank</loc>
+        <loc>https://hysa.jh123x.com/bank/uob-one-account</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -32,12 +32,12 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://hysa.jh123x.com/bank/maribank</loc>
+        <loc>https://hysa.jh123x.com/bank/mari-savings-account</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://hysa.jh123x.com/bank/standard-chartered</loc>
+        <loc>https://hysa.jh123x.com/bank/standard-chartered-bonus-aver</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -57,7 +57,7 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://hysa.jh123x.com/bank/gxs</loc>
+        <loc>https://hysa.jh123x.com/bank/gxs-savings-account</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -67,12 +67,12 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://hysa.jh123x.com/bank/bank-of-china-supersaver</loc>
+        <loc>https://hysa.jh123x.com/bank/boc-supersaver</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://hysa.jh123x.com/bank/maybank-save-up</loc>
+        <loc>https://hysa.jh123x.com/bank/maybank-saveup</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>

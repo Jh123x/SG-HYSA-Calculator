@@ -34,7 +34,8 @@
     "build": "vite build",
     "serve": "vite preview",
     "test": "vitest",
-    "test:dev": "vitest --standalone"
+    "test:dev": "vitest --standalone",
+    "generate-sitemap": "node scripts/generate-sitemap.mjs"
   },
   "eslintConfig": {
     "extends": [
