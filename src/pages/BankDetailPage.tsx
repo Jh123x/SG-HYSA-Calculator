@@ -1,4 +1,5 @@
 import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import {
   Box,
   Button,
@@ -13,7 +14,6 @@ import {
   Typography,
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import HomeIcon from "@mui/icons-material/Home";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, bgColor, primaryColor, lineColors } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
@@ -58,44 +58,15 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     }
   };
 
-  // Unknown bank — show error page with reset option
+  // Unknown bank — redirect to homepage
+  useEffect(() => {
+    if (bankName === ERROR_SLUG || !bankInfo[bankName]) {
+      navigate("/", { replace: true });
+    }
+  }, [bankName, navigate]);
+
   if (bankName === ERROR_SLUG || !bankInfo[bankName]) {
-    return (
-      <Paper
-        sx={{
-          p: 4,
-          borderRadius: "10px",
-          backgroundColor: bgColor,
-          textAlign: "center",
-          mt: 3,
-        }}
-      >
-        <Typography variant="h5" color={textColor} sx={{ mb: 2 }}>
-          Bank Not Found
-        </Typography>
-        <Typography variant="body1" color={textColor} sx={{ mb: 3, opacity: 0.7 }}>
-          The bank you're looking for doesn't exist or may have been removed.
-        </Typography>
-        <Box sx={{ display: "flex", gap: 2, justifyContent: "center" }}>
-          <Button
-            variant="outlined"
-            startIcon={<ArrowBackIcon />}
-            onClick={handleBack}
-            sx={{ color: textColor, borderColor: `${textColor}40` }}
-          >
-            Go Back
-          </Button>
-          <Button
-            variant="contained"
-            startIcon={<HomeIcon />}
-            onClick={() => navigate("/")}
-            sx={{ backgroundColor: primaryColor, color: "#fff" }}
-          >
-            Go to Calculator
-          </Button>
-        </Box>
-      </Paper>
-    );
+    return null;
   }
 
   const info = bankInfo[bankName];

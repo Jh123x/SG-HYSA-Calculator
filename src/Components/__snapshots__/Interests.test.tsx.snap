@@ -159,7 +159,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              OCBC Bank
+              OCBC 360 Account
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -831,7 +831,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             </li>
             <li
               class="MuiChartsLegend-item"
-              data-series="OCBC Bank"
+              data-series="OCBC 360 Account"
             >
               <button
                 class="MuiChartsLegend-series"
@@ -865,7 +865,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  OCBC Bank
+                  OCBC 360 Account
                 </span>
               </button>
             </li>
@@ -1473,7 +1473,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_4_-OCBC_Bank-line-clip"
+                    id="_r_4_-OCBC_360 Account-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -1484,14 +1484,14 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_4_-OCBC_Bank-line-clip)"
+                    clip-path="url(#_r_4_-OCBC_360 Account-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
                       cursor="unset"
                       d="M85,435C84.917,427.161,84.833,419.322,84.75,411.483C84.667,403.644,84.583,395.806,84.5,387.967C84.417,380.128,84.333,372.289,84.25,364.45C84.167,356.611,84.083,348.772,84,340.933C83.917,333.094,83.833,325.256,83.75,317.417C83.667,309.578,83.583,301.739,83.5,293.9C83.417,286.061,83.333,279.375,83.25,270.383C83.167,261.392,83.083,251.247,83,239.95C82.917,228.653,82.833,215.05,82.75,202.6C82.667,190.15,82.583,165.711,82.5,165.25C82.417,164.789,82.333,164.789,82.25,164.558C82.167,164.328,82.083,164.097,82,163.867C81.917,163.636,81.833,163.406,81.75,163.175C81.667,162.944,81.583,162.714,81.5,162.483C81.417,162.253,81.333,162.022,81.25,161.792C81.167,161.561,81.083,161.331,81,161.1C80.917,160.869,80.833,160.639,80.75,160.408C80.667,160.178,80.583,159.947,80.5,159.717C80.417,159.486,80.333,159.256,80.25,159.025C80.167,158.794,80.083,158.564,80,158.333"
-                      data-series="OCBC Bank"
-                      data-series-id="OCBC Bank"
+                      data-series="OCBC 360 Account"
+                      data-series-id="OCBC 360 Account"
                       fill="none"
                       opacity="1"
                       stroke="#3cb44b"
@@ -2073,8 +2073,8 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                     data-series="UOB Bank"
                   />
                   <g
-                    clip-path="url(#_r_4_-OCBC_Bank-line-clip)"
-                    data-series="OCBC Bank"
+                    clip-path="url(#_r_4_-OCBC_360 Account-line-clip)"
+                    data-series="OCBC 360 Account"
                   />
                   <g
                     clip-path="url(#_r_4_-Maribank-line-clip)"
@@ -2312,7 +2312,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              OCBC Bank
+              OCBC 360 Account
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -2984,7 +2984,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             </li>
             <li
               class="MuiChartsLegend-item"
-              data-series="OCBC Bank"
+              data-series="OCBC 360 Account"
             >
               <button
                 class="MuiChartsLegend-series"
@@ -3018,7 +3018,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  OCBC Bank
+                  OCBC 360 Account
                 </span>
               </button>
             </li>
@@ -3654,7 +3654,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1_-OCBC_Bank-line-clip"
+                    id="_r_1_-OCBC_360 Account-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3665,14 +3665,14 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1_-OCBC_Bank-line-clip)"
+                    clip-path="url(#_r_1_-OCBC_360 Account-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
                       cursor="unset"
                       d="M85,435C84.917,434.654,84.833,434.308,84.75,433.963C84.667,433.617,84.583,433.271,84.5,432.925C84.417,432.579,84.333,432.233,84.25,431.888C84.167,431.542,84.083,431.196,84,430.85C83.917,430.504,83.833,430.158,83.75,429.813C83.667,429.467,83.583,429.121,83.5,428.775C83.417,428.429,83.333,428.083,83.25,427.738C83.167,427.392,83.083,427.046,83,426.7C82.917,426.354,82.833,426.008,82.75,425.663C82.667,425.317,82.583,424.971,82.5,424.625C82.417,424.279,82.333,423.933,82.25,423.588C82.167,423.242,82.083,422.896,82,422.55C81.917,422.204,81.833,421.858,81.75,421.513C81.667,421.167,81.583,420.821,81.5,420.475C81.417,420.129,81.333,419.783,81.25,419.438C81.167,419.092,81.083,418.746,81,418.4C80.917,418.054,80.833,417.708,80.75,417.363C80.667,417.017,80.583,416.671,80.5,416.325C80.417,415.979,80.333,415.633,80.25,415.288C80.167,414.942,80.083,414.596,80,414.25"
-                      data-series="OCBC Bank"
-                      data-series-id="OCBC Bank"
+                      data-series="OCBC 360 Account"
+                      data-series-id="OCBC 360 Account"
                       fill="none"
                       opacity="1"
                       stroke="#3cb44b"
@@ -4354,8 +4354,8 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                     data-series="UOB Bank"
                   />
                   <g
-                    clip-path="url(#_r_1_-OCBC_Bank-line-clip)"
-                    data-series="OCBC Bank"
+                    clip-path="url(#_r_1_-OCBC_360 Account-line-clip)"
+                    data-series="OCBC 360 Account"
                   />
                   <g
                     clip-path="url(#_r_1_-Maribank-line-clip)"

@@ -38,7 +38,7 @@ export const bankInfo: Record<string, BankDef> = {
     remarks: "Visit their official website to find out more",
     history: uobHistory,
   },
-  "OCBC Bank": {
+  "OCBC 360 Account": {
     url: "https://www.ocbc.com/personal-banking/notices",
     remarks: "Visit the official website to find our more",
     history: ocbcHistory,
