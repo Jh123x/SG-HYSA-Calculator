@@ -22,7 +22,7 @@ import { resolveHistoryForChart } from "../logic/history";
 import { formatDate } from "../logic/dates";
 import type Profile from "../types/profile";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
-import { levenshtein } from "../logic/fuzzyMatch";
+import { jaroWinkler } from "../logic/fuzzyMatch";
 
 interface BankDetailPageProps {
   profile: Profile;
@@ -76,7 +76,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     }
   };
 
-  // Unknown bank — find closest match (including home page) by edit distance
+  // Unknown bank — find closest match (including home page) by Jaro-Winkler similarity
   useEffect(() => {
     if (bankName === ERROR_SLUG || !bankInfo[slug ?? ""]) {
       if (!slug) {
@@ -84,15 +84,15 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         return;
       }
 
-      // Compute edit distance to every known bank slug + home page
+      // Compute Jaro-Winkler similarity to every known bank slug + home page
       let bestSlug = "/";
       let bestName = "Home";
-      let bestDistance = levenshtein(slug, "/");
+      let bestSimilarity = jaroWinkler(slug, "/");
 
       for (const [bankSlug, info] of Object.entries(bankInfo)) {
-        const dist = levenshtein(slug, bankSlug);
-        if (dist < bestDistance) {
-          bestDistance = dist;
+        const sim = jaroWinkler(slug, bankSlug);
+        if (sim > bestSimilarity) {
+          bestSimilarity = sim;
           bestSlug = bankSlug;
           bestName = info.name;
         }
