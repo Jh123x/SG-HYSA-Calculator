@@ -19,11 +19,11 @@ export function collectBankPoints(
 ): Record<string, BankPoint[]> {
   const bankPoints: Record<string, BankPoint[]> = {};
 
-  for (const bankName of selectedBanks) {
-    const info = bankInfo[bankName];
+  for (const slug of selectedBanks) {
+    const info = bankInfo[slug];
     if (!info) continue;
 
-    bankPoints[bankName] = info.history
+    bankPoints[slug] = info.history
       .map((snapshot) => {
         const result = snapshot.interestFn(profile);
         return {
@@ -75,8 +75,8 @@ export function buildComparisonDataset(
       date: parseISODate(date),
     };
 
-    for (const bankName of selectedBanks) {
-      const pts = bankPoints[bankName];
+    for (const slug of selectedBanks) {
+      const pts = bankPoints[slug];
       if (!pts || pts.length === 0) continue;
 
       // Forward-fill: find latest point with date ≤ current date
@@ -96,8 +96,8 @@ export function buildComparisonDataset(
         valueEir = pts[0].eir;
       }
 
-      row[`${bankName}_yearlyInterest`] = valueYearly;
-      row[`${bankName}_eir`] = valueEir;
+      row[`${slug}_yearlyInterest`] = valueYearly;
+      row[`${slug}_eir`] = valueEir;
     }
 
     return row;

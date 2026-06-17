@@ -55,10 +55,10 @@ export const HistoryView = ({ profile }: Props) => {
         )
       </Typography>
 
-      {Object.entries(bankInfo).map(([name, info]) => (
+      {Object.entries(bankInfo).map(([slug, info]) => (
         <BankAccordion
-          key={name}
-          name={name}
+          key={slug}
+          slug={slug}
           info={info}
           profile={profile}
         />
@@ -69,11 +69,11 @@ export const HistoryView = ({ profile }: Props) => {
 
 /** Single bank accordion: chart + table inside. */
 const BankAccordion = ({
-  name,
+  slug,
   info,
   profile,
 }: {
-  name: string;
+  slug: string;
   info: (typeof bankInfo)[string];
   profile: Profile;
 }) => {
@@ -91,7 +91,7 @@ const BankAccordion = ({
       }}
     >
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-        <Typography sx={{ fontWeight: 600 }}>{name}</Typography>
+        <Typography sx={{ fontWeight: 600 }}>{info.name}</Typography>
         <Chip
           label={`${resolved.length} snapshot${resolved.length !== 1 ? "s" : ""}`}
           size="small"

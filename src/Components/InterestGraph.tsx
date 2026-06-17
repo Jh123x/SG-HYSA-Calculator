@@ -12,11 +12,11 @@ import {
 export const InterestGraph = ({ profile }: { profile: Profile }) => {
   const lines: ChartLine[] = Object.entries(bankInfo)
     .filter(([, value]) => value.history.length > 0)
-    .map(([name, value], idx) => {
+    .map(([slug, value], idx) => {
       const { interestFn } = deriveCurrentFromHistory(value.history);
       return {
-        dataKey: name,
-        label: name,
+        dataKey: slug,
+        label: value.name,
         interestFn,
         color: lineColors[idx % lineColors.length],
       };

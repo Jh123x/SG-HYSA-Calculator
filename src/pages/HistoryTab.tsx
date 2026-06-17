@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Box, Typography, Paper } from "@mui/material";
-import { bankInfo } from "../logic/constants";
+import { isValidSlug } from "../logic/slugs";
 import type Profile from "../types/profile";
 import { BankToggleChips } from "../Components/BankToggleChips";
 import { ComparisonChart } from "../Components/ComparisonChart";
@@ -23,6 +23,8 @@ interface Props {
  * Bank selection persists across tab switches via sessionStorage.
  * URL param (?banks=) is only consumed on initial load for shareability
  * and then cleared — all subsequent updates go to sessionStorage only.
+ *
+ * Bank identifiers are slugs (e.g. "uob-one-account").
  */
 
 const BANKS_PARAM = "banks";
@@ -32,7 +34,7 @@ function parseBanksRaw(raw: string): string[] {
   return raw
     .split(",")
     .map((s) => s.trim())
-    .filter((s) => s.length > 0 && bankInfo[s] !== undefined);
+    .filter((s) => s.length > 0 && isValidSlug(s));
 }
 
 function readSessionBanks(): string[] {
@@ -42,7 +44,7 @@ function readSessionBanks(): string[] {
     const parsed: unknown = JSON.parse(stored);
     if (!Array.isArray(parsed)) return [];
     return parsed.filter(
-      (s): s is string => typeof s === "string" && bankInfo[s] !== undefined,
+      (s): s is string => typeof s === "string" && isValidSlug(s),
     );
   } catch {
     return [];
@@ -150,10 +152,10 @@ export const HistoryTab = ({ profile }: Props) => {
           >
             Details
           </Typography>
-          {selectedBanks.map((bankName) => (
+          {selectedBanks.map((slug) => (
             <BankHistorySection
-              key={bankName}
-              bankName={bankName}
+              key={slug}
+              bankSlug={slug}
               profile={profile}
             />
           ))}

@@ -7,22 +7,24 @@ describe("buildComparisonSeries", () => {
   });
 
   it("builds series for known banks", () => {
-    const series = buildComparisonSeries(["GXS Savings Account"], "yearlyInterest");
+    const series = buildComparisonSeries(["gxs-savings-account"], "yearlyInterest");
     expect(series).toHaveLength(1);
-    expect(series[0].dataKey).toBe("GXS Savings Account_yearlyInterest");
+    expect(series[0].dataKey).toBe("gxs-savings-account_yearlyInterest");
     expect(series[0].label).toContain("GXS Savings Account");
     expect(series[0].showMark).toBe(true);
     expect(series[0].curve).toBe("stepAfter");
   });
 
   it("uses eir dataKey when metric is eir", () => {
-    const series = buildComparisonSeries(["GXS Savings Account"], "eir");
-    expect(series[0].dataKey).toBe("GXS Savings Account_eir");
+    const series = buildComparisonSeries(["gxs-savings-account"], "eir");
+    expect(series[0].dataKey).toBe("gxs-savings-account_eir");
   });
 
   it("cycles colors from lineColors", () => {
-    // Need at least 2 banks with valid data
-    const series = buildComparisonSeries(["GXS Savings Account", "Mari Savings Account"], "yearlyInterest");
+    const series = buildComparisonSeries(
+      ["gxs-savings-account", "mari-savings-account"],
+      "yearlyInterest",
+    );
     expect(series).toHaveLength(2);
     expect(series[0].color).toBeDefined();
     expect(series[1].color).toBeDefined();
@@ -30,17 +32,17 @@ describe("buildComparisonSeries", () => {
   });
 
   it("valueFormatter: yearlyInterest formats as dollar", () => {
-    const series = buildComparisonSeries(["GXS Savings Account"], "yearlyInterest");
+    const series = buildComparisonSeries(["gxs-savings-account"], "yearlyInterest");
     expect(series[0].valueFormatter(123.456)).toBe("$123.46");
   });
 
   it("valueFormatter: eir formats as percent", () => {
-    const series = buildComparisonSeries(["GXS Savings Account"], "eir");
+    const series = buildComparisonSeries(["gxs-savings-account"], "eir");
     expect(series[0].valueFormatter(2.5)).toBe("2.50%");
   });
 
   it("valueFormatter returns empty for null", () => {
-    const series = buildComparisonSeries(["GXS Savings Account"], "yearlyInterest");
+    const series = buildComparisonSeries(["gxs-savings-account"], "yearlyInterest");
     expect(series[0].valueFormatter(null)).toBe("");
   });
 });

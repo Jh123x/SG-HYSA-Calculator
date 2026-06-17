@@ -1,8 +1,8 @@
 import { describe, it, expect } from "vitest";
-import { bankNameToSlug, slugToBankName, ERROR_SLUG } from "./slugs";
-import { bankInfo } from "./constants";
+import { bankNameToSlug, slugToBankName, ERROR_SLUG, isValidSlug } from "./slugs";
+import { banks } from "../data/banks";
 
-describe("bankNameToSlug", () => {
+describe("bankNameToSlug (deprecated — kept for migration)", () => {
   it("lowercases and hyphenates spaces", () => {
     expect(bankNameToSlug("UOB One Account")).toBe("uob-one-account");
   });
@@ -21,17 +21,24 @@ describe("bankNameToSlug", () => {
     expect(bankNameToSlug("  Spaces  ")).toBe("spaces");
   });
 
-  it("produces unique slugs for all bankInfo entries", () => {
-    const slugs = Object.keys(bankInfo).map(bankNameToSlug);
-    expect(new Set(slugs).size).toBe(slugs.length);
+  it("maps dollar sign to s", () => {
+    expect(bankNameToSlug("Standard Chartered Bonus$aver")).toBe(
+      "standard-chartered-bonus-saver",
+    );
+  });
+
+  it("reverse-lookups from bank registry for exact names", () => {
+    for (const [, data] of Object.entries(banks)) {
+      expect(bankNameToSlug(data.name)).toBeTruthy();
+      expect(bankNameToSlug(data.name).length).toBeGreaterThan(0);
+    }
   });
 });
 
 describe("slugToBankName", () => {
-  it("round-trips correctly", () => {
-    for (const name of Object.keys(bankInfo)) {
-      const slug = bankNameToSlug(name);
-      expect(slugToBankName(slug)).toBe(name);
+  it("maps slugs to display names", () => {
+    for (const [slug, data] of Object.entries(banks)) {
+      expect(slugToBankName(slug)).toBe(data.name);
     }
   });
 
@@ -44,7 +51,19 @@ describe("slugToBankName", () => {
   });
 
   it("ERROR_SLUG cannot collide with real slugs", () => {
-    const allSlugs = Object.keys(bankInfo).map(bankNameToSlug);
+    const allSlugs = Object.keys(banks);
     expect(allSlugs).not.toContain(ERROR_SLUG);
+  });
+});
+
+describe("isValidSlug", () => {
+  it("returns true for known slugs", () => {
+    expect(isValidSlug("uob-one-account")).toBe(true);
+    expect(isValidSlug("gxs-savings-account")).toBe(true);
+  });
+
+  it("returns false for unknown slugs", () => {
+    expect(isValidSlug("fake-bank")).toBe(false);
+    expect(isValidSlug("")).toBe(false);
   });
 });

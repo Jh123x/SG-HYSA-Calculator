@@ -27,34 +27,37 @@ describe("collectBankPoints", () => {
   });
 
   it("skips unknown banks silently", () => {
-    const result = collectBankPoints(["Fake Bank"], emptyProfile);
+    const result = collectBankPoints(["fake-bank"], emptyProfile);
     expect(Object.keys(result)).toHaveLength(0);
   });
 
   it("collects points for known banks", () => {
-    const result = collectBankPoints(["GXS Savings Account"], emptyProfile);
-    expect(result["GXS Savings Account"]).toBeDefined();
-    expect(result["GXS Savings Account"].length).toBeGreaterThan(0);
+    const result = collectBankPoints(["gxs-savings-account"], emptyProfile);
+    expect(result["gxs-savings-account"]).toBeDefined();
+    expect(result["gxs-savings-account"].length).toBeGreaterThan(0);
   });
 
   it("sorts points chronologically", () => {
-    const result = collectBankPoints(["GXS Savings Account"], emptyProfile);
-    const dates = result["GXS Savings Account"].map((p) => p.date);
+    const result = collectBankPoints(["gxs-savings-account"], emptyProfile);
+    const dates = result["gxs-savings-account"].map((p) => p.date);
     for (let i = 1; i < dates.length; i++) {
       expect(dates[i] >= dates[i - 1]).toBe(true);
     }
   });
 
   it("collects multiple banks", () => {
-    const result = collectBankPoints(["GXS Savings Account", "Mari Savings Account"], emptyProfile);
+    const result = collectBankPoints(
+      ["gxs-savings-account", "mari-savings-account"],
+      emptyProfile,
+    );
     expect(Object.keys(result)).toHaveLength(2);
-    expect(result["GXS Savings Account"]).toBeDefined();
-    expect(result["Mari Savings Account"]).toBeDefined();
+    expect(result["gxs-savings-account"]).toBeDefined();
+    expect(result["mari-savings-account"]).toBeDefined();
   });
 
   it("each point has yearlyInterest and eir as numbers", () => {
-    const result = collectBankPoints(["GXS Savings Account"], emptyProfile);
-    for (const pt of result["GXS Savings Account"]) {
+    const result = collectBankPoints(["gxs-savings-account"], emptyProfile);
+    for (const pt of result["gxs-savings-account"]) {
       expect(typeof pt.yearlyInterest).toBe("number");
       expect(typeof pt.eir).toBe("number");
     }
@@ -155,8 +158,7 @@ describe("buildComparisonDataset", () => {
 
   // ── Date validation tests ──
 
-  it("throws on malformed date in bankPoints (via collectBankPoints sort)", () => {
-    // collectAllDates sorts dates; need ≥2 items to trigger the comparator
+  it("throws on malformed date in bankPoints (via collectAllDates sort)", () => {
     const bankPoints = {
       A: [{ date: "not-a-date", yearlyInterest: 100, eir: 2.0 }],
       B: [{ date: "2025-01-01", yearlyInterest: 200, eir: 3.0 }],

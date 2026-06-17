@@ -11,8 +11,10 @@ import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
 import type Profile from "../types/profile";
 import { MAX_COMPARISON_BANKS } from "../consts/keys";
+import { ALL_SLUGS } from "../logic/slugs";
 
 interface BankToggleChipsProps {
+  /** Selected bank slugs */
   selected: string[];
   onChange: (selected: string[]) => void;
   profile: Profile;
@@ -26,6 +28,9 @@ interface BankToggleChipsProps {
  * - Selected banks appear as chips in the input (limitTags=1 on mobile)
  * - Max {MAX_COMPARISON_BANKS} selectable
  * - "Select All" convenience button
+ *
+ * Values are bank slugs (e.g. "uob-one-account"). Display names are
+ * shown in the UI via getOptionLabel.
  */
 export const BankToggleChips = ({
   selected,
@@ -35,18 +40,26 @@ export const BankToggleChips = ({
   // Pre-compute current EIR for display in dropdown options
   const bankEirs = useMemo(() => {
     const eirs: Record<string, string> = {};
-    for (const [name, info] of Object.entries(bankInfo)) {
+    for (const [slug, info] of Object.entries(bankInfo)) {
       const { interestFn } = deriveCurrentFromHistory(info.history);
-      eirs[name] = interestFn(profile).toYearlyPercent().toFixed(2);
+      eirs[slug] = interestFn(profile).toYearlyPercent().toFixed(2);
     }
     return eirs;
   }, [profile]);
 
-  const allBankNames = Object.keys(bankInfo);
+  // Build slug → display name map
+  const displayNames = useMemo(() => {
+    const map: Record<string, string> = {};
+    for (const [slug, info] of Object.entries(bankInfo)) {
+      map[slug] = info.name;
+    }
+    return map;
+  }, []);
+
   const isMaxed = selected.length >= MAX_COMPARISON_BANKS;
 
   const handleSelectAll = () => {
-    onChange(allBankNames.slice(0, MAX_COMPARISON_BANKS));
+    onChange(ALL_SLUGS.slice(0, MAX_COMPARISON_BANKS));
   };
 
   return (
@@ -84,7 +97,7 @@ export const BankToggleChips = ({
       {/* Searchable multi-select */}
       <Autocomplete
         multiple
-        options={allBankNames}
+        options={ALL_SLUGS}
         value={selected}
         onChange={(_event, newValue) => {
           // Enforce max (shouldn't exceed due to getOptionDisabled, but guard anyway)
@@ -95,10 +108,10 @@ export const BankToggleChips = ({
         getOptionDisabled={(option) =>
           !selected.includes(option) && isMaxed
         }
-        // Show EIR next to each bank in the dropdown
-        getOptionLabel={(option) => option}
-        renderOption={(props, option) => (
-          <li {...props} key={option}>
+        // Show display name in options and chips
+        getOptionLabel={(slug) => displayNames[slug] ?? slug}
+        renderOption={(props, slug) => (
+          <li {...props} key={slug}>
             <Box
               sx={{
                 display: "flex",
@@ -107,12 +120,12 @@ export const BankToggleChips = ({
                 alignItems: "center",
               }}
             >
-              <Typography variant="body2">{option}</Typography>
+              <Typography variant="body2">{displayNames[slug] ?? slug}</Typography>
               <Typography
                 variant="body2"
                 sx={{ opacity: 0.65, fontSize: "0.85em", ml: 1 }}
               >
-                {profile.Savings > 0 ? `${bankEirs[option]}%` : ""}
+                {profile.Savings > 0 ? `${bankEirs[slug]}%` : ""}
               </Typography>
             </Box>
           </li>

@@ -60,7 +60,8 @@ export const ComparisonChart = ({
     }
     const unknown = selectedBanks.filter((b) => !bankInfo[b]);
     if (unknown.length > 0) {
-      return { valid: false, error: "unknownBanks", banks: unknown } as const;
+      const names = unknown.map((s) => bankInfo[s]?.name ?? s);
+      return { valid: false, error: "unknownBanks", banks: names } as const;
     }
     const noHistory = selectedBanks.filter(
       (b) => bankInfo[b] && bankInfo[b].history.length === 0,

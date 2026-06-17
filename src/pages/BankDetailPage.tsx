@@ -43,8 +43,8 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   const bankName = slug ? slugToBankName(slug) : ERROR_SLUG;
 
   useDocumentTitle(
-    bankName !== ERROR_SLUG && bankInfo[bankName]
-      ? `${bankName} Interest Rate History & EIR Trends`
+    bankName !== ERROR_SLUG && bankInfo[slug ?? ""]
+      ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends`
       : "Bank Detail — SG HYSA Calculator",
   );
 
@@ -67,15 +67,15 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
 
   // Unknown bank — redirect to homepage
   useEffect(() => {
-    if (bankName === ERROR_SLUG || !bankInfo[bankName]) {
+    if (bankName === ERROR_SLUG || !bankInfo[slug ?? ""]) {
       navigate("/", { replace: true });
     }
-  }, [bankName, navigate]);
-  if (bankName === ERROR_SLUG || !bankInfo[bankName]) {
+  }, [bankName, slug, navigate]);
+  if (bankName === ERROR_SLUG || !bankInfo[slug ?? ""]) {
     return null;
   }
 
-  const info = bankInfo[bankName];
+  const info = bankInfo[slug ?? ""];
   const resolved = resolveHistoryForChart(info.history, profile);
 
   // Build time-series dataset for EIR chart (sorted chronologically,
@@ -89,7 +89,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     }));
 
   return (
-    <Box component="article" aria-label={`${bankName} interest rate details`} sx={{ mt: 3 }}>
+    <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ mt: 3 }}>
       {/* Back button */}
       <Button
         startIcon={<ArrowBackIcon />}
@@ -115,7 +115,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         }}
       >
         <Typography variant="h5" component="h2" sx={{ color: textColor, fontWeight: 700, mb: 1 }}>
-          {bankName}
+          {info.name}
         </Typography>
         <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 2 }}>
           {resolved.length > 0 && resolved[resolved.length - 1].date.getTime() !== 0 && (
@@ -172,7 +172,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
             series={[
               {
                 dataKey: "eir",
-                label: bankName,
+                label: info.name,
                 color: lineColors[0],
                 showMark: true,
                 curve: "stepAfter",

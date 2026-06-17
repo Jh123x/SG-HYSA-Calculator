@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
- * regenerates public/sitemap.xml from bank slugs defined in src/logic/constants.tsx.
+ * regenerates public/sitemap.xml from the bank registry.
  *
  * usage:
- *   node scripts/generate-sitemap.js
+ *   node scripts/generate-sitemap.mjs
  *   npm run generate-sitemap
  */
 
@@ -12,33 +12,27 @@ import { resolve } from "node:path";
 
 const ROOT = resolve(import.meta.dirname, "..");
 
-/** map bank display name → URL-safe slug (mirrors slugs.ts:bankNameToSlug) */
-function bankNameToSlug(name) {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
-/** extract bankInfo keys from constants.tsx using a text-level match */
-function extractBankNames(constantsPath) {
-  const src = readFileSync(constantsPath, "utf8");
-  // Match bankInfo object keys like:
-  //   "UOB One Account": {
-  //   "OCBC 360 Account": {
-  // but not the closing }, or comments
+/**
+ * Extract bank slugs from src/data/banks.ts using a text-level match.
+ * Pure data file is simple JS so a regex approach is reliable here.
+ */
+function extractBankSlugs(banksPath) {
+  const src = readFileSync(banksPath, "utf8");
+  // Match keys in the `banks` object like:
+  //   "uob-one-account": {
+  //   "ocbc-360-account": {
   const re = /^\s*"([^"]+)":\s*\{/gm;
-  const names = [];
+  const slugs = [];
   let m;
   while ((m = re.exec(src)) !== null) {
-    names.push(m[1]);
+    slugs.push(m[1]);
   }
-  return names;
+  return slugs;
 }
 
 function generate() {
-  const constantsPath = resolve(ROOT, "src", "logic", "constants.tsx");
-  const bankNames = extractBankNames(constantsPath);
+  const banksPath = resolve(ROOT, "src", "data", "banks.ts");
+  const bankSlugs = extractBankSlugs(banksPath);
 
   const today = new Date().toISOString().slice(0, 10);
   const base = "https://hysa.jh123x.com";
@@ -69,8 +63,7 @@ function generate() {
     "    </url>",
   ];
 
-  for (const name of bankNames) {
-    const slug = bankNameToSlug(name);
+  for (const slug of bankSlugs) {
     lines.push(
       "    <url>",
       `        <loc>${base}/bank/${slug}</loc>`,
@@ -84,7 +77,7 @@ function generate() {
 
   const outPath = resolve(ROOT, "public", "sitemap.xml");
   writeFileSync(outPath, lines.join("\n"), "utf8");
-  console.log(`sitemap.xml written (${bankNames.length} bank slugs)`);
+  console.log(`sitemap.xml written (${bankSlugs.length} bank slugs)`);
 }
 
 generate();
