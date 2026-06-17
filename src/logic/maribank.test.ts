@@ -5,7 +5,7 @@ import {
   mariInterestRate_09_2025,
 } from "./maribank";
 
-describe("Maribank interest rates", () => {
+describe("MariBank interest rates", () => {
   for (var i = 0; i < 200_000; i += 10000) {
     it(`balance ${i} should be correct`, () => {
       const result = maribank_interest_09_2025(NewProfile({ Savings: i }));

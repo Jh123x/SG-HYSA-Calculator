@@ -3,7 +3,7 @@
  *
  * Slugs are derived by lowercasing the bank key and replacing spaces/special
  * chars with hyphens.  E.g.:
- *   "UOB Bank"           →  "uob-bank"
+ *   "UOB One Account"   →  "uob-one-account"
  *   "Trust Bank (Zen)"   →  "trust-bank--zen-"
  *
  * These are used in URL paths (e.g. /bank/uob-bank) so we avoid encoding

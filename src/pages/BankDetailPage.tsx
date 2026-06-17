@@ -21,6 +21,7 @@ import { slugToBankName, ERROR_SLUG } from "../logic/slugs";
 import { resolveHistoryForChart } from "../logic/history";
 import { formatDate } from "../logic/dates";
 import type Profile from "../types/profile";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 interface BankDetailPageProps {
   profile: Profile;
@@ -39,6 +40,12 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const bankName = slug ? slugToBankName(slug) : ERROR_SLUG;
+
+  useDocumentTitle(
+    bankName !== ERROR_SLUG && bankInfo[bankName]
+      ? `${bankName} Interest Rate History & EIR Trends`
+      : "Bank Detail — SG HYSA Calculator",
+  );
 
   // Unknown bank — show error page with reset option
   if (bankName === ERROR_SLUG || !bankInfo[bankName]) {
@@ -98,7 +105,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   };
 
   return (
-    <Box sx={{ mt: 3 }}>
+    <Box component="article" aria-label={`${bankName} interest rate details`} sx={{ mt: 3 }}>
       {/* Back button */}
       <Button
         startIcon={<ArrowBackIcon />}
@@ -115,6 +122,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
 
       {/* Summary card */}
       <Paper
+        component="header"
         sx={{
           p: 3,
           borderRadius: "10px",
@@ -122,7 +130,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           mb: 3,
         }}
       >
-        <Typography variant="h5" sx={{ color: textColor, fontWeight: 700, mb: 1 }}>
+        <Typography variant="h5" component="h2" sx={{ color: textColor, fontWeight: 700, mb: 1 }}>
           {bankName}
         </Typography>
         <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 2 }}>
@@ -148,6 +156,8 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
       {/* Time-series chart: EIR (%) over time */}
       {eirChartData.length > 0 && (
         <Paper
+          component="section"
+          aria-label="Interest rate trend chart"
           sx={{
             p: 3,
             borderRadius: "10px",
@@ -224,6 +234,8 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
 
       {/* Full rate change log */}
       <Paper
+        component="section"
+        aria-label="Rate change history table"
         sx={{
           p: 3,
           borderRadius: "10px",

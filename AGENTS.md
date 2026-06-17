@@ -8,7 +8,7 @@
 
 - **Stack**: React 19, MUI 9, TypeScript, Vite, Vitest
 - **Theme**: Dark mode (`bgColor: #282828`, `textColor: #FFFFFF`, `primaryColor: #9550ff`)
-- **Tests**: 175 test cases across all bank files + components
+- **Tests**: 250 test cases across all bank files + components
 - **CI**: GitHub Actions (`node.yml`) — runs `npm test` + `npm run build` on push/PR to `main`
 
 ## Directory Structure
@@ -21,13 +21,21 @@ src/
 │   ├── interest.ts      # Interest + CutoffInterest types
 │   ├── interest_result.ts  # ResultInterest class
 │   └── props.ts         # ResultProp interface
+├── data/            # Static content — single source of truth for FAQ, etc.
+│   └── faq.ts           # FaqEntry[], ACCORDION_FAQ, FULL_FAQ — shared by FaqAccordion & FaqPage
 ├── logic/           # One file per bank + shared utilities + tests
 │   ├── common.ts        # calculate_ir() — shared tiered interest calculator
 │   ├── history.ts       # deriveCurrentFromHistory(), resolveHistoryForChart()
 │   ├── constants.tsx     # bankInfo registry — THE single source of truth for bank list
 │   ├── {bank}.ts        # Per-bank interest functions + history array
 │   └── {bank}.test.ts   # Per-bank tests
-├── Components/      # React components + tests
+├── pages/           # Route-level page components
+│   ├── CurrentRatesTab.tsx   # Homepage: sortable bank table + InterestGraph + FaqAccordion
+│   ├── HistoryTab.tsx        # Per-bank rate history accordions + charts
+│   ├── BankDetailPage.tsx    # Single bank detail view
+│   └── FaqPage.tsx           # Full FAQ page with FAQPage JSON-LD structured data
+├── Components/      # Reusable React components + tests
+│   ├── FaqAccordion.tsx          # Compact accordion (5 quick Qs + "See all FAQs" link)
 │   ├── InterestVsSavingsChart.tsx  # Reusable savings-vs-interest LineChart
 │   ├── InterestGraph.tsx           # Current rates comparison chart (homepage)
 │   ├── HistoryView.tsx             # Per-bank rate history accordions + charts
@@ -37,6 +45,8 @@ src/
 │   ├── Header.tsx, Footer.tsx      # Layout
 │   ├── Alert.tsx, LocalLink.tsx    # Shared utilities
 │   └── types.ts                    # InputArg, Field types
+├── hooks/           # Custom React hooks
+│   └── useDocumentTitle.ts  # Sets document.title + restores on unmount
 └── consts/
     ├── colors.ts       # Theme, lineColors[], primaryColor, bgColor, textColor
     └── keys.ts         # STORE_KEY for localStorage
@@ -165,6 +175,57 @@ const result = interestFn(profile);
 - When all entries are future-dated → zero-interest, `lastUpdated = "Effective {date}"`
 - Otherwise → latest non-future entry
 
+### Pattern F: Adding or Editing FAQ Content
+
+All FAQ content lives in `src/data/faq.ts` — this is the single source of truth for both
+the compact accordion on the main page and the full FAQ page.
+
+```typescript
+// src/data/faq.ts
+export interface FaqEntry {
+  question: string;
+  answer: string;
+}
+
+const FULL: FaqEntry[] = [
+  { question: "How is the best HYSA rate calculated?", answer: "..." },
+  // ...all 19 Q&A entries
+];
+
+// Indices into FULL for the accordion subset (first 5 by default)
+export const ACCORDION_INDICES: number[] = [0, 1, 2, 3, 4];
+
+// Derived exports — do NOT edit these directly
+export const ACCORDION_FAQ: FaqEntry[] = ACCORDION_INDICES.map((i) => FULL[i]);
+export const FULL_FAQ: FaqEntry[] = FULL;
+```
+
+**To add a new FAQ**: append to `FULL[]`. If you want it in the accordion too, add its index to `ACCORDION_INDICES`.
+
+**To change accordion questions**: edit `ACCORDION_INDICES` only. Keep it at 4–6 entries.
+
+**To edit answer text**: edit the entry in `FULL[]` — it updates both places automatically.
+
+### Pattern G: Routing & Navigation
+
+**Adding a new page route** involves three steps:
+
+1. Create the page component in `src/pages/`
+2. Add a `<Route>` in `src/App.tsx` under the `<Layout>` route
+3. Add an entry to `TAB_CONFIG` in `src/Components/Header.tsx` — tabs are auto-generated from this config:
+   ```typescript
+   const TAB_CONFIG = {
+     current: { path: "/", label: "Current Rates" },
+     history: { path: "/history", label: "Rate History" },
+     faq: { path: "/faq", label: "FAQ" },
+   } as const;
+   ```
+4. If the page should be indexed, add a `<url>` entry to `public/sitemap.xml`
+
+**FaqPage specifics**: Uses `FAQPage` JSON-LD structured data (injected via `dangerouslySetInnerHTML`). Questions and answers are visible by default (not collapsed) to qualify for Google's FAQ rich results. The page includes back-links to the calculator at both top and bottom.
+
+### Pattern H: Component Composition on CurrentRatesTab
+
 ## Testing Patterns
 
 ### Test Framework
@@ -237,6 +298,10 @@ npx vitest --update   # Update snapshots
 9. **MUI v9 slot props** — chart legends use `slotProps.legend` (not the old `legend` prop).
 
 10. **Profile persistence** — user inputs are stored in `localStorage` under `STORE_KEY` (`"current_profile"`).
+
+11. **FAQ structured data must be visible** — Google requires FAQPage Q&A to be visible on page load (not hidden in accordions) to earn the rich result. The `/faq` page renders all answers expanded. The accordion on the homepage intentionally only shows 5 Qs and does NOT include FAQPage schema.
+
+12. **Header snapshots break on new tabs** — adding an entry to `TAB_CONFIG` in `Header.tsx` will break the header snapshot test. Run `npx vitest --update` after adding or removing tabs.
 
 ## Adding New Test Cases for a Bank
 

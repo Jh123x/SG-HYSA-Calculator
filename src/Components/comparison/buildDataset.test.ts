@@ -32,29 +32,29 @@ describe("collectBankPoints", () => {
   });
 
   it("collects points for known banks", () => {
-    const result = collectBankPoints(["GXS"], emptyProfile);
-    expect(result["GXS"]).toBeDefined();
-    expect(result["GXS"].length).toBeGreaterThan(0);
+    const result = collectBankPoints(["GXS Savings Account"], emptyProfile);
+    expect(result["GXS Savings Account"]).toBeDefined();
+    expect(result["GXS Savings Account"].length).toBeGreaterThan(0);
   });
 
   it("sorts points chronologically", () => {
-    const result = collectBankPoints(["GXS"], emptyProfile);
-    const dates = result["GXS"].map((p) => p.date);
+    const result = collectBankPoints(["GXS Savings Account"], emptyProfile);
+    const dates = result["GXS Savings Account"].map((p) => p.date);
     for (let i = 1; i < dates.length; i++) {
       expect(dates[i] >= dates[i - 1]).toBe(true);
     }
   });
 
   it("collects multiple banks", () => {
-    const result = collectBankPoints(["GXS", "Maribank"], emptyProfile);
+    const result = collectBankPoints(["GXS Savings Account", "Mari Savings Account"], emptyProfile);
     expect(Object.keys(result)).toHaveLength(2);
-    expect(result["GXS"]).toBeDefined();
-    expect(result["Maribank"]).toBeDefined();
+    expect(result["GXS Savings Account"]).toBeDefined();
+    expect(result["Mari Savings Account"]).toBeDefined();
   });
 
   it("each point has yearlyInterest and eir as numbers", () => {
-    const result = collectBankPoints(["GXS"], emptyProfile);
-    for (const pt of result["GXS"]) {
+    const result = collectBankPoints(["GXS Savings Account"], emptyProfile);
+    for (const pt of result["GXS Savings Account"]) {
       expect(typeof pt.yearlyInterest).toBe("number");
       expect(typeof pt.eir).toBe("number");
     }
