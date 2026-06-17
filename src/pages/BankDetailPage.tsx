@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import {
   Box,
   Button,
@@ -38,7 +38,25 @@ interface BankDetailPageProps {
 export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const bankName = slug ? slugToBankName(slug) : ERROR_SLUG;
+
+  /**
+   * Navigate back one step in history. When the user arrived directly
+   * (e.g. typed the URL, opened a bookmark, or followed a link from
+   * another site), there is no prior history entry — redirect to the
+   * homepage instead of leaving the user stranded.
+   *
+   * React Router assigns key="default" to the initial page load entry;
+   * all in-app navigations get a unique generated key.
+   */
+  const handleBack = () => {
+    if (location.key === "default") {
+      navigate("/", { replace: true });
+    } else {
+      navigate(-1);
+    }
+  };
 
   // Unknown bank — show error page with reset option
   if (bankName === ERROR_SLUG || !bankInfo[bankName]) {
@@ -62,7 +80,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           <Button
             variant="outlined"
             startIcon={<ArrowBackIcon />}
-            onClick={() => navigate(-1)}
+            onClick={handleBack}
             sx={{ color: textColor, borderColor: `${textColor}40` }}
           >
             Go Back
@@ -92,10 +110,6 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
       date: r.date,
       eir: r.eir,
     }));
-
-  const handleBack = () => {
-    navigate(-1);
-  };
 
   return (
     <Box sx={{ mt: 3 }}>
