@@ -22,7 +22,7 @@ import { resolveHistoryForChart } from "../logic/history";
 import { formatDate } from "../logic/dates";
 import type Profile from "../types/profile";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
-import { findClosestBank } from "../logic/fuzzyMatch";
+import { levenshtein } from "../logic/fuzzyMatch";
 
 interface BankDetailPageProps {
   profile: Profile;
@@ -76,19 +76,29 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     }
   };
 
-  // Unknown bank — find closest match and suggest it
+  // Unknown bank — find closest match (including home page) by edit distance
   useEffect(() => {
     if (bankName === ERROR_SLUG || !bankInfo[slug ?? ""]) {
       if (!slug) {
         navigate("/", { replace: true });
         return;
       }
-      const closest = findClosestBank(slug);
-      if (!closest) {
-        navigate("/", { replace: true });
-        return;
+
+      // Compute edit distance to every known bank slug + home page
+      let bestSlug = "/";
+      let bestName = "Home";
+      let bestDistance = levenshtein(slug, "/");
+
+      for (const [bankSlug, info] of Object.entries(bankInfo)) {
+        const dist = levenshtein(slug, bankSlug);
+        if (dist < bestDistance) {
+          bestDistance = dist;
+          bestSlug = bankSlug;
+          bestName = info.name;
+        }
       }
-      setSuggestion({ bankName: closest.bank.name, slug: closest.slug });
+
+      setSuggestion({ bankName: bestName, slug: bestSlug });
       setCountdown(AUTO_REDIRECT_SECONDS);
     } else {
       setSuggestion(null);
@@ -99,7 +109,10 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   useEffect(() => {
     if (!suggestion) return;
     if (countdown <= 0) {
-      navigate(`/bank/${suggestion.slug}`, { replace: true });
+      navigate(
+        suggestion.slug === "/" ? "/" : `/bank/${suggestion.slug}`,
+        { replace: true },
+      );
       return;
     }
     const timer = setTimeout(() => setCountdown((c) => c - 1), 1000);
@@ -108,10 +121,12 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
 
   // Show "Did you mean?" suggestion when a close match exists
   if (suggestion) {
+    const isHome = suggestion.slug === "/";
+
     return (
       <Box
         component="article"
-        aria-label="Bank suggestion"
+        aria-label={isHome ? "Redirecting to home" : "Bank suggestion"}
         sx={{ mt: 3, textAlign: "center" }}
       >
         <Paper
@@ -127,16 +142,23 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           >
             Bank not found
           </Typography>
-          <Typography variant="body1" sx={{ color: textColor, mb: 3 }}>
-            Did you mean{" "}
-            <Link
-              to={`/bank/${suggestion.slug}`}
-              style={{ color: primaryColor, fontWeight: 600 }}
-            >
-              {suggestion.bankName}
-            </Link>
-            ?
-          </Typography>
+          {isHome ? (
+            <Typography variant="body1" sx={{ color: textColor, mb: 3 }}>
+              The bank you&apos;re looking for could not be found. You will be
+              redirected to the homepage.
+            </Typography>
+          ) : (
+            <Typography variant="body1" sx={{ color: textColor, mb: 3 }}>
+              Did you mean{" "}
+              <Link
+                to={`/bank/${suggestion.slug}`}
+                style={{ color: primaryColor, fontWeight: 600 }}
+              >
+                {suggestion.bankName}
+              </Link>
+              ?
+            </Typography>
+          )}
           <Typography variant="body2" sx={{ color: textColor, opacity: 0.7 }}>
             Redirecting in {countdown} second{countdown !== 1 ? "s" : ""}...
           </Typography>
