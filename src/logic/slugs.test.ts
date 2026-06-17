@@ -33,6 +33,14 @@ describe("bankNameToSlug (deprecated — kept for migration)", () => {
       expect(bankNameToSlug(data.name).length).toBeGreaterThan(0);
     }
   });
+
+  it("round-trips through slugToBankName for all registered banks", () => {
+    for (const [, data] of Object.entries(banks)) {
+      const name = data.name;
+      const slug = bankNameToSlug(name);
+      expect(slugToBankName(slug)).toBe(name);
+    }
+  });
 });
 
 describe("slugToBankName", () => {
