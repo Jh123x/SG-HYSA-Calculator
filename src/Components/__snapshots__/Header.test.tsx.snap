@@ -9,11 +9,11 @@ exports[`Header > should match snapshot 1`] = `
     <div
       class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-onx5yd-MuiToolbar-root"
     >
-      <h5
+      <h1
         class="MuiTypography-root MuiTypography-h5 css-1bnr0ho-MuiTypography-root"
       >
         SG HYSA Calculator
-      </h5>
+      </h1>
       <div
         class="MuiBox-root css-t508yj"
       >
@@ -45,6 +45,15 @@ exports[`Header > should match snapshot 1`] = `
                 type="button"
               >
                 Rate History
+              </button>
+              <button
+                aria-selected="false"
+                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1j3ayx4-MuiButtonBase-root-MuiTab-root"
+                role="tab"
+                tabindex="-1"
+                type="button"
+              >
+                FAQ
               </button>
             </div>
             <span

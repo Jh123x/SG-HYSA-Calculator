@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
     "target": "ES6",
+    "lib": ["es2019", "dom"],
     "moduleResolution": "node",
     "allowJs": false,
     "noEmit": true,
     "jsx": "react-jsx",
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["vitest/globals"]
   }
 }

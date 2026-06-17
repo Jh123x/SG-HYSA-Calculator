@@ -22,6 +22,7 @@ import { textColor, primaryColor } from "../consts/colors";
 const TAB_CONFIG = {
   current: { path: "/", label: "Current Rates" },
   history: { path: "/history", label: "Rate History" },
+  faq: { path: "/faq", label: "FAQ" },
 } as const;
 
 type TabKey = keyof typeof TAB_CONFIG;
@@ -84,6 +85,7 @@ export const Header = () => {
         {/* Left: title */}
         <Typography
           variant={isMobile ? "h6" : "h5"}
+          component="h1"
           sx={{
             color: textColor,
             fontWeight: 600,
@@ -158,25 +160,23 @@ export const Header = () => {
                     {TAB_CONFIG[key].label}
                   </MenuItem>
                 ))}
-                <MenuItem>
-                  <IconButton
-                    href="https://jh123x.com"
-                    target="_blank"
-                    size="small"
-                  >
-                    <ArticleIcon sx={{ mr: 1 }} />
-                    Blog Post (2024)
-                  </IconButton>
+                <MenuItem
+                  component="a"
+                  href="https://jh123x.com"
+                  target="_blank"
+                  onClick={handleClose}
+                >
+                  <ArticleIcon sx={{ mr: 1 }} />
+                  Blog Post (2024)
                 </MenuItem>
-                <MenuItem>
-                  <IconButton
-                    href="https://github.com/jh123x/SG-HYSA-Calculator"
-                    target="_blank"
-                    size="small"
-                  >
-                    <GitHubIcon sx={{ mr: 1 }} />
-                    GitHub
-                  </IconButton>
+                <MenuItem
+                  component="a"
+                  href="https://github.com/jh123x/SG-HYSA-Calculator"
+                  target="_blank"
+                  onClick={handleClose}
+                >
+                  <GitHubIcon sx={{ mr: 1 }} />
+                  GitHub
                 </MenuItem>
               </Menu>
             </>

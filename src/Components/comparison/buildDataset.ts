@@ -46,9 +46,10 @@ export function collectBankPoints(
  * sorted chronologically.
  */
 export function collectAllDates(bankPoints: Record<string, BankPoint[]>): string[] {
+  const allPts: BankPoint[][] = Object.values(bankPoints);
   return [
     ...new Set(
-      Object.values(bankPoints).flatMap((pts) => pts.map((p) => p.date)),
+      allPts.flatMap((pts: BankPoint[]) => pts.map((p: BankPoint) => p.date)),
     ),
   ].sort(
     (a, b) => parseISODate(a).getTime() - parseISODate(b).getTime(),

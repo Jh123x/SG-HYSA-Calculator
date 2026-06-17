@@ -13,7 +13,7 @@ interface testCase {
   expectedResult: number;
 }
 
-describe("Maybank Save Up Interest rates (Pre 06/26)", () => {
+describe("Maybank SaveUp Interest rates (Pre 06/26)", () => {
   const testCases: Array<testCase> = [
     {
       caseName: "No $$ is empty",
@@ -102,7 +102,7 @@ describe("Maybank Save Up Interest rates (Pre 06/26)", () => {
   }
 });
 
-describe("Maybank Save Up Interest rates (Post 06/26)", () => {
+describe("Maybank SaveUp Interest rates (Post 06/26)", () => {
   const testCases: Array<testCase> = [
     {
       caseName: "No savings",

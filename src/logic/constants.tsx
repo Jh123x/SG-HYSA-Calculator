@@ -33,7 +33,7 @@ export interface BankDef {
 }
 
 export const bankInfo: Record<string, BankDef> = {
-  "UOB Bank": {
+  "UOB One Account": {
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     remarks: "Visit their official website to find out more",
     history: uobHistory,
@@ -43,7 +43,7 @@ export const bankInfo: Record<string, BankDef> = {
     remarks: "Visit the official website to find our more",
     history: ocbcHistory,
   },
-  Maribank: {
+  "Mari Savings Account": {
     url: "https://www.maribank.sg/product/mari-savings-account/",
     remarks: (
       <p>
@@ -56,7 +56,7 @@ export const bankInfo: Record<string, BankDef> = {
     ),
     history: maribankHistory,
   },
-  "Standard Chartered": {
+  "Standard Chartered Bonus$aver": {
     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
     remarks: (
       <p>
@@ -88,7 +88,7 @@ export const bankInfo: Record<string, BankDef> = {
     ),
     history: dbsMultiplierHistory,
   },
-  GXS: {
+  "GXS Savings Account": {
     url: "https://www.gxs.com.sg/savings-account",
     remarks: (
       <p>
@@ -124,7 +124,7 @@ export const bankInfo: Record<string, BankDef> = {
     ),
     history: chocoFinanceHistory,
   },
-  "Bank of China SuperSaver": {
+  "BOC SuperSaver": {
     url: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
     remarks: (
       <p>
@@ -138,7 +138,7 @@ export const bankInfo: Record<string, BankDef> = {
     ),
     history: bocSuperSaverHistory,
   },
-  "Maybank Save Up": {
+  "Maybank SaveUp": {
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks: (
       <p>
@@ -175,7 +175,7 @@ export const bankInfo: Record<string, BankDef> = {
     ),
     history: maybankIsavvyPlusHistory,
   },
-  "CITI Wealth First Account": {
+  "Citi Wealth First Account": {
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks: (
       <>

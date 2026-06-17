@@ -4,7 +4,7 @@ import { bankInfo } from "./constants";
 
 describe("bankNameToSlug", () => {
   it("lowercases and hyphenates spaces", () => {
-    expect(bankNameToSlug("UOB Bank")).toBe("uob-bank");
+    expect(bankNameToSlug("UOB One Account")).toBe("uob-one-account");
   });
 
   it("handles parentheses", () => {
@@ -12,7 +12,7 @@ describe("bankNameToSlug", () => {
   });
 
   it("handles multiple special characters", () => {
-    expect(bankNameToSlug("CITI Wealth First Account")).toBe(
+    expect(bankNameToSlug("Citi Wealth First Account")).toBe(
       "citi-wealth-first-account",
     );
   });

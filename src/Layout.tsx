@@ -1,5 +1,5 @@
-import { Outlet } from "react-router-dom";
-import { Container, GlobalStyles } from "@mui/material";
+import { Outlet, useOutletContext } from "react-router-dom";
+import { Container, GlobalStyles, Box } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { Header } from "./Components/Header";
 import { FormInputs } from "./Components/Inputs";
@@ -14,11 +14,7 @@ interface LayoutProps {
 }
 
 /**
- * Shared layout: Header (always), Profile inputs (error-bounded), then
- * page content via <Outlet> (error-bounded).
- *
- * Each section has its own ErrorBoundary so a crash in one doesn't take
- * down the other.
+ * Shared layout: Header, then page content via <Outlet>, then Footer.
  */
 export const Layout = ({ currProfile, setCurrProfile }: LayoutProps) => (
   <ThemeProvider theme={theme}>
@@ -28,20 +24,41 @@ export const Layout = ({ currProfile, setCurrProfile }: LayoutProps) => (
           backgroundColor: bgColor,
           margin: "0px",
           padding: "0px",
-          height: "100vh",
+          height: "100%",
+          minHeight: "100dvh",
           width: "100%",
         },
       }}
     />
     <Header />
-    <Container sx={{ marginTop: "20px", paddingBottom: "20px" }}>
-      <ErrorBoundary>
-        <FormInputs currProfile={currProfile} setCurrProfile={setCurrProfile} />
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <Outlet />
-      </ErrorBoundary>
-    </Container>
+    <Box component="main" sx={{ marginTop: "20px", paddingBottom: "20px" }}>
+      <Container>
+        <ErrorBoundary>
+          <Outlet context={{ currProfile, setCurrProfile }} />
+        </ErrorBoundary>
+      </Container>
+    </Box>
     <Footer />
   </ThemeProvider>
 );
+
+/**
+ * Layout wrapper that adds profile input fields above the page content.
+ * Use this for pages that need savings / account configuration inputs.
+ */
+export const WithInputs = () => (
+  <>
+    <FormInputsWrapper />
+    <Outlet />
+  </>
+);
+
+/** Internal: reads profile state from Outlet context and renders FormInputs */
+const FormInputsWrapper = () => {
+  const { currProfile, setCurrProfile } = useOutletContext<LayoutProps>();
+  return (
+    <ErrorBoundary>
+      <FormInputs currProfile={currProfile} setCurrProfile={setCurrProfile} />
+    </ErrorBoundary>
+  );
+};

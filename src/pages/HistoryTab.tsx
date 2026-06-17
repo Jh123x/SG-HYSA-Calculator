@@ -7,6 +7,7 @@ import { BankToggleChips } from "../Components/BankToggleChips";
 import { ComparisonChart } from "../Components/ComparisonChart";
 import { BankHistorySection } from "../Components/BankHistorySection";
 import { textColor } from "../consts/colors";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 interface Props {
   profile: Profile;
@@ -52,6 +53,8 @@ export const HistoryTab = ({ profile }: Props) => {
   const [searchParams, setSearchParams] = useSearchParams();
   const selectedBanks = readSessionBanks();
 
+  useDocumentTitle("Rate Change History — Track Singapore HYSA Interest Rates Over Time");
+
   // On first mount: if URL has ?banks=, hydrate sessionStorage and clean URL
   const urlBanks = useMemo(
     () => (searchParams.get(BANKS_PARAM) ? parseBanksRaw(searchParams.get(BANKS_PARAM)!) : null),
@@ -88,9 +91,10 @@ export const HistoryTab = ({ profile }: Props) => {
   };
 
   return (
-    <Box sx={{ mt: 3 }}>
+    <Box component="section" aria-label="Interest rate change history" sx={{ mt: 3 }}>
       <Typography
-        variant="h6"
+        variant="h5"
+        component="h2"
         sx={{ color: textColor, mb: 2, fontWeight: 600 }}
       >
         Rate Change History
