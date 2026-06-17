@@ -38,9 +38,9 @@ export const Result = ({ profile }: { profile: Profile }) => {
   const [order, setOrder] = useState<"asc" | "desc" | undefined>("desc");
 
   const results: Record<string, ResultProp> = {};
-  for (const [name, info] of Object.entries(bankInfo)) {
+  for (const [slug, info] of Object.entries(bankInfo)) {
     const { interestFn, lastUpdated } = deriveCurrentFromHistory(info.history);
-    results[name] = {
+    results[slug] = {
       interest: interestFn(profile),
       url: info.url,
       remarks: info.remarks,
@@ -64,8 +64,8 @@ export const Result = ({ profile }: { profile: Profile }) => {
     switch (orderBy) {
       case "name":
         return order === "asc"
-          ? a[0].localeCompare(b[0])
-          : b[0].localeCompare(a[0]);
+          ? (bankInfo[a[0]]?.name ?? a[0]).localeCompare(bankInfo[b[0]]?.name ?? b[0])
+          : (bankInfo[b[0]]?.name ?? b[0]).localeCompare(bankInfo[a[0]]?.name ?? a[0]);
       case "yearlyInterest":
         return order === "asc"
           ? a[1].interest.toYearly() - b[1].interest.toYearly()
@@ -145,8 +145,8 @@ export const Result = ({ profile }: { profile: Profile }) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {sortedResults.map(([bankName, interest]) =>
-              displayResult(bankName, interest),
+            {sortedResults.map(([slug, interest]) =>
+              displayResult(slug, interest),
             )}
           </TableBody>
         </Table>
@@ -175,9 +175,9 @@ export const Result = ({ profile }: { profile: Profile }) => {
   );
 };
 
-const displayResult = (bankName: string, info: ResultProp) => (
+const displayResult = (slug: string, info: ResultProp) => (
   <TableRow
-    key={bankName}
+    key={slug}
     sx={{
       color: textColor,
       backgroundColor: bgColor,
@@ -185,7 +185,7 @@ const displayResult = (bankName: string, info: ResultProp) => (
       transition: "background-color 0.3s ease",
     }}
   >
-    <TableCell sx={cellSx}>{bankName}</TableCell>
+    <TableCell sx={cellSx}>{bankInfo[slug]?.name ?? slug}</TableCell>
     <TableCell sx={cellSx}>
       ${info.interest.toYearly().toFixed(2) ?? "0"}
     </TableCell>

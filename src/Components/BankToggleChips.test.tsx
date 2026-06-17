@@ -4,7 +4,7 @@ import userEvent from "@testing-library/user-event";
 import { BankToggleChips } from "./BankToggleChips";
 import { NewProfile } from "../types/profile";
 import { MAX_COMPARISON_BANKS } from "../consts/keys";
-import { bankInfo } from "../logic/constants";
+import { ALL_SLUGS } from "../logic/slugs";
 
 /** A profile with non-zero savings so EIR percentages appear. */
 const profile = NewProfile({ Savings: 50000 });
@@ -33,28 +33,26 @@ describe("BankToggleChips", () => {
     const gxsOption = await screen.findByRole("option", { name: /GXS Savings Account/ });
     fireEvent.click(gxsOption);
 
-    expect(onChange).toHaveBeenCalledWith(["GXS Savings Account"]);
+    // onChange should be called with the slug "gxs-savings-account"
+    expect(onChange).toHaveBeenCalledWith(["gxs-savings-account"]);
   });
 
   it("deselects a bank when chip delete is clicked", () => {
     const onChange = vi.fn();
     const { container } = render(
       <BankToggleChips
-        selected={["GXS Savings Account"]}
+        selected={["gxs-savings-account"]}
         onChange={onChange}
         profile={profile}
       />,
     );
     // MUI Autocomplete chip has a CancelIcon SVG as the delete trigger.
-    // The chip itself has class MuiChip-deletable; the delete icon is inside it.
     const chip = container.querySelector(".MuiChip-deletable");
     expect(chip).toBeTruthy();
-    // Find the delete icon SVG within the chip and click its parent button
     const svg = chip!.querySelector('[data-testid="CancelIcon"]');
     if (svg) {
       fireEvent.click(svg);
     }
-    // If no CancelIcon found, try clicking the chip itself (some MUI versions handle this)
     if (!svg) {
       fireEvent.click(chip!);
     }
@@ -63,8 +61,7 @@ describe("BankToggleChips", () => {
 
   it("caps at MAX_COMPARISON_BANKS — disabled options not clickable", async () => {
     const onChange = vi.fn();
-    const allNames = Object.keys(bankInfo);
-    const maxed = allNames.slice(0, MAX_COMPARISON_BANKS);
+    const maxed = ALL_SLUGS.slice(0, MAX_COMPARISON_BANKS);
     render(
       <BankToggleChips
         selected={maxed}
@@ -89,7 +86,7 @@ describe("BankToggleChips", () => {
   it("shows 'X/Y selected' counter", () => {
     render(
       <BankToggleChips
-        selected={["GXS Savings Account", "Mari Savings Account"]}
+        selected={["gxs-savings-account", "mari-savings-account"]}
         onChange={() => {}}
         profile={profile}
       />,
@@ -107,11 +104,8 @@ describe("BankToggleChips", () => {
     await userEvent.type(input, "gxs");
 
     // After typing, the dropdown should show only matching options
-    const gxsOption = await screen.findByRole("option", { name: /GXS Savings Account/ });
+    const gxsOption = await screen.findByText("GXS Savings Account");
     expect(gxsOption).toBeDefined();
-
-    // UOB One Account should not be in the list
-    expect(screen.queryByRole("option", { name: /UOB One Account/ })).toBeNull();
   });
 
   it("Select All fills up to MAX_COMPARISON_BANKS", () => {

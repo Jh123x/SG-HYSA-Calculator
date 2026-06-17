@@ -22,15 +22,16 @@ function renderAt(path: string) {
 describe("BankDetailPage", () => {
   it("renders bank detail for a valid slug", () => {
     renderAt("/bank/gxs-savings-account");
+    // Display name is in the heading
     expect(screen.getAllByText("GXS Savings Account").length).toBeGreaterThan(0);
     expect(screen.getByText("Rate Change History")).toBeDefined();
     expect(screen.getByText("Back")).toBeDefined();
   });
 
-  it("shows 'Bank Not Found' for invalid slug", () => {
+  it("redirects to homepage for invalid slug", () => {
     renderAt("/bank/nonexistent-bank");
-    expect(screen.getByText("Bank Not Found")).toBeDefined();
-    expect(screen.getByText("Go to Calculator")).toBeDefined();
+    expect(screen.queryByText("Bank Not Found")).toBeNull();
+    expect(screen.queryByText("Rate Change History")).toBeNull();
   });
 
   it("shows summary chip with current EIR", () => {

@@ -16,17 +16,18 @@ export interface ChartSeriesItem {
  * Build the MUI LineChart series array for the comparison chart.
  *
  * One line per bank. Colors cycle through the lineColors palette.
+ * Labels use bank display names.
  */
 export function buildComparisonSeries(
   selectedBanks: string[],
   metric: YAxisMetric,
 ): ChartSeriesItem[] {
-  return selectedBanks.map((bankName, idx) => {
-    const dataKey = `${bankName}_${metric}`;
+  return selectedBanks.map((slug, idx) => {
+    const dataKey = `${slug}_${metric}`;
 
     return {
       dataKey,
-      label: bankName,
+      label: bankInfo[slug]?.name ?? slug,
       showMark: true,
       color: lineColors[idx % lineColors.length],
       curve: "stepAfter" as const,

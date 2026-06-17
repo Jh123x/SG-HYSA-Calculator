@@ -22,7 +22,6 @@ import { primaryColor, bgColor, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
-import { bankNameToSlug } from "../logic/slugs";
 import { InterestGraph } from "../Components/InterestGraph";
 import { FaqAccordion } from "../Components/FaqAccordion";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
@@ -54,9 +53,9 @@ export const CurrentRatesTab = ({ profile }: Props) => {
   useDocumentTitle("Compare Singapore High Yield Savings Accounts — Current Rates");
 
   const results: Record<string, ResultProp> = {};
-  for (const [name, info] of Object.entries(bankInfo)) {
+  for (const [slug, info] of Object.entries(bankInfo)) {
     const { interestFn, lastUpdated } = deriveCurrentFromHistory(info.history);
-    results[name] = {
+    results[slug] = {
       interest: interestFn(profile),
       url: info.url,
       remarks: info.remarks,
@@ -77,8 +76,8 @@ export const CurrentRatesTab = ({ profile }: Props) => {
     switch (orderBy) {
       case "name":
         return order === "asc"
-          ? a[0].localeCompare(b[0])
-          : b[0].localeCompare(a[0]);
+          ? (bankInfo[a[0]]?.name ?? a[0]).localeCompare(bankInfo[b[0]]?.name ?? b[0])
+          : (bankInfo[b[0]]?.name ?? b[0]).localeCompare(bankInfo[a[0]]?.name ?? a[0]);
       case "yearlyInterest":
         return order === "asc"
           ? a[1].interest.toYearly() - b[1].interest.toYearly()
@@ -190,9 +189,9 @@ export const CurrentRatesTab = ({ profile }: Props) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {sortedResults.map(([bankName, interest]) => (
+              {sortedResults.map(([slug, interest]) => (
                 <TableRow
-                  key={bankName}
+                  key={slug}
                   sx={{
                     color: textColor,
                     backgroundColor: bgColor,
@@ -201,7 +200,7 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                   }}
                 >
                   <TableCell sx={{ ...cellSx, fontWeight: 600 }}>
-                    {bankName}
+                    {bankInfo[slug]?.name ?? slug}
                   </TableCell>
                   <TableCell sx={cellSx}>
                     ${(interest.interest.toYearly() ?? 0).toFixed(2)}
@@ -216,7 +215,7 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                       <Tooltip title="Official Website" arrow>
                         <IconButton
                           size="small"
-                          aria-label={`Visit ${bankName} official website`}
+                          aria-label={`Visit ${bankInfo[slug]?.name ?? slug} official website`}
                           href={interest.url}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -233,8 +232,8 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                       <Tooltip title="Detailed History" arrow>
                         <IconButton
                           size="small"
-                          aria-label={`View ${bankName} rate history`}
-                          onClick={() => navigate(`/bank/${bankNameToSlug(bankName)}`)}
+                          aria-label={`View ${bankInfo[slug]?.name ?? slug} rate history`}
+                          onClick={() => navigate(`/bank/${slug}`)}
                           sx={{
                             "&:hover": {
                               backgroundColor: alpha(primaryColor, 0.15),

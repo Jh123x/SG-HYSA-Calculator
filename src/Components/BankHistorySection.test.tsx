@@ -10,7 +10,7 @@ describe("BankHistorySection", () => {
   it("renders bank name and rate history table", () => {
     render(
       <MemoryRouter>
-        <BankHistorySection bankName="GXS Savings Account" profile={profile} />
+        <BankHistorySection bankSlug="gxs-savings-account" profile={profile} />
       </MemoryRouter>,
     );
     expect(screen.getByText("GXS Savings Account")).toBeDefined();
@@ -23,10 +23,10 @@ describe("BankHistorySection", () => {
     expect(screen.getByText("View Full Page")).toBeDefined();
   });
 
-  it("renders error fallback for unknown bank", () => {
+  it("renders error fallback for unknown bank slug", () => {
     render(
       <MemoryRouter>
-        <BankHistorySection bankName="Fake Bank" profile={profile} />
+        <BankHistorySection bankSlug="fake-bank" profile={profile} />
       </MemoryRouter>,
     );
     // Should show error message, not empty

@@ -17,10 +17,10 @@ import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
 import { resolveHistoryForChart } from "../logic/history";
 import { formatDate, TBD_DATE } from "../logic/dates";
-import { bankNameToSlug } from "../logic/slugs";
 
 interface BankHistorySectionProps {
-  bankName: string;
+  /** Bank slug (e.g. "uob-one-account") */
+  bankSlug: string;
   profile: Profile;
 }
 
@@ -28,15 +28,15 @@ interface BankHistorySectionProps {
  * Detail section for a single bank shown in the History tab.
  * Displays the rate change log table + a link to the full detail page.
  *
- * When `bankInfo` has no entry for the bank, an error placeholder is shown
- * instead of silently rendering nothing.
+ * When {@link bankInfo} has no entry for the slug, an error placeholder
+ * is shown instead of silently rendering nothing.
  */
 export const BankHistorySection = ({
-  bankName,
+  bankSlug,
   profile,
 }: BankHistorySectionProps) => {
   const navigate = useNavigate();
-  const info = bankInfo[bankName];
+  const info = bankInfo[bankSlug];
 
   // ── Error fallback: bank not found in bankInfo ──
   if (!info) {
@@ -64,7 +64,7 @@ export const BankHistorySection = ({
             !
           </Typography>
           <Typography variant="body2" sx={{ color: textColor, opacity: 0.8 }}>
-            Unable to load history for "{bankName}". The bank may have been
+            Unable to load history for "{bankSlug}". The bank may have been
             removed or renamed.
           </Typography>
         </Box>
@@ -94,13 +94,13 @@ export const BankHistorySection = ({
         }}
       >
         <Typography variant="subtitle1" sx={{ color: textColor, fontWeight: 600 }}>
-          {bankName}
+          {info.name}
         </Typography>
         <Button
           size="small"
           variant="outlined"
           endIcon={<OpenInNewIcon />}
-          onClick={() => navigate(`/bank/${bankNameToSlug(bankName)}`)}
+          onClick={() => navigate(`/bank/${bankSlug}`)}
           sx={{
             color: textColor,
             borderColor: `${textColor}40`,

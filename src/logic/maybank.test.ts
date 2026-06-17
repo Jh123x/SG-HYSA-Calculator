@@ -112,22 +112,22 @@ describe("Maybank SaveUp Interest rates (Post 06/26)", () => {
     {
       caseName: "$1,000",
       profile: NewProfile({ Savings: 1000 }),
-      expectedResult: 1.88, // 1000 * 0.1875%
+      expectedResult: 1.875, // 1000 * 0.1875%
     },
     {
       caseName: "$5,000",
       profile: NewProfile({ Savings: 5000 }),
-      expectedResult: 10.63, // 3000*0.1875% + 2000*0.25%
+      expectedResult: 10.625, // 3000*0.1875% + 2000*0.25%
     },
     {
       caseName: "$10,000",
       profile: NewProfile({ Savings: 10_000 }),
-      expectedResult: 23.13, // 3000*0.1875% + 7000*0.25%
+      expectedResult: 23.125, // 3000*0.1875% + 7000*0.25%
     },
     {
       caseName: "$50,000",
       profile: NewProfile({ Savings: 50_000 }),
-      expectedResult: 123.13, // 3000*0.1875% + 47000*0.25%
+      expectedResult: 123.125, // 3000*0.1875% + 47000*0.25%
     },
     {
       caseName: "$75,000",
@@ -159,7 +159,7 @@ describe("Maybank iSAVvy Interest rates (Post 06/26)", () => {
     {
       caseName: "$4,500 (below $5K → 0.1875%)",
       profile: NewProfile({ Savings: 4500 }),
-      expectedResult: 8.44, // 4500 * 0.1875% = 8.4375
+      expectedResult: 8.4375, // 4500 * 0.1875% = 8.4375
     },
     {
       caseName: "$5,000 (boundary → 0.30%)",

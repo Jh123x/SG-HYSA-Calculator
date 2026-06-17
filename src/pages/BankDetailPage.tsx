@@ -1,4 +1,5 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import {
   Box,
   Button,
@@ -13,7 +14,6 @@ import {
   Typography,
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import HomeIcon from "@mui/icons-material/Home";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, bgColor, primaryColor, lineColors } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
@@ -22,10 +22,14 @@ import { resolveHistoryForChart } from "../logic/history";
 import { formatDate } from "../logic/dates";
 import type Profile from "../types/profile";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { jaroWinkler } from "../logic/fuzzyMatch";
 
 interface BankDetailPageProps {
   profile: Profile;
 }
+
+/** Seconds before auto-redirecting to the suggested bank. */
+const AUTO_REDIRECT_SECONDS = 5;
 
 /**
  * Bank detail page at /bank/:slug.
@@ -39,55 +43,135 @@ interface BankDetailPageProps {
 export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const bankName = slug ? slugToBankName(slug) : ERROR_SLUG;
 
+  // Closest-match suggestion when bank slug is unknown
+  const [suggestion, setSuggestion] = useState<{
+    bankName: string;
+    slug: string;
+  } | null>(null);
+  const [countdown, setCountdown] = useState(AUTO_REDIRECT_SECONDS);
+
   useDocumentTitle(
-    bankName !== ERROR_SLUG && bankInfo[bankName]
-      ? `${bankName} Interest Rate History & EIR Trends`
+    bankName !== ERROR_SLUG && bankInfo[slug ?? ""]
+      ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends`
       : "Bank Detail — SG HYSA Calculator",
   );
 
-  // Unknown bank — show error page with reset option
-  if (bankName === ERROR_SLUG || !bankInfo[bankName]) {
+  /**
+   * Navigate back one step in history. When the user arrived directly
+   * (e.g. typed the URL, opened a bookmark, or followed a link from
+   * another site), there is no prior history entry — redirect to the
+   * homepage instead of leaving the user stranded.
+   *
+   * React Router assigns key="default" to the initial page load entry;
+   * all in-app navigations get a unique generated key.
+   */
+  const handleBack = () => {
+    if (location.key === "default") {
+      navigate("/", { replace: true });
+    } else {
+      navigate(-1);
+    }
+  };
+
+  // Unknown bank — find closest match (including home page) by Jaro-Winkler similarity
+  useEffect(() => {
+    if (bankName === ERROR_SLUG || !bankInfo[slug ?? ""]) {
+      if (!slug) {
+        navigate("/", { replace: true });
+        return;
+      }
+
+      // Compute Jaro-Winkler similarity to every known bank slug + home page
+      let bestSlug = "/";
+      let bestName = "Home";
+      let bestSimilarity = jaroWinkler(slug, "/");
+
+      for (const [bankSlug, info] of Object.entries(bankInfo)) {
+        const sim = jaroWinkler(slug, bankSlug);
+        if (sim > bestSimilarity) {
+          bestSimilarity = sim;
+          bestSlug = bankSlug;
+          bestName = info.name;
+        }
+      }
+
+      setSuggestion({ bankName: bestName, slug: bestSlug });
+      setCountdown(AUTO_REDIRECT_SECONDS);
+    } else {
+      setSuggestion(null);
+    }
+  }, [bankName, slug, navigate]);
+
+  // Auto-redirect countdown when a suggestion is shown
+  useEffect(() => {
+    if (!suggestion) return;
+    if (countdown <= 0) {
+      navigate(
+        suggestion.slug === "/" ? "/" : `/bank/${suggestion.slug}`,
+        { replace: true },
+      );
+      return;
+    }
+    const timer = setTimeout(() => setCountdown((c) => c - 1), 1000);
+    return () => clearTimeout(timer);
+  }, [suggestion, countdown, navigate]);
+
+  // Show "Did you mean?" suggestion when a close match exists
+  if (suggestion) {
+    const isHome = suggestion.slug === "/";
+
     return (
-      <Paper
-        sx={{
-          p: 4,
-          borderRadius: "10px",
-          backgroundColor: bgColor,
-          textAlign: "center",
-          mt: 3,
-        }}
+      <Box
+        component="article"
+        aria-label={isHome ? "Redirecting to home" : "Bank suggestion"}
+        sx={{ mt: 3, textAlign: "center" }}
       >
-        <Typography variant="h5" color={textColor} sx={{ mb: 2 }}>
-          Bank Not Found
-        </Typography>
-        <Typography variant="body1" color={textColor} sx={{ mb: 3, opacity: 0.7 }}>
-          The bank you're looking for doesn't exist or may have been removed.
-        </Typography>
-        <Box sx={{ display: "flex", gap: 2, justifyContent: "center" }}>
-          <Button
-            variant="outlined"
-            startIcon={<ArrowBackIcon />}
-            onClick={() => navigate(-1)}
-            sx={{ color: textColor, borderColor: `${textColor}40` }}
+        <Paper
+          sx={{
+            p: 4,
+            borderRadius: "10px",
+            backgroundColor: bgColor,
+          }}
+        >
+          <Typography
+            variant="h5"
+            sx={{ color: textColor, mb: 2, fontWeight: 600 }}
           >
-            Go Back
-          </Button>
-          <Button
-            variant="contained"
-            startIcon={<HomeIcon />}
-            onClick={() => navigate("/")}
-            sx={{ backgroundColor: primaryColor, color: "#fff" }}
-          >
-            Go to Calculator
-          </Button>
-        </Box>
-      </Paper>
+            Bank not found
+          </Typography>
+          {isHome ? (
+            <Typography variant="body1" sx={{ color: textColor, mb: 3 }}>
+              The bank you&apos;re looking for could not be found. You will be
+              redirected to the homepage.
+            </Typography>
+          ) : (
+            <Typography variant="body1" sx={{ color: textColor, mb: 3 }}>
+              Did you mean{" "}
+              <Link
+                to={`/bank/${suggestion.slug}`}
+                style={{ color: primaryColor, fontWeight: 600 }}
+              >
+                {suggestion.bankName}
+              </Link>
+              ?
+            </Typography>
+          )}
+          <Typography variant="body2" sx={{ color: textColor, opacity: 0.7 }}>
+            Redirecting in {countdown} second{countdown !== 1 ? "s" : ""}...
+          </Typography>
+        </Paper>
+      </Box>
     );
   }
 
-  const info = bankInfo[bankName];
+  if (bankName === ERROR_SLUG || !bankInfo[slug ?? ""]) {
+    return null;
+  }
+
+  const info = bankInfo[slug ?? ""];
   const resolved = resolveHistoryForChart(info.history, profile);
 
   // Build time-series dataset for EIR chart (sorted chronologically,
@@ -100,12 +184,8 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
       eir: r.eir,
     }));
 
-  const handleBack = () => {
-    navigate(-1);
-  };
-
   return (
-    <Box component="article" aria-label={`${bankName} interest rate details`} sx={{ mt: 3 }}>
+    <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ mt: 3 }}>
       {/* Back button */}
       <Button
         startIcon={<ArrowBackIcon />}
@@ -131,7 +211,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         }}
       >
         <Typography variant="h5" component="h2" sx={{ color: textColor, fontWeight: 700, mb: 1 }}>
-          {bankName}
+          {info.name}
         </Typography>
         <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 2 }}>
           {resolved.length > 0 && resolved[resolved.length - 1].date.getTime() !== 0 && (
@@ -188,7 +268,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
             series={[
               {
                 dataKey: "eir",
-                label: bankName,
+                label: info.name,
                 color: lineColors[0],
                 showMark: true,
                 curve: "stepAfter",
