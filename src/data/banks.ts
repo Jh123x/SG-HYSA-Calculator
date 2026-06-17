@@ -5,13 +5,13 @@
  * remarks are plain text strings using lightweight conventions:
  *   **bold**            → rendered as <b> in React
  *   [text](url)         → rendered as <LocalLink> in React
- *   {mariCurrentRate}   → substituted with computed current Mari rate
  *
  * This module is safe to import from non-React contexts
  * (scripts, build tools, tests with minimal deps, etc.).
  */
 
 import type { RateSnapshot } from "../types/history";
+import type Profile from "../types/profile";
 import { uobHistory } from "../logic/uob";
 import { gxsHistory } from "../logic/gxs";
 import { ocbcHistory } from "../logic/ocbc360";
@@ -28,8 +28,15 @@ import {
   trustBankSignatureHistory,
 } from "../logic/trust_bank";
 import { maribankHistory } from "../logic/maribank";
+import { deriveCurrentFromHistory } from "../logic/history";
 import { bocSuperSaverHistory } from "../logic/bank_of_china";
 import { chocoFinanceHistory } from "../logic/choco_finance";
+
+// Pre-compute Mari current rate so remarks are self-contained
+const _mariCurrentRate = (() => {
+  const { interestFn } = deriveCurrentFromHistory(maribankHistory);
+  return interestFn({ Savings: 10000 } as Profile).toYearlyPercent().toFixed(2);
+})();
 
 // ── Types ────────────────────────────────────────────────────────────
 
@@ -63,7 +70,7 @@ export const banks: Record<string, BankData> = {
     name: "Mari Savings Account",
     url: "https://www.maribank.sg/product/mari-savings-account/",
     remarks:
-      "Interest rates are a flat {mariCurrentRate}%\nCapped at $100k\nReferral code: **4QTP99MT**",
+      `Interest rates are a flat ${_mariCurrentRate}%\nCapped at $100k\nReferral code: **4QTP99MT**`,
     history: maribankHistory,
   },
   "standard-chartered-bonus-saver": {

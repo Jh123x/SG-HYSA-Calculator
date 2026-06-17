@@ -5,7 +5,6 @@
  * Conventions:
  *   **bold**            → <b>bold</b>
  *   [text](url)         → <LocalLink href={url}>text</LocalLink>
- *   {mariCurrentRate}   → substituted with the provided Mari current rate
  *   literal newlines    → <br/>
  *
  * For simple single-line text with no formatting, the raw string is
@@ -20,22 +19,12 @@ import { LocalLink } from "../Components/LocalLink";
  * Parse remark text into React elements.
  *
  * @param text - Plain text from BankData.remarks
- * @param mariCurrentRate - Current Mari Savings Account flat rate (e.g. "2.50")
  * @returns A string (for simple text) or a React fragment with formatting.
  */
-export function formatRemarks(
-  text: string,
-  mariCurrentRate?: string,
-): string | ReactElement {
-  // Substitute Mari rate placeholder
-  let processed = text;
-  if (mariCurrentRate !== undefined) {
-    processed = processed.replace(/\{mariCurrentRate\}/g, mariCurrentRate);
-  }
-
+export function formatRemarks(text: string): string | ReactElement {
   // Quick path: single line, no special formatting — return raw string
-  if (!processed.includes("\n") && !processed.includes("**") && !processed.includes("[")) {
-    return processed;
+  if (!text.includes("\n") && !text.includes("**") && !text.includes("[")) {
+    return text;
   }
 
   // Tokenizer: match **bold**, [text](url), or plain text
@@ -44,10 +33,10 @@ export function formatRemarks(
   let lastIdx = 0;
   let m: RegExpExecArray | null;
 
-  while ((m = tokenRe.exec(processed)) !== null) {
+  while ((m = tokenRe.exec(text)) !== null) {
     // Push any plain text before this token
     if (m.index > lastIdx) {
-      nodes.push(processed.slice(lastIdx, m.index));
+      nodes.push(text.slice(lastIdx, m.index));
     }
 
     if (m[1] !== undefined) {
@@ -66,8 +55,8 @@ export function formatRemarks(
   }
 
   // Remaining plain text after last token
-  if (lastIdx < processed.length) {
-    nodes.push(processed.slice(lastIdx));
+  if (lastIdx < text.length) {
+    nodes.push(text.slice(lastIdx));
   }
 
   // Flatten: if a plain text node contains \n, split it into text + <br/>
