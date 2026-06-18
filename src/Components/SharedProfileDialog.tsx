@@ -1,11 +1,5 @@
-import {
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-} from "@mui/material";
+import { Button, Alert, Collapse } from "@mui/material";
+import { Close } from "@mui/icons-material";
 
 interface Props {
   open: boolean;
@@ -14,27 +8,50 @@ interface Props {
 }
 
 /**
- * Confirmation dialog shown when a shared profile URL would overwrite
- * the user's existing saved profile.
+ * Non-blocking notification card shown when a shared profile URL would
+ * overwrite the user's existing saved profile. Styled consistently with
+ * the existing WebAlert notification cards.
  */
 export const SharedProfileDialog = ({ open, onAccept, onReject }: Props) => (
-  <Dialog open={open} onClose={onReject} aria-labelledby="shared-profile-dialog">
-    <DialogTitle id="shared-profile-dialog">
-      Shared profile detected
-    </DialogTitle>
-    <DialogContent>
-      <DialogContentText>
-        This link contains a shared profile. Loading it will replace your
-        current saved inputs. Do you want to load the shared profile?
-      </DialogContentText>
-    </DialogContent>
-    <DialogActions>
-      <Button onClick={onReject} color="inherit">
-        Keep my profile
-      </Button>
-      <Button onClick={onAccept} variant="contained" autoFocus>
-        Load shared profile
-      </Button>
-    </DialogActions>
-  </Dialog>
+  <Collapse in={open}>
+    <Alert
+      severity="warning"
+      sx={{
+        position: "fixed",
+        bottom: "10px",
+        right: "10px",
+        maxWidth: "400px",
+        color: "#fff",
+        borderRadius: "8px",
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+        zIndex: 1300,
+      }}
+      action={
+        <>
+          <Button
+            size="small"
+            color="inherit"
+            onClick={onReject}
+            sx={{ color: "#fff" }}
+          >
+            Keep mine
+          </Button>
+          <Button
+            size="small"
+            variant="outlined"
+            onClick={onAccept}
+            sx={{
+              color: "#fff",
+              borderColor: "rgba(255,255,255,0.5)",
+              ml: 1,
+            }}
+          >
+            Load
+          </Button>
+        </>
+      }
+    >
+      Shared profile detected — load it?
+    </Alert>
+  </Collapse>
 );
