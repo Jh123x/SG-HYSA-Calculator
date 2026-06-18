@@ -13,7 +13,7 @@ exports[`Web Alert > should match snapshot 1`] = `
         class="MuiCollapse-wrapperInner MuiCollapse-vertical css-1i4ywhz-MuiCollapse-wrapperInner"
       >
         <div
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorSuccess MuiAlert-standard css-1ouial1-MuiPaper-root-MuiAlert-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorSuccess MuiAlert-standard css-19lpqqk-MuiPaper-root-MuiAlert-root"
           role="alert"
           style="--Paper-shadow: none;"
         >

@@ -20,9 +20,6 @@ export const WebAlert = ({
       severity={severity}
       icon={<Check fontSize="inherit" />}
       sx={{
-        position: "fixed",
-        bottom: "10px",
-        right: "10px",
         color: "#fff",
         borderRadius: "8px",
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",

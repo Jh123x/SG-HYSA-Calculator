@@ -622,6 +622,9 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
       </span>
     </div>
   </div>
+  <div
+    class="MuiBox-root css-1tdrj8w"
+  />
 </DocumentFragment>
 `;
 
@@ -1377,5 +1380,8 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
       </span>
     </div>
   </div>
+  <div
+    class="MuiBox-root css-1tdrj8w"
+  />
 </DocumentFragment>
 `;
