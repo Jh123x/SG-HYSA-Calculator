@@ -25,6 +25,7 @@ import {
 import type { Field } from "./types";
 import { WebAlert } from "./Alert";
 import { booleanInputs, numericalInputs } from "./InputValues";
+import { ShareButton } from "./ShareButton";
 
 interface FormInput {
   currProfile: Profile;
@@ -109,6 +110,7 @@ export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
           gap: "15px",
         }}
       >
+        <ShareButton profile={currProfile} />
         <Button
           key="clear-btn"
           sx={{
