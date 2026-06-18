@@ -66,6 +66,8 @@ export const FormInputs = ({
     <>
       <SharedProfileDialog
         open={pendingUrlProfile !== null}
+        currProfile={currProfile}
+        pendingProfile={pendingUrlProfile ?? currProfile}
         onAccept={onAcceptShared}
         onReject={onRejectShared}
       />
