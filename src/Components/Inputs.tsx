@@ -10,7 +10,7 @@ import {
   Typography,
   Chip,
 } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import type Profile from "../types/profile";
 import { NewProfile } from "../types/profile";
@@ -25,34 +25,70 @@ import {
 import type { Field } from "./types";
 import { WebAlert } from "./Alert";
 import { booleanInputs, numericalInputs } from "./InputValues";
+import { ShareButton } from "./ShareButton";
+import { SharedProfileDialog } from "./SharedProfileDialog";
+import { NotificationStack } from "./NotificationStack";
+import type { AlertColor } from "@mui/material";
+
+interface Notification {
+  id: number;
+  message: string;
+  severity: AlertColor;
+}
 
 interface FormInput {
   currProfile: Profile;
   setCurrProfile: (_: Profile) => void;
+  pendingUrlProfile: Profile | null;
+  onAcceptShared: () => void;
+  onRejectShared: () => void;
 }
 
-export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
-  const [hideModel, setHideModal] = useState<boolean>(true);
-  const [modelMsg, setModalMsg] = useState<string>("");
+export const FormInputs = ({
+  currProfile,
+  setCurrProfile,
+  pendingUrlProfile,
+  onAcceptShared,
+  onRejectShared,
+}: FormInput) => {
   const [profile, setProfile] = useState<Profile>(currProfile);
+  const [notifications, setNotifications] = useState<Notification[]>([]);
+  const nextId = useRef(0);
 
   useEffect(() => {
     localStorage.setItem(STORE_KEY, JSON.stringify(currProfile));
     setProfile(currProfile);
   }, [currProfile]);
 
+  const addNotification = useCallback(
+    (message: string, severity: AlertColor, duration = 3000) => {
+      const id = nextId.current++;
+      setNotifications((prev) => [...prev, { id, message, severity }]);
+      setTimeout(() => {
+        setNotifications((prev) => prev.filter((n) => n.id !== id));
+      }, duration);
+    },
+    [],
+  );
+
+  const dismissNotification = useCallback((id: number) => {
+    setNotifications((prev) => prev.filter((n) => n.id !== id));
+  }, []);
+
   const onClear = () => {
     setCurrProfile(NewProfile({}));
-    setModalMsg("Cleared");
-    setHideModal(false);
-    setTimeout(() => {
-      if (!hideModel) return;
-      setHideModal(true);
-    }, 1500);
+    addNotification("Cleared", "info");
   };
 
   return (
     <>
+      <SharedProfileDialog
+        open={pendingUrlProfile !== null}
+        currProfile={currProfile}
+        pendingProfile={pendingUrlProfile ?? currProfile}
+        onAccept={onAcceptShared}
+        onReject={onRejectShared}
+      />
       <FormControl
         sx={{
           display: "flex",
@@ -109,6 +145,12 @@ export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
           gap: "15px",
         }}
       >
+        <ShareButton
+          profile={currProfile}
+          onCopied={() =>
+            addNotification("Profile URL copied to clipboard!", "success")
+          }
+        />
         <Button
           key="clear-btn"
           sx={{
@@ -140,15 +182,18 @@ export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
           }}
         />
       </Box>
-      {!hideModel && (
-        <WebAlert
-          hideModel={hideModel}
-          severity={"info"}
-          onClose={() => setHideModal(true)}
-        >
-          {modelMsg}
-        </WebAlert>
-      )}
+      <NotificationStack>
+        {notifications.map((n) => (
+          <WebAlert
+            key={n.id}
+            hideModel={false}
+            severity={n.severity}
+            onClose={() => dismissNotification(n.id)}
+          >
+            {n.message}
+          </WebAlert>
+        ))}
+      </NotificationStack>
     </>
   );
 };

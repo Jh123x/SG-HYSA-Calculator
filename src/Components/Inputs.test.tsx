@@ -10,6 +10,9 @@ describe("Form Inputs", () => {
       <FormInputs
         currProfile={NewProfile({})}
         setCurrProfile={(_: Profile) => {}}
+        pendingUrlProfile={null}
+        onAcceptShared={() => {}}
+        onRejectShared={() => {}}
       ></FormInputs>,
     ).asFragment();
     expect(tree).toMatchSnapshot();
@@ -29,6 +32,9 @@ describe("Form Inputs", () => {
           GiroTransactions: 0,
         })}
         setCurrProfile={(_: Profile) => {}}
+        pendingUrlProfile={null}
+        onAcceptShared={() => {}}
+        onRejectShared={() => {}}
       ></FormInputs>,
     ).asFragment();
     expect(tree).toMatchSnapshot();
