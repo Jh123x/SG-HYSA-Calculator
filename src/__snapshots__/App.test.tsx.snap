@@ -112,67 +112,6 @@ exports[`App > should render correctly 1`] = `
       class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
     >
       <div
-        class="MuiCollapse-root MuiCollapse-vertical MuiCollapse-hidden css-cwrbtg-MuiCollapse-root"
-        style="min-height: 0px;"
-      >
-        <div
-          class="MuiCollapse-wrapper MuiCollapse-vertical css-1x6hinx-MuiCollapse-wrapper"
-        >
-          <div
-            class="MuiCollapse-wrapperInner MuiCollapse-vertical css-1i4ywhz-MuiCollapse-wrapperInner"
-          >
-            <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-colorWarning MuiAlert-standard css-toknla-MuiPaper-root-MuiAlert-root"
-              role="alert"
-              style="--Paper-shadow: none; --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));"
-            >
-              <div
-                class="MuiAlert-icon css-vab54s-MuiAlert-icon"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1ckov0h-MuiSvgIcon-root"
-                  data-testid="ReportProblemOutlinedIcon"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M12 5.99L19.53 19H4.47L12 5.99M12 2L1 21h22L12 2zm1 14h-2v2h2v-2zm0-6h-2v4h2v-4z"
-                  />
-                </svg>
-              </div>
-              <div
-                class="MuiAlert-message css-zioonp-MuiAlert-message"
-              >
-                <p
-                  class="MuiTypography-root MuiTypography-body2 css-7mxp11-MuiTypography-root"
-                >
-                  Shared profile detected — 0 fields differ
-                </p>
-              </div>
-              <div
-                class="MuiAlert-action css-rgppqo-MuiAlert-action"
-              >
-                <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorInherit css-1x7rj9k-MuiButtonBase-root-MuiButton-root"
-                  tabindex="0"
-                  type="button"
-                >
-                  Keep mine
-                </button>
-                <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeSmall MuiButton-colorPrimary css-122qsav-MuiButtonBase-root-MuiButton-root"
-                  tabindex="0"
-                  type="button"
-                >
-                  Load
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
         class="MuiFormControl-root css-1hr5jum-MuiFormControl-root"
       >
         <div
@@ -184,8 +123,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_5_"
-              id="_r_5_-label"
+              for="_r_4_"
+              id="_r_4_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -203,7 +142,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_5_"
+                id="_r_4_"
                 placeholder="To be deposited at bank"
                 type="number"
                 value=""
@@ -236,8 +175,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_6_"
-              id="_r_6_-label"
+              for="_r_5_"
+              id="_r_5_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -255,7 +194,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_6_"
+                id="_r_5_"
                 placeholder="Current age"
                 type="number"
                 value=""
@@ -288,8 +227,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_7_"
-              id="_r_7_-label"
+              for="_r_6_"
+              id="_r_6_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -307,7 +246,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_7_"
+                id="_r_6_"
                 placeholder="Credited to bank monthly"
                 type="number"
                 value=""
@@ -340,8 +279,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_8_"
-              id="_r_8_-label"
+              for="_r_7_"
+              id="_r_7_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -359,7 +298,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_8_"
+                id="_r_7_"
                 placeholder="Pay to bank yearly"
                 type="number"
                 value=""
@@ -392,8 +331,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_9_"
-              id="_r_9_-label"
+              for="_r_8_"
+              id="_r_8_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -411,7 +350,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_9_"
+                id="_r_8_"
                 placeholder="Pay to bank yearly"
                 type="number"
                 value=""
@@ -444,8 +383,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_a_"
-              id="_r_a_-label"
+              for="_r_9_"
+              id="_r_9_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -463,7 +402,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_a_"
+                id="_r_9_"
                 placeholder="On eligible cards monthly"
                 type="number"
                 value=""
@@ -496,8 +435,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_b_"
-              id="_r_b_-label"
+              for="_r_a_"
+              id="_r_a_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -515,7 +454,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_b_"
+                id="_r_a_"
                 placeholder="No. of GIRO Transactions"
                 type="number"
                 value=""
@@ -548,8 +487,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_c_"
-              id="_r_c_-label"
+              for="_r_b_"
+              id="_r_b_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -567,7 +506,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_c_"
+                id="_r_b_"
                 placeholder="Balance increase monthly"
                 type="number"
                 value=""
@@ -600,8 +539,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_d_"
-              id="_r_d_-label"
+              for="_r_c_"
+              id="_r_c_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -619,7 +558,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_d_"
+                id="_r_c_"
                 placeholder="Monthly loan payment"
                 type="number"
                 value=""
@@ -652,8 +591,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_e_"
-              id="_r_e_-label"
+              for="_r_d_"
+              id="_r_d_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -671,7 +610,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_e_"
+                id="_r_d_"
                 placeholder="Additional 1 time loan"
                 type="number"
                 value=""
@@ -2636,20 +2575,20 @@ exports[`App > should render correctly 1`] = `
                   tabindex="0"
                 >
                   <div
-                    id="voiceover-_r_2b_-1"
+                    id="voiceover-_r_2a_-1"
                     style="display: none;"
                   />
                   <div
-                    id="voiceover-_r_2b_-2"
+                    id="voiceover-_r_2a_-2"
                     style="display: none;"
                   />
                   <div
-                    aria-labelledby="voiceover-_r_2b_-1"
+                    aria-labelledby="voiceover-_r_2a_-1"
                     role="img"
                     style="width: 100%; height: 100%; outline: none;"
                   />
                   <div
-                    aria-labelledby="voiceover-_r_2b_-2"
+                    aria-labelledby="voiceover-_r_2a_-2"
                     role="img"
                     style="width: 100%; height: 100%; outline: none;"
                   />
@@ -2741,7 +2680,7 @@ exports[`App > should render correctly 1`] = `
                     />
                   </g>
                   <g
-                    clip-path="url(#_r_2a_-clip-path)"
+                    clip-path="url(#_r_29_-clip-path)"
                   >
                     <g
                       class="MuiLineChart-areaPlot css-94vonx-MuiAreaPlot-root"
@@ -2750,7 +2689,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
                     >
                       <clippath
-                        id="_r_2b_-uob-one-account-line-clip"
+                        id="_r_2a_-uob-one-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2761,7 +2700,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-uob-one-account-line-clip)"
+                        clip-path="url(#_r_2a_-uob-one-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2777,7 +2716,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-ocbc-360-account-line-clip"
+                        id="_r_2a_-ocbc-360-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2788,7 +2727,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-ocbc-360-account-line-clip)"
+                        clip-path="url(#_r_2a_-ocbc-360-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2804,7 +2743,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-mari-savings-account-line-clip"
+                        id="_r_2a_-mari-savings-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2815,7 +2754,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-mari-savings-account-line-clip)"
+                        clip-path="url(#_r_2a_-mari-savings-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2831,7 +2770,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-standard-chartered-bonus-saver-line-clip"
+                        id="_r_2a_-standard-chartered-bonus-saver-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2842,7 +2781,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-standard-chartered-bonus-saver-line-clip)"
+                        clip-path="url(#_r_2a_-standard-chartered-bonus-saver-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2858,7 +2797,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-trust-bank-signature-line-clip"
+                        id="_r_2a_-trust-bank-signature-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2869,7 +2808,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-trust-bank-signature-line-clip)"
+                        clip-path="url(#_r_2a_-trust-bank-signature-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2885,7 +2824,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-trust-bank-zen-line-clip"
+                        id="_r_2a_-trust-bank-zen-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2896,7 +2835,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-trust-bank-zen-line-clip)"
+                        clip-path="url(#_r_2a_-trust-bank-zen-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2912,7 +2851,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-dbs-multiplier-account-line-clip"
+                        id="_r_2a_-dbs-multiplier-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2923,7 +2862,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-dbs-multiplier-account-line-clip)"
+                        clip-path="url(#_r_2a_-dbs-multiplier-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2939,7 +2878,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-gxs-savings-account-line-clip"
+                        id="_r_2a_-gxs-savings-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2950,7 +2889,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-gxs-savings-account-line-clip)"
+                        clip-path="url(#_r_2a_-gxs-savings-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2966,7 +2905,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-chocolate-finance-line-clip"
+                        id="_r_2a_-chocolate-finance-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2977,7 +2916,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-chocolate-finance-line-clip)"
+                        clip-path="url(#_r_2a_-chocolate-finance-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2993,7 +2932,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-boc-supersaver-line-clip"
+                        id="_r_2a_-boc-supersaver-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -3004,7 +2943,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-boc-supersaver-line-clip)"
+                        clip-path="url(#_r_2a_-boc-supersaver-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -3020,7 +2959,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-maybank-saveup-line-clip"
+                        id="_r_2a_-maybank-saveup-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -3031,7 +2970,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-maybank-saveup-line-clip)"
+                        clip-path="url(#_r_2a_-maybank-saveup-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -3047,7 +2986,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-maybank-isavvy-line-clip"
+                        id="_r_2a_-maybank-isavvy-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -3058,7 +2997,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-maybank-isavvy-line-clip)"
+                        clip-path="url(#_r_2a_-maybank-isavvy-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -3074,7 +3013,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-maybank-isavvy-plus-line-clip"
+                        id="_r_2a_-maybank-isavvy-plus-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -3085,7 +3024,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-maybank-isavvy-plus-line-clip)"
+                        clip-path="url(#_r_2a_-maybank-isavvy-plus-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -3101,7 +3040,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2b_-citi-wealth-first-account-line-clip"
+                        id="_r_2a_-citi-wealth-first-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -3112,7 +3051,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2b_-citi-wealth-first-account-line-clip)"
+                        clip-path="url(#_r_2a_-citi-wealth-first-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -3473,65 +3412,65 @@ exports[`App > should render correctly 1`] = `
                       class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
                     >
                       <g
-                        clip-path="url(#_r_2b_-uob-one-account-line-clip)"
+                        clip-path="url(#_r_2a_-uob-one-account-line-clip)"
                         data-series="uob-one-account"
                       />
                       <g
-                        clip-path="url(#_r_2b_-ocbc-360-account-line-clip)"
+                        clip-path="url(#_r_2a_-ocbc-360-account-line-clip)"
                         data-series="ocbc-360-account"
                       />
                       <g
-                        clip-path="url(#_r_2b_-mari-savings-account-line-clip)"
+                        clip-path="url(#_r_2a_-mari-savings-account-line-clip)"
                         data-series="mari-savings-account"
                       />
                       <g
-                        clip-path="url(#_r_2b_-standard-chartered-bonus-saver-line-clip)"
+                        clip-path="url(#_r_2a_-standard-chartered-bonus-saver-line-clip)"
                         data-series="standard-chartered-bonus-saver"
                       />
                       <g
-                        clip-path="url(#_r_2b_-trust-bank-signature-line-clip)"
+                        clip-path="url(#_r_2a_-trust-bank-signature-line-clip)"
                         data-series="trust-bank-signature"
                       />
                       <g
-                        clip-path="url(#_r_2b_-trust-bank-zen-line-clip)"
+                        clip-path="url(#_r_2a_-trust-bank-zen-line-clip)"
                         data-series="trust-bank-zen"
                       />
                       <g
-                        clip-path="url(#_r_2b_-dbs-multiplier-account-line-clip)"
+                        clip-path="url(#_r_2a_-dbs-multiplier-account-line-clip)"
                         data-series="dbs-multiplier-account"
                       />
                       <g
-                        clip-path="url(#_r_2b_-gxs-savings-account-line-clip)"
+                        clip-path="url(#_r_2a_-gxs-savings-account-line-clip)"
                         data-series="gxs-savings-account"
                       />
                       <g
-                        clip-path="url(#_r_2b_-chocolate-finance-line-clip)"
+                        clip-path="url(#_r_2a_-chocolate-finance-line-clip)"
                         data-series="chocolate-finance"
                       />
                       <g
-                        clip-path="url(#_r_2b_-boc-supersaver-line-clip)"
+                        clip-path="url(#_r_2a_-boc-supersaver-line-clip)"
                         data-series="boc-supersaver"
                       />
                       <g
-                        clip-path="url(#_r_2b_-maybank-saveup-line-clip)"
+                        clip-path="url(#_r_2a_-maybank-saveup-line-clip)"
                         data-series="maybank-saveup"
                       />
                       <g
-                        clip-path="url(#_r_2b_-maybank-isavvy-line-clip)"
+                        clip-path="url(#_r_2a_-maybank-isavvy-line-clip)"
                         data-series="maybank-isavvy"
                       />
                       <g
-                        clip-path="url(#_r_2b_-maybank-isavvy-plus-line-clip)"
+                        clip-path="url(#_r_2a_-maybank-isavvy-plus-line-clip)"
                         data-series="maybank-isavvy-plus"
                       />
                       <g
-                        clip-path="url(#_r_2b_-citi-wealth-first-account-line-clip)"
+                        clip-path="url(#_r_2a_-citi-wealth-first-account-line-clip)"
                         data-series="citi-wealth-first-account"
                       />
                     </g>
                   </g>
                   <clippath
-                    id="_r_2a_-clip-path"
+                    id="_r_29_-clip-path"
                   >
                     <rect
                       height="415"

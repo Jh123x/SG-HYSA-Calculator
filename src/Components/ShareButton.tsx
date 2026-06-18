@@ -8,9 +8,10 @@ import { profileToUrl } from "../logic/profileUrl";
 
 interface ShareButtonProps {
   profile: Profile;
+  onCopied?: () => void;
 }
 
-export const ShareButton = ({ profile }: ShareButtonProps) => {
+export const ShareButton = ({ profile, onCopied }: ShareButtonProps) => {
   const [copied, setCopied] = useState(false);
 
   const handleShare = useCallback(async () => {
@@ -18,6 +19,7 @@ export const ShareButton = ({ profile }: ShareButtonProps) => {
     try {
       await navigator.clipboard.writeText(url);
       setCopied(true);
+      onCopied?.();
       setTimeout(() => setCopied(false), 2000);
     } catch {
       // Fallback for older browsers / non-HTTPS contexts
@@ -30,9 +32,10 @@ export const ShareButton = ({ profile }: ShareButtonProps) => {
       document.execCommand("copy");
       document.body.removeChild(textarea);
       setCopied(true);
+      onCopied?.();
       setTimeout(() => setCopied(false), 2000);
     }
-  }, [profile]);
+  }, [profile, onCopied]);
 
   return (
     <Button

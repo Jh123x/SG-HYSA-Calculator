@@ -46,6 +46,7 @@ export const FormInputs = ({
   const [hideModel, setHideModal] = useState<boolean>(true);
   const [modelMsg, setModalMsg] = useState<string>("");
   const [profile, setProfile] = useState<Profile>(currProfile);
+  const [copiedMsg, setCopiedMsg] = useState(false);
 
   useEffect(() => {
     localStorage.setItem(STORE_KEY, JSON.stringify(currProfile));
@@ -127,7 +128,10 @@ export const FormInputs = ({
           gap: "15px",
         }}
       >
-        <ShareButton profile={currProfile} />
+        <ShareButton
+          profile={currProfile}
+          onCopied={() => setCopiedMsg(true)}
+        />
         <Button
           key="clear-btn"
           sx={{
@@ -166,6 +170,15 @@ export const FormInputs = ({
           onClose={() => setHideModal(true)}
         >
           {modelMsg}
+        </WebAlert>
+      )}
+      {copiedMsg && (
+        <WebAlert
+          hideModel={false}
+          severity="success"
+          onClose={() => setCopiedMsg(false)}
+        >
+          Profile URL copied to clipboard!
         </WebAlert>
       )}
     </>
