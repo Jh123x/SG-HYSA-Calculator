@@ -26,13 +26,23 @@ import type { Field } from "./types";
 import { WebAlert } from "./Alert";
 import { booleanInputs, numericalInputs } from "./InputValues";
 import { ShareButton } from "./ShareButton";
+import { SharedProfileDialog } from "./SharedProfileDialog";
 
 interface FormInput {
   currProfile: Profile;
   setCurrProfile: (_: Profile) => void;
+  pendingUrlProfile: Profile | null;
+  onAcceptShared: () => void;
+  onRejectShared: () => void;
 }
 
-export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
+export const FormInputs = ({
+  currProfile,
+  setCurrProfile,
+  pendingUrlProfile,
+  onAcceptShared,
+  onRejectShared,
+}: FormInput) => {
   const [hideModel, setHideModal] = useState<boolean>(true);
   const [modelMsg, setModalMsg] = useState<string>("");
   const [profile, setProfile] = useState<Profile>(currProfile);
@@ -54,6 +64,11 @@ export const FormInputs = ({ currProfile, setCurrProfile }: FormInput) => {
 
   return (
     <>
+      <SharedProfileDialog
+        open={pendingUrlProfile !== null}
+        onAccept={onAcceptShared}
+        onReject={onRejectShared}
+      />
       <FormControl
         sx={{
           display: "flex",

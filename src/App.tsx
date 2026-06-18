@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout, WithInputs } from "./Layout";
 import { CurrentRatesTab } from "./pages/CurrentRatesTab";
@@ -9,21 +9,50 @@ import Profile, { NewProfile } from "./types/profile";
 import { STORE_KEY } from "./consts/keys";
 import { searchToProfile, profileToSearch } from "./logic/profileUrl";
 
+const defaults = NewProfile({});
+
 export const App = () => {
-  // 1. Determine initial profile: URL params > localStorage > defaults
+  const urlSearch = window.location.search;
+  const localStr = localStorage.getItem(STORE_KEY);
+  const localProfile: Profile = localStr ? JSON.parse(localStr) : defaults;
+  const urlProfile: Profile | null = urlSearch ? searchToProfile(urlSearch) : null;
+
+  // Conflict: URL profile exists, local has real data, and they differ
+  const hasConflict =
+    urlProfile !== null &&
+    localStr !== null &&
+    JSON.stringify(localProfile) !== JSON.stringify(defaults) &&
+    JSON.stringify(urlProfile) !== JSON.stringify(localProfile);
+
+  // Start with local profile; if no conflict, transparently load from URL
   const [currProfile, setCurrProfile] = useState<Profile>(() => {
-    const urlSearch = window.location.search;
-    if (urlSearch) {
-      const fromUrl = searchToProfile(urlSearch);
-      // Persist URL-derived profile so subsequent visits without URL still work
-      localStorage.setItem(STORE_KEY, JSON.stringify(fromUrl));
-      return fromUrl;
+    if (urlProfile && !hasConflict) {
+      localStorage.setItem(STORE_KEY, JSON.stringify(urlProfile));
+      return urlProfile;
     }
-    const localData = localStorage.getItem(STORE_KEY) ?? "";
-    return localData ? JSON.parse(localData) : NewProfile({});
+    return localProfile;
   });
 
-  // 2. Sync profile changes to localStorage + URL
+  // Pending URL profile waiting for user confirmation
+  const [pendingUrlProfile, setPendingUrlProfile] = useState<Profile | null>(
+    hasConflict ? urlProfile : null,
+  );
+
+  const onAcceptShared = useCallback(() => {
+    if (pendingUrlProfile) {
+      setCurrProfile(pendingUrlProfile);
+      localStorage.setItem(STORE_KEY, JSON.stringify(pendingUrlProfile));
+      setPendingUrlProfile(null);
+    }
+  }, [pendingUrlProfile]);
+
+  const onRejectShared = useCallback(() => {
+    setPendingUrlProfile(null);
+    // Clean URL params so the shared link doesn't re-trigger on refresh
+    window.history.replaceState(null, "", window.location.pathname);
+  }, []);
+
+  // Sync profile changes to localStorage + URL
   useEffect(() => {
     localStorage.setItem(STORE_KEY, JSON.stringify(currProfile));
     const search = profileToSearch(currProfile);
@@ -38,7 +67,13 @@ export const App = () => {
       <Routes>
         <Route
           element={
-            <Layout currProfile={currProfile} setCurrProfile={setCurrProfile} />
+            <Layout
+              currProfile={currProfile}
+              setCurrProfile={setCurrProfile}
+              pendingUrlProfile={pendingUrlProfile}
+              onAcceptShared={onAcceptShared}
+              onRejectShared={onRejectShared}
+            />
           }
         >
           {/* Pages that need the savings inputs */}

@@ -1,51 +1,28 @@
 import type Profile from "../types/profile";
 import { NewProfile } from "../types/profile";
 
-/**
- * Map of Profile field names to compact URL parameter keys.
- * Order: most commonly shared fields first for nicer URLs.
- */
-const FIELD_TO_PARAM: Record<keyof Profile, string> = {
-  Savings: "s",
-  Salary: "sal",
-  Spending: "sp",
-  Age: "a",
-  Investment: "inv",
-  Insurance: "ins",
-  GiroTransactions: "giro",
-  MonthlyAccIncrease: "inc",
-  LoanInstallment: "loan",
-  OneTimeLoan: "otl",
-  IsNTUCMember: "ntuc",
-};
+/** All Profile field names, derived from the type at runtime. */
+const PROFILE_FIELDS = Object.keys(NewProfile({})) as (keyof Profile)[];
 
-/** Reverse map: param key → Profile field name */
-const PARAM_TO_FIELD: Record<string, keyof Profile> = Object.fromEntries(
-  Object.entries(FIELD_TO_PARAM).map(([field, param]) => [param, field as keyof Profile]),
-);
-
-const defaultProfile = NewProfile({});
-
-/** Whether a field value is at its default (and can be omitted from the URL). */
-const isDefault = (field: keyof Profile, value: number | boolean): boolean => {
-  return value === defaultProfile[field];
-};
+const defaults = NewProfile({});
 
 /**
  * Serialize a Profile to a query string, omitting fields at their default values.
  * Returns only the `?key=value` portion (or empty string if nothing to serialize).
+ *
+ * Uses the Profile field name directly as the URL parameter key (e.g. ?Savings=50000).
  */
 export const profileToSearch = (profile: Profile): string => {
   const params = new URLSearchParams();
 
-  for (const field of Object.keys(FIELD_TO_PARAM) as (keyof Profile)[]) {
+  for (const field of PROFILE_FIELDS) {
     const value = profile[field];
-    if (isDefault(field, value)) continue;
+    if (value === defaults[field]) continue;
 
     if (typeof value === "boolean") {
-      if (value) params.set(FIELD_TO_PARAM[field], "1");
+      params.set(field, value ? "1" : "0");
     } else {
-      params.set(FIELD_TO_PARAM[field], String(value));
+      params.set(field, String(value));
     }
   }
 
@@ -56,6 +33,9 @@ export const profileToSearch = (profile: Profile): string => {
 /**
  * Parse a raw query string (with or without leading `?`) into a Profile,
  * merging with defaults for any missing fields.
+ *
+ * Only URL params whose key matches a Profile field name are processed —
+ * unrecognized params are silently ignored.
  */
 export const searchToProfile = (rawSearch: string): Profile => {
   const params = new URLSearchParams(
@@ -64,13 +44,12 @@ export const searchToProfile = (rawSearch: string): Profile => {
 
   const profile = NewProfile({});
 
-  for (const paramKey of Object.keys(PARAM_TO_FIELD)) {
-    const raw = params.get(paramKey);
+  for (const field of PROFILE_FIELDS) {
+    const raw = params.get(field);
     if (raw === null) continue;
 
-    const field = PARAM_TO_FIELD[paramKey];
     const num = Number(raw);
-    if (isNaN(num) || num < 0) continue; // ignore non-numeric / negative values
+    if (isNaN(num) || num < 0) continue;
 
     if (typeof profile[field] === "boolean") {
       (profile as unknown as Record<string, unknown>)[field] = num !== 0;

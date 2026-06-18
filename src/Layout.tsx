@@ -11,12 +11,21 @@ import type Profile from "./types/profile";
 interface LayoutProps {
   currProfile: Profile;
   setCurrProfile: (p: Profile) => void;
+  pendingUrlProfile: Profile | null;
+  onAcceptShared: () => void;
+  onRejectShared: () => void;
 }
 
 /**
  * Shared layout: Header, then page content via <Outlet>, then Footer.
  */
-export const Layout = ({ currProfile, setCurrProfile }: LayoutProps) => (
+export const Layout = ({
+  currProfile,
+  setCurrProfile,
+  pendingUrlProfile,
+  onAcceptShared,
+  onRejectShared,
+}: LayoutProps) => (
   <ThemeProvider theme={theme}>
     <GlobalStyles
       styles={{
@@ -34,7 +43,15 @@ export const Layout = ({ currProfile, setCurrProfile }: LayoutProps) => (
     <Box component="main" sx={{ marginTop: "20px", paddingBottom: "20px" }}>
       <Container>
         <ErrorBoundary>
-          <Outlet context={{ currProfile, setCurrProfile }} />
+          <Outlet
+            context={{
+              currProfile,
+              setCurrProfile,
+              pendingUrlProfile,
+              onAcceptShared,
+              onRejectShared,
+            }}
+          />
         </ErrorBoundary>
       </Container>
     </Box>
@@ -55,10 +72,17 @@ export const WithInputs = () => (
 
 /** Internal: reads profile state from Outlet context and renders FormInputs */
 const FormInputsWrapper = () => {
-  const { currProfile, setCurrProfile } = useOutletContext<LayoutProps>();
+  const { currProfile, setCurrProfile, pendingUrlProfile, onAcceptShared, onRejectShared } =
+    useOutletContext<LayoutProps>();
   return (
     <ErrorBoundary>
-      <FormInputs currProfile={currProfile} setCurrProfile={setCurrProfile} />
+      <FormInputs
+        currProfile={currProfile}
+        setCurrProfile={setCurrProfile}
+        pendingUrlProfile={pendingUrlProfile}
+        onAcceptShared={onAcceptShared}
+        onRejectShared={onRejectShared}
+      />
     </ErrorBoundary>
   );
 };
