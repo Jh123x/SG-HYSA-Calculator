@@ -163,7 +163,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           p: 2,
           borderRadius: "10px",
           backgroundColor: bgColor,
-          height: "45vh",
+          height: "40vh",
           display: "flex",
           flexDirection: "column",
         }}
@@ -197,6 +197,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
 
   const renderHistorySection = () => (
     <Paper component="section" aria-label="Rate change history and bank details" sx={{ p: 2, borderRadius: "10px", backgroundColor: bgColor }}>
+      <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, textTransform: "none", mb: 1.5, "&:hover": { color: primaryColor } }}>Back</Button>
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 1 }}>
         <Typography variant="h5" component="h2" sx={{ color: textColor, fontWeight: 700, mb: 0.5 }}>{info.name}</Typography>
         {info.url && (
@@ -255,9 +256,6 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   return (
     <Box component="article" aria-label={`${info.name} interest rate details`}>
       <ThreePanelLayout
-        top={
-          <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, textTransform: "none", "&:hover": { color: primaryColor } }}>Back</Button>
-        }
         bottomLeft={renderChart()}
         bottomRight={renderHistorySection()}
       />
