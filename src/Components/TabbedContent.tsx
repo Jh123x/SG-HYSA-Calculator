@@ -72,8 +72,19 @@ export const TabbedContent = () => {
           borderBottom: "1px solid rgba(255,255,255,0.08)",
         }}
       >
-        {/* Toggle button group — left-aligned, above inputs */}
-        <Box sx={{ display: "flex", justifyContent: "flex-start", mb: 2 }}>
+        {/* Input fields */}
+        <ErrorBoundary>
+          <FormInputs
+            currProfile={currProfile}
+            setCurrProfile={setCurrProfile}
+            pendingUrlProfile={pendingUrlProfile}
+            onAcceptShared={onAcceptShared}
+            onRejectShared={onRejectShared}
+          />
+        </ErrorBoundary>
+
+        {/* Toggle button group — left-aligned on desktop, below inputs on mobile */}
+        <Box sx={{ display: "flex", justifyContent: "flex-start", mt: 2 }}>
           <ToggleButtonGroup
             value={activeTab}
             exclusive
@@ -90,17 +101,6 @@ export const TabbedContent = () => {
             </ToggleButton>
           </ToggleButtonGroup>
         </Box>
-
-        {/* Input fields */}
-        <ErrorBoundary>
-          <FormInputs
-            currProfile={currProfile}
-            setCurrProfile={setCurrProfile}
-            pendingUrlProfile={pendingUrlProfile}
-            onAcceptShared={onAcceptShared}
-            onRejectShared={onRejectShared}
-          />
-        </ErrorBoundary>
       </Box>
 
       {/* ── Content area (scrollable) ── */}
@@ -109,7 +109,7 @@ export const TabbedContent = () => {
           flex: 1,
           minHeight: 0,
           overflowY: "auto",
-          py: 2,
+          py: { xs: 1, sm: 2 },
         }}
       >
         <ErrorBoundary>

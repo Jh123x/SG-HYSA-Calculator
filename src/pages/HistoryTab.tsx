@@ -34,6 +34,7 @@ import {
   Language,
 } from "@mui/icons-material";
 import { ComparisonChart } from "../Components/ComparisonChart";
+import { stripSourceFromSummary } from "../logic/sourceUtils";
 import { isValidSlug } from "../logic/slugs";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
@@ -196,7 +197,7 @@ export const HistoryTab = ({ profile }: Props) => {
 
   const isMaxed = selectedBanks.length >= MAX_COMPARISON_BANKS;
 
-  // Build grouped history data
+  // Build grouped history data (strip embedded "Source: URL" from summaries)
   const bankHistories: BankHistoryGroup[] = useMemo(() => {
     const result: BankHistoryGroup[] = [];
 
@@ -211,12 +212,18 @@ export const HistoryTab = ({ profile }: Props) => {
           .reverse()
           .map((snapshot) => {
             const isTbd = snapshot.date.getTime() === 0;
+            const { text, sourceUrl: extractedUrl } = stripSourceFromSummary(
+              snapshot.changeSummary,
+            );
+            const finalSourceUrl = snapshot.sourceUrl ?? extractedUrl ?? undefined;
             return {
               date: isTbd ? "TBD" : formatDate(snapshot.date),
-              changeSummary: snapshot.changeSummary,
-              yearlyInterest: isTbd ? "—" : `$${snapshot.yearlyInterest.toFixed(2)}`,
+              changeSummary: text,
+              yearlyInterest: isTbd
+                ? "—"
+                : `$${snapshot.yearlyInterest.toFixed(2)}`,
               eir: isTbd ? "—" : `${snapshot.eir.toFixed(2)}%`,
-              sourceUrl: snapshot.sourceUrl,
+              sourceUrl: finalSourceUrl,
             };
           }),
       });
@@ -433,18 +440,18 @@ export const HistoryTab = ({ profile }: Props) => {
       aria-label="Interest rate change history"
       sx={{ mt: 1, px: { xs: 0, sm: 0 } }}
     >
-      {/* ── Controls row: Toggle (left) | Bank dropdown (right) ── */}
+      {/* ── Controls row: Toggle above dropdown on mobile, side-by-side on desktop ── */}
       <Box
         sx={{
           display: "flex",
-          alignItems: "center",
+          flexDirection: isMobile ? "column" : "row",
+          alignItems: isMobile ? "stretch" : "center",
           justifyContent: "space-between",
-          gap: { xs: 1, sm: 2 },
+          gap: 1.5,
           mb: 2,
-          flexWrap: "wrap",
         }}
       >
-        {/* Metric toggle — left-aligned */}
+        {/* Metric toggle */}
         <ToggleButtonGroup
           value={chartMode}
           exclusive
@@ -459,8 +466,8 @@ export const HistoryTab = ({ profile }: Props) => {
           </ToggleButton>
         </ToggleButtonGroup>
 
-        {/* Bank multi-select dropdown — right-aligned */}
-        <FormControl size="small" sx={{ minWidth: { xs: 190, sm: 280 } }}>
+        {/* Bank multi-select dropdown */}
+        <FormControl size="small" sx={{ minWidth: 0, width: isMobile ? "100%" : { sm: 280 } }}>
           <Select
             multiple
             value={selectedBanks}
@@ -471,17 +478,23 @@ export const HistoryTab = ({ profile }: Props) => {
               }
             }}
             input={<OutlinedInput />}
-            renderValue={(selected) => (
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                {selected.map((slug) => (
-                  <Chip
-                    key={slug}
-                    label={displayNames[slug] ?? slug}
-                    size="small"
-                  />
-                ))}
-              </Box>
-            )}
+            renderValue={(selected) =>
+              isMobile && selected.length > 2 ? (
+                <Typography variant="body2" sx={{ color: textColor }}>
+                  {selected.length} banks selected
+                </Typography>
+              ) : (
+                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+                  {selected.map((slug) => (
+                    <Chip
+                      key={slug}
+                      label={displayNames[slug] ?? slug}
+                      size="small"
+                    />
+                  ))}
+                </Box>
+              )
+            }
             displayEmpty
             sx={{
               color: textColor,

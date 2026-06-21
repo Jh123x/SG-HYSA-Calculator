@@ -29,6 +29,7 @@ import type Profile from "../types/profile";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { jaroWinkler } from "../logic/fuzzyMatch";
 import { dateFormatter } from "../consts/formatter";
+import { stripSourceFromSummary } from "../logic/sourceUtils";
 
 interface BankDetailPageProps {
   profile: Profile;
@@ -411,13 +412,17 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
               .sort((a, b) => b.date.getTime() - a.date.getTime())
               .map((snapshot, idx) => {
                 const isTbd = snapshot.date.getTime() === 0;
+                const { text, sourceUrl: extractedUrl } = stripSourceFromSummary(
+                  snapshot.changeSummary,
+                );
+                const finalSourceUrl = snapshot.sourceUrl ?? extractedUrl ?? undefined;
                 return (
                   <TableRow key={idx}>
                     <TableCell sx={{ color: textColor }}>
                       {isTbd ? "TBD" : formatDate(snapshot.date)}
                     </TableCell>
                     <TableCell sx={{ color: textColor }}>
-                      {snapshot.changeSummary}
+                      {text}
                     </TableCell>
                     <TableCell sx={{ color: textColor, textAlign: "right" }}>
                       {isTbd ? "—" : `$${snapshot.yearlyInterest.toFixed(2)}`}
@@ -428,11 +433,11 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
                     <TableCell
                       sx={{ color: textColor, textAlign: "center", p: 0.5 }}
                     >
-                      {snapshot.sourceUrl && (
+                      {finalSourceUrl ? (
                         <Tooltip title="Visit source page">
                           <IconButton
                             size="small"
-                            href={snapshot.sourceUrl}
+                            href={finalSourceUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{ color: primaryColor }}
@@ -440,7 +445,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
                             <OpenInNewIcon fontSize="small" />
                           </IconButton>
                         </Tooltip>
-                      )}
+                      ) : null}
                     </TableCell>
                   </TableRow>
                 );

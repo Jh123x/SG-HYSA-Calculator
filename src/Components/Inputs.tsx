@@ -141,8 +141,9 @@ export const FormInputs = ({
         sx={{
           marginTop: "20px",
           display: "flex",
+          flexDirection: { xs: "column", sm: "row" },
           justifyContent: "flex-end",
-          alignItems: "center",
+          alignItems: { xs: "stretch", sm: "center" },
           gap: "10px",
         }}
       >
@@ -156,31 +157,34 @@ export const FormInputs = ({
             borderColor: "rgba(255,255,255,0.15)",
             opacity: 0.8,
             fontSize: "0.75rem",
-            mr: "auto",
+            alignSelf: { xs: "center", sm: "auto" },
+            mr: { sm: "auto" },
           }}
         />
-        <Button
-          key="clear-btn"
-          sx={{
-            backgroundColor: dangerColor,
-            color: textColor,
-            padding: "10px 20px",
-            borderRadius: "8px",
-            "&:hover": {
-              backgroundColor: "#d32f2f",
-            },
-          }}
-          type="button"
-          onClick={onClear}
-        >
-          Clear
-        </Button>
-        <ShareButton
-          profile={currProfile}
-          onCopied={() =>
-            addNotification("Profile URL copied to clipboard!", "success")
-          }
-        />
+        <Box sx={{ display: "flex", gap: 1, justifyContent: "flex-end" }}>
+          <Button
+            key="clear-btn"
+            sx={{
+              backgroundColor: dangerColor,
+              color: textColor,
+              padding: "10px 20px",
+              borderRadius: "8px",
+              "&:hover": {
+                backgroundColor: "#d32f2f",
+              },
+            }}
+            type="button"
+            onClick={onClear}
+          >
+            Clear
+          </Button>
+          <ShareButton
+            profile={currProfile}
+            onCopied={() =>
+              addNotification("Profile URL copied to clipboard!", "success")
+            }
+          />
+        </Box>
       </Box>
       <NotificationStack>
         {notifications.map((n) => (

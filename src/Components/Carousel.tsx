@@ -60,6 +60,7 @@ export const Carousel = ({
               flex: "0 0 100%",
               scrollSnapAlign: "start",
               px: { xs: 0.5, sm: 1 },
+              alignSelf: "stretch",
             }}
           >
             {child}
