@@ -185,7 +185,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
             yAxis={[{ label: yLabel, scaleType: "linear", min: 0, valueFormatter: yFormatter }]}
             height={isMobile ? 300 : undefined}
             grid={{ vertical: true, horizontal: true }}
-            sx={{ ".MuiChartsAxis-label": { fill: textColor }, ".MuiChartsAxis-tick": { fill: textColor }, ".MuiChartsLegend-label": { fill: textColor }, "& .MuiChartsSurface-root": { background: "transparent" }, height: "100%", width: "100%" }}
+            sx={{ ".MuiChartsAxis-label": { fill: textColor }, ".MuiChartsAxis-tick": { fill: textColor }, ".MuiChartsLegend-label": { fill: textColor }, "& .MuiChartsSurface-root": { background: "transparent" }, width: "100%", ...(isMobile ? {} : { height: "100%" }) }}
           />
         </Box>
         <Typography variant="caption" sx={{ color: textColor, display: "block", textAlign: "left", mt: 1, opacity: 0.6 }}>

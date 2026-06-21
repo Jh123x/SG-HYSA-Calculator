@@ -117,6 +117,7 @@ const BottomPanel = ({ children }: { children?: React.ReactNode }) => (
     sx={{
       flex: 1,
       minWidth: 0,
+      minHeight: 0,  // prevent flex child from expanding beyond container
       overflow: "auto",
     }}
   >

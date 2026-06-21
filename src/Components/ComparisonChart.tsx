@@ -210,7 +210,7 @@ const ComparisonChartContent = ({
                 position: { vertical: "bottom", horizontal: "center" },
               },
             }}
-            sx={{ ...AXIS_SX, height: "100%", width: "100%" }}
+            sx={{ ...AXIS_SX, width: "100%", ...(isMobile ? {} : { height: "100%" }) }}
           />
         </Box>
       </Paper>

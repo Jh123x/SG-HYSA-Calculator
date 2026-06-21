@@ -9,7 +9,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
       class="MuiBox-root css-19zgt1b"
     >
       <div
-        class="MuiBox-root css-1qzm8v9"
+        class="MuiBox-root css-1r0qzm1"
       >
         <div
           class="MuiBox-root css-dqo70j"
@@ -1340,7 +1340,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiBox-root css-1qzm8v9"
+        class="MuiBox-root css-1r0qzm1"
       >
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-5kf18n-MuiPaper-root"
