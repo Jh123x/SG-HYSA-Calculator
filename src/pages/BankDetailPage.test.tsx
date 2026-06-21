@@ -42,6 +42,6 @@ describe("BankDetailPage", () => {
 
   it("renders the EIR over time chart section", () => {
     renderAt("/bank/gxs-savings-account");
-    expect(screen.getByText("Interest Rate Over Time")).toBeDefined();
+    expect(screen.getByText("Yearly $")).toBeDefined();
   });
 });

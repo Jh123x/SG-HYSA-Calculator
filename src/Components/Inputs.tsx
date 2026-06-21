@@ -42,6 +42,8 @@ interface FormInput {
   pendingUrlProfile: Profile | null;
   onAcceptShared: () => void;
   onRejectShared: () => void;
+  /** Content to render on the left side of the Clear/Share action bar */
+  leftChildren?: React.ReactNode;
 }
 
 export const FormInputs = ({
@@ -50,6 +52,7 @@ export const FormInputs = ({
   pendingUrlProfile,
   onAcceptShared,
   onRejectShared,
+  leftChildren,
 }: FormInput) => {
   const [profile, setProfile] = useState<Profile>(currProfile);
   const [notifications, setNotifications] = useState<Notification[]>([]);
@@ -142,25 +145,27 @@ export const FormInputs = ({
           marginTop: "20px",
           display: "flex",
           flexDirection: { xs: "column", sm: "row" },
-          justifyContent: { xs: "stretch", sm: "flex-end" },
+          justifyContent: "space-between",
           alignItems: { xs: "stretch", sm: "center" },
           gap: "10px",
         }}
       >
-        {/* Desktop: chip tight to left of Clear. Mobile: centred above buttons */}
-        <Chip
-          icon={<LockOutlinedIcon />}
-          label="All data stays on your device"
-          size="small"
-          variant="outlined"
-          sx={{
-            color: textColor,
-            borderColor: "rgba(255,255,255,0.15)",
-            opacity: 0.8,
-            fontSize: "0.75rem",
-            alignSelf: { xs: "center", sm: "auto" },
-          }}
-        />
+        {/* Left: tab toggle (passed from TabbedContent) + privacy chip */}
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1, flexWrap: "wrap" }}>
+          {leftChildren}
+          <Chip
+            icon={<LockOutlinedIcon />}
+            label="All data stays on your device"
+            size="small"
+            variant="outlined"
+            sx={{
+              color: textColor,
+              borderColor: "rgba(255,255,255,0.15)",
+              opacity: 0.8,
+              fontSize: "0.75rem",
+            }}
+          />
+        </Box>
         <Box sx={{ display: "flex", gap: 1, justifyContent: "flex-end" }}>
           <Button
             key="clear-btn"

@@ -9,12 +9,25 @@ import {
   type ChartLine,
 } from "./InterestVsSavingsChart";
 
+const HEIGHT_SX = {
+  ".MuiLineElement-root": { display: "none" },
+};
+
+const AST_RINKS_SX = {
+  color: textColor,
+  display: "block",
+  textAlign: "center",
+  marginTop: "10px",
+  opacity: 0.8,
+};
+
 export const InterestGraph = ({
   profile,
   height = 500,
 }: {
   profile: Profile;
-  height?: number;
+  /** Fixed pixel height, or "fill" to expand to container */
+  height?: number | "fill";
 }) => {
   const lines: ChartLine[] = Object.entries(bankInfo)
     .filter(([, value]) => value.history.length > 0)
@@ -35,12 +48,17 @@ export const InterestGraph = ({
         borderRadius: "10px",
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
         backgroundColor: "background.paper",
-        height: "100%",
+        height: height === "fill" ? "100%" : "auto",
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <InterestVsSavingsChart lines={lines} profile={profile} height={height}>
+      <InterestVsSavingsChart
+        lines={lines}
+        profile={profile}
+        height={height === "fill" ? undefined : height}
+        containerSx={height === "fill" ? { flex: 1, minHeight: 0 } : undefined}
+      >
         <ChartsReferenceLine
           x={profile.Savings}
           label="Your savings"
@@ -51,16 +69,7 @@ export const InterestGraph = ({
           }}
         />
       </InterestVsSavingsChart>
-      <Typography
-        variant="caption"
-        sx={{
-          color: textColor,
-          display: "block",
-          textAlign: "center",
-          marginTop: "10px",
-          opacity: 0.8,
-        }}
-      >
+      <Typography variant="caption" sx={AST_RINKS_SX}>
         * Graph shows interest rates for savings from $0 to $200,000, covering
         typical savings account ranges
       </Typography>

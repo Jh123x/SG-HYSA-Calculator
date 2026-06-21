@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import {
   Typography,
   Paper,
+  Box,
 } from "@mui/material";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, bgColor } from "../consts/colors";
@@ -172,14 +173,17 @@ const ComparisonChartContent = ({
     : (v: number) => `${v.toFixed(1)}%`;
 
   return (
-    <>
+    <Box sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
       {/* ── Chart ─────────────────────────────────────────────────── */}
       <Paper
         sx={{
           p: 3,
           borderRadius: "10px",
           backgroundColor: bgColor,
-          mb: 3,
+          flex: 1,
+          minHeight: 0,
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         <LineChart
@@ -202,7 +206,7 @@ const ComparisonChartContent = ({
               position: { vertical: "bottom", horizontal: "center" },
             },
           }}
-          sx={AXIS_SX}
+          sx={{ ...AXIS_SX }}
         />
       </Paper>
 
@@ -212,14 +216,13 @@ const ComparisonChartContent = ({
           color: textColor,
           display: "block",
           textAlign: "left",
-          mt: -2,
-          mb: 3,
+          mt: 1,
           opacity: 0.6,
         }}
       >
         * The &ldquo;updated at&rdquo; date reflects when this calculator was
         updated, which may differ from the date the bank published the change.
       </Typography>
-    </>
+    </Box>
   );
 };

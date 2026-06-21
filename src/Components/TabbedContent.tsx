@@ -51,13 +51,31 @@ export const TabbedContent = () => {
   return <TabbedContentDesktop ctx={ctx} />;
 };
 
-// ── Desktop: fixed-height top section, scrollable content ────────
+// ── Desktop: inputs (natural height) → content fills viewport ──
 
 const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
   const { currProfile, setCurrProfile, pendingUrlProfile, onAcceptShared, onRejectShared } = ctx;
   const navigate = useNavigate();
   const location = useLocation();
   const activeTab = location.pathname === "/history" ? "history" : "current";
+
+  const toggleGroup = (
+    <ToggleButtonGroup
+      value={activeTab}
+      exclusive
+      onChange={(_, v) => {
+        if (v) navigate(v === "history" ? "/history" : "/");
+      }}
+      size="small"
+    >
+      <ToggleButton value="current" sx={TOGGLE_SX}>
+        Current Rates
+      </ToggleButton>
+      <ToggleButton value="history" sx={TOGGLE_SX}>
+        Rate Change History
+      </ToggleButton>
+    </ToggleButtonGroup>
+  );
 
   return (
     <Box
@@ -70,12 +88,10 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
         overflow: "hidden",
       }}
     >
-      {/* Top section: Inputs + Toggle (scrollable) */}
+      {/* Inputs — natural height, no internal scroll */}
       <Box
         sx={{
           flexShrink: 0,
-          overflowY: "auto",
-          maxHeight: "50vh",
           pt: 2,
           pb: 1,
           borderBottom: "1px solid rgba(255,255,255,0.08)",
@@ -88,30 +104,13 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
             pendingUrlProfile={pendingUrlProfile}
             onAcceptShared={onAcceptShared}
             onRejectShared={onRejectShared}
+            leftChildren={toggleGroup}
           />
         </ErrorBoundary>
-
-        <Box sx={{ display: "flex", justifyContent: "flex-start", mt: 2 }}>
-          <ToggleButtonGroup
-            value={activeTab}
-            exclusive
-            onChange={(_, v) => {
-              if (v) navigate(v === "history" ? "/history" : "/");
-            }}
-            size="small"
-          >
-            <ToggleButton value="current" sx={TOGGLE_SX}>
-              Current Rates
-            </ToggleButton>
-            <ToggleButton value="history" sx={TOGGLE_SX}>
-              Rate Change History
-            </ToggleButton>
-          </ToggleButtonGroup>
-        </Box>
       </Box>
 
-      {/* Content area (scrollable) */}
-      <Box sx={{ flex: 1, minHeight: 0, overflowY: "auto", py: 2 }}>
+      {/* Content — fills remaining viewport, panels handle their own scroll */}
+      <Box sx={{ flex: 1, minHeight: 0, overflow: "hidden" }}>
         <ErrorBoundary>
           <Outlet />
         </ErrorBoundary>

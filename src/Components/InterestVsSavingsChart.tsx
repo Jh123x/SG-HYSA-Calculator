@@ -14,11 +14,14 @@ export interface ChartLine {
 interface Props {
   lines: ChartLine[];
   profile: Profile;
+  /** Pixel height; when undefined the chart fills its container via flex */
   height?: number;
   /** Enable click-to-toggle behaviour on legend items (default true). */
   enableLegendToggle?: boolean;
   /** Optional children (e.g. ChartsReferenceLine) */
   children?: React.ReactNode;
+  /** Optional sx to apply to the wrapper Box (used for flex fill) */
+  containerSx?: Record<string, unknown>;
 }
 
 /**
@@ -36,6 +39,7 @@ export const InterestVsSavingsChart = ({
   height = 300,
   enableLegendToggle = true,
   children,
+  containerSx,
 }: Props) => {
   const isMobile = useMediaQuery("(max-width:600px)");
 
@@ -90,7 +94,7 @@ export const InterestVsSavingsChart = ({
       };
 
   return (
-    <Box>
+    <Box sx={containerSx}>
       <LineChart
         dataset={data}
         margin={{ right: isMobile ? 20 : 40 }}
@@ -118,6 +122,7 @@ export const InterestVsSavingsChart = ({
           ".MuiChartsAxis-label": { fill: textColor },
           ".MuiChartsAxis-tick": { fill: textColor },
           ".MuiChartsLegend-label": { fill: textColor },
+          ...(height === undefined ? { height: "100%", width: "100%" } : {}),
         }}
       >
         {children}

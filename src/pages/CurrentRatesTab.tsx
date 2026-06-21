@@ -96,33 +96,32 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
   };
 
   return (
-    <Box component="section" aria-label="Current interest rates comparison" sx={{ mt: 1 }}>
-      <Box sx={{ display: "flex", gap: 2, alignItems: "flex-start" }}>
-        {/* Left: Graph + asterisks */}
-        <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
-          <InterestGraph profile={profile} height={380} />
-          <Typography
-            variant="caption"
-            sx={{ color: textColor, display: "block", textAlign: "left", opacity: 0.7, mt: 1 }}
-          >
-            * Interest rates on their respective websites are subject to change without notice.
-            <br />
-            ** Please do your own research before making any decisions.
-            <br />
-            *** Ask for referrals to get additional bonuses.
-          </Typography>
-        </Box>
-        {/* Right: Scrollable table */}
-        <Box sx={{ flex: "1 1 55%", minWidth: 0, maxHeight: "calc(100vh - 320px)", overflowY: "auto" }}>
-          <TableContainer
-            component={Paper}
-            sx={{
-              borderRadius: "10px",
-              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-              flex: 1,
-              minWidth: 0,
-            }}
-          >
+    <Box component="section" aria-label="Current interest rates comparison" sx={{ height: "100%", display: "flex", gap: 2, alignItems: "stretch", pt: 1.5 }}>
+      {/* Left: Graph + asterisks */}
+      <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
+        <InterestGraph profile={profile} height="fill" />
+        <Typography
+          variant="caption"
+          sx={{ color: textColor, display: "block", textAlign: "left", opacity: 0.7, mt: 1 }}
+        >
+          * Interest rates on their respective websites are subject to change without notice.
+          <br />
+          ** Please do your own research before making any decisions.
+          <br />
+          *** Ask for referrals to get additional bonuses.
+        </Typography>
+      </Box>
+      {/* Right: Table — single internal scrollbar */}
+      <Box sx={{ flex: "1 1 55%", minWidth: 0 }}>
+        <TableContainer
+          component={Paper}
+          sx={{
+            borderRadius: "10px",
+            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+            maxHeight: "100%",
+            overflow: "auto",
+          }}
+        >
             <Table aria-label="High yield savings account interest rate comparison table" size="small">
               <TableHead>
                 <TableRow sx={{ color: textColor, backgroundColor: bgColor }}>
@@ -190,8 +189,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
                 ))}
               </TableBody>
             </Table>
-          </TableContainer>
-        </Box>
+        </TableContainer>
       </Box>
     </Box>
   );
