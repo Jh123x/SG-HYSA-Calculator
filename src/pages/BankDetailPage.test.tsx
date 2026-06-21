@@ -57,8 +57,10 @@ describe("BankDetailPage desktop", () => {
   });
 
   it("should match snapshot", () => {
+    vi.setSystemTime(new Date("2026-06-21T06:00:00Z"));
     const { asFragment } = renderAt("/bank/gxs-savings-account");
     expect(asFragment()).toMatchSnapshot();
+    vi.useRealTimers();
   });
 });
 
@@ -68,7 +70,9 @@ describe("BankDetailPage mobile", () => {
   });
 
   it("should match snapshot", () => {
+    vi.setSystemTime(new Date("2026-06-21T06:00:00Z"));
     const { asFragment } = renderAt("/bank/gxs-savings-account");
     expect(asFragment()).toMatchSnapshot();
+    vi.useRealTimers();
   });
 });
