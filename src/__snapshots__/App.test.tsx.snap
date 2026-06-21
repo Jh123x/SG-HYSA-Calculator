@@ -758,7 +758,7 @@ exports[`App > should render correctly 1`] = `
                       <span
                         class="MuiChartsLabel-root MuiChartsLegend-label"
                       >
-                        UOB One Account
+                        UOB One
                       </span>
                     </button>
                   </li>
@@ -798,7 +798,7 @@ exports[`App > should render correctly 1`] = `
                       <span
                         class="MuiChartsLabel-root MuiChartsLegend-label"
                       >
-                        OCBC 360 Account
+                        OCBC 360
                       </span>
                     </button>
                   </li>
@@ -838,7 +838,7 @@ exports[`App > should render correctly 1`] = `
                       <span
                         class="MuiChartsLabel-root MuiChartsLegend-label"
                       >
-                        Mari Savings Account
+                        Mari Savings
                       </span>
                     </button>
                   </li>
@@ -998,7 +998,7 @@ exports[`App > should render correctly 1`] = `
                       <span
                         class="MuiChartsLabel-root MuiChartsLegend-label"
                       >
-                        DBS Multiplier Account
+                        DBS Multiplier
                       </span>
                     </button>
                   </li>
@@ -1038,7 +1038,7 @@ exports[`App > should render correctly 1`] = `
                       <span
                         class="MuiChartsLabel-root MuiChartsLegend-label"
                       >
-                        GXS Savings Account
+                        GXS Savings
                       </span>
                     </button>
                   </li>
@@ -1278,7 +1278,7 @@ exports[`App > should render correctly 1`] = `
                       <span
                         class="MuiChartsLabel-root MuiChartsLegend-label"
                       >
-                        Citi Wealth First Account
+                        Citi Wealth First
                       </span>
                     </button>
                   </li>
@@ -2238,7 +2238,7 @@ exports[`App > should render correctly 1`] = `
                       role="button"
                       tabindex="0"
                     >
-                      Account Name
+                      Account
                       <svg
                         aria-hidden="true"
                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon"
@@ -2329,7 +2329,7 @@ exports[`App > should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
                   >
-                    UOB One Account
+                    UOB One
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -2408,7 +2408,7 @@ exports[`App > should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
                   >
-                    OCBC 360 Account
+                    OCBC 360
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -2487,7 +2487,7 @@ exports[`App > should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
                   >
-                    Mari Savings Account
+                    Mari Savings
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -2812,7 +2812,7 @@ exports[`App > should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
                   >
-                    DBS Multiplier Account
+                    DBS Multiplier
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -2893,7 +2893,7 @@ exports[`App > should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
                   >
-                    GXS Savings Account
+                    GXS Savings
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -3410,7 +3410,7 @@ exports[`App > should render correctly 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
                   >
-                    Citi Wealth First Account
+                    Citi Wealth First
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
@@ -3603,7 +3603,7 @@ exports[`App > should render correctly 1`] = `
                               rel="noopener noreferrer"
                               target="_blank"
                             >
-                              OCBC 360 Account
+                              OCBC 360
                             </a>
                             <span
                               class="MuiTypography-root MuiTypography-body1 css-wna78q-MuiTypography-root"
@@ -3620,7 +3620,7 @@ exports[`App > should render correctly 1`] = `
                               rel="noopener noreferrer"
                               target="_blank"
                             >
-                              UOB One Account
+                              UOB One
                             </a>
                             <span
                               class="MuiTypography-root MuiTypography-body1 css-wna78q-MuiTypography-root"
@@ -3730,7 +3730,7 @@ exports[`App > should render correctly 1`] = `
                               rel="noopener noreferrer"
                               target="_blank"
                             >
-                              UOB One Account Rate Revision (Dec 2025)
+                              UOB One Rate Revision (Dec 2025)
                             </a>
                             <span
                               class="MuiTypography-root MuiTypography-body1 css-wna78q-MuiTypography-root"
@@ -3857,7 +3857,7 @@ exports[`App > should render correctly 1`] = `
                               rel="noopener noreferrer"
                               target="_blank"
                             >
-                              UOB One Account — Balance Cap
+                              UOB One — Balance Cap
                             </a>
                             <span
                               class="MuiTypography-root MuiTypography-body1 css-wna78q-MuiTypography-root"

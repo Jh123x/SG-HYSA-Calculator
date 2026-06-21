@@ -37,7 +37,7 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
           label="Your savings"
           lineStyle={{
             stroke: lineColors[0],
-            strokeWidth: 2,
+            strokeWidth: 1,
             strokeDasharray: "6 3",
           }}
         />

@@ -7,10 +7,13 @@ describe("buildComparisonSeries", () => {
   });
 
   it("builds series for known banks", () => {
-    const series = buildComparisonSeries(["gxs-savings-account"], "yearlyInterest");
+    const series = buildComparisonSeries(
+      ["gxs-savings-account"],
+      "yearlyInterest",
+    );
     expect(series).toHaveLength(1);
     expect(series[0].dataKey).toBe("gxs-savings-account_yearlyInterest");
-    expect(series[0].label).toContain("GXS Savings Account");
+    expect(series[0].label).toContain("GXS Savings");
     expect(series[0].showMark).toBe(true);
     expect(series[0].curve).toBe("stepAfter");
   });
@@ -32,7 +35,10 @@ describe("buildComparisonSeries", () => {
   });
 
   it("valueFormatter: yearlyInterest formats as dollar", () => {
-    const series = buildComparisonSeries(["gxs-savings-account"], "yearlyInterest");
+    const series = buildComparisonSeries(
+      ["gxs-savings-account"],
+      "yearlyInterest",
+    );
     expect(series[0].valueFormatter(123.456)).toBe("$123.46");
   });
 
@@ -42,7 +48,10 @@ describe("buildComparisonSeries", () => {
   });
 
   it("valueFormatter returns empty for null", () => {
-    const series = buildComparisonSeries(["gxs-savings-account"], "yearlyInterest");
+    const series = buildComparisonSeries(
+      ["gxs-savings-account"],
+      "yearlyInterest",
+    );
     expect(series[0].valueFormatter(null)).toBe("");
   });
 });

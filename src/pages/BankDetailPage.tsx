@@ -23,6 +23,7 @@ import { formatDate } from "../logic/dates";
 import type Profile from "../types/profile";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { jaroWinkler } from "../logic/fuzzyMatch";
+import { dateFormatter } from "../consts/formatter";
 
 interface BankDetailPageProps {
   profile: Profile;
@@ -109,10 +110,9 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   useEffect(() => {
     if (!suggestion) return;
     if (countdown <= 0) {
-      navigate(
-        suggestion.slug === "/" ? "/" : `/bank/${suggestion.slug}`,
-        { replace: true },
-      );
+      navigate(suggestion.slug === "/" ? "/" : `/bank/${suggestion.slug}`, {
+        replace: true,
+      });
       return;
     }
     const timer = setTimeout(() => setCountdown((c) => c - 1), 1000);
@@ -185,7 +185,11 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     }));
 
   return (
-    <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ mt: 3 }}>
+    <Box
+      component="article"
+      aria-label={`${info.name} interest rate details`}
+      sx={{ mt: 3 }}
+    >
       {/* Back button */}
       <Button
         startIcon={<ArrowBackIcon />}
@@ -210,17 +214,26 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           mb: 3,
         }}
       >
-        <Typography variant="h5" component="h2" sx={{ color: textColor, fontWeight: 700, mb: 1 }}>
+        <Typography
+          variant="h5"
+          component="h2"
+          sx={{ color: textColor, fontWeight: 700, mb: 1 }}
+        >
           {info.name}
         </Typography>
         <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 2 }}>
-          {resolved.length > 0 && resolved[resolved.length - 1].date.getTime() !== 0 && (
-            <Chip
-              label={`Current EIR: ${resolved[resolved.length - 1].eir.toFixed(2)}%`}
-              size="small"
-              sx={{ backgroundColor: primaryColor, color: "#fff", fontWeight: 600 }}
-            />
-          )}
+          {resolved.length > 0 &&
+            resolved[resolved.length - 1].date.getTime() !== 0 && (
+              <Chip
+                label={`Current EIR: ${resolved[resolved.length - 1].eir.toFixed(2)}%`}
+                size="small"
+                sx={{
+                  backgroundColor: primaryColor,
+                  color: "#fff",
+                  fontWeight: 600,
+                }}
+              />
+            )}
           <Chip
             label={`${info.history.length} rate snapshot${info.history.length !== 1 ? "s" : ""}`}
             size="small"
@@ -257,12 +270,13 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
               {
                 dataKey: "date",
                 label: "Date",
-                scaleType: "time",
+                scaleType: "time" as const,
                 tickLabelStyle: {
                   angle: 45,
                   textAnchor: "start" as const,
                   fontSize: 11,
                 },
+                valueFormatter: dateFormatter,
               },
             ]}
             series={[
@@ -352,31 +366,25 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
             </TableHead>
             <TableBody>
               {resolved
-                .sort(
-                  (a, b) => b.date.getTime() - a.date.getTime(),
-                )
+                .sort((a, b) => b.date.getTime() - a.date.getTime())
                 .map((snapshot, idx) => {
                   const isTbd = snapshot.date.getTime() === 0;
                   return (
-                  <TableRow key={idx}>
-                    <TableCell sx={{ color: textColor }}>
-                      {isTbd ? "TBD" : formatDate(snapshot.date)}
-                    </TableCell>
-                    <TableCell sx={{ color: textColor }}>
-                      {snapshot.changeSummary}
-                    </TableCell>
-                    <TableCell sx={{ color: textColor, textAlign: "right" }}>
-                      {isTbd
-                        ? "—"
-                        : `$${snapshot.yearlyInterest.toFixed(2)}`}
-                    </TableCell>
-                    <TableCell sx={{ color: textColor, textAlign: "right" }}>
-                      {isTbd
-                        ? "—"
-                        : `${snapshot.eir.toFixed(2)}%`}
-                    </TableCell>
-                  </TableRow>
-                );
+                    <TableRow key={idx}>
+                      <TableCell sx={{ color: textColor }}>
+                        {isTbd ? "TBD" : formatDate(snapshot.date)}
+                      </TableCell>
+                      <TableCell sx={{ color: textColor }}>
+                        {snapshot.changeSummary}
+                      </TableCell>
+                      <TableCell sx={{ color: textColor, textAlign: "right" }}>
+                        {isTbd ? "—" : `$${snapshot.yearlyInterest.toFixed(2)}`}
+                      </TableCell>
+                      <TableCell sx={{ color: textColor, textAlign: "right" }}>
+                        {isTbd ? "—" : `${snapshot.eir.toFixed(2)}%`}
+                      </TableCell>
+                    </TableRow>
+                  );
                 })}
             </TableBody>
           </Table>

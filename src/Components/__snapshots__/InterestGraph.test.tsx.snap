@@ -51,7 +51,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                UOB One Account
+                UOB One
               </span>
             </button>
           </li>
@@ -91,7 +91,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                OCBC 360 Account
+                OCBC 360
               </span>
             </button>
           </li>
@@ -131,7 +131,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Mari Savings Account
+                Mari Savings
               </span>
             </button>
           </li>
@@ -291,7 +291,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                DBS Multiplier Account
+                DBS Multiplier
               </span>
             </button>
           </li>
@@ -331,7 +331,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                GXS Savings Account
+                GXS Savings
               </span>
             </button>
           </li>
@@ -571,7 +571,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Citi Wealth First Account
+                Citi Wealth First
               </span>
             </button>
           </li>
@@ -1557,7 +1557,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                UOB One Account
+                UOB One
               </span>
             </button>
           </li>
@@ -1597,7 +1597,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                OCBC 360 Account
+                OCBC 360
               </span>
             </button>
           </li>
@@ -1637,7 +1637,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Mari Savings Account
+                Mari Savings
               </span>
             </button>
           </li>
@@ -1797,7 +1797,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                DBS Multiplier Account
+                DBS Multiplier
               </span>
             </button>
           </li>
@@ -1837,7 +1837,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                GXS Savings Account
+                GXS Savings
               </span>
             </button>
           </li>
@@ -2077,7 +2077,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Citi Wealth First Account
+                Citi Wealth First
               </span>
             </button>
           </li>

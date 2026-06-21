@@ -157,7 +157,7 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                     onClick={() => handleSort("name")}
                     sx={sortIconSx}
                   >
-                    Account Name
+                    Account
                   </TableSortLabel>
                 </TableCell>
                 <TableCell

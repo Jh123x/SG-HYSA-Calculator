@@ -17,6 +17,7 @@ import {
   buildComparisonDataset,
 } from "./comparison/buildDataset";
 import { buildComparisonSeries } from "./comparison/buildSeries";
+import { dateFormatter } from "../consts/formatter";
 
 interface ComparisonChartProps {
   selectedBanks: string[];
@@ -98,10 +99,7 @@ export const ComparisonChart = ({
   }
 
   return (
-    <ComparisonChartContent
-      selectedBanks={selectedBanks}
-      profile={profile}
-    />
+    <ComparisonChartContent selectedBanks={selectedBanks} profile={profile} />
   );
 };
 
@@ -118,6 +116,7 @@ const X_AXIS = [
       textAnchor: "start" as const,
       fontSize: 11,
     },
+    valueFormatter: dateFormatter,
   },
 ];
 
@@ -152,7 +151,10 @@ const ComparisonChartContent = ({
       allDates,
     );
 
-    const yearlySeriesArr = buildComparisonSeries(selectedBanks, "yearlyInterest");
+    const yearlySeriesArr = buildComparisonSeries(
+      selectedBanks,
+      "yearlyInterest",
+    );
     const eirSeriesArr = buildComparisonSeries(selectedBanks, "eir");
 
     return {

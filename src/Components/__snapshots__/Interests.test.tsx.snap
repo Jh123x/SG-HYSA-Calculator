@@ -27,7 +27,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                 role="button"
                 tabindex="0"
               >
-                Account Name
+                Account
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon"
@@ -118,7 +118,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              UOB One Account
+              UOB One
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -159,7 +159,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              OCBC 360 Account
+              OCBC 360
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -200,7 +200,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              Mari Savings Account
+              Mari Savings
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -373,7 +373,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              DBS Multiplier Account
+              DBS Multiplier
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -416,7 +416,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              GXS Savings Account
+              GXS Savings
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -705,7 +705,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              Citi Wealth First Account
+              Citi Wealth First
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -805,7 +805,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  UOB One Account
+                  UOB One
                 </span>
               </button>
             </li>
@@ -845,7 +845,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  OCBC 360 Account
+                  OCBC 360
                 </span>
               </button>
             </li>
@@ -885,7 +885,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  Mari Savings Account
+                  Mari Savings
                 </span>
               </button>
             </li>
@@ -1045,7 +1045,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  DBS Multiplier Account
+                  DBS Multiplier
                 </span>
               </button>
             </li>
@@ -1085,7 +1085,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  GXS Savings Account
+                  GXS Savings
                 </span>
               </button>
             </li>
@@ -1325,7 +1325,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  Citi Wealth First Account
+                  Citi Wealth First
                 </span>
               </button>
             </li>
@@ -2160,7 +2160,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                 role="button"
                 tabindex="0"
               >
-                Account Name
+                Account
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon"
@@ -2251,7 +2251,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              UOB One Account
+              UOB One
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -2292,7 +2292,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              OCBC 360 Account
+              OCBC 360
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -2333,7 +2333,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              Mari Savings Account
+              Mari Savings
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -2506,7 +2506,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              DBS Multiplier Account
+              DBS Multiplier
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -2549,7 +2549,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              GXS Savings Account
+              GXS Savings
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -2838,7 +2838,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              Citi Wealth First Account
+              Citi Wealth First
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -2938,7 +2938,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  UOB One Account
+                  UOB One
                 </span>
               </button>
             </li>
@@ -2978,7 +2978,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  OCBC 360 Account
+                  OCBC 360
                 </span>
               </button>
             </li>
@@ -3018,7 +3018,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  Mari Savings Account
+                  Mari Savings
                 </span>
               </button>
             </li>
@@ -3178,7 +3178,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  DBS Multiplier Account
+                  DBS Multiplier
                 </span>
               </button>
             </li>
@@ -3218,7 +3218,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  GXS Savings Account
+                  GXS Savings
                 </span>
               </button>
             </li>
@@ -3458,7 +3458,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
-                  Citi Wealth First Account
+                  Citi Wealth First
                 </span>
               </button>
             </li>

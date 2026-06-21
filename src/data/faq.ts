@@ -45,13 +45,13 @@ const FULL: FaqEntry[] = [
           "Tiered bonus interest structure based on total eligible transactions across income, credit card spend, home loan, insurance, and investments.",
       },
       {
-        label: "OCBC 360 Account",
+        label: "OCBC 360",
         url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
         confirms:
           "Stacked bonus categories (Salary, Save, Spend, Grow, Insure, Invest) each adding to the base rate.",
       },
       {
-        label: "UOB One Account",
+        label: "UOB One",
         url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
         confirms:
           "Two-criteria bonus structure: minimum card spend plus either salary crediting or GIRO debit transactions.",
@@ -61,7 +61,8 @@ const FULL: FaqEntry[] = [
       {
         label: "Monetary Authority of Singapore — Deposit Accounts",
         url: "https://www.mas.gov.sg/regulation/explainers/deposit-insurance",
-        confirms: "MAS consumer explainer on how deposit accounts and insurance work in Singapore.",
+        confirms:
+          "MAS consumer explainer on how deposit accounts and insurance work in Singapore.",
       },
     ],
   },
@@ -79,7 +80,7 @@ const FULL: FaqEntry[] = [
           "Advertised maximum rate (4.45% EIR) requires meeting all 6 bonus categories: Salary, Save, Spend, Grow, Insure, and Invest. Missing any category reduces the rate.",
       },
       {
-        label: "UOB One Account Rate Revision (Dec 2025)",
+        label: "UOB One Rate Revision (Dec 2025)",
         url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
         confirms:
           "Maximum 1.90% EIR on S$150,000 requires both S$500 eligible card spend AND minimum S$1,600 salary credit via GIRO/PAYNOW.",
@@ -106,7 +107,7 @@ const FULL: FaqEntry[] = [
           "Bonus interest applies on the first S$100,000 of account balance. Grow Bonus requires S$250,000.",
       },
       {
-        label: "UOB One Account — Balance Cap",
+        label: "UOB One — Balance Cap",
         url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
         confirms:
           "Maximum effective interest rate applies on deposits up to S$150,000.",
@@ -195,13 +196,13 @@ const FULL: FaqEntry[] = [
           "DBS Multiplier: S$5/month fall-below fee if average daily balance is below S$3,000. No initial deposit required.",
       },
       {
-        label: "OCBC 360 Account Details",
+        label: "OCBC 360 Details",
         url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
         confirms:
           "OCBC 360: S$1,000 initial deposit, S$2/month fall-below fee if average daily balance is below S$3,000.",
       },
       {
-        label: "Trust Bank Savings Account",
+        label: "Trust Bank Savings",
         url: "https://trustbank.sg/savings-account/",
         confirms:
           "No minimum balance and no fall-below fees. Base rate of 0.05% p.a. with optional bonus interest categories.",
@@ -339,7 +340,7 @@ const FULL: FaqEntry[] = [
           "Eligible transactions are automatically detected across all DBS/POSB products held by the same customer. You only need to deposit funds in your Multiplier Account.",
       },
       {
-        label: "OCBC 360 Account",
+        label: "OCBC 360",
         url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
         confirms:
           "Salary crediting bonus requires salary to be credited via GIRO specifically to the OCBC 360 account. Salary split across banks may not qualify each individually.",

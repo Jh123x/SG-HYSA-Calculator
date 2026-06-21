@@ -13,7 +13,7 @@ describe("BankHistorySection", () => {
         <BankHistorySection bankSlug="gxs-savings-account" profile={profile} />
       </MemoryRouter>,
     );
-    expect(screen.getByText("GXS Savings Account")).toBeDefined();
+    expect(screen.getByText("GXS Savings")).toBeDefined();
     // Should have date column headers
     expect(screen.getByText("Date")).toBeDefined();
     expect(screen.getByText("What Changed")).toBeDefined();
