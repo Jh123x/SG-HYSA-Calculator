@@ -1,13 +1,10 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import {
-  Box,
   Typography,
   Paper,
-  ToggleButton,
-  ToggleButtonGroup,
 } from "@mui/material";
 import { LineChart } from "@mui/x-charts/LineChart";
-import { textColor, bgColor, primaryColor } from "../consts/colors";
+import { textColor, bgColor } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
 import { todayISO } from "../logic/dates";
@@ -22,29 +19,13 @@ import { dateFormatter } from "../consts/formatter";
 interface ComparisonChartProps {
   selectedBanks: string[];
   profile: Profile;
+  /** Controlled chart mode from parent */
+  chartMode: "yearly" | "eir";
 }
-
-type ChartMode = "yearly" | "eir";
-
-const BUTTON_SX = {
-  color: textColor,
-  borderColor: `${textColor}40`,
-  textTransform: "none",
-  fontSize: "0.8rem",
-  "&.Mui-selected": {
-    color: "#fff",
-    backgroundColor: primaryColor,
-  },
-  "&.Mui-selected:hover": {
-    backgroundColor: primaryColor,
-    opacity: 0.9,
-  },
-};
 
 /**
  * Time-series step chart comparing yearly interest ($) or EIR (%) across
- * selected banks over time. Users toggle between the two metrics via
- * button group.
+ * selected banks over time. chartMode is controlled by the parent component.
  *
  * Validation runs first — when it fails an error Paper is returned immediately.
  * The chart content (with its expensive data computation) is only mounted when
@@ -53,6 +34,7 @@ const BUTTON_SX = {
 export const ComparisonChart = ({
   selectedBanks,
   profile,
+  chartMode,
 }: ComparisonChartProps) => {
   // ── Validation ──────────────────────────────────────────────────────
   const validation = useMemo(() => {
@@ -99,7 +81,7 @@ export const ComparisonChart = ({
   }
 
   return (
-    <ComparisonChartContent selectedBanks={selectedBanks} profile={profile} />
+    <ComparisonChartContent selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
   );
 };
 
@@ -130,8 +112,8 @@ const AXIS_SX = {
 const ComparisonChartContent = ({
   selectedBanks,
   profile,
+  chartMode,
 }: ComparisonChartProps) => {
-  const [chartMode, setChartMode] = useState<ChartMode>("yearly");
 
   const { dataset, yearlySeries, eirSeries } = useMemo(() => {
     const bankPoints = collectBankPoints(selectedBanks, profile);
@@ -191,23 +173,6 @@ const ComparisonChartContent = ({
 
   return (
     <>
-      {/* ── Metric toggle ─────────────────────────────────────────── */}
-      <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
-        <ToggleButtonGroup
-          value={chartMode}
-          exclusive
-          onChange={(_e, v) => v && setChartMode(v)}
-          size="small"
-        >
-          <ToggleButton value="yearly" sx={BUTTON_SX}>
-            Yearly Interest ($)
-          </ToggleButton>
-          <ToggleButton value="eir" sx={BUTTON_SX}>
-            EIR (%)
-          </ToggleButton>
-        </ToggleButtonGroup>
-      </Box>
-
       {/* ── Chart ─────────────────────────────────────────────────── */}
       <Paper
         sx={{

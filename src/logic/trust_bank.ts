@@ -113,7 +113,8 @@ export const trustBankZenHistory: RateSnapshot[] = [
   {
     effectiveDate: "2026-06-05",
     interestFn: trust_bank_zen_06_2026,
-    changeSummary: "Flat 0.4% p.a. up to S$1.2 million. Source: https://growbeansprout.com/trust-bank-singapore-review",
+    sourceUrl: "https://growbeansprout.com/trust-bank-singapore-review",
+    changeSummary: "Flat 0.4% p.a. up to S$1.2 million",
   },
 ];
 
@@ -121,26 +122,31 @@ export const trustBankSignatureHistory: RateSnapshot[] = [
   {
     effectiveDate: "2025-05-01",
     interestFn: trust_bank_05_2025,
-    changeSummary: "Base 0.75%. Spend $150 +0.4%, NTUC +0.35%, $100K +0.5%, Salary $1.5K +0.75%. Cap $800K. Source: https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/",
+    sourceUrl: "https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/",
+    changeSummary: "Base 0.75%. Spend $150 +0.4%, NTUC +0.35%, $100K +0.5%, Salary $1.5K +0.75%. Cap $800K",
   },
   {
     effectiveDate: "2025-06-01",
     interestFn: trust_bank_06_2025,
-    changeSummary: "Base ↓0.5%. Spend ↓0.3%, NTUC ↓0.2%, $100K ↑0.75%, Salary ↓0.5%. Cap ↑$1.2M. Source: https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/",
+    sourceUrl: "https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/",
+    changeSummary: "Base ↓0.5%. Spend ↓0.3%, NTUC ↓0.2%, $100K ↑0.75%, Salary ↓0.5%. Cap ↑$1.2M",
   },
   {
     effectiveDate: "2025-08-01",
     interestFn: trust_bank_08_2025,
-    changeSummary: "$100K tier ↓0.5% (0.75%→0.5%). Source: https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/",
+    sourceUrl: "https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/",
+    changeSummary: "$100K tier ↓0.5% (0.75%→0.5%)",
   },
   {
     effectiveDate: "2025-10-01",
     interestFn: trust_bank_signature_10_2025,
-    changeSummary: "Base ↓0.1%. Spend ↓0.2%, NTUC ↓0.1%, $100K ↓0.4%, Salary unchanged. Source: https://sethisfy.com/nerfed-trust-bank-and-maribank-slash-interest-rates-from-1st-september-2025/",
+    sourceUrl: "https://sethisfy.com/nerfed-trust-bank-and-maribank-slash-interest-rates-from-1st-september-2025/",
+    changeSummary: "Base ↓0.1%. Spend ↓0.2%, NTUC ↓0.1%, $100K ↓0.4%, Salary unchanged",
   },
   {
     effectiveDate: "2026-06-05",
     interestFn: trust_bank_signature_06_2026,
-    changeSummary: "Base ↓0.05%. Spend (non-NTUC) ↓0.1%, $100K ↓0.3%, Salary ↓0.45%. Spend (NTUC) unchanged at +0.2%. Source: https://growbeansprout.com/trust-bank-singapore-review",
+    sourceUrl: "https://growbeansprout.com/trust-bank-singapore-review",
+    changeSummary: "Base ↓0.05%. Spend (non-NTUC) ↓0.1%, $100K ↓0.3%, Salary ↓0.45%. Spend (NTUC) unchanged at +0.2%",
   },
 ];

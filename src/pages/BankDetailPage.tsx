@@ -23,13 +23,12 @@ import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, bgColor, primaryColor, lineColors } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
 import { slugToBankName, ERROR_SLUG } from "../logic/slugs";
-import { resolveHistoryForChart } from "../logic/history";
+import { resolveHistoryForChart, deriveCurrentFromHistory } from "../logic/history";
 import { formatDate } from "../logic/dates";
 import type Profile from "../types/profile";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { jaroWinkler } from "../logic/fuzzyMatch";
 import { dateFormatter } from "../consts/formatter";
-import { stripSourceFromSummary } from "../logic/sourceUtils";
 
 interface BankDetailPageProps {
   profile: Profile;
@@ -178,7 +177,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   const resolved = resolveHistoryForChart(info.history, profile);
 
   // Build time-series dataset for EIR chart (sorted chronologically,
-  // excluding TBD entries where date is epoch zero)
+  // excluding TBD entries where date is epoch zero), plus today's point
   const eirChartData = resolved
     .filter((r) => r.date.getTime() !== 0)
     .sort((a, b) => a.date.getTime() - b.date.getTime())
@@ -186,6 +185,11 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
       date: r.date,
       eir: r.eir,
     }));
+
+  // Add today's data point using the latest known interest function
+  const { interestFn: latestFn } = deriveCurrentFromHistory(info.history);
+  const todayEir = latestFn(profile).toYearlyPercent();
+  eirChartData.push({ date: new Date(), eir: todayEir });
 
   // Current date for display
   const todayStr = new Date().toLocaleDateString("en-SG", {
@@ -412,17 +416,13 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
               .sort((a, b) => b.date.getTime() - a.date.getTime())
               .map((snapshot, idx) => {
                 const isTbd = snapshot.date.getTime() === 0;
-                const { text, sourceUrl: extractedUrl } = stripSourceFromSummary(
-                  snapshot.changeSummary,
-                );
-                const finalSourceUrl = snapshot.sourceUrl ?? extractedUrl ?? undefined;
                 return (
                   <TableRow key={idx}>
                     <TableCell sx={{ color: textColor }}>
                       {isTbd ? "TBD" : formatDate(snapshot.date)}
                     </TableCell>
                     <TableCell sx={{ color: textColor }}>
-                      {text}
+                      {snapshot.changeSummary}
                     </TableCell>
                     <TableCell sx={{ color: textColor, textAlign: "right" }}>
                       {isTbd ? "—" : `$${snapshot.yearlyInterest.toFixed(2)}`}
@@ -433,11 +433,11 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
                     <TableCell
                       sx={{ color: textColor, textAlign: "center", p: 0.5 }}
                     >
-                      {finalSourceUrl ? (
+                      {snapshot.sourceUrl && (
                         <Tooltip title="Visit source page">
                           <IconButton
                             size="small"
-                            href={finalSourceUrl}
+                            href={snapshot.sourceUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             sx={{ color: primaryColor }}
@@ -445,7 +445,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
                             <OpenInNewIcon fontSize="small" />
                           </IconButton>
                         </Tooltip>
-                      ) : null}
+                      )}
                     </TableCell>
                   </TableRow>
                 );

@@ -135,12 +135,14 @@ export const maybankSaveUpHistory: RateSnapshot[] = [
   {
     effectiveDate: "2025-10-01",
     interestFn: maybank_save_up_10_2025,
-    changeSummary: "Category bonus: up to 3 categories (Giro/Salary, Spend $500, Invest $25K, Insurance $5K, Loan $10K). Max bonus: 2.75% (1st $50K) + 3.75% (next $25K). Source: https://sethisfy.com/maybank-save-up-program-launches-october-2025/",
+    sourceUrl: "https://sethisfy.com/maybank-save-up-program-launches-october-2025/",
+    changeSummary: "Category bonus: up to 3 categories (Giro/Salary, Spend $500, Invest $25K, Insurance $5K, Loan $10K). Max bonus: 2.75% (1st $50K) + 3.75% (next $25K)",
   },
   {
     effectiveDate: "2026-06-11",
     interestFn: maybank_save_up_06_2026,
-    changeSummary: "Category bonus removed. Flat tiered: 0.1875% (<$3K), 0.25% ($3K–$50K), 0.3125% (>$50K). Source: https://www.maybank2u.com.sg/en/personal/about_us/important-notices/2026/changes-current-savings-accounts-interest-hibah-tiers-rates.page",
+    sourceUrl: "https://www.maybank2u.com.sg/en/personal/about_us/important-notices/2026/changes-current-savings-accounts-interest-hibah-tiers-rates.page",
+    changeSummary: "Category bonus removed. Flat tiered: 0.1875% (<$3K), 0.25% ($3K–$50K), 0.3125% (>$50K)",
   },
 ];
 
@@ -148,8 +150,9 @@ export const maybankIsavvyHistory: RateSnapshot[] = [
   {
     effectiveDate: "2026-06-11",
     interestFn: maybank_isavvy_06_2026,
+    sourceUrl: "https://www.maybank2u.com.sg/en/personal/about_us/important-notices/2026/changes-current-savings-accounts-interest-hibah-tiers-rates.page",
     changeSummary:
-      "Simplified tiered rates: 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K). Source: https://www.maybank2u.com.sg/en/personal/about_us/important-notices/2026/changes-current-savings-accounts-interest-hibah-tiers-rates.page",
+      "Simplified tiered rates: 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K)",
   },
 ];
 
@@ -157,7 +160,8 @@ export const maybankIsavvyPlusHistory: RateSnapshot[] = [
   {
     effectiveDate: "2026-06-11",
     interestFn: maybank_isavvy_plus_06_2026,
+    sourceUrl: "https://www.maybank2u.com.sg/en/personal/about_us/important-notices/2026/changes-current-savings-accounts-interest-hibah-tiers-rates.page",
     changeSummary:
-      "Flat tiered base (0.1875%–0.38%) + 1.52% top-up bonus with monthly ADB increment. Source: https://www.maybank2u.com.sg/en/personal/about_us/important-notices/2026/changes-current-savings-accounts-interest-hibah-tiers-rates.page",
+      "Flat tiered base (0.1875%–0.38%) + 1.52% top-up bonus with monthly ADB increment",
   },
 ];

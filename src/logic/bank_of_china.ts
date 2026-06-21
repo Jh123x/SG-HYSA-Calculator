@@ -154,12 +154,14 @@ export const bocSmartSaverHistory: RateSnapshot[] = [
   {
     effectiveDate: "2025-08-01",
     interestFn: bank_of_china_smart_saver_08_2025,
-    changeSummary: "Salary $2K +1.5%, Insurance $150K +2.75%, Spend $750 +0.75%, Spend $2.5K +0.5%, Giro 3×$90 +0.1%. Source: https://sethisfy.com/boc-smartsaver-dropping-interest-by-0-70-p-a-1st-august-2025/",
+    sourceUrl: "https://sethisfy.com/boc-smartsaver-dropping-interest-by-0-70-p-a-1st-august-2025/",
+    changeSummary: "Salary $2K +1.5%, Insurance $150K +2.75%, Spend $750 +0.75%, Spend $2.5K +0.5%, Giro 3×$90 +0.1%",
   },
   {
     effectiveDate: "2025-11-01",
     interestFn: bank_of_china_smart_saver_11_2025,
-    changeSummary: "Salary threshold raised: $2K→$3K. Source: https://sethisfy.com/boc-smartsaver-getting-up-to-4-60-p-a-with-this-savings-account/",
+    sourceUrl: "https://sethisfy.com/boc-smartsaver-getting-up-to-4-60-p-a-with-this-savings-account/",
+    changeSummary: "Salary threshold raised: $2K→$3K",
   },
 ];
 
@@ -167,16 +169,19 @@ export const bocSuperSaverHistory: RateSnapshot[] = [
   {
     effectiveDate: "2025-07-01",
     interestFn: bank_of_china_super_saver_07_2025,
-    changeSummary: "1st $20K 1.5%, next $40K 2.2%, next $40K 3.6%, remaining 1.2%. Source: https://www.bankofchina.com/sg/bocinfo/bi1/202506/t20250620_25390361.html",
+    sourceUrl: "https://www.bankofchina.com/sg/bocinfo/bi1/202506/t20250620_25390361.html",
+    changeSummary: "1st $20K 1.5%, next $40K 2.2%, next $40K 3.6%, remaining 1.2%",
   },
   {
     effectiveDate: "2025-08-01",
     interestFn: bank_of_china_super_saver_08_2025,
-    changeSummary: "All tiers reduced: 1.5%→1%, 2.2%→1.2%, 3.6%→1.6%, base 1.2%→0.8%. Source: https://www.bankofchina.com/sg/bocinfo/bi1/202506/t20250620_25390361.html",
+    sourceUrl: "https://www.bankofchina.com/sg/bocinfo/bi1/202506/t20250620_25390361.html",
+    changeSummary: "All tiers reduced: 1.5%→1%, 2.2%→1.2%, 3.6%→1.6%, base 1.2%→0.8%",
   },
   {
     effectiveDate: "2025-11-01",
     interestFn: bank_of_china_super_saver_11_2025,
-    changeSummary: "Further reduced: 1%→0.5%, 1.2%→0.8%, 1.6%→1%, base 0.8%→0.5%. Source: https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
+    sourceUrl: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
+    changeSummary: "Further reduced: 1%→0.5%, 1.2%→0.8%, 1.6%→1%, base 0.8%→0.5%",
   },
 ];

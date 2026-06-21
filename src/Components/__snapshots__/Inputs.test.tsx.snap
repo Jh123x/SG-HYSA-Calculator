@@ -566,10 +566,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
     </div>
   </div>
   <div
-    class="MuiBox-root css-13cfffo"
+    class="MuiBox-root css-1ncglhe"
   >
     <div
-      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-fff89k-MuiChip-root"
+      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-al1s78-MuiChip-root"
     >
       <svg
         aria-hidden="true"
@@ -1324,10 +1324,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
     </div>
   </div>
   <div
-    class="MuiBox-root css-13cfffo"
+    class="MuiBox-root css-1ncglhe"
   >
     <div
-      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-fff89k-MuiChip-root"
+      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-al1s78-MuiChip-root"
     >
       <svg
         aria-hidden="true"

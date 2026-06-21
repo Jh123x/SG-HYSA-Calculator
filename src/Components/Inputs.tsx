@@ -142,11 +142,12 @@ export const FormInputs = ({
           marginTop: "20px",
           display: "flex",
           flexDirection: { xs: "column", sm: "row" },
-          justifyContent: "flex-end",
+          justifyContent: { xs: "stretch", sm: "flex-end" },
           alignItems: { xs: "stretch", sm: "center" },
           gap: "10px",
         }}
       >
+        {/* Desktop: chip tight to left of Clear. Mobile: centred above buttons */}
         <Chip
           icon={<LockOutlinedIcon />}
           label="All data stays on your device"
@@ -158,7 +159,6 @@ export const FormInputs = ({
             opacity: 0.8,
             fontSize: "0.75rem",
             alignSelf: { xs: "center", sm: "auto" },
-            mr: { sm: "auto" },
           }}
         />
         <Box sx={{ display: "flex", gap: 1, justifyContent: "flex-end" }}>

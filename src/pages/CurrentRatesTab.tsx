@@ -402,36 +402,40 @@ export const CurrentRatesTab = ({ profile }: Props) => {
     <Box component="section" aria-label="Current interest rates comparison" sx={{ mt: 1 }}>
       {/* ── Desktop side-by-side ── */}
       {!isMobile && (
-        <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-          <Box sx={{ display: "flex", gap: 2, alignItems: "stretch" }}>
-            <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
-              <InterestGraph profile={profile} height={380} />
-            </Box>
-            <Box sx={{ flex: "1 1 55%", minWidth: 0, display: "flex", flexDirection: "column" }}>
-              {renderDesktopTable()}
-            </Box>
+        <Box sx={{ display: "flex", gap: 2, alignItems: "flex-start" }}>
+          {/* Left: Graph + asterisks (fixed, no scroll) */}
+          <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
+            <InterestGraph profile={profile} height={380} />
+            {/* Asterisks under graph */}
+            <Typography
+              variant="caption"
+              sx={{
+                color: textColor,
+                display: "block",
+                textAlign: "left",
+                opacity: 0.7,
+                mt: 1,
+              }}
+            >
+              * Interest rates on their respective websites are subject to change
+              without notice.
+              <br />
+              ** Please do your own research before making any decisions.
+              <br />
+              *** Ask for referrals to get additional bonuses.
+            </Typography>
           </Box>
-          {/* Asterisks — clearly outside the graph/table row */}
-          <Typography
-            variant="caption"
+          {/* Right: Scrollable table (own scrollbar) */}
+          <Box
             sx={{
-              color: textColor,
-              display: "block",
-              textAlign: "center",
-              opacity: 0.7,
-              mt: 0.5,
+              flex: "1 1 55%",
+              minWidth: 0,
+              maxHeight: "calc(100vh - 320px)",
+              overflowY: "auto",
             }}
           >
-            * Interest rates on their respective websites are subject to change
-            without notice
-            <br />
-            ** Please do your own research before making any decisions, the numbers
-            here serve as a guide.
-            <br />
-            *** Please ask around in your friend group for referrals to get
-            additional bonuses, you can use the my referral code if your friends do
-            not have any.
-          </Typography>
+            {renderDesktopTable()}
+          </Box>
         </Box>
       )}
 
