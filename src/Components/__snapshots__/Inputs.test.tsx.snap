@@ -566,8 +566,35 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
     </div>
   </div>
   <div
-    class="MuiBox-root css-1423sdf"
+    class="MuiBox-root css-2qclzv"
   >
+    <div
+      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-12qc73t-MuiChip-root"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiChip-icon css-1umw9bq-MuiSvgIcon-root"
+        data-testid="LockOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2M9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm9 14H6V10h12zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
+        />
+      </svg>
+      <span
+        class="MuiChip-label css-19m61dl-MuiChip-label"
+      >
+        All data stays on your device
+      </span>
+    </div>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-13rq0se-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Clear
+    </button>
     <button
       class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1y5jhkt-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
@@ -590,37 +617,6 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
       </span>
       Share
     </button>
-    <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-13rq0se-MuiButtonBase-root-MuiButton-root"
-      tabindex="0"
-      type="button"
-    >
-      Clear
-    </button>
-  </div>
-  <div
-    class="MuiBox-root css-s6bk41"
-  >
-    <div
-      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-7ycqzn-MuiChip-root"
-    >
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiChip-icon css-1umw9bq-MuiSvgIcon-root"
-        data-testid="LockOutlinedIcon"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2M9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm9 14H6V10h12zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
-        />
-      </svg>
-      <span
-        class="MuiChip-label css-19m61dl-MuiChip-label"
-      >
-        All data stays on your device
-      </span>
-    </div>
   </div>
   <div
     class="MuiBox-root css-1tdrj8w"
@@ -1324,8 +1320,35 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
     </div>
   </div>
   <div
-    class="MuiBox-root css-1423sdf"
+    class="MuiBox-root css-2qclzv"
   >
+    <div
+      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-12qc73t-MuiChip-root"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiChip-icon css-1umw9bq-MuiSvgIcon-root"
+        data-testid="LockOutlinedIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2M9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm9 14H6V10h12zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
+        />
+      </svg>
+      <span
+        class="MuiChip-label css-19m61dl-MuiChip-label"
+      >
+        All data stays on your device
+      </span>
+    </div>
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-13rq0se-MuiButtonBase-root-MuiButton-root"
+      tabindex="0"
+      type="button"
+    >
+      Clear
+    </button>
     <button
       class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1y5jhkt-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
@@ -1348,37 +1371,6 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
       </span>
       Share
     </button>
-    <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-13rq0se-MuiButtonBase-root-MuiButton-root"
-      tabindex="0"
-      type="button"
-    >
-      Clear
-    </button>
-  </div>
-  <div
-    class="MuiBox-root css-s6bk41"
-  >
-    <div
-      class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-7ycqzn-MuiChip-root"
-    >
-      <svg
-        aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiChip-icon css-1umw9bq-MuiSvgIcon-root"
-        data-testid="LockOutlinedIcon"
-        focusable="false"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2M9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm9 14H6V10h12zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
-        />
-      </svg>
-      <span
-        class="MuiChip-label css-19m61dl-MuiChip-label"
-      >
-        All data stays on your device
-      </span>
-    </div>
   </div>
   <div
     class="MuiBox-root css-1tdrj8w"

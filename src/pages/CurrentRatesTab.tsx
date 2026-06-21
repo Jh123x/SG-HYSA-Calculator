@@ -16,15 +16,16 @@ import {
   Card,
   CardContent,
   CardActionArea,
+  IconButton,
+  Tooltip,
 } from "@mui/material";
-import { ArrowForward } from "@mui/icons-material";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import type { ResultProp } from "../types/props";
 import { primaryColor, bgColor, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
 import { InterestGraph } from "../Components/InterestGraph";
-import { FaqAccordion } from "../Components/FaqAccordion";
 
 type SortableColumns = "name" | "yearlyInterest" | "effectiveInterest";
 
@@ -173,6 +174,9 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                 EIR (%)
               </TableSortLabel>
             </TableCell>
+            <TableCell sx={{ ...cellSx, fontWeight: 600, width: 60 }}>
+              Action
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -180,26 +184,32 @@ export const CurrentRatesTab = ({ profile }: Props) => {
             <TableRow
               key={slug}
               hover
-              onClick={() => navigate(`/bank/${slug}`)}
               sx={{
                 color: textColor,
                 backgroundColor: bgColor,
-                cursor: "pointer",
                 "&:hover": { backgroundColor: alpha(primaryColor, 0.1) },
                 transition: "background-color 0.3s ease",
               }}
             >
               <TableCell sx={{ ...cellSx, fontWeight: 600 }}>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-                  {bankInfo[slug]?.name ?? slug}
-                  <ArrowForward sx={{ fontSize: 14, opacity: 0.4 }} />
-                </Box>
+                {bankInfo[slug]?.name ?? slug}
               </TableCell>
               <TableCell sx={cellSx}>
                 ${(interest.interest.toYearly() ?? 0).toFixed(2)}
               </TableCell>
               <TableCell sx={cellSx}>
                 {(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%
+              </TableCell>
+              <TableCell sx={cellSx}>
+                <Tooltip title="View details">
+                  <IconButton
+                    size="small"
+                    onClick={() => navigate(`/bank/${slug}`)}
+                    sx={{ color: primaryColor }}
+                  >
+                    <OpenInNewIcon fontSize="small" />
+                  </IconButton>
+                </Tooltip>
               </TableCell>
             </TableRow>
           ))}
@@ -258,78 +268,49 @@ export const CurrentRatesTab = ({ profile }: Props) => {
     <Box component="section" aria-label="Current interest rates comparison" sx={{ mt: 1 }}>
       {/* ── Side-by-side layout (desktop) ── */}
       {!isMobile && (
-        <>
-          <Typography
-            variant="h5"
-            component="h2"
-            sx={{ color: textColor, mb: 2, fontWeight: 600 }}
-          >
-            Saving account differences
-          </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 2,
+            alignItems: "stretch",
+          }}
+        >
+          {/* Graph column — left, 45% */}
+          <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
+            <InterestGraph profile={profile} height={380} />
+          </Box>
 
+          {/* Table column — right, 55% */}
           <Box
             sx={{
+              flex: "1 1 55%",
+              minWidth: 0,
               display: "flex",
-              gap: 2,
-              alignItems: "stretch",
+              flexDirection: "column",
             }}
           >
-            {/* Graph column — left, 45% */}
-            <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
-              <InterestGraph profile={profile} height={380} />
-            </Box>
-
-            {/* Table column — right, 55% */}
-            <Box
-              sx={{
-                flex: "1 1 55%",
-                minWidth: 0,
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <Typography
-                variant="h6"
-                component="h3"
-                sx={{ color: textColor, mb: 1.5, fontWeight: 600 }}
-              >
-                Compare Singapore High Yield Savings Accounts
-              </Typography>
-              {renderDesktopTable()}
-            </Box>
+            {renderDesktopTable()}
           </Box>
-        </>
+        </Box>
       )}
 
       {/* ── Stacked layout (mobile) ── */}
       {isMobile && (
         <>
-          <Typography
-            variant="h6"
-            component="h2"
-            sx={{ color: textColor, mb: 1.5, fontWeight: 600 }}
-          >
-            Saving account differences
-          </Typography>
           <InterestGraph profile={profile} height={350} />
-          <Typography
-            variant="h6"
-            component="h2"
-            sx={{ color: textColor, mt: 2, mb: 1.5, fontWeight: 600 }}
-          >
-            Compare Singapore High Yield Savings Accounts
-          </Typography>
           {renderMobileCards()}
         </>
       )}
 
+      {/* Footer — centered asterisks */}
       <Typography
         variant="caption"
         sx={{
           color: textColor,
-          mt: 1.5,
+          mt: 2,
           display: "block",
-          textAlign: "left",
+          textAlign: "center",
+          opacity: 0.7,
         }}
       >
         * Interest rates on their respective websites are subject to change
@@ -342,8 +323,6 @@ export const CurrentRatesTab = ({ profile }: Props) => {
         additional bonuses, you can use the my referral code if your friends do
         not have any.
       </Typography>
-
-      <FaqAccordion />
     </Box>
   );
 };

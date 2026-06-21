@@ -141,15 +141,23 @@ export const FormInputs = ({
         sx={{
           marginTop: "20px",
           display: "flex",
-          justifyContent: "center",
-          gap: "15px",
+          justifyContent: "flex-end",
+          alignItems: "center",
+          gap: "10px",
         }}
       >
-        <ShareButton
-          profile={currProfile}
-          onCopied={() =>
-            addNotification("Profile URL copied to clipboard!", "success")
-          }
+        <Chip
+          icon={<LockOutlinedIcon />}
+          label="All data stays on your device"
+          size="small"
+          variant="outlined"
+          sx={{
+            color: textColor,
+            borderColor: "rgba(255,255,255,0.15)",
+            opacity: 0.8,
+            fontSize: "0.75rem",
+            mr: "auto",
+          }}
         />
         <Button
           key="clear-btn"
@@ -167,19 +175,11 @@ export const FormInputs = ({
         >
           Clear
         </Button>
-      </Box>
-      <Box sx={{ display: "flex", justifyContent: "center", mt: 1.5 }}>
-        <Chip
-          icon={<LockOutlinedIcon />}
-          label="All data stays on your device"
-          size="small"
-          variant="outlined"
-          sx={{
-            color: textColor,
-            borderColor: "rgba(255,255,255,0.15)",
-            opacity: 0.8,
-            fontSize: "0.75rem",
-          }}
+        <ShareButton
+          profile={currProfile}
+          onCopied={() =>
+            addNotification("Profile URL copied to clipboard!", "success")
+          }
         />
       </Box>
       <NotificationStack>

@@ -13,8 +13,11 @@ import {
   TableRow,
   Typography,
   useMediaQuery,
+  IconButton,
+  Tooltip,
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, bgColor, primaryColor, lineColors } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
@@ -36,7 +39,7 @@ const AUTO_REDIRECT_SECONDS = 5;
 /**
  * Bank detail page at /bank/:slug.
  *
- * Desktop side-by-side: EIR chart (left) | Rate change log table (right)
+ * Desktop side-by-side: EIR chart (left) | History table + description (right)
  * Mobile: stacked vertically.
  */
 export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
@@ -182,6 +185,13 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
       eir: r.eir,
     }));
 
+  // Current date for display
+  const todayStr = new Date().toLocaleDateString("en-SG", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+
   // ── EIR Chart ──────────────────────────────────────────────────────
 
   const renderChart = () => {
@@ -198,12 +208,29 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           height: "fit-content",
         }}
       >
-        <Typography
-          variant="h6"
-          sx={{ color: textColor, fontWeight: 600, mb: 2 }}
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            mb: 2,
+            flexWrap: "wrap",
+            gap: 1,
+          }}
         >
-          Interest Rate Over Time
-        </Typography>
+          <Typography
+            variant="h6"
+            sx={{ color: textColor, fontWeight: 600 }}
+          >
+            Interest Rate Over Time
+          </Typography>
+          <Chip
+            label={`Today: ${todayStr}`}
+            size="small"
+            variant="outlined"
+            sx={{ color: textColor, borderColor: `${textColor}30` }}
+          />
+        </Box>
         <LineChart
           dataset={eirChartData}
           xAxis={[
@@ -267,21 +294,74 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     );
   };
 
-  // ── Rate Change History table ──────────────────────────────────────
+  // ── Rate Change History (includes description + bank info) ────────
 
-  const renderHistoryTable = () => (
+  const renderHistorySection = () => (
     <Paper
       component="section"
-      aria-label="Rate change history table"
+      aria-label="Rate change history and bank details"
       sx={{
         p: { xs: 2, sm: 3 },
         borderRadius: "10px",
         backgroundColor: bgColor,
       }}
     >
+      {/* Bank name + description merged into this section */}
+      <Typography
+        variant="h5"
+        component="h2"
+        sx={{ color: textColor, fontWeight: 700, mb: 0.5 }}
+      >
+        {info.name}
+      </Typography>
+
+      <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 1.5 }}>
+        {resolved.length > 0 &&
+          resolved[resolved.length - 1].date.getTime() !== 0 && (
+            <Chip
+              label={`Current EIR: ${resolved[resolved.length - 1].eir.toFixed(2)}%`}
+              size="small"
+              sx={{
+                backgroundColor: primaryColor,
+                color: "#fff",
+                fontWeight: 600,
+              }}
+            />
+          )}
+        <Chip
+          label={`${info.history.length} rate snapshot${info.history.length !== 1 ? "s" : ""}`}
+          size="small"
+          variant="outlined"
+          sx={{ color: textColor, borderColor: `${textColor}30` }}
+        />
+      </Box>
+
+      {/* Description with link to official website */}
+      <Typography
+        variant="body2"
+        sx={{ color: textColor, opacity: 0.75, mb: 2.5 }}
+      >
+        {info.remarks}{" "}
+        {info.url && (
+          <a
+            href={info.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: primaryColor,
+              textDecoration: "underline",
+              fontWeight: 500,
+            }}
+          >
+            Visit official website ↗
+          </a>
+        )}
+      </Typography>
+
+      {/* Rate change history table */}
       <Typography
         variant="h6"
-        sx={{ color: textColor, fontWeight: 600, mb: 2 }}
+        sx={{ color: textColor, fontWeight: 600, mb: 1.5 }}
       >
         Rate Change History
       </Typography>
@@ -305,6 +385,11 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
               >
                 EIR
               </TableCell>
+              <TableCell
+                sx={{ color: textColor, fontWeight: 600, width: 60 }}
+              >
+                Action
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -326,6 +411,21 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
                     <TableCell sx={{ color: textColor, textAlign: "right" }}>
                       {isTbd ? "—" : `${snapshot.eir.toFixed(2)}%`}
                     </TableCell>
+                    <TableCell sx={{ color: textColor }}>
+                      {snapshot.sourceUrl && (
+                        <Tooltip title="View source">
+                          <IconButton
+                            size="small"
+                            href={snapshot.sourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{ color: primaryColor }}
+                          >
+                            <OpenInNewIcon fontSize="small" />
+                          </IconButton>
+                        </Tooltip>
+                      )}
+                    </TableCell>
                   </TableRow>
                 );
               })}
@@ -339,7 +439,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     <Box
       component="article"
       aria-label={`${info.name} interest rate details`}
-      sx={{ mt: 2 }}
+      sx={{ mt: 1 }}
     >
       {/* Back button */}
       <Button
@@ -355,54 +455,12 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         Back
       </Button>
 
-      {/* Summary card — full width */}
-      <Paper
-        component="header"
-        sx={{
-          p: { xs: 2, sm: 3 },
-          borderRadius: "10px",
-          backgroundColor: bgColor,
-          mb: 3,
-        }}
-      >
-        <Typography
-          variant="h5"
-          component="h2"
-          sx={{ color: textColor, fontWeight: 700, mb: 1 }}
-        >
-          {info.name}
-        </Typography>
-        <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 2 }}>
-          {resolved.length > 0 &&
-            resolved[resolved.length - 1].date.getTime() !== 0 && (
-              <Chip
-                label={`Current EIR: ${resolved[resolved.length - 1].eir.toFixed(2)}%`}
-                size="small"
-                sx={{
-                  backgroundColor: primaryColor,
-                  color: "#fff",
-                  fontWeight: 600,
-                }}
-              />
-            )}
-          <Chip
-            label={`${info.history.length} rate snapshot${info.history.length !== 1 ? "s" : ""}`}
-            size="small"
-            variant="outlined"
-            sx={{ color: textColor, borderColor: `${textColor}30` }}
-          />
-        </Box>
-        <Typography variant="body2" sx={{ color: textColor, opacity: 0.7 }}>
-          {info.remarks}
-        </Typography>
-      </Paper>
-
-      {/* ── Side-by-side: chart (left) | history table (right) ── */}
+      {/* ── Side-by-side: chart (left) | history + description (right) ── */}
       {isNarrow ? (
         /* Mobile: stacked */
         <>
           {renderChart()}
-          <Box sx={{ mt: 3 }}>{renderHistoryTable()}</Box>
+          <Box sx={{ mt: 3 }}>{renderHistorySection()}</Box>
         </>
       ) : (
         /* Desktop: side by side */
@@ -417,7 +475,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
             {renderChart()}
           </Box>
           <Box sx={{ flex: "1 1 52%", minWidth: 0 }}>
-            {renderHistoryTable()}
+            {renderHistorySection()}
           </Box>
         </Box>
       )}

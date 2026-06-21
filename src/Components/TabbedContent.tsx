@@ -1,28 +1,31 @@
 import { Outlet, useNavigate, useLocation, useOutletContext } from "react-router-dom";
-import { Box, Tabs, Tab, useMediaQuery, Container } from "@mui/material";
+import { Box, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { FormInputs } from "./Inputs";
-import { primaryColor, textColor, bgColor } from "../consts/colors";
+import { primaryColor, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
 
-/** Tab configuration matching the Excalidraw design */
-const TABS = {
-  current: { path: "/", label: "Current Rates" },
-  history: { path: "/history", label: "Rate Change History" },
-} as const;
-
-type TabKey = keyof typeof TABS;
-
-const tabSx = {
-  color: `${textColor}99`,
+/** Toggle button styling with hover response */
+const TOGGLE_SX = {
+  color: textColor,
+  borderColor: `${textColor}40`,
   textTransform: "none" as const,
   fontWeight: 500,
   fontSize: { xs: "0.8rem", sm: "0.9rem" },
-  minWidth: "auto",
   px: { xs: 1.5, sm: 2 },
+  transition: "all 0.2s ease",
   "&.Mui-selected": {
-    color: primaryColor,
+    color: "#fff",
+    backgroundColor: primaryColor,
     fontWeight: 600,
+  },
+  "&.Mui-selected:hover": {
+    backgroundColor: primaryColor,
+    opacity: 0.85,
+  },
+  "&:hover": {
+    backgroundColor: `${primaryColor}18`,
+    borderColor: primaryColor,
   },
 };
 
@@ -35,48 +38,61 @@ interface LayoutContext {
 }
 
 /**
- * Tabbed content area — matches the Excalidraw wireframe design:
- *
- * ┌──────────────────────────────────┐
- * │ [Savings] [Age] [Salary] ...     │  ← Input fields
- * │ [Current Rates] [Rate History]  │  ← Tab navigation
- * │ [Clear] [Copy Profile URL]      │  ← Action buttons
- * │ 🔒 All data stays on device     │  ← Privacy chip
- * ├──────────────────────────────────┤
- * │  Yearly Int │ EIR(%) │ Account  │  ← Content (table/Outlet)
- * └──────────────────────────────────┘
- *
- * Desktop: tabs centered below inputs
- * Mobile: full-width stacked layout
+ * Tabbed content area — redesigned with:
+ * - ToggleButtonGroup above inputs for tab navigation
+ * - All data / Clear / Share at bottom-right of top section
+ * - Non-scrollable page; each section (inputs, content, footer) scrolls independently
  */
 export const TabbedContent = () => {
   const { currProfile, setCurrProfile, pendingUrlProfile, onAcceptShared, onRejectShared } =
     useOutletContext<LayoutContext>();
   const navigate = useNavigate();
   const location = useLocation();
-  const isMobile = useMediaQuery("(max-width:600px)");
-
-  const activeTab =
-    (Object.keys(TABS) as TabKey[]).find(
-      (key) => location.pathname === TABS[key].path,
-    ) ?? "current";
+  const activeTab = location.pathname === "/history" ? "history" : "current";
 
   return (
     <Box
       component="section"
       aria-label="Savings calculator"
       sx={{
-        mt: { xs: 1, sm: 2 },
-        mb: 2,
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        overflow: "hidden",
       }}
     >
-      <Container
+      {/* ── Top section: Toggles + Inputs + Action buttons (scrollable) ── */}
+      <Box
         sx={{
-          maxWidth: "100% !important",
+          flexShrink: 0,
+          overflowY: "auto",
+          maxHeight: { xs: "45vh", sm: "50vh" },
           px: { xs: 1, sm: 2 },
+          pt: { xs: 1, sm: 2 },
+          pb: 1,
+          borderBottom: "1px solid rgba(255,255,255,0.08)",
         }}
       >
-        {/* Input fields + action buttons + privacy chip */}
+        {/* Toggle button group — centered, above inputs */}
+        <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
+          <ToggleButtonGroup
+            value={activeTab}
+            exclusive
+            onChange={(_, v) => {
+              if (v) navigate(v === "history" ? "/history" : "/");
+            }}
+            size="small"
+          >
+            <ToggleButton value="current" sx={TOGGLE_SX}>
+              Current Rates
+            </ToggleButton>
+            <ToggleButton value="history" sx={TOGGLE_SX}>
+              Rate Change History
+            </ToggleButton>
+          </ToggleButtonGroup>
+        </Box>
+
+        {/* Input fields */}
         <ErrorBoundary>
           <FormInputs
             currProfile={currProfile}
@@ -86,54 +102,21 @@ export const TabbedContent = () => {
             onRejectShared={onRejectShared}
           />
         </ErrorBoundary>
+      </Box>
 
-        {/* Tab navigation — below inputs, matching wireframe */}
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: isMobile ? "flex-start" : "center",
-            mt: 2,
-            mb: 1,
-          }}
-        >
-          <Tabs
-            value={activeTab}
-            onChange={(_, v) => {
-              navigate(TABS[v as TabKey].path);
-            }}
-            sx={{
-              minHeight: "auto",
-              "& .MuiTabs-indicator": {
-                backgroundColor: primaryColor,
-              },
-            }}
-            variant={isMobile ? "scrollable" : "standard"}
-            scrollButtons={false}
-          >
-            {(Object.keys(TABS) as TabKey[]).map((key) => (
-              <Tab
-                key={key}
-                label={TABS[key].label}
-                value={key}
-                sx={tabSx}
-              />
-            ))}
-          </Tabs>
-        </Box>
-
-        {/* Content area — rendered by child routes */}
-        <Box
-          sx={{
-            mt: 2,
-            pt: 2,
-            borderTop: "1px solid rgba(255,255,255,0.08)",
-          }}
-        >
-          <ErrorBoundary>
-            <Outlet />
-          </ErrorBoundary>
-        </Box>
-      </Container>
+      {/* ── Content area (scrollable) ── */}
+      <Box
+        sx={{
+          flex: 1,
+          overflowY: "auto",
+          px: { xs: 1, sm: 2 },
+          py: 2,
+        }}
+      >
+        <ErrorBoundary>
+          <Outlet />
+        </ErrorBoundary>
+      </Box>
     </Box>
   );
 };
