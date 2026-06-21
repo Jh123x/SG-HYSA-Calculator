@@ -56,7 +56,7 @@ export const InterestGraph = ({
         lines={lines}
         profile={profile}
         height={height === "fill" ? undefined : height}
-        containerSx={height === "fill" ? { flex: 1, minHeight: 0 } : undefined}
+        containerSx={height === "fill" ? { flex: 1, minHeight: 0, overflow: "hidden" } : undefined}
       >
         <ChartsReferenceLine
           x={profile.Savings}
