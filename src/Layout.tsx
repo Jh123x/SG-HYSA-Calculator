@@ -1,14 +1,13 @@
-import { Outlet, useOutletContext } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Container, GlobalStyles, Box } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { Header } from "./Components/Header";
-import { FormInputs } from "./Components/Inputs";
 import { Footer } from "./Components/Footer";
 import { ErrorBoundary } from "./Components/ErrorBoundary";
 import { bgColor, theme } from "./consts/colors";
 import type Profile from "./types/profile";
 
-interface LayoutProps {
+export interface LayoutContext {
   currProfile: Profile;
   setCurrProfile: (p: Profile) => void;
   pendingUrlProfile: Profile | null;
@@ -16,8 +15,14 @@ interface LayoutProps {
   onRejectShared: () => void;
 }
 
+interface LayoutProps extends LayoutContext {}
+
 /**
- * Shared layout: Header, then page content via <Outlet>, then Footer.
+ * Shared layout matching the Excalidraw wireframe:
+ *   Header (title + FAQ) → Content (inputs + tabs + page) → Footer
+ *
+ * The old WithInputs wrapper is replaced by TabbedContent which
+ * integrates inputs, tab navigation, and page content together.
  */
 export const Layout = ({
   currProfile,
@@ -40,8 +45,8 @@ export const Layout = ({
       }}
     />
     <Header />
-    <Box component="main" sx={{ marginTop: "20px", paddingBottom: "20px" }}>
-      <Container>
+    <Box component="main" sx={{ paddingBottom: "20px" }}>
+      <Container sx={{ maxWidth: "100% !important" }}>
         <ErrorBoundary>
           <Outlet
             context={{
@@ -58,31 +63,3 @@ export const Layout = ({
     <Footer />
   </ThemeProvider>
 );
-
-/**
- * Layout wrapper that adds profile input fields above the page content.
- * Use this for pages that need savings / account configuration inputs.
- */
-export const WithInputs = () => (
-  <>
-    <FormInputsWrapper />
-    <Outlet />
-  </>
-);
-
-/** Internal: reads profile state from Outlet context and renders FormInputs */
-const FormInputsWrapper = () => {
-  const { currProfile, setCurrProfile, pendingUrlProfile, onAcceptShared, onRejectShared } =
-    useOutletContext<LayoutProps>();
-  return (
-    <ErrorBoundary>
-      <FormInputs
-        currProfile={currProfile}
-        setCurrProfile={setCurrProfile}
-        pendingUrlProfile={pendingUrlProfile}
-        onAcceptShared={onAcceptShared}
-        onRejectShared={onRejectShared}
-      />
-    </ErrorBoundary>
-  );
-};

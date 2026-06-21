@@ -10,16 +10,12 @@ import {
   Menu,
   MenuItem,
   useMediaQuery,
-  Tabs,
-  Tab,
+  Button,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import ArticleIcon from "@mui/icons-material/Article";
+import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import { textColor, primaryColor } from "../consts/colors";
-import { ThemeButton } from "./ThemeButton";
 
-/** Navigation tab configuration — single source of truth for routing */
 const TAB_CONFIG = {
   current: { path: "/", label: "Current Rates" },
   history: { path: "/history", label: "Rate History" },
@@ -28,27 +24,12 @@ const TAB_CONFIG = {
 
 type TabKey = keyof typeof TAB_CONFIG;
 
-const tabSx = {
-  color: `${textColor}99`,
-  textTransform: "none" as const,
-  fontWeight: 500,
-  fontSize: "0.85rem",
-  minWidth: "auto",
-  "&.Mui-selected": {
-    color: primaryColor,
-    fontWeight: 600,
-  },
-};
-
 /**
- * Shared header with app title (left), centered navigation tabs (middle),
- * and external links (right).
+ * Simplified header matching the Excalidraw design:
+ * - Left: "SG High Yield Savings Accounts" title
+ * - Right: FAQ link + mobile hamburger menu
  *
- * Navigation tabs and mobile menu items are generated from TAB_CONFIG
- * so adding a new tab only requires adding a new entry to the map.
- *
- * Desktop: three-column layout — title | tabs | icons
- * Mobile: title + hamburger menu
+ * Tab navigation has moved into the main content area (TabbedContent).
  */
 export const Header = () => {
   const theme = useTheme();
@@ -64,7 +45,6 @@ export const Header = () => {
     setAnchorEl(null);
   };
 
-  // Determine active tab from current path using TAB_CONFIG
   const activeTab =
     (Object.keys(TAB_CONFIG) as TabKey[]).find(
       (key) => location.pathname === TAB_CONFIG[key].path,
@@ -81,7 +61,6 @@ export const Header = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          flexWrap: "wrap",
         }}
       >
         {/* Left: title */}
@@ -94,37 +73,10 @@ export const Header = () => {
             flexShrink: 0,
           }}
         >
-          SG HYSA Calculator
+          SG High Yield Savings Accounts
         </Typography>
 
-        {/* Center: tab navigation */}
-        {!isMobile && (
-          <Box sx={{ flex: 1, display: "flex", justifyContent: "center" }}>
-            <Tabs
-              value={activeTab}
-              onChange={(_, v) => {
-                navigate(TAB_CONFIG[v as TabKey].path);
-              }}
-              sx={{
-                minHeight: "auto",
-                "& .MuiTabs-indicator": {
-                  backgroundColor: primaryColor,
-                },
-              }}
-            >
-              {(Object.keys(TAB_CONFIG) as TabKey[]).map((key) => (
-                <Tab
-                  key={key}
-                  label={TAB_CONFIG[key].label}
-                  value={key}
-                  sx={tabSx}
-                />
-              ))}
-            </Tabs>
-          </Box>
-        )}
-
-        {/* Right: external links / mobile menu */}
+        {/* Right: FAQ link (desktop) or hamburger (mobile) */}
         <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
           {isMobile ? (
             <>
@@ -165,7 +117,19 @@ export const Header = () => {
               </Menu>
             </>
           ) : (
-            <></>
+            <Button
+              onClick={() => navigate("/faq")}
+              startIcon={<HelpOutlineOutlinedIcon />}
+              sx={{
+                color: textColor,
+                textTransform: "none",
+                fontWeight: 500,
+                fontSize: "0.9rem",
+                "&:hover": { color: primaryColor },
+              }}
+            >
+              FAQs
+            </Button>
           )}
         </Box>
       </Toolbar>
