@@ -25,11 +25,9 @@ import { deriveCurrentFromHistory } from "../logic/history";
 import { InterestGraph } from "../Components/InterestGraph";
 import { FaqAccordion } from "../Components/FaqAccordion";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { ThemeButton } from "../Components/ThemeButton";
 
-type SortableColumns =
-  | "name"
-  | "yearlyInterest"
-  | "effectiveInterest";
+type SortableColumns = "name" | "yearlyInterest" | "effectiveInterest";
 
 const cellSx = {
   color: textColor,
@@ -47,10 +45,14 @@ interface Props {
  */
 export const CurrentRatesTab = ({ profile }: Props) => {
   const navigate = useNavigate();
-  const [orderBy, setOrderBy] = useState<SortableColumns | undefined>(undefined);
+  const [orderBy, setOrderBy] = useState<SortableColumns | undefined>(
+    undefined,
+  );
   const [order, setOrder] = useState<"asc" | "desc">("desc");
 
-  useDocumentTitle("Compare Singapore High Yield Savings Accounts — Current Rates");
+  useDocumentTitle(
+    "Compare Singapore High Yield Savings Accounts — Current Rates",
+  );
 
   const results: Record<string, ResultProp> = {};
   for (const [slug, info] of Object.entries(bankInfo)) {
@@ -76,8 +78,12 @@ export const CurrentRatesTab = ({ profile }: Props) => {
     switch (orderBy) {
       case "name":
         return order === "asc"
-          ? (bankInfo[a[0]]?.name ?? a[0]).localeCompare(bankInfo[b[0]]?.name ?? b[0])
-          : (bankInfo[b[0]]?.name ?? b[0]).localeCompare(bankInfo[a[0]]?.name ?? a[0]);
+          ? (bankInfo[a[0]]?.name ?? a[0]).localeCompare(
+              bankInfo[b[0]]?.name ?? b[0],
+            )
+          : (bankInfo[b[0]]?.name ?? b[0]).localeCompare(
+              bankInfo[a[0]]?.name ?? a[0],
+            );
       case "yearlyInterest":
         return order === "asc"
           ? a[1].interest.toYearly() - b[1].interest.toYearly()
@@ -211,39 +217,29 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                   <TableCell sx={cellSx}>{interest.remarks}</TableCell>
                   <TableCell sx={cellSx}>{interest.lastUpdated}</TableCell>
                   <TableCell sx={cellSx}>
-                    <Box sx={{ display: "flex", gap: 0.5, justifyContent: "center" }}>
-                      <Tooltip title="Official Website" arrow>
-                        <IconButton
-                          size="small"
-                          aria-label={`Visit ${bankInfo[slug]?.name ?? slug} official website`}
-                          href={interest.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          sx={{
-                            "&:hover": {
-                              backgroundColor: alpha(primaryColor, 0.15),
-                              color: primaryColor,
-                            },
-                          }}
-                        >
-                          <Link fontSize="small" />
-                        </IconButton>
-                      </Tooltip>
-                      <Tooltip title="Detailed History" arrow>
-                        <IconButton
-                          size="small"
-                          aria-label={`View ${bankInfo[slug]?.name ?? slug} rate history`}
-                          onClick={() => navigate(`/bank/${slug}`)}
-                          sx={{
-                            "&:hover": {
-                              backgroundColor: alpha(primaryColor, 0.15),
-                              color: primaryColor,
-                            },
-                          }}
-                        >
-                          <ArrowForward fontSize="small" />
-                        </IconButton>
-                      </Tooltip>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        gap: 0.5,
+                        justifyContent: "center",
+                      }}
+                    >
+                      <ThemeButton
+                        size="small"
+                        tooltip="Official Website"
+                        aria-label={`Visit ${bankInfo[slug]?.name ?? slug} official website`}
+                        href={interest.url}
+                      >
+                        <Link fontSize="small" />
+                      </ThemeButton>
+                      <ThemeButton
+                        tooltip="Detailed History"
+                        size="small"
+                        aria-label={`View ${bankInfo[slug]?.name ?? slug} rate history`}
+                        onClick={() => navigate(`/bank/${slug}`)}
+                      >
+                        <ArrowForward fontSize="small" />
+                      </ThemeButton>
                     </Box>
                   </TableCell>
                 </TableRow>
@@ -251,7 +247,6 @@ export const CurrentRatesTab = ({ profile }: Props) => {
             </TableBody>
           </Table>
         </TableContainer>
-
       </Box>
 
       <InterestGraph profile={profile} />

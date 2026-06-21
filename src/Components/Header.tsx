@@ -17,6 +17,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ArticleIcon from "@mui/icons-material/Article";
 import { textColor, primaryColor } from "../consts/colors";
+import { ThemeButton } from "./ThemeButton";
 
 /** Navigation tab configuration — single source of truth for routing */
 const TAB_CONFIG = {
@@ -64,9 +65,10 @@ export const Header = () => {
   };
 
   // Determine active tab from current path using TAB_CONFIG
-  const activeTab = (Object.keys(TAB_CONFIG) as TabKey[]).find(
-    (key) => location.pathname === TAB_CONFIG[key].path,
-  ) ?? "current";
+  const activeTab =
+    (Object.keys(TAB_CONFIG) as TabKey[]).find(
+      (key) => location.pathname === TAB_CONFIG[key].path,
+    ) ?? "current";
 
   return (
     <AppBar
@@ -160,45 +162,10 @@ export const Header = () => {
                     {TAB_CONFIG[key].label}
                   </MenuItem>
                 ))}
-                <MenuItem
-                  component="a"
-                  href="https://jh123x.com"
-                  target="_blank"
-                  onClick={handleClose}
-                >
-                  <ArticleIcon sx={{ mr: 1 }} />
-                  Blog Post (2024)
-                </MenuItem>
-                <MenuItem
-                  component="a"
-                  href="https://github.com/jh123x/SG-HYSA-Calculator"
-                  target="_blank"
-                  onClick={handleClose}
-                >
-                  <GitHubIcon sx={{ mr: 1 }} />
-                  GitHub
-                </MenuItem>
               </Menu>
             </>
           ) : (
-            <>
-              <IconButton
-                size="large"
-                href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
-                target="_blank"
-                sx={{ color: textColor }}
-              >
-                <ArticleIcon />
-              </IconButton>
-              <IconButton
-                size="large"
-                href="https://github.com/jh123x/SG-HYSA-Calculator"
-                target="_blank"
-                sx={{ color: textColor }}
-              >
-                <GitHubIcon />
-              </IconButton>
-            </>
+            <></>
           )}
         </Box>
       </Toolbar>
