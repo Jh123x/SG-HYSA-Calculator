@@ -1,0 +1,1359 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BankDetailPage desktop > should match snapshot 1`] = `
+<DocumentFragment>
+  <article
+    aria-label="GXS Savings interest rate details"
+    class="MuiBox-root css-0"
+  >
+    <section
+      class="MuiBox-root css-1g4yje1"
+    >
+      <div
+        class="MuiBox-root css-19zgt1b"
+      >
+        <div
+          class="MuiBox-root css-1qzm8v9"
+        >
+          <section
+            aria-label="Interest rate trend chart"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1kzwcse-MuiPaper-root"
+            style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+          >
+            <div
+              class="MuiBox-root css-veuzu8"
+            >
+              <div
+                class="MuiToggleButtonGroup-root MuiToggleButtonGroup-horizontal css-1qb8o-MuiToggleButtonGroup-root"
+                role="group"
+              >
+                <button
+                  aria-pressed="false"
+                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                  tabindex="0"
+                  type="button"
+                  value="yearly"
+                >
+                  Yearly $
+                </button>
+                <button
+                  aria-pressed="true"
+                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                  tabindex="0"
+                  type="button"
+                  value="eir"
+                >
+                  EIR (%)
+                </button>
+              </div>
+              <div
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1nndm05-MuiChip-root"
+              >
+                <span
+                  class="MuiChip-label css-19m61dl-MuiChip-label"
+                >
+                  Today: Jun 21, 2026
+                </span>
+              </div>
+            </div>
+            <div
+              class="MuiBox-root css-zi2l0h"
+            >
+              <div
+                class="css-ibv3zn-MuiChartsWrapper-root"
+              >
+                <ul
+                  class="MuiChartsLegend-root MuiChartsLegend-horizontal css-6qmeuq-MuiChartsLegend-root"
+                >
+                  <li
+                    class="MuiChartsLegend-item"
+                    data-series="auto-generated-id-0"
+                  >
+                    <div
+                      class="MuiChartsLegend-series"
+                    >
+                      <div
+                        aria-hidden="true"
+                        class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                      >
+                        <svg
+                          preserveAspectRatio="none"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            class="MuiChartsLabelMark-fill"
+                            d="M 1 8 L 15 8"
+                            stroke="#e6194b"
+                            stroke-linecap="round"
+                            stroke-width="2"
+                            vector-effect="non-scaling-stroke"
+                          />
+                          <path
+                            d="M3.192,0A3.192,3.192,0,1,1,-3.192,0A3.192,3.192,0,1,1,3.192,0"
+                            fill="#fff"
+                            stroke="#e6194b"
+                            stroke-width="2"
+                            transform="translate(8, 8) "
+                          />
+                        </svg>
+                      </div>
+                      <span
+                        class="MuiChartsLabel-root MuiChartsLegend-label"
+                      >
+                        GXS Savings
+                      </span>
+                    </div>
+                  </li>
+                </ul>
+                <div
+                  class="MuiChartsSurface-root MuiChartsSurface-root css-1q8baz2-MuiChartsLayerContainer-root"
+                  role="none"
+                >
+                  <div
+                    role="none"
+                    style="border-width: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; inset: 0; padding: 0px; outline: none; pointer-events: none;"
+                    tabindex="0"
+                  >
+                    <div
+                      id="voiceover-_r_v_-1"
+                      style="display: none;"
+                    />
+                    <div
+                      id="voiceover-_r_v_-2"
+                      style="display: none;"
+                    />
+                    <div
+                      aria-labelledby="voiceover-_r_v_-1"
+                      role="img"
+                      style="width: 100%; height: 100%; outline: none;"
+                    />
+                    <div
+                      aria-labelledby="voiceover-_r_v_-2"
+                      role="img"
+                      style="width: 100%; height: 100%; outline: none;"
+                    />
+                  </div>
+                  <svg
+                    aria-hidden="true"
+                    class="MuiChartsSvgLayer-root css-1tura0-MuiChartsSvgLayer-root"
+                    viewBox="0 0 100 100"
+                  >
+                    <g
+                      class="MuiChartsGrid-root css-g2sgfh-MuiChartsGrid-root"
+                    >
+                      <line
+                        class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
+                        x1="85"
+                        x2="80"
+                        y1="35"
+                        y2="35"
+                      />
+                      <line
+                        class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
+                        x1="85"
+                        x2="80"
+                        y1="27.5"
+                        y2="27.5"
+                      />
+                      <line
+                        class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
+                        x1="85"
+                        x2="80"
+                        y1="20"
+                        y2="20"
+                      />
+                    </g>
+                    <g
+                      clip-path="url(#_r_u_-clip-path)"
+                    >
+                      <g
+                        class="MuiLineChart-areaPlot css-94vonx-MuiAreaPlot-root"
+                      />
+                      <g
+                        class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
+                      >
+                        <clippath
+                          id="_r_v_-auto-generated-id-0-line-clip"
+                        >
+                          <rect
+                            class="css-dbuw8t"
+                            height="100"
+                            width="100"
+                            x="0"
+                            y="0"
+                          />
+                        </clippath>
+                        <g
+                          clip-path="url(#_r_v_-auto-generated-id-0-line-clip)"
+                        >
+                          <path
+                            class="MuiLineChart-line"
+                            cursor="unset"
+                            d="M85,25.325L84.564,25.325L84.564,29.825L80.233,29.825L80.233,30.425L80,30.425L80,30.425"
+                            data-series="auto-generated-id-0"
+                            data-series-id="auto-generated-id-0"
+                            fill="none"
+                            opacity="1"
+                            stroke="#e6194b"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                    <g
+                      class="MuiChartsAxis-root MuiChartsAxis-directionX MuiChartsAxis-bottom css-1yscjcf-MuiChartsAxis-root-MuiChartsXAxis-root"
+                      data-axis-id="defaultized-x-axis-0"
+                      transform="translate(0, 35)"
+                    >
+                      <line
+                        class="MuiChartsAxis-line"
+                        x1="85"
+                        x2="80"
+                      />
+                      <g
+                        class="MuiChartsAxis-label"
+                      >
+                        <text
+                          dominant-baseline="text-after-edge"
+                          style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 14px; line-height: 1; letter-spacing: 0.00938em;"
+                          text-anchor="middle"
+                          x="82.5"
+                          y="45"
+                        >
+                          <tspan
+                            dominant-baseline="text-after-edge"
+                            dy="0px"
+                            x="82.5"
+                          >
+                            Date
+                          </tspan>
+                        </text>
+                      </g>
+                    </g>
+                    <g
+                      class="MuiChartsAxis-root MuiChartsAxis-directionY MuiChartsAxis-left css-ra8wgq-MuiChartsAxis-root-MuiChartsYAxis-root"
+                      data-axis-id="defaultized-y-axis-0"
+                      transform="translate(85, 0)"
+                    >
+                      <line
+                        class="MuiChartsAxis-line"
+                        stroke-linecap="square"
+                        y1="20"
+                        y2="35"
+                      />
+                      <g
+                        class="MuiChartsAxis-tickContainer"
+                        transform="translate(0, 35)"
+                      >
+                        <line
+                          class="MuiChartsAxis-tick"
+                          x2="-6"
+                        />
+                        <text
+                          class="MuiChartsAxis-tickLabel"
+                          dominant-baseline="central"
+                          style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em;"
+                          text-anchor="end"
+                          x="-8"
+                          y="0"
+                        >
+                          <tspan
+                            dominant-baseline="central"
+                            dy="0px"
+                            x="-8"
+                          >
+                            0.00%
+                          </tspan>
+                        </text>
+                      </g>
+                      <g
+                        class="MuiChartsAxis-tickContainer"
+                        transform="translate(0, 27.5)"
+                      >
+                        <line
+                          class="MuiChartsAxis-tick"
+                          x2="-6"
+                        />
+                        <text
+                          class="MuiChartsAxis-tickLabel"
+                          dominant-baseline="central"
+                          style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em;"
+                          text-anchor="end"
+                          x="-8"
+                          y="0"
+                        >
+                          <tspan
+                            dominant-baseline="central"
+                            dy="0px"
+                            x="-8"
+                          >
+                            2.00%
+                          </tspan>
+                        </text>
+                      </g>
+                      <g
+                        class="MuiChartsAxis-tickContainer"
+                        transform="translate(0, 20)"
+                      >
+                        <line
+                          class="MuiChartsAxis-tick"
+                          x2="-6"
+                        />
+                        <text
+                          class="MuiChartsAxis-tickLabel"
+                          dominant-baseline="central"
+                          style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em;"
+                          text-anchor="end"
+                          x="-8"
+                          y="0"
+                        >
+                          <tspan
+                            dominant-baseline="central"
+                            dy="0px"
+                            x="-8"
+                          >
+                            4.00%
+                          </tspan>
+                        </text>
+                      </g>
+                      <g
+                        class="MuiChartsAxis-label"
+                      >
+                        <text
+                          dominant-baseline="text-before-edge"
+                          style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 14px; line-height: 1; letter-spacing: 0.00938em;"
+                          text-anchor="middle"
+                          transform="rotate(-90, -65, 27.5)"
+                          x="-65"
+                          y="27.5"
+                        >
+                          <tspan
+                            dominant-baseline="text-before-edge"
+                            dy="0px"
+                            x="-65"
+                          >
+                            EIR (%)
+                          </tspan>
+                        </text>
+                      </g>
+                    </g>
+                    <g
+                      data-drawing-container="true"
+                    >
+                      <g
+                        class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
+                      >
+                        <g
+                          clip-path="url(#_r_v_-auto-generated-id-0-line-clip)"
+                          data-series="auto-generated-id-0"
+                        />
+                      </g>
+                    </g>
+                    <clippath
+                      id="_r_u_-clip-path"
+                    >
+                      <rect
+                        height="15"
+                        width="-5"
+                        x="85"
+                        y="20"
+                      />
+                    </clippath>
+                  </svg>
+                  <div
+                    style="position: absolute; left: 0px; top: 0px; pointer-events: none; opacity: 0; width: 1px; height: 1px;"
+                  />
+                </div>
+              </div>
+            </div>
+            <span
+              class="MuiTypography-root MuiTypography-caption css-15z55ox-MuiTypography-root"
+            >
+              * Interest rate changes over time. EIR is calculated based on your current savings amount ($50,000).
+              <br />
+              ** The “updated at” date reflects when this calculator was updated, which may differ from the date the bank published the change.
+            </span>
+          </section>
+        </div>
+        <div
+          class="MuiBox-root css-1qzm8v9"
+        >
+          <section
+            aria-label="Rate change history and bank details"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11df6xj-MuiPaper-root"
+            style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1v31mvv-MuiButtonBase-root-MuiButton-root"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon css-1sh91j5-MuiButton-startIcon"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                  data-testid="ArrowBackIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"
+                  />
+                </svg>
+              </span>
+              Back
+            </button>
+            <div
+              class="MuiBox-root css-1o6yox5"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h5 css-1a7f20e-MuiTypography-root"
+              >
+                GXS Savings
+              </h2>
+              <a
+                aria-label="Visit official website"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-yykazt-MuiButtonBase-root-MuiIconButton-root"
+                data-mui-internal-clone-element="true"
+                href="https://www.gxs.com.sg/savings-account"
+                rel="noopener noreferrer"
+                tabindex="0"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                  data-testid="LanguageIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div
+              class="MuiBox-root css-1m8id4h"
+            >
+              <div
+                class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault css-xr3atc-MuiChip-root"
+              >
+                <span
+                  class="MuiChip-label css-eccknh-MuiChip-label"
+                >
+                  Current EIR: 1.22%
+                </span>
+              </div>
+              <div
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1nndm05-MuiChip-root"
+              >
+                <span
+                  class="MuiChip-label css-19m61dl-MuiChip-label"
+                >
+                  3 rate snapshots
+                </span>
+              </div>
+            </div>
+            <p
+              class="MuiTypography-root MuiTypography-body2 css-hax055-MuiTypography-root"
+            >
+              Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
+              <br />
+              <b>
+                Note: The max amount deposited depends on individual (up to $95,000)
+              </b>
+              <br />
+              View other 
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
+                href="https://www.gxs.com.sg/notices"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Notices here
+              </a>
+            </p>
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-1u8csf7-MuiTypography-root"
+            >
+              Rate Change History
+            </h6>
+            <div
+              class="MuiTableContainer-root css-70zvr5-MuiTableContainer-root"
+            >
+              <table
+                class="MuiTable-root MuiTable-stickyHeader css-pvu7mv-MuiTable-root"
+              >
+                <thead
+                  class="MuiTableHead-root css-1a7iywq-MuiTableHead-root"
+                >
+                  <tr
+                    class="MuiTableRow-root MuiTableRow-head css-1xtozoh-MuiTableRow-root"
+                  >
+                    <th
+                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-gxssj-MuiTableCell-root"
+                      scope="col"
+                    >
+                      Date
+                    </th>
+                    <th
+                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-gxssj-MuiTableCell-root"
+                      scope="col"
+                    >
+                      What Changed
+                    </th>
+                    <th
+                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
+                      scope="col"
+                    >
+                      Yearly Interest
+                    </th>
+                    <th
+                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
+                      scope="col"
+                    >
+                      EIR
+                    </th>
+                    <th
+                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1cb113z-MuiTableCell-root"
+                      scope="col"
+                    >
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+                <tbody
+                  class="MuiTableBody-root css-gmh7jj-MuiTableBody-root"
+                >
+                  <tr
+                    class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
+                  >
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                    >
+                      2026-06-05
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                    >
+                      Boost Pocket: $85K at 1.22% (reduced from 1.38%). Saving Pockets unchanged
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                    >
+                      $610.00
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                    >
+                      1.22%
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1kz7lfu-MuiTableCell-root"
+                    />
+                  </tr>
+                  <tr
+                    class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
+                  >
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                    >
+                      2025-08-01
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                    >
+                      Boost Pocket: $85K at 1.38% (reduced from 2.58%). Saving Pockets: $10K at 1.08%
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                    >
+                      $690.00
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                    >
+                      1.38%
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1kz7lfu-MuiTableCell-root"
+                    >
+                      <a
+                        aria-label="Visit source page"
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-gf9txo-MuiButtonBase-root-MuiIconButton-root"
+                        data-mui-internal-clone-element="true"
+                        href="https://sethisfy.com/nerfed-gxs-slashes-interest-1-38-p-a-6th-august-2025/"
+                        rel="noopener noreferrer"
+                        tabindex="0"
+                        target="_blank"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                          data-testid="OpenInNewIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                          />
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr
+                    class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
+                  >
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                    >
+                      2025-07-01
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                    >
+                      Boost Pocket: $60K at 2.58%, Saving Pockets: $35K at 1.68%
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                    >
+                      $1290.00
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                    >
+                      2.58%
+                    </td>
+                    <td
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1kz7lfu-MuiTableCell-root"
+                    >
+                      <a
+                        aria-label="Visit source page"
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-gf9txo-MuiButtonBase-root-MuiIconButton-root"
+                        data-mui-internal-clone-element="true"
+                        href="https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/"
+                        rel="noopener noreferrer"
+                        tabindex="0"
+                        target="_blank"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                          data-testid="OpenInNewIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                          />
+                        </svg>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </article>
+</DocumentFragment>
+`;
+
+exports[`BankDetailPage mobile > should match snapshot 1`] = `
+<DocumentFragment>
+  <article
+    aria-label="GXS Savings interest rate details"
+    class="MuiBox-root css-0"
+  >
+    <section
+      class="MuiBox-root css-sg6wi7"
+    >
+      <div
+        class="MuiBox-root css-1jpm9pd"
+      >
+        <section
+          aria-label="Interest rate trend chart"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1kzwcse-MuiPaper-root"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <div
+            class="MuiBox-root css-veuzu8"
+          >
+            <div
+              class="MuiToggleButtonGroup-root MuiToggleButtonGroup-horizontal css-1qb8o-MuiToggleButtonGroup-root"
+              role="group"
+            >
+              <button
+                aria-pressed="false"
+                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                tabindex="0"
+                type="button"
+                value="yearly"
+              >
+                Yearly $
+              </button>
+              <button
+                aria-pressed="true"
+                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                tabindex="0"
+                type="button"
+                value="eir"
+              >
+                EIR (%)
+              </button>
+            </div>
+            <div
+              class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1nndm05-MuiChip-root"
+            >
+              <span
+                class="MuiChip-label css-19m61dl-MuiChip-label"
+              >
+                Today: Jun 21, 2026
+              </span>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-zi2l0h"
+          >
+            <div
+              class="css-9d3u4u-MuiChartsWrapper-root"
+            >
+              <ul
+                class="MuiChartsLegend-root MuiChartsLegend-horizontal css-6qmeuq-MuiChartsLegend-root"
+              >
+                <li
+                  class="MuiChartsLegend-item"
+                  data-series="auto-generated-id-0"
+                >
+                  <div
+                    class="MuiChartsLegend-series"
+                  >
+                    <div
+                      aria-hidden="true"
+                      class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                    >
+                      <svg
+                        preserveAspectRatio="none"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          class="MuiChartsLabelMark-fill"
+                          d="M 1 8 L 15 8"
+                          stroke="#e6194b"
+                          stroke-linecap="round"
+                          stroke-width="2"
+                          vector-effect="non-scaling-stroke"
+                        />
+                        <path
+                          d="M3.192,0A3.192,3.192,0,1,1,-3.192,0A3.192,3.192,0,1,1,3.192,0"
+                          fill="#fff"
+                          stroke="#e6194b"
+                          stroke-width="2"
+                          transform="translate(8, 8) "
+                        />
+                      </svg>
+                    </div>
+                    <span
+                      class="MuiChartsLabel-root MuiChartsLegend-label"
+                    >
+                      GXS Savings
+                    </span>
+                  </div>
+                </li>
+              </ul>
+              <div
+                class="MuiChartsSurface-root MuiChartsSurface-root css-gicut1-MuiChartsLayerContainer-root"
+                role="none"
+              >
+                <div
+                  role="none"
+                  style="border-width: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; inset: 0; padding: 0px; outline: none; pointer-events: none;"
+                  tabindex="0"
+                >
+                  <div
+                    id="voiceover-_r_19_-1"
+                    style="display: none;"
+                  />
+                  <div
+                    id="voiceover-_r_19_-2"
+                    style="display: none;"
+                  />
+                  <div
+                    aria-labelledby="voiceover-_r_19_-1"
+                    role="img"
+                    style="width: 100%; height: 100%; outline: none;"
+                  />
+                  <div
+                    aria-labelledby="voiceover-_r_19_-2"
+                    role="img"
+                    style="width: 100%; height: 100%; outline: none;"
+                  />
+                </div>
+                <svg
+                  aria-hidden="true"
+                  class="MuiChartsSvgLayer-root css-1tura0-MuiChartsSvgLayer-root"
+                  viewBox="0 0 100 300"
+                >
+                  <g
+                    class="MuiChartsGrid-root css-g2sgfh-MuiChartsGrid-root"
+                  >
+                    <line
+                      class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
+                      x1="85"
+                      x2="80"
+                      y1="235"
+                      y2="235"
+                    />
+                    <line
+                      class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
+                      x1="85"
+                      x2="80"
+                      y1="163.33333333333334"
+                      y2="163.33333333333334"
+                    />
+                    <line
+                      class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
+                      x1="85"
+                      x2="80"
+                      y1="91.66666666666667"
+                      y2="91.66666666666667"
+                    />
+                    <line
+                      class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
+                      x1="85"
+                      x2="80"
+                      y1="20"
+                      y2="20"
+                    />
+                  </g>
+                  <g
+                    clip-path="url(#_r_18_-clip-path)"
+                  >
+                    <g
+                      class="MuiLineChart-areaPlot css-94vonx-MuiAreaPlot-root"
+                    />
+                    <g
+                      class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
+                    >
+                      <clippath
+                        id="_r_19_-auto-generated-id-0-line-clip"
+                      >
+                        <rect
+                          class="css-dbuw8t"
+                          height="300"
+                          width="100"
+                          x="0"
+                          y="0"
+                        />
+                      </clippath>
+                      <g
+                        clip-path="url(#_r_19_-auto-generated-id-0-line-clip)"
+                      >
+                        <path
+                          class="MuiLineChart-line"
+                          cursor="unset"
+                          d="M85,50.1L84.564,50.1L84.564,136.1L80.233,136.1L80.233,147.567L80,147.567L80,147.567"
+                          data-series="auto-generated-id-0"
+                          data-series-id="auto-generated-id-0"
+                          fill="none"
+                          opacity="1"
+                          stroke="#e6194b"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <g
+                    class="MuiChartsAxis-root MuiChartsAxis-directionX MuiChartsAxis-bottom css-1yscjcf-MuiChartsAxis-root-MuiChartsXAxis-root"
+                    data-axis-id="defaultized-x-axis-0"
+                    transform="translate(0, 235)"
+                  >
+                    <line
+                      class="MuiChartsAxis-line"
+                      x1="85"
+                      x2="80"
+                    />
+                    <g
+                      class="MuiChartsAxis-label"
+                    >
+                      <text
+                        dominant-baseline="text-after-edge"
+                        style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 14px; line-height: 1; letter-spacing: 0.00938em;"
+                        text-anchor="middle"
+                        x="82.5"
+                        y="45"
+                      >
+                        <tspan
+                          dominant-baseline="text-after-edge"
+                          dy="0px"
+                          x="82.5"
+                        >
+                          Date
+                        </tspan>
+                      </text>
+                    </g>
+                  </g>
+                  <g
+                    class="MuiChartsAxis-root MuiChartsAxis-directionY MuiChartsAxis-left css-ra8wgq-MuiChartsAxis-root-MuiChartsYAxis-root"
+                    data-axis-id="defaultized-y-axis-0"
+                    transform="translate(85, 0)"
+                  >
+                    <line
+                      class="MuiChartsAxis-line"
+                      stroke-linecap="square"
+                      y1="20"
+                      y2="235"
+                    />
+                    <g
+                      class="MuiChartsAxis-tickContainer"
+                      transform="translate(0, 235)"
+                    >
+                      <line
+                        class="MuiChartsAxis-tick"
+                        x2="-6"
+                      />
+                      <text
+                        class="MuiChartsAxis-tickLabel"
+                        dominant-baseline="central"
+                        style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em;"
+                        text-anchor="end"
+                        x="-8"
+                        y="0"
+                      >
+                        <tspan
+                          dominant-baseline="central"
+                          dy="0px"
+                          x="-8"
+                        >
+                          0.00%
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="MuiChartsAxis-tickContainer"
+                      transform="translate(0, 163.33333333333334)"
+                    >
+                      <line
+                        class="MuiChartsAxis-tick"
+                        x2="-6"
+                      />
+                      <text
+                        class="MuiChartsAxis-tickLabel"
+                        dominant-baseline="central"
+                        style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em;"
+                        text-anchor="end"
+                        x="-8"
+                        y="0"
+                      >
+                        <tspan
+                          dominant-baseline="central"
+                          dy="0px"
+                          x="-8"
+                        >
+                          1.00%
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="MuiChartsAxis-tickContainer"
+                      transform="translate(0, 91.66666666666667)"
+                    >
+                      <line
+                        class="MuiChartsAxis-tick"
+                        x2="-6"
+                      />
+                      <text
+                        class="MuiChartsAxis-tickLabel"
+                        dominant-baseline="central"
+                        style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em;"
+                        text-anchor="end"
+                        x="-8"
+                        y="0"
+                      >
+                        <tspan
+                          dominant-baseline="central"
+                          dy="0px"
+                          x="-8"
+                        >
+                          2.00%
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="MuiChartsAxis-tickContainer"
+                      transform="translate(0, 20)"
+                    >
+                      <line
+                        class="MuiChartsAxis-tick"
+                        x2="-6"
+                      />
+                      <text
+                        class="MuiChartsAxis-tickLabel"
+                        dominant-baseline="central"
+                        style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em;"
+                        text-anchor="end"
+                        x="-8"
+                        y="0"
+                      >
+                        <tspan
+                          dominant-baseline="central"
+                          dy="0px"
+                          x="-8"
+                        >
+                          3.00%
+                        </tspan>
+                      </text>
+                    </g>
+                    <g
+                      class="MuiChartsAxis-label"
+                    >
+                      <text
+                        dominant-baseline="text-before-edge"
+                        style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 14px; line-height: 1; letter-spacing: 0.00938em;"
+                        text-anchor="middle"
+                        transform="rotate(-90, -65, 127.5)"
+                        x="-65"
+                        y="127.5"
+                      >
+                        <tspan
+                          dominant-baseline="text-before-edge"
+                          dy="0px"
+                          x="-65"
+                        >
+                          EIR (%)
+                        </tspan>
+                      </text>
+                    </g>
+                  </g>
+                  <g
+                    data-drawing-container="true"
+                  >
+                    <g
+                      class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
+                    >
+                      <g
+                        clip-path="url(#_r_19_-auto-generated-id-0-line-clip)"
+                        data-series="auto-generated-id-0"
+                      />
+                    </g>
+                  </g>
+                  <clippath
+                    id="_r_18_-clip-path"
+                  >
+                    <rect
+                      height="215"
+                      width="-5"
+                      x="85"
+                      y="20"
+                    />
+                  </clippath>
+                </svg>
+                <div
+                  style="position: absolute; left: 0px; top: 0px; pointer-events: none; opacity: 0; width: 1px; height: 1px;"
+                />
+              </div>
+            </div>
+          </div>
+          <span
+            class="MuiTypography-root MuiTypography-caption css-15z55ox-MuiTypography-root"
+          >
+            * Interest rate changes over time. EIR is calculated based on your current savings amount ($50,000).
+            <br />
+            ** The “updated at” date reflects when this calculator was updated, which may differ from the date the bank published the change.
+          </span>
+        </section>
+      </div>
+      <div
+        class="MuiBox-root css-1jpm9pd"
+      >
+        <section
+          aria-label="Rate change history and bank details"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11df6xj-MuiPaper-root"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+        >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1v31mvv-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiButton-icon MuiButton-startIcon css-1sh91j5-MuiButton-startIcon"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="ArrowBackIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20z"
+                />
+              </svg>
+            </span>
+            Back
+          </button>
+          <div
+            class="MuiBox-root css-1o6yox5"
+          >
+            <h2
+              class="MuiTypography-root MuiTypography-h5 css-1a7f20e-MuiTypography-root"
+            >
+              GXS Savings
+            </h2>
+            <a
+              aria-label="Visit official website"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-yykazt-MuiButtonBase-root-MuiIconButton-root"
+              data-mui-internal-clone-element="true"
+              href="https://www.gxs.com.sg/savings-account"
+              rel="noopener noreferrer"
+              tabindex="0"
+              target="_blank"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                data-testid="LanguageIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="MuiBox-root css-1m8id4h"
+          >
+            <div
+              class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault css-xr3atc-MuiChip-root"
+            >
+              <span
+                class="MuiChip-label css-eccknh-MuiChip-label"
+              >
+                Current EIR: 1.22%
+              </span>
+            </div>
+            <div
+              class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1nndm05-MuiChip-root"
+            >
+              <span
+                class="MuiChip-label css-19m61dl-MuiChip-label"
+              >
+                3 rate snapshots
+              </span>
+            </div>
+          </div>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-hax055-MuiTypography-root"
+          >
+            Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
+            <br />
+            <b>
+              Note: The max amount deposited depends on individual (up to $95,000)
+            </b>
+            <br />
+            View other 
+            <a
+              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
+              href="https://www.gxs.com.sg/notices"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Notices here
+            </a>
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-1u8csf7-MuiTypography-root"
+          >
+            Rate Change History
+          </h6>
+          <div
+            class="MuiTableContainer-root css-70zvr5-MuiTableContainer-root"
+          >
+            <table
+              class="MuiTable-root MuiTable-stickyHeader css-pvu7mv-MuiTable-root"
+            >
+              <thead
+                class="MuiTableHead-root css-1a7iywq-MuiTableHead-root"
+              >
+                <tr
+                  class="MuiTableRow-root MuiTableRow-head css-1xtozoh-MuiTableRow-root"
+                >
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-gxssj-MuiTableCell-root"
+                    scope="col"
+                  >
+                    Date
+                  </th>
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-gxssj-MuiTableCell-root"
+                    scope="col"
+                  >
+                    What Changed
+                  </th>
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
+                    scope="col"
+                  >
+                    Yearly Interest
+                  </th>
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
+                    scope="col"
+                  >
+                    EIR
+                  </th>
+                  <th
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1cb113z-MuiTableCell-root"
+                    scope="col"
+                  >
+                    Action
+                  </th>
+                </tr>
+              </thead>
+              <tbody
+                class="MuiTableBody-root css-gmh7jj-MuiTableBody-root"
+              >
+                <tr
+                  class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                  >
+                    2026-06-05
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                  >
+                    Boost Pocket: $85K at 1.22% (reduced from 1.38%). Saving Pockets unchanged
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                  >
+                    $610.00
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                  >
+                    1.22%
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1kz7lfu-MuiTableCell-root"
+                  />
+                </tr>
+                <tr
+                  class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                  >
+                    2025-08-01
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                  >
+                    Boost Pocket: $85K at 1.38% (reduced from 2.58%). Saving Pockets: $10K at 1.08%
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                  >
+                    $690.00
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                  >
+                    1.38%
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1kz7lfu-MuiTableCell-root"
+                  >
+                    <a
+                      aria-label="Visit source page"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-gf9txo-MuiButtonBase-root-MuiIconButton-root"
+                      data-mui-internal-clone-element="true"
+                      href="https://sethisfy.com/nerfed-gxs-slashes-interest-1-38-p-a-6th-august-2025/"
+                      rel="noopener noreferrer"
+                      tabindex="0"
+                      target="_blank"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                        data-testid="OpenInNewIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                        />
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                  >
+                    2025-07-01
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1jo4xp7-MuiTableCell-root"
+                  >
+                    Boost Pocket: $60K at 2.58%, Saving Pockets: $35K at 1.68%
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                  >
+                    $1290.00
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-cqieco-MuiTableCell-root"
+                  >
+                    2.58%
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1kz7lfu-MuiTableCell-root"
+                  >
+                    <a
+                      aria-label="Visit source page"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-gf9txo-MuiButtonBase-root-MuiIconButton-root"
+                      data-mui-internal-clone-element="true"
+                      href="https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/"
+                      rel="noopener noreferrer"
+                      tabindex="0"
+                      target="_blank"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                        data-testid="OpenInNewIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                        />
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </section>
+  </article>
+</DocumentFragment>
+`;
