@@ -57,7 +57,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
               </div>
             </div>
             <div
-              class="MuiBox-root css-1lgiddr"
+              class="MuiBox-root css-zi2l0h"
             >
               <div
                 class="css-ibv3zn-MuiChartsWrapper-root"
@@ -719,10 +719,10 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root css-1lgiddr"
+            class="MuiBox-root css-zi2l0h"
           >
             <div
-              class="css-9d3u4u-MuiChartsWrapper-root"
+              class="css-ibv3zn-MuiChartsWrapper-root"
             >
               <ul
                 class="MuiChartsLegend-root MuiChartsLegend-horizontal css-6qmeuq-MuiChartsLegend-root"
@@ -768,7 +768,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                 </li>
               </ul>
               <div
-                class="MuiChartsSurface-root MuiChartsSurface-root css-gicut1-MuiChartsLayerContainer-root"
+                class="MuiChartsSurface-root MuiChartsSurface-root css-1q8baz2-MuiChartsLayerContainer-root"
                 role="none"
               >
                 <div
@@ -798,7 +798,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                 <svg
                   aria-hidden="true"
                   class="MuiChartsSvgLayer-root css-1tura0-MuiChartsSvgLayer-root"
-                  viewBox="0 0 100 300"
+                  viewBox="0 0 100 100"
                 >
                   <g
                     class="MuiChartsGrid-root css-g2sgfh-MuiChartsGrid-root"
@@ -807,22 +807,15 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                       class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
                       x1="85"
                       x2="80"
-                      y1="235"
-                      y2="235"
+                      y1="35"
+                      y2="35"
                     />
                     <line
                       class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
                       x1="85"
                       x2="80"
-                      y1="163.33333333333334"
-                      y2="163.33333333333334"
-                    />
-                    <line
-                      class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
-                      x1="85"
-                      x2="80"
-                      y1="91.66666666666667"
-                      y2="91.66666666666667"
+                      y1="27.5"
+                      y2="27.5"
                     />
                     <line
                       class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
@@ -846,7 +839,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                       >
                         <rect
                           class="css-dbuw8t"
-                          height="300"
+                          height="100"
                           width="100"
                           x="0"
                           y="0"
@@ -858,7 +851,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                         <path
                           class="MuiLineChart-line"
                           cursor="unset"
-                          d="M85,50.1L84.564,50.1L84.564,136.1L80.229,136.1L80.229,147.567L80,147.567L80,147.567"
+                          d="M85,25.325L84.564,25.325L84.564,29.825L80.229,29.825L80.229,30.425L80,30.425L80,30.425"
                           data-series="auto-generated-id-0"
                           data-series-id="auto-generated-id-0"
                           fill="none"
@@ -873,7 +866,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                   <g
                     class="MuiChartsAxis-root MuiChartsAxis-directionX MuiChartsAxis-bottom css-1yscjcf-MuiChartsAxis-root-MuiChartsXAxis-root"
                     data-axis-id="defaultized-x-axis-0"
-                    transform="translate(0, 235)"
+                    transform="translate(0, 35)"
                   >
                     <line
                       class="MuiChartsAxis-line"
@@ -909,11 +902,11 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                       class="MuiChartsAxis-line"
                       stroke-linecap="square"
                       y1="20"
-                      y2="235"
+                      y2="35"
                     />
                     <g
                       class="MuiChartsAxis-tickContainer"
-                      transform="translate(0, 235)"
+                      transform="translate(0, 35)"
                     >
                       <line
                         class="MuiChartsAxis-tick"
@@ -938,32 +931,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                     </g>
                     <g
                       class="MuiChartsAxis-tickContainer"
-                      transform="translate(0, 163.33333333333334)"
-                    >
-                      <line
-                        class="MuiChartsAxis-tick"
-                        x2="-6"
-                      />
-                      <text
-                        class="MuiChartsAxis-tickLabel"
-                        dominant-baseline="central"
-                        style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em;"
-                        text-anchor="end"
-                        x="-8"
-                        y="0"
-                      >
-                        <tspan
-                          dominant-baseline="central"
-                          dy="0px"
-                          x="-8"
-                        >
-                          1.00%
-                        </tspan>
-                      </text>
-                    </g>
-                    <g
-                      class="MuiChartsAxis-tickContainer"
-                      transform="translate(0, 91.66666666666667)"
+                      transform="translate(0, 27.5)"
                     >
                       <line
                         class="MuiChartsAxis-tick"
@@ -1007,7 +975,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                           dy="0px"
                           x="-8"
                         >
-                          3.00%
+                          4.00%
                         </tspan>
                       </text>
                     </g>
@@ -1018,9 +986,9 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                         dominant-baseline="text-before-edge"
                         style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 14px; line-height: 1; letter-spacing: 0.00938em;"
                         text-anchor="middle"
-                        transform="rotate(-90, -65, 127.5)"
+                        transform="rotate(-90, -65, 27.5)"
                         x="-65"
-                        y="127.5"
+                        y="27.5"
                       >
                         <tspan
                           dominant-baseline="text-before-edge"
@@ -1048,7 +1016,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                     id="_r_18_-clip-path"
                   >
                     <rect
-                      height="215"
+                      height="15"
                       width="-5"
                       x="85"
                       y="20"

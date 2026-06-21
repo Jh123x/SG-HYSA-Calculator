@@ -177,13 +177,12 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           </ToggleButtonGroup>
           <Chip label={`Today: ${todayStr}`} size="small" variant="outlined" sx={{ color: textColor, borderColor: `${textColor}30` }} />
         </Box>
-        <Box sx={{ flex: 1, minHeight: 0, overflow: "hidden" }}>
+        <Box sx={{ flex: 1, minHeight: 0 }}>
           <LineChart
             dataset={chartData}
             xAxis={[{ dataKey: "date", label: "Date", scaleType: "time" as const, tickLabelStyle: { angle: 45, textAnchor: "start" as const, fontSize: 11 }, valueFormatter: dateFormatter }]}
             series={[{ dataKey, label: info.name, color: lineColors[0], showMark: true, curve: "stepAfter", valueFormatter: (v: number | null) => v !== null ? (isYearly ? `$${v.toFixed(2)}` : `${v.toFixed(2)}%`) : "" }]}
             yAxis={[{ label: yLabel, scaleType: "linear", min: 0, valueFormatter: yFormatter }]}
-            height={isMobile ? 300 : undefined}
             grid={{ vertical: true, horizontal: true }}
             sx={{ ".MuiChartsAxis-label": { fill: textColor }, ".MuiChartsAxis-tick": { fill: textColor }, ".MuiChartsLegend-label": { fill: textColor }, "& .MuiChartsSurface-root": { background: "transparent" }, height: "100%", width: "100%" }}
           />

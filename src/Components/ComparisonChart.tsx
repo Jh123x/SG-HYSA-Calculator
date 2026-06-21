@@ -16,7 +16,6 @@ import {
 } from "./comparison/buildDataset";
 import { buildComparisonSeries } from "./comparison/buildSeries";
 import { dateFormatter } from "../consts/formatter";
-import { useMobile } from "../hooks/useMobile";
 
 interface ComparisonChartProps {
   selectedBanks: string[];
@@ -117,8 +116,6 @@ const ComparisonChartContent = ({
   profile,
   chartMode,
 }: ComparisonChartProps) => {
-  const { isMobile } = useMobile();
-
   const { dataset, yearlySeries, eirSeries } = useMemo(() => {
     const bankPoints = collectBankPoints(selectedBanks, profile);
 
@@ -189,7 +186,7 @@ const ComparisonChartContent = ({
           flexDirection: "column",
         }}
       >
-        <Box sx={{ flex: 1, minHeight: 0, overflow: "hidden" }}>
+        <Box sx={{ flex: 1, minHeight: 0 }}>
           <LineChart
             dataset={dataset}
             xAxis={X_AXIS}
@@ -202,7 +199,6 @@ const ComparisonChartContent = ({
                 valueFormatter: yFormatter,
               },
             ]}
-            height={isMobile ? 300 : undefined}
             grid={{ vertical: true, horizontal: true }}
             slotProps={{
               legend: {
