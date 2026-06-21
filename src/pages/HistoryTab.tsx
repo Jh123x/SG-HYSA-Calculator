@@ -431,63 +431,65 @@ const MobileRowGroupedList = ({
 
   return (
     <Paper sx={{ borderRadius: "10px", backgroundColor: bgColor, overflow: "hidden" }}>
-      <Table size="small">
-        <TableHead>
-          <TableRow>
-            <TableCell sx={{ color: textColor, fontWeight: 600, width: 24, p: 0.5, backgroundColor: bgColor }} />
-            <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5, backgroundColor: bgColor }}>Date</TableCell>
-            <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5, backgroundColor: bgColor }}>Change</TableCell>
-            <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}1a` : bgColor }}>
-              Yr$
-            </TableCell>
-            <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "eir" ? `${primaryColor}1a` : bgColor }}>
-              EIR
-            </TableCell>
-            <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", textAlign: "center", width: 60, px: 0.5, backgroundColor: bgColor }}>Act</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {bankHistories.flatMap((bank) => {
-            const isCollapsed = collapsedBanks.has(bank.slug);
-            return [
-              <TableRow key={`hdr-${bank.slug}`} hover onClick={() => toggleCollapse(bank.slug)} sx={{ cursor: "pointer", backgroundColor: `${primaryColor}10`, "&:hover": { backgroundColor: `${primaryColor}1d` } }}>
-                <TableCell sx={{ color: textColor, p: 0.5 }}>
-                  <IconButton size="small" sx={{ color: textColor, p: 0 }}>
-                    {isCollapsed ? <KeyboardArrowRight fontSize="small" /> : <KeyboardArrowDown fontSize="small" />}
-                  </IconButton>
-                </TableCell>
-                <TableCell colSpan={5} sx={{ color: textColor, py: 1, pl: 0 }}>
-                  <Typography component="span" sx={{ fontWeight: 600, color: textColor, fontSize: "0.85rem" }}>{bank.name}</Typography>
-                  <Typography component="span" variant="body2" sx={{ color: textColor, opacity: 0.5, ml: 0.5, fontSize: "0.7rem" }}>
-                    ({bank.rows.length})
-                  </Typography>
-                </TableCell>
-              </TableRow>,
-              ...(!isCollapsed ? bank.rows.map((row, idx) => (
-                <TableRow key={`${bank.slug}-${idx}`} sx={{ "&:hover": { backgroundColor: `${primaryColor}08` } }}>
-                  <TableCell sx={{ p: 0 }} />
-                  <TableCell sx={{ color: textColor, fontSize: "0.7rem", px: 0.5 }}>{row.date}</TableCell>
-                  <TableCell sx={{ color: textColor, fontSize: "0.7rem", px: 0.5 }}>{row.changeSummary}</TableCell>
-                  <TableCell sx={{ color: textColor, textAlign: "right", fontSize: "0.7rem", px: 0.5, backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}08` : "transparent" }}>
-                    {row.yearlyInterest}
+      <TableContainer sx={{ overflow: "hidden" }}>
+        <Table size="small" sx={{ tableLayout: "fixed" }}>
+          <TableHead>
+            <TableRow>
+              <TableCell sx={{ color: textColor, fontWeight: 600, width: 24, p: 0.5, backgroundColor: bgColor }} />
+              <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5, backgroundColor: bgColor, width: 80, whiteSpace: "nowrap" }}>Date</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5, backgroundColor: bgColor }}>Change</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}1a` : bgColor, width: 48 }}>
+                Yr$
+              </TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "eir" ? `${primaryColor}1a` : bgColor, width: 48 }}>
+                EIR
+              </TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", textAlign: "center", width: 60, px: 0.5, backgroundColor: bgColor, whiteSpace: "nowrap" }}>Act</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {bankHistories.flatMap((bank) => {
+              const isCollapsed = collapsedBanks.has(bank.slug);
+              return [
+                <TableRow key={`hdr-${bank.slug}`} hover onClick={() => toggleCollapse(bank.slug)} sx={{ cursor: "pointer", backgroundColor: `${primaryColor}10`, "&:hover": { backgroundColor: `${primaryColor}1d` } }}>
+                  <TableCell sx={{ color: textColor, p: 0.5 }}>
+                    <IconButton size="small" sx={{ color: textColor, p: 0 }}>
+                      {isCollapsed ? <KeyboardArrowRight fontSize="small" /> : <KeyboardArrowDown fontSize="small" />}
+                    </IconButton>
                   </TableCell>
-                  <TableCell sx={{ color: textColor, textAlign: "right", fontSize: "0.7rem", px: 0.5, backgroundColor: highlightCol === "eir" ? `${primaryColor}08` : "transparent" }}>
-                    {row.eir}
+                  <TableCell colSpan={5} sx={{ color: textColor, py: 1, pl: 0 }}>
+                    <Typography component="span" sx={{ fontWeight: 600, color: textColor, fontSize: "0.85rem" }}>{bank.name}</Typography>
+                    <Typography component="span" variant="body2" sx={{ color: textColor, opacity: 0.5, ml: 0.5, fontSize: "0.7rem" }}>
+                      ({bank.rows.length})
+                    </Typography>
                   </TableCell>
-                  <TableCell sx={{ color: textColor, textAlign: "center", p: 0.25 }}>
-                    <Box sx={{ display: "flex", justifyContent: "center", gap: 0 }}>
-                      {row.sourceUrl && (
-                        <Tooltip title="Source"><IconButton size="small" href={row.sourceUrl} target="_blank" rel="noopener noreferrer" sx={{ color: primaryColor, p: 0.25 }}><Language sx={{ fontSize: 14 }} /></IconButton></Tooltip>
-                      )}
-                      <Tooltip title="Details"><IconButton size="small" onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor, p: 0.25 }}><OpenInNew sx={{ fontSize: 14 }} /></IconButton></Tooltip>
-                    </Box>
-                  </TableCell>
-                </TableRow>
-              )) : []),
-            ];
-          })}
-        </TableBody>
-      </Table>
+                </TableRow>,
+                ...(!isCollapsed ? bank.rows.map((row, idx) => (
+                  <TableRow key={`${bank.slug}-${idx}`} sx={{ "&:hover": { backgroundColor: `${primaryColor}08` } }}>
+                    <TableCell sx={{ p: 0 }} />
+                    <TableCell sx={{ color: textColor, fontSize: "0.7rem", px: 0.5, whiteSpace: "nowrap" }}>{row.date}</TableCell>
+                    <TableCell sx={{ color: textColor, fontSize: "0.7rem", px: 0.5, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{row.changeSummary}</TableCell>
+                    <TableCell sx={{ color: textColor, textAlign: "right", fontSize: "0.7rem", px: 0.5, backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}08` : "transparent", whiteSpace: "nowrap" }}>
+                      {row.yearlyInterest}
+                    </TableCell>
+                    <TableCell sx={{ color: textColor, textAlign: "right", fontSize: "0.7rem", px: 0.5, backgroundColor: highlightCol === "eir" ? `${primaryColor}08` : "transparent", whiteSpace: "nowrap" }}>
+                      {row.eir}
+                    </TableCell>
+                    <TableCell sx={{ color: textColor, textAlign: "center", p: 0.25, whiteSpace: "nowrap" }}>
+                      <Box sx={{ display: "flex", justifyContent: "center", gap: 0 }}>
+                        {row.sourceUrl && (
+                          <Tooltip title="Source"><IconButton size="small" href={row.sourceUrl} target="_blank" rel="noopener noreferrer" sx={{ color: primaryColor, p: 0.25 }}><Language sx={{ fontSize: 14 }} /></IconButton></Tooltip>
+                        )}
+                        <Tooltip title="Details"><IconButton size="small" onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor, p: 0.25 }}><OpenInNew sx={{ fontSize: 14 }} /></IconButton></Tooltip>
+                      </Box>
+                    </TableCell>
+                  </TableRow>
+                )) : []),
+              ];
+            })}
+          </TableBody>
+        </Table>
+      </TableContainer>
     </Paper>
   );
 };
