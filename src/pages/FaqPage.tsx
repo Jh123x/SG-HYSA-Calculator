@@ -67,8 +67,6 @@ export const FaqPage = () => {
           backgroundColor: bgColor,
           maxWidth: "800px !important",
           py: 3,
-          height: "100%",
-          overflowY: "auto",
         }}
       >
         <Typography variant="h4" component="h1" sx={{ fontWeight: 700, mb: 1 }}>

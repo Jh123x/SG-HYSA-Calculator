@@ -710,16 +710,16 @@ exports[`App > should render correctly 1`] = `
             />
           </div>
           <div
-            class="MuiBox-root css-1lgiddr"
+            class="MuiBox-root css-3bihpr"
           >
             <section
-              class="MuiBox-root css-1np1cz9"
+              class="MuiBox-root css-1dyq5ln"
             >
               <div
-                class="MuiBox-root css-1ge6cq4"
+                class="MuiBox-root css-10egq61"
               >
                 <div
-                  class="MuiBox-root css-1qzm8v9"
+                  class="MuiBox-root css-1fjtzvx"
                 >
                   <div
                     class="MuiBox-root css-dqo70j"
@@ -2045,14 +2045,14 @@ exports[`App > should render correctly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiBox-root css-1qzm8v9"
+                  class="MuiBox-root css-1fjtzvx"
                 >
                   <div
-                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1p9jasy-MuiPaper-root"
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lp9sq0-MuiPaper-root"
                     style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0.051), rgba(255, 255, 255, 0.051));"
                   >
                     <div
-                      class="MuiTableContainer-root css-12yyy99-MuiTableContainer-root"
+                      class="MuiTableContainer-root css-70zvr5-MuiTableContainer-root"
                     >
                       <table
                         aria-label="High yield savings account interest rate comparison table"

@@ -163,7 +163,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           p: 2,
           borderRadius: "10px",
           backgroundColor: bgColor,
-          height: "100%",
+          height: "45vh",
           display: "flex",
           flexDirection: "column",
         }}
@@ -196,7 +196,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   };
 
   const renderHistorySection = () => (
-    <Paper component="section" aria-label="Rate change history and bank details" sx={{ p: 2, borderRadius: "10px", backgroundColor: bgColor, overflow: "hidden", height: "100%", display: "flex", flexDirection: "column" }}>
+    <Paper component="section" aria-label="Rate change history and bank details" sx={{ p: 2, borderRadius: "10px", backgroundColor: bgColor }}>
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 1 }}>
         <Typography variant="h5" component="h2" sx={{ color: textColor, fontWeight: 700, mb: 0.5 }}>{info.name}</Typography>
         {info.url && (
@@ -216,7 +216,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
       <Typography variant="body2" sx={{ color: textColor, opacity: 0.75, mb: 1.5 }}>{info.remarks}</Typography>
 
       <Typography variant="h6" sx={{ color: textColor, fontWeight: 600, mb: 1 }}>Rate Change History</Typography>
-      <TableContainer sx={{ flex: 1, minHeight: 0, overflow: "auto" }}>
+      <TableContainer>
         <Table size="small" stickyHeader>
           <TableHead>
             <TableRow>
@@ -253,7 +253,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   );
 
   return (
-    <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ height: isNarrow ? "auto" : "100%" }}>
+    <Box component="article" aria-label={`${info.name} interest rate details`}>
       {isNarrow ? (
         <>
           <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, mb: 1.5, textTransform: "none", "&:hover": { color: primaryColor } }}>Back</Button>

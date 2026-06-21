@@ -19,11 +19,11 @@ interface ThreePanelLayoutProps {
  *   │  bottomLeft  │  bottomRight  │
  *   │              │               │
  *   └──────────────┴───────────────┘
- *   Each slot has its own overflow scroll.
+ *   Both columns are equal width. Content flows naturally;
+ *   the parent scroll container (TabbedContent) handles overflow.
  *
  * Mobile ( ≤900px ):
- *   Stacked vertically — top, then bottomLeft, then bottomRight —
- *   each in normal document flow.
+ *   Stacked vertically — top, then bottomLeft, then bottomRight.
  */
 export const ThreePanelLayout = ({
   top,
@@ -54,39 +54,25 @@ export const ThreePanelLayout = ({
     <Box
       component="section"
       sx={{
-        height: "100%",
         display: "flex",
         flexDirection: "column",
         pt: 1.5,
+        pb: 2,
       }}
     >
       {top && (
-        <Box sx={{ flexShrink: 0, pb: 1.5 }}>{top}</Box>
+        <Box sx={{ pb: 1.5 }}>{top}</Box>
       )}
       <Box
         sx={{
-          flex: 1,
-          minHeight: 0,
           display: "flex",
           gap: 2,
         }}
       >
-        <Box
-          sx={{
-            flex: 1,
-            minWidth: 0,
-            overflow: "auto",
-          }}
-        >
+        <Box sx={{ flex: 1, minWidth: 0 }}>
           {bottomLeft}
         </Box>
-        <Box
-          sx={{
-            flex: 1,
-            minWidth: 0,
-            overflow: "auto",
-          }}
-        >
+        <Box sx={{ flex: 1, minWidth: 0 }}>
           {bottomRight}
         </Box>
       </Box>

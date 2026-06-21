@@ -159,8 +159,8 @@ const HistoryTabDesktop = ({
   const renderGroupedTable = () => {
     const highlightCol = chartMode === "yearly" ? "yearlyInterest" : "eir";
     return (
-      <Paper sx={{ borderRadius: "10px", backgroundColor: bgColor, height: "100%" }}>
-        <TableContainer sx={{ height: "100%" }}>
+      <Paper sx={{ borderRadius: "10px", backgroundColor: bgColor }}>
+        <TableContainer>
           <Table size="small" stickyHeader>
             <TableHead>
               <TableRow>
@@ -232,7 +232,7 @@ const HistoryTabDesktop = ({
   };
 
   return (
-    <Box component="section" aria-label="Interest rate change history" sx={{ height: "100%" }}>
+    <Box component="section" aria-label="Interest rate change history">
 
       {selectedBanks.length === 0 ? (
         <Paper sx={{ p: 4, borderRadius: "10px", backgroundColor: bgColor, textAlign: "center" }}>
@@ -263,7 +263,9 @@ const HistoryTabDesktop = ({
             </Box>
           }
           bottomLeft={
-            <ComparisonChart selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
+            <Box sx={{ height: "50vh" }}>
+              <ComparisonChart selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
+            </Box>
           }
           bottomRight={renderGroupedTable()}
         />
