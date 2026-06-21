@@ -410,7 +410,9 @@ const HistoryTabMobile = ({
 
       {selectedBanks.length > 0 && bankHistories.length > 0 && (
         <>
-          <ComparisonChart selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
+          <Box sx={{ height: "60vh", minHeight: 300 }}>
+            <ComparisonChart selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
+          </Box>
           <Box sx={{ mt: 2 }}>
             <MobileRowGroupedList
               bankHistories={bankHistories}

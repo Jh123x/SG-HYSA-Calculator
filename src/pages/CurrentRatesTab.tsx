@@ -301,13 +301,13 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
                 onClick={(e) => e.stopPropagation()}
               >
                 <Tooltip title="View details" placement="left">
-                  <IconButton size="small" onClick={(e) => { e.stopPropagation(); navigate(`/bank/${slug}`); }} sx={{ color: primaryColor }}>
+                  <IconButton component="span" size="small" onClick={(e) => { e.stopPropagation(); navigate(`/bank/${slug}`); }} sx={{ color: primaryColor }}>
                     <OpenInNewIcon fontSize="small" />
                   </IconButton>
                 </Tooltip>
                 {interest.url && (
                   <Tooltip title="Visit official website" placement="right">
-                    <IconButton size="small" href={interest.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} sx={{ color: primaryColor }}>
+                    <IconButton component="span" size="small" onClick={(e) => { e.stopPropagation(); window.open(interest.url, '_blank', 'noopener,noreferrer'); }} sx={{ color: primaryColor }}>
                       <LanguageIcon fontSize="small" />
                     </IconButton>
                   </Tooltip>
