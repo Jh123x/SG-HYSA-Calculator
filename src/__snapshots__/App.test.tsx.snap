@@ -49,7 +49,7 @@ exports[`App > should render correctly 1`] = `
       class="MuiBox-root css-1lgiddr"
     >
       <div
-        class="MuiContainer-root MuiContainer-maxWidthLg css-wxwmyi-MuiContainer-root"
+        class="MuiContainer-root MuiContainer-maxWidthLg css-16oigsz-MuiContainer-root"
       >
         <section
           aria-label="Savings calculator"

@@ -82,6 +82,7 @@ export const Layout = ({
             sx={{
               maxWidth: "100% !important",
               px: { xs: 1, sm: 2 },
+              height: "100%",
             }}
           >
             <ErrorBoundary>
