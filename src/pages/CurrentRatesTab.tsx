@@ -12,7 +12,6 @@ import {
   Paper,
   TableSortLabel,
   alpha,
-  useMediaQuery,
   Card,
   CardContent,
   CardActionArea,
@@ -31,6 +30,7 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import type { ResultProp } from "../types/props";
 import { primaryColor, bgColor, textColor } from "../consts/colors";
+import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
@@ -67,7 +67,7 @@ const SORT_OPTIONS: { value: SortableColumns; label: string }[] = [
  */
 export const CurrentRatesTab = ({ profile }: Props) => {
   const navigate = useNavigate();
-  const isMobile = useMediaQuery("(max-width:900px)");
+  const { isMobile } = useMobile();
   const [orderBy, setOrderBy] = useState<SortableColumns | undefined>(undefined);
   const [order, setOrder] = useState<"asc" | "desc">("desc");
 

@@ -1,8 +1,9 @@
 import { Outlet, useNavigate, useLocation, useOutletContext } from "react-router-dom";
-import { Box, ToggleButton, ToggleButtonGroup, useMediaQuery } from "@mui/material";
+import { Box, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { FormInputs } from "./Inputs";
 import { primaryColor, textColor } from "../consts/colors";
+import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 
 /** Toggle button styling with hover response */
@@ -43,7 +44,7 @@ interface LayoutContext {
  */
 export const TabbedContent = () => {
   const ctx = useOutletContext<LayoutContext>();
-  const isMobile = useMediaQuery("(max-width:900px)");
+  const { isMobile } = useMobile();
 
   if (isMobile) {
     return <TabbedContentMobile ctx={ctx} />;

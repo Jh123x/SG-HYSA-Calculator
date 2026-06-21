@@ -12,7 +12,6 @@ import {
   TableHead,
   TableRow,
   Typography,
-  useMediaQuery,
   IconButton,
   Tooltip,
   ToggleButton,
@@ -30,6 +29,7 @@ import { resolveHistoryForChart, deriveCurrentFromHistory } from "../logic/histo
 import { formatDate } from "../logic/dates";
 import type Profile from "../types/profile";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { useMobile } from "../hooks/useMobile";
 import { jaroWinkler } from "../logic/fuzzyMatch";
 import { dateFormatter } from "../consts/formatter";
 
@@ -59,7 +59,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const location = useLocation();
-  const isNarrow = useMediaQuery("(max-width:900px)");
+  const { isMobile } = useMobile();
   const bankName = slug ? slugToBankName(slug) : ERROR_SLUG;
   const [chartMode, setChartMode] = useState<ChartMode>("eir");
 
@@ -181,7 +181,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
             xAxis={[{ dataKey: "date", label: "Date", scaleType: "time" as const, tickLabelStyle: { angle: 45, textAnchor: "start" as const, fontSize: 11 }, valueFormatter: dateFormatter }]}
             series={[{ dataKey, label: info.name, color: lineColors[0], showMark: true, curve: "stepAfter", valueFormatter: (v: number | null) => v !== null ? (isYearly ? `$${v.toFixed(2)}` : `${v.toFixed(2)}%`) : "" }]}
             yAxis={[{ label: yLabel, scaleType: "linear", min: 0, valueFormatter: yFormatter }]}
-            height={isNarrow ? 300 : undefined}
+            height={isMobile ? 300 : undefined}
             grid={{ vertical: true, horizontal: true }}
             sx={{ ".MuiChartsAxis-label": { fill: textColor }, ".MuiChartsAxis-tick": { fill: textColor }, ".MuiChartsLegend-label": { fill: textColor }, height: "100%", width: "100%" }}
           />
@@ -254,7 +254,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
 
   return (
     <Box component="article" aria-label={`${info.name} interest rate details`}>
-      {isNarrow ? (
+      {isMobile ? (
         <>
           <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, mb: 1.5, textTransform: "none", "&:hover": { color: primaryColor } }}>Back</Button>
           {renderChart()}

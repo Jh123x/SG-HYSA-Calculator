@@ -4,7 +4,6 @@ import {
   Toolbar,
   Typography,
   Box,
-  useMediaQuery,
   Button,
   IconButton,
   Tooltip,
@@ -12,6 +11,7 @@ import {
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
 import { textColor, primaryColor } from "../consts/colors";
+import { useMobile } from "../hooks/useMobile";
 
 /**
  * Header matching the wireframe:
@@ -22,7 +22,7 @@ import { textColor, primaryColor } from "../consts/colors";
  */
 export const Header = () => {
   const navigate = useNavigate();
-  const isMobile = useMediaQuery("(max-width:600px)");
+  const { isCompact } = useMobile();
 
   return (
     <AppBar
@@ -38,8 +38,8 @@ export const Header = () => {
           px: { xs: 1, sm: 2 },
         }}
       >
-        {/* Left: icon (mobile) or title (desktop) */}
-        {isMobile ? (
+        {/* Left: icon (compact) or title (desktop) */}
+        {isCompact ? (
           <Tooltip title="SG High Yield Savings Accounts">
             <IconButton
               onClick={() => navigate("/")}
@@ -64,12 +64,12 @@ export const Header = () => {
           </Typography>
         )}
 
-        {/* Right: FAQ button (both mobile and desktop) */}
+        {/* Right: FAQ button (both compact and desktop) */}
         <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
           <Button
             onClick={() => navigate("/faq")}
             startIcon={<HelpOutlineOutlinedIcon />}
-            size={isMobile ? "small" : "medium"}
+            size={isCompact ? "small" : "medium"}
             sx={{
               color: textColor,
               textTransform: "none",

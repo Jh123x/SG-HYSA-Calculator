@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback, type ReactNode } from "react";
-import { Box, useMediaQuery } from "@mui/material";
+import { Box } from "@mui/material";
 import { primaryColor, textColor } from "../consts/colors";
+import { useMobile } from "../hooks/useMobile";
 
 interface CarouselProps {
   children: ReactNode[];
@@ -18,7 +19,7 @@ export const Carousel = ({
 }: CarouselProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const isMobile = useMediaQuery("(max-width:600px)");
+  const { isCompact } = useMobile();
 
   const handleScroll = useCallback(() => {
     const el = scrollRef.current;
@@ -68,8 +69,8 @@ export const Carousel = ({
         ))}
       </Box>
 
-      {/* Dot indicators — only show on mobile */}
-      {isMobile && children.length > 1 && (
+      {/* Dot indicators — only show on compact */}
+      {isCompact && children.length > 1 && (
         <Box
           sx={{
             display: "flex",

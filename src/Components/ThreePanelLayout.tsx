@@ -1,4 +1,5 @@
-import { Box, useMediaQuery } from "@mui/material";
+import { Box } from "@mui/material";
+import { useMobile } from "../hooks/useMobile";
 
 interface ThreePanelLayoutProps {
   /** Top panel — spans full width on desktop. */
@@ -30,7 +31,7 @@ export const ThreePanelLayout = ({
   bottomLeft,
   bottomRight,
 }: ThreePanelLayoutProps) => {
-  const isMobile = useMediaQuery("(max-width:900px)");
+  const { isMobile } = useMobile();
 
   if (isMobile) {
     return (

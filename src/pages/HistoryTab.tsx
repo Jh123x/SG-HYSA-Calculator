@@ -23,7 +23,6 @@ import {
   TableHead,
   TableRow,
   IconButton,
-  useMediaQuery,
   Tooltip,
 } from "@mui/material";
 import {
@@ -41,6 +40,7 @@ import { deriveCurrentFromHistory, resolveHistoryForChart } from "../logic/histo
 import { formatDate } from "../logic/dates";
 import { textColor, bgColor, primaryColor } from "../consts/colors";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { useMobile } from "../hooks/useMobile";
 import { MAX_COMPARISON_BANKS } from "../consts/keys";
 import { ALL_SLUGS } from "../logic/slugs";
 
@@ -97,7 +97,7 @@ function readSessionBanks(): string[] {
  * Rate History tab — early split for clarity.
  */
 export const HistoryTab = ({ profile }: Props) => {
-  const isMobile = useMediaQuery("(max-width:900px)");
+  const { isMobile } = useMobile();
   const [chartMode, setChartMode] = useState<ChartMode>("yearly");
 
   useDocumentTitle("Rate Change History — Track Singapore HYSA Interest Rates Over Time");
