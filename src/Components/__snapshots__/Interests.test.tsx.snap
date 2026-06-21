@@ -400,7 +400,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              No eligible if you are younger than 18.
+              Not eligible if you are younger than 18.
               <br />
               Spending includes credit card / paylah retail spend
             </td>
@@ -2533,7 +2533,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              No eligible if you are younger than 18.
+              Not eligible if you are younger than 18.
               <br />
               Spending includes credit card / paylah retail spend
             </td>
