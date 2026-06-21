@@ -46,17 +46,17 @@ exports[`App > should render correctly 1`] = `
       </div>
     </header>
     <main
-      class="MuiBox-root css-1lgiddr"
+      class="MuiBox-root css-3bihpr"
     >
       <div
-        class="MuiContainer-root MuiContainer-maxWidthLg css-450ufu-MuiContainer-root"
+        class="MuiContainer-root MuiContainer-maxWidthLg css-snhmx7-MuiContainer-root"
       >
         <section
           aria-label="Savings calculator"
           class="MuiBox-root css-1dek1sc"
         >
           <div
-            class="MuiBox-root css-wjwe4y"
+            class="MuiBox-root css-132ca25"
           >
             <div
               class="MuiFormControl-root css-1hr5jum-MuiFormControl-root"
@@ -710,7 +710,7 @@ exports[`App > should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root css-4nre9b"
+            class="MuiBox-root css-1m9euhk"
           >
             <section
               aria-label="Current interest rates comparison"
@@ -2045,7 +2045,7 @@ exports[`App > should render correctly 1`] = `
                   class="MuiBox-root css-1aog3l9"
                 >
                   <div
-                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-yulw2c-MuiPaper-root-MuiTableContainer-root"
+                    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root css-1gyfhib-MuiPaper-root-MuiTableContainer-root"
                     style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0.051), rgba(255, 255, 255, 0.051));"
                   >
                     <table

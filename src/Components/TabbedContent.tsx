@@ -1,5 +1,5 @@
 import { Outlet, useNavigate, useLocation, useOutletContext } from "react-router-dom";
-import { Box, ToggleButton, ToggleButtonGroup } from "@mui/material";
+import { Box, ToggleButton, ToggleButtonGroup, useMediaQuery } from "@mui/material";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { FormInputs } from "./Inputs";
 import { primaryColor, textColor } from "../consts/colors";
@@ -38,14 +38,23 @@ interface LayoutContext {
 }
 
 /**
- * Tabbed content area — redesigned with:
- * - ToggleButtonGroup above inputs for tab navigation (left-aligned)
- * - All data / Clear / Share at bottom-right of top section
- * - Single scrollable page: inputs section (scrollable) + content area (scrollable)
+ * Tabbed content — early split: Mobile and Desktop are completely separate
+ * component trees for clarity and maintainability.
  */
 export const TabbedContent = () => {
-  const { currProfile, setCurrProfile, pendingUrlProfile, onAcceptShared, onRejectShared } =
-    useOutletContext<LayoutContext>();
+  const ctx = useOutletContext<LayoutContext>();
+  const isMobile = useMediaQuery("(max-width:900px)");
+
+  if (isMobile) {
+    return <TabbedContentMobile ctx={ctx} />;
+  }
+  return <TabbedContentDesktop ctx={ctx} />;
+};
+
+// ── Desktop: fixed-height top section, scrollable content ────────
+
+const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
+  const { currProfile, setCurrProfile, pendingUrlProfile, onAcceptShared, onRejectShared } = ctx;
   const navigate = useNavigate();
   const location = useLocation();
   const activeTab = location.pathname === "/history" ? "history" : "current";
@@ -61,18 +70,17 @@ export const TabbedContent = () => {
         overflow: "hidden",
       }}
     >
-      {/* ── Top section: Toggles + Inputs + Action buttons (scrollable) ── */}
+      {/* Top section: Inputs + Toggle (scrollable) */}
       <Box
         sx={{
           flexShrink: 0,
           overflowY: "auto",
-          maxHeight: { xs: "45vh", sm: "50vh" },
-          pt: { xs: 1, sm: 2 },
+          maxHeight: "50vh",
+          pt: 2,
           pb: 1,
           borderBottom: "1px solid rgba(255,255,255,0.08)",
         }}
       >
-        {/* Input fields */}
         <ErrorBoundary>
           <FormInputs
             currProfile={currProfile}
@@ -83,7 +91,6 @@ export const TabbedContent = () => {
           />
         </ErrorBoundary>
 
-        {/* Toggle button group — left-aligned on desktop, below inputs on mobile */}
         <Box sx={{ display: "flex", justifyContent: "flex-start", mt: 2 }}>
           <ToggleButtonGroup
             value={activeTab}
@@ -103,19 +110,60 @@ export const TabbedContent = () => {
         </Box>
       </Box>
 
-      {/* ── Content area (scrollable) ── */}
-      <Box
-        sx={{
-          flex: 1,
-          minHeight: 0,
-          overflowY: "auto",
-          py: { xs: 1, sm: 2 },
-        }}
-      >
+      {/* Content area (scrollable) */}
+      <Box sx={{ flex: 1, minHeight: 0, overflowY: "auto", py: 2 }}>
         <ErrorBoundary>
           <Outlet />
         </ErrorBoundary>
       </Box>
+    </Box>
+  );
+};
+
+// ── Mobile: single continuous flow, no compartments ──────────────
+
+const TabbedContentMobile = ({ ctx }: { ctx: LayoutContext }) => {
+  const { currProfile, setCurrProfile, pendingUrlProfile, onAcceptShared, onRejectShared } = ctx;
+  const navigate = useNavigate();
+  const location = useLocation();
+  const activeTab = location.pathname === "/history" ? "history" : "current";
+
+  return (
+    <Box component="section" aria-label="Savings calculator" sx={{ pt: 1 }}>
+      {/* Inputs — natural flow */}
+      <ErrorBoundary>
+        <FormInputs
+          currProfile={currProfile}
+          setCurrProfile={setCurrProfile}
+          pendingUrlProfile={pendingUrlProfile}
+          onAcceptShared={onAcceptShared}
+          onRejectShared={onRejectShared}
+        />
+      </ErrorBoundary>
+
+      {/* Toggle buttons */}
+      <Box sx={{ display: "flex", justifyContent: "flex-start", mt: 2, mb: 1.5 }}>
+        <ToggleButtonGroup
+          value={activeTab}
+          exclusive
+          onChange={(_, v) => {
+            if (v) navigate(v === "history" ? "/history" : "/");
+          }}
+          size="small"
+        >
+          <ToggleButton value="current" sx={TOGGLE_SX}>
+            Current Rates
+          </ToggleButton>
+          <ToggleButton value="history" sx={TOGGLE_SX}>
+            History
+          </ToggleButton>
+        </ToggleButtonGroup>
+      </Box>
+
+      {/* Content — natural flow, no internal scroll */}
+      <ErrorBoundary>
+        <Outlet />
+      </ErrorBoundary>
     </Box>
   );
 };

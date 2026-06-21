@@ -63,14 +63,14 @@ export const Layout = ({
         sx={{
           flex: 1,
           minHeight: 0,
-          overflow: "hidden",
+          overflow: "auto",
         }}
       >
         <Container
           sx={{
-            height: "100%",
             maxWidth: "100% !important",
             px: { xs: 1, sm: 2 },
+            pb: { xs: 2, sm: 3 },
           }}
         >
           <ErrorBoundary>
