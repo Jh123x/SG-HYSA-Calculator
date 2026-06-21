@@ -713,13 +713,13 @@ exports[`App > should render correctly 1`] = `
             class="MuiBox-root css-3bihpr"
           >
             <section
-              class="MuiBox-root css-1dyq5ln"
+              class="MuiBox-root css-1b2m6r5"
             >
               <div
-                class="MuiBox-root css-10egq61"
+                class="MuiBox-root css-b8qrnr"
               >
                 <div
-                  class="MuiBox-root css-1fjtzvx"
+                  class="MuiBox-root css-1qzm8v9"
                 >
                   <div
                     class="MuiBox-root css-dqo70j"
@@ -2045,7 +2045,7 @@ exports[`App > should render correctly 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiBox-root css-1fjtzvx"
+                  class="MuiBox-root css-1qzm8v9"
                 >
                   <div
                     class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1lp9sq0-MuiPaper-root"
