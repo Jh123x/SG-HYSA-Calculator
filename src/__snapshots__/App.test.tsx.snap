@@ -722,7 +722,7 @@ exports[`App > should render correctly 1`] = `
             class="MuiBox-root css-164r41r"
           >
             <div
-              class="MuiContainer-root MuiContainer-maxWidthLg css-1jqmhqx-MuiContainer-root"
+              class="MuiContainer-root MuiContainer-maxWidthLg css-62w9db-MuiContainer-root"
             >
               <section
                 aria-label="Current interest rates comparison"
@@ -2254,7 +2254,7 @@ exports[`App > should render correctly 1`] = `
                         class="MuiTableRow-root MuiTableRow-head css-zkb50a-MuiTableRow-root"
                       >
                         <th
-                          class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1kdni9y-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1vz1w1b-MuiTableCell-root"
                           scope="col"
                         >
                           <span
@@ -2262,7 +2262,7 @@ exports[`App > should render correctly 1`] = `
                             role="button"
                             tabindex="0"
                           >
-                            Account
+                            Accounts
                             <svg
                               aria-hidden="true"
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon"
@@ -2277,7 +2277,7 @@ exports[`App > should render correctly 1`] = `
                           </span>
                         </th>
                         <th
-                          class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1kdni9y-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1vz1w1b-MuiTableCell-root"
                           scope="col"
                         >
                           <span
@@ -2285,7 +2285,7 @@ exports[`App > should render correctly 1`] = `
                             role="button"
                             tabindex="0"
                           >
-                            Yearly Interest
+                            Yearly Interest ($)
                             <svg
                               aria-hidden="true"
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon"
@@ -2300,7 +2300,7 @@ exports[`App > should render correctly 1`] = `
                           </span>
                         </th>
                         <th
-                          class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1kdni9y-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1vz1w1b-MuiTableCell-root"
                           scope="col"
                         >
                           <span
@@ -2308,9 +2308,7 @@ exports[`App > should render correctly 1`] = `
                             role="button"
                             tabindex="0"
                           >
-                            Effective Interest
-                            <br />
-                            Rate (EIR)
+                            EIR (%)
                             <svg
                               aria-hidden="true"
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon"
@@ -2323,24 +2321,6 @@ exports[`App > should render correctly 1`] = `
                               />
                             </svg>
                           </span>
-                        </th>
-                        <th
-                          class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1abj46h-MuiTableCell-root"
-                          scope="col"
-                        >
-                          Remarks
-                        </th>
-                        <th
-                          class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1abj46h-MuiTableCell-root"
-                          scope="col"
-                        >
-                          Updated at
-                        </th>
-                        <th
-                          class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium css-1abj46h-MuiTableCell-root"
-                          scope="col"
-                        >
-                          Actions
                         </th>
                       </tr>
                     </thead>
@@ -2348,1167 +2328,479 @@ exports[`App > should render correctly 1`] = `
                       class="MuiTableBody-root css-gmh7jj-MuiTableBody-root"
                     >
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          UOB One
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            UOB One
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          Visit their official website to find out more
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2025-12-01
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          OCBC 360
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            OCBC 360
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          Visit the official website to find out more
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2026-04-05
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://www.ocbc.com/personal-banking/notices"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          Mari Savings
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            Mari Savings
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          Interest rates are a flat 0.88%
-                          <br />
-                          Capped at $100k
-                          <br />
-                          Referral code: 
-                          <b>
-                            4QTP99MT
-                          </b>
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2025-12-27
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://www.maribank.sg/product/mari-savings-account/"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          Standard Chartered Bonus$aver
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            Standard Chartered Bonus$aver
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          Insurance and Investment only
-                          <br />
-                          fulfils interest for 6 months
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2026-06-05
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          Trust Bank (Signature)
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            Trust Bank (Signature)
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          Spending assumes 5 x $30 if spending is more than 150.
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2026-06-05
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://trustbank.sg/savings-account/"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          Trust Bank (Zen)
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            Trust Bank (Zen)
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          A Flat 0.4% interest rate up to 1.2 million
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2026-06-05
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://trustbank.sg/savings-account/"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          DBS Multiplier
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            DBS Multiplier
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          Not eligible if you are younger than 18.
-                          <br />
-                          Spending includes credit card / paylah retail spend
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2025-10-14
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          GXS Savings
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            GXS Savings
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
-                          <br />
-                          <b>
-                            Note: The max amount deposited depends on individual (up to $95,000)
-                          </b>
-                          <br />
-                          View other 
-                          <a
-                            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                            href="https://www.gxs.com.sg/notices"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                          >
-                            Notices here
-                          </a>
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2026-06-05
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://www.gxs.com.sg/savings-account"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          Chocolate Finance
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            Chocolate Finance
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          1st 20k 2% p.a, next 80k 1.8% p.a.
-                          <br />
-                          Amounts above 100k are invested and will not be counted here.
-                          <br />
-                          <b>
-                            Note: This is not a bank
-                          </b>
-                          <br />
-                          <a
-                            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-8lny12-MuiTypography-root-MuiLink-root"
-                            href="https://share.chocolate.app/nxW9/l0tqqxem"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                          >
-                            Referral link
-                          </a>
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2026-06-05
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://www.chocolatefinance.com/"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          BOC SuperSaver
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            BOC SuperSaver
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          This account is valid from 2024-08-01 onwards.
-                          <br />
-                          <b>
-                            Note: You have to link your paynow to this account to qualify for the sale.
-                          </b>
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2025-11-01
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          Maybank SaveUp
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            Maybank SaveUp
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125% (above $50K).
-                          <br />
-                          No more category-based bonus system.
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2026-06-11
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          Maybank iSAVvy
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            Maybank iSAVvy
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          Flat tiered rates (non-additive): 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
-                          <br />
-                          Rates effective from 11 June 2026.
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2026-06-11
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          Maybank iSAVvy Plus
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            Maybank iSAVvy Plus
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          Flat tiered base rates: 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
-                          <br />
-                          +1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.
-                          <br />
-                          <b>
-                            Set 'Account Increment' &gt; 0 to qualify for the bonus.
-                          </b>
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2026-06-11
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                       <tr
-                        class="MuiTableRow-root css-1dzo4wt-MuiTableRow-root"
+                        class="MuiTableRow-root MuiTableRow-hover css-ocg3h9-MuiTableRow-root"
                       >
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ljt55a-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-ghv5wd-MuiTableCell-root"
                         >
-                          Citi Wealth First
+                          <div
+                            class="MuiBox-root css-axw7ok"
+                          >
+                            Citi Wealth First
+                            <svg
+                              aria-hidden="true"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ides77-MuiSvgIcon-root"
+                              data-testid="ArrowForwardIcon"
+                              focusable="false"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              />
+                            </svg>
+                          </div>
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           $0.00
                         </td>
                         <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
+                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-2aifj-MuiTableCell-root"
                         >
                           0.00%
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)
-                          <br />
-                          Bonus interest capped at first $500k.
-                          <br />
-                          *Assumes Citigold level, Citi Private has a higher level.
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          2026-06-05
-                        </td>
-                        <td
-                          class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-82wvyy-MuiTableCell-root"
-                        >
-                          <div
-                            class="MuiBox-root css-s3pf5w"
-                          >
-                            <a
-                              aria-label="Official Website"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_blank"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="LinkIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
-                                />
-                              </svg>
-                            </a>
-                            <a
-                              aria-label="Detailed History"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
-                              data-mui-internal-clone-element="true"
-                              href="#"
-                              rel="noopener noreferrer"
-                              tabindex="0"
-                              target="_self"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                                data-testid="ArrowForwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                />
-                              </svg>
-                            </a>
-                          </div>
                         </td>
                       </tr>
                     </tbody>
