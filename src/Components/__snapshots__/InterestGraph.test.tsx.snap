@@ -1500,7 +1500,9 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
     <span
       class="MuiTypography-root MuiTypography-caption css-u1vmxs-MuiTypography-root"
     >
-      * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+      <span>
+        * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+      </span>
     </span>
   </div>
 </DocumentFragment>
@@ -2878,7 +2880,9 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
     <span
       class="MuiTypography-root MuiTypography-caption css-u1vmxs-MuiTypography-root"
     >
-      * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+      <span>
+        * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+      </span>
     </span>
   </div>
 </DocumentFragment>

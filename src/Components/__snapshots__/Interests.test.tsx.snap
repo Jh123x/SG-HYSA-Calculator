@@ -2126,7 +2126,9 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
       <span
         class="MuiTypography-root MuiTypography-caption css-u1vmxs-MuiTypography-root"
       >
-        * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+        <span>
+          * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+        </span>
       </span>
     </div>
   </div>
@@ -4387,7 +4389,9 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
       <span
         class="MuiTypography-root MuiTypography-caption css-u1vmxs-MuiTypography-root"
       >
-        * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+        <span>
+          * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+        </span>
       </span>
     </div>
   </div>

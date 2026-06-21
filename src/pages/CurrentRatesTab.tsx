@@ -103,21 +103,17 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
     <ThreePanelLayout
       aria-label="Current interest rates comparison"
       bottomLeft={
-        <>
-          <Box sx={{ height: "40vh", minHeight: 0 }}>
-            <InterestGraph profile={profile} height="fill" />
-          </Box>
-          <Typography
-            variant="caption"
-            sx={{ color: textColor, display: "block", textAlign: "left", opacity: 0.7, mt: 1 }}
-          >
-            * Interest rates on their respective websites are subject to change without notice.
-            <br />
-            ** Please do your own research before making any decisions.
-            <br />
-            *** Ask for referrals to get additional bonuses.
-          </Typography>
-        </>
+        <Box sx={{ height: "40vh", minHeight: 0 }}>
+          <InterestGraph
+            profile={profile}
+            height="fill"
+            footnotes={[
+              "Interest rates on their respective websites are subject to change without notice.",
+              "Please do your own research before making any decisions.",
+              "Ask for referrals to get additional bonuses.",
+            ]}
+          />
+        </Box>
       }
       bottomRight={
         <Paper sx={{ borderRadius: "10px", backgroundColor: bgColor }}>
@@ -212,17 +208,15 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
   return (
     <Box component="section" aria-label="Current interest rates comparison">
       {/* Graph + asterisks together */}
-      <InterestGraph profile={profile} height={340} />
-      <Typography
-        variant="caption"
-        sx={{ color: textColor, display: "block", textAlign: "left", opacity: 0.7, mt: 0.5, mb: 1.5 }}
-      >
-        * Interest rates on their respective websites are subject to change without notice.
-        <br />
-        ** Please do your own research before making any decisions.
-        <br />
-        *** Ask for referrals to get additional bonuses.
-      </Typography>
+      <InterestGraph
+        profile={profile}
+        height={340}
+        footnotes={[
+          "Interest rates on their respective websites are subject to change without notice.",
+          "Please do your own research before making any decisions.",
+          "Ask for referrals to get additional bonuses.",
+        ]}
+      />
 
       {/* Sort bar: dropdown + asc/desc toggle */}
       <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>

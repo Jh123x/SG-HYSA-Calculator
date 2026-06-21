@@ -2030,19 +2030,24 @@ exports[`App > should render correctly 1`] = `
                       <span
                         class="MuiTypography-root MuiTypography-caption css-u1vmxs-MuiTypography-root"
                       >
-                        * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+                        <span>
+                          * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+                          <br />
+                        </span>
+                        <span>
+                          ** Interest rates on their respective websites are subject to change without notice.
+                          <br />
+                        </span>
+                        <span>
+                          *** Please do your own research before making any decisions.
+                          <br />
+                        </span>
+                        <span>
+                          **** Ask for referrals to get additional bonuses.
+                        </span>
                       </span>
                     </div>
                   </div>
-                  <span
-                    class="MuiTypography-root MuiTypography-caption css-1qat8h5-MuiTypography-root"
-                  >
-                    * Interest rates on their respective websites are subject to change without notice.
-                    <br />
-                    ** Please do your own research before making any decisions.
-                    <br />
-                    *** Ask for referrals to get additional bonuses.
-                  </span>
                 </div>
                 <div
                   class="MuiBox-root css-1qzm8v9"
