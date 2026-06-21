@@ -186,28 +186,29 @@ const ComparisonChartContent = ({
           flexDirection: "column",
         }}
       >
-        <LineChart
-          dataset={dataset}
-          xAxis={X_AXIS}
-          series={activeSeries}
-          yAxis={[
-            {
-              label: yLabel,
-              scaleType: "linear",
-              min: 0,
-              valueFormatter: yFormatter,
-            },
-          ]}
-          height={400}
-          grid={{ vertical: true, horizontal: true }}
-          slotProps={{
-            legend: {
-              direction: "horizontal",
-              position: { vertical: "bottom", horizontal: "center" },
-            },
-          }}
-          sx={{ ...AXIS_SX }}
-        />
+        <Box sx={{ flex: 1, minHeight: 0 }}>
+          <LineChart
+            dataset={dataset}
+            xAxis={X_AXIS}
+            series={activeSeries}
+            yAxis={[
+              {
+                label: yLabel,
+                scaleType: "linear",
+                min: 0,
+                valueFormatter: yFormatter,
+              },
+            ]}
+            grid={{ vertical: true, horizontal: true }}
+            slotProps={{
+              legend: {
+                direction: "horizontal",
+                position: { vertical: "bottom", horizontal: "center" },
+              },
+            }}
+            sx={{ ...AXIS_SX, height: "100%", width: "100%" }}
+          />
+        </Box>
       </Paper>
 
       <Typography
