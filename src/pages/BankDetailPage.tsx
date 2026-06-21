@@ -165,7 +165,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           p: 2,
           borderRadius: "10px",
           backgroundColor: bgColor,
-          height: "40vh",
+          height: isMobile ? "55vh" : "40vh",
           display: "flex",
           flexDirection: "column",
         }}
@@ -183,8 +183,15 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
             xAxis={[{ dataKey: "date", label: "Date", scaleType: "time" as const, tickLabelStyle: { angle: 45, textAnchor: "start" as const, fontSize: 11 }, valueFormatter: dateFormatter }]}
             series={[{ dataKey, label: info.name, color: lineColors[0], showMark: true, curve: "stepAfter", valueFormatter: (v: number | null) => v !== null ? (isYearly ? `$${v.toFixed(2)}` : `${v.toFixed(2)}%`) : "" }]}
             yAxis={[{ label: yLabel, scaleType: "linear", min: 0, valueFormatter: yFormatter }]}
+            height={isMobile ? 180 : undefined}
             grid={{ vertical: true, horizontal: true }}
-            sx={{ ".MuiChartsAxis-label": { fill: textColor }, ".MuiChartsAxis-tick": { fill: textColor }, ".MuiChartsLegend-label": { fill: textColor }, "& .MuiChartsSurface-root": { background: "transparent" }, height: "100%", width: "100%" }}
+            sx={{
+              ".MuiChartsAxis-label": { fill: textColor },
+              ".MuiChartsAxis-tick": { fill: textColor },
+              ".MuiChartsLegend-label": { fill: textColor },
+              "& .MuiChartsSurface-root": { background: "transparent" },
+              ...(isMobile ? {} : { height: "100%", width: "100%" }),
+            }}
           />
         </Box>
         <Typography variant="caption" sx={{ color: textColor, display: "block", textAlign: "left", mt: 1, opacity: 0.6 }}>

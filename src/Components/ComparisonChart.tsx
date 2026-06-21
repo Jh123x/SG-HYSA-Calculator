@@ -16,6 +16,7 @@ import {
 } from "./comparison/buildDataset";
 import { buildComparisonSeries } from "./comparison/buildSeries";
 import { dateFormatter } from "../consts/formatter";
+import { useMobile } from "../hooks/useMobile";
 
 interface ComparisonChartProps {
   selectedBanks: string[];
@@ -116,6 +117,8 @@ const ComparisonChartContent = ({
   profile,
   chartMode,
 }: ComparisonChartProps) => {
+  const { isMobile } = useMobile();
+
   const { dataset, yearlySeries, eirSeries } = useMemo(() => {
     const bankPoints = collectBankPoints(selectedBanks, profile);
 
@@ -199,6 +202,7 @@ const ComparisonChartContent = ({
                 valueFormatter: yFormatter,
               },
             ]}
+            height={isMobile ? 260 : undefined}
             grid={{ vertical: true, horizontal: true }}
             slotProps={{
               legend: {
@@ -206,7 +210,10 @@ const ComparisonChartContent = ({
                 position: { vertical: "bottom", horizontal: "center" },
               },
             }}
-            sx={{ ...AXIS_SX, height: "100%", width: "100%" }}
+            sx={{
+              ...AXIS_SX,
+              ...(isMobile ? {} : { height: "100%", width: "100%" }),
+            }}
           />
         </Box>
       </Paper>
