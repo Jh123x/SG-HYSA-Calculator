@@ -254,7 +254,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   );
 
   return (
-    <Box component="article" aria-label={`${info.name} interest rate details`}>
+    <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ height: isMobile ? undefined : "100%", overflow: isMobile ? undefined : "hidden" }}>
       <ThreePanelLayout
         bottomLeft={renderChart()}
         bottomRight={renderHistorySection()}

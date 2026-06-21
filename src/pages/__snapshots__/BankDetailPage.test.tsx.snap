@@ -4,7 +4,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
 <DocumentFragment>
   <article
     aria-label="GXS Savings interest rate details"
-    class="MuiBox-root css-0"
+    class="MuiBox-root css-8lgfcg"
   >
     <section
       class="MuiBox-root css-8oufzr"

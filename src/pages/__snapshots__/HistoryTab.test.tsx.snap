@@ -4,7 +4,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
 <DocumentFragment>
   <section
     aria-label="Interest rate change history"
-    class="MuiBox-root css-0"
+    class="MuiBox-root css-8lgfcg"
   >
     <section
       class="MuiBox-root css-8oufzr"
