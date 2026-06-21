@@ -115,7 +115,6 @@ export const CurrentRatesTab = ({ profile }: Props) => {
             >
               Saving account differences
             </Typography>
-
             <InterestGraph profile={profile} />
           </>
         )}
