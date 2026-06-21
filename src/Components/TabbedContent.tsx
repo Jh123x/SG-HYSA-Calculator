@@ -116,8 +116,8 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
         </ErrorBoundary>
       </Box>
 
-      {/* Content — fills remaining viewport, scrolls as a whole page */}
-      <Box sx={{ flex: 1, minHeight: 0, overflow: "auto" }}>
+      {/* Content — fills remaining viewport, each panel scrolls independently */}
+      <Box sx={{ flex: 1, minHeight: 0, overflow: "hidden" }}>
         <ErrorBoundary>
           <Outlet />
         </ErrorBoundary>

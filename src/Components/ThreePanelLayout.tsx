@@ -64,7 +64,8 @@ const ThreePanelLayoutDesktop = ({
     sx={{
       display: "flex",
       flexDirection: "column",
-      height: "100%", // fill parent's constrained viewport height
+      height: "100%",  // fill parent's constrained viewport height
+      overflow: "hidden", // safety: prevent content leaking into parent
     }}
   >
     {/* Top — natural height, doesn't shrink */}
