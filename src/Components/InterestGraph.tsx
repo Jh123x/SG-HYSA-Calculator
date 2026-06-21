@@ -12,7 +12,7 @@ import {
 const AST_RINKS_SX = {
   color: textColor,
   display: "block",
-  textAlign: "center",
+  textAlign: "left",
   marginTop: "10px",
   opacity: 0.8,
 };

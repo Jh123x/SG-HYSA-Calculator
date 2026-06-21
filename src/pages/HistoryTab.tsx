@@ -119,7 +119,7 @@ const HistoryTabDesktop = ({
 }: Props & { chartMode: ChartMode; setChartMode: (m: ChartMode) => void }) => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
-  const selectedBanks = readSessionBanks();
+  const [selectedBanks, setSelectedBanks] = useState<string[]>(readSessionBanks);
   const [collapsedBanks, setCollapsedBanks] = useState<Set<string>>(new Set());
 
   const urlBanks = useMemo(
@@ -129,6 +129,7 @@ const HistoryTabDesktop = ({
 
   useEffect(() => {
     if (urlBanks && urlBanks.length > 0) {
+      setSelectedBanks(urlBanks);
       sessionStorage.setItem(BANKS_SESSION_KEY, JSON.stringify(urlBanks));
       const next = new URLSearchParams(searchParams);
       next.delete(BANKS_PARAM);
@@ -137,6 +138,7 @@ const HistoryTabDesktop = ({
   }, []);
 
   const handleBankChange = (banks: string[]) => {
+    setSelectedBanks(banks);
     sessionStorage.setItem(BANKS_SESSION_KEY, JSON.stringify(banks));
     setSearchParams((prev) => {
       const next = new URLSearchParams(prev);
@@ -285,7 +287,7 @@ const HistoryTabMobile = ({
 }: Props & { chartMode: ChartMode; setChartMode: (m: ChartMode) => void }) => {
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
-  const selectedBanks = readSessionBanks();
+  const [selectedBanks, setSelectedBanks] = useState<string[]>(readSessionBanks);
   const [collapsedBanks, setCollapsedBanks] = useState<Set<string>>(new Set());
 
   const urlBanks = useMemo(
@@ -295,6 +297,7 @@ const HistoryTabMobile = ({
 
   useEffect(() => {
     if (urlBanks && urlBanks.length > 0) {
+      setSelectedBanks(urlBanks);
       sessionStorage.setItem(BANKS_SESSION_KEY, JSON.stringify(urlBanks));
       const next = new URLSearchParams(searchParams);
       next.delete(BANKS_PARAM);
@@ -303,6 +306,7 @@ const HistoryTabMobile = ({
   }, []);
 
   const handleBankChange = (banks: string[]) => {
+    setSelectedBanks(banks);
     sessionStorage.setItem(BANKS_SESSION_KEY, JSON.stringify(banks));
     setSearchParams((prev) => {
       const next = new URLSearchParams(prev);

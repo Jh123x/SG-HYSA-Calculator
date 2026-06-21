@@ -65,20 +65,17 @@ const ThreePanelLayoutDesktop = ({
       display: "flex",
       flexDirection: "column",
       height: "100%", // fill parent's constrained viewport height
-      pt: 1.5,
-      pb: 2,
     }}
   >
     {/* Top — natural height, doesn't shrink */}
     {top && (
-      <Box sx={{ flexShrink: 0, pb: 1.5 }}>{top}</Box>
+      <Box sx={{ flexShrink: 0 }}>{top}</Box>
     )}
 
     {/* Bottom row — fills remaining height, panels scroll independently */}
     <Box
       sx={{
         display: "flex",
-        gap: 2,
         flex: 1,
         minHeight: 0, // allow shrinking below content height
       }}

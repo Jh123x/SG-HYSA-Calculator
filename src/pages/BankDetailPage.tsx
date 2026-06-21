@@ -254,21 +254,13 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
 
   return (
     <Box component="article" aria-label={`${info.name} interest rate details`}>
-      {isMobile ? (
-        <>
-          <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, mb: 1.5, textTransform: "none", "&:hover": { color: primaryColor } }}>Back</Button>
-          {renderChart()}
-          <Box sx={{ mt: 2 }}>{renderHistorySection()}</Box>
-        </>
-      ) : (
-        <ThreePanelLayout
-          top={
-            <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, textTransform: "none", "&:hover": { color: primaryColor } }}>Back</Button>
-          }
-          bottomLeft={renderChart()}
-          bottomRight={renderHistorySection()}
-        />
-      )}
+      <ThreePanelLayout
+        top={
+          <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, textTransform: "none", "&:hover": { color: primaryColor } }}>Back</Button>
+        }
+        bottomLeft={renderChart()}
+        bottomRight={renderHistorySection()}
+      />
     </Box>
   );
 };

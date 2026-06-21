@@ -713,10 +713,10 @@ exports[`App > should render correctly 1`] = `
             class="MuiBox-root css-3bihpr"
           >
             <section
-              class="MuiBox-root css-1b2m6r5"
+              class="MuiBox-root css-1g4yje1"
             >
               <div
-                class="MuiBox-root css-b8qrnr"
+                class="MuiBox-root css-q86rdy"
               >
                 <div
                   class="MuiBox-root css-1qzm8v9"
@@ -2028,7 +2028,7 @@ exports[`App > should render correctly 1`] = `
                         </div>
                       </div>
                       <span
-                        class="MuiTypography-root MuiTypography-caption css-u1vmxs-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-caption css-71rnec-MuiTypography-root"
                       >
                         <span>
                           * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
