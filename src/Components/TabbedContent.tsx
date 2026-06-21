@@ -122,7 +122,13 @@ export const TabbedContent = () => {
         </Box>
 
         {/* Content area — rendered by child routes */}
-        <Box sx={{ mt: 1 }}>
+        <Box
+          sx={{
+            mt: 2,
+            pt: 2,
+            borderTop: "1px solid rgba(255,255,255,0.08)",
+          }}
+        >
           <ErrorBoundary>
             <Outlet />
           </ErrorBoundary>

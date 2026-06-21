@@ -103,7 +103,7 @@ export const FormInputs = ({
             display: "flex",
             flexDirection: "row",
             flexWrap: "wrap",
-            gap: "15px",
+            gap: { xs: "10px", sm: "15px" },
             justifyContent: "center",
           }}
         >

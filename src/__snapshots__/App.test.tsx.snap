@@ -59,7 +59,7 @@ exports[`App > should render correctly 1`] = `
             class="MuiFormControl-root css-1hr5jum-MuiFormControl-root"
           >
             <div
-              class="MuiFormGroup-root css-107elia-MuiFormGroup-root"
+              class="MuiFormGroup-root css-myzjjt-MuiFormGroup-root"
             >
               <div
                 class="MuiFormControl-root MuiTextField-root css-1f703z6-MuiFormControl-root-MuiTextField-root"
@@ -719,7 +719,7 @@ exports[`App > should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root css-164r41r"
+            class="MuiBox-root css-1cjsb1h"
           >
             <div
               class="MuiContainer-root MuiContainer-maxWidthLg css-62w9db-MuiContainer-root"
