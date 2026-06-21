@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Box,
-  Container,
   Table,
   TableBody,
   TableCell,
@@ -256,88 +255,79 @@ export const CurrentRatesTab = ({ profile }: Props) => {
   );
 
   return (
-    <Container
-      sx={{
-        color: primaryColor,
-        width: "100%",
-        maxWidth: "100%",
-        padding: { xs: "8px", sm: "20px" },
-      }}
-    >
-      <Box component="section" aria-label="Current interest rates comparison">
-        {/* ── Side-by-side layout (desktop) ── */}
-        {!isMobile && (
-          <>
-            <Typography
-              variant="h5"
-              component="h2"
-              sx={{ color: textColor, mb: 2, fontWeight: 600 }}
-            >
-              Saving account differences
-            </Typography>
+    <Box component="section" aria-label="Current interest rates comparison" sx={{ mt: 1 }}>
+      {/* ── Side-by-side layout (desktop) ── */}
+      {!isMobile && (
+        <>
+          <Typography
+            variant="h5"
+            component="h2"
+            sx={{ color: textColor, mb: 2, fontWeight: 600 }}
+          >
+            Saving account differences
+          </Typography>
 
+          <Box
+            sx={{
+              display: "flex",
+              gap: 2,
+              alignItems: "stretch",
+            }}
+          >
+            {/* Graph column — left, 45% */}
+            <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
+              <InterestGraph profile={profile} height={380} />
+            </Box>
+
+            {/* Table column — right, 55% */}
             <Box
               sx={{
+                flex: "1 1 55%",
+                minWidth: 0,
                 display: "flex",
-                gap: 2,
-                alignItems: "stretch",
+                flexDirection: "column",
               }}
             >
-              {/* Graph column — left */}
-              <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
-                <InterestGraph profile={profile} height={380} />
-              </Box>
-
-              {/* Table column — right */}
-              <Box
-                sx={{
-                  flex: "1 1 55%",
-                  minWidth: 0,
-                  display: "flex",
-                  flexDirection: "column",
-                }}
+              <Typography
+                variant="h6"
+                component="h3"
+                sx={{ color: textColor, mb: 1.5, fontWeight: 600 }}
               >
-                <Typography
-                  variant="h6"
-                  component="h3"
-                  sx={{ color: textColor, mb: 1.5, fontWeight: 600 }}
-                >
-                  Compare Singapore High Yield Savings Accounts
-                </Typography>
-                {renderDesktopTable()}
-              </Box>
+                Compare Singapore High Yield Savings Accounts
+              </Typography>
+              {renderDesktopTable()}
             </Box>
-          </>
-        )}
+          </Box>
+        </>
+      )}
 
-        {/* ── Stacked layout (mobile) ── */}
-        {isMobile && (
-          <>
-            <Typography
-              variant="h6"
-              component="h2"
-              sx={{ color: textColor, mb: 1.5, fontWeight: 600 }}
-            >
-              Saving account differences
-            </Typography>
-            <InterestGraph profile={profile} height={350} />
-            <Typography
-              variant="h6"
-              component="h2"
-              sx={{ color: textColor, mt: 2, mb: 1.5, fontWeight: 600 }}
-            >
-              Compare Singapore High Yield Savings Accounts
-            </Typography>
-            {renderMobileCards()}
-          </>
-        )}
-      </Box>
+      {/* ── Stacked layout (mobile) ── */}
+      {isMobile && (
+        <>
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ color: textColor, mb: 1.5, fontWeight: 600 }}
+          >
+            Saving account differences
+          </Typography>
+          <InterestGraph profile={profile} height={350} />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ color: textColor, mt: 2, mb: 1.5, fontWeight: 600 }}
+          >
+            Compare Singapore High Yield Savings Accounts
+          </Typography>
+          {renderMobileCards()}
+        </>
+      )}
 
       <Typography
         variant="caption"
         sx={{
           color: textColor,
-          margin: "10px 0px",
+          mt: 1.5,
           display: "block",
           textAlign: "left",
         }}
@@ -354,6 +344,6 @@ export const CurrentRatesTab = ({ profile }: Props) => {
       </Typography>
 
       <FaqAccordion />
-    </Container>
+    </Box>
   );
 };

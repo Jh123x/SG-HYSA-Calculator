@@ -213,7 +213,7 @@ const InputBooleanField = ({
     >
       <Box
         sx={{
-          width: { xs: "100%", sm: "250px" },
+          width: { xs: "100%", sm: "200px" },
           display: "flex",
           justifyContent: "center",
         }}
@@ -325,7 +325,7 @@ const InputNumberField = ({
         "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
           { display: "none" },
         "& input[type=number]": { MozAppearance: "textfield" },
-        width: { xs: "100%", sm: "250px" },
+        width: { xs: "100%", sm: "200px" },
         backgroundColor: bgColor,
         borderRadius: "8px",
         "& .MuiInputBase-root": {
