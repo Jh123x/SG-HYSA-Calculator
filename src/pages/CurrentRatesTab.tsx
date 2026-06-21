@@ -107,11 +107,6 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
           <InterestGraph
             profile={profile}
             height="fill"
-            footnotes={[
-              "Interest rates on their respective websites are subject to change without notice.",
-              "Please do your own research before making any decisions.",
-              "Ask for referrals to get additional bonuses.",
-            ]}
           />
         </Box>
       }
@@ -211,11 +206,6 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
       <InterestGraph
         profile={profile}
         height={340}
-        footnotes={[
-          "Interest rates on their respective websites are subject to change without notice.",
-          "Please do your own research before making any decisions.",
-          "Ask for referrals to get additional bonuses.",
-        ]}
       />
 
       {/* Sort bar: dropdown + asc/desc toggle */}

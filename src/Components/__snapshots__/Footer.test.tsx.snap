@@ -6,10 +6,22 @@ exports[`Footer > should match snapshot 1`] = `
     class="MuiBox-root css-le4ex5"
   >
     <div
-      class="MuiContainer-root MuiContainer-maxWidthSm css-w609og-MuiContainer-root"
+      class="MuiContainer-root MuiContainer-maxWidthSm css-1fwilww-MuiContainer-root"
     >
+      <p
+        class="MuiTypography-root MuiTypography-body2 css-1a1whku-MuiTypography-root"
+      >
+        Copyright © 
+        <a
+          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ghx3tx-MuiTypography-root-MuiLink-root"
+          href="https://jh123x.com/"
+        >
+          Jh123x
+        </a>
+         2026
+      </p>
       <div
-        class="MuiGrid-root MuiGrid-direction-xs-row css-1wcltfm-MuiGrid-root"
+        class="MuiBox-root css-171onha"
       >
         <a
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1qod8la-MuiButtonBase-root-MuiIconButton-root"
@@ -97,18 +109,6 @@ exports[`Footer > should match snapshot 1`] = `
           </svg>
         </a>
       </div>
-      <p
-        class="MuiTypography-root MuiTypography-body2 css-1a1whku-MuiTypography-root"
-      >
-        Copyright © 
-        <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ghx3tx-MuiTypography-root-MuiLink-root"
-          href="https://jh123x.com/"
-        >
-          Jh123x
-        </a>
-         2026
-      </p>
     </div>
   </footer>
 </DocumentFragment>

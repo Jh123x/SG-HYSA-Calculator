@@ -764,7 +764,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
         class="MuiBox-root css-0"
       >
         <div
-          class="css-w3kal1-MuiChartsWrapper-root"
+          class="css-1a6s4jf-MuiChartsWrapper-root"
         >
           <ul
             class="MuiChartsLegend-root MuiChartsLegend-horizontal css-pdrdb0-MuiChartsLegend-root"
@@ -2128,6 +2128,18 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
       >
         <span>
           * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+          <br />
+        </span>
+        <span>
+          ** Interest rates on their respective websites are subject to change without notice.
+          <br />
+        </span>
+        <span>
+          *** Please do your own research before making any decisions.
+          <br />
+        </span>
+        <span>
+          **** Ask for referrals to get additional bonuses.
         </span>
       </span>
     </div>
@@ -2899,7 +2911,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
         class="MuiBox-root css-0"
       >
         <div
-          class="css-w3kal1-MuiChartsWrapper-root"
+          class="css-1a6s4jf-MuiChartsWrapper-root"
         >
           <ul
             class="MuiChartsLegend-root MuiChartsLegend-horizontal css-pdrdb0-MuiChartsLegend-root"
@@ -4391,6 +4403,18 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
       >
         <span>
           * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+          <br />
+        </span>
+        <span>
+          ** Interest rates on their respective websites are subject to change without notice.
+          <br />
+        </span>
+        <span>
+          *** Please do your own research before making any decisions.
+          <br />
+        </span>
+        <span>
+          **** Ask for referrals to get additional bonuses.
         </span>
       </span>
     </div>

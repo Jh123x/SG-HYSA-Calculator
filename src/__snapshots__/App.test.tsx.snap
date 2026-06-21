@@ -647,7 +647,7 @@ exports[`App > should render correctly 1`] = `
                     type="button"
                     value="history"
                   >
-                    Rate Change History
+                    History
                   </button>
                 </div>
                 <div
@@ -716,7 +716,7 @@ exports[`App > should render correctly 1`] = `
               class="MuiBox-root css-1g4yje1"
             >
               <div
-                class="MuiBox-root css-q86rdy"
+                class="MuiBox-root css-19zgt1b"
               >
                 <div
                   class="MuiBox-root css-1qzm8v9"
@@ -732,7 +732,7 @@ exports[`App > should render correctly 1`] = `
                         class="MuiBox-root css-1lgiddr"
                       >
                         <div
-                          class="css-w3kal1-MuiChartsWrapper-root"
+                          class="css-1a6s4jf-MuiChartsWrapper-root"
                         >
                           <ul
                             class="MuiChartsLegend-root MuiChartsLegend-horizontal css-1wz5nyj-MuiChartsLegend-root"
@@ -3236,10 +3236,22 @@ exports[`App > should render correctly 1`] = `
       class="MuiBox-root css-le4ex5"
     >
       <div
-        class="MuiContainer-root MuiContainer-maxWidthSm css-w609og-MuiContainer-root"
+        class="MuiContainer-root MuiContainer-maxWidthSm css-1fwilww-MuiContainer-root"
       >
+        <p
+          class="MuiTypography-root MuiTypography-body2 css-12zhdr8-MuiTypography-root"
+        >
+          Copyright © 
+          <a
+            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ghx3tx-MuiTypography-root-MuiLink-root"
+            href="https://jh123x.com/"
+          >
+            Jh123x
+          </a>
+           2026
+        </p>
         <div
-          class="MuiGrid-root MuiGrid-direction-xs-row css-1wcltfm-MuiGrid-root"
+          class="MuiBox-root css-171onha"
         >
           <a
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-brhd2s-MuiButtonBase-root-MuiIconButton-root"
@@ -3327,18 +3339,6 @@ exports[`App > should render correctly 1`] = `
             </svg>
           </a>
         </div>
-        <p
-          class="MuiTypography-root MuiTypography-body2 css-12zhdr8-MuiTypography-root"
-        >
-          Copyright © 
-          <a
-            class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ghx3tx-MuiTypography-root-MuiLink-root"
-            href="https://jh123x.com/"
-          >
-            Jh123x
-          </a>
-           2026
-        </p>
       </div>
     </footer>
   </div>

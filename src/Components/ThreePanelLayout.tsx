@@ -103,9 +103,9 @@ const ThreePanelLayoutMobile = ({
       pt: 1,
     }}
   >
-    {top && <Box>{top}</Box>}
-    {bottomLeft && <Box>{bottomLeft}</Box>}
-    {bottomRight && <Box>{bottomRight}</Box>}
+    {top && <Box sx={{ py: 1 }}>{top}</Box>}
+    {bottomLeft && <Box sx={{ py: 1 }}>{bottomLeft}</Box>}
+    {bottomRight && <Box sx={{ py: 1 }}>{bottomRight}</Box>}
   </Box>
 );
 

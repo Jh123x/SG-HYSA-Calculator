@@ -6,6 +6,12 @@ import { primaryColor, textColor } from "../consts/colors";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 
+/** Single source of truth for tab labels — kept concise for mobile screen widths */
+export const TAB_LABELS = {
+  current: "Current Rates",
+  history: "History",
+} as const;
+
 /** Toggle button styling with hover response */
 const TOGGLE_SX = {
   color: textColor,
@@ -70,10 +76,10 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
       size="small"
     >
       <ToggleButton value="current" sx={TOGGLE_SX}>
-        Current Rates
+        {TAB_LABELS.current}
       </ToggleButton>
       <ToggleButton value="history" sx={TOGGLE_SX}>
-        Rate Change History
+        {TAB_LABELS.history}
       </ToggleButton>
     </ToggleButtonGroup>
   );
@@ -152,10 +158,10 @@ const TabbedContentMobile = ({ ctx }: { ctx: LayoutContext }) => {
           size="small"
         >
           <ToggleButton value="current" sx={TOGGLE_SX}>
-            Current Rates
+            {TAB_LABELS.current}
           </ToggleButton>
           <ToggleButton value="history" sx={TOGGLE_SX}>
-            History
+            {TAB_LABELS.history}
           </ToggleButton>
         </ToggleButtonGroup>
       </Box>

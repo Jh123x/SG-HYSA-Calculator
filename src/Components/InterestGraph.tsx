@@ -9,7 +9,7 @@ import {
   type ChartLine,
 } from "./InterestVsSavingsChart";
 
-const AST_RINKS_SX = {
+const ASTERISKS_SX = {
   color: textColor,
   display: "block",
   textAlign: "left",
@@ -19,29 +19,26 @@ const AST_RINKS_SX = {
 
 const BUILT_IN_NOTES = [
   "Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges",
+  "Interest rates on their respective websites are subject to change without notice.",
+  "Please do your own research before making any decisions.",
+  "Ask for referrals to get additional bonuses.",
 ];
 
 interface InterestGraphProps {
   profile: Profile;
   /** Fixed pixel height, or "fill" to expand to container */
   height?: number | "fill";
-  /**
-   * Additional footnote strings to display below the built-in graph note.
-   * All notes are consolidated and numbered with ascending asterisks (*, **, ***, …).
-   */
-  footnotes?: string[];
 }
 
 /**
  * Savings-vs-yearly-interest chart in a Paper card.
  *
  * Renders a line chart for all accounts with historical data and appends
- * consolidated footnotes (built-in + caller-supplied) at the bottom.
+ * consolidated footnotes at the bottom.
  */
 export const InterestGraph = ({
   profile,
   height = 500,
-  footnotes,
 }: InterestGraphProps) => {
   const lines: ChartLine[] = Object.entries(bankInfo)
     .filter(([, value]) => value.history.length > 0)
@@ -54,8 +51,6 @@ export const InterestGraph = ({
         color: lineColors[idx % lineColors.length],
       };
     });
-
-  const allNotes = [...BUILT_IN_NOTES, ...(footnotes ?? [])];
 
   return (
     <Paper
@@ -89,16 +84,14 @@ export const InterestGraph = ({
         />
       </InterestVsSavingsChart>
 
-      {allNotes.length > 0 && (
-        <Typography variant="caption" sx={AST_RINKS_SX}>
-          {allNotes.map((note, i) => (
-            <span key={i}>
-              {"*".repeat(i + 1)} {note}
-              {i < allNotes.length - 1 && <br />}
-            </span>
-          ))}
-        </Typography>
-      )}
+      <Typography variant="caption" sx={ASTERISKS_SX}>
+        {BUILT_IN_NOTES.map((note, i) => (
+          <span key={i}>
+            {"*".repeat(i + 1)} {note}
+            {i < BUILT_IN_NOTES.length - 1 && <br />}
+          </span>
+        ))}
+      </Typography>
     </Paper>
   );
 };

@@ -123,6 +123,7 @@ export const InterestVsSavingsChart = ({
           ".MuiChartsAxis-label": { fill: textColor },
           ".MuiChartsAxis-tick": { fill: textColor },
           ".MuiChartsLegend-label": { fill: textColor },
+          "& .MuiChartsSurface-root": { background: "transparent" },
           ...(height === undefined ? { height: "100%", width: "100%" } : {}),
         }}
       >

@@ -108,6 +108,7 @@ const AXIS_SX = {
   ".MuiChartsAxis-label": { fill: textColor },
   ".MuiChartsAxis-tick": { fill: textColor },
   ".MuiChartsLegend-label": { fill: textColor },
+  "& .MuiChartsSurface-root": { background: "transparent" },
 };
 
 const ComparisonChartContent = ({
