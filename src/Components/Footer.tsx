@@ -13,7 +13,7 @@ export const Footer = () => {
         flexShrink: 0,
       }}
     >
-      <Container maxWidth="sm" sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 2, flexWrap: "wrap" }}>
+      <Container maxWidth="sm" sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 1, flexWrap: "wrap" }}>
         <Socials />
         <Typography variant="body2" color="textSecondary">
           {"Copyright © "}

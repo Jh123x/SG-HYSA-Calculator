@@ -6,7 +6,7 @@ exports[`Footer > should match snapshot 1`] = `
     class="MuiBox-root css-le4ex5"
   >
     <div
-      class="MuiContainer-root MuiContainer-maxWidthSm css-35csu0-MuiContainer-root"
+      class="MuiContainer-root MuiContainer-maxWidthSm css-w609og-MuiContainer-root"
     >
       <div
         class="MuiGrid-root MuiGrid-direction-xs-row css-1wcltfm-MuiGrid-root"

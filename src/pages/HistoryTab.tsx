@@ -163,16 +163,16 @@ const HistoryTabDesktop = ({
           <Table size="small" stickyHeader>
             <TableHead>
               <TableRow>
-                <TableCell sx={{ color: textColor, fontWeight: 600, width: 30 }} />
-                <TableCell sx={{ color: textColor, fontWeight: 600, width: 130 }}>Date</TableCell>
-                <TableCell sx={{ color: textColor, fontWeight: 600 }}>What Changed</TableCell>
-                <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}12` : "transparent" }}>
+                <TableCell sx={{ color: textColor, fontWeight: 600, width: 30, backgroundColor: bgColor }} />
+                <TableCell sx={{ color: textColor, fontWeight: 600, width: 130, backgroundColor: bgColor }}>Date</TableCell>
+                <TableCell sx={{ color: textColor, fontWeight: 600, backgroundColor: bgColor }}>What Changed</TableCell>
+                <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}1a` : bgColor }}>
                   Yearly Interest ($)
                 </TableCell>
-                <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: highlightCol === "eir" ? `${primaryColor}12` : "transparent" }}>
+                <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: highlightCol === "eir" ? `${primaryColor}1a` : bgColor }}>
                   EIR
                 </TableCell>
-                <TableCell sx={{ color: textColor, fontWeight: 600, width: 80, textAlign: "center" }}>Actions</TableCell>
+                <TableCell sx={{ color: textColor, fontWeight: 600, width: 80, textAlign: "center", backgroundColor: bgColor }}>Actions</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -254,7 +254,7 @@ const HistoryTabDesktop = ({
                 <ToggleButton value="yearly" sx={TOGGLE_SX}>Yearly Interest ($)</ToggleButton>
                 <ToggleButton value="eir" sx={TOGGLE_SX}>EIR (%)</ToggleButton>
               </ToggleButtonGroup>
-              <FormControl size="small" sx={{ minWidth: 0, width: 280 }}>
+              <FormControl size="small" sx={{ minWidth: 200, flex: 1 }}>
                 <Select multiple value={selectedBanks} onChange={(e) => { const val = e.target.value as string[]; if (val.length <= MAX_COMPARISON_BANKS) handleBankChange(val); }} input={<OutlinedInput />} renderValue={(selected) => (<Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>{selected.map((slug) => <Chip key={slug} label={displayNames[slug] ?? slug} size="small" />)}</Box>)} displayEmpty sx={{ color: textColor, backgroundColor: bgColor, "& .MuiOutlinedInput-notchedOutline": { borderColor: `${textColor}40` }, "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "&.Mui-focused .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "& .MuiSvgIcon-root": { color: textColor } }}>
                   <MenuItem disabled value=""><Typography variant="body2" sx={{ color: textColor, opacity: 0.6 }}>Select banks ({selectedBanks.length}/{MAX_COMPARISON_BANKS})</Typography></MenuItem>
                   {sortedOptions.map((slug) => (<MenuItem key={slug} value={slug} disabled={!selectedBanks.includes(slug) && isMaxed} sx={{ color: textColor, "&.Mui-selected": { backgroundColor: `${primaryColor}30` }, "&:hover": { backgroundColor: `${primaryColor}20` }, "&.Mui-disabled": { opacity: 0.35 } }}><Box sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}><span>{displayNames[slug] ?? slug}</span><span style={{ opacity: 0.65, fontSize: "0.85em" }}>{profile.Savings > 0 ? `${bankEirs[slug]}%` : ""}</span></Box></MenuItem>))}
@@ -434,16 +434,16 @@ const MobileRowGroupedList = ({
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell sx={{ color: textColor, fontWeight: 600, width: 24, p: 0.5 }} />
-            <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5 }}>Date</TableCell>
-            <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5 }}>Change</TableCell>
-            <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}10` : "transparent" }}>
+            <TableCell sx={{ color: textColor, fontWeight: 600, width: 24, p: 0.5, backgroundColor: bgColor }} />
+            <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5, backgroundColor: bgColor }}>Date</TableCell>
+            <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5, backgroundColor: bgColor }}>Change</TableCell>
+            <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}1a` : bgColor }}>
               Yr$
             </TableCell>
-            <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "eir" ? `${primaryColor}10` : "transparent" }}>
+            <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "eir" ? `${primaryColor}1a` : bgColor }}>
               EIR
             </TableCell>
-            <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", textAlign: "center", width: 60, px: 0.5 }}>Act</TableCell>
+            <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", textAlign: "center", width: 60, px: 0.5, backgroundColor: bgColor }}>Act</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

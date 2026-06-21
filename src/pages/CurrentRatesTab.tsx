@@ -100,9 +100,9 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
 
   return (
     <Box component="section" aria-label="Current interest rates comparison" sx={{ height: "100%", display: "flex", gap: 2, alignItems: "stretch", pt: 1.5 }}>
-      {/* Left: Graph + asterisks */}
-      <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
-        <InterestGraph profile={profile} height="fill" />
+      {/* Left: Graph + asterisks — independent scrollbar */}
+      <Box sx={{ flex: "0 0 45%", minWidth: 0, overflowY: "auto" }}>
+        <InterestGraph profile={profile} height={440} />
         <Typography
           variant="caption"
           sx={{ color: textColor, display: "block", textAlign: "left", opacity: 0.7, mt: 1 }}

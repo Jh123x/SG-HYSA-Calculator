@@ -39,7 +39,7 @@ export const Layout = ({
   const boxHeight = isMobile ? "auto" : "100dvh";
   const boxOverflow = isMobile ? "visible" : "hidden";
 
-  const mainOverflow = isMobile ? "visible" : "auto";
+  const mainOverflow = isMobile ? "visible" : "hidden";
   const mainFlex = isMobile ? undefined : 1;
   const mainMinHeight = isMobile ? undefined : 0;
 
@@ -82,7 +82,6 @@ export const Layout = ({
             sx={{
               maxWidth: "100% !important",
               px: { xs: 1, sm: 2 },
-              pb: { xs: 2, sm: 3 },
             }}
           >
             <ErrorBoundary>

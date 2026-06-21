@@ -220,11 +220,11 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         <Table size="small" stickyHeader>
           <TableHead>
             <TableRow>
-              <TableCell sx={{ color: textColor, fontWeight: 600 }}>Date</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600 }}>What Changed</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right" }}>Yearly Interest</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right" }}>EIR</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, width: 60, textAlign: "center" }}>Action</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, backgroundColor: bgColor }}>Date</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, backgroundColor: bgColor }}>What Changed</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>Yearly Interest</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>EIR</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, width: 60, textAlign: "center", backgroundColor: bgColor }}>Action</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
