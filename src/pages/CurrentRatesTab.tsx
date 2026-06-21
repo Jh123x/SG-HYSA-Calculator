@@ -99,10 +99,10 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
   };
 
   return (
-    <Box component="section" aria-label="Current interest rates comparison" sx={{ height: "100%", display: "flex", gap: 2, alignItems: "stretch", pt: 1.5 }}>
-      {/* Left: Graph + asterisks — scales to fit when zoomed */}
-      <Box sx={{ flex: "0 0 45%", minWidth: 0, minHeight: 0, display: "flex", flexDirection: "column" }}>
-        <Box sx={{ flex: 1, minHeight: 0 }}>
+    <Box component="section" aria-label="Current interest rates comparison" sx={{ height: "100%", display: "flex", gap: 2, alignItems: "flex-start", pt: 1.5 }}>
+      {/* Left: Graph + asterisks — content-height, scales on zoom */}
+      <Box sx={{ flex: "0 0 45%", minWidth: 0, maxHeight: "80vh", display: "flex", flexDirection: "column", overflow: "auto" }}>
+        <Box sx={{ height: "45vh", minHeight: 0 }}>
           <InterestGraph profile={profile} height="fill" />
         </Box>
         <Typography
@@ -117,7 +117,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
         </Typography>
       </Box>
       {/* Right: Table — single internal scrollbar */}
-      <Box sx={{ flex: "1 1 55%", minWidth: 0 }}>
+      <Box sx={{ flex: "1 1 55%", minWidth: 0, alignSelf: "stretch" }}>
         <TableContainer
           component={Paper}
           sx={{

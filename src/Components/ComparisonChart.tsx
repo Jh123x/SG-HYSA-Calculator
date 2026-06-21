@@ -177,7 +177,7 @@ const ComparisonChartContent = ({
       {/* ── Chart ─────────────────────────────────────────────────── */}
       <Paper
         sx={{
-          p: 3,
+          p: 2,
           borderRadius: "10px",
           backgroundColor: bgColor,
           flex: 1,

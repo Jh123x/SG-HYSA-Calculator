@@ -2,7 +2,7 @@ import { ChartsReferenceLine } from "@mui/x-charts";
 import { Paper, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
-import { lineColors, textColor } from "../consts/colors";
+import { lineColors, textColor, bgColor } from "../consts/colors";
 import type Profile from "../types/profile";
 import {
   InterestVsSavingsChart,
@@ -44,10 +44,9 @@ export const InterestGraph = ({
   return (
     <Paper
       sx={{
-        padding: { xs: "12px", sm: "20px" },
+        p: 2,
         borderRadius: "10px",
-        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-        backgroundColor: "background.paper",
+        backgroundColor: bgColor,
         height: height === "fill" ? "100%" : "auto",
         display: "flex",
         flexDirection: "column",

@@ -166,10 +166,10 @@ const HistoryTabDesktop = ({
                 <TableCell sx={{ color: textColor, fontWeight: 600, width: 30, backgroundColor: bgColor }} />
                 <TableCell sx={{ color: textColor, fontWeight: 600, width: 130, backgroundColor: bgColor }}>Date</TableCell>
                 <TableCell sx={{ color: textColor, fontWeight: 600, backgroundColor: bgColor }}>What Changed</TableCell>
-                <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}1a` : bgColor }}>
+                <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>
                   Yearly Interest ($)
                 </TableCell>
-                <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: highlightCol === "eir" ? `${primaryColor}1a` : bgColor }}>
+                <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>
                   EIR
                 </TableCell>
                 <TableCell sx={{ color: textColor, fontWeight: 600, width: 80, textAlign: "center", backgroundColor: bgColor }}>Actions</TableCell>
