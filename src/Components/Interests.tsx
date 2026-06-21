@@ -34,7 +34,7 @@ const cellSx = {
 };
 
 export const Result = ({ profile }: { profile: Profile }) => {
-  const [orderBy, setOrderBy] = useState<SortableColumns>(undefined);
+  const [orderBy, setOrderBy] = useState<SortableColumns>("effectiveInterest");
   const [order, setOrder] = useState<"asc" | "desc" | undefined>("desc");
 
   const results: Record<string, ResultProp> = {};
