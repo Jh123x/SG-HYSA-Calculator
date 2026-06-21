@@ -1,5 +1,5 @@
 import { ChartsReferenceLine } from "@mui/x-charts";
-import { Paper, Box, Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
 import { lineColors, textColor } from "../consts/colors";

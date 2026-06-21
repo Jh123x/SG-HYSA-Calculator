@@ -18,11 +18,11 @@ export interface LayoutContext {
 interface LayoutProps extends LayoutContext {}
 
 /**
- * Shared layout matching the Excalidraw wireframe:
- *   Header (title + FAQ) → Content (inputs + tabs + page) → Footer
+ * Layout matching the wireframe:
+ *   Header (sticky) → Content (scrollable, flex-1) → Footer (always visible)
  *
- * The old WithInputs wrapper is replaced by TabbedContent which
- * integrates inputs, tab navigation, and page content together.
+ * No nested scrollbars: the entire page is a flex column filling the viewport.
+ * TabbedContent uses flex:1 and handles its own internal scrolling.
  */
 export const Layout = ({
   currProfile,
@@ -39,27 +39,54 @@ export const Layout = ({
           margin: "0px",
           padding: "0px",
           height: "100%",
-          minHeight: "100dvh",
           width: "100%",
+          overflow: "hidden",
+        },
+        "#root": {
+          height: "100%",
+          display: "flex",
+          flexDirection: "column",
         },
       }}
     />
-    <Header />
-    <Box component="main" sx={{ paddingBottom: "20px" }}>
-      <Container sx={{ maxWidth: "100% !important" }}>
-        <ErrorBoundary>
-          <Outlet
-            context={{
-              currProfile,
-              setCurrProfile,
-              pendingUrlProfile,
-              onAcceptShared,
-              onRejectShared,
-            }}
-          />
-        </ErrorBoundary>
-      </Container>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100dvh",
+        overflow: "hidden",
+      }}
+    >
+      <Header />
+      <Box
+        component="main"
+        sx={{
+          flex: 1,
+          minHeight: 0,
+          overflow: "hidden",
+        }}
+      >
+        <Container
+          sx={{
+            height: "100%",
+            maxWidth: "100% !important",
+            px: { xs: 1, sm: 2 },
+          }}
+        >
+          <ErrorBoundary>
+            <Outlet
+              context={{
+                currProfile,
+                setCurrProfile,
+                pendingUrlProfile,
+                onAcceptShared,
+                onRejectShared,
+              }}
+            />
+          </ErrorBoundary>
+        </Container>
+      </Box>
+      <Footer />
     </Box>
-    <Footer />
   </ThemeProvider>
 );

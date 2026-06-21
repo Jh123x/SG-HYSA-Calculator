@@ -39,9 +39,9 @@ interface LayoutContext {
 
 /**
  * Tabbed content area — redesigned with:
- * - ToggleButtonGroup above inputs for tab navigation
+ * - ToggleButtonGroup above inputs for tab navigation (left-aligned)
  * - All data / Clear / Share at bottom-right of top section
- * - Non-scrollable page; each section (inputs, content, footer) scrolls independently
+ * - Single scrollable page: inputs section (scrollable) + content area (scrollable)
  */
 export const TabbedContent = () => {
   const { currProfile, setCurrProfile, pendingUrlProfile, onAcceptShared, onRejectShared } =
@@ -55,7 +55,7 @@ export const TabbedContent = () => {
       component="section"
       aria-label="Savings calculator"
       sx={{
-        height: "100vh",
+        height: "100%",
         display: "flex",
         flexDirection: "column",
         overflow: "hidden",
@@ -67,14 +67,13 @@ export const TabbedContent = () => {
           flexShrink: 0,
           overflowY: "auto",
           maxHeight: { xs: "45vh", sm: "50vh" },
-          px: { xs: 1, sm: 2 },
           pt: { xs: 1, sm: 2 },
           pb: 1,
           borderBottom: "1px solid rgba(255,255,255,0.08)",
         }}
       >
-        {/* Toggle button group — centered, above inputs */}
-        <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
+        {/* Toggle button group — left-aligned, above inputs */}
+        <Box sx={{ display: "flex", justifyContent: "flex-start", mb: 2 }}>
           <ToggleButtonGroup
             value={activeTab}
             exclusive
@@ -108,8 +107,8 @@ export const TabbedContent = () => {
       <Box
         sx={{
           flex: 1,
+          minHeight: 0,
           overflowY: "auto",
-          px: { xs: 1, sm: 2 },
           py: 2,
         }}
       >

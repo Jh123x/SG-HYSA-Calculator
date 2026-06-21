@@ -18,6 +18,7 @@ import {
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import LanguageIcon from "@mui/icons-material/Language";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, bgColor, primaryColor, lineColors } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
@@ -307,13 +308,35 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
       }}
     >
       {/* Bank name + description merged into this section */}
-      <Typography
-        variant="h5"
-        component="h2"
-        sx={{ color: textColor, fontWeight: 700, mb: 0.5 }}
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "flex-start",
+          flexWrap: "wrap",
+          gap: 1,
+        }}
       >
-        {info.name}
-      </Typography>
+        <Typography
+          variant="h5"
+          component="h2"
+          sx={{ color: textColor, fontWeight: 700, mb: 0.5 }}
+        >
+          {info.name}
+        </Typography>
+        {info.url && (
+          <Tooltip title="Visit official website">
+            <IconButton
+              href={info.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: primaryColor }}
+            >
+              <LanguageIcon />
+            </IconButton>
+          </Tooltip>
+        )}
+      </Box>
 
       <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap", mb: 1.5 }}>
         {resolved.length > 0 &&
@@ -336,26 +359,12 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         />
       </Box>
 
-      {/* Description with link to official website */}
+      {/* Description */}
       <Typography
         variant="body2"
         sx={{ color: textColor, opacity: 0.75, mb: 2.5 }}
       >
-        {info.remarks}{" "}
-        {info.url && (
-          <a
-            href={info.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              color: primaryColor,
-              textDecoration: "underline",
-              fontWeight: 500,
-            }}
-          >
-            Visit official website ↗
-          </a>
-        )}
+        {info.remarks}
       </Typography>
 
       {/* Rate change history table */}
@@ -386,7 +395,12 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
                 EIR
               </TableCell>
               <TableCell
-                sx={{ color: textColor, fontWeight: 600, width: 60 }}
+                sx={{
+                  color: textColor,
+                  fontWeight: 600,
+                  width: 60,
+                  textAlign: "center",
+                }}
               >
                 Action
               </TableCell>
@@ -411,9 +425,11 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
                     <TableCell sx={{ color: textColor, textAlign: "right" }}>
                       {isTbd ? "—" : `${snapshot.eir.toFixed(2)}%`}
                     </TableCell>
-                    <TableCell sx={{ color: textColor }}>
+                    <TableCell
+                      sx={{ color: textColor, textAlign: "center", p: 0.5 }}
+                    >
                       {snapshot.sourceUrl && (
-                        <Tooltip title="View source">
+                        <Tooltip title="Visit source page">
                           <IconButton
                             size="small"
                             href={snapshot.sourceUrl}

@@ -3,10 +3,10 @@
 exports[`Footer > should match snapshot 1`] = `
 <DocumentFragment>
   <footer
-    class="MuiBox-root css-1b6b4sh"
+    class="MuiBox-root css-le4ex5"
   >
     <div
-      class="MuiContainer-root MuiContainer-maxWidthSm css-zzzaw2-MuiContainer-root"
+      class="MuiContainer-root MuiContainer-maxWidthSm css-35csu0-MuiContainer-root"
     >
       <div
         class="MuiGrid-root MuiGrid-direction-xs-row css-1wcltfm-MuiGrid-root"
@@ -98,8 +98,7 @@ exports[`Footer > should match snapshot 1`] = `
         </a>
       </div>
       <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-13mdizf-MuiTypography-root"
-        style="--Typography-textAlign: center;"
+        class="MuiTypography-root MuiTypography-body2 css-1a1whku-MuiTypography-root"
       >
         Copyright © 
         <a

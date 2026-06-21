@@ -1,5 +1,10 @@
-import { useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import {
+  useEffect,
+  useMemo,
+  useState,
+  useCallback,
+} from "react";
+import { useSearchParams, useNavigate } from "react-router-dom";
 import {
   Box,
   Typography,
@@ -26,7 +31,9 @@ import {
   KeyboardArrowDown,
   KeyboardArrowRight,
   OpenInNew,
+  Language,
 } from "@mui/icons-material";
+import { ComparisonChart } from "../Components/ComparisonChart";
 import { isValidSlug } from "../logic/slugs";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
@@ -87,15 +94,32 @@ function readSessionBanks(): string[] {
 
 type ChartMode = "yearly" | "eir";
 
+interface BankHistoryRow {
+  date: string;
+  changeSummary: string;
+  yearlyInterest: string;
+  eir: string;
+  sourceUrl?: string;
+}
+
+interface BankHistoryGroup {
+  slug: string;
+  name: string;
+  rows: BankHistoryRow[];
+}
+
 /**
  * Rate History tab:
- * - Bank selection dropdown beside Yearly/EIR toggle (left-aligned)
+ * - Metric toggle (Yearly/EIR) on left, bank dropdown on right
+ * - Comparison chart below controls
  * - Grouped bank history tables with collapsible sections
+ * - Action column with source and detail links
  */
 export const HistoryTab = ({ profile }: Props) => {
+  const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const selectedBanks = readSessionBanks();
-  const isMobile = useMediaQuery("(max-width:600px)");
+  const isMobile = useMediaQuery("(max-width:900px)");
   const [chartMode, setChartMode] = useState<ChartMode>("yearly");
   const [collapsedBanks, setCollapsedBanks] = useState<Set<string>>(new Set());
 
@@ -129,7 +153,7 @@ export const HistoryTab = ({ profile }: Props) => {
     }, { replace: true });
   };
 
-  const toggleCollapse = (slug: string) => {
+  const toggleCollapse = useCallback((slug: string) => {
     setCollapsedBanks((prev) => {
       const next = new Set(prev);
       if (next.has(slug)) {
@@ -139,7 +163,7 @@ export const HistoryTab = ({ profile }: Props) => {
       }
       return next;
     });
-  };
+  }, []);
 
   // Pre-compute bank EIRs for dropdown display
   const bankEirs = useMemo(() => {
@@ -173,18 +197,8 @@ export const HistoryTab = ({ profile }: Props) => {
   const isMaxed = selectedBanks.length >= MAX_COMPARISON_BANKS;
 
   // Build grouped history data
-  const bankHistories = useMemo(() => {
-    const result: Array<{
-      slug: string;
-      name: string;
-      rows: Array<{
-        date: string;
-        changeSummary: string;
-        yearlyInterest: string;
-        eir: string;
-        sourceUrl?: string;
-      }>;
-    }> = [];
+  const bankHistories: BankHistoryGroup[] = useMemo(() => {
+    const result: BankHistoryGroup[] = [];
 
     for (const slug of selectedBanks) {
       const info = bankInfo[slug];
@@ -210,25 +224,243 @@ export const HistoryTab = ({ profile }: Props) => {
     return result;
   }, [selectedBanks, profile]);
 
+  // ── Render single bank history section ──
+  const renderBankSection = useCallback(
+    (bank: BankHistoryGroup) => {
+      const isCollapsed = collapsedBanks.has(bank.slug);
+      const highlightCol = chartMode === "yearly" ? "yearlyInterest" : "eir";
+
+      return (
+        <Paper
+          key={bank.slug}
+          sx={{
+            borderRadius: "10px",
+            backgroundColor: bgColor,
+            overflow: "hidden",
+          }}
+        >
+          {/* Bank group header */}
+          <Box
+            onClick={() => toggleCollapse(bank.slug)}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+              px: 2,
+              py: 1.5,
+              cursor: "pointer",
+              backgroundColor: `${primaryColor}15`,
+              "&:hover": { backgroundColor: `${primaryColor}20` },
+              userSelect: "none",
+            }}
+          >
+            <IconButton size="small" sx={{ color: textColor }}>
+              {isCollapsed ? (
+                <KeyboardArrowRight fontSize="small" />
+              ) : (
+                <KeyboardArrowDown fontSize="small" />
+              )}
+            </IconButton>
+            <Typography
+              variant="subtitle1"
+              sx={{ color: textColor, fontWeight: 600 }}
+            >
+              {bank.name}
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: textColor, opacity: 0.6, ml: 1 }}
+            >
+              ({bank.rows.length} change{bank.rows.length !== 1 ? "s" : ""})
+            </Typography>
+          </Box>
+
+          {/* Bank history table */}
+          <Collapse in={!isCollapsed}>
+            <TableContainer>
+              <Table size="small">
+                <TableHead>
+                  <TableRow>
+                    <TableCell
+                      sx={{
+                        color: textColor,
+                        fontWeight: 600,
+                        width: { xs: 70, sm: 130 },
+                      }}
+                    >
+                      Date
+                    </TableCell>
+                    <TableCell sx={{ color: textColor, fontWeight: 600 }}>
+                      What Changed
+                    </TableCell>
+                    <TableCell
+                      sx={{
+                        color: textColor,
+                        fontWeight: 600,
+                        textAlign: "right",
+                        backgroundColor:
+                          highlightCol === "yearlyInterest"
+                            ? `${primaryColor}12`
+                            : "transparent",
+                      }}
+                    >
+                      {isMobile ? "Yr $" : "Yearly Interest ($)"}
+                    </TableCell>
+                    <TableCell
+                      sx={{
+                        color: textColor,
+                        fontWeight: 600,
+                        textAlign: "right",
+                        backgroundColor:
+                          highlightCol === "eir"
+                            ? `${primaryColor}12`
+                            : "transparent",
+                      }}
+                    >
+                      EIR
+                    </TableCell>
+                    <TableCell
+                      sx={{
+                        color: textColor,
+                        fontWeight: 600,
+                        width: 80,
+                        textAlign: "center",
+                      }}
+                    >
+                      Actions
+                    </TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {bank.rows.map((row, idx) => (
+                    <TableRow
+                      key={idx}
+                      sx={{
+                        "&:hover": {
+                          backgroundColor: `${primaryColor}08`,
+                        },
+                      }}
+                    >
+                      <TableCell
+                        sx={{
+                          color: textColor,
+                          fontSize: { xs: "0.8rem", sm: "inherit" },
+                        }}
+                      >
+                        {row.date}
+                      </TableCell>
+                      <TableCell
+                        sx={{
+                          color: textColor,
+                          fontSize: { xs: "0.8rem", sm: "inherit" },
+                        }}
+                      >
+                        {row.changeSummary}
+                      </TableCell>
+                      <TableCell
+                        sx={{
+                          color: textColor,
+                          textAlign: "right",
+                          backgroundColor:
+                            highlightCol === "yearlyInterest"
+                              ? `${primaryColor}08`
+                              : "transparent",
+                          fontSize: { xs: "0.8rem", sm: "inherit" },
+                        }}
+                      >
+                        {row.yearlyInterest}
+                      </TableCell>
+                      <TableCell
+                        sx={{
+                          color: textColor,
+                          textAlign: "right",
+                          backgroundColor:
+                            highlightCol === "eir"
+                              ? `${primaryColor}08`
+                              : "transparent",
+                          fontSize: { xs: "0.8rem", sm: "inherit" },
+                        }}
+                      >
+                        {row.eir}
+                      </TableCell>
+                      <TableCell
+                        sx={{
+                          color: textColor,
+                          textAlign: "center",
+                          p: 0.5,
+                        }}
+                      >
+                        <Box sx={{ display: "flex", justifyContent: "center", gap: 0.5 }}>
+                          {row.sourceUrl && (
+                            <Tooltip title="Visit source" placement="left">
+                              <IconButton
+                                size="small"
+                                href={row.sourceUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                sx={{ color: primaryColor }}
+                              >
+                                <Language fontSize="small" />
+                              </IconButton>
+                            </Tooltip>
+                          )}
+                          <Tooltip title="View details" placement="right">
+                            <IconButton
+                              size="small"
+                              onClick={() => navigate(`/bank/${bank.slug}`)}
+                              sx={{ color: primaryColor }}
+                            >
+                              <OpenInNew fontSize="small" />
+                            </IconButton>
+                          </Tooltip>
+                        </Box>
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </Collapse>
+        </Paper>
+      );
+    },
+    [collapsedBanks, chartMode, isMobile, navigate, toggleCollapse],
+  );
+
   return (
     <Box
       component="section"
       aria-label="Interest rate change history"
       sx={{ mt: 1, px: { xs: 0, sm: 0 } }}
     >
-      {/* ── Bank selection + Metric toggle row ── */}
+      {/* ── Controls row: Toggle (left) | Bank dropdown (right) ── */}
       <Box
         sx={{
           display: "flex",
           alignItems: "center",
+          justifyContent: "space-between",
           gap: { xs: 1, sm: 2 },
           mb: 2,
           flexWrap: "wrap",
-          px: { xs: 0, sm: 0 },
         }}
       >
-        {/* Bank multi-select dropdown */}
-        <FormControl size="small" sx={{ minWidth: { xs: 200, sm: 280 }, flexShrink: 0 }}>
+        {/* Metric toggle — left-aligned */}
+        <ToggleButtonGroup
+          value={chartMode}
+          exclusive
+          onChange={(_e, v) => v && setChartMode(v)}
+          size="small"
+        >
+          <ToggleButton value="yearly" sx={TOGGLE_SX}>
+            {isMobile ? "Yearly $" : "Yearly Interest ($)"}
+          </ToggleButton>
+          <ToggleButton value="eir" sx={TOGGLE_SX}>
+            EIR (%)
+          </ToggleButton>
+        </ToggleButtonGroup>
+
+        {/* Bank multi-select dropdown — right-aligned */}
+        <FormControl size="small" sx={{ minWidth: { xs: 190, sm: 280 } }}>
           <Select
             multiple
             value={selectedBanks}
@@ -299,21 +531,6 @@ export const HistoryTab = ({ profile }: Props) => {
             ))}
           </Select>
         </FormControl>
-
-        {/* Metric toggle — left-aligned */}
-        <ToggleButtonGroup
-          value={chartMode}
-          exclusive
-          onChange={(_e, v) => v && setChartMode(v)}
-          size="small"
-        >
-          <ToggleButton value="yearly" sx={TOGGLE_SX}>
-            Yearly Interest ($)
-          </ToggleButton>
-          <ToggleButton value="eir" sx={TOGGLE_SX}>
-            EIR (%)
-          </ToggleButton>
-        </ToggleButtonGroup>
       </Box>
 
       {/* Prompt when no banks selected */}
@@ -332,191 +549,42 @@ export const HistoryTab = ({ profile }: Props) => {
         </Paper>
       )}
 
-      {/* Grouped bank history — collapsible sections */}
-      {bankHistories.length > 0 && (
-        <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-          {bankHistories.map((bank) => {
-            const isCollapsed = collapsedBanks.has(bank.slug);
-            const highlightCol = chartMode === "yearly" ? "yearlyInterest" : "eir";
-
-            return (
-              <Paper
-                key={bank.slug}
-                sx={{
-                  borderRadius: "10px",
-                  backgroundColor: bgColor,
-                  overflow: "hidden",
-                }}
-              >
-                {/* Bank group header */}
-                <Box
-                  onClick={() => toggleCollapse(bank.slug)}
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 1,
-                    px: 2,
-                    py: 1.5,
-                    cursor: "pointer",
-                    backgroundColor: `${primaryColor}15`,
-                    "&:hover": { backgroundColor: `${primaryColor}20` },
-                    userSelect: "none",
-                  }}
-                >
-                  <IconButton size="small" sx={{ color: textColor }}>
-                    {isCollapsed ? (
-                      <KeyboardArrowRight fontSize="small" />
-                    ) : (
-                      <KeyboardArrowDown fontSize="small" />
-                    )}
-                  </IconButton>
-                  <Typography
-                    variant="subtitle1"
-                    sx={{ color: textColor, fontWeight: 600 }}
-                  >
-                    {bank.name}
-                  </Typography>
-                  <Typography
-                    variant="body2"
-                    sx={{ color: textColor, opacity: 0.6, ml: 1 }}
-                  >
-                    ({bank.rows.length} change{bank.rows.length !== 1 ? "s" : ""})
-                  </Typography>
-                </Box>
-
-                {/* Bank history table */}
-                <Collapse in={!isCollapsed}>
-                  <TableContainer>
-                    <Table size="small">
-                      <TableHead>
-                        <TableRow>
-                          <TableCell
-                            sx={{
-                              color: textColor,
-                              fontWeight: 600,
-                              width: { xs: 80, sm: 130 },
-                            }}
-                          >
-                            Date
-                          </TableCell>
-                          <TableCell sx={{ color: textColor, fontWeight: 600 }}>
-                            What Changed
-                          </TableCell>
-                          <TableCell
-                            sx={{
-                              color: textColor,
-                              fontWeight: 600,
-                              textAlign: "right",
-                              backgroundColor:
-                                highlightCol === "yearlyInterest"
-                                  ? `${primaryColor}12`
-                                  : "transparent",
-                            }}
-                          >
-                            {isMobile ? "Yr $" : "Yearly Interest ($)"}
-                          </TableCell>
-                          <TableCell
-                            sx={{
-                              color: textColor,
-                              fontWeight: 600,
-                              textAlign: "right",
-                              backgroundColor:
-                                highlightCol === "eir"
-                                  ? `${primaryColor}12`
-                                  : "transparent",
-                            }}
-                          >
-                            EIR
-                          </TableCell>
-                          <TableCell
-                            sx={{
-                              color: textColor,
-                              fontWeight: 600,
-                              width: 50,
-                            }}
-                          >
-                            {isMobile ? "" : "Action"}
-                          </TableCell>
-                        </TableRow>
-                      </TableHead>
-                      <TableBody>
-                        {bank.rows.map((row, idx) => (
-                          <TableRow
-                            key={idx}
-                            sx={{
-                              "&:hover": {
-                                backgroundColor: `${primaryColor}08`,
-                              },
-                            }}
-                          >
-                            <TableCell
-                              sx={{
-                                color: textColor,
-                                fontSize: { xs: "0.8rem", sm: "inherit" },
-                              }}
-                            >
-                              {row.date}
-                            </TableCell>
-                            <TableCell
-                              sx={{
-                                color: textColor,
-                                fontSize: { xs: "0.8rem", sm: "inherit" },
-                              }}
-                            >
-                              {row.changeSummary}
-                            </TableCell>
-                            <TableCell
-                              sx={{
-                                color: textColor,
-                                textAlign: "right",
-                                backgroundColor:
-                                  highlightCol === "yearlyInterest"
-                                    ? `${primaryColor}08`
-                                    : "transparent",
-                                fontSize: { xs: "0.8rem", sm: "inherit" },
-                              }}
-                            >
-                              {row.yearlyInterest}
-                            </TableCell>
-                            <TableCell
-                              sx={{
-                                color: textColor,
-                                textAlign: "right",
-                                backgroundColor:
-                                  highlightCol === "eir"
-                                    ? `${primaryColor}08`
-                                    : "transparent",
-                                fontSize: { xs: "0.8rem", sm: "inherit" },
-                              }}
-                            >
-                              {row.eir}
-                            </TableCell>
-                            <TableCell sx={{ color: textColor, p: 0.5 }}>
-                              {row.sourceUrl && (
-                                <Tooltip title="View source">
-                                  <IconButton
-                                    size="small"
-                                    href={row.sourceUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    sx={{ color: primaryColor }}
-                                  >
-                                    <OpenInNew fontSize="small" />
-                                  </IconButton>
-                                </Tooltip>
-                              )}
-                            </TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
-                  </TableContainer>
-                </Collapse>
-              </Paper>
-            );
-          })}
-        </Box>
-      )}
+      {/* ── Comparison chart + grouped history tables ── */}
+      {selectedBanks.length > 0 && bankHistories.length > 0 &&
+        (isMobile ? (
+          /* Mobile: chart above tables */
+          <Box>
+            <ComparisonChart selectedBanks={selectedBanks} profile={profile} />
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: 2,
+                mt: 2,
+              }}
+            >
+              {bankHistories.map((bank) => renderBankSection(bank))}
+            </Box>
+          </Box>
+        ) : (
+          /* Desktop: chart (left) | tables (right) */
+          <Box sx={{ display: "flex", gap: 2, alignItems: "flex-start" }}>
+            <Box sx={{ flex: "0 0 48%", minWidth: 0 }}>
+              <ComparisonChart selectedBanks={selectedBanks} profile={profile} />
+            </Box>
+            <Box
+              sx={{
+                flex: "1 1 52%",
+                minWidth: 0,
+                display: "flex",
+                flexDirection: "column",
+                gap: 2,
+              }}
+            >
+              {bankHistories.map((bank) => renderBankSection(bank))}
+            </Box>
+          </Box>
+        ))}
     </Box>
   );
 };

@@ -23,6 +23,7 @@ import {
   MenuItem,
 } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import LanguageIcon from "@mui/icons-material/Language";
 import SortIcon from "@mui/icons-material/Sort";
 import type { ResultProp } from "../types/props";
 import { primaryColor, bgColor, textColor } from "../consts/colors";
@@ -150,6 +151,7 @@ export const CurrentRatesTab = ({ profile }: Props) => {
         <TableHead>
           <TableRow sx={{ color: textColor, backgroundColor: bgColor }}>
             <TableCell
+              onClick={() => handleSort("name")}
               sx={{
                 ...cellSx,
                 cursor: "pointer",
@@ -160,13 +162,14 @@ export const CurrentRatesTab = ({ profile }: Props) => {
               <TableSortLabel
                 active={orderBy === "name"}
                 direction={orderBy === "name" ? order : "asc"}
-                onClick={() => handleSort("name")}
+                hideSortIcon={false}
                 sx={SORT_ICON_SX}
               >
                 Accounts
               </TableSortLabel>
             </TableCell>
             <TableCell
+              onClick={() => handleSort("yearlyInterest")}
               sx={{
                 ...cellSx,
                 cursor: "pointer",
@@ -177,13 +180,14 @@ export const CurrentRatesTab = ({ profile }: Props) => {
               <TableSortLabel
                 active={orderBy === "yearlyInterest"}
                 direction={orderBy === "yearlyInterest" ? order : "asc"}
-                onClick={() => handleSort("yearlyInterest")}
+                hideSortIcon={false}
                 sx={SORT_ICON_SX}
               >
                 Yearly Interest ($)
               </TableSortLabel>
             </TableCell>
             <TableCell
+              onClick={() => handleSort("effectiveInterest")}
               sx={{
                 ...cellSx,
                 cursor: "pointer",
@@ -194,13 +198,18 @@ export const CurrentRatesTab = ({ profile }: Props) => {
               <TableSortLabel
                 active={orderBy === "effectiveInterest"}
                 direction={orderBy === "effectiveInterest" ? order : "asc"}
-                onClick={() => handleSort("effectiveInterest")}
+                hideSortIcon={false}
                 sx={SORT_ICON_SX}
               >
                 EIR (%)
               </TableSortLabel>
             </TableCell>
-            <TableCell sx={{ ...cellSx, fontWeight: 600, width: 60 }}>Action</TableCell>
+            <TableCell sx={{ ...cellSx, fontWeight: 600, minWidth: 180 }}>
+              Remarks
+            </TableCell>
+            <TableCell sx={{ ...cellSx, fontWeight: 600, width: 80, textAlign: "center" }}>
+              Actions
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -224,16 +233,34 @@ export const CurrentRatesTab = ({ profile }: Props) => {
               <TableCell sx={cellSx}>
                 {(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%
               </TableCell>
-              <TableCell sx={cellSx}>
-                <Tooltip title="View details">
-                  <IconButton
-                    size="small"
-                    onClick={() => navigate(`/bank/${slug}`)}
-                    sx={{ color: primaryColor }}
-                  >
-                    <OpenInNewIcon fontSize="small" />
-                  </IconButton>
-                </Tooltip>
+              <TableCell sx={{ ...cellSx, opacity: 0.75 }}>
+                {bankInfo[slug]?.remarks ?? "—"}
+              </TableCell>
+              <TableCell sx={{ ...cellSx, textAlign: "center", whiteSpace: "nowrap" }}>
+                <Box sx={{ display: "flex", justifyContent: "center", gap: 0.5 }}>
+                  <Tooltip title="View details" placement="left">
+                    <IconButton
+                      size="small"
+                      onClick={() => navigate(`/bank/${slug}`)}
+                      sx={{ color: primaryColor }}
+                    >
+                      <OpenInNewIcon fontSize="small" />
+                    </IconButton>
+                  </Tooltip>
+                  {interest.url && (
+                    <Tooltip title="Visit official website" placement="right">
+                      <IconButton
+                        size="small"
+                        href={interest.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{ color: primaryColor }}
+                      >
+                        <LanguageIcon fontSize="small" />
+                      </IconButton>
+                    </Tooltip>
+                  )}
+                </Box>
               </TableCell>
             </TableRow>
           ))}
@@ -326,16 +353,19 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                 </Box>
               </Box>
             </CardContent>
-            {/* Action icon — direct button so it doesn't interfere with CardActionArea */}
+            {/* Action icons */}
             <Box
               sx={{
                 display: "flex",
+                flexDirection: "column",
                 alignItems: "center",
-                pr: 1,
+                justifyContent: "center",
+                pr: 0.5,
+                gap: 0.5,
               }}
               onClick={(e) => e.stopPropagation()}
             >
-              <Tooltip title="View details">
+              <Tooltip title="View details" placement="left">
                 <IconButton
                   size="small"
                   onClick={(e) => {
@@ -347,6 +377,20 @@ export const CurrentRatesTab = ({ profile }: Props) => {
                   <OpenInNewIcon fontSize="small" />
                 </IconButton>
               </Tooltip>
+              {interest.url && (
+                <Tooltip title="Visit official website" placement="right">
+                  <IconButton
+                    size="small"
+                    href={interest.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    sx={{ color: primaryColor }}
+                  >
+                    <LanguageIcon fontSize="small" />
+                  </IconButton>
+                </Tooltip>
+              )}
             </Box>
           </CardActionArea>
         </Card>
@@ -358,13 +402,36 @@ export const CurrentRatesTab = ({ profile }: Props) => {
     <Box component="section" aria-label="Current interest rates comparison" sx={{ mt: 1 }}>
       {/* ── Desktop side-by-side ── */}
       {!isMobile && (
-        <Box sx={{ display: "flex", gap: 2, alignItems: "stretch" }}>
-          <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
-            <InterestGraph profile={profile} height={380} />
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+          <Box sx={{ display: "flex", gap: 2, alignItems: "stretch" }}>
+            <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
+              <InterestGraph profile={profile} height={380} />
+            </Box>
+            <Box sx={{ flex: "1 1 55%", minWidth: 0, display: "flex", flexDirection: "column" }}>
+              {renderDesktopTable()}
+            </Box>
           </Box>
-          <Box sx={{ flex: "1 1 55%", minWidth: 0, display: "flex", flexDirection: "column" }}>
-            {renderDesktopTable()}
-          </Box>
+          {/* Asterisks — clearly outside the graph/table row */}
+          <Typography
+            variant="caption"
+            sx={{
+              color: textColor,
+              display: "block",
+              textAlign: "center",
+              opacity: 0.7,
+              mt: 0.5,
+            }}
+          >
+            * Interest rates on their respective websites are subject to change
+            without notice
+            <br />
+            ** Please do your own research before making any decisions, the numbers
+            here serve as a guide.
+            <br />
+            *** Please ask around in your friend group for referrals to get
+            additional bonuses, you can use the my referral code if your friends do
+            not have any.
+          </Typography>
         </Box>
       )}
 
@@ -378,30 +445,29 @@ export const CurrentRatesTab = ({ profile }: Props) => {
               {renderMobileCards()}
             </Box>
           </Carousel>
+          {/* Mobile asterisks */}
+          <Typography
+            variant="caption"
+            sx={{
+              color: textColor,
+              display: "block",
+              textAlign: "center",
+              opacity: 0.7,
+              mt: 1,
+            }}
+          >
+            * Interest rates on their respective websites are subject to change
+            without notice
+            <br />
+            ** Please do your own research before making any decisions, the numbers
+            here serve as a guide.
+            <br />
+            *** Please ask around in your friend group for referrals to get
+            additional bonuses, you can use the my referral code if your friends do
+            not have any.
+          </Typography>
         </>
       )}
-
-      {/* Footer — centered asterisks */}
-      <Typography
-        variant="caption"
-        sx={{
-          color: textColor,
-          mt: 2,
-          display: "block",
-          textAlign: "center",
-          opacity: 0.7,
-        }}
-      >
-        * Interest rates on their respective websites are subject to change
-        without notice
-        <br />
-        ** Please do your own research before making any decisions, the numbers
-        here serve as a guide.
-        <br />
-        *** Please ask around in your friend group for referrals to get
-        additional bonuses, you can use the my referral code if your friends do
-        not have any.
-      </Typography>
     </Box>
   );
 };
