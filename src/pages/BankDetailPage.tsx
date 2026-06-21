@@ -177,7 +177,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           </ToggleButtonGroup>
           <Chip label={`Today: ${todayStr}`} size="small" variant="outlined" sx={{ color: textColor, borderColor: `${textColor}30` }} />
         </Box>
-        <Box sx={{ flex: 1, minHeight: 0 }}>
+        <Box sx={{ flex: 1, minHeight: 0, overflow: "hidden" }}>
           <LineChart
             dataset={chartData}
             xAxis={[{ dataKey: "date", label: "Date", scaleType: "time" as const, tickLabelStyle: { angle: 45, textAnchor: "start" as const, fontSize: 11 }, valueFormatter: dateFormatter }]}
@@ -185,7 +185,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
             yAxis={[{ label: yLabel, scaleType: "linear", min: 0, valueFormatter: yFormatter }]}
             height={isMobile ? 300 : undefined}
             grid={{ vertical: true, horizontal: true }}
-            sx={{ ".MuiChartsAxis-label": { fill: textColor }, ".MuiChartsAxis-tick": { fill: textColor }, ".MuiChartsLegend-label": { fill: textColor }, "& .MuiChartsSurface-root": { background: "transparent" }, width: "100%", ...(isMobile ? {} : { height: "100%" }) }}
+            sx={{ ".MuiChartsAxis-label": { fill: textColor }, ".MuiChartsAxis-tick": { fill: textColor }, ".MuiChartsLegend-label": { fill: textColor }, "& .MuiChartsSurface-root": { background: "transparent" }, height: "100%", width: "100%" }}
           />
         </Box>
         <Typography variant="caption" sx={{ color: textColor, display: "block", textAlign: "left", mt: 1, opacity: 0.6 }}>

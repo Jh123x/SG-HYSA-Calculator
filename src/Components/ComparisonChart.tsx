@@ -189,7 +189,7 @@ const ComparisonChartContent = ({
           flexDirection: "column",
         }}
       >
-        <Box sx={{ flex: 1, minHeight: 0 }}>
+        <Box sx={{ flex: 1, minHeight: 0, overflow: "hidden" }}>
           <LineChart
             dataset={dataset}
             xAxis={X_AXIS}
@@ -210,7 +210,7 @@ const ComparisonChartContent = ({
                 position: { vertical: "bottom", horizontal: "center" },
               },
             }}
-            sx={{ ...AXIS_SX, width: "100%", ...(isMobile ? {} : { height: "100%" }) }}
+            sx={{ ...AXIS_SX, height: "100%", width: "100%" }}
           />
         </Box>
       </Paper>

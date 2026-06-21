@@ -100,13 +100,14 @@ const ThreePanelLayoutMobile = ({
     sx={{
       display: "flex",
       flexDirection: "column",
-      gap: 2,
+      gap: 2.5,
       pt: 1,
+      pb: 2,
     }}
   >
-    {top && <Box sx={{ py: 1 }}>{top}</Box>}
-    {bottomLeft && <Box sx={{ py: 1 }}>{bottomLeft}</Box>}
-    {bottomRight && <Box sx={{ py: 1 }}>{bottomRight}</Box>}
+    {top && <Box>{top}</Box>}
+    {bottomLeft && <Box>{bottomLeft}</Box>}
+    {bottomRight && <Box>{bottomRight}</Box>}
   </Box>
 );
 

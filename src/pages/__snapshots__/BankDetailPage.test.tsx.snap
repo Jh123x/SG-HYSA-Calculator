@@ -57,10 +57,10 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
               </div>
             </div>
             <div
-              class="MuiBox-root css-zi2l0h"
+              class="MuiBox-root css-1lgiddr"
             >
               <div
-                class="css-10lev66-MuiChartsWrapper-root"
+                class="css-ibv3zn-MuiChartsWrapper-root"
               >
                 <ul
                   class="MuiChartsLegend-root MuiChartsLegend-horizontal css-6qmeuq-MuiChartsLegend-root"
@@ -672,10 +672,10 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
     class="MuiBox-root css-0"
   >
     <section
-      class="MuiBox-root css-sg6wi7"
+      class="MuiBox-root css-1je7078"
     >
       <div
-        class="MuiBox-root css-1jpm9pd"
+        class="MuiBox-root css-0"
       >
         <section
           aria-label="Interest rate trend chart"
@@ -719,10 +719,10 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root css-zi2l0h"
+            class="MuiBox-root css-1lgiddr"
           >
             <div
-              class="css-1nnqrlo-MuiChartsWrapper-root"
+              class="css-9d3u4u-MuiChartsWrapper-root"
             >
               <ul
                 class="MuiChartsLegend-root MuiChartsLegend-horizontal css-6qmeuq-MuiChartsLegend-root"
@@ -1071,7 +1071,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
         </section>
       </div>
       <div
-        class="MuiBox-root css-1jpm9pd"
+        class="MuiBox-root css-0"
       >
         <section
           aria-label="Rate change history and bank details"
