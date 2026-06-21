@@ -1,5 +1,5 @@
 import { LineChart } from "@mui/x-charts/LineChart";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import { lineColors, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
 import type { ResultInterest } from "../types/interest_result";
@@ -37,6 +37,8 @@ export const InterestVsSavingsChart = ({
   enableLegendToggle = true,
   children,
 }: Props) => {
+  const isMobile = useMediaQuery("(max-width:600px)");
+
   // Build data points from $0 to $200,000 in $10,000 steps
   const data: Record<string, number>[] = Array.from({ length: 21 }, (_, i) => {
     const savings = i * 10_000;
@@ -91,6 +93,7 @@ export const InterestVsSavingsChart = ({
     <Box>
       <LineChart
         dataset={data}
+        margin={{ right: isMobile ? 20 : 40 }}
         xAxis={[
           {
             dataKey: "savings",

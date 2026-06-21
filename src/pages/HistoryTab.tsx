@@ -19,10 +19,13 @@ import {
   TableRow,
   Collapse,
   IconButton,
+  useMediaQuery,
+  Tooltip,
 } from "@mui/material";
 import {
   KeyboardArrowDown,
   KeyboardArrowRight,
+  OpenInNew,
 } from "@mui/icons-material";
 import { isValidSlug } from "../logic/slugs";
 import type Profile from "../types/profile";
@@ -92,6 +95,7 @@ type ChartMode = "yearly" | "eir";
 export const HistoryTab = ({ profile }: Props) => {
   const [searchParams, setSearchParams] = useSearchParams();
   const selectedBanks = readSessionBanks();
+  const isMobile = useMediaQuery("(max-width:600px)");
   const [chartMode, setChartMode] = useState<ChartMode>("yearly");
   const [collapsedBanks, setCollapsedBanks] = useState<Set<string>>(new Set());
 
@@ -178,6 +182,7 @@ export const HistoryTab = ({ profile }: Props) => {
         changeSummary: string;
         yearlyInterest: string;
         eir: string;
+        sourceUrl?: string;
       }>;
     }> = [];
 
@@ -197,6 +202,7 @@ export const HistoryTab = ({ profile }: Props) => {
               changeSummary: snapshot.changeSummary,
               yearlyInterest: isTbd ? "—" : `$${snapshot.yearlyInterest.toFixed(2)}`,
               eir: isTbd ? "—" : `${snapshot.eir.toFixed(2)}%`,
+              sourceUrl: snapshot.sourceUrl,
             };
           }),
       });
@@ -205,19 +211,24 @@ export const HistoryTab = ({ profile }: Props) => {
   }, [selectedBanks, profile]);
 
   return (
-    <Box component="section" aria-label="Interest rate change history" sx={{ mt: 1 }}>
+    <Box
+      component="section"
+      aria-label="Interest rate change history"
+      sx={{ mt: 1, px: { xs: 0, sm: 0 } }}
+    >
       {/* ── Bank selection + Metric toggle row ── */}
       <Box
         sx={{
           display: "flex",
           alignItems: "center",
-          gap: 2,
+          gap: { xs: 1, sm: 2 },
           mb: 2,
           flexWrap: "wrap",
+          px: { xs: 0, sm: 0 },
         }}
       >
         {/* Bank multi-select dropdown */}
-        <FormControl size="small" sx={{ minWidth: 280, flexShrink: 0 }}>
+        <FormControl size="small" sx={{ minWidth: { xs: 200, sm: 280 }, flexShrink: 0 }}>
           <Select
             multiple
             value={selectedBanks}
@@ -379,7 +390,13 @@ export const HistoryTab = ({ profile }: Props) => {
                     <Table size="small">
                       <TableHead>
                         <TableRow>
-                          <TableCell sx={{ color: textColor, fontWeight: 600 }}>
+                          <TableCell
+                            sx={{
+                              color: textColor,
+                              fontWeight: 600,
+                              width: { xs: 80, sm: 130 },
+                            }}
+                          >
                             Date
                           </TableCell>
                           <TableCell sx={{ color: textColor, fontWeight: 600 }}>
@@ -396,7 +413,7 @@ export const HistoryTab = ({ profile }: Props) => {
                                   : "transparent",
                             }}
                           >
-                            Yearly Interest ($)
+                            {isMobile ? "Yr $" : "Yearly Interest ($)"}
                           </TableCell>
                           <TableCell
                             sx={{
@@ -409,7 +426,16 @@ export const HistoryTab = ({ profile }: Props) => {
                                   : "transparent",
                             }}
                           >
-                            EIR (%)
+                            EIR
+                          </TableCell>
+                          <TableCell
+                            sx={{
+                              color: textColor,
+                              fontWeight: 600,
+                              width: 50,
+                            }}
+                          >
+                            {isMobile ? "" : "Action"}
                           </TableCell>
                         </TableRow>
                       </TableHead>
@@ -423,10 +449,20 @@ export const HistoryTab = ({ profile }: Props) => {
                               },
                             }}
                           >
-                            <TableCell sx={{ color: textColor }}>
+                            <TableCell
+                              sx={{
+                                color: textColor,
+                                fontSize: { xs: "0.8rem", sm: "inherit" },
+                              }}
+                            >
                               {row.date}
                             </TableCell>
-                            <TableCell sx={{ color: textColor }}>
+                            <TableCell
+                              sx={{
+                                color: textColor,
+                                fontSize: { xs: "0.8rem", sm: "inherit" },
+                              }}
+                            >
                               {row.changeSummary}
                             </TableCell>
                             <TableCell
@@ -437,6 +473,7 @@ export const HistoryTab = ({ profile }: Props) => {
                                   highlightCol === "yearlyInterest"
                                     ? `${primaryColor}08`
                                     : "transparent",
+                                fontSize: { xs: "0.8rem", sm: "inherit" },
                               }}
                             >
                               {row.yearlyInterest}
@@ -449,9 +486,25 @@ export const HistoryTab = ({ profile }: Props) => {
                                   highlightCol === "eir"
                                     ? `${primaryColor}08`
                                     : "transparent",
+                                fontSize: { xs: "0.8rem", sm: "inherit" },
                               }}
                             >
                               {row.eir}
+                            </TableCell>
+                            <TableCell sx={{ color: textColor, p: 0.5 }}>
+                              {row.sourceUrl && (
+                                <Tooltip title="View source">
+                                  <IconButton
+                                    size="small"
+                                    href={row.sourceUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    sx={{ color: primaryColor }}
+                                  >
+                                    <OpenInNew fontSize="small" />
+                                  </IconButton>
+                                </Tooltip>
+                              )}
                             </TableCell>
                           </TableRow>
                         ))}
