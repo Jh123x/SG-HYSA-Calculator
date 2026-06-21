@@ -9,7 +9,13 @@ import {
   type ChartLine,
 } from "./InterestVsSavingsChart";
 
-export const InterestGraph = ({ profile }: { profile: Profile }) => {
+export const InterestGraph = ({
+  profile,
+  height = 500,
+}: {
+  profile: Profile;
+  height?: number;
+}) => {
   const lines: ChartLine[] = Object.entries(bankInfo)
     .filter(([, value]) => value.history.length > 0)
     .map(([slug, value], idx) => {
@@ -25,13 +31,16 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
   return (
     <Paper
       sx={{
-        padding: "30px",
+        padding: { xs: "12px", sm: "20px" },
         borderRadius: "10px",
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
         backgroundColor: "background.paper",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
-      <InterestVsSavingsChart lines={lines} profile={profile} height={500}>
+      <InterestVsSavingsChart lines={lines} profile={profile} height={height}>
         <ChartsReferenceLine
           x={profile.Savings}
           label="Your savings"

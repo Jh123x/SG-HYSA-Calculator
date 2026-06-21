@@ -32,7 +32,7 @@ type SortableColumns = "name" | "yearlyInterest" | "effectiveInterest";
 const cellSx = {
   color: textColor,
   backgroundColor: bgColor,
-  padding: { xs: "8px 10px", sm: "10px 15px" },
+  padding: { xs: "6px 8px", sm: "8px 14px" },
 };
 
 const SORT_ICON_SX = {
@@ -44,16 +44,14 @@ interface Props {
 }
 
 /**
- * Current Rates tab — simplified comparison table matching the Excalidraw design.
+ * Current Rates tab — side-by-side graph + table on desktop, stacked on mobile.
  *
- * Desktop: sortable table with 3 columns (Accounts, Yearly Interest, EIR)
- * Mobile: card-based layout for better readability on narrow screens
- *
- * Each row is clickable — navigates to the bank detail page for full info.
+ * Desktop: InterestGraph (left, ~45%) | Sortable table (right, ~55%)
+ * Mobile: Graph on top, card-based bank list below.
  */
 export const CurrentRatesTab = ({ profile }: Props) => {
   const navigate = useNavigate();
-  const isMobile = useMediaQuery("(max-width:600px)");
+  const isMobile = useMediaQuery("(max-width:900px)");
   const [orderBy, setOrderBy] = useState<SortableColumns | undefined>(undefined);
   const [order, setOrder] = useState<"asc" | "desc">("desc");
 
@@ -97,6 +95,166 @@ export const CurrentRatesTab = ({ profile }: Props) => {
     }
   });
 
+  // ── Sortable table (shared by desktop side-by-side and mobile stacked) ──
+
+  const renderDesktopTable = () => (
+    <TableContainer
+      component={Paper}
+      sx={{
+        borderRadius: "10px",
+        overflow: "auto",
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+        flex: 1,
+        minWidth: 0,
+      }}
+    >
+      <Table
+        aria-label="High yield savings account interest rate comparison table"
+        size="small"
+      >
+        <TableHead>
+          <TableRow
+            sx={{
+              color: textColor,
+              backgroundColor: bgColor,
+              "&:hover": { backgroundColor: bgColor },
+            }}
+          >
+            <TableCell
+              sx={{
+                ...cellSx,
+                cursor: "pointer",
+                fontWeight: 600,
+                "&:hover": { backgroundColor: alpha(primaryColor, 0.15) },
+                transition: "background-color 0.3s ease",
+              }}
+            >
+              <TableSortLabel
+                active={orderBy === "name"}
+                direction={orderBy === "name" ? order : "asc"}
+                onClick={() => handleSort("name")}
+                sx={SORT_ICON_SX}
+              >
+                Accounts
+              </TableSortLabel>
+            </TableCell>
+            <TableCell
+              sx={{
+                ...cellSx,
+                cursor: "pointer",
+                fontWeight: 600,
+                "&:hover": { backgroundColor: alpha(primaryColor, 0.15) },
+                transition: "background-color 0.3s ease",
+              }}
+            >
+              <TableSortLabel
+                active={orderBy === "yearlyInterest"}
+                direction={orderBy === "yearlyInterest" ? order : "asc"}
+                onClick={() => handleSort("yearlyInterest")}
+                sx={SORT_ICON_SX}
+              >
+                Yearly Interest ($)
+              </TableSortLabel>
+            </TableCell>
+            <TableCell
+              sx={{
+                ...cellSx,
+                cursor: "pointer",
+                fontWeight: 600,
+                "&:hover": { backgroundColor: alpha(primaryColor, 0.15) },
+                transition: "background-color 0.3s ease",
+              }}
+            >
+              <TableSortLabel
+                active={orderBy === "effectiveInterest"}
+                direction={orderBy === "effectiveInterest" ? order : "asc"}
+                onClick={() => handleSort("effectiveInterest")}
+                sx={SORT_ICON_SX}
+              >
+                EIR (%)
+              </TableSortLabel>
+            </TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {sortedResults.map(([slug, interest]) => (
+            <TableRow
+              key={slug}
+              hover
+              onClick={() => navigate(`/bank/${slug}`)}
+              sx={{
+                color: textColor,
+                backgroundColor: bgColor,
+                cursor: "pointer",
+                "&:hover": { backgroundColor: alpha(primaryColor, 0.1) },
+                transition: "background-color 0.3s ease",
+              }}
+            >
+              <TableCell sx={{ ...cellSx, fontWeight: 600 }}>
+                <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+                  {bankInfo[slug]?.name ?? slug}
+                  <ArrowForward sx={{ fontSize: 14, opacity: 0.4 }} />
+                </Box>
+              </TableCell>
+              <TableCell sx={cellSx}>
+                ${(interest.interest.toYearly() ?? 0).toFixed(2)}
+              </TableCell>
+              <TableCell sx={cellSx}>
+                {(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  );
+
+  // ── Mobile card layout ──
+
+  const renderMobileCards = () => (
+    <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
+      {sortedResults.map(([slug, interest]) => (
+        <Card
+          key={slug}
+          sx={{
+            backgroundColor: bgColor,
+            border: "1px solid rgba(255,255,255,0.08)",
+            borderRadius: "10px",
+          }}
+        >
+          <CardActionArea onClick={() => navigate(`/bank/${slug}`)}>
+            <CardContent sx={{ p: 2, "&:last-child": { pb: 2 } }}>
+              <Typography
+                variant="subtitle1"
+                sx={{ color: textColor, fontWeight: 600, mb: 1 }}
+              >
+                {bankInfo[slug]?.name ?? slug}
+              </Typography>
+              <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                <Box>
+                  <Typography variant="caption" sx={{ color: textColor, opacity: 0.6 }}>
+                    Yearly Interest
+                  </Typography>
+                  <Typography variant="body1" sx={{ color: textColor, fontWeight: 500 }}>
+                    ${(interest.interest.toYearly() ?? 0).toFixed(2)}
+                  </Typography>
+                </Box>
+                <Box sx={{ textAlign: "right" }}>
+                  <Typography variant="caption" sx={{ color: textColor, opacity: 0.6 }}>
+                    EIR
+                  </Typography>
+                  <Typography variant="body1" sx={{ color: textColor, fontWeight: 500 }}>
+                    {(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%
+                  </Typography>
+                </Box>
+              </Box>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      ))}
+    </Box>
+  );
+
   return (
     <Container
       sx={{
@@ -107,7 +265,7 @@ export const CurrentRatesTab = ({ profile }: Props) => {
       }}
     >
       <Box component="section" aria-label="Current interest rates comparison">
-        {/* Desktop-only sections */}
+        {/* ── Side-by-side layout (desktop) ── */}
         {!isMobile && (
           <>
             <Typography
@@ -117,169 +275,61 @@ export const CurrentRatesTab = ({ profile }: Props) => {
             >
               Saving account differences
             </Typography>
-            <InterestGraph profile={profile} />
+
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2,
+                alignItems: "stretch",
+              }}
+            >
+              {/* Graph column — left */}
+              <Box sx={{ flex: "0 0 45%", minWidth: 0 }}>
+                <InterestGraph profile={profile} height={380} />
+              </Box>
+
+              {/* Table column — right */}
+              <Box
+                sx={{
+                  flex: "1 1 55%",
+                  minWidth: 0,
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+              >
+                <Typography
+                  variant="h6"
+                  component="h3"
+                  sx={{ color: textColor, mb: 1.5, fontWeight: 600 }}
+                >
+                  Compare Singapore High Yield Savings Accounts
+                </Typography>
+                {renderDesktopTable()}
+              </Box>
+            </Box>
           </>
         )}
 
-        <Typography
-          variant="h5"
-          component="h2"
-          sx={{ color: textColor, mb: 2, mt: 2, fontWeight: 600 }}
-        >
-          Compare Singapore High Yield Savings Accounts
-        </Typography>
-
-        {/* Desktop: sortable table */}
-        {!isMobile && (
-          <TableContainer
-            component={Paper}
-            sx={{
-              borderRadius: "10px",
-              overflow: "auto",
-              boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-            }}
-          >
-            <Table aria-label="High yield savings account interest rate comparison table">
-              <TableHead>
-                <TableRow
-                  sx={{
-                    color: textColor,
-                    backgroundColor: bgColor,
-                    "&:hover": { backgroundColor: bgColor },
-                  }}
-                >
-                  <TableCell
-                    sx={{
-                      ...cellSx,
-                      cursor: "pointer",
-                      fontWeight: 600,
-                      "&:hover": { backgroundColor: alpha(primaryColor, 0.15) },
-                      transition: "background-color 0.3s ease",
-                    }}
-                  >
-                    <TableSortLabel
-                      active={orderBy === "name"}
-                      direction={orderBy === "name" ? order : "asc"}
-                      onClick={() => handleSort("name")}
-                      sx={SORT_ICON_SX}
-                    >
-                      Accounts
-                    </TableSortLabel>
-                  </TableCell>
-                  <TableCell
-                    sx={{
-                      ...cellSx,
-                      cursor: "pointer",
-                      fontWeight: 600,
-                      "&:hover": { backgroundColor: alpha(primaryColor, 0.15) },
-                      transition: "background-color 0.3s ease",
-                    }}
-                  >
-                    <TableSortLabel
-                      active={orderBy === "yearlyInterest"}
-                      direction={orderBy === "yearlyInterest" ? order : "asc"}
-                      onClick={() => handleSort("yearlyInterest")}
-                      sx={SORT_ICON_SX}
-                    >
-                      Yearly Interest ($)
-                    </TableSortLabel>
-                  </TableCell>
-                  <TableCell
-                    sx={{
-                      ...cellSx,
-                      cursor: "pointer",
-                      fontWeight: 600,
-                      "&:hover": { backgroundColor: alpha(primaryColor, 0.15) },
-                      transition: "background-color 0.3s ease",
-                    }}
-                  >
-                    <TableSortLabel
-                      active={orderBy === "effectiveInterest"}
-                      direction={orderBy === "effectiveInterest" ? order : "asc"}
-                      onClick={() => handleSort("effectiveInterest")}
-                      sx={SORT_ICON_SX}
-                    >
-                      EIR (%)
-                    </TableSortLabel>
-                  </TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {sortedResults.map(([slug, interest]) => (
-                  <TableRow
-                    key={slug}
-                    hover
-                    onClick={() => navigate(`/bank/${slug}`)}
-                    sx={{
-                      color: textColor,
-                      backgroundColor: bgColor,
-                      cursor: "pointer",
-                      "&:hover": { backgroundColor: alpha(primaryColor, 0.1) },
-                      transition: "background-color 0.3s ease",
-                    }}
-                  >
-                    <TableCell sx={{ ...cellSx, fontWeight: 600 }}>
-                      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                        {bankInfo[slug]?.name ?? slug}
-                        <ArrowForward sx={{ fontSize: 16, opacity: 0.5 }} />
-                      </Box>
-                    </TableCell>
-                    <TableCell sx={cellSx}>
-                      ${(interest.interest.toYearly() ?? 0).toFixed(2)}
-                    </TableCell>
-                    <TableCell sx={cellSx}>
-                      {(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        )}
-
-        {/* Mobile: card-based layout */}
+        {/* ── Stacked layout (mobile) ── */}
         {isMobile && (
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
-            {sortedResults.map(([slug, interest]) => (
-              <Card
-                key={slug}
-                sx={{
-                  backgroundColor: bgColor,
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  borderRadius: "10px",
-                }}
-              >
-                <CardActionArea onClick={() => navigate(`/bank/${slug}`)}>
-                  <CardContent sx={{ p: 2, "&:last-child": { pb: 2 } }}>
-                    <Typography
-                      variant="subtitle1"
-                      sx={{ color: textColor, fontWeight: 600, mb: 1 }}
-                    >
-                      {bankInfo[slug]?.name ?? slug}
-                    </Typography>
-                    <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-                      <Box>
-                        <Typography variant="caption" sx={{ color: textColor, opacity: 0.6 }}>
-                          Yearly Interest
-                        </Typography>
-                        <Typography variant="body1" sx={{ color: textColor, fontWeight: 500 }}>
-                          ${(interest.interest.toYearly() ?? 0).toFixed(2)}
-                        </Typography>
-                      </Box>
-                      <Box sx={{ textAlign: "right" }}>
-                        <Typography variant="caption" sx={{ color: textColor, opacity: 0.6 }}>
-                          EIR
-                        </Typography>
-                        <Typography variant="body1" sx={{ color: textColor, fontWeight: 500 }}>
-                          {(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%
-                        </Typography>
-                      </Box>
-                    </Box>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            ))}
-          </Box>
+          <>
+            <Typography
+              variant="h6"
+              component="h2"
+              sx={{ color: textColor, mb: 1.5, fontWeight: 600 }}
+            >
+              Saving account differences
+            </Typography>
+            <InterestGraph profile={profile} height={350} />
+            <Typography
+              variant="h6"
+              component="h2"
+              sx={{ color: textColor, mt: 2, mb: 1.5, fontWeight: 600 }}
+            >
+              Compare Singapore High Yield Savings Accounts
+            </Typography>
+            {renderMobileCards()}
+          </>
         )}
       </Box>
 
