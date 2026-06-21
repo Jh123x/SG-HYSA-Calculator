@@ -21,11 +21,14 @@ import {
   FormControl,
   Select,
   MenuItem,
+  ToggleButton,
+  ToggleButtonGroup,
 } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import LanguageIcon from "@mui/icons-material/Language";
 import SortIcon from "@mui/icons-material/Sort";
-import SwapVertIcon from "@mui/icons-material/SwapVert";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import type { ResultProp } from "../types/props";
 import { primaryColor, bgColor, textColor } from "../consts/colors";
 import type Profile from "../types/profile";
@@ -246,27 +249,31 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
             ))}
           </Select>
         </FormControl>
-        <Tooltip title={mobileOrder === "desc" ? "Switch to ascending" : "Switch to descending"}>
-          <IconButton
-            size="small"
-            onClick={() => setMobileOrder((prev) => (prev === "asc" ? "desc" : "asc"))}
-            sx={{
-              color: textColor,
-              border: `1px solid ${textColor}40`,
-              borderRadius: "6px",
-              p: 0.5,
-              "&:hover": { borderColor: primaryColor, color: primaryColor },
-            }}
-          >
-            <SwapVertIcon
-              fontSize="small"
-              sx={{
-                transform: mobileOrder === "asc" ? "rotate(180deg)" : "none",
-                transition: "transform 0.2s",
-              }}
-            />
-          </IconButton>
-        </Tooltip>
+        <ToggleButtonGroup
+          value={mobileOrder}
+          exclusive
+          size="small"
+          onChange={(_, v) => v && setMobileOrder(v)}
+        >
+          <ToggleButton value="asc" aria-label="Sort ascending" sx={{
+            color: textColor, borderColor: `${textColor}40`, textTransform: "none",
+            fontSize: "0.8rem", px: 1,
+            "&.Mui-selected": { color: "#fff", backgroundColor: primaryColor },
+            "&.Mui-selected:hover": { backgroundColor: primaryColor, opacity: 0.85 },
+            "&:hover": { backgroundColor: `${primaryColor}18`, borderColor: primaryColor },
+          }}>
+            <ArrowUpwardIcon fontSize="small" sx={{ mr: 0.5 }} />Asc
+          </ToggleButton>
+          <ToggleButton value="desc" aria-label="Sort descending" sx={{
+            color: textColor, borderColor: `${textColor}40`, textTransform: "none",
+            fontSize: "0.8rem", px: 1,
+            "&.Mui-selected": { color: "#fff", backgroundColor: primaryColor },
+            "&.Mui-selected:hover": { backgroundColor: primaryColor, opacity: 0.85 },
+            "&:hover": { backgroundColor: `${primaryColor}18`, borderColor: primaryColor },
+          }}>
+            <ArrowDownwardIcon fontSize="small" sx={{ mr: 0.5 }} />Desc
+          </ToggleButton>
+        </ToggleButtonGroup>
       </Box>
 
       {/* Cards — stacked */}
