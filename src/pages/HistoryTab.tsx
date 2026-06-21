@@ -233,45 +233,56 @@ const HistoryTabDesktop = ({
     );
   };
 
-  return (
-    <Box component="section" aria-label="Interest rate change history">
+  const renderControls = () => (
+    <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 1.5, mb: 1.5 }}>
+      <ToggleButtonGroup value={chartMode} exclusive onChange={(_e, v) => v && setChartMode(v)} size="small">
+        <ToggleButton value="yearly" sx={TOGGLE_SX}>Yearly Interest ($)</ToggleButton>
+        <ToggleButton value="eir" sx={TOGGLE_SX}>EIR (%)</ToggleButton>
+      </ToggleButtonGroup>
+      <FormControl size="small" sx={{ minWidth: 200, flex: 1 }}>
+        <Select multiple value={selectedBanks} onChange={(e) => { const val = e.target.value as string[]; if (val.length <= MAX_COMPARISON_BANKS) handleBankChange(val); }} input={<OutlinedInput />} renderValue={(selected) => (<Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>{selected.map((slug) => <Chip key={slug} label={displayNames[slug] ?? slug} size="small" />)}</Box>)} displayEmpty sx={{ color: textColor, backgroundColor: bgColor, "& .MuiOutlinedInput-notchedOutline": { borderColor: `${textColor}40` }, "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "&.Mui-focused .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "& .MuiSvgIcon-root": { color: textColor } }}>
+          <MenuItem disabled value=""><Typography variant="body2" sx={{ color: textColor, opacity: 0.6 }}>Select banks ({selectedBanks.length}/{MAX_COMPARISON_BANKS})</Typography></MenuItem>
+          {sortedOptions.map((slug) => (<MenuItem key={slug} value={slug} disabled={!selectedBanks.includes(slug) && isMaxed} sx={{ color: textColor, "&.Mui-selected": { backgroundColor: `${primaryColor}30` }, "&:hover": { backgroundColor: `${primaryColor}20` }, "&.Mui-disabled": { opacity: 0.35 } }}><Box sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}><span>{displayNames[slug] ?? slug}</span><span style={{ opacity: 0.65, fontSize: "0.85em" }}>{profile.Savings > 0 ? `${bankEirs[slug]}%` : ""}</span></Box></MenuItem>))}
+        </Select>
+      </FormControl>
+    </Box>
+  );
 
-      {selectedBanks.length === 0 ? (
+  const renderRightPanel = () => {
+    if (selectedBanks.length === 0) {
+      return (
         <Paper sx={{ p: 4, borderRadius: "10px", backgroundColor: bgColor, textAlign: "center" }}>
           <Typography variant="body1" color={textColor} sx={{ opacity: 0.7 }}>
             Select one or more banks above to view their rate history.
           </Typography>
         </Paper>
-      ) : bankHistories.length === 0 ? (
+      );
+    }
+    if (bankHistories.length === 0) {
+      return (
         <Paper sx={{ p: 4, borderRadius: "10px", backgroundColor: bgColor, textAlign: "center" }}>
           <Typography variant="body1" color={textColor} sx={{ opacity: 0.7 }}>
             No rate data available for the selected banks.
           </Typography>
         </Paper>
-      ) : (
-        <ThreePanelLayout
-          bottomLeft={
-            <>
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 1.5, mb: 1.5 }}>
-                <ToggleButtonGroup value={chartMode} exclusive onChange={(_e, v) => v && setChartMode(v)} size="small">
-                  <ToggleButton value="yearly" sx={TOGGLE_SX}>Yearly Interest ($)</ToggleButton>
-                  <ToggleButton value="eir" sx={TOGGLE_SX}>EIR (%)</ToggleButton>
-                </ToggleButtonGroup>
-                <FormControl size="small" sx={{ minWidth: 200, flex: 1 }}>
-                  <Select multiple value={selectedBanks} onChange={(e) => { const val = e.target.value as string[]; if (val.length <= MAX_COMPARISON_BANKS) handleBankChange(val); }} input={<OutlinedInput />} renderValue={(selected) => (<Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>{selected.map((slug) => <Chip key={slug} label={displayNames[slug] ?? slug} size="small" />)}</Box>)} displayEmpty sx={{ color: textColor, backgroundColor: bgColor, "& .MuiOutlinedInput-notchedOutline": { borderColor: `${textColor}40` }, "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "&.Mui-focused .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "& .MuiSvgIcon-root": { color: textColor } }}>
-                    <MenuItem disabled value=""><Typography variant="body2" sx={{ color: textColor, opacity: 0.6 }}>Select banks ({selectedBanks.length}/{MAX_COMPARISON_BANKS})</Typography></MenuItem>
-                    {sortedOptions.map((slug) => (<MenuItem key={slug} value={slug} disabled={!selectedBanks.includes(slug) && isMaxed} sx={{ color: textColor, "&.Mui-selected": { backgroundColor: `${primaryColor}30` }, "&:hover": { backgroundColor: `${primaryColor}20` }, "&.Mui-disabled": { opacity: 0.35 } }}><Box sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}><span>{displayNames[slug] ?? slug}</span><span style={{ opacity: 0.65, fontSize: "0.85em" }}>{profile.Savings > 0 ? `${bankEirs[slug]}%` : ""}</span></Box></MenuItem>))}
-                  </Select>
-                </FormControl>
-              </Box>
-              <Box sx={{ height: "50vh" }}>
-                <ComparisonChart selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
-              </Box>
-            </>
-          }
-          bottomRight={renderGroupedTable()}
-        />
-      )}
+      );
+    }
+    return renderGroupedTable();
+  };
+
+  return (
+    <Box component="section" aria-label="Interest rate change history">
+      <ThreePanelLayout
+        bottomLeft={
+          <>
+            {renderControls()}
+            <Box sx={{ height: "50vh" }}>
+              <ComparisonChart selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
+            </Box>
+          </>
+        }
+        bottomRight={renderRightPanel()}
+      />
     </Box>
   );
 };
