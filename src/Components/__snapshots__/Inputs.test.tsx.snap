@@ -534,7 +534,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         data-mui-internal-clone-element="true"
       >
         <label
-          class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1l0n7a2-MuiFormControlLabel-root"
+          class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-o9vmt9-MuiFormControlLabel-root"
         >
           <span
             class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1dn1rx0-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
@@ -1296,7 +1296,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         data-mui-internal-clone-element="true"
       >
         <label
-          class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-1l0n7a2-MuiFormControlLabel-root"
+          class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-o9vmt9-MuiFormControlLabel-root"
         >
           <span
             class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-1dn1rx0-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"

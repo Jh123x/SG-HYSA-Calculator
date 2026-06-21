@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Container, GlobalStyles, Box } from "@mui/material";
+import { Container, GlobalStyles, Box, useMediaQuery } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
@@ -18,11 +18,9 @@ export interface LayoutContext {
 interface LayoutProps extends LayoutContext {}
 
 /**
- * Layout matching the wireframe:
- *   Header (sticky) → Content (scrollable, flex-1) → Footer (always visible)
- *
- * No nested scrollbars: the entire page is a flex column filling the viewport.
- * TabbedContent uses flex:1 and handles its own internal scrolling.
+ * Layout:
+ *   Desktop: Header + scrollable content + Footer, filling viewport (sticky header/footer)
+ *   Mobile:  Normal document flow — Header and Footer scroll with content
  */
 export const Layout = ({
   currProfile,
@@ -30,63 +28,78 @@ export const Layout = ({
   pendingUrlProfile,
   onAcceptShared,
   onRejectShared,
-}: LayoutProps) => (
-  <ThemeProvider theme={theme}>
-    <GlobalStyles
-      styles={{
-        body: {
-          backgroundColor: bgColor,
-          margin: "0px",
-          padding: "0px",
-          height: "100%",
-          width: "100%",
-          overflow: "hidden",
-        },
-        "#root": {
-          height: "100%",
+}: LayoutProps) => {
+  const isMobile = useMediaQuery("(max-width:900px)");
+
+  // Mobile: normal document flow — no fixed viewport, no overflow clamping
+  const bodyOverflow = isMobile ? "auto" : "hidden";
+  const rootHeight = isMobile ? "auto" : "100%";
+  const rootOverflow = isMobile ? "visible" : undefined;
+
+  const boxHeight = isMobile ? "auto" : "100dvh";
+  const boxOverflow = isMobile ? "visible" : "hidden";
+
+  const mainOverflow = isMobile ? "visible" : "auto";
+  const mainFlex = isMobile ? undefined : 1;
+  const mainMinHeight = isMobile ? undefined : 0;
+
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyles
+        styles={{
+          body: {
+            backgroundColor: bgColor,
+            margin: "0px",
+            padding: "0px",
+            height: rootHeight,
+            width: "100%",
+            overflow: bodyOverflow,
+          },
+          "#root": {
+            height: rootHeight,
+            ...(rootOverflow ? { overflow: rootOverflow } : {}),
+          },
+        }}
+      />
+      <Box
+        sx={{
           display: "flex",
           flexDirection: "column",
-        },
-      }}
-    />
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        height: "100dvh",
-        overflow: "hidden",
-      }}
-    >
-      <Header />
-      <Box
-        component="main"
-        sx={{
-          flex: 1,
-          minHeight: 0,
-          overflow: "auto",
+          height: boxHeight,
+          overflow: boxOverflow,
         }}
       >
-        <Container
+        <Header />
+        <Box
+          component="main"
           sx={{
-            maxWidth: "100% !important",
-            px: { xs: 1, sm: 2 },
-            pb: { xs: 2, sm: 3 },
+            flex: mainFlex,
+            minHeight: mainMinHeight,
+            overflow: mainOverflow,
           }}
         >
-          <ErrorBoundary>
-            <Outlet
-              context={{
-                currProfile,
-                setCurrProfile,
-                pendingUrlProfile,
-                onAcceptShared,
-                onRejectShared,
-              }}
-            />
-          </ErrorBoundary>
-        </Container>
+          <Container
+            sx={{
+              maxWidth: "100% !important",
+              px: { xs: 1, sm: 2 },
+              pb: { xs: 2, sm: 3 },
+            }}
+          >
+            <ErrorBoundary>
+              <Outlet
+                context={{
+                  currProfile,
+                  setCurrProfile,
+                  pendingUrlProfile,
+                  onAcceptShared,
+                  onRejectShared,
+                }}
+              />
+            </ErrorBoundary>
+          </Container>
+        </Box>
+        <Footer />
       </Box>
-      <Footer />
-    </Box>
-  </ThemeProvider>
-);
+    </ThemeProvider>
+  );
+};

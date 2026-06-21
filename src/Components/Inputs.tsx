@@ -248,12 +248,12 @@ const InputBooleanField = ({
             backgroundColor: bgColor,
             padding: "8px 16px",
             borderRadius: "8px",
-            border: "1px solid rgba(0, 0, 0, 0.12)",
+            border: "1px solid rgba(255, 255, 255, 0.23)",
             transition: "all 0.2s ease-in-out",
             "@media (hover: hover)": {
               "&:hover": {
                 borderColor: primaryColor,
-                backgroundColor: "rgba(0, 0, 0, 0.04)",
+                backgroundColor: "rgba(255, 255, 255, 0.04)",
               },
             },
             "& .MuiFormControlLabel-label": {
