@@ -69,7 +69,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
               scope="col"
             >
               <span
-                class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-directionAsc css-35ze0u-MuiButtonBase-root-MuiTableSortLabel-root"
+                class="MuiButtonBase-root MuiTableSortLabel-root Mui-active MuiTableSortLabel-directionDesc css-35ze0u-MuiButtonBase-root-MuiTableSortLabel-root"
                 role="button"
                 tabindex="0"
               >
@@ -78,7 +78,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
                 Rate (EIR)
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon css-asweb8-MuiSvgIcon-root-MuiTableSortLabel-icon"
                   data-testid="ArrowDownwardIcon"
                   focusable="false"
                   viewBox="0 0 24 24"
@@ -112,47 +112,6 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
         <tbody
           class="MuiTableBody-root css-gmh7jj-MuiTableBody-root"
         >
-          <tr
-            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
-          >
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              UOB One
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              $1375.00
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              1.38%
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
-                href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Website
-              </a>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              Visit their official website to find out more
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              2025-12-01
-            </td>
-          </tr>
           <tr
             class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
           >
@@ -200,54 +159,6 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              Mari Savings
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              $880.00
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              0.88%
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
-                href="https://www.maribank.sg/product/mari-savings-account/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Website
-              </a>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              Interest rates are a flat 0.88%
-              <br />
-              Capped at $100k
-              <br />
-              Referral code: 
-              <b>
-                4QTP99MT
-              </b>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              2025-12-27
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
-          >
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
               Standard Chartered Bonus$aver
             </td>
             <td
@@ -278,186 +189,6 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
               Insurance and Investment only
               <br />
               fulfils interest for 6 months
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              2026-06-05
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
-          >
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              Trust Bank (Signature)
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              $900.00
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              0.90%
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
-                href="https://trustbank.sg/savings-account/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Website
-              </a>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              Spending assumes 5 x $30 if spending is more than 150.
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              2026-06-05
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
-          >
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              Trust Bank (Zen)
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              $400.00
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              0.40%
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
-                href="https://trustbank.sg/savings-account/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Website
-              </a>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              A Flat 0.4% interest rate up to 1.2 million
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              2026-06-05
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
-          >
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              DBS Multiplier
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              $0.00
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              0.00%
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
-                href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Website
-              </a>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              Not eligible if you are younger than 18.
-              <br />
-              Spending includes credit card / paylah retail spend
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              2025-10-14
-            </td>
-          </tr>
-          <tr
-            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
-          >
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              GXS Savings
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              $1145.00
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              1.15%
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
-                href="https://www.gxs.com.sg/savings-account"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Website
-              </a>
-            </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
-            >
-              Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
-              <br />
-              <b>
-                Note: The max amount deposited depends on individual (up to $95,000)
-              </b>
-              <br />
-              View other 
-              <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
-                href="https://www.gxs.com.sg/notices"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Notices here
-              </a>
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -527,6 +258,191 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
+              UOB One
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              $1375.00
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              1.38%
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
+                href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Website
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              Visit their official website to find out more
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              2025-12-01
+            </td>
+          </tr>
+          <tr
+            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              GXS Savings
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              $1145.00
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              1.15%
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
+                href="https://www.gxs.com.sg/savings-account"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Website
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
+              <br />
+              <b>
+                Note: The max amount deposited depends on individual (up to $95,000)
+              </b>
+              <br />
+              View other 
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
+                href="https://www.gxs.com.sg/notices"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Notices here
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              2026-06-05
+            </td>
+          </tr>
+          <tr
+            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              Trust Bank (Signature)
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              $900.00
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              0.90%
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
+                href="https://trustbank.sg/savings-account/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Website
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              Spending assumes 5 x $30 if spending is more than 150.
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              2026-06-05
+            </td>
+          </tr>
+          <tr
+            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              Mari Savings
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              $880.00
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              0.88%
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
+                href="https://www.maribank.sg/product/mari-savings-account/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Website
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              Interest rates are a flat 0.88%
+              <br />
+              Capped at $100k
+              <br />
+              Referral code: 
+              <b>
+                4QTP99MT
+              </b>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              2025-12-27
+            </td>
+          </tr>
+          <tr
+            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
               BOC SuperSaver
             </td>
             <td
@@ -572,24 +488,24 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              Maybank SaveUp
+              Trust Bank (Zen)
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              $279.38
+              $400.00
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              0.28%
+              0.40%
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
               <a
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
-                href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
+                href="https://trustbank.sg/savings-account/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -599,14 +515,12 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125% (above $50K).
-              <br />
-              No more category-based bonus system.
+              A Flat 0.4% interest rate up to 1.2 million
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              2026-06-11
+              2026-06-05
             </td>
           </tr>
           <tr
@@ -697,6 +611,92 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
               2026-06-11
+            </td>
+          </tr>
+          <tr
+            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              Maybank SaveUp
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              $279.38
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              0.28%
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
+                href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Website
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125% (above $50K).
+              <br />
+              No more category-based bonus system.
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              2026-06-11
+            </td>
+          </tr>
+          <tr
+            class="MuiTableRow-root css-dlhzsk-MuiTableRow-root"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              DBS Multiplier
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              $0.00
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              0.00%
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1761llb-MuiTypography-root-MuiLink-root"
+                href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Website
+              </a>
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              Not eligible if you are younger than 18.
+              <br />
+              Spending includes credit card / paylah retail spend
+            </td>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
+            >
+              2025-10-14
             </td>
           </tr>
           <tr
@@ -2202,7 +2202,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
               scope="col"
             >
               <span
-                class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-directionAsc css-35ze0u-MuiButtonBase-root-MuiTableSortLabel-root"
+                class="MuiButtonBase-root MuiTableSortLabel-root Mui-active MuiTableSortLabel-directionDesc css-35ze0u-MuiButtonBase-root-MuiTableSortLabel-root"
                 role="button"
                 tabindex="0"
               >
@@ -2211,7 +2211,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
                 Rate (EIR)
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon css-7ojauk-MuiSvgIcon-root-MuiTableSortLabel-icon"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiTableSortLabel-icon css-asweb8-MuiSvgIcon-root-MuiTableSortLabel-icon"
                   data-testid="ArrowDownwardIcon"
                   focusable="false"
                   viewBox="0 0 24 24"
