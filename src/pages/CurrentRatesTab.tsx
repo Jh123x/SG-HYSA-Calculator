@@ -35,6 +35,7 @@ import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
 import { InterestGraph } from "../Components/InterestGraph";
+import { ThreePanelLayout } from "../Components/ThreePanelLayout";
 
 type SortableColumns = "name" | "yearlyInterest" | "effectiveInterest";
 
@@ -99,40 +100,34 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
   };
 
   return (
-    <Box component="section" aria-label="Current interest rates comparison" sx={{ height: "100%", display: "flex", gap: 2, alignItems: "flex-start", pt: 1.5 }}>
-      {/* Left: Graph + asterisks — content-height, scales on zoom */}
-      <Box sx={{ flex: "0 0 45%", minWidth: 0, maxHeight: "80vh", display: "flex", flexDirection: "column", overflow: "auto" }}>
-        <Box sx={{ height: "45vh", minHeight: 0 }}>
-          <InterestGraph profile={profile} height="fill" />
-        </Box>
-        <Typography
-          variant="caption"
-          sx={{ color: textColor, display: "block", textAlign: "left", opacity: 0.7, mt: 1, flexShrink: 0 }}
-        >
-          * Interest rates on their respective websites are subject to change without notice.
-          <br />
-          ** Please do your own research before making any decisions.
-          <br />
-          *** Ask for referrals to get additional bonuses.
-        </Typography>
-      </Box>
-      {/* Right: Table — single internal scrollbar */}
-      <Box sx={{ flex: "1 1 55%", minWidth: 0, alignSelf: "stretch" }}>
-        <TableContainer
-          component={Paper}
-          sx={{
-            borderRadius: "10px",
-            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-            maxHeight: "100%",
-            overflow: "auto",
-          }}
-        >
-            <Table aria-label="High yield savings account interest rate comparison table" size="small">
+    <ThreePanelLayout
+      aria-label="Current interest rates comparison"
+      bottomLeft={
+        <>
+          <Box sx={{ height: "40vh", minHeight: 0 }}>
+            <InterestGraph profile={profile} height="fill" />
+          </Box>
+          <Typography
+            variant="caption"
+            sx={{ color: textColor, display: "block", textAlign: "left", opacity: 0.7, mt: 1 }}
+          >
+            * Interest rates on their respective websites are subject to change without notice.
+            <br />
+            ** Please do your own research before making any decisions.
+            <br />
+            *** Ask for referrals to get additional bonuses.
+          </Typography>
+        </>
+      }
+      bottomRight={
+        <Paper sx={{ borderRadius: "10px", backgroundColor: bgColor, height: "100%" }}>
+          <TableContainer sx={{ height: "100%" }}>
+            <Table aria-label="High yield savings account interest rate comparison table" size="small" stickyHeader>
               <TableHead>
-                <TableRow sx={{ color: textColor, backgroundColor: bgColor }}>
+                <TableRow>
                   <TableCell
                     onClick={() => handleSort("name")}
-                    sx={{ ...cellSx, cursor: "pointer", fontWeight: 600, "&:hover": { backgroundColor: alpha(primaryColor, 0.15) } }}
+                    sx={{ ...cellSx, cursor: "pointer", fontWeight: 600, "&:hover": { backgroundColor: alpha(primaryColor, 0.15) }, backgroundColor: bgColor }}
                   >
                     <TableSortLabel active={orderBy === "name"} direction={orderBy === "name" ? order : "asc"} hideSortIcon={false} sx={SORT_ICON_SX}>
                       Accounts
@@ -140,7 +135,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
                   </TableCell>
                   <TableCell
                     onClick={() => handleSort("yearlyInterest")}
-                    sx={{ ...cellSx, cursor: "pointer", fontWeight: 600, "&:hover": { backgroundColor: alpha(primaryColor, 0.15) } }}
+                    sx={{ ...cellSx, cursor: "pointer", fontWeight: 600, "&:hover": { backgroundColor: alpha(primaryColor, 0.15) }, backgroundColor: bgColor }}
                   >
                     <TableSortLabel active={orderBy === "yearlyInterest"} direction={orderBy === "yearlyInterest" ? order : "asc"} hideSortIcon={false} sx={SORT_ICON_SX}>
                       Yearly Interest ($)
@@ -148,14 +143,14 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
                   </TableCell>
                   <TableCell
                     onClick={() => handleSort("effectiveInterest")}
-                    sx={{ ...cellSx, cursor: "pointer", fontWeight: 600, "&:hover": { backgroundColor: alpha(primaryColor, 0.15) } }}
+                    sx={{ ...cellSx, cursor: "pointer", fontWeight: 600, "&:hover": { backgroundColor: alpha(primaryColor, 0.15) }, backgroundColor: bgColor }}
                   >
                     <TableSortLabel active={orderBy === "effectiveInterest"} direction={orderBy === "effectiveInterest" ? order : "asc"} hideSortIcon={false} sx={SORT_ICON_SX}>
                       EIR (%)
                     </TableSortLabel>
                   </TableCell>
-                  <TableCell sx={{ ...cellSx, fontWeight: 600, minWidth: 180 }}>Remarks</TableCell>
-                  <TableCell sx={{ ...cellSx, fontWeight: 600, width: 80, textAlign: "center" }}>Actions</TableCell>
+                  <TableCell sx={{ ...cellSx, fontWeight: 600, minWidth: 180, backgroundColor: bgColor }}>Remarks</TableCell>
+                  <TableCell sx={{ ...cellSx, fontWeight: 600, width: 80, textAlign: "center", backgroundColor: bgColor }}>Actions</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -194,9 +189,10 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
                 ))}
               </TableBody>
             </Table>
-        </TableContainer>
-      </Box>
-    </Box>
+          </TableContainer>
+        </Paper>
+      }
+    />
   );
 };
 

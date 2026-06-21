@@ -33,6 +33,7 @@ import {
   Language,
 } from "@mui/icons-material";
 import { ComparisonChart } from "../Components/ComparisonChart";
+import { ThreePanelLayout } from "../Components/ThreePanelLayout";
 import { isValidSlug } from "../logic/slugs";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
@@ -158,8 +159,8 @@ const HistoryTabDesktop = ({
   const renderGroupedTable = () => {
     const highlightCol = chartMode === "yearly" ? "yearlyInterest" : "eir";
     return (
-      <Paper sx={{ borderRadius: "10px", backgroundColor: bgColor, overflow: "hidden", flex: 1, minWidth: 0 }}>
-        <TableContainer sx={{ maxHeight: "65vh" }}>
+      <Paper sx={{ borderRadius: "10px", backgroundColor: bgColor, height: "100%" }}>
+        <TableContainer sx={{ height: "100%" }}>
           <Table size="small" stickyHeader>
             <TableHead>
               <TableRow>
@@ -231,7 +232,7 @@ const HistoryTabDesktop = ({
   };
 
   return (
-    <Box component="section" aria-label="Interest rate change history" sx={{ height: "100%", pt: 1.5 }}>
+    <Box component="section" aria-label="Interest rate change history" sx={{ height: "100%" }}>
 
       {selectedBanks.length === 0 ? (
         <Paper sx={{ p: 4, borderRadius: "10px", backgroundColor: bgColor, textAlign: "center" }}>
@@ -246,10 +247,9 @@ const HistoryTabDesktop = ({
           </Typography>
         </Paper>
       ) : (
-        <Box sx={{ height: "100%", display: "flex", gap: 2, alignItems: "stretch" }}>
-          {/* Left: controls + chart in one compartment */}
-          <Box sx={{ flex: "0 0 48%", minWidth: 0, display: "flex", flexDirection: "column" }}>
-            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 1.5, mb: 1.5 }}>
+        <ThreePanelLayout
+          top={
+            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 1.5 }}>
               <ToggleButtonGroup value={chartMode} exclusive onChange={(_e, v) => v && setChartMode(v)} size="small">
                 <ToggleButton value="yearly" sx={TOGGLE_SX}>Yearly Interest ($)</ToggleButton>
                 <ToggleButton value="eir" sx={TOGGLE_SX}>EIR (%)</ToggleButton>
@@ -261,15 +261,12 @@ const HistoryTabDesktop = ({
                 </Select>
               </FormControl>
             </Box>
-            <Box sx={{ flex: 1, minHeight: 0 }}>
-              <ComparisonChart selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
-            </Box>
-          </Box>
-          {/* Right: table — single scroll */}
-          <Box sx={{ flex: "1 1 52%", minWidth: 0, overflow: "hidden" }}>
-            {renderGroupedTable()}
-          </Box>
-        </Box>
+          }
+          bottomLeft={
+            <ComparisonChart selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
+          }
+          bottomRight={renderGroupedTable()}
+        />
       )}
     </Box>
   );

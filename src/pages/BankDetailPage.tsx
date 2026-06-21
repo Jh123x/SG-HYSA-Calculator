@@ -23,6 +23,7 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import LanguageIcon from "@mui/icons-material/Language";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, bgColor, primaryColor, lineColors } from "../consts/colors";
+import { ThreePanelLayout } from "../Components/ThreePanelLayout";
 import { bankInfo } from "../logic/constants";
 import { slugToBankName, ERROR_SLUG } from "../logic/slugs";
 import { resolveHistoryForChart, deriveCurrentFromHistory } from "../logic/history";
@@ -162,8 +163,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           p: 2,
           borderRadius: "10px",
           backgroundColor: bgColor,
-          flex: 1,
-          minHeight: 0,
+          height: "100%",
           display: "flex",
           flexDirection: "column",
         }}
@@ -253,22 +253,21 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   );
 
   return (
-    <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ height: isNarrow ? "auto" : "100%", pt: 1.5 }}>
-      <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, mb: 1.5, textTransform: "none", "&:hover": { color: primaryColor } }}>Back</Button>
+    <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ height: isNarrow ? "auto" : "100%" }}>
       {isNarrow ? (
         <>
+          <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, mb: 1.5, textTransform: "none", "&:hover": { color: primaryColor } }}>Back</Button>
           {renderChart()}
           <Box sx={{ mt: 2 }}>{renderHistorySection()}</Box>
         </>
       ) : (
-        <Box sx={{ height: "calc(100% - 48px)", display: "flex", gap: 2, alignItems: "stretch" }}>
-          <Box sx={{ flex: "0 0 48%", minWidth: 0, display: "flex", flexDirection: "column" }}>
-            {renderChart()}
-          </Box>
-          <Box sx={{ flex: "1 1 52%", minWidth: 0 }}>
-            {renderHistorySection()}
-          </Box>
-        </Box>
+        <ThreePanelLayout
+          top={
+            <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, textTransform: "none", "&:hover": { color: primaryColor } }}>Back</Button>
+          }
+          bottomLeft={renderChart()}
+          bottomRight={renderHistorySection()}
+        />
       )}
     </Box>
   );
