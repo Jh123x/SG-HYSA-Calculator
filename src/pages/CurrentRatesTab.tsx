@@ -13,8 +13,7 @@ import {
   Paper,
   TableSortLabel,
   alpha,
-  IconButton,
-  Tooltip,
+  useMediaQuery,
 } from "@mui/material";
 import { Link, ArrowForward } from "@mui/icons-material";
 import type { ResultProp } from "../types/props";
@@ -24,7 +23,6 @@ import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
 import { InterestGraph } from "../Components/InterestGraph";
 import { FaqAccordion } from "../Components/FaqAccordion";
-import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { ThemeButton } from "../Components/ThemeButton";
 
 type SortableColumns = "name" | "yearlyInterest" | "effectiveInterest";
@@ -45,14 +43,11 @@ interface Props {
  */
 export const CurrentRatesTab = ({ profile }: Props) => {
   const navigate = useNavigate();
+  const isMobile = useMediaQuery("(max-width:600px)");
   const [orderBy, setOrderBy] = useState<SortableColumns | undefined>(
     undefined,
   );
   const [order, setOrder] = useState<"asc" | "desc">("desc");
-
-  useDocumentTitle(
-    "Compare Singapore High Yield Savings Accounts — Current Rates",
-  );
 
   const results: Record<string, ResultProp> = {};
   for (const [slug, info] of Object.entries(bankInfo)) {
@@ -111,14 +106,27 @@ export const CurrentRatesTab = ({ profile }: Props) => {
       }}
     >
       <Box component="section" aria-label="Current interest rates comparison">
+        {!isMobile && (
+          <>
+            <Typography
+              variant="h5"
+              component="h2"
+              sx={{ color: textColor, mb: 2, fontWeight: 600 }}
+            >
+              Saving account differences
+            </Typography>
+
+            <InterestGraph profile={profile} />
+          </>
+        )}
+
         <Typography
           variant="h5"
           component="h2"
-          sx={{ color: textColor, mb: 2, fontWeight: 600 }}
+          sx={{ color: textColor, mb: 2, mt: 2, fontWeight: 600 }}
         >
           Compare Singapore High Yield Savings Accounts
         </Typography>
-
         <TableContainer
           component={Paper}
           sx={{
@@ -248,8 +256,6 @@ export const CurrentRatesTab = ({ profile }: Props) => {
           </Table>
         </TableContainer>
       </Box>
-
-      <InterestGraph profile={profile} />
 
       <Typography
         variant="caption"

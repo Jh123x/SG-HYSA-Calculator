@@ -35,7 +35,9 @@ import { chocoFinanceHistory } from "../logic/choco_finance";
 // Pre-compute Mari current rate so remarks are self-contained
 const _mariCurrentRate = (() => {
   const { interestFn } = deriveCurrentFromHistory(maribankHistory);
-  return interestFn({ Savings: 10000 } as Profile).toYearlyPercent().toFixed(2);
+  return interestFn({ Savings: 10000 } as Profile)
+    .toYearlyPercent()
+    .toFixed(2);
 })();
 
 // ── Types ────────────────────────────────────────────────────────────
@@ -69,15 +71,13 @@ export const banks: Record<string, BankData> = {
   "mari-savings-account": {
     name: "Mari Savings Account",
     url: "https://www.maribank.sg/product/mari-savings-account/",
-    remarks:
-      `Interest rates are a flat ${_mariCurrentRate}%\nCapped at $100k\nReferral code: **4QTP99MT**`,
+    remarks: `Interest rates are a flat ${_mariCurrentRate}%\nCapped at $100k\nReferral code: **4QTP99MT**`,
     history: maribankHistory,
   },
   "standard-chartered-bonus-saver": {
     name: "Standard Chartered Bonus$aver",
     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
-    remarks:
-      "Insurance and Investment only\nfulfils interest for 6 months",
+    remarks: "Insurance and Investment only\nfulfils interest for 6 months",
     history: standChartHistory,
   },
   "trust-bank-signature": {
@@ -96,7 +96,7 @@ export const banks: Record<string, BankData> = {
     name: "DBS Multiplier Account",
     url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
     remarks:
-      "No eligible if you are younger than 18.\nSpending includes credit card / paylah retail spend",
+      "Not eligible if you are younger than 18.\nSpending includes credit card / paylah retail spend",
     history: dbsMultiplierHistory,
   },
   "gxs-savings-account": {

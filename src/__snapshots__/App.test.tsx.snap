@@ -65,44 +65,7 @@ exports[`App > should render correctly 1`] = `
       </div>
       <div
         class="MuiBox-root css-jma0kd"
-      >
-        <a
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-ofervp-MuiButtonBase-root-MuiIconButton-root"
-          href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
-          tabindex="0"
-          target="_blank"
-        >
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="ArticleIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-5 14H7v-2h7zm3-4H7v-2h10zm0-4H7V7h10z"
-            />
-          </svg>
-        </a>
-        <a
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeLarge css-ofervp-MuiButtonBase-root-MuiIconButton-root"
-          href="https://github.com/jh123x/SG-HYSA-Calculator"
-          tabindex="0"
-          target="_blank"
-        >
-          <svg
-            aria-hidden="true"
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
-            data-testid="GitHubIcon"
-            focusable="false"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-            />
-          </svg>
-        </a>
-      </div>
+      />
     </div>
   </header>
   <main
@@ -123,8 +86,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_4_"
-              id="_r_4_-label"
+              for="_r_2_"
+              id="_r_2_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -142,7 +105,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_4_"
+                id="_r_2_"
                 placeholder="To be deposited at bank"
                 type="number"
                 value=""
@@ -175,8 +138,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_5_"
-              id="_r_5_-label"
+              for="_r_3_"
+              id="_r_3_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -194,7 +157,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_5_"
+                id="_r_3_"
                 placeholder="Current age"
                 type="number"
                 value=""
@@ -227,8 +190,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_6_"
-              id="_r_6_-label"
+              for="_r_4_"
+              id="_r_4_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -246,7 +209,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_6_"
+                id="_r_4_"
                 placeholder="Credited to bank monthly"
                 type="number"
                 value=""
@@ -279,8 +242,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_7_"
-              id="_r_7_-label"
+              for="_r_5_"
+              id="_r_5_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -298,7 +261,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_7_"
+                id="_r_5_"
                 placeholder="Pay to bank yearly"
                 type="number"
                 value=""
@@ -331,8 +294,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_8_"
-              id="_r_8_-label"
+              for="_r_6_"
+              id="_r_6_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -350,7 +313,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_8_"
+                id="_r_6_"
                 placeholder="Pay to bank yearly"
                 type="number"
                 value=""
@@ -383,8 +346,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_9_"
-              id="_r_9_-label"
+              for="_r_7_"
+              id="_r_7_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -402,7 +365,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_9_"
+                id="_r_7_"
                 placeholder="On eligible cards monthly"
                 type="number"
                 value=""
@@ -435,8 +398,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_a_"
-              id="_r_a_-label"
+              for="_r_8_"
+              id="_r_8_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -454,7 +417,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_a_"
+                id="_r_8_"
                 placeholder="No. of GIRO Transactions"
                 type="number"
                 value=""
@@ -487,8 +450,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_b_"
-              id="_r_b_-label"
+              for="_r_9_"
+              id="_r_9_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -506,7 +469,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_b_"
+                id="_r_9_"
                 placeholder="Balance increase monthly"
                 type="number"
                 value=""
@@ -539,8 +502,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_c_"
-              id="_r_c_-label"
+              for="_r_a_"
+              id="_r_a_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -558,7 +521,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_c_"
+                id="_r_a_"
                 placeholder="Monthly loan payment"
                 type="number"
                 value=""
@@ -591,8 +554,8 @@ exports[`App > should render correctly 1`] = `
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
               data-shrink="false"
-              for="_r_d_"
-              id="_r_d_-label"
+              for="_r_b_"
+              id="_r_b_-label"
             >
               <div
                 style="display: flex; flex-direction: row;"
@@ -610,7 +573,7 @@ exports[`App > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                id="_r_d_"
+                id="_r_b_"
                 placeholder="Additional 1 time loan"
                 type="number"
                 value=""
@@ -889,7 +852,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit UOB One Account official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
@@ -909,12 +872,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View UOB One Account rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -927,7 +892,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -966,7 +931,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit OCBC 360 Account official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.ocbc.com/personal-banking/notices"
@@ -986,12 +951,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View OCBC 360 Account rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1004,7 +971,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1050,7 +1017,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit Mari Savings Account official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.maribank.sg/product/mari-savings-account/"
@@ -1070,12 +1037,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View Mari Savings Account rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1088,7 +1057,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1129,7 +1098,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit Standard Chartered Bonus$aver official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
@@ -1149,12 +1118,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View Standard Chartered Bonus$aver rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1167,7 +1138,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1206,7 +1177,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit Trust Bank (Signature) official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://trustbank.sg/savings-account/"
@@ -1226,12 +1197,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View Trust Bank (Signature) rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1244,7 +1217,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1283,7 +1256,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit Trust Bank (Zen) official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://trustbank.sg/savings-account/"
@@ -1303,12 +1276,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View Trust Bank (Zen) rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1321,7 +1296,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1362,7 +1337,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit DBS Multiplier Account official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
@@ -1382,12 +1357,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View DBS Multiplier Account rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1400,7 +1377,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1453,7 +1430,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit GXS Savings Account official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.gxs.com.sg/savings-account"
@@ -1473,12 +1450,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View GXS Savings Account rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1491,7 +1470,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1545,7 +1524,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit Chocolate Finance official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.chocolatefinance.com/"
@@ -1565,12 +1544,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View Chocolate Finance rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1583,7 +1564,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1626,7 +1607,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit BOC SuperSaver official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html"
@@ -1646,12 +1627,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View BOC SuperSaver rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1664,7 +1647,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1705,7 +1688,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit Maybank SaveUp official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
@@ -1725,12 +1708,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View Maybank SaveUp rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1743,7 +1728,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1784,7 +1769,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit Maybank iSAVvy official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
@@ -1804,12 +1789,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View Maybank iSAVvy rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1822,7 +1809,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1867,7 +1854,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit Maybank iSAVvy Plus official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
@@ -1887,12 +1874,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View Maybank iSAVvy Plus rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1905,7 +1894,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -1948,7 +1937,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiBox-root css-s3pf5w"
                     >
                       <a
-                        aria-label="Visit Citi Wealth First Account official website"
+                        aria-label="Official Website"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account"
@@ -1968,12 +1957,14 @@ exports[`App > should render correctly 1`] = `
                           />
                         </svg>
                       </a>
-                      <button
-                        aria-label="View Citi Wealth First Account rate history"
+                      <a
+                        aria-label="Detailed History"
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-tep4h3-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
+                        href="#"
+                        rel="noopener noreferrer"
                         tabindex="0"
-                        type="button"
+                        target="_self"
                       >
                         <svg
                           aria-hidden="true"
@@ -1986,7 +1977,7 @@ exports[`App > should render correctly 1`] = `
                             d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -2578,20 +2569,20 @@ exports[`App > should render correctly 1`] = `
                   tabindex="0"
                 >
                   <div
-                    id="voiceover-_r_2a_-1"
+                    id="voiceover-_r_28_-1"
                     style="display: none;"
                   />
                   <div
-                    id="voiceover-_r_2a_-2"
+                    id="voiceover-_r_28_-2"
                     style="display: none;"
                   />
                   <div
-                    aria-labelledby="voiceover-_r_2a_-1"
+                    aria-labelledby="voiceover-_r_28_-1"
                     role="img"
                     style="width: 100%; height: 100%; outline: none;"
                   />
                   <div
-                    aria-labelledby="voiceover-_r_2a_-2"
+                    aria-labelledby="voiceover-_r_28_-2"
                     role="img"
                     style="width: 100%; height: 100%; outline: none;"
                   />
@@ -2683,7 +2674,7 @@ exports[`App > should render correctly 1`] = `
                     />
                   </g>
                   <g
-                    clip-path="url(#_r_29_-clip-path)"
+                    clip-path="url(#_r_27_-clip-path)"
                   >
                     <g
                       class="MuiLineChart-areaPlot css-94vonx-MuiAreaPlot-root"
@@ -2692,7 +2683,7 @@ exports[`App > should render correctly 1`] = `
                       class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
                     >
                       <clippath
-                        id="_r_2a_-uob-one-account-line-clip"
+                        id="_r_28_-uob-one-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2703,7 +2694,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-uob-one-account-line-clip)"
+                        clip-path="url(#_r_28_-uob-one-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2719,7 +2710,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-ocbc-360-account-line-clip"
+                        id="_r_28_-ocbc-360-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2730,7 +2721,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-ocbc-360-account-line-clip)"
+                        clip-path="url(#_r_28_-ocbc-360-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2746,7 +2737,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-mari-savings-account-line-clip"
+                        id="_r_28_-mari-savings-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2757,7 +2748,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-mari-savings-account-line-clip)"
+                        clip-path="url(#_r_28_-mari-savings-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2773,7 +2764,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-standard-chartered-bonus-saver-line-clip"
+                        id="_r_28_-standard-chartered-bonus-saver-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2784,7 +2775,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-standard-chartered-bonus-saver-line-clip)"
+                        clip-path="url(#_r_28_-standard-chartered-bonus-saver-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2800,7 +2791,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-trust-bank-signature-line-clip"
+                        id="_r_28_-trust-bank-signature-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2811,7 +2802,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-trust-bank-signature-line-clip)"
+                        clip-path="url(#_r_28_-trust-bank-signature-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2827,7 +2818,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-trust-bank-zen-line-clip"
+                        id="_r_28_-trust-bank-zen-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2838,7 +2829,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-trust-bank-zen-line-clip)"
+                        clip-path="url(#_r_28_-trust-bank-zen-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2854,7 +2845,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-dbs-multiplier-account-line-clip"
+                        id="_r_28_-dbs-multiplier-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2865,7 +2856,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-dbs-multiplier-account-line-clip)"
+                        clip-path="url(#_r_28_-dbs-multiplier-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2881,7 +2872,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-gxs-savings-account-line-clip"
+                        id="_r_28_-gxs-savings-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2892,7 +2883,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-gxs-savings-account-line-clip)"
+                        clip-path="url(#_r_28_-gxs-savings-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2908,7 +2899,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-chocolate-finance-line-clip"
+                        id="_r_28_-chocolate-finance-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2919,7 +2910,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-chocolate-finance-line-clip)"
+                        clip-path="url(#_r_28_-chocolate-finance-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2935,7 +2926,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-boc-supersaver-line-clip"
+                        id="_r_28_-boc-supersaver-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2946,7 +2937,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-boc-supersaver-line-clip)"
+                        clip-path="url(#_r_28_-boc-supersaver-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2962,7 +2953,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-maybank-saveup-line-clip"
+                        id="_r_28_-maybank-saveup-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -2973,7 +2964,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-maybank-saveup-line-clip)"
+                        clip-path="url(#_r_28_-maybank-saveup-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -2989,7 +2980,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-maybank-isavvy-line-clip"
+                        id="_r_28_-maybank-isavvy-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -3000,7 +2991,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-maybank-isavvy-line-clip)"
+                        clip-path="url(#_r_28_-maybank-isavvy-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -3016,7 +3007,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-maybank-isavvy-plus-line-clip"
+                        id="_r_28_-maybank-isavvy-plus-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -3027,7 +3018,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-maybank-isavvy-plus-line-clip)"
+                        clip-path="url(#_r_28_-maybank-isavvy-plus-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -3043,7 +3034,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </g>
                       <clippath
-                        id="_r_2a_-citi-wealth-first-account-line-clip"
+                        id="_r_28_-citi-wealth-first-account-line-clip"
                       >
                         <rect
                           class="css-dbuw8t"
@@ -3054,7 +3045,7 @@ exports[`App > should render correctly 1`] = `
                         />
                       </clippath>
                       <g
-                        clip-path="url(#_r_2a_-citi-wealth-first-account-line-clip)"
+                        clip-path="url(#_r_28_-citi-wealth-first-account-line-clip)"
                       >
                         <path
                           class="MuiLineChart-line"
@@ -3415,65 +3406,65 @@ exports[`App > should render correctly 1`] = `
                       class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
                     >
                       <g
-                        clip-path="url(#_r_2a_-uob-one-account-line-clip)"
+                        clip-path="url(#_r_28_-uob-one-account-line-clip)"
                         data-series="uob-one-account"
                       />
                       <g
-                        clip-path="url(#_r_2a_-ocbc-360-account-line-clip)"
+                        clip-path="url(#_r_28_-ocbc-360-account-line-clip)"
                         data-series="ocbc-360-account"
                       />
                       <g
-                        clip-path="url(#_r_2a_-mari-savings-account-line-clip)"
+                        clip-path="url(#_r_28_-mari-savings-account-line-clip)"
                         data-series="mari-savings-account"
                       />
                       <g
-                        clip-path="url(#_r_2a_-standard-chartered-bonus-saver-line-clip)"
+                        clip-path="url(#_r_28_-standard-chartered-bonus-saver-line-clip)"
                         data-series="standard-chartered-bonus-saver"
                       />
                       <g
-                        clip-path="url(#_r_2a_-trust-bank-signature-line-clip)"
+                        clip-path="url(#_r_28_-trust-bank-signature-line-clip)"
                         data-series="trust-bank-signature"
                       />
                       <g
-                        clip-path="url(#_r_2a_-trust-bank-zen-line-clip)"
+                        clip-path="url(#_r_28_-trust-bank-zen-line-clip)"
                         data-series="trust-bank-zen"
                       />
                       <g
-                        clip-path="url(#_r_2a_-dbs-multiplier-account-line-clip)"
+                        clip-path="url(#_r_28_-dbs-multiplier-account-line-clip)"
                         data-series="dbs-multiplier-account"
                       />
                       <g
-                        clip-path="url(#_r_2a_-gxs-savings-account-line-clip)"
+                        clip-path="url(#_r_28_-gxs-savings-account-line-clip)"
                         data-series="gxs-savings-account"
                       />
                       <g
-                        clip-path="url(#_r_2a_-chocolate-finance-line-clip)"
+                        clip-path="url(#_r_28_-chocolate-finance-line-clip)"
                         data-series="chocolate-finance"
                       />
                       <g
-                        clip-path="url(#_r_2a_-boc-supersaver-line-clip)"
+                        clip-path="url(#_r_28_-boc-supersaver-line-clip)"
                         data-series="boc-supersaver"
                       />
                       <g
-                        clip-path="url(#_r_2a_-maybank-saveup-line-clip)"
+                        clip-path="url(#_r_28_-maybank-saveup-line-clip)"
                         data-series="maybank-saveup"
                       />
                       <g
-                        clip-path="url(#_r_2a_-maybank-isavvy-line-clip)"
+                        clip-path="url(#_r_28_-maybank-isavvy-line-clip)"
                         data-series="maybank-isavvy"
                       />
                       <g
-                        clip-path="url(#_r_2a_-maybank-isavvy-plus-line-clip)"
+                        clip-path="url(#_r_28_-maybank-isavvy-plus-line-clip)"
                         data-series="maybank-isavvy-plus"
                       />
                       <g
-                        clip-path="url(#_r_2a_-citi-wealth-first-account-line-clip)"
+                        clip-path="url(#_r_28_-citi-wealth-first-account-line-clip)"
                         data-series="citi-wealth-first-account"
                       />
                     </g>
                   </g>
                   <clippath
-                    id="_r_29_-clip-path"
+                    id="_r_27_-clip-path"
                   >
                     <rect
                       height="415"
@@ -4150,6 +4141,95 @@ exports[`App > should render correctly 1`] = `
     <div
       class="MuiContainer-root MuiContainer-maxWidthSm css-zzzaw2-MuiContainer-root"
     >
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row css-1wcltfm-MuiGrid-root"
+      >
+        <a
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-brhd2s-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://jh123x.com"
+          rel="noopener noreferrer"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="LinkIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+            />
+          </svg>
+        </a>
+        <a
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-brhd2s-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="/sitemap.xml"
+          rel="noopener noreferrer"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="RssFeedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="6.18"
+              cy="17.82"
+              r="2.18"
+            />
+            <path
+              d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56m0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9"
+            />
+          </svg>
+        </a>
+        <a
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-brhd2s-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
+          rel="noopener noreferrer"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="ArticleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-5 14H7v-2h7zm3-4H7v-2h10zm0-4H7V7h10z"
+            />
+          </svg>
+        </a>
+        <a
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-brhd2s-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://github.com/jh123x/SG-HYSA-Calculator"
+          rel="noopener noreferrer"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="GitHubIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+            />
+          </svg>
+        </a>
+      </div>
       <p
         class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-rqwq8g-MuiTypography-root"
         style="--Typography-textAlign: center;"
@@ -4162,23 +4242,6 @@ exports[`App > should render correctly 1`] = `
           Jh123x
         </a>
          2026
-      </p>
-      <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-dn70oi-MuiTypography-root"
-        style="--Typography-textAlign: center;"
-      >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-jsls36-MuiSvgIcon-root"
-          data-testid="LockOutlinedIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2M9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm9 14H6V10h12zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
-          />
-        </svg>
-        All data stored locally on your device. No data is ever sent to a server.
       </p>
     </div>
   </footer>
