@@ -35,7 +35,9 @@ import { chocoFinanceHistory } from "../logic/choco_finance";
 // Pre-compute Mari current rate so remarks are self-contained
 const _mariCurrentRate = (() => {
   const { interestFn } = deriveCurrentFromHistory(maribankHistory);
-  return interestFn({ Savings: 10000 } as Profile).toYearlyPercent().toFixed(2);
+  return interestFn({ Savings: 10000 } as Profile)
+    .toYearlyPercent()
+    .toFixed(2);
 })();
 
 // ── Types ────────────────────────────────────────────────────────────
@@ -55,29 +57,27 @@ export interface BankData {
 
 export const banks: Record<string, BankData> = {
   "uob-one-account": {
-    name: "UOB One Account",
+    name: "UOB One",
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     remarks: "Visit their official website to find out more",
     history: uobHistory,
   },
   "ocbc-360-account": {
-    name: "OCBC 360 Account",
+    name: "OCBC 360",
     url: "https://www.ocbc.com/personal-banking/notices",
     remarks: "Visit the official website to find out more",
     history: ocbcHistory,
   },
   "mari-savings-account": {
-    name: "Mari Savings Account",
+    name: "Mari Savings",
     url: "https://www.maribank.sg/product/mari-savings-account/",
-    remarks:
-      `Interest rates are a flat ${_mariCurrentRate}%\nCapped at $100k\nReferral code: **4QTP99MT**`,
+    remarks: `Interest rates are a flat ${_mariCurrentRate}%\nCapped at $100k\nReferral code: **4QTP99MT**`,
     history: maribankHistory,
   },
   "standard-chartered-bonus-saver": {
     name: "Standard Chartered Bonus$aver",
     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
-    remarks:
-      "Insurance and Investment only\nfulfils interest for 6 months",
+    remarks: "Insurance and Investment only\nfulfils interest for 6 months",
     history: standChartHistory,
   },
   "trust-bank-signature": {
@@ -93,14 +93,14 @@ export const banks: Record<string, BankData> = {
     history: trustBankZenHistory,
   },
   "dbs-multiplier-account": {
-    name: "DBS Multiplier Account",
+    name: "DBS Multiplier",
     url: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
     remarks:
-      "No eligible if you are younger than 18.\nSpending includes credit card / paylah retail spend",
+      "Not eligible if you are younger than 18.\nSpending includes credit card / paylah retail spend",
     history: dbsMultiplierHistory,
   },
   "gxs-savings-account": {
-    name: "GXS Savings Account",
+    name: "GXS Savings",
     url: "https://www.gxs.com.sg/savings-account",
     remarks:
       "Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets\n**Note: The max amount deposited depends on individual (up to $95,000)**\nView other [Notices here](https://www.gxs.com.sg/notices)",
@@ -142,7 +142,7 @@ export const banks: Record<string, BankData> = {
     history: maybankIsavvyPlusHistory,
   },
   "citi-wealth-first-account": {
-    name: "Citi Wealth First Account",
+    name: "Citi Wealth First",
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks:
       "Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)\nBonus interest capped at first $500k.\n*Assumes Citigold level, Citi Private has a higher level.",

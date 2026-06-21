@@ -34,7 +34,7 @@ const cellSx = {
 };
 
 export const Result = ({ profile }: { profile: Profile }) => {
-  const [orderBy, setOrderBy] = useState<SortableColumns>(undefined);
+  const [orderBy, setOrderBy] = useState<SortableColumns>("effectiveInterest");
   const [order, setOrder] = useState<"asc" | "desc" | undefined>("desc");
 
   const results: Record<string, ResultProp> = {};
@@ -64,8 +64,12 @@ export const Result = ({ profile }: { profile: Profile }) => {
     switch (orderBy) {
       case "name":
         return order === "asc"
-          ? (bankInfo[a[0]]?.name ?? a[0]).localeCompare(bankInfo[b[0]]?.name ?? b[0])
-          : (bankInfo[b[0]]?.name ?? b[0]).localeCompare(bankInfo[a[0]]?.name ?? a[0]);
+          ? (bankInfo[a[0]]?.name ?? a[0]).localeCompare(
+              bankInfo[b[0]]?.name ?? b[0],
+            )
+          : (bankInfo[b[0]]?.name ?? b[0]).localeCompare(
+              bankInfo[a[0]]?.name ?? a[0],
+            );
       case "yearlyInterest":
         return order === "asc"
           ? a[1].interest.toYearly() - b[1].interest.toYearly()
@@ -79,7 +83,9 @@ export const Result = ({ profile }: { profile: Profile }) => {
     }
   });
 
-  const sortIconSx = { "& .MuiTableSortLabel-icon": { color: `${textColor} !important` } };
+  const sortIconSx = {
+    "& .MuiTableSortLabel-icon": { color: `${textColor} !important` },
+  };
 
   return (
     <Container
@@ -107,17 +113,31 @@ export const Result = ({ profile }: { profile: Profile }) => {
                 "&:hover": { backgroundColor: bgColor },
               }}
             >
-              <TableCell sx={{ ...cellSx, cursor: "pointer", "&:hover": { backgroundColor: primaryColor }, transition: "background-color 0.3s ease" }}>
+              <TableCell
+                sx={{
+                  ...cellSx,
+                  cursor: "pointer",
+                  "&:hover": { backgroundColor: primaryColor },
+                  transition: "background-color 0.3s ease",
+                }}
+              >
                 <TableSortLabel
                   active={orderBy === "name"}
                   direction={orderBy === "name" ? order : "asc"}
                   onClick={() => handleSort("name")}
                   sx={sortIconSx}
                 >
-                  Account Name
+                  Account
                 </TableSortLabel>
               </TableCell>
-              <TableCell sx={{ ...cellSx, cursor: "pointer", "&:hover": { backgroundColor: primaryColor }, transition: "background-color 0.3s ease" }}>
+              <TableCell
+                sx={{
+                  ...cellSx,
+                  cursor: "pointer",
+                  "&:hover": { backgroundColor: primaryColor },
+                  transition: "background-color 0.3s ease",
+                }}
+              >
                 <TableSortLabel
                   active={orderBy === "yearlyInterest"}
                   direction={orderBy === "yearlyInterest" ? order : "asc"}
@@ -127,7 +147,14 @@ export const Result = ({ profile }: { profile: Profile }) => {
                   Yearly Interest
                 </TableSortLabel>
               </TableCell>
-              <TableCell sx={{ ...cellSx, cursor: "pointer", "&:hover": { backgroundColor: primaryColor }, transition: "background-color 0.3s ease" }}>
+              <TableCell
+                sx={{
+                  ...cellSx,
+                  cursor: "pointer",
+                  "&:hover": { backgroundColor: primaryColor },
+                  transition: "background-color 0.3s ease",
+                }}
+              >
                 <TableSortLabel
                   active={orderBy === "effectiveInterest"}
                   direction={orderBy === "effectiveInterest" ? order : "asc"}

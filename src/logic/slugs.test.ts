@@ -1,10 +1,15 @@
 import { describe, it, expect } from "vitest";
-import { bankNameToSlug, slugToBankName, ERROR_SLUG, isValidSlug } from "./slugs";
+import {
+  bankNameToSlug,
+  slugToBankName,
+  ERROR_SLUG,
+  isValidSlug,
+} from "./slugs";
 import { banks } from "../data/banks";
 
 describe("bankNameToSlug (deprecated — kept for migration)", () => {
   it("lowercases and hyphenates spaces", () => {
-    expect(bankNameToSlug("UOB One Account")).toBe("uob-one-account");
+    expect(bankNameToSlug("UOB One")).toBe("uob-one-account");
   });
 
   it("handles parentheses", () => {
@@ -12,7 +17,7 @@ describe("bankNameToSlug (deprecated — kept for migration)", () => {
   });
 
   it("handles multiple special characters", () => {
-    expect(bankNameToSlug("Citi Wealth First Account")).toBe(
+    expect(bankNameToSlug("Citi Wealth First")).toBe(
       "citi-wealth-first-account",
     );
   });

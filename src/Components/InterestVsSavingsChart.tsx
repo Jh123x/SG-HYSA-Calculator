@@ -37,7 +37,6 @@ export const InterestVsSavingsChart = ({
   enableLegendToggle = true,
   children,
 }: Props) => {
-
   // Build data points from $0 to $200,000 in $10,000 steps
   const data: Record<string, number>[] = Array.from({ length: 21 }, (_, i) => {
     const savings = i * 10_000;
@@ -74,12 +73,18 @@ export const InterestVsSavingsChart = ({
   const legendSlotProps = enableLegendToggle
     ? ({
         direction: "horizontal" as const,
-        position: { vertical: "bottom" as const, horizontal: "center" as const },
+        position: {
+          vertical: "bottom" as const,
+          horizontal: "center" as const,
+        },
         toggleVisibilityOnClick: true,
       } as any)
     : {
         direction: "horizontal" as const,
-        position: { vertical: "bottom" as const, horizontal: "center" as const },
+        position: {
+          vertical: "bottom" as const,
+          horizontal: "center" as const,
+        },
       };
 
   return (

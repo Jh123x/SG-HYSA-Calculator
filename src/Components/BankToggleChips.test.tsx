@@ -30,7 +30,9 @@ describe("BankToggleChips", () => {
     );
     openDropdown();
 
-    const gxsOption = await screen.findByRole("option", { name: /GXS Savings Account/ });
+    const gxsOption = await screen.findByRole("option", {
+      name: /GXS Savings/,
+    });
     fireEvent.click(gxsOption);
 
     // onChange should be called with the slug "gxs-savings-account"
@@ -104,7 +106,7 @@ describe("BankToggleChips", () => {
     await userEvent.type(input, "gxs");
 
     // After typing, the dropdown should show only matching options
-    const gxsOption = await screen.findByText("GXS Savings Account");
+    const gxsOption = await screen.findByText("GXS Savings");
     expect(gxsOption).toBeDefined();
   });
 

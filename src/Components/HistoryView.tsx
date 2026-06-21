@@ -56,12 +56,7 @@ export const HistoryView = ({ profile }: Props) => {
       </Typography>
 
       {Object.entries(bankInfo).map(([slug, info]) => (
-        <BankAccordion
-          key={slug}
-          slug={slug}
-          info={info}
-          profile={profile}
-        />
+        <BankAccordion key={slug} slug={slug} info={info} profile={profile} />
       ))}
     </Box>
   );
@@ -130,12 +125,9 @@ const BankAccordion = ({
             <TableBody>
               {/* resolved is already chronologically sorted (oldest first);
                   reverse for display (latest first) */}
-              {[...resolved]
-                .reverse()
-                .map((snapshot, idx) => {
-                  const isTbd =
-                    snapshot.date.getTime() === TBD_DATE.getTime();
-                  return (
+              {[...resolved].reverse().map((snapshot, idx) => {
+                const isTbd = snapshot.date.getTime() === TBD_DATE.getTime();
+                return (
                   <TableRow key={idx}>
                     <TableCell sx={{ color: textColor }}>
                       {isTbd ? "TBD" : formatDate(snapshot.date)}
@@ -143,23 +135,15 @@ const BankAccordion = ({
                     <TableCell sx={{ color: textColor }}>
                       {snapshot.changeSummary}
                     </TableCell>
-                    <TableCell
-                      sx={{ color: textColor, textAlign: "right" }}
-                    >
-                      {isTbd
-                        ? "—"
-                        : `$${snapshot.yearlyInterest.toFixed(2)}`}
+                    <TableCell sx={{ color: textColor, textAlign: "right" }}>
+                      {isTbd ? "—" : `$${snapshot.yearlyInterest.toFixed(2)}`}
                     </TableCell>
-                    <TableCell
-                      sx={{ color: textColor, textAlign: "right" }}
-                    >
-                      {isTbd
-                        ? "—"
-                        : `${snapshot.eir.toFixed(2)}%`}
+                    <TableCell sx={{ color: textColor, textAlign: "right" }}>
+                      {isTbd ? "—" : `${snapshot.eir.toFixed(2)}%`}
                     </TableCell>
                   </TableRow>
                 );
-                })}
+              })}
             </TableBody>
           </Table>
         </TableContainer>

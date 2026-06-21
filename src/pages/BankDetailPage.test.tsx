@@ -23,7 +23,7 @@ describe("BankDetailPage", () => {
   it("renders bank detail for a valid slug", () => {
     renderAt("/bank/gxs-savings-account");
     // Display name is in the heading
-    expect(screen.getAllByText("GXS Savings Account").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("GXS Savings").length).toBeGreaterThan(0);
     expect(screen.getByText("Rate Change History")).toBeDefined();
     expect(screen.getByText("Back")).toBeDefined();
   });

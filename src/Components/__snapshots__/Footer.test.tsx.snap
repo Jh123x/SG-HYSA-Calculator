@@ -8,6 +8,95 @@ exports[`Footer > should match snapshot 1`] = `
     <div
       class="MuiContainer-root MuiContainer-maxWidthSm css-zzzaw2-MuiContainer-root"
     >
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row css-1wcltfm-MuiGrid-root"
+      >
+        <a
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1qod8la-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://jh123x.com"
+          rel="noopener noreferrer"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="LinkIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5"
+            />
+          </svg>
+        </a>
+        <a
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1qod8la-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="/sitemap.xml"
+          rel="noopener noreferrer"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="RssFeedIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              cx="6.18"
+              cy="17.82"
+              r="2.18"
+            />
+            <path
+              d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56m0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9"
+            />
+          </svg>
+        </a>
+        <a
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1qod8la-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
+          rel="noopener noreferrer"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="ArticleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-5 14H7v-2h7zm3-4H7v-2h10zm0-4H7V7h10z"
+            />
+          </svg>
+        </a>
+        <a
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1qod8la-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          href="https://github.com/jh123x/SG-HYSA-Calculator"
+          rel="noopener noreferrer"
+          tabindex="0"
+          target="_blank"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+            data-testid="GitHubIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+            />
+          </svg>
+        </a>
+      </div>
       <p
         class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-13mdizf-MuiTypography-root"
         style="--Typography-textAlign: center;"
@@ -20,23 +109,6 @@ exports[`Footer > should match snapshot 1`] = `
           Jh123x
         </a>
          2026
-      </p>
-      <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-u78jax-MuiTypography-root"
-        style="--Typography-textAlign: center;"
-      >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-jsls36-MuiSvgIcon-root"
-          data-testid="LockOutlinedIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2M9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9zm9 14H6V10h12zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2"
-          />
-        </svg>
-        All data stored locally on your device. No data is ever sent to a server.
       </p>
     </div>
   </footer>

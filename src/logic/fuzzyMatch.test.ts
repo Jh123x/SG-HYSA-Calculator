@@ -84,7 +84,7 @@ describe("findClosestBank", () => {
     const result = findClosestBank("uob-one-account");
     expect(result).not.toBeNull();
     expect(result!.slug).toBe("uob-one-account");
-    expect(result!.bank.name).toBe("UOB One Account");
+    expect(result!.bank.name).toBe("UOB One");
   });
 
   it("acronym UOB → uob-one-account", () => {
