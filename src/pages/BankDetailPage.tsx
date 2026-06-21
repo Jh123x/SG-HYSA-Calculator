@@ -145,7 +145,9 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     eir: todayVal.toYearlyPercent(),
   });
 
-  const todayStr = new Date().toLocaleDateString("en-SG", { year: "numeric", month: "short", day: "numeric" });
+  const d = new Date();
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const todayStr = `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
   const isYearly = chartMode === "yearly";
   const dataKey = isYearly ? "yearlyInterest" : "eir";
   const yLabel = isYearly ? "Yearly Interest ($)" : "EIR (%)";
