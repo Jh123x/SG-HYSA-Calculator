@@ -12,6 +12,7 @@ import {
   TableHead,
   TableRow,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { LineChart } from "@mui/x-charts/LineChart";
@@ -35,16 +36,14 @@ const AUTO_REDIRECT_SECONDS = 5;
 /**
  * Bank detail page at /bank/:slug.
  *
- * Shows:
- * - Summary card (bank name, current rate, last update)
- * - Time-series chart of EIR (%) over time
- * - Full rate change log table
- * - Back navigation that restores previous query params
+ * Desktop side-by-side: EIR chart (left) | Rate change log table (right)
+ * Mobile: stacked vertically.
  */
 export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const location = useLocation();
+  const isNarrow = useMediaQuery("(max-width:900px)");
   const bankName = slug ? slugToBankName(slug) : ERROR_SLUG;
 
   // Closest-match suggestion when bank slug is unknown
@@ -85,7 +84,6 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         return;
       }
 
-      // Compute Jaro-Winkler similarity to every known bank slug + home page
       let bestSlug = "/";
       let bestName = "Home";
       let bestSimilarity = jaroWinkler(slug, "/");
@@ -184,11 +182,164 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
       eir: r.eir,
     }));
 
+  // ── EIR Chart ──────────────────────────────────────────────────────
+
+  const renderChart = () => {
+    if (eirChartData.length === 0) return null;
+
+    return (
+      <Paper
+        component="section"
+        aria-label="Interest rate trend chart"
+        sx={{
+          p: { xs: 2, sm: 3 },
+          borderRadius: "10px",
+          backgroundColor: bgColor,
+          height: "fit-content",
+        }}
+      >
+        <Typography
+          variant="h6"
+          sx={{ color: textColor, fontWeight: 600, mb: 2 }}
+        >
+          Interest Rate Over Time
+        </Typography>
+        <LineChart
+          dataset={eirChartData}
+          xAxis={[
+            {
+              dataKey: "date",
+              label: "Date",
+              scaleType: "time" as const,
+              tickLabelStyle: {
+                angle: 45,
+                textAnchor: "start" as const,
+                fontSize: 11,
+              },
+              valueFormatter: dateFormatter,
+            },
+          ]}
+          series={[
+            {
+              dataKey: "eir",
+              label: info.name,
+              color: lineColors[0],
+              showMark: true,
+              curve: "stepAfter",
+              valueFormatter: (v: number | null) =>
+                v !== null ? `${v.toFixed(2)}%` : "",
+            },
+          ]}
+          yAxis={[
+            {
+              label: "EIR (%)",
+              scaleType: "linear",
+              min: 0,
+              valueFormatter: (v: number) => `${v.toFixed(1)}%`,
+            },
+          ]}
+          height={isNarrow ? 300 : 340}
+          grid={{ vertical: true, horizontal: true }}
+          sx={{
+            ".MuiChartsAxis-label": { fill: textColor },
+            ".MuiChartsAxis-tick": { fill: textColor },
+            ".MuiChartsLegend-label": { fill: textColor },
+          }}
+        />
+        <Typography
+          variant="caption"
+          sx={{
+            color: textColor,
+            display: "block",
+            textAlign: "left",
+            mt: 1,
+            opacity: 0.6,
+          }}
+        >
+          * Interest rate changes over time. EIR is calculated based on your
+          current savings amount (${profile.Savings.toLocaleString()}).
+          <br />
+          ** The &ldquo;updated at&rdquo; date reflects when this calculator
+          was updated, which may differ from the date the bank published the
+          change.
+        </Typography>
+      </Paper>
+    );
+  };
+
+  // ── Rate Change History table ──────────────────────────────────────
+
+  const renderHistoryTable = () => (
+    <Paper
+      component="section"
+      aria-label="Rate change history table"
+      sx={{
+        p: { xs: 2, sm: 3 },
+        borderRadius: "10px",
+        backgroundColor: bgColor,
+      }}
+    >
+      <Typography
+        variant="h6"
+        sx={{ color: textColor, fontWeight: 600, mb: 2 }}
+      >
+        Rate Change History
+      </Typography>
+      <TableContainer>
+        <Table size="small">
+          <TableHead>
+            <TableRow>
+              <TableCell sx={{ color: textColor, fontWeight: 600 }}>
+                Date
+              </TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600 }}>
+                What Changed
+              </TableCell>
+              <TableCell
+                sx={{ color: textColor, fontWeight: 600, textAlign: "right" }}
+              >
+                Yearly Interest
+              </TableCell>
+              <TableCell
+                sx={{ color: textColor, fontWeight: 600, textAlign: "right" }}
+              >
+                EIR
+              </TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {resolved
+              .sort((a, b) => b.date.getTime() - a.date.getTime())
+              .map((snapshot, idx) => {
+                const isTbd = snapshot.date.getTime() === 0;
+                return (
+                  <TableRow key={idx}>
+                    <TableCell sx={{ color: textColor }}>
+                      {isTbd ? "TBD" : formatDate(snapshot.date)}
+                    </TableCell>
+                    <TableCell sx={{ color: textColor }}>
+                      {snapshot.changeSummary}
+                    </TableCell>
+                    <TableCell sx={{ color: textColor, textAlign: "right" }}>
+                      {isTbd ? "—" : `$${snapshot.yearlyInterest.toFixed(2)}`}
+                    </TableCell>
+                    <TableCell sx={{ color: textColor, textAlign: "right" }}>
+                      {isTbd ? "—" : `${snapshot.eir.toFixed(2)}%`}
+                    </TableCell>
+                  </TableRow>
+                );
+              })}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </Paper>
+  );
+
   return (
     <Box
       component="article"
       aria-label={`${info.name} interest rate details`}
-      sx={{ mt: 3 }}
+      sx={{ mt: 2 }}
     >
       {/* Back button */}
       <Button
@@ -204,11 +355,11 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         Back
       </Button>
 
-      {/* Summary card */}
+      {/* Summary card — full width */}
       <Paper
         component="header"
         sx={{
-          p: 3,
+          p: { xs: 2, sm: 3 },
           borderRadius: "10px",
           backgroundColor: bgColor,
           mb: 3,
@@ -246,150 +397,30 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         </Typography>
       </Paper>
 
-      {/* Time-series chart: EIR (%) over time */}
-      {eirChartData.length > 0 && (
-        <Paper
-          component="section"
-          aria-label="Interest rate trend chart"
+      {/* ── Side-by-side: chart (left) | history table (right) ── */}
+      {isNarrow ? (
+        /* Mobile: stacked */
+        <>
+          {renderChart()}
+          <Box sx={{ mt: 3 }}>{renderHistoryTable()}</Box>
+        </>
+      ) : (
+        /* Desktop: side by side */
+        <Box
           sx={{
-            p: 3,
-            borderRadius: "10px",
-            backgroundColor: bgColor,
-            mb: 3,
+            display: "flex",
+            gap: 2,
+            alignItems: "flex-start",
           }}
         >
-          <Typography
-            variant="h6"
-            sx={{ color: textColor, fontWeight: 600, mb: 2 }}
-          >
-            Interest Rate Over Time
-          </Typography>
-          <LineChart
-            dataset={eirChartData}
-            xAxis={[
-              {
-                dataKey: "date",
-                label: "Date",
-                scaleType: "time" as const,
-                tickLabelStyle: {
-                  angle: 45,
-                  textAnchor: "start" as const,
-                  fontSize: 11,
-                },
-                valueFormatter: dateFormatter,
-              },
-            ]}
-            series={[
-              {
-                dataKey: "eir",
-                label: info.name,
-                color: lineColors[0],
-                showMark: true,
-                curve: "stepAfter",
-                valueFormatter: (v: number | null) =>
-                  v !== null ? `${v.toFixed(2)}%` : "",
-              },
-            ]}
-            yAxis={[
-              {
-                label: "EIR (%)",
-                scaleType: "linear",
-                min: 0,
-                valueFormatter: (v: number) => `${v.toFixed(1)}%`,
-              },
-            ]}
-            height={400}
-            grid={{ vertical: true, horizontal: true }}
-            sx={{
-              ".MuiChartsAxis-label": { fill: textColor },
-              ".MuiChartsAxis-tick": { fill: textColor },
-              ".MuiChartsLegend-label": { fill: textColor },
-            }}
-          />
-          <Typography
-            variant="caption"
-            sx={{
-              color: textColor,
-              display: "block",
-              textAlign: "left",
-              mt: 1,
-              opacity: 0.6,
-            }}
-          >
-            * Interest rate changes over time. EIR is calculated based on your
-            current savings amount (${profile.Savings.toLocaleString()}).
-            <br />
-            ** The &ldquo;updated at&rdquo; date reflects when this calculator
-            was updated, which may differ from the date the bank published the
-            change.
-          </Typography>
-        </Paper>
+          <Box sx={{ flex: "0 0 48%", minWidth: 0 }}>
+            {renderChart()}
+          </Box>
+          <Box sx={{ flex: "1 1 52%", minWidth: 0 }}>
+            {renderHistoryTable()}
+          </Box>
+        </Box>
       )}
-
-      {/* Full rate change log */}
-      <Paper
-        component="section"
-        aria-label="Rate change history table"
-        sx={{
-          p: 3,
-          borderRadius: "10px",
-          backgroundColor: bgColor,
-        }}
-      >
-        <Typography
-          variant="h6"
-          sx={{ color: textColor, fontWeight: 600, mb: 2 }}
-        >
-          Rate Change History
-        </Typography>
-        <TableContainer>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell sx={{ color: textColor, fontWeight: 600 }}>
-                  Date
-                </TableCell>
-                <TableCell sx={{ color: textColor, fontWeight: 600 }}>
-                  What Changed
-                </TableCell>
-                <TableCell
-                  sx={{ color: textColor, fontWeight: 600, textAlign: "right" }}
-                >
-                  Yearly Interest
-                </TableCell>
-                <TableCell
-                  sx={{ color: textColor, fontWeight: 600, textAlign: "right" }}
-                >
-                  EIR
-                </TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {resolved
-                .sort((a, b) => b.date.getTime() - a.date.getTime())
-                .map((snapshot, idx) => {
-                  const isTbd = snapshot.date.getTime() === 0;
-                  return (
-                    <TableRow key={idx}>
-                      <TableCell sx={{ color: textColor }}>
-                        {isTbd ? "TBD" : formatDate(snapshot.date)}
-                      </TableCell>
-                      <TableCell sx={{ color: textColor }}>
-                        {snapshot.changeSummary}
-                      </TableCell>
-                      <TableCell sx={{ color: textColor, textAlign: "right" }}>
-                        {isTbd ? "—" : `$${snapshot.yearlyInterest.toFixed(2)}`}
-                      </TableCell>
-                      <TableCell sx={{ color: textColor, textAlign: "right" }}>
-                        {isTbd ? "—" : `${snapshot.eir.toFixed(2)}%`}
-                      </TableCell>
-                    </TableRow>
-                  );
-                })}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Paper>
     </Box>
   );
 };
