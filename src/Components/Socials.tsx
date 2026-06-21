@@ -1,11 +1,13 @@
 import { Article, GitHub, Link, RssFeed } from "@mui/icons-material";
 import { ThemeButton } from "./ThemeButton";
-import { Grid } from "@mui/material";
+import { Box } from "@mui/material";
 
 const Socials = () => (
-  <Grid
+  <Box
     sx={{
-      textAlign: "center",
+      display: "flex",
+      alignItems: "center",
+      gap: 0.5,
     }}
   >
     <ThemeButton href="https://jh123x.com">
@@ -20,7 +22,7 @@ const Socials = () => (
     <ThemeButton href="https://github.com/jh123x/SG-HYSA-Calculator">
       <GitHub />
     </ThemeButton>
-  </Grid>
+  </Box>
 );
 
 export default Socials;

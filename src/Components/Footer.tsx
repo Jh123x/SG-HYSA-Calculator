@@ -13,8 +13,7 @@ export const Footer = () => {
         flexShrink: 0,
       }}
     >
-      <Container maxWidth="sm" sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 1, flexWrap: "wrap" }}>
-        <Socials />
+      <Container maxWidth="sm" sx={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap" }}>
         <Typography variant="body2" color="textSecondary">
           {"Copyright © "}
           <Link color="inherit" href="https://jh123x.com/">
@@ -22,6 +21,7 @@ export const Footer = () => {
           </Link>{" "}
           {new Date().getFullYear()}
         </Typography>
+        <Socials />
       </Container>
     </Box>
   );

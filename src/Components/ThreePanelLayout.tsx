@@ -76,6 +76,7 @@ const ThreePanelLayoutDesktop = ({
     <Box
       sx={{
         display: "flex",
+        gap: "1.5vh",
         flex: 1,
         minHeight: 0, // allow shrinking below content height
       }}
