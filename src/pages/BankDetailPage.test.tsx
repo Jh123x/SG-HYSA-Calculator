@@ -1,8 +1,16 @@
-import { describe, it, expect } from "vitest";
+import { vi, describe, it, expect, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { BankDetailPage } from "./BankDetailPage";
 import { NewProfile } from "../types/profile";
+
+const { mockUseMobile } = vi.hoisted(() => ({
+  mockUseMobile: vi.fn(),
+}));
+
+vi.mock("../hooks/useMobile", () => ({
+  useMobile: mockUseMobile,
+}));
 
 const profile = NewProfile({ Savings: 50000 });
 
@@ -19,10 +27,13 @@ function renderAt(path: string) {
   );
 }
 
-describe("BankDetailPage", () => {
+describe("BankDetailPage desktop", () => {
+  beforeEach(() => {
+    mockUseMobile.mockReturnValue({ isMobile: false, isCompact: false });
+  });
+
   it("renders bank detail for a valid slug", () => {
     renderAt("/bank/gxs-savings-account");
-    // Display name is in the heading
     expect(screen.getAllByText("GXS Savings").length).toBeGreaterThan(0);
     expect(screen.getByText("Rate Change History")).toBeDefined();
     expect(screen.getByText("Back")).toBeDefined();
@@ -42,6 +53,26 @@ describe("BankDetailPage", () => {
 
   it("renders the EIR over time chart section", () => {
     renderAt("/bank/gxs-savings-account");
-    expect(screen.getByText("Interest Rate Over Time")).toBeDefined();
+    expect(screen.getByText("Yearly $")).toBeDefined();
+  });
+
+  it("should match snapshot", () => {
+    vi.setSystemTime(new Date("2026-06-21T06:00:00Z"));
+    const { asFragment } = renderAt("/bank/gxs-savings-account");
+    expect(asFragment()).toMatchSnapshot();
+    vi.useRealTimers();
+  });
+});
+
+describe("BankDetailPage mobile", () => {
+  beforeEach(() => {
+    mockUseMobile.mockReturnValue({ isMobile: true, isCompact: true });
+  });
+
+  it("should match snapshot", () => {
+    vi.setSystemTime(new Date("2026-06-21T06:00:00Z"));
+    const { asFragment } = renderAt("/bank/gxs-savings-account");
+    expect(asFragment()).toMatchSnapshot();
+    vi.useRealTimers();
   });
 });

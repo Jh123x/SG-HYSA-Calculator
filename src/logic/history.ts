@@ -13,6 +13,8 @@ export interface ResolvedHistoryItem {
   eir: number;
   /** Human-readable description of the change */
   changeSummary: string;
+  /** Optional link to the official rate announcement or source */
+  sourceUrl?: string;
 }
 
 /** Zero-interest fallback function for banks with no history entries yet. */
@@ -106,6 +108,7 @@ export function resolveHistoryForChart(
       yearlyInterest: result.toYearly(),
       eir: Number(result.toYearlyPercent().toFixed(2)),
       changeSummary: snapshot.changeSummary,
+      sourceUrl: snapshot.sourceUrl,
     };
   });
 }

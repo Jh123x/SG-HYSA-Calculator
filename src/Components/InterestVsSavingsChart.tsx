@@ -1,6 +1,7 @@
 import { LineChart } from "@mui/x-charts/LineChart";
 import { Box } from "@mui/material";
 import { lineColors, textColor } from "../consts/colors";
+import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 import type { ResultInterest } from "../types/interest_result";
 
@@ -14,11 +15,14 @@ export interface ChartLine {
 interface Props {
   lines: ChartLine[];
   profile: Profile;
+  /** Pixel height; when undefined the chart fills its container via flex */
   height?: number;
   /** Enable click-to-toggle behaviour on legend items (default true). */
   enableLegendToggle?: boolean;
   /** Optional children (e.g. ChartsReferenceLine) */
   children?: React.ReactNode;
+  /** Optional sx to apply to the wrapper Box (used for flex fill) */
+  containerSx?: Record<string, unknown>;
 }
 
 /**
@@ -36,7 +40,10 @@ export const InterestVsSavingsChart = ({
   height = 300,
   enableLegendToggle = true,
   children,
+  containerSx,
 }: Props) => {
+  const { isCompact } = useMobile();
+
   // Build data points from $0 to $200,000 in $10,000 steps
   const data: Record<string, number>[] = Array.from({ length: 21 }, (_, i) => {
     const savings = i * 10_000;
@@ -88,9 +95,10 @@ export const InterestVsSavingsChart = ({
       };
 
   return (
-    <Box>
+    <Box sx={containerSx}>
       <LineChart
         dataset={data}
+        margin={{ right: isCompact ? 20 : 40 }}
         xAxis={[
           {
             dataKey: "savings",
@@ -115,6 +123,8 @@ export const InterestVsSavingsChart = ({
           ".MuiChartsAxis-label": { fill: textColor },
           ".MuiChartsAxis-tick": { fill: textColor },
           ".MuiChartsLegend-label": { fill: textColor },
+          "& .MuiChartsSurface-root": { background: "transparent" },
+          ...(height === undefined ? { height: "100%", width: "100%" } : {}),
         }}
       >
         {children}

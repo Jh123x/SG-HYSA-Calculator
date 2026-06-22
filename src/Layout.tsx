@@ -1,14 +1,14 @@
-import { Outlet, useOutletContext } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Container, GlobalStyles, Box } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { Header } from "./Components/Header";
-import { FormInputs } from "./Components/Inputs";
 import { Footer } from "./Components/Footer";
 import { ErrorBoundary } from "./Components/ErrorBoundary";
 import { bgColor, theme } from "./consts/colors";
+import { useMobile } from "./hooks/useMobile";
 import type Profile from "./types/profile";
 
-interface LayoutProps {
+export interface LayoutContext {
   currProfile: Profile;
   setCurrProfile: (p: Profile) => void;
   pendingUrlProfile: Profile | null;
@@ -16,8 +16,12 @@ interface LayoutProps {
   onRejectShared: () => void;
 }
 
+interface LayoutProps extends LayoutContext {}
+
 /**
- * Shared layout: Header, then page content via <Outlet>, then Footer.
+ * Layout:
+ *   Desktop: Header + scrollable content + Footer, filling viewport (sticky header/footer)
+ *   Mobile:  Normal document flow — Header and Footer scroll with content
  */
 export const Layout = ({
   currProfile,
@@ -25,64 +29,78 @@ export const Layout = ({
   pendingUrlProfile,
   onAcceptShared,
   onRejectShared,
-}: LayoutProps) => (
-  <ThemeProvider theme={theme}>
-    <GlobalStyles
-      styles={{
-        body: {
-          backgroundColor: bgColor,
-          margin: "0px",
-          padding: "0px",
-          height: "100%",
-          minHeight: "100dvh",
-          width: "100%",
-        },
-      }}
-    />
-    <Header />
-    <Box component="main" sx={{ marginTop: "20px", paddingBottom: "20px" }}>
-      <Container>
-        <ErrorBoundary>
-          <Outlet
-            context={{
-              currProfile,
-              setCurrProfile,
-              pendingUrlProfile,
-              onAcceptShared,
-              onRejectShared,
-            }}
-          />
-        </ErrorBoundary>
-      </Container>
-    </Box>
-    <Footer />
-  </ThemeProvider>
-);
+}: LayoutProps) => {
+  const { isMobile } = useMobile();
 
-/**
- * Layout wrapper that adds profile input fields above the page content.
- * Use this for pages that need savings / account configuration inputs.
- */
-export const WithInputs = () => (
-  <>
-    <FormInputsWrapper />
-    <Outlet />
-  </>
-);
+  // Mobile: normal document flow — no fixed viewport, no overflow clamping
+  const bodyOverflow = isMobile ? "auto" : "hidden";
+  const rootHeight = isMobile ? "auto" : "100%";
+  const rootOverflow = isMobile ? "visible" : undefined;
 
-/** Internal: reads profile state from Outlet context and renders FormInputs */
-const FormInputsWrapper = () => {
-  const { currProfile, setCurrProfile, pendingUrlProfile, onAcceptShared, onRejectShared } =
-    useOutletContext<LayoutProps>();
+  const boxHeight = isMobile ? "auto" : "100dvh";
+  const boxOverflow = isMobile ? "visible" : "hidden";
+
+  const mainOverflow = isMobile ? "visible" : "hidden";
+  const mainFlex = isMobile ? undefined : 1;
+  const mainMinHeight = isMobile ? undefined : 0;
+
   return (
-    <ErrorBoundary>
-      <FormInputs
-        currProfile={currProfile}
-        setCurrProfile={setCurrProfile}
-        pendingUrlProfile={pendingUrlProfile}
-        onAcceptShared={onAcceptShared}
-        onRejectShared={onRejectShared}
+    <ThemeProvider theme={theme}>
+      <GlobalStyles
+        styles={{
+          body: {
+            backgroundColor: bgColor,
+            margin: "0px",
+            padding: "0px",
+            height: rootHeight,
+            width: "100%",
+            overflow: bodyOverflow,
+          },
+          "#root": {
+            height: rootHeight,
+            ...(rootOverflow ? { overflow: rootOverflow } : {}),
+          },
+        }}
       />
-    </ErrorBoundary>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          height: boxHeight,
+          overflow: boxOverflow,
+        }}
+      >
+        <Header />
+        <Box
+          component="main"
+          sx={{
+            flex: mainFlex,
+            minHeight: mainMinHeight,
+            overflow: mainOverflow,
+          }}
+        >
+          <Container
+            sx={{
+              maxWidth: "100% !important",
+              px: { xs: 1, sm: 2 },
+              height: "100%",
+            }}
+          >
+            <ErrorBoundary>
+              <Outlet
+                context={{
+                  currProfile,
+                  setCurrProfile,
+                  pendingUrlProfile,
+                  onAcceptShared,
+                  onRejectShared,
+                }}
+              />
+            </ErrorBoundary>
+          </Container>
+        </Box>
+        <Footer />
+      </Box>
+    </ThemeProvider>
   );
 };

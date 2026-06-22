@@ -47,6 +47,17 @@ export const BankToggleChips = ({
     return eirs;
   }, [profile]);
 
+  // Options sorted by EIR descending (highest EIR first)
+  const sortedOptions = useMemo(
+    () =>
+      [...ALL_SLUGS].sort((a, b) => {
+        const eirA = parseFloat(bankEirs[a] ?? "0");
+        const eirB = parseFloat(bankEirs[b] ?? "0");
+        return eirB - eirA;
+      }),
+    [bankEirs],
+  );
+
   // Build slug → display name map
   const displayNames = useMemo(() => {
     const map: Record<string, string> = {};
@@ -97,7 +108,7 @@ export const BankToggleChips = ({
       {/* Searchable multi-select */}
       <Autocomplete
         multiple
-        options={ALL_SLUGS}
+        options={sortedOptions}
         value={selected}
         onChange={(_event, newValue) => {
           // Enforce max (shouldn't exceed due to getOptionDisabled, but guard anyway)

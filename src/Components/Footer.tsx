@@ -1,22 +1,27 @@
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
-import { Box } from "@mui/material";
+import { Container, Typography, Link, Box } from "@mui/material";
 import { bgColor } from "../consts/colors";
 import Socials from "./Socials";
 
 export const Footer = () => {
   return (
-    <Box sx={{ backgroundColor: bgColor, p: 6 }} component="footer">
-      <Container maxWidth="sm">
-        <Socials />
-        <Typography variant="body2" color="textSecondary" align="center">
+    <Box
+      component="footer"
+      sx={{
+        backgroundColor: bgColor,
+        py: 1.5,
+        borderTop: "1px solid rgba(255,255,255,0.06)",
+        flexShrink: 0,
+      }}
+    >
+      <Container maxWidth="sm" sx={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap" }}>
+        <Typography variant="body2" color="textSecondary">
           {"Copyright © "}
           <Link color="inherit" href="https://jh123x.com/">
             Jh123x
           </Link>{" "}
           {new Date().getFullYear()}
         </Typography>
+        <Socials />
       </Container>
     </Box>
   );

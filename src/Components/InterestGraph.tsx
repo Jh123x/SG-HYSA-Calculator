@@ -1,15 +1,45 @@
 import { ChartsReferenceLine } from "@mui/x-charts";
-import { Paper, Box, Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
-import { lineColors, textColor } from "../consts/colors";
+import { lineColors, textColor, bgColor } from "../consts/colors";
 import type Profile from "../types/profile";
 import {
   InterestVsSavingsChart,
   type ChartLine,
 } from "./InterestVsSavingsChart";
 
-export const InterestGraph = ({ profile }: { profile: Profile }) => {
+const ASTERISKS_SX = {
+  color: textColor,
+  display: "block",
+  textAlign: "left",
+  marginTop: "10px",
+  opacity: 0.8,
+};
+
+const BUILT_IN_NOTES = [
+  "Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges",
+  "Interest rates on their respective websites are subject to change without notice.",
+  "Please do your own research before making any decisions.",
+  "Ask for referrals to get additional bonuses.",
+];
+
+interface InterestGraphProps {
+  profile: Profile;
+  /** Fixed pixel height, or "fill" to expand to container */
+  height?: number | "fill";
+}
+
+/**
+ * Savings-vs-yearly-interest chart in a Paper card.
+ *
+ * Renders a line chart for all accounts with historical data and appends
+ * consolidated footnotes at the bottom.
+ */
+export const InterestGraph = ({
+  profile,
+  height = 500,
+}: InterestGraphProps) => {
   const lines: ChartLine[] = Object.entries(bankInfo)
     .filter(([, value]) => value.history.length > 0)
     .map(([slug, value], idx) => {
@@ -25,13 +55,24 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
   return (
     <Paper
       sx={{
-        padding: "30px",
+        p: 2,
         borderRadius: "10px",
-        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-        backgroundColor: "background.paper",
+        backgroundColor: bgColor,
+        height: height === "fill" ? "100%" : "auto",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
-      <InterestVsSavingsChart lines={lines} profile={profile} height={500}>
+      <InterestVsSavingsChart
+        lines={lines}
+        profile={profile}
+        height={height === "fill" ? undefined : height}
+        containerSx={
+          height === "fill"
+            ? { flex: 1, minHeight: 0, overflow: "hidden" }
+            : undefined
+        }
+      >
         <ChartsReferenceLine
           x={profile.Savings}
           label="Your savings"
@@ -42,18 +83,14 @@ export const InterestGraph = ({ profile }: { profile: Profile }) => {
           }}
         />
       </InterestVsSavingsChart>
-      <Typography
-        variant="caption"
-        sx={{
-          color: textColor,
-          display: "block",
-          textAlign: "center",
-          marginTop: "10px",
-          opacity: 0.8,
-        }}
-      >
-        * Graph shows interest rates for savings from $0 to $200,000, covering
-        typical savings account ranges
+
+      <Typography variant="caption" sx={ASTERISKS_SX}>
+        {BUILT_IN_NOTES.map((note, i) => (
+          <span key={i}>
+            {"*".repeat(i + 1)} {note}
+            {i < BUILT_IN_NOTES.length - 1 && <br />}
+          </span>
+        ))}
       </Typography>
     </Paper>
   );

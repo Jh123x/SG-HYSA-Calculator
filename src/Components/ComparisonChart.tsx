@@ -1,13 +1,11 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import {
-  Box,
   Typography,
   Paper,
-  ToggleButton,
-  ToggleButtonGroup,
+  Box,
 } from "@mui/material";
 import { LineChart } from "@mui/x-charts/LineChart";
-import { textColor, bgColor, primaryColor } from "../consts/colors";
+import { textColor, bgColor } from "../consts/colors";
 import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
 import { todayISO } from "../logic/dates";
@@ -18,33 +16,18 @@ import {
 } from "./comparison/buildDataset";
 import { buildComparisonSeries } from "./comparison/buildSeries";
 import { dateFormatter } from "../consts/formatter";
+import { useMobile } from "../hooks/useMobile";
 
 interface ComparisonChartProps {
   selectedBanks: string[];
   profile: Profile;
+  /** Controlled chart mode from parent */
+  chartMode: "yearly" | "eir";
 }
-
-type ChartMode = "yearly" | "eir";
-
-const BUTTON_SX = {
-  color: textColor,
-  borderColor: `${textColor}40`,
-  textTransform: "none",
-  fontSize: "0.8rem",
-  "&.Mui-selected": {
-    color: "#fff",
-    backgroundColor: primaryColor,
-  },
-  "&.Mui-selected:hover": {
-    backgroundColor: primaryColor,
-    opacity: 0.9,
-  },
-};
 
 /**
  * Time-series step chart comparing yearly interest ($) or EIR (%) across
- * selected banks over time. Users toggle between the two metrics via
- * button group.
+ * selected banks over time. chartMode is controlled by the parent component.
  *
  * Validation runs first — when it fails an error Paper is returned immediately.
  * The chart content (with its expensive data computation) is only mounted when
@@ -53,6 +36,7 @@ const BUTTON_SX = {
 export const ComparisonChart = ({
   selectedBanks,
   profile,
+  chartMode,
 }: ComparisonChartProps) => {
   // ── Validation ──────────────────────────────────────────────────────
   const validation = useMemo(() => {
@@ -99,7 +83,7 @@ export const ComparisonChart = ({
   }
 
   return (
-    <ComparisonChartContent selectedBanks={selectedBanks} profile={profile} />
+    <ComparisonChartContent selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
   );
 };
 
@@ -125,13 +109,15 @@ const AXIS_SX = {
   ".MuiChartsAxis-label": { fill: textColor },
   ".MuiChartsAxis-tick": { fill: textColor },
   ".MuiChartsLegend-label": { fill: textColor },
+  "& .MuiChartsSurface-root": { background: "transparent" },
 };
 
 const ComparisonChartContent = ({
   selectedBanks,
   profile,
+  chartMode,
 }: ComparisonChartProps) => {
-  const [chartMode, setChartMode] = useState<ChartMode>("yearly");
+  const { isMobile } = useMobile();
 
   const { dataset, yearlySeries, eirSeries } = useMemo(() => {
     const bankPoints = collectBankPoints(selectedBanks, profile);
@@ -190,55 +176,46 @@ const ComparisonChartContent = ({
     : (v: number) => `${v.toFixed(1)}%`;
 
   return (
-    <>
-      {/* ── Metric toggle ─────────────────────────────────────────── */}
-      <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
-        <ToggleButtonGroup
-          value={chartMode}
-          exclusive
-          onChange={(_e, v) => v && setChartMode(v)}
-          size="small"
-        >
-          <ToggleButton value="yearly" sx={BUTTON_SX}>
-            Yearly Interest ($)
-          </ToggleButton>
-          <ToggleButton value="eir" sx={BUTTON_SX}>
-            EIR (%)
-          </ToggleButton>
-        </ToggleButtonGroup>
-      </Box>
-
+    <Box sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
       {/* ── Chart ─────────────────────────────────────────────────── */}
       <Paper
         sx={{
-          p: 3,
+          p: 2,
           borderRadius: "10px",
           backgroundColor: bgColor,
-          mb: 3,
+          flex: 1,
+          minHeight: 0,
+          display: "flex",
+          flexDirection: "column",
         }}
       >
-        <LineChart
-          dataset={dataset}
-          xAxis={X_AXIS}
-          series={activeSeries}
-          yAxis={[
-            {
-              label: yLabel,
-              scaleType: "linear",
-              min: 0,
-              valueFormatter: yFormatter,
-            },
-          ]}
-          height={400}
-          grid={{ vertical: true, horizontal: true }}
-          slotProps={{
-            legend: {
-              direction: "horizontal",
-              position: { vertical: "bottom", horizontal: "center" },
-            },
-          }}
-          sx={AXIS_SX}
-        />
+        <Box sx={{ flex: 1, minHeight: 0 }}>
+          <LineChart
+            dataset={dataset}
+            xAxis={X_AXIS}
+            series={activeSeries}
+            yAxis={[
+              {
+                label: yLabel,
+                scaleType: "linear",
+                min: 0,
+                valueFormatter: yFormatter,
+              },
+            ]}
+            height={isMobile ? 260 : undefined}
+            grid={{ vertical: true, horizontal: true }}
+            slotProps={{
+              legend: {
+                direction: "horizontal",
+                position: { vertical: "bottom", horizontal: "center" },
+              },
+            }}
+            sx={{
+              ...AXIS_SX,
+              ...(isMobile ? {} : { height: "100%", width: "100%" }),
+            }}
+          />
+        </Box>
       </Paper>
 
       <Typography
@@ -247,14 +224,13 @@ const ComparisonChartContent = ({
           color: textColor,
           display: "block",
           textAlign: "left",
-          mt: -2,
-          mb: 3,
+          mt: 1,
           opacity: 0.6,
         }}
       >
         * The &ldquo;updated at&rdquo; date reflects when this calculator was
         updated, which may differ from the date the bank published the change.
       </Typography>
-    </>
+    </Box>
   );
 };

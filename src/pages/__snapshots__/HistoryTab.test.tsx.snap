@@ -1,0 +1,217 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HistoryTab desktop > should match snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="Interest rate change history"
+    class="MuiBox-root css-8lgfcg"
+  >
+    <section
+      class="MuiBox-root css-8oufzr"
+    >
+      <div
+        class="MuiBox-root css-19zgt1b"
+      >
+        <div
+          class="MuiBox-root css-1r0qzm1"
+        >
+          <div
+            class="MuiBox-root css-ztk0b"
+          >
+            <div
+              class="MuiToggleButtonGroup-root MuiToggleButtonGroup-horizontal css-1qb8o-MuiToggleButtonGroup-root"
+              role="group"
+            >
+              <button
+                aria-pressed="true"
+                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                tabindex="0"
+                type="button"
+                value="yearly"
+              >
+                Yearly Interest ($)
+              </button>
+              <button
+                aria-pressed="false"
+                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                tabindex="0"
+                type="button"
+                value="eir"
+              >
+                EIR (%)
+              </button>
+            </div>
+            <div
+              class="MuiFormControl-root css-wu7wou-MuiFormControl-root"
+            >
+              <div
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-13mb3no-MuiInputBase-root-MuiOutlinedInput-root"
+              >
+                <div
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="MuiSelect-select MuiSelect-outlined MuiSelect-multiple MuiInputBase-input MuiOutlinedInput-input css-trm6af-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                  role="combobox"
+                  tabindex="0"
+                >
+                  <div
+                    class="MuiBox-root css-yi3mkw"
+                  />
+                </div>
+                <input
+                  aria-hidden="true"
+                  aria-invalid="false"
+                  class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
+                  id="_r_1_"
+                  tabindex="-1"
+                  value=""
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
+                  data-testid="ArrowDropDownIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 10l5 5 5-5z"
+                  />
+                </svg>
+                <fieldset
+                  aria-hidden="true"
+                  class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+                >
+                  <legend
+                    class="css-1nf2c5d-MuiNotchedOutlined-root"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="notranslate"
+                    >
+                      ​
+                    </span>
+                  </legend>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-1r0qzm1"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-nnkcan-MuiPaper-root"
+            style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-wyxsl5-MuiTypography-root"
+            >
+              Select one or more banks above to view their rate history.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`HistoryTab mobile > should match snapshot 1`] = `
+<DocumentFragment>
+  <section
+    aria-label="Interest rate change history"
+    class="MuiBox-root css-164r41r"
+  >
+    <div
+      class="MuiBox-root css-3hkz29"
+    >
+      <div
+        class="MuiToggleButtonGroup-root MuiToggleButtonGroup-horizontal css-1qb8o-MuiToggleButtonGroup-root"
+        role="group"
+      >
+        <button
+          aria-pressed="true"
+          class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+          tabindex="0"
+          type="button"
+          value="yearly"
+        >
+          Yearly $
+        </button>
+        <button
+          aria-pressed="false"
+          class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+          tabindex="0"
+          type="button"
+          value="eir"
+        >
+          EIR (%)
+        </button>
+      </div>
+      <div
+        class="MuiFormControl-root css-1k6y6wi-MuiFormControl-root"
+      >
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-13mb3no-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <div
+            aria-expanded="false"
+            aria-haspopup="listbox"
+            class="MuiSelect-select MuiSelect-outlined MuiSelect-multiple MuiInputBase-input MuiOutlinedInput-input css-trm6af-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+            role="combobox"
+            tabindex="0"
+          >
+            <div
+              class="MuiBox-root css-yi3mkw"
+            />
+          </div>
+          <input
+            aria-hidden="true"
+            aria-invalid="false"
+            class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
+            id="_r_3_"
+            tabindex="-1"
+            value=""
+          />
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
+            data-testid="ArrowDropDownIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-1nf2c5d-MuiNotchedOutlined-root"
+            >
+              <span
+                aria-hidden="true"
+                class="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-nnkcan-MuiPaper-root"
+      style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-wyxsl5-MuiTypography-root"
+      >
+        Select one or more banks above to view their rate history.
+      </p>
+    </div>
+  </section>
+</DocumentFragment>
+`;

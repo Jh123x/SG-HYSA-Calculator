@@ -1,6 +1,7 @@
-import { Container, Typography, Box, Link as MuiLink } from "@mui/material";
+import { Container, Typography, Box, Link as MuiLink, Button } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import { Link } from "react-router-dom";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { useNavigate } from "react-router-dom";
 import { FULL_FAQ } from "../data/faq";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { bgColor, textColor, primaryColor } from "../consts/colors";
@@ -47,6 +48,7 @@ const sourceLinkSx = {
 };
 
 export const FaqPage = () => {
+  const navigate = useNavigate();
   useDocumentTitle("FAQ — SG HYSA Calculator");
 
   return (
@@ -73,13 +75,19 @@ export const FaqPage = () => {
         <Typography variant="body1" sx={{ color: textColor, opacity: 0.7, mb: 3 }}>
           Everything you need to know about High Yield Savings Accounts in Singapore.
           {" "}
-          <MuiLink
-            component={Link}
-            to="/"
-            sx={{ color: primaryColor, textDecoration: "none", "&:hover": { textDecoration: "underline" } }}
+          <Button
+            onClick={() => navigate("/")}
+            startIcon={<ArrowBackIcon />}
+            size="small"
+            sx={{
+              color: primaryColor,
+              textTransform: "none",
+              fontWeight: 600,
+              "&:hover": { backgroundColor: `${primaryColor}18` },
+            }}
           >
-            Back to calculator →
-          </MuiLink>
+            Back to calculator
+          </Button>
         </Typography>
 
         <Box component="section" aria-label="FAQ list">
@@ -199,19 +207,25 @@ export const FaqPage = () => {
 
         {/* Bottom CTA back to calculator */}
         <Box sx={{ textAlign: "center", mt: 4, mb: 2 }}>
-          <MuiLink
-            component={Link}
-            to="/"
+          <Button
+            onClick={() => navigate("/")}
+            startIcon={<ArrowBackIcon />}
+            variant="outlined"
+            size="large"
             sx={{
               color: primaryColor,
-              textDecoration: "none",
+              borderColor: primaryColor,
+              textTransform: "none",
               fontWeight: 600,
-              fontSize: "1.1rem",
-              "&:hover": { textDecoration: "underline" },
+              fontSize: "1rem",
+              "&:hover": {
+                backgroundColor: `${primaryColor}18`,
+                borderColor: primaryColor,
+              },
             }}
           >
-            ← Back to the calculator
-          </MuiLink>
+            Back to calculator
+          </Button>
         </Box>
       </Container>
     </>

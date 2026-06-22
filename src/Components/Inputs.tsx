@@ -42,6 +42,8 @@ interface FormInput {
   pendingUrlProfile: Profile | null;
   onAcceptShared: () => void;
   onRejectShared: () => void;
+  /** Content to render on the left side of the Clear/Share action bar */
+  leftChildren?: React.ReactNode;
 }
 
 export const FormInputs = ({
@@ -50,6 +52,7 @@ export const FormInputs = ({
   pendingUrlProfile,
   onAcceptShared,
   onRejectShared,
+  leftChildren,
 }: FormInput) => {
   const [profile, setProfile] = useState<Profile>(currProfile);
   const [notifications, setNotifications] = useState<Notification[]>([]);
@@ -103,7 +106,7 @@ export const FormInputs = ({
             display: "flex",
             flexDirection: "row",
             flexWrap: "wrap",
-            gap: "15px",
+            gap: { xs: "10px", sm: "15px" },
             justifyContent: "center",
           }}
         >
@@ -141,46 +144,52 @@ export const FormInputs = ({
         sx={{
           marginTop: "20px",
           display: "flex",
-          justifyContent: "center",
-          gap: "15px",
+          flexDirection: { xs: "column", sm: "row" },
+          justifyContent: "space-between",
+          alignItems: { xs: "stretch", sm: "center" },
+          gap: "10px",
         }}
       >
-        <ShareButton
-          profile={currProfile}
-          onCopied={() =>
-            addNotification("Profile URL copied to clipboard!", "success")
-          }
-        />
-        <Button
-          key="clear-btn"
-          sx={{
-            backgroundColor: dangerColor,
-            color: textColor,
-            padding: "10px 20px",
-            borderRadius: "8px",
-            "&:hover": {
-              backgroundColor: "#d32f2f",
-            },
-          }}
-          type="button"
-          onClick={onClear}
-        >
-          Clear
-        </Button>
-      </Box>
-      <Box sx={{ display: "flex", justifyContent: "center", mt: 1.5 }}>
-        <Chip
-          icon={<LockOutlinedIcon />}
-          label="All data stays on your device"
-          size="small"
-          variant="outlined"
-          sx={{
-            color: textColor,
-            borderColor: "rgba(255,255,255,0.15)",
-            opacity: 0.8,
-            fontSize: "0.75rem",
-          }}
-        />
+        {/* Left: tab toggle (passed from TabbedContent) + privacy chip */}
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1, flexWrap: "wrap" }}>
+          {leftChildren}
+          <Chip
+            icon={<LockOutlinedIcon />}
+            label="All data stays on your device"
+            size="small"
+            variant="outlined"
+            sx={{
+              color: textColor,
+              borderColor: "rgba(255,255,255,0.15)",
+              opacity: 0.8,
+              fontSize: "0.75rem",
+            }}
+          />
+        </Box>
+        <Box sx={{ display: "flex", gap: 1, justifyContent: "flex-end" }}>
+          <Button
+            key="clear-btn"
+            sx={{
+              backgroundColor: dangerColor,
+              color: textColor,
+              padding: "10px 20px",
+              borderRadius: "8px",
+              "&:hover": {
+                backgroundColor: "#d32f2f",
+              },
+            }}
+            type="button"
+            onClick={onClear}
+          >
+            Clear
+          </Button>
+          <ShareButton
+            profile={currProfile}
+            onCopied={() =>
+              addNotification("Profile URL copied to clipboard!", "success")
+            }
+          />
+        </Box>
       </Box>
       <NotificationStack>
         {notifications.map((n) => (
@@ -213,7 +222,7 @@ const InputBooleanField = ({
     >
       <Box
         sx={{
-          width: { xs: "100%", sm: "250px" },
+          width: { xs: "100%", sm: "200px" },
           display: "flex",
           justifyContent: "center",
         }}
@@ -239,12 +248,12 @@ const InputBooleanField = ({
             backgroundColor: bgColor,
             padding: "8px 16px",
             borderRadius: "8px",
-            border: "1px solid rgba(0, 0, 0, 0.12)",
+            border: "1px solid rgba(255, 255, 255, 0.23)",
             transition: "all 0.2s ease-in-out",
             "@media (hover: hover)": {
               "&:hover": {
                 borderColor: primaryColor,
-                backgroundColor: "rgba(0, 0, 0, 0.04)",
+                backgroundColor: "rgba(255, 255, 255, 0.04)",
               },
             },
             "& .MuiFormControlLabel-label": {
@@ -325,7 +334,7 @@ const InputNumberField = ({
         "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
           { display: "none" },
         "& input[type=number]": { MozAppearance: "textfield" },
-        width: { xs: "100%", sm: "250px" },
+        width: { xs: "100%", sm: "200px" },
         backgroundColor: bgColor,
         borderRadius: "8px",
         "& .MuiInputBase-root": {

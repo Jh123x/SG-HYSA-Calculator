@@ -7,65 +7,39 @@ exports[`Header > should match snapshot 1`] = `
     style="--Paper-shadow: none;"
   >
     <div
-      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-onx5yd-MuiToolbar-root"
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-uivzgp-MuiToolbar-root"
     >
       <h1
-        class="MuiTypography-root MuiTypography-h5 css-1bnr0ho-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-h5 css-1c4j0ho-MuiTypography-root"
       >
-        SG HYSA Calculator
+        SG High Yield Savings Accounts
       </h1>
       <div
-        class="MuiBox-root css-t508yj"
-      >
-        <div
-          class="MuiTabs-root css-1aj64px-MuiTabs-root"
-        >
-          <div
-            class="MuiTabs-scroller MuiTabs-fixed css-s2t35c-MuiTabs-scroller"
-            style="overflow: hidden; margin-bottom: 0px;"
-          >
-            <div
-              class="MuiTabs-list css-hzcega-MuiTabs-list"
-              role="tablist"
-            >
-              <button
-                aria-selected="true"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected css-1j3ayx4-MuiButtonBase-root-MuiTab-root"
-                role="tab"
-                tabindex="0"
-                type="button"
-              >
-                Current Rates
-              </button>
-              <button
-                aria-selected="false"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1j3ayx4-MuiButtonBase-root-MuiTab-root"
-                role="tab"
-                tabindex="-1"
-                type="button"
-              >
-                Rate History
-              </button>
-              <button
-                aria-selected="false"
-                class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-1j3ayx4-MuiButtonBase-root-MuiTab-root"
-                role="tab"
-                tabindex="-1"
-                type="button"
-              >
-                FAQ
-              </button>
-            </div>
-            <span
-              class="MuiTabs-indicator css-1qltlow-MuiTabs-indicator"
-              style="left: 0px; width: 0px;"
-            />
-          </div>
-        </div>
-      </div>
-      <div
         class="MuiBox-root css-jma0kd"
-      />
+      >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-18huccq-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="MuiButton-icon MuiButton-startIcon css-1sh91j5-MuiButton-startIcon"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="HelpOutlineOutlinedIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M11 18h2v-2h-2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4"
+              />
+            </svg>
+          </span>
+          FAQs
+        </button>
+      </div>
     </div>
   </header>
 </DocumentFragment>
