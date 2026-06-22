@@ -3,7 +3,7 @@
 exports[`App > should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="MuiBox-root css-90q4bv"
+    class="MuiBox-root css-1g2wnu2"
   >
     <header
       class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-rw9h23-MuiPaper-root-MuiAppBar-root"
@@ -46,7 +46,7 @@ exports[`App > should render correctly 1`] = `
       </div>
     </header>
     <main
-      class="MuiBox-root css-1lgiddr"
+      class="MuiBox-root css-3bihpr"
     >
       <div
         class="MuiContainer-root MuiContainer-maxWidthLg css-16oigsz-MuiContainer-root"

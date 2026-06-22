@@ -32,15 +32,17 @@ export const Layout = ({
 }: LayoutProps) => {
   const { isMobile } = useMobile();
 
-  // Mobile: normal document flow — no fixed viewport, no overflow clamping
-  const bodyOverflow = isMobile ? "auto" : "hidden";
+  // Desktop: fixed viewport with auto overflow — pages that fully consume their
+  // allocated space (e.g. ThreePanelLayout) don't scroll at the page level,
+  // while pages with natural document flow (e.g. FAQ) get a page-level scrollbar.
+  const bodyOverflow = isMobile ? "auto" : "auto";
   const rootHeight = isMobile ? "auto" : "100%";
   const rootOverflow = isMobile ? "visible" : undefined;
 
   const boxHeight = isMobile ? "auto" : "100dvh";
-  const boxOverflow = isMobile ? "visible" : "hidden";
+  const boxOverflow = isMobile ? "visible" : "auto";
 
-  const mainOverflow = isMobile ? "visible" : "hidden";
+  const mainOverflow = isMobile ? "visible" : "auto";
   const mainFlex = isMobile ? undefined : 1;
   const mainMinHeight = isMobile ? undefined : 0;
 
