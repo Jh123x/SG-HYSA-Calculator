@@ -10,9 +10,6 @@ export default interface Profile {
   LoanInstallment: number;
   OneTimeLoan: number;
   IsNTUCMember: boolean;
-  ReferredCustomer: boolean;
-  PayNowReceived: number;
-  FXSpend: number;
 }
 
 export const NewProfile = ({
@@ -27,9 +24,6 @@ export const NewProfile = ({
   LoanInstallment = 0,
   OneTimeLoan = 0,
   IsNTUCMember = false,
-  ReferredCustomer = false,
-  PayNowReceived = 0,
-  FXSpend = 0,
 }): Profile => {
   return {
     Savings,
@@ -43,8 +37,5 @@ export const NewProfile = ({
     LoanInstallment,
     IsNTUCMember,
     OneTimeLoan,
-    ReferredCustomer,
-    PayNowReceived,
-    FXSpend,
   };
 };

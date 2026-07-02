@@ -18,9 +18,6 @@ const emptyProfile: Profile = {
   LoanInstallment: 0,
   OneTimeLoan: 0,
   IsNTUCMember: false,
-  ReferredCustomer: false,
-  PayNowReceived: 0,
-  FXSpend: 0,
 };
 
 describe("collectBankPoints", () => {

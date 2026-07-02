@@ -104,14 +104,11 @@ export const trust_bank_zen_06_2026 = (profile: Profile): ResultInterest => {
 
 // === Trust Bank Flex Plan (Trust+ required, min S$100K) ===
 
-// Flex Plan Launch: October 8, 2025 — up to 2.50% p.a., 8 scoops
+// Flex Plan Launch: October 8, 2025 — up to 1.70% p.a. (sustainable: top 3 of 5 scoops)
 export const trust_bank_flex_10_2025 = (profile: Profile): ResultInterest => {
-  const { Savings, Salary, Spending, Investment, IsNTUCMember, MonthlyAccIncrease, ReferredCustomer, PayNowReceived, FXSpend } = profile;
+  const { Savings, Salary, Spending, Investment, IsNTUCMember, MonthlyAccIncrease } = profile;
 
   const scoops: number[] = [];
-
-  // Refer a new Trust credit card customer approved within the month → +1.20%
-  if (ReferredCustomer) scoops.push(1.20);
 
   // Invest S$20K in TrustInvest → +0.70%
   if (Investment >= 20_000) scoops.push(0.70);
@@ -130,12 +127,6 @@ export const trust_bank_flex_10_2025 = (profile: Profile): ResultInterest => {
   // Increase ADB by S$3K from previous month → +0.20%
   if (MonthlyAccIncrease >= 3_000) scoops.push(0.20);
 
-  // Receive S$1,500 in incoming PayNow → +0.20%
-  if (PayNowReceived >= 1500) scoops.push(0.20);
-
-  // Spend S$500 in foreign currency → +0.20%
-  if (FXSpend >= 500) scoops.push(0.20);
-
   scoops.sort((a, b) => b - a);
   const top3 = scoops.slice(0, 3);
   const bonusSum = top3.reduce((sum, v) => sum + v, 0);
@@ -148,14 +139,11 @@ export const trust_bank_flex_10_2025 = (profile: Profile): ResultInterest => {
   });
 };
 
-// March 1, 2026 — max trimmed to 2.40% (base ↓0.05%, salary ↓0.45%, ADB ↓0.30%, spend NTUC ↓0.20% / non-NTUC ↓0.10%, PayNow ↓0.15%, FX ↓0.15%)
+// March 1, 2026 — invest/salary/ADB rates trimmed
 export const trust_bank_flex_03_2026 = (profile: Profile): ResultInterest => {
-  const { Savings, Salary, Spending, Investment, IsNTUCMember, MonthlyAccIncrease, ReferredCustomer, PayNowReceived, FXSpend } = profile;
+  const { Savings, Salary, Spending, Investment, IsNTUCMember, MonthlyAccIncrease } = profile;
 
   const scoops: number[] = [];
-
-  // Refer a new Trust credit card customer approved within the month → +1.20%
-  if (ReferredCustomer) scoops.push(1.20);
 
   // Invest S$20K in TrustInvest → +0.70%
   if (Investment >= 20_000) scoops.push(0.70);
@@ -173,12 +161,6 @@ export const trust_bank_flex_03_2026 = (profile: Profile): ResultInterest => {
 
   // Increase ADB by S$3K from previous month → +0.20%
   if (MonthlyAccIncrease >= 3_000) scoops.push(0.20);
-
-  // Receive S$1,500 in incoming PayNow → +0.15%
-  if (PayNowReceived >= 1500) scoops.push(0.15);
-
-  // Spend S$500 in foreign currency → +0.15%
-  if (FXSpend >= 500) scoops.push(0.15);
 
   scoops.sort((a, b) => b - a);
   const top3 = scoops.slice(0, 3);
@@ -277,13 +259,13 @@ export const trustBankFlexHistory: RateSnapshot[] = [
     effectiveDate: "2025-10-08",
     interestFn: trust_bank_flex_10_2025,
     sourceUrl: "https://fintechnews.sg/119890/digital-banking-news-singapore/trust-bank-flex-savings/",
-    changeSummary: "Flex Plan launched. 8 bonus scoops: refer (+1.20%), invest S$20K (+0.70%), salary (+0.50%), $100K ADB (+0.40%), card spend (+0.30% NTUC/+0.20%), ADB inc $3K (+0.20%), PayNow $1.5K (+0.20%), FX S$500 (+0.20%). Base 0.10%. Up to 2.50% p.a. on S$1.2M. Trust+ required.",
+    changeSummary: "Flex Plan launched. 5 bonus scoops: invest S$20K (+0.70%), salary (+0.50%), $100K ADB (+0.40%), card spend (+0.30% NTUC/+0.20%), ADB inc $3K (+0.20%). Base 0.10%. Up to 1.70% p.a. on S$1.2M. Trust+ required.",
   },
   {
     effectiveDate: "2026-03-01",
     interestFn: trust_bank_flex_03_2026,
     sourceUrl: "https://growbeansprout.com/trust-bank-singapore-review",
-    changeSummary: "Rate cut: base ↓0.05%, salary ↓0.45%, ADB ↓0.30%, card spend NTUC ↓0.20%/non-NTUC ↓0.10%, PayNow ↓0.15%, FX ↓0.15%. Refer (+1.20%) and invest (+0.70%) unchanged. Max trimmed to 2.40% p.a.",
+    changeSummary: "Rate cut: salary ↓0.45%, ADB ↓0.30%, card spend NTUC ↓0.20%/non-NTUC ↓0.10%. Invest (+0.70%) unchanged. Max trimmed to 1.50% p.a.",
   },
   {
     effectiveDate: "2026-06-05",
