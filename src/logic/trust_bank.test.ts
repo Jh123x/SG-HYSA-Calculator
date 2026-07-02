@@ -289,14 +289,15 @@ describe("trust_bank_flex_10_2025", () => {
       expectedInterest: new ResultInterest(50, 50_000),
     },
     {
-      name: "max: invest + salary + $100K = 0.10+0.70+0.50+0.40 = 1.70% on 1.2M",
+      name: "max: refer + invest + salary = 0.10+1.20+0.70+0.50 = 2.50% on 1.2M",
       profile: NewProfile({
         Savings: 1_200_000,
         Salary: 1500,
         Investment: 20_000,
+        ReferredCustomer: true,
       }),
-      // 1.70% of 1.2M = 20,400
-      expectedInterest: new ResultInterest(20_400, 1_200_000),
+      // 2.50% of 1.2M = 30,000
+      expectedInterest: new ResultInterest(30_000, 1_200_000),
     },
     {
       name: "salary + spend(NTUC) + $100K = 0.10+0.50+0.30+0.40 = 1.30% on 100K",
@@ -319,25 +320,28 @@ describe("trust_bank_flex_10_2025", () => {
       expectedInterest: new ResultInterest(1200, 100_000),
     },
     {
-      name: "invest + $100K + ADB inc (top 3: invest 0.70, $100K 0.40, ADB inc 0.20) = 0.10+1.30 = 1.40%",
+      name: "invest + PayNow + FX + $100K + ADB inc (top 3: invest 0.70, $100K 0.40, ADB inc 0.20) = 0.10+1.30 = 1.40%",
       profile: NewProfile({
         Savings: 100_000,
         Investment: 20_000,
+        PayNowReceived: 1500,
+        FXSpend: 500,
         MonthlyAccIncrease: 3_000,
       }),
-      // scoops: 0.70, 0.40, 0.20 → top3: 0.70+0.40+0.20 = 1.30 + base 0.10 = 1.40%
+      // scoops: 0.70, 0.40, 0.20, 0.20, 0.20 → top3: 0.70+0.40+0.20 = 1.30 + base 0.10 = 1.40%
       expectedInterest: new ResultInterest(1400, 100_000),
     },
     {
-      name: "invest + $100K + salary + spend (top 3: 0.70+0.50+0.40) = 1.60% + 0.10 = 1.70%",
+      name: "refer + invest + $100K + salary + spend (top 3: 1.20+0.70+0.50) = 2.50%",
       profile: NewProfile({
         Savings: 100_000,
         Salary: 1500,
         Spending: 150,
         Investment: 20_000,
+        ReferredCustomer: true,
         IsNTUCMember: true,
       }),
-      expectedInterest: new ResultInterest(1700, 100_000),
+      expectedInterest: new ResultInterest(2500, 100_000),
     },
     {
       name: "zero balance",
@@ -362,14 +366,15 @@ describe("trust_bank_flex_03_2026", () => {
       expectedInterest: new ResultInterest(25, 50_000),
     },
     {
-      name: "max: invest + salary + $100K = 0.05+0.70+0.45+0.30 = 1.50% on 1.2M",
+      name: "max: refer + invest + salary = 0.05+1.20+0.70+0.45 = 2.40% on 1.2M",
       profile: NewProfile({
         Savings: 1_200_000,
         Salary: 1500,
         Investment: 20_000,
+        ReferredCustomer: true,
       }),
-      // 1.50% of 1.2M = 18,000
-      expectedInterest: new ResultInterest(18_000, 1_200_000),
+      // 2.40% of 1.2M = 28,800
+      expectedInterest: new ResultInterest(28_800, 1_200_000),
     },
     {
       name: "salary + spend(NTUC) + $100K = 0.05+0.45+0.20+0.30 = 1.00% on 100K",
@@ -392,22 +397,25 @@ describe("trust_bank_flex_03_2026", () => {
       expectedInterest: new ResultInterest(900, 100_000),
     },
     {
-      name: "invest + $100K + salary (top 3: 0.70+0.45+0.30) = 1.45% + 0.05 = 1.50%",
+      name: "refer + invest + $100K + salary (top 3: 1.20+0.70+0.45) = 2.40%",
       profile: NewProfile({
         Savings: 100_000,
         Salary: 1500,
         Investment: 20_000,
+        ReferredCustomer: true,
       }),
-      expectedInterest: new ResultInterest(1500, 100_000),
+      expectedInterest: new ResultInterest(2400, 100_000),
     },
     {
-      name: "ADB inc + $100K (top 2: 0.30+0.20) = 0.05+0.50 = 0.55%",
+      name: "PayNow + FX + ADB inc + $100K (top 3: 0.30+0.20+0.15) = 0.05+0.65 = 0.70%",
       profile: NewProfile({
         Savings: 100_000,
+        PayNowReceived: 1500,
+        FXSpend: 500,
         MonthlyAccIncrease: 3_000,
       }),
-      // scoops: 0.30($100K), 0.20(ADB inc) → sum: 0.50 + 0.05 = 0.55%
-      expectedInterest: new ResultInterest(550, 100_000),
+      // scoops: 0.30, 0.20, 0.15, 0.15 → top3: 0.30+0.20+0.15 = 0.65 + 0.05 = 0.70%
+      expectedInterest: new ResultInterest(700, 100_000),
     },
     {
       name: "zero balance",

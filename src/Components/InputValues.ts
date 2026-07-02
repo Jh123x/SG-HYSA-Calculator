@@ -83,4 +83,10 @@ export const booleanInputs: Array<InputArg<boolean>> = [
     fn: (profile, v) => ({ ...profile, IsNTUCMember: v }),
     getStateFromProfile: (profile: Profile) => profile.IsNTUCMember,
   },
+  {
+    label: "Referred Customer?",
+    tooltip: "Referred a new Trust credit card customer this month",
+    fn: (profile, v) => ({ ...profile, ReferredCustomer: v }),
+    getStateFromProfile: (profile: Profile) => profile.ReferredCustomer,
+  },
 ];

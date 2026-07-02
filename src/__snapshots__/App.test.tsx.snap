@@ -619,6 +619,41 @@ exports[`App > should render correctly 1`] = `
                     </span>
                   </label>
                 </div>
+                <div
+                  aria-label="Referred a new Trust credit card customer this month"
+                  class="MuiBox-root css-1k83hgb"
+                  data-mui-internal-clone-element="true"
+                >
+                  <label
+                    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-dct7n9-MuiFormControlLabel-root"
+                  >
+                    <span
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-19func1-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
+                    >
+                      <input
+                        class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
+                        data-indeterminate="false"
+                        type="checkbox"
+                      />
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                        data-testid="CheckBoxOutlineBlankIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
+                        />
+                      </svg>
+                    </span>
+                    <span
+                      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+                    >
+                      Referred Customer?
+                    </span>
+                  </label>
+                </div>
               </div>
             </div>
             <div
@@ -1348,20 +1383,20 @@ exports[`App > should render correctly 1`] = `
                               tabindex="0"
                             >
                               <div
-                                id="voiceover-_r_h_-1"
+                                id="voiceover-_r_i_-1"
                                 style="display: none;"
                               />
                               <div
-                                id="voiceover-_r_h_-2"
+                                id="voiceover-_r_i_-2"
                                 style="display: none;"
                               />
                               <div
-                                aria-labelledby="voiceover-_r_h_-1"
+                                aria-labelledby="voiceover-_r_i_-1"
                                 role="img"
                                 style="width: 100%; height: 100%; outline: none;"
                               />
                               <div
-                                aria-labelledby="voiceover-_r_h_-2"
+                                aria-labelledby="voiceover-_r_i_-2"
                                 role="img"
                                 style="width: 100%; height: 100%; outline: none;"
                               />
@@ -1411,7 +1446,7 @@ exports[`App > should render correctly 1`] = `
                                 />
                               </g>
                               <g
-                                clip-path="url(#_r_g_-clip-path)"
+                                clip-path="url(#_r_h_-clip-path)"
                               >
                                 <g
                                   class="MuiLineChart-areaPlot css-94vonx-MuiAreaPlot-root"
@@ -1420,7 +1455,7 @@ exports[`App > should render correctly 1`] = `
                                   class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
                                 >
                                   <clippath
-                                    id="_r_h_-uob-one-account-line-clip"
+                                    id="_r_i_-uob-one-account-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1431,7 +1466,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-uob-one-account-line-clip)"
+                                    clip-path="url(#_r_i_-uob-one-account-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1447,7 +1482,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-ocbc-360-account-line-clip"
+                                    id="_r_i_-ocbc-360-account-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1458,7 +1493,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-ocbc-360-account-line-clip)"
+                                    clip-path="url(#_r_i_-ocbc-360-account-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1474,7 +1509,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-mari-savings-account-line-clip"
+                                    id="_r_i_-mari-savings-account-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1485,7 +1520,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-mari-savings-account-line-clip)"
+                                    clip-path="url(#_r_i_-mari-savings-account-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1501,7 +1536,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-standard-chartered-bonus-saver-line-clip"
+                                    id="_r_i_-standard-chartered-bonus-saver-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1512,7 +1547,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-standard-chartered-bonus-saver-line-clip)"
+                                    clip-path="url(#_r_i_-standard-chartered-bonus-saver-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1528,7 +1563,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-trust-bank-signature-line-clip"
+                                    id="_r_i_-trust-bank-signature-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1539,7 +1574,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-trust-bank-signature-line-clip)"
+                                    clip-path="url(#_r_i_-trust-bank-signature-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1555,7 +1590,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-trust-bank-zen-line-clip"
+                                    id="_r_i_-trust-bank-zen-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1566,7 +1601,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-trust-bank-zen-line-clip)"
+                                    clip-path="url(#_r_i_-trust-bank-zen-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1582,7 +1617,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-trust-bank-flex-line-clip"
+                                    id="_r_i_-trust-bank-flex-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1593,7 +1628,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-trust-bank-flex-line-clip)"
+                                    clip-path="url(#_r_i_-trust-bank-flex-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1609,7 +1644,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-dbs-multiplier-account-line-clip"
+                                    id="_r_i_-dbs-multiplier-account-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1620,7 +1655,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-dbs-multiplier-account-line-clip)"
+                                    clip-path="url(#_r_i_-dbs-multiplier-account-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1636,7 +1671,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-gxs-savings-account-line-clip"
+                                    id="_r_i_-gxs-savings-account-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1647,7 +1682,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-gxs-savings-account-line-clip)"
+                                    clip-path="url(#_r_i_-gxs-savings-account-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1663,7 +1698,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-chocolate-finance-line-clip"
+                                    id="_r_i_-chocolate-finance-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1674,7 +1709,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-chocolate-finance-line-clip)"
+                                    clip-path="url(#_r_i_-chocolate-finance-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1690,7 +1725,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-boc-supersaver-line-clip"
+                                    id="_r_i_-boc-supersaver-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1701,7 +1736,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-boc-supersaver-line-clip)"
+                                    clip-path="url(#_r_i_-boc-supersaver-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1717,7 +1752,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-maybank-saveup-line-clip"
+                                    id="_r_i_-maybank-saveup-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1728,7 +1763,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-maybank-saveup-line-clip)"
+                                    clip-path="url(#_r_i_-maybank-saveup-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1744,7 +1779,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-maybank-isavvy-line-clip"
+                                    id="_r_i_-maybank-isavvy-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1755,7 +1790,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-maybank-isavvy-line-clip)"
+                                    clip-path="url(#_r_i_-maybank-isavvy-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1771,7 +1806,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-maybank-isavvy-plus-line-clip"
+                                    id="_r_i_-maybank-isavvy-plus-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1782,7 +1817,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-maybank-isavvy-plus-line-clip)"
+                                    clip-path="url(#_r_i_-maybank-isavvy-plus-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -1798,7 +1833,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </g>
                                   <clippath
-                                    id="_r_h_-citi-wealth-first-account-line-clip"
+                                    id="_r_i_-citi-wealth-first-account-line-clip"
                                   >
                                     <rect
                                       class="css-dbuw8t"
@@ -1809,7 +1844,7 @@ exports[`App > should render correctly 1`] = `
                                     />
                                   </clippath>
                                   <g
-                                    clip-path="url(#_r_h_-citi-wealth-first-account-line-clip)"
+                                    clip-path="url(#_r_i_-citi-wealth-first-account-line-clip)"
                                   >
                                     <path
                                       class="MuiLineChart-line"
@@ -2020,69 +2055,69 @@ exports[`App > should render correctly 1`] = `
                                   class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
                                 >
                                   <g
-                                    clip-path="url(#_r_h_-uob-one-account-line-clip)"
+                                    clip-path="url(#_r_i_-uob-one-account-line-clip)"
                                     data-series="uob-one-account"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-ocbc-360-account-line-clip)"
+                                    clip-path="url(#_r_i_-ocbc-360-account-line-clip)"
                                     data-series="ocbc-360-account"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-mari-savings-account-line-clip)"
+                                    clip-path="url(#_r_i_-mari-savings-account-line-clip)"
                                     data-series="mari-savings-account"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-standard-chartered-bonus-saver-line-clip)"
+                                    clip-path="url(#_r_i_-standard-chartered-bonus-saver-line-clip)"
                                     data-series="standard-chartered-bonus-saver"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-trust-bank-signature-line-clip)"
+                                    clip-path="url(#_r_i_-trust-bank-signature-line-clip)"
                                     data-series="trust-bank-signature"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-trust-bank-zen-line-clip)"
+                                    clip-path="url(#_r_i_-trust-bank-zen-line-clip)"
                                     data-series="trust-bank-zen"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-trust-bank-flex-line-clip)"
+                                    clip-path="url(#_r_i_-trust-bank-flex-line-clip)"
                                     data-series="trust-bank-flex"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-dbs-multiplier-account-line-clip)"
+                                    clip-path="url(#_r_i_-dbs-multiplier-account-line-clip)"
                                     data-series="dbs-multiplier-account"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-gxs-savings-account-line-clip)"
+                                    clip-path="url(#_r_i_-gxs-savings-account-line-clip)"
                                     data-series="gxs-savings-account"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-chocolate-finance-line-clip)"
+                                    clip-path="url(#_r_i_-chocolate-finance-line-clip)"
                                     data-series="chocolate-finance"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-boc-supersaver-line-clip)"
+                                    clip-path="url(#_r_i_-boc-supersaver-line-clip)"
                                     data-series="boc-supersaver"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-maybank-saveup-line-clip)"
+                                    clip-path="url(#_r_i_-maybank-saveup-line-clip)"
                                     data-series="maybank-saveup"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-maybank-isavvy-line-clip)"
+                                    clip-path="url(#_r_i_-maybank-isavvy-line-clip)"
                                     data-series="maybank-isavvy"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-maybank-isavvy-plus-line-clip)"
+                                    clip-path="url(#_r_i_-maybank-isavvy-plus-line-clip)"
                                     data-series="maybank-isavvy-plus"
                                   />
                                   <g
-                                    clip-path="url(#_r_h_-citi-wealth-first-account-line-clip)"
+                                    clip-path="url(#_r_i_-citi-wealth-first-account-line-clip)"
                                     data-series="citi-wealth-first-account"
                                   />
                                 </g>
                               </g>
                               <clippath
-                                id="_r_g_-clip-path"
+                                id="_r_h_-clip-path"
                               >
                                 <rect
                                   height="215"
