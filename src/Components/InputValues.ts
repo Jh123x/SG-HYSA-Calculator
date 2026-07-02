@@ -85,7 +85,7 @@ export const booleanInputs: Array<InputArg<boolean>> = [
   },
   {
     label: "Referred Customer?",
-    tooltip: "Referred a new Trust credit card customer this month",
+    tooltip: "Referred a new Trust credit card customer this month and completed application",
     fn: (profile, v) => ({ ...profile, ReferredCustomer: v }),
     getStateFromProfile: (profile: Profile) => profile.ReferredCustomer,
   },
