@@ -27,3 +27,8 @@ jobs:
         run: npm run test
       - name: Build
         run: npm run build
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hacktron Dependency Scan
+        uses: HacktronAI/dependency-scan@v1.0.0
