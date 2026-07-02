@@ -31,6 +31,7 @@ import { maribankHistory } from "../logic/maribank";
 import { deriveCurrentFromHistory } from "../logic/history";
 import { bocSuperSaverHistory } from "../logic/bank_of_china";
 import { chocoFinanceHistory } from "../logic/choco_finance";
+import { cimbFastSaverHistory } from "../logic/cimb_fastsaver";
 
 // Pre-compute Mari current rate so remarks are self-contained
 const _mariCurrentRate = (() => {
@@ -140,6 +141,13 @@ export const banks: Record<string, BankData> = {
     remarks:
       "Flat tiered base rates: 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).\n+1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.\n**Set 'Account Increment' > 0 to qualify for the bonus.**",
     history: maybankIsavvyPlusHistory,
+  },
+  "cimb-fastsaver": {
+    name: "CIMB FastSaver",
+    url: "https://www.cimb.com.sg/en/personal/banking-with-us/accounts/savings-accounts/cimb-fastsaver-account.html",
+    remarks:
+      "Tiered base rates (0.50%→1.08%→1.58%→0.50%).\nSalary/GIRO $1K: +0.50% on first $25K. Card spend $800: +1.00% on first $25K.\nFresh funds promo (Jul 2026): +0.70% on incremental ≥$10K (not modelled).",
+    history: cimbFastSaverHistory,
   },
   "citi-wealth-first-account": {
     name: "Citi Wealth First",

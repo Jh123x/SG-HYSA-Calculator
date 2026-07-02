@@ -537,7 +537,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="citi-wealth-first-account"
+            data-series="cimb-fastsaver"
           >
             <button
               class="MuiChartsLegend-series"
@@ -563,6 +563,46 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     d="M1.527,0.881L1.527,3.934L-1.527,3.934L-1.527,0.881L-4.171,-0.645L-2.644,-3.289L0,-1.763L2.644,-3.289L4.171,-0.645Z"
                     fill="#fff"
                     stroke="#800000"
+                    stroke-width="2"
+                    transform="translate(8, 8) "
+                  />
+                </svg>
+              </div>
+              <span
+                class="MuiChartsLabel-root MuiChartsLegend-label"
+              >
+                CIMB FastSaver
+              </span>
+            </button>
+          </li>
+          <li
+            class="MuiChartsLegend-item"
+            data-series="citi-wealth-first-account"
+          >
+            <button
+              class="MuiChartsLegend-series"
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+              >
+                <svg
+                  preserveAspectRatio="none"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    class="MuiChartsLabelMark-fill"
+                    d="M 1 8 L 15 8"
+                    stroke="#aaffc3"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    vector-effect="non-scaling-stroke"
+                  />
+                  <path
+                    d="M3.192,0A3.192,3.192,0,1,1,-3.192,0A3.192,3.192,0,1,1,3.192,0"
+                    fill="#fff"
+                    stroke="#aaffc3"
                     stroke-width="2"
                     transform="translate(8, 8) "
                   />
@@ -1051,6 +1091,33 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
+                  id="_r_1_-cimb-fastsaver-line-clip"
+                >
+                  <rect
+                    class="css-dbuw8t"
+                    height="500"
+                    width="100"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#_r_1_-cimb-fastsaver-line-clip)"
+                >
+                  <path
+                    class="MuiLineChart-line"
+                    cursor="unset"
+                    d="M85,435C84.583,431.542,84.167,428.083,83.75,424.625C83.333,421.167,82.917,418.711,82.5,414.25C82.083,409.789,81.667,404.325,81.25,397.858C80.833,391.39,80.417,382.918,80,375.448C79.583,367.978,79.167,362.237,78.75,353.037C78.333,343.838,77.917,331.181,77.5,320.253C77.083,309.324,76.667,296.528,76.25,287.468C75.833,278.407,75.417,271.213,75,265.888C74.583,260.562,74.167,258.971,73.75,255.513C73.333,252.054,72.917,248.596,72.5,245.138C72.083,241.679,71.667,238.221,71.25,234.763C70.833,231.304,70.417,227.846,70,224.388C69.583,220.929,69.167,217.471,68.75,214.013C68.333,210.554,67.917,207.096,67.5,203.638C67.083,200.179,66.667,196.721,66.25,193.263C65.833,189.804,65.417,186.346,65,182.888C64.583,179.429,64.167,175.971,63.75,172.513C63.333,169.054,62.917,165.596,62.5,162.138C62.083,158.679,61.667,155.221,61.25,151.763C60.833,148.304,60.417,144.846,60,141.388"
+                    data-series="cimb-fastsaver"
+                    data-series-id="cimb-fastsaver"
+                    fill="none"
+                    opacity="1"
+                    stroke="#800000"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </g>
+                <clippath
                   id="_r_1_-citi-wealth-first-account-line-clip"
                 >
                   <rect
@@ -1072,7 +1139,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     data-series-id="citi-wealth-first-account"
                     fill="none"
                     opacity="1"
-                    stroke="#800000"
+                    stroke="#aaffc3"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -1473,6 +1540,10 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                 <g
                   clip-path="url(#_r_1_-maybank-isavvy-plus-line-clip)"
                   data-series="maybank-isavvy-plus"
+                />
+                <g
+                  clip-path="url(#_r_1_-cimb-fastsaver-line-clip)"
+                  data-series="cimb-fastsaver"
                 />
                 <g
                   clip-path="url(#_r_1_-citi-wealth-first-account-line-clip)"
@@ -2057,7 +2128,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="citi-wealth-first-account"
+            data-series="cimb-fastsaver"
           >
             <button
               class="MuiChartsLegend-series"
@@ -2083,6 +2154,46 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     d="M1.527,0.881L1.527,3.934L-1.527,3.934L-1.527,0.881L-4.171,-0.645L-2.644,-3.289L0,-1.763L2.644,-3.289L4.171,-0.645Z"
                     fill="#fff"
                     stroke="#800000"
+                    stroke-width="2"
+                    transform="translate(8, 8) "
+                  />
+                </svg>
+              </div>
+              <span
+                class="MuiChartsLabel-root MuiChartsLegend-label"
+              >
+                CIMB FastSaver
+              </span>
+            </button>
+          </li>
+          <li
+            class="MuiChartsLegend-item"
+            data-series="citi-wealth-first-account"
+          >
+            <button
+              class="MuiChartsLegend-series"
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+              >
+                <svg
+                  preserveAspectRatio="none"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    class="MuiChartsLabelMark-fill"
+                    d="M 1 8 L 15 8"
+                    stroke="#aaffc3"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    vector-effect="non-scaling-stroke"
+                  />
+                  <path
+                    d="M3.192,0A3.192,3.192,0,1,1,-3.192,0A3.192,3.192,0,1,1,3.192,0"
+                    fill="#fff"
+                    stroke="#aaffc3"
                     stroke-width="2"
                     transform="translate(8, 8) "
                   />
@@ -2543,6 +2654,33 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
+                  id="_r_4_-cimb-fastsaver-line-clip"
+                >
+                  <rect
+                    class="css-dbuw8t"
+                    height="500"
+                    width="100"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#_r_4_-cimb-fastsaver-line-clip)"
+                >
+                  <path
+                    class="MuiLineChart-line"
+                    cursor="unset"
+                    d="M85,435C84.583,425.778,84.167,416.556,83.75,407.333C83.333,398.111,82.917,387.828,82.5,379.667C82.083,371.505,81.667,364.404,81.25,358.363C80.833,352.323,80.417,348.403,80,343.423C79.583,338.443,79.167,334.616,78.75,328.483C78.333,322.351,77.917,313.912,77.5,306.627C77.083,299.341,76.667,290.811,76.25,284.77C75.833,278.729,75.417,273.934,75,270.383C74.583,266.833,74.167,265.772,73.75,263.467C73.333,261.161,72.917,258.856,72.5,256.55C72.083,254.244,71.667,251.939,71.25,249.633C70.833,247.328,70.417,245.022,70,242.717C69.583,240.411,69.167,238.106,68.75,235.8C68.333,233.494,67.917,231.189,67.5,228.883C67.083,226.578,66.667,224.272,66.25,221.967C65.833,219.661,65.417,217.356,65,215.05C64.583,212.744,64.167,210.439,63.75,208.133C63.333,205.828,62.917,203.522,62.5,201.217C62.083,198.911,61.667,196.606,61.25,194.3C60.833,191.994,60.417,189.689,60,187.383"
+                    data-series="cimb-fastsaver"
+                    data-series-id="cimb-fastsaver"
+                    fill="none"
+                    opacity="1"
+                    stroke="#800000"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </g>
+                <clippath
                   id="_r_4_-citi-wealth-first-account-line-clip"
                 >
                   <rect
@@ -2564,7 +2702,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     data-series-id="citi-wealth-first-account"
                     fill="none"
                     opacity="1"
-                    stroke="#800000"
+                    stroke="#aaffc3"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -2865,6 +3003,10 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                 <g
                   clip-path="url(#_r_4_-maybank-isavvy-plus-line-clip)"
                   data-series="maybank-isavvy-plus"
+                />
+                <g
+                  clip-path="url(#_r_4_-cimb-fastsaver-line-clip)"
+                  data-series="cimb-fastsaver"
                 />
                 <g
                   clip-path="url(#_r_4_-citi-wealth-first-account-line-clip)"

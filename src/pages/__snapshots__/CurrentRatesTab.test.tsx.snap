@@ -549,7 +549,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </li>
                   <li
                     class="MuiChartsLegend-item"
-                    data-series="citi-wealth-first-account"
+                    data-series="cimb-fastsaver"
                   >
                     <button
                       class="MuiChartsLegend-series"
@@ -575,6 +575,46 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             d="M1.527,0.881L1.527,3.934L-1.527,3.934L-1.527,0.881L-4.171,-0.645L-2.644,-3.289L0,-1.763L2.644,-3.289L4.171,-0.645Z"
                             fill="#fff"
                             stroke="#800000"
+                            stroke-width="2"
+                            transform="translate(8, 8) "
+                          />
+                        </svg>
+                      </div>
+                      <span
+                        class="MuiChartsLabel-root MuiChartsLegend-label"
+                      >
+                        CIMB FastSaver
+                      </span>
+                    </button>
+                  </li>
+                  <li
+                    class="MuiChartsLegend-item"
+                    data-series="citi-wealth-first-account"
+                  >
+                    <button
+                      class="MuiChartsLegend-series"
+                      type="button"
+                    >
+                      <div
+                        aria-hidden="true"
+                        class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                      >
+                        <svg
+                          preserveAspectRatio="none"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            class="MuiChartsLabelMark-fill"
+                            d="M 1 8 L 15 8"
+                            stroke="#aaffc3"
+                            stroke-linecap="round"
+                            stroke-width="2"
+                            vector-effect="non-scaling-stroke"
+                          />
+                          <path
+                            d="M3.192,0A3.192,3.192,0,1,1,-3.192,0A3.192,3.192,0,1,1,3.192,0"
+                            fill="#fff"
+                            stroke="#aaffc3"
                             stroke-width="2"
                             transform="translate(8, 8) "
                           />
@@ -1021,6 +1061,33 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                           />
                         </g>
                         <clippath
+                          id="_r_1_-cimb-fastsaver-line-clip"
+                        >
+                          <rect
+                            class="css-dbuw8t"
+                            height="300"
+                            width="100"
+                            x="0"
+                            y="0"
+                          />
+                        </clippath>
+                        <g
+                          clip-path="url(#_r_1_-cimb-fastsaver-line-clip)"
+                        >
+                          <path
+                            class="MuiLineChart-line"
+                            cursor="unset"
+                            d="M85,235C84.583,233.208,84.167,231.417,83.75,229.625C83.333,227.833,82.917,226.561,82.5,224.25C82.083,221.939,81.667,219.108,81.25,215.758C80.833,212.407,80.417,208.018,80,204.148C79.583,200.278,79.167,197.303,78.75,192.538C78.333,187.772,77.917,181.214,77.5,175.553C77.083,169.891,76.667,163.262,76.25,158.568C75.833,153.873,75.417,150.147,75,147.388C74.583,144.628,74.167,143.804,73.75,142.013C73.333,140.221,72.917,138.429,72.5,136.638C72.083,134.846,71.667,133.054,71.25,131.263C70.833,129.471,70.417,127.679,70,125.888C69.583,124.096,69.167,122.304,68.75,120.513C68.333,118.721,67.917,116.929,67.5,115.138C67.083,113.346,66.667,111.554,66.25,109.763C65.833,107.971,65.417,106.179,65,104.388C64.583,102.596,64.167,100.804,63.75,99.013C63.333,97.221,62.917,95.429,62.5,93.638C62.083,91.846,61.667,90.054,61.25,88.263C60.833,86.471,60.417,84.679,60,82.888"
+                            data-series="cimb-fastsaver"
+                            data-series-id="cimb-fastsaver"
+                            fill="none"
+                            opacity="1"
+                            stroke="#800000"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                          />
+                        </g>
+                        <clippath
                           id="_r_1_-citi-wealth-first-account-line-clip"
                         >
                           <rect
@@ -1042,7 +1109,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             data-series-id="citi-wealth-first-account"
                             fill="none"
                             opacity="1"
-                            stroke="#800000"
+                            stroke="#aaffc3"
                             stroke-linejoin="round"
                             stroke-width="2"
                           />
@@ -1293,6 +1360,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                         <g
                           clip-path="url(#_r_1_-maybank-isavvy-plus-line-clip)"
                           data-series="maybank-isavvy-plus"
+                        />
+                        <g
+                          clip-path="url(#_r_1_-cimb-fastsaver-line-clip)"
+                          data-series="cimb-fastsaver"
                         />
                         <g
                           clip-path="url(#_r_1_-citi-wealth-first-account-line-clip)"
@@ -2441,6 +2512,82 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1uj3bz2-MuiTableCell-root"
                   >
+                    CIMB FastSaver
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-wtka4l-MuiTableCell-root"
+                  >
+                    $395.00
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-wtka4l-MuiTableCell-root"
+                  >
+                    0.79%
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-7t2r29-MuiTableCell-root"
+                  >
+                    Tiered base rates (0.50%→1.08%→1.58%→0.50%).
+                    <br />
+                    Salary/GIRO $1K: +0.50% on first $25K. Card spend $800: +1.00% on first $25K.
+                    <br />
+                    Fresh funds promo (Jul 2026): +0.70% on incremental ≥$10K (not modelled).
+                  </td>
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-bcc6o7-MuiTableCell-root"
+                  >
+                    <div
+                      class="MuiBox-root css-1mdn2c2"
+                    >
+                      <button
+                        aria-label="View details"
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-gf9txo-MuiButtonBase-root-MuiIconButton-root"
+                        data-mui-internal-clone-element="true"
+                        tabindex="0"
+                        type="button"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                          data-testid="OpenInNewIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                          />
+                        </svg>
+                      </button>
+                      <a
+                        aria-label="Visit official website"
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-gf9txo-MuiButtonBase-root-MuiIconButton-root"
+                        data-mui-internal-clone-element="true"
+                        href="https://www.cimb.com.sg/en/personal/banking-with-us/accounts/savings-accounts/cimb-fastsaver-account.html"
+                        rel="noopener noreferrer"
+                        tabindex="0"
+                        target="_blank"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                          data-testid="LanguageIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr
+                  class="MuiTableRow-root MuiTableRow-hover css-dlhzsk-MuiTableRow-root"
+                >
+                  <td
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1uj3bz2-MuiTableCell-root"
+                  >
                     Citi Wealth First
                   </td>
                   <td
@@ -3062,7 +3209,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </li>
             <li
               class="MuiChartsLegend-item"
-              data-series="citi-wealth-first-account"
+              data-series="cimb-fastsaver"
             >
               <button
                 class="MuiChartsLegend-series"
@@ -3096,6 +3243,46 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 <span
                   class="MuiChartsLabel-root MuiChartsLegend-label"
                 >
+                  CIMB FastSaver
+                </span>
+              </button>
+            </li>
+            <li
+              class="MuiChartsLegend-item"
+              data-series="citi-wealth-first-account"
+            >
+              <button
+                class="MuiChartsLegend-series"
+                type="button"
+              >
+                <div
+                  aria-hidden="true"
+                  class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                >
+                  <svg
+                    preserveAspectRatio="none"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      class="MuiChartsLabelMark-fill"
+                      d="M 1 8 L 15 8"
+                      stroke="#aaffc3"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      vector-effect="non-scaling-stroke"
+                    />
+                    <path
+                      d="M3.192,0A3.192,3.192,0,1,1,-3.192,0A3.192,3.192,0,1,1,3.192,0"
+                      fill="#fff"
+                      stroke="#aaffc3"
+                      stroke-width="2"
+                      transform="translate(8, 8) "
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="MuiChartsLabel-root MuiChartsLegend-label"
+                >
                   Citi Wealth First
                 </span>
               </button>
@@ -3111,20 +3298,20 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               tabindex="0"
             >
               <div
-                id="voiceover-_r_1s_-1"
+                id="voiceover-_r_20_-1"
                 style="display: none;"
               />
               <div
-                id="voiceover-_r_1s_-2"
+                id="voiceover-_r_20_-2"
                 style="display: none;"
               />
               <div
-                aria-labelledby="voiceover-_r_1s_-1"
+                aria-labelledby="voiceover-_r_20_-1"
                 role="img"
                 style="width: 100%; height: 100%; outline: none;"
               />
               <div
-                aria-labelledby="voiceover-_r_1s_-2"
+                aria-labelledby="voiceover-_r_20_-2"
                 role="img"
                 style="width: 100%; height: 100%; outline: none;"
               />
@@ -3174,7 +3361,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 />
               </g>
               <g
-                clip-path="url(#_r_1r_-clip-path)"
+                clip-path="url(#_r_1v_-clip-path)"
               >
                 <g
                   class="MuiLineChart-areaPlot css-94vonx-MuiAreaPlot-root"
@@ -3183,7 +3370,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
                 >
                   <clippath
-                    id="_r_1s_-uob-one-account-line-clip"
+                    id="_r_20_-uob-one-account-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3194,7 +3381,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-uob-one-account-line-clip)"
+                    clip-path="url(#_r_20_-uob-one-account-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3210,7 +3397,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-ocbc-360-account-line-clip"
+                    id="_r_20_-ocbc-360-account-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3221,7 +3408,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-ocbc-360-account-line-clip)"
+                    clip-path="url(#_r_20_-ocbc-360-account-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3237,7 +3424,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-mari-savings-account-line-clip"
+                    id="_r_20_-mari-savings-account-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3248,7 +3435,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-mari-savings-account-line-clip)"
+                    clip-path="url(#_r_20_-mari-savings-account-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3264,7 +3451,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-standard-chartered-bonus-saver-line-clip"
+                    id="_r_20_-standard-chartered-bonus-saver-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3275,7 +3462,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-standard-chartered-bonus-saver-line-clip)"
+                    clip-path="url(#_r_20_-standard-chartered-bonus-saver-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3291,7 +3478,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-trust-bank-signature-line-clip"
+                    id="_r_20_-trust-bank-signature-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3302,7 +3489,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-trust-bank-signature-line-clip)"
+                    clip-path="url(#_r_20_-trust-bank-signature-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3318,7 +3505,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-trust-bank-zen-line-clip"
+                    id="_r_20_-trust-bank-zen-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3329,7 +3516,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-trust-bank-zen-line-clip)"
+                    clip-path="url(#_r_20_-trust-bank-zen-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3345,7 +3532,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-dbs-multiplier-account-line-clip"
+                    id="_r_20_-dbs-multiplier-account-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3356,7 +3543,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-dbs-multiplier-account-line-clip)"
+                    clip-path="url(#_r_20_-dbs-multiplier-account-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3372,7 +3559,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-gxs-savings-account-line-clip"
+                    id="_r_20_-gxs-savings-account-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3383,7 +3570,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-gxs-savings-account-line-clip)"
+                    clip-path="url(#_r_20_-gxs-savings-account-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3399,7 +3586,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-chocolate-finance-line-clip"
+                    id="_r_20_-chocolate-finance-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3410,7 +3597,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-chocolate-finance-line-clip)"
+                    clip-path="url(#_r_20_-chocolate-finance-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3426,7 +3613,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-boc-supersaver-line-clip"
+                    id="_r_20_-boc-supersaver-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3437,7 +3624,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-boc-supersaver-line-clip)"
+                    clip-path="url(#_r_20_-boc-supersaver-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3453,7 +3640,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-maybank-saveup-line-clip"
+                    id="_r_20_-maybank-saveup-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3464,7 +3651,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-maybank-saveup-line-clip)"
+                    clip-path="url(#_r_20_-maybank-saveup-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3480,7 +3667,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-maybank-isavvy-line-clip"
+                    id="_r_20_-maybank-isavvy-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3491,7 +3678,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-maybank-isavvy-line-clip)"
+                    clip-path="url(#_r_20_-maybank-isavvy-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3507,7 +3694,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-maybank-isavvy-plus-line-clip"
+                    id="_r_20_-maybank-isavvy-plus-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3518,7 +3705,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-maybank-isavvy-plus-line-clip)"
+                    clip-path="url(#_r_20_-maybank-isavvy-plus-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3534,7 +3721,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </g>
                   <clippath
-                    id="_r_1s_-citi-wealth-first-account-line-clip"
+                    id="_r_20_-cimb-fastsaver-line-clip"
                   >
                     <rect
                       class="css-dbuw8t"
@@ -3545,7 +3732,34 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                   <g
-                    clip-path="url(#_r_1s_-citi-wealth-first-account-line-clip)"
+                    clip-path="url(#_r_20_-cimb-fastsaver-line-clip)"
+                  >
+                    <path
+                      class="MuiLineChart-line"
+                      cursor="unset"
+                      d="M85,275C84.917,272.875,84.833,270.75,84.75,268.625C84.667,266.5,84.583,264.991,84.5,262.25C84.417,259.509,84.333,256.151,84.25,252.177C84.167,248.204,84.083,242.998,84,238.408C83.917,233.818,83.833,230.29,83.75,224.638C83.667,218.985,83.583,211.208,83.5,204.493C83.417,197.778,83.333,189.915,83.25,184.348C83.167,178.78,83.083,174.36,83,171.088C82.917,167.815,82.833,166.838,82.75,164.713C82.667,162.588,82.583,160.463,82.5,158.338C82.417,156.213,82.333,154.088,82.25,151.963C82.167,149.838,82.083,147.713,82,145.588C81.917,143.463,81.833,141.338,81.75,139.213C81.667,137.088,81.583,134.963,81.5,132.838C81.417,130.713,81.333,128.588,81.25,126.463C81.167,124.338,81.083,122.212,81,120.087C80.917,117.962,80.833,115.838,80.75,113.713C80.667,111.588,80.583,109.463,80.5,107.338C80.417,105.213,80.333,103.088,80.25,100.963C80.167,98.838,80.083,96.713,80,94.588"
+                      data-series="cimb-fastsaver"
+                      data-series-id="cimb-fastsaver"
+                      fill="none"
+                      opacity="1"
+                      stroke="#800000"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <clippath
+                    id="_r_20_-citi-wealth-first-account-line-clip"
+                  >
+                    <rect
+                      class="css-dbuw8t"
+                      height="340"
+                      width="100"
+                      x="0"
+                      y="0"
+                    />
+                  </clippath>
+                  <g
+                    clip-path="url(#_r_20_-citi-wealth-first-account-line-clip)"
                   >
                     <path
                       class="MuiLineChart-line"
@@ -3555,7 +3769,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                       data-series-id="citi-wealth-first-account"
                       fill="none"
                       opacity="1"
-                      stroke="#800000"
+                      stroke="#aaffc3"
                       stroke-linejoin="round"
                       stroke-width="2"
                     />
@@ -3756,65 +3970,69 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
                 >
                   <g
-                    clip-path="url(#_r_1s_-uob-one-account-line-clip)"
+                    clip-path="url(#_r_20_-uob-one-account-line-clip)"
                     data-series="uob-one-account"
                   />
                   <g
-                    clip-path="url(#_r_1s_-ocbc-360-account-line-clip)"
+                    clip-path="url(#_r_20_-ocbc-360-account-line-clip)"
                     data-series="ocbc-360-account"
                   />
                   <g
-                    clip-path="url(#_r_1s_-mari-savings-account-line-clip)"
+                    clip-path="url(#_r_20_-mari-savings-account-line-clip)"
                     data-series="mari-savings-account"
                   />
                   <g
-                    clip-path="url(#_r_1s_-standard-chartered-bonus-saver-line-clip)"
+                    clip-path="url(#_r_20_-standard-chartered-bonus-saver-line-clip)"
                     data-series="standard-chartered-bonus-saver"
                   />
                   <g
-                    clip-path="url(#_r_1s_-trust-bank-signature-line-clip)"
+                    clip-path="url(#_r_20_-trust-bank-signature-line-clip)"
                     data-series="trust-bank-signature"
                   />
                   <g
-                    clip-path="url(#_r_1s_-trust-bank-zen-line-clip)"
+                    clip-path="url(#_r_20_-trust-bank-zen-line-clip)"
                     data-series="trust-bank-zen"
                   />
                   <g
-                    clip-path="url(#_r_1s_-dbs-multiplier-account-line-clip)"
+                    clip-path="url(#_r_20_-dbs-multiplier-account-line-clip)"
                     data-series="dbs-multiplier-account"
                   />
                   <g
-                    clip-path="url(#_r_1s_-gxs-savings-account-line-clip)"
+                    clip-path="url(#_r_20_-gxs-savings-account-line-clip)"
                     data-series="gxs-savings-account"
                   />
                   <g
-                    clip-path="url(#_r_1s_-chocolate-finance-line-clip)"
+                    clip-path="url(#_r_20_-chocolate-finance-line-clip)"
                     data-series="chocolate-finance"
                   />
                   <g
-                    clip-path="url(#_r_1s_-boc-supersaver-line-clip)"
+                    clip-path="url(#_r_20_-boc-supersaver-line-clip)"
                     data-series="boc-supersaver"
                   />
                   <g
-                    clip-path="url(#_r_1s_-maybank-saveup-line-clip)"
+                    clip-path="url(#_r_20_-maybank-saveup-line-clip)"
                     data-series="maybank-saveup"
                   />
                   <g
-                    clip-path="url(#_r_1s_-maybank-isavvy-line-clip)"
+                    clip-path="url(#_r_20_-maybank-isavvy-line-clip)"
                     data-series="maybank-isavvy"
                   />
                   <g
-                    clip-path="url(#_r_1s_-maybank-isavvy-plus-line-clip)"
+                    clip-path="url(#_r_20_-maybank-isavvy-plus-line-clip)"
                     data-series="maybank-isavvy-plus"
                   />
                   <g
-                    clip-path="url(#_r_1s_-citi-wealth-first-account-line-clip)"
+                    clip-path="url(#_r_20_-cimb-fastsaver-line-clip)"
+                    data-series="cimb-fastsaver"
+                  />
+                  <g
+                    clip-path="url(#_r_20_-citi-wealth-first-account-line-clip)"
                     data-series="citi-wealth-first-account"
                   />
                 </g>
               </g>
               <clippath
-                id="_r_1r_-clip-path"
+                id="_r_1v_-clip-path"
               >
                 <rect
                   height="255"
@@ -3883,7 +4101,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             aria-hidden="true"
             aria-invalid="false"
             class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-            id="_r_1v_"
+            id="_r_23_"
             tabindex="-1"
             value="effectiveInterest"
           />
@@ -4206,6 +4424,103 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   class="MuiTypography-root MuiTypography-body2 css-nycd5i-MuiTypography-root"
                 >
                   0.88%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-bpyjmg"
+          >
+            <span
+              aria-label="View details"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-gf9txo-MuiButtonBase-root-MuiIconButton-root"
+              data-mui-internal-clone-element="true"
+              role="button"
+              tabindex="0"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                data-testid="OpenInNewIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                />
+              </svg>
+            </span>
+            <span
+              aria-label="Visit official website"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-gf9txo-MuiButtonBase-root-MuiIconButton-root"
+              data-mui-internal-clone-element="true"
+              role="button"
+              tabindex="0"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                data-testid="LanguageIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                />
+              </svg>
+            </span>
+          </div>
+          <span
+            class="MuiCardActionArea-focusHighlight css-1h5un5t-MuiCardActionArea-focusHighlight"
+          />
+        </button>
+      </div>
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ddgdsm-MuiPaper-root-MuiCard-root"
+        style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+      >
+        <button
+          class="MuiButtonBase-root MuiCardActionArea-root css-rd2oev-MuiButtonBase-root-MuiCardActionArea-root"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="MuiCardContent-root css-1vru6vm-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle1 css-12wxk7q-MuiTypography-root"
+            >
+              CIMB FastSaver
+            </h6>
+            <div
+              class="MuiBox-root css-10egq61"
+            >
+              <div
+                class="MuiBox-root css-0"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-wlf20f-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-nycd5i-MuiTypography-root"
+                >
+                  $395.00
+                </p>
+              </div>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-wlf20f-MuiTypography-root"
+                >
+                  EIR
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-nycd5i-MuiTypography-root"
+                >
+                  0.79%
                 </p>
               </div>
             </div>
