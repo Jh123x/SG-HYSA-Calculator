@@ -26,6 +26,7 @@ import { dbsMultiplierHistory } from "../logic/dbs_multiplier";
 import {
   trustBankZenHistory,
   trustBankSignatureHistory,
+  trustBankFlexHistory,
 } from "../logic/trust_bank";
 import { maribankHistory } from "../logic/maribank";
 import { deriveCurrentFromHistory } from "../logic/history";
@@ -91,6 +92,12 @@ export const banks: Record<string, BankData> = {
     url: "https://trustbank.sg/savings-account/",
     remarks: "A Flat 0.4% interest rate up to 1.2 million",
     history: trustBankZenHistory,
+  },
+  "trust-bank-flex": {
+    name: "Trust Bank (Flex)",
+    url: "https://trustbank.sg/trust-plus/",
+    remarks: "Flex Plan: picks top 3 qualifying bonus scoops.\nScoops: salary $1.5K (+0.45%), 5×$30 spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%).\n**Trust+ required (min S$100K).**",
+    history: trustBankFlexHistory,
   },
   "dbs-multiplier-account": {
     name: "DBS Multiplier",
