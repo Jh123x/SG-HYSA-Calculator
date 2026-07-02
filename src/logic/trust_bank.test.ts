@@ -5,6 +5,8 @@ import {
   trust_bank_signature_06_2026,
   trust_bank_zen_06_2026,
   trust_bank_flex_07_2026,
+  trust_bank_flex_10_2025,
+  trust_bank_flex_03_2026,
 } from "./trust_bank";
 
 interface testCases {
@@ -274,6 +276,157 @@ describe("trust_bank_flex_07_2026", () => {
   for (const testCase of tests) {
     it(testCase.name, () => {
       const result = trust_bank_flex_07_2026(testCase.profile);
+      expect(result).toEqual(testCase.expectedInterest);
+    });
+  }
+});
+
+describe("trust_bank_flex_10_2025", () => {
+  const tests: testCases[] = [
+    {
+      name: "no conditions — base 0.10% only",
+      profile: NewProfile({ Savings: 50_000 }),
+      expectedInterest: new ResultInterest(50, 50_000),
+    },
+    {
+      name: "max: refer + invest + salary = 0.10+1.20+0.70+0.50 = 2.50% on 1.2M",
+      profile: NewProfile({
+        Savings: 1_200_000,
+        Salary: 1500,
+        Investment: 20_000,
+        ReferredCustomer: true,
+      }),
+      // 2.50% of 1.2M = 30,000
+      expectedInterest: new ResultInterest(30_000, 1_200_000),
+    },
+    {
+      name: "salary + spend(NTUC) + $100K = 0.10+0.50+0.30+0.40 = 1.30% on 100K",
+      profile: NewProfile({
+        Savings: 100_000,
+        Salary: 1500,
+        Spending: 150,
+        IsNTUCMember: true,
+      }),
+      expectedInterest: new ResultInterest(1300, 100_000),
+    },
+    {
+      name: "salary + spend(non-NTUC) + $100K = 0.10+0.50+0.20+0.40 = 1.20%",
+      profile: NewProfile({
+        Savings: 100_000,
+        Salary: 1500,
+        Spending: 150,
+        IsNTUCMember: false,
+      }),
+      expectedInterest: new ResultInterest(1200, 100_000),
+    },
+    {
+      name: "invest + PayNow + FX + $100K + ADB inc (top 3: invest 0.70, $100K 0.40, ADB inc 0.20) = 0.10+1.30 = 1.40%",
+      profile: NewProfile({
+        Savings: 100_000,
+        Investment: 20_000,
+        PayNowReceived: 1500,
+        FXSpend: 500,
+        MonthlyAccIncrease: 3_000,
+      }),
+      // scoops: 0.70, 0.40, 0.20, 0.20, 0.20 → top3: 0.70+0.40+0.20 = 1.30 + base 0.10 = 1.40%
+      expectedInterest: new ResultInterest(1400, 100_000),
+    },
+    {
+      name: "refer + invest + $100K + salary + spend (top 3: 1.20+0.70+0.50) = 2.50%",
+      profile: NewProfile({
+        Savings: 100_000,
+        Salary: 1500,
+        Spending: 150,
+        Investment: 20_000,
+        ReferredCustomer: true,
+        IsNTUCMember: true,
+      }),
+      expectedInterest: new ResultInterest(2500, 100_000),
+    },
+    {
+      name: "zero balance",
+      profile: NewProfile({}),
+      expectedInterest: new ResultInterest(0, 0),
+    },
+  ];
+
+  for (const testCase of tests) {
+    it(testCase.name, () => {
+      const result = trust_bank_flex_10_2025(testCase.profile);
+      expect(result).toEqual(testCase.expectedInterest);
+    });
+  }
+});
+
+describe("trust_bank_flex_03_2026", () => {
+  const tests: testCases[] = [
+    {
+      name: "no conditions — base 0.05% only",
+      profile: NewProfile({ Savings: 50_000 }),
+      expectedInterest: new ResultInterest(25, 50_000),
+    },
+    {
+      name: "max: refer + invest + salary = 0.05+1.20+0.70+0.45 = 2.40% on 1.2M",
+      profile: NewProfile({
+        Savings: 1_200_000,
+        Salary: 1500,
+        Investment: 20_000,
+        ReferredCustomer: true,
+      }),
+      // 2.40% of 1.2M = 28,800
+      expectedInterest: new ResultInterest(28_800, 1_200_000),
+    },
+    {
+      name: "salary + spend(NTUC) + $100K = 0.05+0.45+0.20+0.30 = 1.00% on 100K",
+      profile: NewProfile({
+        Savings: 100_000,
+        Salary: 1500,
+        Spending: 150,
+        IsNTUCMember: true,
+      }),
+      expectedInterest: new ResultInterest(1000, 100_000),
+    },
+    {
+      name: "salary + spend(non-NTUC) + $100K = 0.05+0.45+0.10+0.30 = 0.90%",
+      profile: NewProfile({
+        Savings: 100_000,
+        Salary: 1500,
+        Spending: 150,
+        IsNTUCMember: false,
+      }),
+      expectedInterest: new ResultInterest(900, 100_000),
+    },
+    {
+      name: "refer + invest + $100K + salary (top 3: 1.20+0.70+0.45) = 2.40%",
+      profile: NewProfile({
+        Savings: 100_000,
+        Salary: 1500,
+        Investment: 20_000,
+        ReferredCustomer: true,
+      }),
+      expectedInterest: new ResultInterest(2400, 100_000),
+    },
+    {
+      name: "PayNow + FX + ADB inc + $100K (top 3: 0.30+0.20+0.15) = 0.05+0.65 = 0.70%",
+      profile: NewProfile({
+        Savings: 100_000,
+        PayNowReceived: 1500,
+        FXSpend: 500,
+        MonthlyAccIncrease: 3_000,
+      }),
+      // scoops: 0.30, 0.20, 0.15, 0.15 → top3: 0.30+0.20+0.15 = 0.65 + 0.05 = 0.70%
+      expectedInterest: new ResultInterest(700, 100_000),
+    },
+    {
+      name: "zero balance",
+      profile: NewProfile({}),
+      expectedInterest: new ResultInterest(0, 0),
+    },
+  ];
+
+  for (const testCase of tests) {
+    it(testCase.name, () => {
+      const result = trust_bank_flex_03_2026(testCase.profile);
       expect(result).toEqual(testCase.expectedInterest);
     });
   }
