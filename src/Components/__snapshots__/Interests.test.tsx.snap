@@ -335,7 +335,7 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              2026-07-01
+              2025-10-20
             </td>
           </tr>
           <tr
@@ -3004,7 +3004,7 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
             >
-              2026-07-01
+              2025-10-20
             </td>
           </tr>
           <tr
