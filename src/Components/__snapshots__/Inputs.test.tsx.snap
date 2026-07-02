@@ -529,6 +529,110 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         </div>
       </div>
       <div
+        class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="false"
+          for="_r_b_"
+          id="_r_b_-label"
+        >
+          <div
+            style="display: flex; flex-direction: row;"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+            >
+              PayNow Received
+            </p>
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_b_"
+            placeholder="Incoming PayNow transfers monthly"
+            type="number"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-1n64csd-MuiNotchedOutlined-root"
+            >
+              <span>
+                <div
+                  style="display: flex; flex-direction: row;"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                  >
+                    PayNow Received
+                  </p>
+                </div>
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <div
+        class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="false"
+          for="_r_c_"
+          id="_r_c_-label"
+        >
+          <div
+            style="display: flex; flex-direction: row;"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+            >
+              FX Spend
+            </p>
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_c_"
+            placeholder="Foreign currency spend monthly"
+            type="number"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-1n64csd-MuiNotchedOutlined-root"
+            >
+              <span>
+                <div
+                  style="display: flex; flex-direction: row;"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                  >
+                    FX Spend
+                  </p>
+                </div>
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <div
         aria-label="Is/Willing to be NTUC Member"
         class="MuiBox-root css-1k83hgb"
         data-mui-internal-clone-element="true"
@@ -646,8 +750,8 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for="_r_f_"
-          id="_r_f_-label"
+          for="_r_h_"
+          id="_r_h_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -678,7 +782,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_f_"
+            id="_r_h_"
             placeholder="To be deposited at bank"
             type="number"
             value="100000"
@@ -724,8 +828,8 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for="_r_i_"
-          id="_r_i_-label"
+          for="_r_k_"
+          id="_r_k_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -756,7 +860,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_i_"
+            id="_r_k_"
             placeholder="Current age"
             type="number"
             value="10"
@@ -802,8 +906,8 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for="_r_l_"
-          id="_r_l_-label"
+          for="_r_n_"
+          id="_r_n_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -834,7 +938,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_l_"
+            id="_r_n_"
             placeholder="Credited to bank monthly"
             type="number"
             value="3000"
@@ -880,8 +984,8 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for="_r_o_"
-          id="_r_o_-label"
+          for="_r_q_"
+          id="_r_q_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -899,7 +1003,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_o_"
+            id="_r_q_"
             placeholder="Pay to bank yearly"
             type="number"
             value=""
@@ -932,8 +1036,8 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for="_r_p_"
-          id="_r_p_-label"
+          for="_r_r_"
+          id="_r_r_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -951,7 +1055,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_p_"
+            id="_r_r_"
             placeholder="Pay to bank yearly"
             type="number"
             value=""
@@ -984,8 +1088,8 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for="_r_q_"
-          id="_r_q_-label"
+          for="_r_s_"
+          id="_r_s_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -1016,7 +1120,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_q_"
+            id="_r_s_"
             placeholder="On eligible cards monthly"
             type="number"
             value="1000"
@@ -1062,8 +1166,8 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for="_r_t_"
-          id="_r_t_-label"
+          for="_r_v_"
+          id="_r_v_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -1081,7 +1185,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_t_"
+            id="_r_v_"
             placeholder="No. of GIRO Transactions"
             type="number"
             value=""
@@ -1114,8 +1218,8 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for="_r_u_"
-          id="_r_u_-label"
+          for="_r_10_"
+          id="_r_10_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -1146,7 +1250,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_u_"
+            id="_r_10_"
             placeholder="Balance increase monthly"
             type="number"
             value="500"
@@ -1192,8 +1296,8 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for="_r_11_"
-          id="_r_11_-label"
+          for="_r_13_"
+          id="_r_13_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -1211,7 +1315,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_11_"
+            id="_r_13_"
             placeholder="Monthly loan payment"
             type="number"
             value=""
@@ -1244,8 +1348,8 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="false"
-          for="_r_12_"
-          id="_r_12_-label"
+          for="_r_14_"
+          id="_r_14_-label"
         >
           <div
             style="display: flex; flex-direction: row;"
@@ -1263,7 +1367,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
-            id="_r_12_"
+            id="_r_14_"
             placeholder="Additional 1 time loan"
             type="number"
             value=""
@@ -1283,6 +1387,110 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
                     class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
                   >
                     One Time Loan
+                  </p>
+                </div>
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <div
+        class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="false"
+          for="_r_15_"
+          id="_r_15_-label"
+        >
+          <div
+            style="display: flex; flex-direction: row;"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+            >
+              PayNow Received
+            </p>
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_15_"
+            placeholder="Incoming PayNow transfers monthly"
+            type="number"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-1n64csd-MuiNotchedOutlined-root"
+            >
+              <span>
+                <div
+                  style="display: flex; flex-direction: row;"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                  >
+                    PayNow Received
+                  </p>
+                </div>
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+      <div
+        class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="false"
+          for="_r_16_"
+          id="_r_16_-label"
+        >
+          <div
+            style="display: flex; flex-direction: row;"
+          >
+            <p
+              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+            >
+              FX Spend
+            </p>
+          </div>
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_16_"
+            placeholder="Foreign currency spend monthly"
+            type="number"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-1n64csd-MuiNotchedOutlined-root"
+            >
+              <span>
+                <div
+                  style="display: flex; flex-direction: row;"
+                >
+                  <p
+                    class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                  >
+                    FX Spend
                   </p>
                 </div>
               </span>
