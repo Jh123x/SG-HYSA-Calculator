@@ -42,6 +42,8 @@ const FIELDS: FieldMeta[] = [
   { key: "OneTimeLoan", label: "One-time Loan", isBoolean: false },
   { key: "IsNTUCMember", label: "NTUC Member", isBoolean: true },
   { key: "ReferredCustomer", label: "Referred Customer", isBoolean: true },
+  { key: "PayNowReceived", label: "PayNow Received", isBoolean: false },
+  { key: "FXSpend", label: "FX Spend", isBoolean: false },
 ];
 
 const fmtCurrency = (v: number): string =>
