@@ -109,6 +109,44 @@ export const trust_bank_zen_06_2026 = (profile: Profile): ResultInterest => {
   });
 };
 
+// === Trust Bank Flex Plan (Trust+ required, min S$100K) ===
+
+export const trust_bank_flex_07_2026 = (profile: Profile): ResultInterest => {
+  const { Savings, Salary, Spending, Investment, IsNTUCMember, MonthlyAccIncrease } = profile;
+
+  // Collect all qualifying bonus scoops (each is a percentage number)
+  const scoops: number[] = [];
+
+  // Salary credit: min S$1,500 via GIRO → +0.45%
+  if (Salary >= 1500) scoops.push(0.45);
+
+  // Card spend: 5 × S$30 (modeled as Spending >= 150)
+  if (Spending >= 150) {
+    scoops.push(IsNTUCMember ? 0.20 : 0.10);
+  }
+
+  // Maintain S$100K ADB → +0.30%
+  if (Savings >= 100_000) scoops.push(0.30);
+
+  // Invest S$20K in TrustInvest → +0.70%
+  if (Investment >= 20_000) scoops.push(0.70);
+
+  // Increase ADB by S$3K from previous month → +0.20%
+  if (MonthlyAccIncrease >= 3_000) scoops.push(0.20);
+
+  // Sort descending and pick top 3 (or all if fewer than 3)
+  scoops.sort((a, b) => b - a);
+  const top3 = scoops.slice(0, 3);
+  const bonusSum = top3.reduce((sum, v) => sum + v, 0);
+
+  const currentInterest = 0.05 + bonusSum;
+
+  return calculate_ir(Savings, {
+    cutoffs: [{ Cutoff: 1_200_000, InterestRatePercent: currentInterest }],
+    baseRatePercent: 0.05,
+  });
+};
+
 export const trustBankZenHistory: RateSnapshot[] = [
   {
     effectiveDate: "2026-06-05",
@@ -148,5 +186,14 @@ export const trustBankSignatureHistory: RateSnapshot[] = [
     interestFn: trust_bank_signature_06_2026,
     sourceUrl: "https://growbeansprout.com/trust-bank-singapore-review",
     changeSummary: "Base ↓0.05%. Spend (non-NTUC) ↓0.1%, $100K ↓0.3%, Salary ↓0.45%. Spend (NTUC) unchanged at +0.2%",
+  },
+];
+
+export const trustBankFlexHistory: RateSnapshot[] = [
+  {
+    effectiveDate: "2026-06-05",
+    interestFn: trust_bank_flex_07_2026,
+    sourceUrl: "https://trustbank.sg/trust-plus/",
+    changeSummary: "Flex Plan: pick 3 bonus scoops from salary (+0.45%), spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%). Up to 2.40% p.a. on S$1.2M. Trust+ required.",
   },
 ];
