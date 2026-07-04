@@ -1,3 +1,4 @@
+import { useRef, useEffect } from "react";
 import { Container, Typography, Box, Link as MuiLink, Button } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
@@ -181,6 +182,13 @@ export const FaqPage = () => {
   const navigate = useNavigate();
   const { isMobile } = useMobile();
   useDocumentTitle("FAQ — SG HYSA Calculator");
+  const scriptRef = useRef<HTMLScriptElement>(null);
+
+  useEffect(() => {
+    if (scriptRef.current) {
+      scriptRef.current.textContent = JSON.stringify(faqStructuredData());
+    }
+  }, []);
 
   return (
     <>
@@ -196,10 +204,8 @@ export const FaqPage = () => {
 
       {/* JSON-LD structured data */}
       <script
+        ref={scriptRef}
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqStructuredData()),
-        }}
       />
 
       <Container
