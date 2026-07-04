@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import {
   Box,
   Table,
@@ -71,10 +72,24 @@ export const CurrentRatesTab = ({ profile }: Props) => {
   const [orderBy, setOrderBy] = useState<SortableColumns | undefined>(undefined);
   const [order, setOrder] = useState<"asc" | "desc">("desc");
 
-  if (isMobile) {
-    return <CurrentRatesTabMobile profile={profile} />;
-  }
-  return <CurrentRatesTabDesktop profile={profile} />;
+  return (
+    <>
+      <Helmet>
+        <title>[SG] High Yield Savings Account Calculator — Compare &amp; Maximise Your Interest</title>
+        <meta name="description" content="Compare Singapore's best high yield savings accounts (HYSA) side by side. Calculate interest for UOB One, OCBC 360, DBS Multiplier, Maribank, Trust Bank, GXS, and more. Updated regularly with latest rates." />
+        <meta property="og:title" content="[SG] High Yield Savings Account Calculator — Compare &amp; Maximise Your Interest" />
+        <meta property="og:description" content="Compare Singapore's best high yield savings accounts (HYSA) side by side. Calculate interest for UOB One, OCBC 360, DBS Multiplier, Maribank, Trust Bank, GXS, and more." />
+        <meta property="og:url" content="https://hysa.jh123x.com/" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://hysa.jh123x.com/" />
+      </Helmet>
+      {isMobile ? (
+        <CurrentRatesTabMobile profile={profile} />
+      ) : (
+        <CurrentRatesTabDesktop profile={profile} />
+      )}
+    </>
+  );
 };
 
 // ── Desktop ───────────────────────────────────────────────────────
