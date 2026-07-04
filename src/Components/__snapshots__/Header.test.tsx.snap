@@ -15,8 +15,15 @@ exports[`Header > should match snapshot 1`] = `
         SG High Yield Savings Accounts
       </h1>
       <div
-        class="MuiBox-root css-jma0kd"
+        class="MuiBox-root css-72k4ze"
       >
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-183el6q-MuiButtonBase-root-MuiButton-root"
+          tabindex="0"
+          type="button"
+        >
+          Blog
+        </button>
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-18huccq-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
