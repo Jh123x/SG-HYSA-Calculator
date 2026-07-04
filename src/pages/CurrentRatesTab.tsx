@@ -115,11 +115,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
   };
 
   return (
-    <Box
-      component="section"
-      aria-label="Current rates comparison"
-      sx={{ height: "100%", overflow: "hidden" }}
-    >
+    <>
       <Typography
         component="h2"
         variant="h5"
@@ -211,7 +207,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
         </Paper>
       }
     />
-    </Box>
+    </>
   );
 };
 
