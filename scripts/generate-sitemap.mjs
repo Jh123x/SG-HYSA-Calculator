@@ -67,6 +67,7 @@ function generate() {
     lines.push(
       "    <url>",
       `        <loc>${base}/bank/${slug}</loc>`,
+      `        <lastmod>${today}</lastmod>`,
       "        <changefreq>weekly</changefreq>",
       "        <priority>0.8</priority>",
       "    </url>",
