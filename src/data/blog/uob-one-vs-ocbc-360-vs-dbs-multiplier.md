@@ -9,11 +9,11 @@ tags:
 
 # UOB One vs OCBC 360 vs DBS Multiplier
 
-UOB One, OCBC 360, and DBS Multiplier are Singapore's most popular high yield savings accounts. Each offers tiered bonus interest, but their requirements and effective rates differ significantly. In this comparison, we break down which account earns more based on your financial habits.
+UOB One, OCBC 360, and DBS Multiplier are Singapore's most popular high yield savings accounts. Each offers tiered bonus interest, but their requirements and effective rates differ significantly. In this comparison, we break down which account earns more based on your financial habits. Find the latest rates on the official pages for [UOB One](https://www.uob.com.sg/personal/save/everyday-accounts/uob-one-account.page), [OCBC 360](https://www.ocbc.com/personal-banking/deposits/360-account), and [DBS Multiplier](https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier).
 
 ## UOB One Account
 
-**How it works:** UOB One offers bonus interest when you credit your salary (at least S$1,600/month) and spend S$500+ on your UOB One Card each month. You also earn bonus interest on the first S$100,000 of your savings, with multiple sub-tiers that apply progressively higher rates on each tier.
+**How it works:** UOB One offers bonus interest when you credit your salary (at least S$1,600/month) and spend S$500+ on your UOB One Card each month. You also earn bonus interest on the first S$150,000 of your savings, with multiple sub-tiers that apply progressively higher rates on each tier.
 
 **Best for:** Salaried employees who already use UOB credit cards. The requirements are simple — just salary credit + card spend. Note that UOB also offers an alternative bonus tier via 3+ GIRO transactions in lieu of salary credit.
 
@@ -41,7 +41,7 @@ UOB One, OCBC 360, and DBS Multiplier are Singapore's most popular high yield sa
 | ------- | ------- | -------- | -------------- |
 | Salary Requirement | S$1,600 | S$1,800 | No fixed minimum (salary counts toward eligible transactions) |
 | Card Spend | S$500 | S$500 | S$500 (counts as 1 category) |
-| Max Balance for Bonus Interest | S$100,000 | S$100,000 | S$100,000 (up to S$50,000 with 1 category) |
+| Max Balance for Bonus Interest | S$150,000 | S$100,000 | S$100,000 (up to S$50,000 with 1 category) |
 | Extra Bonus Categories | GIRO transactions (3+) | Save, Insure, Invest, S$250K+ balance | Home Loan, Insurance, Investments |
 | Rate Structure | Progressive sub-tiers per tier | Additive bonuses per category | 3×3 grid by transaction volume & category count |
 
