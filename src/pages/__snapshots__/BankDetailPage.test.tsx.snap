@@ -661,6 +661,11 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
         </div>
       </div>
     </section>
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"https://schema.org","@type":"FinancialProduct","name":"GXS Savings","description":"GXS Savings savings account interest rate details. Compare the latest EIR, rate history, and calculate your potential yearly interest.","url":"https://hysa.jh123x.com/bank/gxs-savings-account","provider":{"@type":"Organization","name":"GXS Savings"},"category":"Savings Account","offers":{"@type":"Offer","itemOffered":{"@type":"FinancialProduct","name":"GXS Savings Savings Account"}}}
+    </script>
   </article>
 </DocumentFragment>
 `;
@@ -1322,6 +1327,11 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
         </section>
       </div>
     </section>
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"https://schema.org","@type":"FinancialProduct","name":"GXS Savings","description":"GXS Savings savings account interest rate details. Compare the latest EIR, rate history, and calculate your potential yearly interest.","url":"https://hysa.jh123x.com/bank/gxs-savings-account","provider":{"@type":"Organization","name":"GXS Savings"},"category":"Savings Account","offers":{"@type":"Offer","itemOffered":{"@type":"FinancialProduct","name":"GXS Savings Savings Account"}}}
+    </script>
   </article>
 </DocumentFragment>
 `;
