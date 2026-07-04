@@ -1,5 +1,5 @@
 import { useParams, useNavigate, useLocation, Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import {
   Box,
@@ -280,22 +280,29 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     </Paper>
   );
 
-  const ldJson = {
-    "@context": "https://schema.org",
-    "@type": "FinancialProduct",
-    name: info.name,
-    description: `${info.name} savings account interest rate details. Compare the latest EIR, rate history, and calculate your potential yearly interest.`,
-    url: `https://hysa.jh123x.com/bank/${slug}`,
-    provider: { "@type": "Organization", name: info.name },
-    category: "Savings Account",
-    offers: {
-      "@type": "Offer",
-      itemOffered: {
+  const scriptRef = useRef<HTMLScriptElement>(null);
+
+  // Set JSON-LD text content safely (avoids dangerouslySetInnerHTML)
+  useEffect(() => {
+    if (scriptRef.current) {
+      scriptRef.current.textContent = JSON.stringify({
+        "@context": "https://schema.org",
         "@type": "FinancialProduct",
-        name: `${info.name} Savings Account`,
-      },
-    },
-  };
+        name: info.name,
+        description: `${info.name} savings account interest rate details. Compare the latest EIR, rate history, and calculate your potential yearly interest.`,
+        url: `https://hysa.jh123x.com/bank/${slug}`,
+        provider: { "@type": "Organization", name: info.name },
+        category: "Savings Account",
+        offers: {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "FinancialProduct",
+            name: `${info.name} Savings Account`,
+          },
+        },
+      });
+    }
+  }, [info.name, slug]);
 
   return (
     <>
@@ -313,10 +320,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         bottomLeft={renderChart()}
         bottomRight={renderHistorySection()}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }}
-      />
+      <script ref={scriptRef} type="application/ld+json" />
     </Box>
     </>
   );
