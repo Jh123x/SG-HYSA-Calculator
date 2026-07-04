@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, Suspense } from "react";
+import { lazy, useState, useEffect, useCallback, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Box, CircularProgress } from "@mui/material";
 import { Layout } from "./Layout";
@@ -8,10 +8,10 @@ import { STORE_KEY } from "./consts/keys";
 import { searchToProfile, profileToSearch } from "./logic/profileUrl";
 import { primaryColor } from "./consts/colors";
 
-const CurrentRatesTab = React.lazy(() => import("./pages/CurrentRatesTab"));
-const HistoryTab = React.lazy(() => import("./pages/HistoryTab"));
-const BankDetailPage = React.lazy(() => import("./pages/BankDetailPage"));
-const FaqPage = React.lazy(() => import("./pages/FaqPage"));
+const CurrentRatesTab = lazy(() => import("./pages/CurrentRatesTab"));
+const HistoryTab = lazy(() => import("./pages/HistoryTab"));
+const BankDetailPage = lazy(() => import("./pages/BankDetailPage"));
+const FaqPage = lazy(() => import("./pages/FaqPage"));
 
 const defaults = NewProfile({});
 
