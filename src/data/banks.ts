@@ -160,5 +160,3 @@ export const banks: Record<string, BankData> = {
 /** All bank slugs in registry order. */
 export const BANK_SLUGS = Object.keys(banks);
 
-/** Number of registered banks. */
-export const BANK_COUNT = BANK_SLUGS.length;
