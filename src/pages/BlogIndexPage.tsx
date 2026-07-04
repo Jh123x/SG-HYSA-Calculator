@@ -1,11 +1,19 @@
-import { Container, Typography, Box, Button, Chip, Link as MuiLink } from "@mui/material";
+import { Container, Typography, Box, Button, Link as MuiLink, Divider } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useRef, useEffect } from "react";
-import { sortedBlogPosts } from "../data/blogPosts";
+import { sortedBlogPosts, getWordCount, getReadingTime } from "../data/blogPosts";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { bgColor, textColor, primaryColor } from "../consts/colors";
+
+function formatDate(dateStr: string): string {
+  return new Date(dateStr).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
 
 const blogListingStructuredData = () => ({
   "@context": "https://schema.org",
@@ -33,6 +41,15 @@ export const BlogIndexPage = () => {
       scriptRef.current.textContent = JSON.stringify(blogListingStructuredData());
     }
   }, []);
+
+  // Group posts by year, sorted descending
+  const years = new Map<number, typeof sortedBlogPosts>();
+  for (const post of sortedBlogPosts) {
+    const year = new Date(post.date).getFullYear();
+    if (!years.has(year)) years.set(year, []);
+    years.get(year)!.push(post);
+  }
+  const sortedYears = Array.from(years.keys()).sort((a, b) => b - a);
 
   return (
     <>
@@ -63,13 +80,12 @@ export const BlogIndexPage = () => {
         }}
       >
         {/* Page header */}
-        <Box sx={{ mb: 3 }}>
+        <Box sx={{ mb: 4 }}>
           <Typography variant="h4" component="h1" sx={{ fontWeight: 700, mb: 1 }}>
             HYSA Blog
           </Typography>
           <Typography variant="body1" sx={{ color: textColor, opacity: 0.7 }}>
-            Tips, guides, and comparisons about Singapore High Yield Savings Accounts.
-            {" "}
+            Tips, guides, and comparisons about Singapore High Yield Savings Accounts.{" "}
             <Button
               onClick={() => navigate("/")}
               startIcon={<ArrowBackIcon />}
@@ -86,82 +102,61 @@ export const BlogIndexPage = () => {
           </Typography>
         </Box>
 
-        {/* Post list */}
-        <Box component="section" aria-label="Blog posts">
-          {sortedBlogPosts.map((post) => (
-            <Box
-              key={post.slug}
-              sx={{
-                mb: 3,
-                p: 2.5,
-                borderRadius: 1,
-                border: "1px solid",
-                borderColor: "rgba(255,255,255,0.1)",
-                "&:hover": {
-                  borderColor: primaryColor,
-                  backgroundColor: `${primaryColor}0d`,
-                },
-                transition: "border-color 0.2s, background-color 0.2s",
-              }}
-            >
-              <Typography
-                variant="h6"
-                component="h2"
-                sx={{ fontWeight: 600, mb: 0.5 }}
-              >
-                <MuiLink
-                  href={`/blog/${post.slug}`}
-                  onClick={(e: React.MouseEvent) => {
-                    e.preventDefault();
-                    navigate(`/blog/${post.slug}`);
-                  }}
-                  sx={{
-                    color: primaryColor,
-                    textDecoration: "none",
-                    "&:hover": { textDecoration: "underline" },
-                  }}
-                >
-                  {post.title}
-                </MuiLink>
-              </Typography>
+        {/* Posts grouped by year */}
+        {sortedYears.map((year) => (
+          <Box key={year} sx={{ mb: 4 }}>
+            <Typography variant="h5" sx={{ fontWeight: 600, mb: 1.5, color: primaryColor }}>
+              {year}
+            </Typography>
+            <Divider sx={{ borderColor: "rgba(255,255,255,0.1)", mb: 3 }} />
 
-              <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1 }}>
-                <Typography
-                  variant="caption"
-                  sx={{ color: textColor, opacity: 0.5 }}
-                >
-                  {new Date(post.date).toLocaleDateString("en-SG", {
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                  })}
-                </Typography>
-                {post.tags.map((tag) => (
-                  <Chip
-                    key={tag}
-                    label={tag}
-                    size="small"
-                    sx={{
-                      color: primaryColor,
-                      borderColor: primaryColor,
-                      backgroundColor: `${primaryColor}18`,
-                      fontWeight: 500,
-                      fontSize: "0.7rem",
-                    }}
-                    variant="outlined"
-                  />
-                ))}
-              </Box>
+            {years.get(year)!.map((post, idx) => {
+              const wordCount = getWordCount(post.content);
+              const readingTime = getReadingTime(wordCount);
+              const wcStr = wordCount.toLocaleString("en-US");
 
-              <Typography
-                variant="body2"
-                sx={{ color: textColor, opacity: 0.75, lineHeight: 1.6 }}
-              >
-                {post.excerpt}
-              </Typography>
-            </Box>
-          ))}
-        </Box>
+              return (
+                <Box key={post.slug} sx={{ mb: idx < years.get(year)!.length - 1 ? 3 : 0 }}>
+                  <Typography
+                    variant="h6"
+                    component="h2"
+                    sx={{ fontWeight: 600, mb: 0.5 }}
+                  >
+                    <MuiLink
+                      href={`/blog/${post.slug}`}
+                      onClick={(e: React.MouseEvent) => {
+                        e.preventDefault();
+                        navigate(`/blog/${post.slug}`);
+                      }}
+                      sx={{
+                        color: textColor,
+                        textDecoration: "none",
+                        "&:hover": { color: primaryColor, textDecoration: "underline" },
+                        transition: "color 0.2s",
+                      }}
+                    >
+                      {post.title}
+                    </MuiLink>
+                  </Typography>
+
+                  <Typography
+                    variant="body2"
+                    sx={{ color: textColor, opacity: 0.5, mb: 1 }}
+                  >
+                    {formatDate(post.date)} &middot; {wcStr} words &middot; {readingTime} mins
+                  </Typography>
+
+                  <Typography
+                    variant="body2"
+                    sx={{ color: textColor, opacity: 0.75, lineHeight: 1.6 }}
+                  >
+                    {post.excerpt}
+                  </Typography>
+                </Box>
+              );
+            })}
+          </Box>
+        ))}
 
         {/* Bottom CTA */}
         <Box sx={{ textAlign: "center", mt: 4, mb: 2 }}>

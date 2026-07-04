@@ -1,13 +1,21 @@
-import { Container, Typography, Box, Button, Chip, Link as MuiLink } from "@mui/material";
+import { Container, Typography, Box, Button, Chip, Link as MuiLink, Divider } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { blogPosts } from "../data/blogPosts";
+import { blogPosts, getWordCount, getReadingTime } from "../data/blogPosts";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { bgColor, textColor, primaryColor } from "../consts/colors";
+
+function formatDate(dateStr: string): string {
+  return new Date(dateStr).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
 
 function blogPostStructuredData(
   slug: string,
@@ -95,6 +103,10 @@ export const BlogPostPage = () => {
     );
   }
 
+  const wordCount = getWordCount(post.content);
+  const readingTime = getReadingTime(wordCount);
+  const wcStr = wordCount.toLocaleString("en-US");
+
   return (
     <>
       <Helmet>
@@ -113,12 +125,12 @@ export const BlogPostPage = () => {
         sx={{
           color: textColor,
           backgroundColor: bgColor,
-          maxWidth: "1100px !important",
+          maxWidth: "800px !important",
           py: 3,
         }}
       >
         {/* Back link */}
-        <Box sx={{ mb: 2 }}>
+        <Box sx={{ mb: 3 }}>
           <Button
             onClick={() => navigate("/blog")}
             startIcon={<ArrowBackIcon />}
@@ -135,17 +147,14 @@ export const BlogPostPage = () => {
         </Box>
 
         {/* Post header */}
-        <Typography variant="h4" component="h1" sx={{ fontWeight: 700, mb: 1 }}>
+        <Typography variant="h4" component="h1" sx={{ fontWeight: 700, mb: 1.5 }}>
           {post.title}
         </Typography>
 
-        <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 3 }}>
+        {/* Meta line */}
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2, flexWrap: "wrap" }}>
           <Typography variant="body2" sx={{ color: textColor, opacity: 0.5 }}>
-            {new Date(post.date).toLocaleDateString("en-SG", {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })}
+            {formatDate(post.date)} &middot; {wcStr} words &middot; {readingTime} mins
           </Typography>
           {post.tags.map((tag) => (
             <Chip
@@ -163,6 +172,8 @@ export const BlogPostPage = () => {
             />
           ))}
         </Box>
+
+        <Divider sx={{ borderColor: "rgba(255,255,255,0.1)", mb: 3 }} />
 
         {/* Post content */}
         <Box
