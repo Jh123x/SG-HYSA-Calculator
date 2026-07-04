@@ -18,8 +18,15 @@ exports[`App > should render correctly 1`] = `
           SG High Yield Savings Accounts
         </h1>
         <div
-          class="MuiBox-root css-jma0kd"
+          class="MuiBox-root css-72k4ze"
         >
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1g5aol-MuiButtonBase-root-MuiButton-root"
+            tabindex="0"
+            type="button"
+          >
+            Blog
+          </button>
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1fci1ts-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
@@ -70,8 +77,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_3_"
-                    id="_r_3_-label"
+                    for="_r_4_"
+                    id="_r_4_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -89,7 +96,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_3_"
+                      id="_r_4_"
                       placeholder="To be deposited at bank"
                       type="number"
                       value=""
@@ -122,8 +129,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_4_"
-                    id="_r_4_-label"
+                    for="_r_5_"
+                    id="_r_5_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -141,7 +148,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_4_"
+                      id="_r_5_"
                       placeholder="Current age"
                       type="number"
                       value=""
@@ -174,8 +181,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_5_"
-                    id="_r_5_-label"
+                    for="_r_6_"
+                    id="_r_6_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -193,7 +200,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_5_"
+                      id="_r_6_"
                       placeholder="Credited to bank monthly"
                       type="number"
                       value=""
@@ -226,8 +233,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_6_"
-                    id="_r_6_-label"
+                    for="_r_7_"
+                    id="_r_7_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -245,7 +252,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_6_"
+                      id="_r_7_"
                       placeholder="Pay to bank yearly"
                       type="number"
                       value=""
@@ -278,8 +285,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_7_"
-                    id="_r_7_-label"
+                    for="_r_8_"
+                    id="_r_8_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -297,7 +304,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_7_"
+                      id="_r_8_"
                       placeholder="Pay to bank yearly"
                       type="number"
                       value=""
@@ -330,8 +337,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_8_"
-                    id="_r_8_-label"
+                    for="_r_9_"
+                    id="_r_9_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -349,7 +356,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_8_"
+                      id="_r_9_"
                       placeholder="On eligible cards monthly"
                       type="number"
                       value=""
@@ -382,8 +389,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_9_"
-                    id="_r_9_-label"
+                    for="_r_a_"
+                    id="_r_a_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -401,7 +408,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_9_"
+                      id="_r_a_"
                       placeholder="No. of GIRO Transactions"
                       type="number"
                       value=""
@@ -434,8 +441,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_a_"
-                    id="_r_a_-label"
+                    for="_r_b_"
+                    id="_r_b_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -453,7 +460,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_a_"
+                      id="_r_b_"
                       placeholder="Balance increase monthly"
                       type="number"
                       value=""
@@ -486,8 +493,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_b_"
-                    id="_r_b_-label"
+                    for="_r_c_"
+                    id="_r_c_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -505,7 +512,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_b_"
+                      id="_r_c_"
                       placeholder="Monthly loan payment"
                       type="number"
                       value=""
@@ -538,8 +545,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_c_"
-                    id="_r_c_-label"
+                    for="_r_d_"
+                    id="_r_d_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -557,7 +564,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_c_"
+                      id="_r_d_"
                       placeholder="Additional 1 time loan"
                       type="number"
                       value=""
@@ -590,8 +597,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_d_"
-                    id="_r_d_-label"
+                    for="_r_e_"
+                    id="_r_e_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -609,7 +616,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_d_"
+                      id="_r_e_"
                       placeholder="Incoming PayNow transfers monthly (≥$1,500 qualifies for Trust Flex bonus)"
                       type="number"
                       value=""
@@ -642,8 +649,8 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-g1crgq-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_e_"
-                    id="_r_e_-label"
+                    for="_r_f_"
+                    id="_r_f_-label"
                   >
                     <div
                       style="display: flex; flex-direction: row;"
@@ -661,7 +668,7 @@ exports[`App > should render correctly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_e_"
+                      id="_r_f_"
                       placeholder="Foreign currency spend monthly (≥$500 qualifies for Trust Flex bonus)"
                       type="number"
                       value=""

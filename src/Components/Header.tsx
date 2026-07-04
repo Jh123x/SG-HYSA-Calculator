@@ -72,8 +72,21 @@ export const Header = () => {
           </Typography>
         )}
 
-        {/* Right: FAQ button (both compact and desktop) */}
-        <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
+        {/* Right: FAQ and Blog buttons (both compact and desktop) */}
+        <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0, gap: 0.5 }}>
+          <Button
+            onClick={() => navigate("/blog")}
+            size={isCompact ? "small" : "medium"}
+            sx={{
+              color: textColor,
+              textTransform: "none",
+              fontWeight: 500,
+              fontSize: { xs: "0.8rem", sm: "0.9rem" },
+              "&:hover": { color: primaryColor },
+            }}
+          >
+            Blog
+          </Button>
           <Button
             onClick={() => navigate("/faq")}
             startIcon={<HelpOutlineOutlinedIcon />}

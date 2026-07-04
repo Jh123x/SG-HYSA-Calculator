@@ -12,6 +12,8 @@ const CurrentRatesTab = lazy(() => import("./pages/CurrentRatesTab"));
 const HistoryTab = lazy(() => import("./pages/HistoryTab"));
 const BankDetailPage = lazy(() => import("./pages/BankDetailPage"));
 const FaqPage = lazy(() => import("./pages/FaqPage"));
+const BlogIndexPage = lazy(() => import("./pages/BlogIndexPage"));
+const BlogPostPage = lazy(() => import("./pages/BlogPostPage"));
 
 const defaults = NewProfile({});
 
@@ -122,6 +124,24 @@ export const App = () => {
               </Box>
             }>
               <FaqPage />
+            </Suspense>
+          } />
+          <Route path="/blog" element={
+            <Suspense fallback={
+              <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
+                <CircularProgress sx={{ color: primaryColor }} />
+              </Box>
+            }>
+              <BlogIndexPage />
+            </Suspense>
+          } />
+          <Route path="/blog/:slug" element={
+            <Suspense fallback={
+              <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
+                <CircularProgress sx={{ color: primaryColor }} />
+              </Box>
+            }>
+              <BlogPostPage />
             </Suspense>
           } />
         </Route>
