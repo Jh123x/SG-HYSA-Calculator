@@ -2,6 +2,7 @@ import { Container, Typography, Box, Button, Chip, Link as MuiLink } from "@mui/
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useRef, useEffect } from "react";
 import { sortedBlogPosts } from "../data/blogPosts";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { bgColor, textColor, primaryColor } from "../consts/colors";
@@ -24,7 +25,14 @@ const blogListingStructuredData = () => ({
 
 export const BlogIndexPage = () => {
   const navigate = useNavigate();
+  const scriptRef = useRef<HTMLScriptElement>(null);
   useDocumentTitle("HYSA Blog — SG HYSA Calculator");
+
+  useEffect(() => {
+    if (scriptRef.current) {
+      scriptRef.current.textContent = JSON.stringify(blogListingStructuredData());
+    }
+  }, []);
 
   return (
     <>
@@ -44,12 +52,7 @@ export const BlogIndexPage = () => {
         <link rel="canonical" href="https://hysa.jh123x.com/blog" />
       </Helmet>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(blogListingStructuredData()),
-        }}
-      />
+      <script ref={scriptRef} type="application/ld+json" />
 
       <Container
         sx={{

@@ -2,6 +2,7 @@ import { Container, Typography, Box, Button, Chip, Link as MuiLink } from "@mui/
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useRef, useEffect } from "react";
 import { blogPosts } from "../data/blogPosts";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { bgColor, textColor, primaryColor } from "../consts/colors";
@@ -34,9 +35,18 @@ function blogPostStructuredData(
 export const BlogPostPage = () => {
   const navigate = useNavigate();
   const { slug } = useParams<{ slug: string }>();
+  const scriptRef = useRef<HTMLScriptElement>(null);
   const post = blogPosts.find((p) => p.slug === slug);
 
   useDocumentTitle(post ? `${post.title} — SG HYSA Calculator` : "Post Not Found");
+
+  useEffect(() => {
+    if (scriptRef.current && post) {
+      scriptRef.current.textContent = JSON.stringify(
+        blogPostStructuredData(post.slug, post.title, post.excerpt, post.date),
+      );
+    }
+  }, [post?.slug, post?.title, post?.excerpt, post?.date]);
 
   if (!post) {
     return (
@@ -95,14 +105,7 @@ export const BlogPostPage = () => {
         <link rel="canonical" href={`https://hysa.jh123x.com/blog/${post.slug}`} />
       </Helmet>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            blogPostStructuredData(post.slug, post.title, post.excerpt, post.date),
-          ),
-        }}
-      />
+      <script ref={scriptRef} type="application/ld+json" />
 
       <Container
         sx={{
