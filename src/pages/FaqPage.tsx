@@ -2,6 +2,7 @@ import { Container, Typography, Box, Link as MuiLink, Button } from "@mui/materi
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { FULL_FAQ } from "../data/faq";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { useMobile } from "../hooks/useMobile";
@@ -183,6 +184,16 @@ export const FaqPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>FAQ — SG HYSA Calculator</title>
+        <meta name="description" content="Frequently asked questions about Singapore high yield savings accounts (HYSA). Learn about EIR calculations, bonus interest categories, and how to maximise your savings." />
+        <meta property="og:title" content="FAQ — SG HYSA Calculator" />
+        <meta property="og:description" content="Frequently asked questions about Singapore high yield savings accounts (HYSA). Learn about EIR calculations, bonus interest categories, and how to maximise your savings." />
+        <meta property="og:url" content="https://hysa.jh123x.com/faq" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://hysa.jh123x.com/faq" />
+      </Helmet>
+
       {/* JSON-LD structured data */}
       <script
         type="application/ld+json"

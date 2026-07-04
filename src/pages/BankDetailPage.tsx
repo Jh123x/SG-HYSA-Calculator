@@ -1,5 +1,6 @@
 import { useParams, useNavigate, useLocation, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import {
   Box,
   Button,
@@ -73,6 +74,14 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
       : "Bank Detail — SG HYSA Calculator",
   );
 
+  const bankDisplayName = bankName !== ERROR_SLUG && bankInfo[slug ?? ""]
+    ? bankInfo[slug ?? ""]!.name
+    : "Bank Detail";
+
+  const seoDescription = bankName !== ERROR_SLUG && bankInfo[slug ?? ""]
+    ? `Track ${bankInfo[slug ?? ""]!.name} interest rate history and calculate your effective interest rate (EIR). View rate changes over time for ${bankInfo[slug ?? ""]!.name}.`
+    : "View detailed interest rate history for a Singapore high yield savings account.";
+
   const handleBack = () => {
     if (location.key === "default") navigate("/", { replace: true });
     else navigate(-1);
@@ -105,7 +114,17 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   if (suggestion) {
     const isHome = suggestion.slug === "/";
     return (
-      <Box component="article" aria-label={isHome ? "Redirecting to home" : "Bank suggestion"} sx={{ mt: 3, textAlign: "center" }}>
+      <>
+        <Helmet>
+          <title>{bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "Bank Detail — SG HYSA Calculator"}</title>
+          <meta name="description" content={seoDescription} />
+          <meta property="og:title" content={bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "Bank Detail — SG HYSA Calculator"} />
+          <meta property="og:description" content={seoDescription} />
+          <meta property="og:url" content={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
+          <meta property="og:type" content="website" />
+          <link rel="canonical" href={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
+        </Helmet>
+        <Box component="article" aria-label={isHome ? "Redirecting to home" : "Bank suggestion"} sx={{ mt: 3, textAlign: "center" }}>
         <Paper sx={{ p: 4, borderRadius: "10px", backgroundColor: bgColor }}>
           <Typography variant="h5" sx={{ color: textColor, mb: 2, fontWeight: 600 }}>Bank not found</Typography>
           {isHome ? (
@@ -118,9 +137,9 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           <Typography variant="body2" sx={{ color: textColor, opacity: 0.7 }}>Redirecting in {countdown} second{countdown !== 1 ? "s" : ""}...</Typography>
         </Paper>
       </Box>
-    );
-  }
-
+    </>
+  );
+}
   if (bankName === ERROR_SLUG || !bankInfo[slug ?? ""]) return null;
 
   const info = bankInfo[slug ?? ""];
@@ -262,11 +281,22 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   );
 
   return (
-    <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ height: isMobile ? undefined : "100%", overflow: isMobile ? undefined : "hidden" }}>
+    <>
+      <Helmet>
+        <title>{bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "Bank Detail — SG HYSA Calculator"}</title>
+        <meta name="description" content={seoDescription} />
+        <meta property="og:title" content={bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "Bank Detail — SG HYSA Calculator"} />
+        <meta property="og:description" content={seoDescription} />
+        <meta property="og:url" content={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
+      </Helmet>
+      <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ height: isMobile ? undefined : "100%", overflow: isMobile ? undefined : "hidden" }}>
       <ThreePanelLayout
         bottomLeft={renderChart()}
         bottomRight={renderHistorySection()}
       />
     </Box>
+    </>
   );
 };
