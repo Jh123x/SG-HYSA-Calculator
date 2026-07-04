@@ -114,6 +114,9 @@ export const HistoryTab = ({ profile }: Props) => {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://hysa.jh123x.com/history" />
       </Helmet>
+      <Typography component="h1" variant="h4" sx={{ color: textColor, fontWeight: 700, mb: 2, fontSize: { xs: "1.25rem", sm: "1.5rem" } }}>
+        Rate Change History
+      </Typography>
       {isMobile ? (
         <HistoryTabMobile profile={profile} chartMode={chartMode} setChartMode={setChartMode} />
       ) : (

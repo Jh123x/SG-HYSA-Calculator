@@ -40,14 +40,22 @@ export const Header = () => {
       >
         {/* Left: icon (compact) or title (desktop) */}
         {isCompact ? (
-          <Tooltip title="SG High Yield Savings Accounts">
-            <IconButton
-              onClick={() => navigate("/")}
-              sx={{ color: primaryColor }}
+          <>
+            <Tooltip title="SG High Yield Savings Accounts">
+              <IconButton
+                onClick={() => navigate("/")}
+                sx={{ color: primaryColor }}
+              >
+                <SavingsOutlinedIcon sx={{ fontSize: 28 }} />
+              </IconButton>
+            </Tooltip>
+            <Typography
+              component="h1"
+              sx={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0,0,0,0)", whiteSpace: "nowrap", border: 0 }}
             >
-              <SavingsOutlinedIcon sx={{ fontSize: 28 }} />
-            </IconButton>
-          </Tooltip>
+              SG High Yield Savings Accounts
+            </Typography>
+          </>
         ) : (
           <Typography
             variant="h5"
