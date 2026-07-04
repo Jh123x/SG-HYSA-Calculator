@@ -1,4 +1,3 @@
-import { marked } from "marked";
 import type { BlogPost } from "./blogPosts";
 
 interface RawBlogFile {
@@ -104,15 +103,13 @@ function loadBlogPostsFromFiles(): BlogPost[] {
       continue;
     }
 
-    const htmlContent = marked.parse(body) as string;
-
     posts.push({
       slug,
       title,
       excerpt: excerpt ?? "",
       date,
       tags,
-      content: htmlContent,
+      content: body,
     });
   }
 
