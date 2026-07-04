@@ -325,3 +325,5 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     </>
   );
 };
+
+export default BankDetailPage;

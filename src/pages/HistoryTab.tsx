@@ -583,3 +583,5 @@ function useHistoryData(profile: Profile, selectedBanks: string[]) {
 
   return { bankEirs, sortedOptions, displayNames, isMaxed, bankHistories };
 }
+
+export default HistoryTab;

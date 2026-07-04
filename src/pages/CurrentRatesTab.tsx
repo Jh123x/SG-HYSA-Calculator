@@ -352,6 +352,8 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
   );
 };
 
+export default CurrentRatesTab;
+
 // ── Shared helpers ─────────────────────────────────────────────────
 
 function useResults(profile: Profile): Record<string, ResultProp> {
