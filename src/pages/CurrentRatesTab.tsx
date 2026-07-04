@@ -115,11 +115,19 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
   };
 
   return (
-    <ThreePanelLayout
+    <>
+      <Typography
+        component="h2"
+        variant="h5"
+        sx={{ color: textColor, fontWeight: 600, mb: 1, fontSize: { xs: "1rem", sm: "1.1rem" } }}
+      >
+        Rate Comparison
+      </Typography>
+      <ThreePanelLayout
       aria-label="Current interest rates comparison"
-      bottomLeft={
-        <Box sx={{ height: "40vh", minHeight: 0 }}>
-          <InterestGraph
+        bottomLeft={
+          <Box sx={{ height: "40vh", minHeight: 0 }}>
+            <InterestGraph
             profile={profile}
             height="fill"
           />
@@ -199,6 +207,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
         </Paper>
       }
     />
+    </>
   );
 };
 
@@ -217,6 +226,13 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
 
   return (
     <Box component="section" aria-label="Current interest rates comparison">
+      <Typography
+        component="h2"
+        variant="h5"
+        sx={{ color: textColor, fontWeight: 600, mb: 1, fontSize: { xs: "1rem", sm: "1.1rem" } }}
+      >
+        Rate Comparison
+      </Typography>
       {/* Graph + asterisks together */}
       <InterestGraph
         profile={profile}

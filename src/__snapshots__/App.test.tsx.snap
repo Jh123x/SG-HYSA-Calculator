@@ -851,6 +851,11 @@ exports[`App > should render correctly 1`] = `
           <div
             class="MuiBox-root css-1lgiddr"
           >
+            <h2
+              class="MuiTypography-root MuiTypography-h5 css-10qj99x-MuiTypography-root"
+            >
+              Rate Comparison
+            </h2>
             <section
               class="MuiBox-root css-8oufzr"
             >

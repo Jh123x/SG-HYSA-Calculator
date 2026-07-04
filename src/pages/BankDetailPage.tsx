@@ -226,7 +226,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     <Paper component="section" aria-label="Rate change history and bank details" sx={{ p: 2, borderRadius: "10px", backgroundColor: bgColor }}>
       <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, textTransform: "none", mb: 1.5, "&:hover": { color: primaryColor } }}>Back</Button>
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 1 }}>
-        <Typography variant="h5" component="h2" sx={{ color: textColor, fontWeight: 700, mb: 0.5 }}>{info.name}</Typography>
+        <Typography variant="h5" component="h1" sx={{ color: textColor, fontWeight: 700, mb: 0.5 }}>{info.name}</Typography>
         {info.url && (
           <Tooltip title="Visit official website">
             <IconButton href={info.url} target="_blank" rel="noopener noreferrer" sx={{ color: primaryColor }}><LanguageIcon /></IconButton>

@@ -409,11 +409,11 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
             <div
               class="MuiBox-root css-1o6yox5"
             >
-              <h2
+              <h1
                 class="MuiTypography-root MuiTypography-h5 css-1a7f20e-MuiTypography-root"
               >
                 GXS Savings
-              </h2>
+              </h1>
               <a
                 aria-label="Visit official website"
                 class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-yykazt-MuiButtonBase-root-MuiIconButton-root"
@@ -1071,11 +1071,11 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
           <div
             class="MuiBox-root css-1o6yox5"
           >
-            <h2
+            <h1
               class="MuiTypography-root MuiTypography-h5 css-1a7f20e-MuiTypography-root"
             >
               GXS Savings
-            </h2>
+            </h1>
             <a
               aria-label="Visit official website"
               class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-yykazt-MuiButtonBase-root-MuiIconButton-root"
