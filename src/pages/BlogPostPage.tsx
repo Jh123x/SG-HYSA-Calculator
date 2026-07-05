@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 import { useRef, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { blogPosts, getWordCount, getReadingTime } from "../data/blogPosts";
+import { blogPosts } from "../data/blogPosts";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { bgColor, textColor, primaryColor } from "../consts/colors";
 
@@ -103,10 +103,6 @@ export const BlogPostPage = () => {
     );
   }
 
-  const wordCount = getWordCount(post.content);
-  const readingTime = getReadingTime(wordCount);
-  const wcStr = wordCount.toLocaleString("en-US");
-
   return (
     <>
       <Helmet>
@@ -154,7 +150,7 @@ export const BlogPostPage = () => {
         {/* Meta line */}
         <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2, flexWrap: "wrap" }}>
           <Typography variant="body2" sx={{ color: textColor, opacity: 0.5 }}>
-            {formatDate(post.date)} &middot; {wcStr} words &middot; {readingTime} mins
+            {formatDate(post.date)}
           </Typography>
           {post.tags.map((tag) => (
             <Chip

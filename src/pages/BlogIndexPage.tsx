@@ -3,7 +3,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { useRef, useEffect } from "react";
-import { sortedBlogPosts, getWordCount, getReadingTime } from "../data/blogPosts";
+import { sortedBlogPosts } from "../data/blogPosts";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { bgColor, textColor, primaryColor } from "../consts/colors";
 
@@ -111,10 +111,6 @@ export const BlogIndexPage = () => {
             <Divider sx={{ borderColor: "rgba(255,255,255,0.1)", mb: 3 }} />
 
             {years.get(year)!.map((post, idx) => {
-              const wordCount = getWordCount(post.content);
-              const readingTime = getReadingTime(wordCount);
-              const wcStr = wordCount.toLocaleString("en-US");
-
               return (
                 <Box key={post.slug} sx={{ mb: idx < years.get(year)!.length - 1 ? 3 : 0 }}>
                   <Typography
@@ -143,7 +139,7 @@ export const BlogIndexPage = () => {
                     variant="body2"
                     sx={{ color: textColor, opacity: 0.5, mb: 1 }}
                   >
-                    {formatDate(post.date)} &middot; {wcStr} words &middot; {readingTime} mins
+                    {formatDate(post.date)}
                   </Typography>
 
                   <Typography
