@@ -37,7 +37,7 @@ For example, a bank advertising 3.35% may actually give you only 0.65% if you on
 
 ## How Our Calculator Helps
 
-The [SG HYSA Calculator](https://hysa.jh123x.com/) calculates your personalised EIR across all major Singapore banks. Here's how:
+The [SG HYSA Calculator](/) calculates your personalised EIR across all major Singapore banks. Here's how:
 
 - Enter your **savings amount** (up to S$100,000 for most banks)
 - Enter your **monthly salary** (to check salary credit eligibility)
@@ -52,4 +52,4 @@ Most Singapore HYSA interest is calculated daily and credited monthly. This mean
 
 ## Take Control of Your Savings
 
-Stop guessing which bank gives you the best rate. Use our [free SG HYSA Calculator](https://hysa.jh123x.com/) to compare personalised EIRs across UOB One, OCBC 360, DBS Multiplier, Trust Bank, and more. Your optimal savings account is just a few clicks away.
+Stop guessing which bank gives you the best rate. Use our [free SG HYSA Calculator](/) to compare personalised EIRs across UOB One, OCBC 360, DBS Multiplier, Trust Bank, and more. Your optimal savings account is just a few clicks away.

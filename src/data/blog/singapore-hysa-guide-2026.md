@@ -25,7 +25,7 @@ Each category adds a bonus rate, and when combined, your effective interest rate
 
 The EIR is the actual annual interest rate you earn after accounting for how interest compounds and which bonus tiers you qualify for. It's different from the nominal rate advertised. For instance, a bank might advertise "up to 3.6% p.a." but that top rate only applies if you meet all bonus conditions.
 
-Use our [SG HYSA Calculator](https://hysa.jh123x.com/) to see your personalised EIR based on your savings amount, salary, and spending patterns across different banks.
+Use our [SG HYSA Calculator](/) to see your personalised EIR based on your savings amount, salary, and spending patterns across different banks.
 
 ## Tips to Maximise Your Savings Interest in 2026
 
@@ -38,4 +38,4 @@ Use our [SG HYSA Calculator](https://hysa.jh123x.com/) to see your personalised 
 
 ## Get Your Personalised Comparison
 
-Instead of manually calculating interest rates for each bank, try our [SG HYSA Calculator](https://hysa.jh123x.com/). Enter your savings, salary, and spending habits to see which bank offers the highest effective interest rate for your unique financial profile.
+Instead of manually calculating interest rates for each bank, try our [SG HYSA Calculator](/). Enter your savings, salary, and spending habits to see which bank offers the highest effective interest rate for your unique financial profile.

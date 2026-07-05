@@ -17,7 +17,7 @@ UOB One, OCBC 360, and DBS Multiplier are Singapore's most popular high yield sa
 
 **Best for:** Salaried employees who already use UOB credit cards. The requirements are simple — just salary credit + card spend. Note that UOB also offers an alternative bonus tier via 3+ GIRO transactions in lieu of salary credit.
 
-**Effective rate:** Rates vary based on your savings amount and which conditions you meet. Use our [SG HYSA Calculator](https://hysa.jh123x.com/) to get your personalised EIR based on your actual profile.
+**Effective rate:** Rates vary based on your savings amount and which conditions you meet. Use our [SG HYSA Calculator](/) to get your personalised EIR based on your actual profile.
 
 ## OCBC 360 Account
 
@@ -51,4 +51,4 @@ UOB One, OCBC 360, and DBS Multiplier are Singapore's most popular high yield sa
 - **Choose OCBC 360** if you're willing to meet multiple criteria. The Insure and Invest categories give OCBC an edge for those who already have insurance or investment products with the bank.
 - **Choose DBS Multiplier** if you have a DBS home loan or multiple DBS products. The multiplier effect rewards deeper relationships, and the structure rewards higher transaction volumes.
 
-Your optimal choice depends on your personal financial habits. Use our [SG HYSA Calculator](https://hysa.jh123x.com/) to input your actual salary, spending, and savings to compare EIR across all three banks side by side.
+Your optimal choice depends on your personal financial habits. Use our [SG HYSA Calculator](/) to input your actual salary, spending, and savings to compare EIR across all three banks side by side.
