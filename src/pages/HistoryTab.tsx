@@ -480,7 +480,7 @@ const MobileRowGroupedList = ({
               <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "eir" ? `${primaryColor}1a` : bgColor, width: 48 }}>
                 EIR
               </TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", textAlign: "center", width: 60, px: 0.5, backgroundColor: bgColor, whiteSpace: "nowrap" }}>Act</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", textAlign: "center", width: 60, px: 0.5, backgroundColor: bgColor, whiteSpace: "nowrap" }}>Actions</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

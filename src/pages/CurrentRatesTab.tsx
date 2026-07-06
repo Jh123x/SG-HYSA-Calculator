@@ -67,7 +67,6 @@ const SORT_OPTIONS: { value: SortableColumns; label: string }[] = [
  * - Mobile: stacked graph → sort bar with asc/desc → cards
  */
 export const CurrentRatesTab = ({ profile }: Props) => {
-  const navigate = useNavigate();
   const { isMobile } = useMobile();
 
   return (
