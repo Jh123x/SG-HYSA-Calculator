@@ -4,7 +4,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
 <DocumentFragment>
   <article
     aria-label="GXS Savings interest rate details"
-    class="MuiBox-root css-8lgfcg"
+    class="MuiBox-root css-10klw3m"
   >
     <section
       class="MuiBox-root css-8oufzr"
@@ -522,7 +522,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                       class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1cb113z-MuiTableCell-root"
                       scope="col"
                     >
-                      Action
+                      Actions
                     </th>
                   </tr>
                 </thead>
@@ -1189,7 +1189,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                     class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1cb113z-MuiTableCell-root"
                     scope="col"
                   >
-                    Action
+                    Actions
                   </th>
                 </tr>
               </thead>

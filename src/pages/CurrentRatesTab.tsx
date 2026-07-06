@@ -69,8 +69,6 @@ const SORT_OPTIONS: { value: SortableColumns; label: string }[] = [
 export const CurrentRatesTab = ({ profile }: Props) => {
   const navigate = useNavigate();
   const { isMobile } = useMobile();
-  const [orderBy, setOrderBy] = useState<SortableColumns | undefined>(undefined);
-  const [order, setOrder] = useState<"asc" | "desc">("desc");
 
   return (
     <>

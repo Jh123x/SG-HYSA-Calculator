@@ -9,7 +9,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
   </h1>
   <section
     aria-label="Interest rate change history"
-    class="MuiBox-root css-8lgfcg"
+    class="MuiBox-root css-10klw3m"
   >
     <section
       class="MuiBox-root css-8oufzr"
@@ -34,7 +34,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
                 type="button"
                 value="yearly"
               >
-                Yearly Interest ($)
+                Yearly $
               </button>
               <button
                 aria-pressed="false"

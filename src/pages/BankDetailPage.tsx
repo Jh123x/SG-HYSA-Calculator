@@ -252,7 +252,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
               <TableCell sx={{ color: textColor, fontWeight: 600, backgroundColor: bgColor }}>What Changed</TableCell>
               <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>Yearly Interest</TableCell>
               <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>EIR</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, width: 60, textAlign: "center", backgroundColor: bgColor }}>Action</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, width: 60, textAlign: "center", backgroundColor: bgColor }}>Actions</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -315,7 +315,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         <meta property="og:type" content="website" />
         <link rel="canonical" href={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
       </Helmet>
-      <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ height: isMobile ? undefined : "100%", overflow: isMobile ? undefined : "hidden" }}>
+      <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ height: isMobile ? undefined : "100%" }}>
       <ThreePanelLayout
         bottomLeft={renderChart()}
         bottomRight={renderHistorySection()}

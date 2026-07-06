@@ -226,18 +226,18 @@ const HistoryTabDesktop = ({
                       </TableCell>
                       <TableCell sx={{ color: textColor, textAlign: "center", p: 0.5 }}>
                         <Box sx={{ display: "flex", justifyContent: "center", gap: 0.5 }}>
+                          <Tooltip title="View details" placement="left">
+                            <IconButton size="small" onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor }}>
+                              <OpenInNew fontSize="small" />
+                            </IconButton>
+                          </Tooltip>
                           {row.sourceUrl && (
-                            <Tooltip title="Visit source" placement="left">
+                            <Tooltip title="Visit source" placement="right">
                               <IconButton size="small" href={row.sourceUrl} target="_blank" rel="noopener noreferrer" sx={{ color: primaryColor }}>
                                 <Language fontSize="small" />
                               </IconButton>
                             </Tooltip>
                           )}
-                          <Tooltip title="View details" placement="right">
-                            <IconButton size="small" onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor }}>
-                              <OpenInNew fontSize="small" />
-                            </IconButton>
-                          </Tooltip>
                         </Box>
                       </TableCell>
                     </TableRow>
@@ -254,7 +254,7 @@ const HistoryTabDesktop = ({
   const renderControls = () => (
     <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 1.5, mb: 1.5 }}>
       <ToggleButtonGroup value={chartMode} exclusive onChange={(_e, v) => v && setChartMode(v)} size="small">
-        <ToggleButton value="yearly" sx={TOGGLE_SX}>Yearly Interest ($)</ToggleButton>
+        <ToggleButton value="yearly" sx={TOGGLE_SX}>Yearly $</ToggleButton>
         <ToggleButton value="eir" sx={TOGGLE_SX}>EIR (%)</ToggleButton>
       </ToggleButtonGroup>
       <FormControl size="small" sx={{ minWidth: 200, flex: 1 }}>
@@ -289,7 +289,7 @@ const HistoryTabDesktop = ({
   };
 
   return (
-    <Box component="section" aria-label="Interest rate change history" sx={{ height: "100%", overflow: "hidden" }}>
+    <Box component="section" aria-label="Interest rate change history" sx={{ height: "100%" }}>
       <ThreePanelLayout
         bottomLeft={
           <>
@@ -513,10 +513,10 @@ const MobileRowGroupedList = ({
                     </TableCell>
                     <TableCell sx={{ color: textColor, textAlign: "center", p: 0.25, whiteSpace: "nowrap" }}>
                       <Box sx={{ display: "flex", justifyContent: "center", gap: 0 }}>
+                        <Tooltip title="Details"><IconButton size="small" onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor, p: 0.25 }}><OpenInNew sx={{ fontSize: 14 }} /></IconButton></Tooltip>
                         {row.sourceUrl && (
                           <Tooltip title="Source"><IconButton size="small" href={row.sourceUrl} target="_blank" rel="noopener noreferrer" sx={{ color: primaryColor, p: 0.25 }}><Language sx={{ fontSize: 14 }} /></IconButton></Tooltip>
                         )}
-                        <Tooltip title="Details"><IconButton size="small" onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor, p: 0.25 }}><OpenInNew sx={{ fontSize: 14 }} /></IconButton></Tooltip>
                       </Box>
                     </TableCell>
                   </TableRow>
