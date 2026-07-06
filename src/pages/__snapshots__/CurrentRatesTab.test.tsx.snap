@@ -2686,6 +2686,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                     Salary/GIRO $1K: +0.50% on first $25K. Card spend $800: +1.00% on first $25K.
                     <br />
                     Fresh funds promo (Jul 2026): +0.70% on incremental ≥$10K (not modelled).
+                    <br />
+                    <b>
+                      Note: CIMB does not provide an official calculator. Calculations are based on our understanding and may differ from actual interest earned.
+                    </b>
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-bcc6o7-MuiTableCell-root"

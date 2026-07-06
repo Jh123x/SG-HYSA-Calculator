@@ -153,7 +153,7 @@ export const banks: Record<string, BankData> = {
     name: "CIMB FastSaver",
     url: "https://www.cimb.com.sg/en/personal/banking-with-us/accounts/savings-accounts/cimb-fastsaver-account.html",
     remarks:
-      "Tiered base rates (0.50%→1.08%→1.58%→0.50%).\nSalary/GIRO $1K: +0.50% on first $25K. Card spend $800: +1.00% on first $25K.\nFresh funds promo (Jul 2026): +0.70% on incremental ≥$10K (not modelled).",
+      "Tiered base rates (0.50%→1.08%→1.58%→0.50%).\nSalary/GIRO $1K: +0.50% on first $25K. Card spend $800: +1.00% on first $25K.\nFresh funds promo (Jul 2026): +0.70% on incremental ≥$10K (not modelled).\n**Note: CIMB does not provide an official calculator. Calculations are based on our understanding and may differ from actual interest earned.**",
     history: cimbFastSaverHistory,
   },
   "citi-wealth-first-account": {

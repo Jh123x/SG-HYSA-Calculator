@@ -331,6 +331,10 @@ exports[`Result Table > should match snapshot when results are full 1`] = `
               Salary/GIRO $1K: +0.50% on first $25K. Card spend $800: +1.00% on first $25K.
               <br />
               Fresh funds promo (Jul 2026): +0.70% on incremental ≥$10K (not modelled).
+              <br />
+              <b>
+                Note: CIMB does not provide an official calculator. Calculations are based on our understanding and may differ from actual interest earned.
+              </b>
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
@@ -3165,6 +3169,10 @@ exports[`Result Table > should match snapshot when results is empty 1`] = `
               Salary/GIRO $1K: +0.50% on first $25K. Card spend $800: +1.00% on first $25K.
               <br />
               Fresh funds promo (Jul 2026): +0.70% on incremental ≥$10K (not modelled).
+              <br />
+              <b>
+                Note: CIMB does not provide an official calculator. Calculations are based on our understanding and may differ from actual interest earned.
+              </b>
             </td>
             <td
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-hu5s5m-MuiTableCell-root"
