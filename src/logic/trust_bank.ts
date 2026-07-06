@@ -73,13 +73,6 @@ export const trust_bank_signature_10_2025 = (
   });
 };
 
-export const trust_bank_flex_12_2025 = (profile: Profile): ResultInterest => {
-  return calculate_ir(profile.Savings, {
-    cutoffs: [{ Cutoff: 1_200_000, InterestRatePercent: 0.5 }],
-    baseRatePercent: 0.05,
-  });
-};
-
 // === June 2026 Rates ===
 
 export const trust_bank_signature_06_2026 = (
@@ -105,6 +98,143 @@ export const trust_bank_signature_06_2026 = (
 export const trust_bank_zen_06_2026 = (profile: Profile): ResultInterest => {
   return calculate_ir(profile.Savings, {
     cutoffs: [{ Cutoff: 1_200_000, InterestRatePercent: 0.4 }],
+    baseRatePercent: 0.05,
+  });
+};
+
+// === Trust Bank Flex Plan (Trust+ required, min S$100K) ===
+
+// Flex Plan Launch: October 8, 2025 — up to 2.50% p.a., 8 scoops
+export const trust_bank_flex_10_2025 = (profile: Profile): ResultInterest => {
+  const { Savings, Salary, Spending, Investment, IsNTUCMember, MonthlyAccIncrease, ReferredCustomer, PayNowReceived, FXSpend } = profile;
+
+  const scoops: number[] = [];
+
+  // Refer a new Trust credit card customer approved within the month → +1.20%
+  if (ReferredCustomer) scoops.push(1.20);
+
+  // Invest S$20K in TrustInvest → +0.70%
+  if (Investment >= 20_000) scoops.push(0.70);
+
+  // Salary S$1,500 via GIRO → +0.50%
+  if (Salary >= 1500) scoops.push(0.50);
+
+  // Maintain S$100K ADB → +0.40%
+  if (Savings >= 100_000) scoops.push(0.40);
+
+  // 5 × S$30 card spends → +0.30% (NTUC) / +0.20% (non-NTUC)
+  if (Spending >= 150) {
+    scoops.push(IsNTUCMember ? 0.30 : 0.20);
+  }
+
+  // Increase ADB by S$3K from previous month → +0.20%
+  if (MonthlyAccIncrease >= 3_000) scoops.push(0.20);
+
+  // Receive S$1,500 in incoming PayNow → +0.20%
+  if (PayNowReceived >= 1500) scoops.push(0.20);
+
+  // Spend S$500 in foreign currency → +0.20%
+  if (FXSpend >= 500) scoops.push(0.20);
+
+  scoops.sort((a, b) => b - a);
+  const top3 = scoops.slice(0, 3);
+  const bonusSum = top3.reduce((sum, v) => sum + v, 0);
+
+  const currentInterest = 0.10 + bonusSum;
+
+  return calculate_ir(Savings, {
+    cutoffs: [{ Cutoff: 1_200_000, InterestRatePercent: currentInterest }],
+    baseRatePercent: 0.05,
+  });
+};
+
+// March 1, 2026 — max trimmed to 2.40% (base ↓0.05%, salary ↓0.45%, ADB ↓0.30%, spend NTUC ↓0.20% / non-NTUC ↓0.10%, PayNow ↓0.15%, FX ↓0.15%)
+export const trust_bank_flex_03_2026 = (profile: Profile): ResultInterest => {
+  const { Savings, Salary, Spending, Investment, IsNTUCMember, MonthlyAccIncrease, ReferredCustomer, PayNowReceived, FXSpend } = profile;
+
+  const scoops: number[] = [];
+
+  // Refer a new Trust credit card customer approved within the month → +1.20%
+  if (ReferredCustomer) scoops.push(1.20);
+
+  // Invest S$20K in TrustInvest → +0.70%
+  if (Investment >= 20_000) scoops.push(0.70);
+
+  // Salary S$1,500 via GIRO → +0.45%
+  if (Salary >= 1500) scoops.push(0.45);
+
+  // Maintain S$100K ADB → +0.30%
+  if (Savings >= 100_000) scoops.push(0.30);
+
+  // 5 × S$30 card spends → +0.20% (NTUC) / +0.10% (non-NTUC)
+  if (Spending >= 150) {
+    scoops.push(IsNTUCMember ? 0.20 : 0.10);
+  }
+
+  // Increase ADB by S$3K from previous month → +0.20%
+  if (MonthlyAccIncrease >= 3_000) scoops.push(0.20);
+
+  // Receive S$1,500 in incoming PayNow → +0.15%
+  if (PayNowReceived >= 1500) scoops.push(0.15);
+
+  // Spend S$500 in foreign currency → +0.15%
+  if (FXSpend >= 500) scoops.push(0.15);
+
+  scoops.sort((a, b) => b - a);
+  const top3 = scoops.slice(0, 3);
+  const bonusSum = top3.reduce((sum, v) => sum + v, 0);
+
+  const currentInterest = 0.05 + bonusSum;
+
+  return calculate_ir(Savings, {
+    cutoffs: [{ Cutoff: 1_200_000, InterestRatePercent: currentInterest }],
+    baseRatePercent: 0.05,
+  });
+};
+
+// July 2026 — current rates, 8 scoops
+
+export const trust_bank_flex_07_2026 = (profile: Profile): ResultInterest => {
+  const { Savings, Salary, Spending, Investment, IsNTUCMember, MonthlyAccIncrease, ReferredCustomer, PayNowReceived, FXSpend } = profile;
+
+  // Collect all qualifying bonus scoops (each is a percentage number)
+  const scoops: number[] = [];
+
+  // Refer a new Trust credit card customer approved within the month → +1.20%
+  if (ReferredCustomer) scoops.push(1.20);
+
+  // Invest S$20K in TrustInvest → +0.70%
+  if (Investment >= 20_000) scoops.push(0.70);
+
+  // Salary credit: min S$1,500 via GIRO → +0.45%
+  if (Salary >= 1500) scoops.push(0.45);
+
+  // Card spend: 5 × S$30 (modeled as Spending >= 150)
+  if (Spending >= 150) {
+    scoops.push(IsNTUCMember ? 0.20 : 0.10);
+  }
+
+  // Maintain S$100K ADB → +0.30%
+  if (Savings >= 100_000) scoops.push(0.30);
+
+  // Increase ADB by S$3K from previous month → +0.20%
+  if (MonthlyAccIncrease >= 3_000) scoops.push(0.20);
+
+  // Receive S$1,500 in incoming PayNow → +0.15%
+  if (PayNowReceived >= 1500) scoops.push(0.15);
+
+  // Spend S$500 in foreign currency → +0.15%
+  if (FXSpend >= 500) scoops.push(0.15);
+
+  // Sort descending and pick top 3 (or all if fewer than 3)
+  scoops.sort((a, b) => b - a);
+  const top3 = scoops.slice(0, 3);
+  const bonusSum = top3.reduce((sum, v) => sum + v, 0);
+
+  const currentInterest = 0.05 + bonusSum;
+
+  return calculate_ir(Savings, {
+    cutoffs: [{ Cutoff: 1_200_000, InterestRatePercent: currentInterest }],
     baseRatePercent: 0.05,
   });
 };
@@ -148,5 +278,26 @@ export const trustBankSignatureHistory: RateSnapshot[] = [
     interestFn: trust_bank_signature_06_2026,
     sourceUrl: "https://growbeansprout.com/trust-bank-singapore-review",
     changeSummary: "Base ↓0.05%. Spend (non-NTUC) ↓0.1%, $100K ↓0.3%, Salary ↓0.45%. Spend (NTUC) unchanged at +0.2%",
+  },
+];
+
+export const trustBankFlexHistory: RateSnapshot[] = [
+  {
+    effectiveDate: "2025-10-08",
+    interestFn: trust_bank_flex_10_2025,
+    sourceUrl: "https://fintechnews.sg/119890/digital-banking-news-singapore/trust-bank-flex-savings/",
+    changeSummary: "Flex Plan launched. 8 bonus scoops: refer (+1.20%), invest S$20K (+0.70%), salary (+0.50%), $100K ADB (+0.40%), card spend (+0.30% NTUC/+0.20%), ADB inc $3K (+0.20%), PayNow $1.5K (+0.20%), FX S$500 (+0.20%). Base 0.10%. Up to 2.50% p.a. on S$1.2M. Trust+ required.",
+  },
+  {
+    effectiveDate: "2026-03-01",
+    interestFn: trust_bank_flex_03_2026,
+    sourceUrl: "https://growbeansprout.com/trust-bank-singapore-review",
+    changeSummary: "Rate cut: base ↓0.05%, salary ↓0.45%, ADB ↓0.30%, card spend NTUC ↓0.20%/non-NTUC ↓0.10%, PayNow ↓0.15%, FX ↓0.15%. Refer (+1.20%) and invest (+0.70%) unchanged. Max trimmed to 2.40% p.a.",
+  },
+  {
+    effectiveDate: "2026-06-05",
+    interestFn: trust_bank_flex_07_2026,
+    sourceUrl: "https://trustbank.sg/trust-plus/",
+    changeSummary: "8 bonus scoops: refer (+1.20%), invest S$20K (+0.70%), salary (+0.45%), $100K ADB (+0.30%), card spend (+0.20% NTUC/+0.10%), ADB inc $3K (+0.20%), PayNow $1.5K (+0.15%), FX S$500 (+0.15%). Max 2.40% p.a. on S$1.2M.",
   },
 ];

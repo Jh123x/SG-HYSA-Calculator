@@ -1,14 +1,17 @@
-import { useState, useEffect, useCallback } from "react";
+import { lazy, useState, useEffect, useCallback, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Box, CircularProgress } from "@mui/material";
 import { Layout } from "./Layout";
 import { TabbedContent } from "./Components/TabbedContent";
-import { CurrentRatesTab } from "./pages/CurrentRatesTab";
-import { HistoryTab } from "./pages/HistoryTab";
-import { BankDetailPage } from "./pages/BankDetailPage";
-import { FaqPage } from "./pages/FaqPage";
 import Profile, { NewProfile } from "./types/profile";
 import { STORE_KEY } from "./consts/keys";
 import { searchToProfile, profileToSearch } from "./logic/profileUrl";
+import { primaryColor } from "./consts/colors";
+
+const CurrentRatesTab = lazy(() => import("./pages/CurrentRatesTab"));
+const HistoryTab = lazy(() => import("./pages/HistoryTab"));
+const BankDetailPage = lazy(() => import("./pages/BankDetailPage"));
+const FaqPage = lazy(() => import("./pages/FaqPage"));
 
 const defaults = NewProfile({});
 
@@ -79,16 +82,48 @@ export const App = () => {
         >
           {/* Pages with inputs + tab navigation */}
           <Route element={<TabbedContent />}>
-            <Route path="/" element={<CurrentRatesTab profile={currProfile} />} />
-            <Route path="/history" element={<HistoryTab profile={currProfile} />} />
+            <Route path="/" element={
+              <Suspense fallback={
+                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
+                  <CircularProgress sx={{ color: primaryColor }} />
+                </Box>
+              }>
+                <CurrentRatesTab profile={currProfile} />
+              </Suspense>
+            } />
+            <Route path="/history" element={
+              <Suspense fallback={
+                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
+                  <CircularProgress sx={{ color: primaryColor }} />
+                </Box>
+              }>
+                <HistoryTab profile={currProfile} />
+              </Suspense>
+            } />
             <Route
               path="/bank/:slug"
-              element={<BankDetailPage profile={currProfile} />}
+              element={
+                <Suspense fallback={
+                  <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
+                    <CircularProgress sx={{ color: primaryColor }} />
+                  </Box>
+                }>
+                  <BankDetailPage profile={currProfile} />
+                </Suspense>
+              }
             />
           </Route>
 
           {/* Pages that don't need inputs */}
-          <Route path="/faq" element={<FaqPage />} />
+          <Route path="/faq" element={
+            <Suspense fallback={
+              <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
+                <CircularProgress sx={{ color: primaryColor }} />
+              </Box>
+            }>
+              <FaqPage />
+            </Suspense>
+          } />
         </Route>
       </Routes>
     </BrowserRouter>

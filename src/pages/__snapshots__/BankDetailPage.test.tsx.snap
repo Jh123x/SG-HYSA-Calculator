@@ -409,11 +409,11 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
             <div
               class="MuiBox-root css-1o6yox5"
             >
-              <h2
+              <h1
                 class="MuiTypography-root MuiTypography-h5 css-1a7f20e-MuiTypography-root"
               >
                 GXS Savings
-              </h2>
+              </h1>
               <a
                 aria-label="Visit official website"
                 class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-yykazt-MuiButtonBase-root-MuiIconButton-root"
@@ -661,6 +661,11 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
         </div>
       </div>
     </section>
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"https://schema.org","@type":"FinancialProduct","name":"GXS Savings","description":"GXS Savings savings account interest rate details. Compare the latest EIR, rate history, and calculate your potential yearly interest.","url":"https://hysa.jh123x.com/bank/gxs-savings-account","provider":{"@type":"Organization","name":"GXS Savings"},"category":"Savings Account","offers":{"@type":"Offer","itemOffered":{"@type":"FinancialProduct","name":"GXS Savings Savings Account"}}}
+    </script>
   </article>
 </DocumentFragment>
 `;
@@ -1071,11 +1076,11 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
           <div
             class="MuiBox-root css-1o6yox5"
           >
-            <h2
+            <h1
               class="MuiTypography-root MuiTypography-h5 css-1a7f20e-MuiTypography-root"
             >
               GXS Savings
-            </h2>
+            </h1>
             <a
               aria-label="Visit official website"
               class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-yykazt-MuiButtonBase-root-MuiIconButton-root"
@@ -1322,6 +1327,11 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
         </section>
       </div>
     </section>
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"https://schema.org","@type":"FinancialProduct","name":"GXS Savings","description":"GXS Savings savings account interest rate details. Compare the latest EIR, rate history, and calculate your potential yearly interest.","url":"https://hysa.jh123x.com/bank/gxs-savings-account","provider":{"@type":"Organization","name":"GXS Savings"},"category":"Savings Account","offers":{"@type":"Offer","itemOffered":{"@type":"FinancialProduct","name":"GXS Savings Savings Account"}}}
+    </script>
   </article>
 </DocumentFragment>
 `;

@@ -2,6 +2,11 @@
 
 exports[`HistoryTab desktop > should match snapshot 1`] = `
 <DocumentFragment>
+  <h1
+    class="MuiTypography-root MuiTypography-h4 css-oa17an-MuiTypography-root"
+  >
+    Rate Change History
+  </h1>
   <section
     aria-label="Interest rate change history"
     class="MuiBox-root css-8lgfcg"
@@ -118,6 +123,11 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
 
 exports[`HistoryTab mobile > should match snapshot 1`] = `
 <DocumentFragment>
+  <h1
+    class="MuiTypography-root MuiTypography-h4 css-oa17an-MuiTypography-root"
+  >
+    Rate Change History
+  </h1>
   <section
     aria-label="Interest rate change history"
     class="MuiBox-root css-164r41r"

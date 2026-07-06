@@ -74,6 +74,20 @@ export const numericalInputs: Array<InputArg<number>> = [
     getStateFromProfile: (profile: Profile) =>
       makeDefaultNumber(profile.OneTimeLoan),
   },
+  {
+    label: "PayNow Received",
+    tooltip: "Incoming PayNow transfers monthly (≥$1,500 qualifies for Trust Flex bonus)",
+    fn: (profile, v) => ({ ...profile, PayNowReceived: v }),
+    getStateFromProfile: (profile: Profile) =>
+      makeDefaultNumber(profile.PayNowReceived),
+  },
+  {
+    label: "FX Spend",
+    tooltip: "Foreign currency spend monthly (≥$500 qualifies for Trust Flex bonus)",
+    fn: (profile, v) => ({ ...profile, FXSpend: v }),
+    getStateFromProfile: (profile: Profile) =>
+      makeDefaultNumber(profile.FXSpend),
+  },
 ];
 
 export const booleanInputs: Array<InputArg<boolean>> = [
@@ -82,5 +96,11 @@ export const booleanInputs: Array<InputArg<boolean>> = [
     tooltip: "Is/Willing to be NTUC Member",
     fn: (profile, v) => ({ ...profile, IsNTUCMember: v }),
     getStateFromProfile: (profile: Profile) => profile.IsNTUCMember,
+  },
+  {
+    label: "Referred Customer?",
+    tooltip: "Referred a new Trust credit card customer this month and completed application",
+    fn: (profile, v) => ({ ...profile, ReferredCustomer: v }),
+    getStateFromProfile: (profile: Profile) => profile.ReferredCustomer,
   },
 ];

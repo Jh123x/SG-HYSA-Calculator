@@ -32,17 +32,6 @@ export function isValidSlug(slug: string): boolean {
 }
 
 /**
- * Map of slug → display name for all known banks.
- */
-export const SLUG_MAP: Record<string, string> = Object.entries(banks).reduce(
-  (acc, [slug, data]) => {
-    acc[slug] = data.name;
-    return acc;
-  },
-  {} as Record<string, string>,
-);
-
-/**
  * Convert a bank display name to a URL-safe slug.
  *
  * This is a lossy, one-way transformation used only when migrating

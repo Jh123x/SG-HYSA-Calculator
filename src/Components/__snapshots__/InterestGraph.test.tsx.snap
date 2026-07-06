@@ -257,7 +257,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="dbs-multiplier-account"
+            data-series="trust-bank-flex"
           >
             <button
               class="MuiChartsLegend-series"
@@ -291,13 +291,13 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                DBS Multiplier
+                Trust Bank (Flex)
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="gxs-savings-account"
+            data-series="dbs-multiplier-account"
           >
             <button
               class="MuiChartsLegend-series"
@@ -331,13 +331,13 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                GXS Savings
+                DBS Multiplier
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="chocolate-finance"
+            data-series="gxs-savings-account"
           >
             <button
               class="MuiChartsLegend-series"
@@ -371,13 +371,13 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Chocolate Finance
+                GXS Savings
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="boc-supersaver"
+            data-series="chocolate-finance"
           >
             <button
               class="MuiChartsLegend-series"
@@ -411,13 +411,13 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                BOC SuperSaver
+                Chocolate Finance
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="maybank-saveup"
+            data-series="boc-supersaver"
           >
             <button
               class="MuiChartsLegend-series"
@@ -451,13 +451,13 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Maybank SaveUp
+                BOC SuperSaver
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="maybank-isavvy"
+            data-series="maybank-saveup"
           >
             <button
               class="MuiChartsLegend-series"
@@ -491,13 +491,13 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Maybank iSAVvy
+                Maybank SaveUp
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="maybank-isavvy-plus"
+            data-series="maybank-isavvy"
           >
             <button
               class="MuiChartsLegend-series"
@@ -531,13 +531,13 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Maybank iSAVvy Plus
+                Maybank iSAVvy
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="cimb-fastsaver"
+            data-series="maybank-isavvy-plus"
           >
             <button
               class="MuiChartsLegend-series"
@@ -571,13 +571,13 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                CIMB FastSaver
+                Maybank iSAVvy Plus
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="citi-wealth-first-account"
+            data-series="cimb-fastsaver"
           >
             <button
               class="MuiChartsLegend-series"
@@ -603,6 +603,46 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     d="M3.192,0A3.192,3.192,0,1,1,-3.192,0A3.192,3.192,0,1,1,3.192,0"
                     fill="#fff"
                     stroke="#aaffc3"
+                    stroke-width="2"
+                    transform="translate(8, 8) "
+                  />
+                </svg>
+              </div>
+              <span
+                class="MuiChartsLabel-root MuiChartsLegend-label"
+              >
+                CIMB FastSaver
+              </span>
+            </button>
+          </li>
+          <li
+            class="MuiChartsLegend-item"
+            data-series="citi-wealth-first-account"
+          >
+            <button
+              class="MuiChartsLegend-series"
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+              >
+                <svg
+                  preserveAspectRatio="none"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    class="MuiChartsLabelMark-fill"
+                    d="M 1 8 L 15 8"
+                    stroke="#808000"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    vector-effect="non-scaling-stroke"
+                  />
+                  <path
+                    d="M-2.828,-2.828h5.657v5.657h-5.657Z"
+                    fill="#fff"
+                    stroke="#808000"
                     stroke-width="2"
                     transform="translate(8, 8) "
                   />
@@ -902,6 +942,33 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   />
                 </g>
                 <clippath
+                  id="_r_1_-trust-bank-flex-line-clip"
+                >
+                  <rect
+                    class="css-dbuw8t"
+                    height="500"
+                    width="100"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#_r_1_-trust-bank-flex-line-clip)"
+                >
+                  <path
+                    class="MuiLineChart-line"
+                    cursor="unset"
+                    d="M85,435C84.583,434.654,84.167,434.308,83.75,433.963C83.333,433.617,82.917,433.271,82.5,432.925C82.083,432.579,81.667,432.233,81.25,431.888C80.833,431.542,80.417,431.196,80,430.85C79.583,430.504,79.167,430.158,78.75,429.813C78.333,429.467,77.917,429.121,77.5,428.775C77.083,428.429,76.667,428.083,76.25,427.738C75.833,427.392,75.417,427.046,75,426.7C74.583,426.354,74.167,426.354,73.75,425.663C73.333,424.971,72.917,367.217,72.5,362.375C72.083,357.533,71.667,357.533,71.25,355.113C70.833,352.692,70.417,350.271,70,347.85C69.583,345.429,69.167,343.008,68.75,340.588C68.333,338.167,67.917,335.746,67.5,333.325C67.083,330.904,66.667,328.483,66.25,326.063C65.833,323.642,65.417,321.221,65,318.8C64.583,316.379,64.167,313.958,63.75,311.538C63.333,309.117,62.917,306.696,62.5,304.275C62.083,301.854,61.667,299.433,61.25,297.013C60.833,294.592,60.417,292.171,60,289.75"
+                    data-series="trust-bank-flex"
+                    data-series-id="trust-bank-flex"
+                    fill="none"
+                    opacity="1"
+                    stroke="#42d4f4"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </g>
+                <clippath
                   id="_r_1_-dbs-multiplier-account-line-clip"
                 >
                   <rect
@@ -923,7 +990,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     data-series-id="dbs-multiplier-account"
                     fill="none"
                     opacity="1"
-                    stroke="#42d4f4"
+                    stroke="#f032e6"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -950,7 +1017,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     data-series-id="gxs-savings-account"
                     fill="none"
                     opacity="1"
-                    stroke="#f032e6"
+                    stroke="#bfef45"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -977,7 +1044,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     data-series-id="chocolate-finance"
                     fill="none"
                     opacity="1"
-                    stroke="#bfef45"
+                    stroke="#fabed4"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -1004,7 +1071,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     data-series-id="boc-supersaver"
                     fill="none"
                     opacity="1"
-                    stroke="#fabed4"
+                    stroke="#469990"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -1031,7 +1098,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     data-series-id="maybank-saveup"
                     fill="none"
                     opacity="1"
-                    stroke="#469990"
+                    stroke="#9a6324"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -1058,7 +1125,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     data-series-id="maybank-isavvy"
                     fill="none"
                     opacity="1"
-                    stroke="#9a6324"
+                    stroke="#fffac8"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -1085,7 +1152,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     data-series-id="maybank-isavvy-plus"
                     fill="none"
                     opacity="1"
-                    stroke="#fffac8"
+                    stroke="#800000"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -1112,7 +1179,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     data-series-id="cimb-fastsaver"
                     fill="none"
                     opacity="1"
-                    stroke="#800000"
+                    stroke="#aaffc3"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -1139,7 +1206,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                     data-series-id="citi-wealth-first-account"
                     fill="none"
                     opacity="1"
-                    stroke="#aaffc3"
+                    stroke="#808000"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -1514,6 +1581,10 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                   data-series="trust-bank-zen"
                 />
                 <g
+                  clip-path="url(#_r_1_-trust-bank-flex-line-clip)"
+                  data-series="trust-bank-flex"
+                />
+                <g
                   clip-path="url(#_r_1_-dbs-multiplier-account-line-clip)"
                   data-series="dbs-multiplier-account"
                 />
@@ -1848,7 +1919,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="dbs-multiplier-account"
+            data-series="trust-bank-flex"
           >
             <button
               class="MuiChartsLegend-series"
@@ -1882,13 +1953,13 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                DBS Multiplier
+                Trust Bank (Flex)
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="gxs-savings-account"
+            data-series="dbs-multiplier-account"
           >
             <button
               class="MuiChartsLegend-series"
@@ -1922,13 +1993,13 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                GXS Savings
+                DBS Multiplier
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="chocolate-finance"
+            data-series="gxs-savings-account"
           >
             <button
               class="MuiChartsLegend-series"
@@ -1962,13 +2033,13 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Chocolate Finance
+                GXS Savings
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="boc-supersaver"
+            data-series="chocolate-finance"
           >
             <button
               class="MuiChartsLegend-series"
@@ -2002,13 +2073,13 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                BOC SuperSaver
+                Chocolate Finance
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="maybank-saveup"
+            data-series="boc-supersaver"
           >
             <button
               class="MuiChartsLegend-series"
@@ -2042,13 +2113,13 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Maybank SaveUp
+                BOC SuperSaver
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="maybank-isavvy"
+            data-series="maybank-saveup"
           >
             <button
               class="MuiChartsLegend-series"
@@ -2082,13 +2153,13 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Maybank iSAVvy
+                Maybank SaveUp
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="maybank-isavvy-plus"
+            data-series="maybank-isavvy"
           >
             <button
               class="MuiChartsLegend-series"
@@ -2122,13 +2193,13 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                Maybank iSAVvy Plus
+                Maybank iSAVvy
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="cimb-fastsaver"
+            data-series="maybank-isavvy-plus"
           >
             <button
               class="MuiChartsLegend-series"
@@ -2162,13 +2233,13 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
               <span
                 class="MuiChartsLabel-root MuiChartsLegend-label"
               >
-                CIMB FastSaver
+                Maybank iSAVvy Plus
               </span>
             </button>
           </li>
           <li
             class="MuiChartsLegend-item"
-            data-series="citi-wealth-first-account"
+            data-series="cimb-fastsaver"
           >
             <button
               class="MuiChartsLegend-series"
@@ -2194,6 +2265,46 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     d="M3.192,0A3.192,3.192,0,1,1,-3.192,0A3.192,3.192,0,1,1,3.192,0"
                     fill="#fff"
                     stroke="#aaffc3"
+                    stroke-width="2"
+                    transform="translate(8, 8) "
+                  />
+                </svg>
+              </div>
+              <span
+                class="MuiChartsLabel-root MuiChartsLegend-label"
+              >
+                CIMB FastSaver
+              </span>
+            </button>
+          </li>
+          <li
+            class="MuiChartsLegend-item"
+            data-series="citi-wealth-first-account"
+          >
+            <button
+              class="MuiChartsLegend-series"
+              type="button"
+            >
+              <div
+                aria-hidden="true"
+                class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+              >
+                <svg
+                  preserveAspectRatio="none"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    class="MuiChartsLabelMark-fill"
+                    d="M 1 8 L 15 8"
+                    stroke="#808000"
+                    stroke-linecap="round"
+                    stroke-width="2"
+                    vector-effect="non-scaling-stroke"
+                  />
+                  <path
+                    d="M-2.828,-2.828h5.657v5.657h-5.657Z"
+                    fill="#fff"
+                    stroke="#808000"
                     stroke-width="2"
                     transform="translate(8, 8) "
                   />
@@ -2465,6 +2576,33 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                   />
                 </g>
                 <clippath
+                  id="_r_4_-trust-bank-flex-line-clip"
+                >
+                  <rect
+                    class="css-dbuw8t"
+                    height="500"
+                    width="100"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <g
+                  clip-path="url(#_r_4_-trust-bank-flex-line-clip)"
+                >
+                  <path
+                    class="MuiLineChart-line"
+                    cursor="unset"
+                    d="M85,435C84.583,432.233,84.167,429.467,83.75,426.7C83.333,423.933,82.917,421.167,82.5,418.4C82.083,415.633,81.667,412.867,81.25,410.1C80.833,407.333,80.417,404.567,80,401.8C79.583,399.033,79.167,396.267,78.75,393.5C78.333,390.733,77.917,387.967,77.5,385.2C77.083,382.433,76.667,379.667,76.25,376.9C75.833,374.133,75.417,371.367,75,368.6C74.583,365.833,74.167,365.833,73.75,360.3C73.333,354.767,72.917,318.8,72.5,310.5C72.083,302.2,71.667,302.2,71.25,298.05C70.833,293.9,70.417,289.75,70,285.6C69.583,281.45,69.167,277.3,68.75,273.15C68.333,269,67.917,264.85,67.5,260.7C67.083,256.55,66.667,252.4,66.25,248.25C65.833,244.1,65.417,239.95,65,235.8C64.583,231.65,64.167,227.5,63.75,223.35C63.333,219.2,62.917,215.05,62.5,210.9C62.083,206.75,61.667,202.6,61.25,198.45C60.833,194.3,60.417,190.15,60,186"
+                    data-series="trust-bank-flex"
+                    data-series-id="trust-bank-flex"
+                    fill="none"
+                    opacity="1"
+                    stroke="#42d4f4"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </g>
+                <clippath
                   id="_r_4_-dbs-multiplier-account-line-clip"
                 >
                   <rect
@@ -2486,7 +2624,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     data-series-id="dbs-multiplier-account"
                     fill="none"
                     opacity="1"
-                    stroke="#42d4f4"
+                    stroke="#f032e6"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -2513,7 +2651,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     data-series-id="gxs-savings-account"
                     fill="none"
                     opacity="1"
-                    stroke="#f032e6"
+                    stroke="#bfef45"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -2540,7 +2678,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     data-series-id="chocolate-finance"
                     fill="none"
                     opacity="1"
-                    stroke="#bfef45"
+                    stroke="#fabed4"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -2567,7 +2705,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     data-series-id="boc-supersaver"
                     fill="none"
                     opacity="1"
-                    stroke="#fabed4"
+                    stroke="#469990"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -2594,7 +2732,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     data-series-id="maybank-saveup"
                     fill="none"
                     opacity="1"
-                    stroke="#469990"
+                    stroke="#9a6324"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -2621,7 +2759,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     data-series-id="maybank-isavvy"
                     fill="none"
                     opacity="1"
-                    stroke="#9a6324"
+                    stroke="#fffac8"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -2648,7 +2786,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     data-series-id="maybank-isavvy-plus"
                     fill="none"
                     opacity="1"
-                    stroke="#fffac8"
+                    stroke="#800000"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -2675,7 +2813,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     data-series-id="cimb-fastsaver"
                     fill="none"
                     opacity="1"
-                    stroke="#800000"
+                    stroke="#aaffc3"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -2702,7 +2840,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                     data-series-id="citi-wealth-first-account"
                     fill="none"
                     opacity="1"
-                    stroke="#aaffc3"
+                    stroke="#808000"
                     stroke-linejoin="round"
                     stroke-width="2"
                   />
@@ -2975,6 +3113,10 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                 <g
                   clip-path="url(#_r_4_-trust-bank-zen-line-clip)"
                   data-series="trust-bank-zen"
+                />
+                <g
+                  clip-path="url(#_r_4_-trust-bank-flex-line-clip)"
+                  data-series="trust-bank-flex"
                 />
                 <g
                   clip-path="url(#_r_4_-dbs-multiplier-account-line-clip)"

@@ -5,6 +5,7 @@ import {
   useCallback,
 } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import {
   Box,
   Typography,
@@ -102,10 +103,27 @@ export const HistoryTab = ({ profile }: Props) => {
 
   useDocumentTitle("Rate Change History — Track Singapore HYSA Interest Rates Over Time");
 
-  if (isMobile) {
-    return <HistoryTabMobile profile={profile} chartMode={chartMode} setChartMode={setChartMode} />;
-  }
-  return <HistoryTabDesktop profile={profile} chartMode={chartMode} setChartMode={setChartMode} />;
+  return (
+    <>
+      <Helmet>
+        <title>Rate Change History — Track Singapore HYSA Interest Rates Over Time — SG HYSA Calculator</title>
+        <meta name="description" content="View historical interest rate changes for all Singapore high yield savings accounts. Track how UOB One, OCBC 360, DBS Multiplier, Maribank, Trust Bank, GXS rates have evolved over time." />
+        <meta property="og:title" content="Rate Change History — Track Singapore HYSA Interest Rates Over Time — SG HYSA Calculator" />
+        <meta property="og:description" content="View historical interest rate changes for all Singapore high yield savings accounts. Track how UOB One, OCBC 360, DBS Multiplier, Maribank, Trust Bank, GXS rates have evolved over time." />
+        <meta property="og:url" content="https://hysa.jh123x.com/history" />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://hysa.jh123x.com/history" />
+      </Helmet>
+      <Typography component="h1" variant="h4" sx={{ color: textColor, fontWeight: 700, mb: 2, fontSize: { xs: "1.25rem", sm: "1.5rem" } }}>
+        Rate Change History
+      </Typography>
+      {isMobile ? (
+        <HistoryTabMobile profile={profile} chartMode={chartMode} setChartMode={setChartMode} />
+      ) : (
+        <HistoryTabDesktop profile={profile} chartMode={chartMode} setChartMode={setChartMode} />
+      )}
+    </>
+  );
 };
 
 // ══════════════════════════════════════════════════════════════════
@@ -565,3 +583,5 @@ function useHistoryData(profile: Profile, selectedBanks: string[]) {
 
   return { bankEirs, sortedOptions, displayNames, isMaxed, bankHistories };
 }
+
+export default HistoryTab;
