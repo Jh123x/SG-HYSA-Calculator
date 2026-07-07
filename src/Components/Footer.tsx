@@ -1,5 +1,5 @@
-import { Container, Typography, Link, Box } from "@mui/material";
-import { bgColor } from "../consts/theme";
+import { Box, Typography } from "@mui/material";
+import { mutedColor, borderColor } from "../consts/theme";
 import Socials from "./Socials";
 
 export const Footer = () => {
@@ -7,22 +7,20 @@ export const Footer = () => {
     <Box
       component="footer"
       sx={{
-        backgroundColor: bgColor,
-        py: 1.5,
-        borderTop: "1px solid rgba(255,255,255,0.06)",
+        height: 32,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: 1,
+        px: 2,
+        borderTop: `1px solid ${borderColor}`,
         flexShrink: 0,
       }}
     >
-      <Container maxWidth="sm" sx={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap" }}>
-        <Typography variant="body2" color="textSecondary">
-          {"Copyright © "}
-          <Link color="inherit" href="https://jh123x.com/">
-            Jh123x
-          </Link>{" "}
-          {new Date().getFullYear()}
-        </Typography>
-        <Socials />
-      </Container>
+      <Typography sx={{ fontSize: "0.7rem", color: mutedColor }}>
+        © Jh123x {new Date().getFullYear()}
+      </Typography>
+      <Socials />
     </Box>
   );
 };
