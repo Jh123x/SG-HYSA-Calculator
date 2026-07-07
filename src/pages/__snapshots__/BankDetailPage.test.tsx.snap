@@ -13,7 +13,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
         class="MuiBox-root css-19zgt1b"
       >
         <div
-          class="MuiBox-root css-18nsp6o"
+          class="MuiBox-root css-1r0qzm1"
         >
           <section
             aria-label="Interest rate trend chart"
@@ -377,7 +377,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
           </section>
         </div>
         <div
-          class="MuiBox-root css-18nsp6o"
+          class="MuiBox-root css-1r0qzm1"
         >
           <section
             aria-label="Rate change history and bank details"
