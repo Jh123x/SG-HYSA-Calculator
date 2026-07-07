@@ -13,6 +13,7 @@ import {
 import SortIcon from "@mui/icons-material/Sort";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import { motion } from "framer-motion";
 import type { ResultProp } from "../types/props";
 import { bgColor, textColor, accentGreen, TOGGLE_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
@@ -140,6 +141,10 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
         }
         bottomRight={
           <Box
+            component={motion.div}
+            variants={cardContainer}
+            initial="hidden"
+            animate="show"
             sx={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
@@ -148,16 +153,17 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
             }}
           >
             {sortedResults.map(([slug, interest]) => (
-              <BankWidgetCard
-                key={slug}
-                slug={slug}
-                name={bankInfo[slug]?.name ?? slug}
-                eir={interest.interest.toYearlyPercent() ?? 0}
-                yearlyInterest={interest.interest.toYearly() ?? 0}
-                remarks={bankInfo[slug]?.remarks}
-                url={interest.url}
-                onClick={() => navigate(`/bank/${slug}`)}
-              />
+              <motion.div key={slug} variants={cardItem}>
+                <BankWidgetCard
+                  slug={slug}
+                  name={bankInfo[slug]?.name ?? slug}
+                  eir={interest.interest.toYearlyPercent() ?? 0}
+                  yearlyInterest={interest.interest.toYearly() ?? 0}
+                  remarks={bankInfo[slug]?.remarks}
+                  url={interest.url}
+                  onClick={() => navigate(`/bank/${slug}`)}
+                />
+              </motion.div>
             ))}
           </Box>
         }
@@ -238,18 +244,25 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
       </Box>
 
       {/* Cards — stacked */}
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+      <Box
+        component={motion.div}
+        variants={cardContainer}
+        initial="hidden"
+        animate="show"
+        sx={{ display: "flex", flexDirection: "column", gap: 1 }}
+      >
         {mobileSorted.map(([slug, interest]) => (
-          <BankWidgetCard
-            key={slug}
-            slug={slug}
-            name={bankInfo[slug]?.name ?? slug}
-            eir={interest.interest.toYearlyPercent() ?? 0}
-            yearlyInterest={interest.interest.toYearly() ?? 0}
-            remarks={bankInfo[slug]?.remarks}
-            url={interest.url}
-            onClick={() => navigate(`/bank/${slug}`)}
-          />
+          <motion.div key={slug} variants={cardItem}>
+            <BankWidgetCard
+              slug={slug}
+              name={bankInfo[slug]?.name ?? slug}
+              eir={interest.interest.toYearlyPercent() ?? 0}
+              yearlyInterest={interest.interest.toYearly() ?? 0}
+              remarks={bankInfo[slug]?.remarks}
+              url={interest.url}
+              onClick={() => navigate(`/bank/${slug}`)}
+            />
+          </motion.div>
         ))}
       </Box>
     </Box>
@@ -257,6 +270,21 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
 };
 
 export default CurrentRatesTab;
+
+// ── Animation variants ──────────────────────────────────────────
+
+const cardContainer = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.04 },
+  },
+};
+
+const cardItem = {
+  hidden: { opacity: 0, y: 16 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.25 } },
+};
 
 // ── Shared helpers ─────────────────────────────────────────────────
 
