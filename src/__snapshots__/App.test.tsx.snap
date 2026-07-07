@@ -772,7 +772,7 @@ exports[`App > should render correctly 1`] = `
                 >
                   <button
                     aria-pressed="true"
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-1fme6j2-MuiButtonBase-root-MuiToggleButton-root"
+                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-1wzmsu0-MuiButtonBase-root-MuiToggleButton-root"
                     tabindex="0"
                     type="button"
                     value="current"
@@ -781,7 +781,7 @@ exports[`App > should render correctly 1`] = `
                   </button>
                   <button
                     aria-pressed="false"
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-1fme6j2-MuiButtonBase-root-MuiToggleButton-root"
+                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-1wzmsu0-MuiButtonBase-root-MuiToggleButton-root"
                     tabindex="0"
                     type="button"
                     value="history"
