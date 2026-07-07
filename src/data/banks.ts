@@ -12,6 +12,7 @@
 
 import type { RateSnapshot } from "../types/history";
 import type Profile from "../types/profile";
+import { NewProfile } from "../types/profile";
 import { uobHistory } from "../logic/uob";
 import { gxsHistory } from "../logic/gxs";
 import { ocbcHistory } from "../logic/ocbc360";
@@ -36,7 +37,7 @@ import { chocoFinanceHistory } from "../logic/choco_finance";
 // Pre-compute Mari current rate so remarks are self-contained
 const _mariCurrentRate = (() => {
   const { interestFn } = deriveCurrentFromHistory(maribankHistory);
-  return interestFn({ Savings: 10000 } as Profile)
+  return interestFn(NewProfile({ Savings: 10000 }))
     .toYearlyPercent()
     .toFixed(2);
 })();
