@@ -1,6 +1,6 @@
 import { LineChart } from "@mui/x-charts/LineChart";
 import { Box, type SxProps, type Theme } from "@mui/material";
-import { lineColors, textColor } from "../consts/theme";
+import { lineColors, textColor, mutedColor, borderColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 import type { ResultInterest } from "../types/interest_result";
@@ -101,6 +101,7 @@ export const InterestVsSavingsChart = ({
             label: "Savings ($)",
             scaleType: "linear",
             valueFormatter: (v) => `$${v / 1000}k`,
+            tickLabelStyle: { fill: mutedColor, fontSize: 12, fontWeight: 400 },
           },
         ]}
         series={series}
@@ -110,15 +111,19 @@ export const InterestVsSavingsChart = ({
             scaleType: "linear",
             min: 0,
             valueFormatter: (v) => `$${v / 1000}k`,
+            tickLabelStyle: { fill: mutedColor, fontSize: 12, fontWeight: 400 },
           },
         ]}
         height={height}
         grid={{ vertical: true, horizontal: true }}
-        slotProps={{ legend: legendSlotProps }}
+        slotProps={{
+          legend: legendSlotProps,
+        }}
         sx={{
-          ".MuiChartsAxis-label": { fill: textColor },
-          ".MuiChartsAxis-tick": { fill: textColor },
-          ".MuiChartsLegend-label": { fill: textColor },
+          ".MuiChartsAxis-line": { stroke: borderColor },
+          ".MuiChartsAxis-tick": { fill: mutedColor },
+          ".MuiChartsAxis-label": { fill: mutedColor, fontSize: 12, fontWeight: 400 },
+          ".MuiChartsLegend-label": { fill: mutedColor },
           "& .MuiChartsSurface-root": { background: "transparent" },
           ...(height === undefined ? { height: "100%", width: "100%" } : {}),
         }}

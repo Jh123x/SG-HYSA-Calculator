@@ -1,8 +1,9 @@
 import { ChartsReferenceLine } from "@mui/x-charts";
 import { Paper, Typography } from "@mui/material";
+import { motion } from "framer-motion";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
-import { lineColors, textColor, bgColor } from "../consts/theme";
+import { lineColors, textColor, bgColor, mutedColor, borderColor } from "../consts/theme";
 import type Profile from "../types/profile";
 import {
   InterestVsSavingsChart,
@@ -57,13 +58,18 @@ export const InterestGraph = ({
       sx={{
         p: 2,
 
-        backgroundColor: bgColor,
         height: height === "fill" ? "100%" : "auto",
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <InterestVsSavingsChart
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+        style={{ display: "flex", flexDirection: "column", flex: 1, minHeight: 0 }}
+      >
+        <InterestVsSavingsChart
         lines={lines}
         profile={profile}
         height={height === "fill" ? undefined : height}
@@ -83,6 +89,7 @@ export const InterestGraph = ({
           }}
         />
       </InterestVsSavingsChart>
+      </motion.div>
 
       <Typography variant="caption" sx={ASTERISKS_SX}>
         {BUILT_IN_NOTES.map((note, i) => (
