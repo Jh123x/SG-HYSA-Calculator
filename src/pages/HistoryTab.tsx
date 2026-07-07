@@ -1,10 +1,4 @@
-import {
-  useEffect,
-  useMemo,
-  useState,
-  useCallback,
-} from "react";
-import { useSearchParams, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import {
   Box,
@@ -34,16 +28,12 @@ import {
 } from "@mui/icons-material";
 import { ComparisonChart } from "../Components/ComparisonChart";
 import { ThreePanelLayout } from "../Components/ThreePanelLayout";
-import { isValidSlug } from "../logic/slugs";
 import type Profile from "../types/profile";
-import { bankInfo } from "../logic/constants";
-import { deriveCurrentFromHistory, resolveHistoryForChart } from "../logic/history";
-import { formatDate } from "../logic/dates";
 import { textColor, bgColor, primaryColor } from "../consts/colors";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { useMobile } from "../hooks/useMobile";
 import { MAX_COMPARISON_BANKS } from "../consts/keys";
-import { ALL_SLUGS } from "../logic/slugs";
+import { useHistoryState, type BankHistoryGroup } from "../hooks/useHistoryState";
 
 interface Props {
   profile: Profile;
@@ -59,40 +49,7 @@ const TOGGLE_SX = {
   "&:hover": { backgroundColor: `${primaryColor}18`, borderColor: primaryColor },
 };
 
-const BANKS_PARAM = "banks";
-const BANKS_SESSION_KEY = "history_selected_banks";
-
 type ChartMode = "yearly" | "eir";
-
-interface BankHistoryRow {
-  date: string;
-  changeSummary: string;
-  yearlyInterest: string;
-  eir: string;
-  sourceUrl?: string;
-}
-
-interface BankHistoryGroup {
-  slug: string;
-  name: string;
-  rows: BankHistoryRow[];
-}
-
-function parseBanksRaw(raw: string): string[] {
-  return raw.split(",").map((s) => s.trim()).filter((s) => s.length > 0 && isValidSlug(s));
-}
-
-function readSessionBanks(): string[] {
-  try {
-    const stored = sessionStorage.getItem(BANKS_SESSION_KEY);
-    if (!stored) return [];
-    const parsed: unknown = JSON.parse(stored);
-    if (!Array.isArray(parsed)) return [];
-    return parsed.filter((s): s is string => typeof s === "string" && isValidSlug(s));
-  } catch {
-    return [];
-  }
-}
 
 /**
  * Rate History tab — early split for clarity.
@@ -135,46 +92,18 @@ const HistoryTabDesktop = ({
   chartMode,
   setChartMode,
 }: Props & { chartMode: ChartMode; setChartMode: (m: ChartMode) => void }) => {
-  const navigate = useNavigate();
-  const [searchParams, setSearchParams] = useSearchParams();
-  const [selectedBanks, setSelectedBanks] = useState<string[]>(readSessionBanks);
-  const [collapsedBanks, setCollapsedBanks] = useState<Set<string>>(new Set());
-
-  const urlBanks = useMemo(
-    () => (searchParams.get(BANKS_PARAM) ? parseBanksRaw(searchParams.get(BANKS_PARAM)!) : null),
-    [],
-  );
-
-  useEffect(() => {
-    if (urlBanks && urlBanks.length > 0) {
-      setSelectedBanks(urlBanks);
-      sessionStorage.setItem(BANKS_SESSION_KEY, JSON.stringify(urlBanks));
-      const next = new URLSearchParams(searchParams);
-      next.delete(BANKS_PARAM);
-      setSearchParams(next, { replace: true });
-    }
-  }, []);
-
-  const handleBankChange = (banks: string[]) => {
-    setSelectedBanks(banks);
-    sessionStorage.setItem(BANKS_SESSION_KEY, JSON.stringify(banks));
-    setSearchParams((prev) => {
-      const next = new URLSearchParams(prev);
-      if (banks.length > 0) next.set(BANKS_PARAM, banks.join(","));
-      else next.delete(BANKS_PARAM);
-      return next;
-    }, { replace: true });
-  };
-
-  const toggleCollapse = useCallback((slug: string) => {
-    setCollapsedBanks((prev) => {
-      const next = new Set(prev);
-      next.has(slug) ? next.delete(slug) : next.add(slug);
-      return next;
-    });
-  }, []);
-
-  const { bankEirs, sortedOptions, displayNames, isMaxed, bankHistories } = useHistoryData(profile, selectedBanks);
+  const {
+    navigate,
+    selectedBanks,
+    collapsedBanks,
+    handleBankChange,
+    toggleCollapse,
+    bankEirs,
+    sortedOptions,
+    displayNames,
+    isMaxed,
+    bankHistories,
+  } = useHistoryState(profile);
 
   const renderGroupedTable = () => {
     const highlightCol = chartMode === "yearly" ? "yearlyInterest" : "eir";
@@ -316,46 +245,18 @@ const HistoryTabMobile = ({
   chartMode,
   setChartMode,
 }: Props & { chartMode: ChartMode; setChartMode: (m: ChartMode) => void }) => {
-  const navigate = useNavigate();
-  const [searchParams, setSearchParams] = useSearchParams();
-  const [selectedBanks, setSelectedBanks] = useState<string[]>(readSessionBanks);
-  const [collapsedBanks, setCollapsedBanks] = useState<Set<string>>(new Set());
-
-  const urlBanks = useMemo(
-    () => (searchParams.get(BANKS_PARAM) ? parseBanksRaw(searchParams.get(BANKS_PARAM)!) : null),
-    [],
-  );
-
-  useEffect(() => {
-    if (urlBanks && urlBanks.length > 0) {
-      setSelectedBanks(urlBanks);
-      sessionStorage.setItem(BANKS_SESSION_KEY, JSON.stringify(urlBanks));
-      const next = new URLSearchParams(searchParams);
-      next.delete(BANKS_PARAM);
-      setSearchParams(next, { replace: true });
-    }
-  }, []);
-
-  const handleBankChange = (banks: string[]) => {
-    setSelectedBanks(banks);
-    sessionStorage.setItem(BANKS_SESSION_KEY, JSON.stringify(banks));
-    setSearchParams((prev) => {
-      const next = new URLSearchParams(prev);
-      if (banks.length > 0) next.set(BANKS_PARAM, banks.join(","));
-      else next.delete(BANKS_PARAM);
-      return next;
-    }, { replace: true });
-  };
-
-  const toggleCollapse = useCallback((slug: string) => {
-    setCollapsedBanks((prev) => {
-      const next = new Set(prev);
-      next.has(slug) ? next.delete(slug) : next.add(slug);
-      return next;
-    });
-  }, []);
-
-  const { bankEirs, sortedOptions, displayNames, isMaxed, bankHistories } = useHistoryData(profile, selectedBanks);
+  const {
+    navigate,
+    selectedBanks,
+    collapsedBanks,
+    handleBankChange,
+    toggleCollapse,
+    bankEirs,
+    sortedOptions,
+    displayNames,
+    isMaxed,
+    bankHistories,
+  } = useHistoryState(profile);
 
   return (
     <Box component="section" aria-label="Interest rate change history" sx={{ mt: 1 }}>
@@ -529,59 +430,5 @@ const MobileRowGroupedList = ({
     </Paper>
   );
 };
-
-// ══════════════════════════════════════════════════════════════════
-// ── Shared data hook ──
-// ══════════════════════════════════════════════════════════════════
-
-function useHistoryData(profile: Profile, selectedBanks: string[]) {
-  const bankEirs = useMemo(() => {
-    const eirs: Record<string, string> = {};
-    for (const [slug, info] of Object.entries(bankInfo)) {
-      const { interestFn } = deriveCurrentFromHistory(info.history);
-      eirs[slug] = interestFn(profile).toYearlyPercent().toFixed(2);
-    }
-    return eirs;
-  }, [profile]);
-
-  const sortedOptions = useMemo(
-    () => [...ALL_SLUGS].sort((a, b) => parseFloat(bankEirs[b] ?? "0") - parseFloat(bankEirs[a] ?? "0")),
-    [bankEirs],
-  );
-
-  const displayNames = useMemo(() => {
-    const map: Record<string, string> = {};
-    for (const [slug, info] of Object.entries(bankInfo)) map[slug] = info.name;
-    return map;
-  }, []);
-
-  const isMaxed = selectedBanks.length >= MAX_COMPARISON_BANKS;
-
-  const bankHistories: BankHistoryGroup[] = useMemo(() => {
-    const result: BankHistoryGroup[] = [];
-    for (const slug of selectedBanks) {
-      const info = bankInfo[slug];
-      if (!info) continue;
-      const resolved = resolveHistoryForChart(info.history, profile);
-      result.push({
-        slug,
-        name: info.name,
-        rows: [...resolved].reverse().map((snapshot) => {
-          const isTbd = snapshot.date.getTime() === 0;
-          return {
-            date: isTbd ? "TBD" : formatDate(snapshot.date),
-            changeSummary: snapshot.changeSummary,
-            yearlyInterest: isTbd ? "—" : `$${snapshot.yearlyInterest.toFixed(2)}`,
-            eir: isTbd ? "—" : `${snapshot.eir.toFixed(2)}%`,
-            sourceUrl: snapshot.sourceUrl,
-          };
-        }),
-      });
-    }
-    return result;
-  }, [selectedBanks, profile]);
-
-  return { bankEirs, sortedOptions, displayNames, isMaxed, bankHistories };
-}
 
 export default HistoryTab;
