@@ -4,8 +4,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
 import { ErrorBoundary } from "./Components/ErrorBoundary";
-import { bgColor } from "./consts/theme";
-import { theme } from "./consts/theme";
+import { bgColor, theme } from "./consts/theme";
 import { useMobile } from "./hooks/useMobile";
 import type Profile from "./types/profile";
 
