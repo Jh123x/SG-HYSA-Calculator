@@ -177,7 +177,7 @@ const HistoryTabDesktop = ({
         <ToggleButton value="eir" sx={TOGGLE_SX}>EIR (%)</ToggleButton>
       </ToggleButtonGroup>
       <FormControl size="small" sx={{ minWidth: 200, flex: 1 }}>
-        <Select multiple value={selectedBanks} onChange={(e) => { const val = e.target.value as string[]; if (val.length <= MAX_COMPARISON_BANKS) handleBankChange(val); }} input={<OutlinedInput />} renderValue={(selected) => (<Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>{selected.map((slug) => <Chip key={slug} label={displayNames[slug] ?? slug} size="small" />)}</Box>)} displayEmpty sx={{ color: textColor, backgroundColor: bgColor, "& .MuiOutlinedInput-notchedOutline": { borderColor: `${textColor}40` }, "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "&.Mui-focused .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "& .MuiSvgIcon-root": { color: textColor } }}>
+        <Select multiple value={selectedBanks} onChange={(e) => { const val = (e as { target: { value: string[] } }).target.value; if (val.length <= MAX_COMPARISON_BANKS) handleBankChange(val); }} input={<OutlinedInput />} renderValue={(selected) => (<Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>{selected.map((slug) => <Chip key={slug} label={displayNames[slug] ?? slug} size="small" />)}</Box>)} displayEmpty sx={{ color: textColor, backgroundColor: bgColor, "& .MuiOutlinedInput-notchedOutline": { borderColor: `${textColor}40` }, "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "&.Mui-focused .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "& .MuiSvgIcon-root": { color: textColor } }}>
           <MenuItem disabled value=""><Typography variant="body2" sx={{ color: textColor, opacity: 0.6 }}>{selectedBanks.length === 0 ? "Select a bank to begin" : `Select banks (${selectedBanks.length}/${MAX_COMPARISON_BANKS})`}</Typography></MenuItem>
           {sortedOptions.map((slug) => (<MenuItem key={slug} value={slug} disabled={!selectedBanks.includes(slug) && isMaxed} sx={{ color: textColor, "&.Mui-selected": { backgroundColor: `${primaryColor}30` }, "&:hover": { backgroundColor: `${primaryColor}20` }, "&.Mui-disabled": { opacity: 0.35 } }}><Box sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}><Typography component="span" sx={{ color: textColor }}>{displayNames[slug] ?? slug}</Typography><Typography component="span" sx={{ opacity: 0.65, fontSize: "0.85em" }}>{profile.Savings > 0 ? `${bankEirs[slug]}%` : ""}</Typography></Box></MenuItem>))}
         </Select>
@@ -262,7 +262,7 @@ const HistoryTabMobile = ({
             multiple
             value={selectedBanks}
             onChange={(e) => {
-              const val = e.target.value as string[];
+              const val = (e as { target: { value: string[] } }).target.value;
               if (val.length <= MAX_COMPARISON_BANKS) handleBankChange(val);
             }}
             input={<OutlinedInput />}
