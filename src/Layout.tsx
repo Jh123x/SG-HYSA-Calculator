@@ -1,6 +1,7 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { Container, GlobalStyles, Box } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
+import { AnimatePresence, motion } from "framer-motion";
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
 import { ErrorBoundary } from "./Components/ErrorBoundary";
@@ -31,6 +32,7 @@ export const Layout = ({
   onRejectShared,
 }: LayoutProps) => {
   const { isMobile } = useMobile();
+  const location = useLocation();
 
   // Desktop: fixed viewport with auto overflow — pages that fully consume their
   // allocated space (e.g. ThreePanelLayout) don't scroll at the page level,
@@ -89,15 +91,26 @@ export const Layout = ({
             }}
           >
             <ErrorBoundary>
-              <Outlet
-                context={{
-                  currProfile,
-                  setCurrProfile,
-                  pendingUrlProfile,
-                  onAcceptShared,
-                  onRejectShared,
-                }}
-              />
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={location.pathname}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8 }}
+                  transition={{ duration: 0.2 }}
+                  style={{ width: "100%", height: "100%" }}
+                >
+                  <Outlet
+                    context={{
+                      currProfile,
+                      setCurrProfile,
+                      pendingUrlProfile,
+                      onAcceptShared,
+                      onRejectShared,
+                    }}
+                  />
+                </motion.div>
+              </AnimatePresence>
             </ErrorBoundary>
           </Container>
         </Box>
