@@ -1,5 +1,39 @@
 import { createTheme, Theme, type Components, type SxProps } from "@mui/material";
-import { primaryColor, bgColor, textColor } from "./colors";
+
+// ── Color primitives ─────────────────────────────────────────────
+
+export const primaryColor = "#9550ff";
+export const bgColor = "#282828";
+export const textColor = "#FFFFFF";
+export const dangerColor = "#d32f2f";
+
+export const lineColors: string[] = [
+  "#e6194b",
+  "#3cb44b",
+  "#ffe119",
+  "#4363d8",
+  "#f58231",
+  "#911eb4",
+  "#42d4f4",
+  "#f032e6",
+  "#bfef45",
+  "#fabed4",
+  "#469990",
+  "#9a6324", // Brown
+  "#fffac8", // Beige
+  "#800000", // Maroon
+  "#aaffc3", // Mint
+  "#808000", // Olive
+  "#ffd8b1", // Apricot
+  "#000075", // Navy
+  "#a9a9a9", // Grey
+  "#ffffff", // White
+  "#000000", // Black
+  "#e6beff", // Lavender
+  "#dcbeff", // Mauve
+];
+
+// ── Reusable style fragments ─────────────────────────────────────
 
 /** ToggleButton overrides that vary per use case (added on top of theme defaults). */
 export const TOGGLE_SX: SxProps<Theme> = {
@@ -11,19 +45,13 @@ export const TOGGLE_SX: SxProps<Theme> = {
 const components: Components = {
   MuiPaper: {
     styleOverrides: {
-      root: {
-        borderRadius: 10,
-      },
+      root: { borderRadius: 10 },
     },
   },
   MuiTableCell: {
     styleOverrides: {
-      root: {
-        backgroundColor: bgColor,
-      },
-      head: {
-        fontWeight: 600,
-      },
+      root: { backgroundColor: bgColor },
+      head: { fontWeight: 600 },
     },
   },
   MuiToggleButton: {
@@ -50,16 +78,12 @@ const components: Components = {
   },
   MuiChip: {
     styleOverrides: {
-      outlined: {
-        borderColor: `${textColor}30`,
-      },
+      outlined: { borderColor: `${textColor}30` },
     },
   },
   MuiMenu: {
     styleOverrides: {
-      paper: {
-        backgroundColor: bgColor,
-      },
+      paper: { backgroundColor: bgColor },
     },
   },
   MuiSelect: {
@@ -89,9 +113,10 @@ const components: Components = {
 export const theme: Theme = createTheme({
   palette: {
     mode: "dark",
-    background: {
-      default: bgColor,
-    },
+    primary: { main: primaryColor },
+    background: { default: bgColor },
+    text: { primary: textColor },
+    error: { main: dangerColor },
   },
   components,
 });
