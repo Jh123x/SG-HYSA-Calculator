@@ -9,7 +9,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
   </h2>
   <section
     aria-label="Interest rate change history"
-    class="MuiBox-root css-zi2l0h"
+    class="MuiBox-root css-ijtv1l"
   >
     <section
       class="MuiBox-root css-tzrkmm"
