@@ -305,7 +305,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         <meta property="og:type" content="website" />
         <link rel="canonical" href={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
       </Helmet>
-      <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ height: isMobile ? undefined : "100%" }}>
+      <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ display: "flex", flexDirection: "column", height: isMobile ? undefined : "100%" }}>
       <ThreePanelLayout
         bottomLeft={renderChart()}
         bottomRight={renderHistorySection()}

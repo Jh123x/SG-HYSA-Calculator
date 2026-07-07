@@ -53,7 +53,7 @@ exports[`App > should render correctly 1`] = `
       >
         <section
           aria-label="Savings calculator"
-          class="MuiBox-root css-1sm2s1z"
+          class="MuiBox-root css-1dek1sc"
         >
           <div
             class="MuiBox-root css-1nc06pv"
@@ -849,7 +849,7 @@ exports[`App > should render correctly 1`] = `
             />
           </div>
           <div
-            class="MuiBox-root css-zi2l0h"
+            class="MuiBox-root css-h6vkb5"
           >
             <div
               class="MuiBox-root css-v3t3zj"

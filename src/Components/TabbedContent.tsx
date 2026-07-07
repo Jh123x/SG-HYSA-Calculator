@@ -87,6 +87,7 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
         height: "100%",
         display: "flex",
         flexDirection: "column",
+        overflow: "hidden",
       }}
     >
       {/* Inputs — natural height, no internal scroll */}
@@ -110,8 +111,8 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
         </ErrorBoundary>
       </Box>
 
-      {/* Content — fills remaining viewport; overflow propagates to Layout main */}
-      <Box sx={{ flex: 1, minHeight: 0 }}>
+      {/* Content — fills remaining viewport, pages distribute via flex */}
+      <Box sx={{ flex: 1, minHeight: 0, display: "flex", flexDirection: "column", overflow: "hidden" }}>
         <ErrorBoundary>
           <Outlet />
         </ErrorBoundary>

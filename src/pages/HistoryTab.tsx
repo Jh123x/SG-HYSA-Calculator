@@ -208,7 +208,7 @@ const HistoryTabDesktop = ({
   };
 
   return (
-    <Box component="section" aria-label="Interest rate change history" sx={{ height: "100%" }}>
+    <Box component="section" aria-label="Interest rate change history" sx={{ flex: 1, minHeight: 0 }}>
       <ThreePanelLayout
         bottomLeft={
           <>
