@@ -3,7 +3,7 @@
 exports[`Footer > should match snapshot 1`] = `
 <DocumentFragment>
   <footer
-    class="MuiBox-root css-le4ex5"
+    class="MuiBox-root css-14oxniu"
   >
     <div
       class="MuiContainer-root MuiContainer-maxWidthSm css-1fwilww-MuiContainer-root"
@@ -24,7 +24,7 @@ exports[`Footer > should match snapshot 1`] = `
         class="MuiBox-root css-171onha"
       >
         <a
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1qod8la-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-y8uq8v-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://jh123x.com"
           rel="noopener noreferrer"
@@ -44,7 +44,7 @@ exports[`Footer > should match snapshot 1`] = `
           </svg>
         </a>
         <a
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1qod8la-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-y8uq8v-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="/sitemap.xml"
           rel="noopener noreferrer"
@@ -69,7 +69,7 @@ exports[`Footer > should match snapshot 1`] = `
           </svg>
         </a>
         <a
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1qod8la-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-y8uq8v-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
           rel="noopener noreferrer"
@@ -89,7 +89,7 @@ exports[`Footer > should match snapshot 1`] = `
           </svg>
         </a>
         <a
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1qod8la-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-y8uq8v-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/jh123x/SG-HYSA-Calculator"
           rel="noopener noreferrer"

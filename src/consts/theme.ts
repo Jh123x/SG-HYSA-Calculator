@@ -1,36 +1,38 @@
 import { createTheme, Theme, type Components, type SxProps } from "@mui/material";
 
-// ── Color primitives ─────────────────────────────────────────────
+// ── Geckoboard-inspired color primitives ─────────────────────────
 
-export const primaryColor = "#9550ff";
-export const bgColor = "#282828";
-export const textColor = "#FFFFFF";
-export const dangerColor = "#d32f2f";
+export const bgColor = "#0d1117";
+export const surfaceColor = "#161b22";
+export const textColor = "#e6edf3";
+export const mutedColor = "#8b949e";
+export const primaryColor = "#58a6ff";
+export const accentGreen = "#3fb950";
+export const accentAmber = "#d29922";
+export const dangerColor = "#f85149";
+export const borderColor = "rgba(255,255,255,0.06)";
 
 export const lineColors: string[] = [
-  "#e6194b",
-  "#3cb44b",
-  "#ffe119",
-  "#4363d8",
-  "#f58231",
-  "#911eb4",
-  "#42d4f4",
-  "#f032e6",
-  "#bfef45",
-  "#fabed4",
-  "#469990",
-  "#9a6324", // Brown
-  "#fffac8", // Beige
-  "#800000", // Maroon
-  "#aaffc3", // Mint
-  "#808000", // Olive
-  "#ffd8b1", // Apricot
-  "#000075", // Navy
-  "#a9a9a9", // Grey
-  "#ffffff", // White
-  "#000000", // Black
-  "#e6beff", // Lavender
-  "#dcbeff", // Mauve
+  "#58a6ff", // blue
+  "#3fb950", // green
+  "#d29922", // amber
+  "#f0883e", // orange
+  "#bc8cff", // purple
+  "#f85149", // red
+  "#79c0ff", // light blue
+  "#56d364", // light green
+  "#e3b341", // light amber
+  "#ffa657", // light orange
+  "#d2a8ff", // light purple
+  "#ff7b72", // light red
+  "#a5d6ff", // pale blue
+  "#7ee787", // pale green
+  "#f0c976", // pale amber
+  "#fdaa6b", // pale orange
+  "#dbb4ff", // pale purple
+  "#ffa198", // pale red
+  "#e6edf3", // white-ish
+  "#484f58", // dark gray
 ];
 
 // ── Reusable style fragments ─────────────────────────────────────
@@ -45,22 +47,36 @@ export const TOGGLE_SX: SxProps<Theme> = {
 const components: Components = {
   MuiPaper: {
     styleOverrides: {
-      root: { borderRadius: 10 },
+      root: {
+        borderRadius: 12,
+        backgroundColor: surfaceColor,
+        border: `1px solid ${borderColor}`,
+      },
     },
   },
   MuiTableCell: {
     styleOverrides: {
-      root: { backgroundColor: bgColor },
-      head: { fontWeight: 600 },
+      root: {
+        backgroundColor: surfaceColor,
+        borderBottom: `1px solid ${borderColor}`,
+      },
+      head: {
+        fontWeight: 600,
+        color: mutedColor,
+        fontSize: "0.75rem",
+        textTransform: "uppercase",
+        letterSpacing: "0.05em",
+      },
     },
   },
   MuiToggleButton: {
     styleOverrides: {
       root: {
-        color: textColor,
-        borderColor: `${textColor}40`,
+        color: mutedColor,
+        borderColor: borderColor,
         textTransform: "none",
         fontSize: "0.8rem",
+        borderRadius: 8,
         "&.Mui-selected": {
           color: "#fff",
           backgroundColor: primaryColor,
@@ -78,21 +94,25 @@ const components: Components = {
   },
   MuiChip: {
     styleOverrides: {
-      outlined: { borderColor: `${textColor}30` },
+      outlined: { borderColor: borderColor, color: mutedColor },
     },
   },
   MuiMenu: {
     styleOverrides: {
-      paper: { backgroundColor: bgColor },
+      paper: {
+        backgroundColor: surfaceColor,
+        border: `1px solid ${borderColor}`,
+      },
     },
   },
   MuiSelect: {
     styleOverrides: {
       root: {
         color: textColor,
-        backgroundColor: bgColor,
+        backgroundColor: surfaceColor,
+        borderRadius: 8,
         "& .MuiOutlinedInput-notchedOutline": {
-          borderColor: `${textColor}40`,
+          borderColor: borderColor,
         },
         "&:hover .MuiOutlinedInput-notchedOutline": {
           borderColor: primaryColor,
@@ -101,8 +121,23 @@ const components: Components = {
           borderColor: primaryColor,
         },
         "& .MuiSvgIcon-root": {
-          color: textColor,
+          color: mutedColor,
         },
+      },
+    },
+  },
+  MuiTextField: {
+    styleOverrides: {
+      root: {
+        "& .MuiOutlinedInput-root": {
+          color: textColor,
+          backgroundColor: surfaceColor,
+          borderRadius: 8,
+          "& fieldset": { borderColor: borderColor },
+          "&:hover fieldset": { borderColor: primaryColor },
+          "&.Mui-focused fieldset": { borderColor: primaryColor },
+        },
+        "& .MuiInputLabel-root": { color: mutedColor },
       },
     },
   },
@@ -114,9 +149,14 @@ export const theme: Theme = createTheme({
   palette: {
     mode: "dark",
     primary: { main: primaryColor },
-    background: { default: bgColor },
-    text: { primary: textColor },
+    background: { default: bgColor, paper: surfaceColor },
+    text: { primary: textColor, secondary: mutedColor },
     error: { main: dangerColor },
+    warning: { main: accentAmber },
+    success: { main: accentGreen },
+  },
+  typography: {
+    fontFamily: `-apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif`,
   },
   components,
 });

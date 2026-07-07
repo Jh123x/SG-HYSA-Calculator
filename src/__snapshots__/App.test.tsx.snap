@@ -6,14 +6,14 @@ exports[`App > should render correctly 1`] = `
     class="MuiBox-root css-1g2wnu2"
   >
     <header
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-18oyut0-MuiPaper-root-MuiAppBar-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-117g1nm-MuiPaper-root-MuiAppBar-root"
       style="--Paper-shadow: none; --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));"
     >
       <div
         class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-uivzgp-MuiToolbar-root"
       >
         <h1
-          class="MuiTypography-root MuiTypography-h5 css-1c4j0ho-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-h5 css-12luyz4-MuiTypography-root"
         >
           SG High Yield Savings Accounts
         </h1>
@@ -21,7 +21,7 @@ exports[`App > should render correctly 1`] = `
           class="MuiBox-root css-jma0kd"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1cqgukt-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-hu307e-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -65,10 +65,10 @@ exports[`App > should render correctly 1`] = `
                 class="MuiFormGroup-root css-myzjjt-MuiFormGroup-root"
               >
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_3_"
                     id="_r_3_-label"
@@ -77,14 +77,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         Savings
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -106,7 +106,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               Savings
                             </p>
@@ -117,10 +117,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_4_"
                     id="_r_4_-label"
@@ -129,14 +129,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         Age
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -158,7 +158,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               Age
                             </p>
@@ -169,10 +169,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_5_"
                     id="_r_5_-label"
@@ -181,14 +181,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         Salary
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -210,7 +210,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               Salary
                             </p>
@@ -221,10 +221,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_6_"
                     id="_r_6_-label"
@@ -233,14 +233,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         Investment
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -262,7 +262,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               Investment
                             </p>
@@ -273,10 +273,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_7_"
                     id="_r_7_-label"
@@ -285,14 +285,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         Insurance
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -314,7 +314,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               Insurance
                             </p>
@@ -325,10 +325,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_8_"
                     id="_r_8_-label"
@@ -337,14 +337,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         Spending
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -366,7 +366,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               Spending
                             </p>
@@ -377,10 +377,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_9_"
                     id="_r_9_-label"
@@ -389,14 +389,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         GIRO Transactions
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -418,7 +418,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               GIRO Transactions
                             </p>
@@ -429,10 +429,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_a_"
                     id="_r_a_-label"
@@ -441,14 +441,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         Account Increment
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -470,7 +470,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               Account Increment
                             </p>
@@ -481,10 +481,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_b_"
                     id="_r_b_-label"
@@ -493,14 +493,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         Loan Installment
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -522,7 +522,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               Loan Installment
                             </p>
@@ -533,10 +533,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_c_"
                     id="_r_c_-label"
@@ -545,14 +545,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         One Time Loan
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -574,7 +574,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               One Time Loan
                             </p>
@@ -585,10 +585,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_d_"
                     id="_r_d_-label"
@@ -597,14 +597,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         PayNow Received
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -626,7 +626,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               PayNow Received
                             </p>
@@ -637,10 +637,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-31w8uy-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-1ui5sj9-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-qpi07e-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-s8kac3-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_e_"
                     id="_r_e_-label"
@@ -649,14 +649,14 @@ exports[`App > should render correctly 1`] = `
                       style="display: flex; flex-direction: row;"
                     >
                       <p
-                        class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                        class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                       >
                         FX Spend
                       </p>
                     </div>
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-v368ov-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -678,7 +678,7 @@ exports[`App > should render correctly 1`] = `
                             style="display: flex; flex-direction: row;"
                           >
                             <p
-                              class="MuiTypography-root MuiTypography-body1 css-rizt0-MuiTypography-root"
+                              class="MuiTypography-root MuiTypography-body1 css-95vw3-MuiTypography-root"
                             >
                               FX Spend
                             </p>
@@ -694,10 +694,10 @@ exports[`App > should render correctly 1`] = `
                   data-mui-internal-clone-element="true"
                 >
                   <label
-                    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-dct7n9-MuiFormControlLabel-root"
+                    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-za3ouj-MuiFormControlLabel-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-z35iou-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-ak9nlm-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
                     >
                       <input
                         class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
@@ -717,7 +717,7 @@ exports[`App > should render correctly 1`] = `
                       </svg>
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-95vw3-MuiTypography-root"
                     >
                       NTUC Member?
                     </span>
@@ -729,10 +729,10 @@ exports[`App > should render correctly 1`] = `
                   data-mui-internal-clone-element="true"
                 >
                   <label
-                    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-dct7n9-MuiFormControlLabel-root"
+                    class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd css-za3ouj-MuiFormControlLabel-root"
                   >
                     <span
-                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-z35iou-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
+                      class="MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium PrivateSwitchBase-root MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium MuiCheckbox-root MuiCheckbox-colorPrimary MuiCheckbox-sizeMedium css-ak9nlm-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root"
                     >
                       <input
                         class="PrivateSwitchBase-input css-12xagqm-MuiSwitchBase-root"
@@ -752,7 +752,7 @@ exports[`App > should render correctly 1`] = `
                       </svg>
                     </span>
                     <span
-                      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-rizt0-MuiTypography-root"
+                      class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-95vw3-MuiTypography-root"
                     >
                       Referred Customer?
                     </span>
@@ -772,7 +772,7 @@ exports[`App > should render correctly 1`] = `
                 >
                   <button
                     aria-pressed="true"
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-1nvw798-MuiButtonBase-root-MuiToggleButton-root"
+                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-7b73in-MuiButtonBase-root-MuiToggleButton-root"
                     tabindex="0"
                     type="button"
                     value="current"
@@ -781,7 +781,7 @@ exports[`App > should render correctly 1`] = `
                   </button>
                   <button
                     aria-pressed="false"
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-1nvw798-MuiButtonBase-root-MuiToggleButton-root"
+                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-7b73in-MuiButtonBase-root-MuiToggleButton-root"
                     tabindex="0"
                     type="button"
                     value="history"
@@ -790,7 +790,7 @@ exports[`App > should render correctly 1`] = `
                   </button>
                 </div>
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1jvdei3-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-pbsfh7-MuiChip-root"
                 >
                   <svg
                     aria-hidden="true"
@@ -814,14 +814,14 @@ exports[`App > should render correctly 1`] = `
                 class="MuiBox-root css-xine5j"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-wi2573-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-16gf58g-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   Clear
                 </button>
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-ypqjim-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-c3f4wh-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
@@ -855,7 +855,7 @@ exports[`App > should render correctly 1`] = `
               class="MuiBox-root css-v3t3zj"
             >
               <span
-                class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18e10h5-MuiCircularProgress-root"
+                class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1dflisx-MuiCircularProgress-root"
                 role="progressbar"
                 style="width: 40px; height: 40px;"
               >
@@ -879,13 +879,13 @@ exports[`App > should render correctly 1`] = `
       </div>
     </main>
     <footer
-      class="MuiBox-root css-le4ex5"
+      class="MuiBox-root css-14oxniu"
     >
       <div
         class="MuiContainer-root MuiContainer-maxWidthSm css-1fwilww-MuiContainer-root"
       >
         <p
-          class="MuiTypography-root MuiTypography-body2 css-12zhdr8-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body2 css-r24xck-MuiTypography-root"
         >
           Copyright © 
           <a
@@ -900,7 +900,7 @@ exports[`App > should render correctly 1`] = `
           class="MuiBox-root css-171onha"
         >
           <a
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-brhd2s-MuiButtonBase-root-MuiIconButton-root"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1eitvk4-MuiButtonBase-root-MuiIconButton-root"
             data-mui-internal-clone-element="true"
             href="https://jh123x.com"
             rel="noopener noreferrer"
@@ -920,7 +920,7 @@ exports[`App > should render correctly 1`] = `
             </svg>
           </a>
           <a
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-brhd2s-MuiButtonBase-root-MuiIconButton-root"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1eitvk4-MuiButtonBase-root-MuiIconButton-root"
             data-mui-internal-clone-element="true"
             href="/sitemap.xml"
             rel="noopener noreferrer"
@@ -945,7 +945,7 @@ exports[`App > should render correctly 1`] = `
             </svg>
           </a>
           <a
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-brhd2s-MuiButtonBase-root-MuiIconButton-root"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1eitvk4-MuiButtonBase-root-MuiIconButton-root"
             data-mui-internal-clone-element="true"
             href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
             rel="noopener noreferrer"
@@ -965,7 +965,7 @@ exports[`App > should render correctly 1`] = `
             </svg>
           </a>
           <a
-            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-brhd2s-MuiButtonBase-root-MuiIconButton-root"
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1eitvk4-MuiButtonBase-root-MuiIconButton-root"
             data-mui-internal-clone-element="true"
             href="https://github.com/jh123x/SG-HYSA-Calculator"
             rel="noopener noreferrer"
