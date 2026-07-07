@@ -2,7 +2,8 @@ import { Outlet, useNavigate, useLocation, useOutletContext } from "react-router
 import { Box, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { FormInputs } from "./Inputs";
-import { primaryColor, TOGGLE_SX } from "../consts/colors";
+import { primaryColor } from "../consts/colors";
+import { TOGGLE_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 
