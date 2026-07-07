@@ -4152,7 +4152,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         <button
           aria-label="Sort ascending"
           aria-pressed="false"
-          class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-9a7hm9-MuiButtonBase-root-MuiToggleButton-root"
+          class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-16jy75i-MuiButtonBase-root-MuiToggleButton-root"
           tabindex="0"
           type="button"
           value="asc"
@@ -4173,7 +4173,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         <button
           aria-label="Sort descending"
           aria-pressed="true"
-          class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-9a7hm9-MuiButtonBase-root-MuiToggleButton-root"
+          class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-16jy75i-MuiButtonBase-root-MuiToggleButton-root"
           tabindex="0"
           type="button"
           value="desc"

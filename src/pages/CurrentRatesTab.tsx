@@ -30,7 +30,7 @@ import SortIcon from "@mui/icons-material/Sort";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import type { ResultProp } from "../types/props";
-import { primaryColor, bgColor, textColor } from "../consts/colors";
+import { primaryColor, bgColor, textColor, TOGGLE_SX } from "../consts/colors";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
@@ -265,22 +265,10 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
           size="small"
           onChange={(_, v) => v && setMobileOrder(v)}
         >
-          <ToggleButton value="asc" aria-label="Sort ascending" sx={{
-            color: textColor, borderColor: `${textColor}40`, textTransform: "none",
-            fontSize: "0.8rem", px: 1,
-            "&.Mui-selected": { color: "#fff", backgroundColor: primaryColor },
-            "&.Mui-selected:hover": { backgroundColor: primaryColor, opacity: 0.85 },
-            "&:hover": { backgroundColor: `${primaryColor}18`, borderColor: primaryColor },
-          }}>
+          <ToggleButton value="asc" aria-label="Sort ascending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { ...TOGGLE_SX["&.Mui-selected:hover"], opacity: 0.85 } }}>
             <ArrowUpwardIcon fontSize="small" sx={{ mr: 0.5 }} />Asc
           </ToggleButton>
-          <ToggleButton value="desc" aria-label="Sort descending" sx={{
-            color: textColor, borderColor: `${textColor}40`, textTransform: "none",
-            fontSize: "0.8rem", px: 1,
-            "&.Mui-selected": { color: "#fff", backgroundColor: primaryColor },
-            "&.Mui-selected:hover": { backgroundColor: primaryColor, opacity: 0.85 },
-            "&:hover": { backgroundColor: `${primaryColor}18`, borderColor: primaryColor },
-          }}>
+          <ToggleButton value="desc" aria-label="Sort descending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { ...TOGGLE_SX["&.Mui-selected:hover"], opacity: 0.85 } }}>
             <ArrowDownwardIcon fontSize="small" sx={{ mr: 0.5 }} />Desc
           </ToggleButton>
         </ToggleButtonGroup>

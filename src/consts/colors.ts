@@ -3,7 +3,18 @@ import { createTheme, Theme } from "@mui/material";
 export const primaryColor: string = "#9550ff";
 export const bgColor: string = "#282828";
 export const textColor: string = "#FFFFFF";
-export const dangerColor: string = "red";
+export const dangerColor: string = "#d32f2f";
+
+/** Shared dark-theme ToggleButton styling used across all page-level toggle groups. */
+export const TOGGLE_SX = {
+  color: textColor,
+  borderColor: `${textColor}40`,
+  textTransform: "none" as const,
+  fontSize: "0.8rem",
+  "&.Mui-selected": { color: "#fff", backgroundColor: primaryColor },
+  "&.Mui-selected:hover": { backgroundColor: primaryColor, opacity: 0.9 },
+  "&:hover": { backgroundColor: `${primaryColor}18`, borderColor: primaryColor },
+};
 export const lineColors: string[] = [
   "#e6194b",
   "#3cb44b",

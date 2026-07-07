@@ -22,7 +22,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import LanguageIcon from "@mui/icons-material/Language";
 import { LineChart } from "@mui/x-charts/LineChart";
-import { textColor, bgColor, primaryColor, lineColors } from "../consts/colors";
+import { textColor, bgColor, primaryColor, lineColors, TOGGLE_SX } from "../consts/colors";
 import { ThreePanelLayout } from "../Components/ThreePanelLayout";
 import { bankInfo } from "../logic/constants";
 import { slugToBankName, ERROR_SLUG } from "../logic/slugs";
@@ -40,16 +40,6 @@ interface BankDetailPageProps {
 
 const AUTO_REDIRECT_SECONDS = 5;
 type ChartMode = "yearly" | "eir";
-
-const TOGGLE_SX = {
-  color: textColor,
-  borderColor: `${textColor}40`,
-  textTransform: "none" as const,
-  fontSize: "0.8rem",
-  "&.Mui-selected": { color: "#fff", backgroundColor: primaryColor },
-  "&.Mui-selected:hover": { backgroundColor: primaryColor, opacity: 0.9 },
-  "&:hover": { backgroundColor: `${primaryColor}18`, borderColor: primaryColor },
-};
 
 /**
  * Bank detail page at /bank/:slug.

@@ -772,7 +772,7 @@ exports[`App > should render correctly 1`] = `
                 >
                   <button
                     aria-pressed="true"
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-bdhzqe-MuiButtonBase-root-MuiToggleButton-root"
+                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-1jdva4l-MuiButtonBase-root-MuiToggleButton-root"
                     tabindex="0"
                     type="button"
                     value="current"
@@ -781,7 +781,7 @@ exports[`App > should render correctly 1`] = `
                   </button>
                   <button
                     aria-pressed="false"
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-bdhzqe-MuiButtonBase-root-MuiToggleButton-root"
+                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-1jdva4l-MuiButtonBase-root-MuiToggleButton-root"
                     tabindex="0"
                     type="button"
                     value="history"
@@ -814,7 +814,7 @@ exports[`App > should render correctly 1`] = `
                 class="MuiBox-root css-xine5j"
               >
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-160ospa-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1mit3xi-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >

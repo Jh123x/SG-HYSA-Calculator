@@ -29,7 +29,7 @@ import {
 import { ComparisonChart } from "../Components/ComparisonChart";
 import { ThreePanelLayout } from "../Components/ThreePanelLayout";
 import type Profile from "../types/profile";
-import { textColor, bgColor, primaryColor } from "../consts/colors";
+import { textColor, bgColor, primaryColor, TOGGLE_SX } from "../consts/colors";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { useMobile } from "../hooks/useMobile";
 import { MAX_COMPARISON_BANKS } from "../consts/keys";
@@ -38,16 +38,6 @@ import { useHistoryState, type BankHistoryGroup } from "../hooks/useHistoryState
 interface Props {
   profile: Profile;
 }
-
-const TOGGLE_SX = {
-  color: textColor,
-  borderColor: `${textColor}40`,
-  textTransform: "none" as const,
-  fontSize: "0.8rem",
-  "&.Mui-selected": { color: "#fff", backgroundColor: primaryColor },
-  "&.Mui-selected:hover": { backgroundColor: primaryColor, opacity: 0.9 },
-  "&:hover": { backgroundColor: `${primaryColor}18`, borderColor: primaryColor },
-};
 
 type ChartMode = "yearly" | "eir";
 
