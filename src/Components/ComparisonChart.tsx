@@ -216,21 +216,20 @@ const ComparisonChartContent = ({
             }}
           />
         </Box>
+        <Typography
+          variant="caption"
+          sx={{
+            color: textColor,
+            display: "block",
+            textAlign: "left",
+            mt: 1,
+            opacity: 0.6,
+          }}
+        >
+          * The &ldquo;updated at&rdquo; date reflects when this calculator was
+          updated, which may differ from the date the bank published the change.
+        </Typography>
       </Paper>
-
-      <Typography
-        variant="caption"
-        sx={{
-          color: textColor,
-          display: "block",
-          textAlign: "left",
-          mt: 1,
-          opacity: 0.6,
-        }}
-      >
-        * The &ldquo;updated at&rdquo; date reflects when this calculator was
-        updated, which may differ from the date the bank published the change.
-      </Typography>
     </Box>
   );
 };
