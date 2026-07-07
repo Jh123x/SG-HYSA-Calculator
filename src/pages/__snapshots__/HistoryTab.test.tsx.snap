@@ -29,7 +29,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
             >
               <button
                 aria-pressed="true"
-                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-57m2vu-MuiButtonBase-root-MuiToggleButton-root"
                 tabindex="0"
                 type="button"
                 value="yearly"
@@ -38,7 +38,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
               </button>
               <button
                 aria-pressed="false"
-                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-57m2vu-MuiButtonBase-root-MuiToggleButton-root"
                 tabindex="0"
                 type="button"
                 value="eir"
@@ -105,7 +105,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
           class="MuiBox-root css-1r0qzm1"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-nnkcan-MuiPaper-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-173naap-MuiPaper-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <p
@@ -141,7 +141,7 @@ exports[`HistoryTab mobile > should match snapshot 1`] = `
       >
         <button
           aria-pressed="true"
-          class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+          class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-57m2vu-MuiButtonBase-root-MuiToggleButton-root"
           tabindex="0"
           type="button"
           value="yearly"
@@ -150,7 +150,7 @@ exports[`HistoryTab mobile > should match snapshot 1`] = `
         </button>
         <button
           aria-pressed="false"
-          class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+          class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-57m2vu-MuiButtonBase-root-MuiToggleButton-root"
           tabindex="0"
           type="button"
           value="eir"
@@ -213,7 +213,7 @@ exports[`HistoryTab mobile > should match snapshot 1`] = `
       </div>
     </div>
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-nnkcan-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-173naap-MuiPaper-root"
       style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
     >
       <p

@@ -69,7 +69,7 @@ export const ComparisonChart = ({
       <Paper
         sx={{
           p: 4,
-          borderRadius: "10px",
+
           backgroundColor: bgColor,
           textAlign: "center",
           mb: 3,
@@ -155,7 +155,7 @@ const ComparisonChartContent = ({
       <Paper
         sx={{
           p: 4,
-          borderRadius: "10px",
+
           backgroundColor: bgColor,
           textAlign: "center",
           mb: 3,
@@ -181,7 +181,7 @@ const ComparisonChartContent = ({
       <Paper
         sx={{
           p: 2,
-          borderRadius: "10px",
+
           backgroundColor: bgColor,
           flex: 1,
           minHeight: 0,

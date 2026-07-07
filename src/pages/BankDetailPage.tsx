@@ -115,7 +115,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           <link rel="canonical" href={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
         </Helmet>
         <Box component="article" aria-label={isHome ? "Redirecting to home" : "Bank suggestion"} sx={{ mt: 3, textAlign: "center" }}>
-        <Paper sx={{ p: 4, borderRadius: "10px", backgroundColor: bgColor }}>
+        <Paper sx={{ p: 4, backgroundColor: bgColor }}>
           <Typography variant="h5" sx={{ color: textColor, mb: 2, fontWeight: 600 }}>Bank not found</Typography>
           {isHome ? (
             <Typography variant="body1" sx={{ color: textColor, mb: 3 }}>The bank you&apos;re looking for could not be found. You will be redirected to the homepage.</Typography>
@@ -172,7 +172,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         aria-label="Interest rate trend chart"
         sx={{
           p: 2,
-          borderRadius: "10px",
+
           backgroundColor: bgColor,
           height: isMobile ? "55vh" : "40vh",
           display: "flex",
@@ -213,7 +213,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   };
 
   const renderHistorySection = () => (
-    <Paper component="section" aria-label="Rate change history and bank details" sx={{ p: 2, borderRadius: "10px", backgroundColor: bgColor }}>
+    <Paper component="section" aria-label="Rate change history and bank details" sx={{ p: 2, backgroundColor: bgColor }}>
       <Button startIcon={<ArrowBackIcon />} onClick={handleBack} sx={{ color: textColor, textTransform: "none", mb: 1.5, "&:hover": { color: primaryColor } }}>Back</Button>
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: 1 }}>
         <Typography variant="h5" component="h1" sx={{ color: textColor, fontWeight: 700, mb: 0.5 }}>{info.name}</Typography>
@@ -238,11 +238,11 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         <Table size="small" stickyHeader>
           <TableHead>
             <TableRow>
-              <TableCell sx={{ color: textColor, fontWeight: 600, backgroundColor: bgColor }}>Date</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, backgroundColor: bgColor }}>What Changed</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>Yearly Interest ($)</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>EIR (%)</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, width: 80, textAlign: "center", backgroundColor: bgColor }}>Actions</TableCell>
+              <TableCell>Date</TableCell>
+              <TableCell>What Changed</TableCell>
+              <TableCell sx={{ textAlign: "right" }}>Yearly Interest ($)</TableCell>
+              <TableCell sx={{ textAlign: "right" }}>EIR (%)</TableCell>
+              <TableCell sx={{ width: 80, textAlign: "center" }}>Actions</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

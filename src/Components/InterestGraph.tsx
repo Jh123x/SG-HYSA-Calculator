@@ -56,7 +56,7 @@ export const InterestGraph = ({
     <Paper
       sx={{
         p: 2,
-        borderRadius: "10px",
+
         backgroundColor: bgColor,
         height: height === "fill" ? "100%" : "auto",
         display: "flex",

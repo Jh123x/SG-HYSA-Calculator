@@ -1,20 +1,15 @@
-import { createTheme, Theme } from "@mui/material";
+import { createTheme, Theme, type Components } from "@mui/material";
 
 export const primaryColor: string = "#9550ff";
 export const bgColor: string = "#282828";
 export const textColor: string = "#FFFFFF";
 export const dangerColor: string = "#d32f2f";
 
-/** Shared dark-theme ToggleButton styling used across all page-level toggle groups. */
+/** ToggleButton overrides that vary per use case (added on top of theme defaults). */
 export const TOGGLE_SX = {
-  color: textColor,
-  borderColor: `${textColor}40`,
-  textTransform: "none" as const,
   fontSize: "0.8rem",
-  "&.Mui-selected": { color: "#fff", backgroundColor: primaryColor },
-  "&.Mui-selected:hover": { backgroundColor: primaryColor, opacity: 0.9 },
-  "&:hover": { backgroundColor: `${primaryColor}18`, borderColor: primaryColor },
 };
+
 export const lineColors: string[] = [
   "#e6194b",
   "#3cb44b",
@@ -41,6 +36,86 @@ export const lineColors: string[] = [
   "#dcbeff", // Mauve
 ];
 
+// ── Component overrides ──────────────────────────────────────────
+
+const components: Components = {
+  MuiPaper: {
+    styleOverrides: {
+      root: {
+        borderRadius: 10,
+      },
+    },
+  },
+  MuiTableCell: {
+    styleOverrides: {
+      root: {
+        backgroundColor: bgColor,
+      },
+      head: {
+        fontWeight: 600,
+      },
+    },
+  },
+  MuiToggleButton: {
+    styleOverrides: {
+      root: {
+        color: textColor,
+        borderColor: `${textColor}40`,
+        textTransform: "none",
+        fontSize: "0.8rem",
+        "&.Mui-selected": {
+          color: "#fff",
+          backgroundColor: primaryColor,
+        },
+        "&.Mui-selected:hover": {
+          backgroundColor: primaryColor,
+          opacity: 0.9,
+        },
+        "&:hover": {
+          backgroundColor: `${primaryColor}18`,
+          borderColor: primaryColor,
+        },
+      },
+    },
+  },
+  MuiChip: {
+    styleOverrides: {
+      outlined: {
+        borderColor: `${textColor}30`,
+      },
+    },
+  },
+  MuiMenu: {
+    styleOverrides: {
+      paper: {
+        backgroundColor: bgColor,
+      },
+    },
+  },
+  MuiSelect: {
+    styleOverrides: {
+      root: {
+        color: textColor,
+        backgroundColor: bgColor,
+        "& .MuiOutlinedInput-notchedOutline": {
+          borderColor: `${textColor}40`,
+        },
+        "&:hover .MuiOutlinedInput-notchedOutline": {
+          borderColor: primaryColor,
+        },
+        "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+          borderColor: primaryColor,
+        },
+        "& .MuiSvgIcon-root": {
+          color: textColor,
+        },
+      },
+    },
+  },
+};
+
+// ── Theme ────────────────────────────────────────────────────────
+
 export const theme: Theme = createTheme({
   palette: {
     mode: "dark",
@@ -48,4 +123,5 @@ export const theme: Theme = createTheme({
       default: bgColor,
     },
   },
+  components,
 });

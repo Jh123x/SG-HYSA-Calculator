@@ -39,7 +39,7 @@ export class ErrorBoundary extends Component<Props, State> {
         <Paper
           sx={{
             p: 4,
-            borderRadius: "10px",
+
             backgroundColor: bgColor,
             textAlign: "center",
             mt: 3,

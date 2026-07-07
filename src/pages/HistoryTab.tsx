@@ -98,21 +98,21 @@ const HistoryTabDesktop = ({
   const renderGroupedTable = () => {
     const highlightCol = chartMode === "yearly" ? "yearlyInterest" : "eir";
     return (
-      <Paper sx={{ borderRadius: "10px", backgroundColor: bgColor }}>
+      <Paper sx={{ backgroundColor: bgColor }}>
         <TableContainer>
           <Table size="small" stickyHeader>
             <TableHead>
               <TableRow>
-                <TableCell sx={{ color: textColor, fontWeight: 600, width: 30, backgroundColor: bgColor }} />
-                <TableCell sx={{ color: textColor, fontWeight: 600, width: 130, backgroundColor: bgColor }}>Date</TableCell>
-                <TableCell sx={{ color: textColor, fontWeight: 600, backgroundColor: bgColor }}>What Changed</TableCell>
-                <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>
+                <TableCell sx={{ width: 30 }} />
+                <TableCell sx={{ width: 130 }}>Date</TableCell>
+                <TableCell>What Changed</TableCell>
+                <TableCell sx={{ textAlign: "right" }}>
                   Yearly Interest ($)
                 </TableCell>
-                <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>
+                <TableCell sx={{ textAlign: "right" }}>
                   EIR (%)
                 </TableCell>
-                <TableCell sx={{ color: textColor, fontWeight: 600, width: 80, textAlign: "center", backgroundColor: bgColor }}>Actions</TableCell>
+                <TableCell sx={{ width: 80, textAlign: "center" }}>Actions</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -120,12 +120,12 @@ const HistoryTabDesktop = ({
                 const isCollapsed = collapsedBanks.has(bank.slug);
                 return [
                   <TableRow key={`hdr-${bank.slug}`} hover onClick={() => toggleCollapse(bank.slug)} sx={{ cursor: "pointer", backgroundColor: `${primaryColor}10`, "&:hover": { backgroundColor: `${primaryColor}1d` } }}>
-                    <TableCell sx={{ color: textColor, p: 0.5 }}>
+                    <TableCell sx={{ p: 0.5 }}>
                       <IconButton size="small" sx={{ color: textColor }}>
                         {isCollapsed ? <KeyboardArrowRight fontSize="small" /> : <KeyboardArrowDown fontSize="small" />}
                       </IconButton>
                     </TableCell>
-                    <TableCell colSpan={5} sx={{ color: textColor, py: 1 }}>
+                    <TableCell colSpan={5} sx={{ py: 1 }}>
                       <Typography component="span" sx={{ fontWeight: 600, color: textColor }}>{bank.name}</Typography>
                       <Typography component="span" variant="body2" sx={{ color: textColor, opacity: 0.6, ml: 1 }}>
                         ({bank.rows.length} change{bank.rows.length !== 1 ? "s" : ""})
@@ -135,15 +135,15 @@ const HistoryTabDesktop = ({
                   ...(!isCollapsed ? bank.rows.map((row, idx) => (
                     <TableRow key={`${bank.slug}-${idx}`} sx={{ "&:hover": { backgroundColor: `${primaryColor}08` } }}>
                       <TableCell sx={{ p: 0 }} />
-                      <TableCell sx={{ color: textColor, pl: 2 }}>{row.date}</TableCell>
-                      <TableCell sx={{ color: textColor }}>{row.changeSummary}</TableCell>
-                      <TableCell sx={{ color: textColor, textAlign: "right", backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}08` : "transparent" }}>
+                      <TableCell sx={{ pl: 2 }}>{row.date}</TableCell>
+                      <TableCell>{row.changeSummary}</TableCell>
+                      <TableCell sx={{ textAlign: "right", backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}08` : "transparent" }}>
                         {row.yearlyInterest}
                       </TableCell>
-                      <TableCell sx={{ color: textColor, textAlign: "right", backgroundColor: highlightCol === "eir" ? `${primaryColor}08` : "transparent" }}>
+                      <TableCell sx={{ textAlign: "right", backgroundColor: highlightCol === "eir" ? `${primaryColor}08` : "transparent" }}>
                         {row.eir}
                       </TableCell>
-                      <TableCell sx={{ color: textColor, textAlign: "center", p: 0.5 }}>
+                      <TableCell sx={{ textAlign: "center", p: 0.5 }}>
                         <Box sx={{ display: "flex", justifyContent: "center", gap: 0.5 }}>
                           <Tooltip title="View details" placement="left">
                             <IconButton size="small" onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor }}>
@@ -188,7 +188,7 @@ const HistoryTabDesktop = ({
   const renderRightPanel = () => {
     if (selectedBanks.length === 0) {
       return (
-        <Paper sx={{ p: 4, borderRadius: "10px", backgroundColor: bgColor, textAlign: "center" }}>
+        <Paper sx={{ p: 4, backgroundColor: bgColor, textAlign: "center" }}>
           <Typography variant="body1" color={textColor} sx={{ opacity: 0.7 }}>
             Select one or more banks above to view their rate history.
           </Typography>
@@ -197,7 +197,7 @@ const HistoryTabDesktop = ({
     }
     if (bankHistories.length === 0) {
       return (
-        <Paper sx={{ p: 4, borderRadius: "10px", backgroundColor: bgColor, textAlign: "center" }}>
+        <Paper sx={{ p: 4, backgroundColor: bgColor, textAlign: "center" }}>
           <Typography variant="body1" color={textColor} sx={{ opacity: 0.7 }}>
             No rate data available for the selected banks.
           </Typography>
@@ -312,7 +312,7 @@ const HistoryTabMobile = ({
       </Box>
 
       {selectedBanks.length === 0 && (
-        <Paper sx={{ p: 4, borderRadius: "10px", backgroundColor: bgColor, textAlign: "center" }}>
+        <Paper sx={{ p: 4, backgroundColor: bgColor, textAlign: "center" }}>
           <Typography variant="body1" color={textColor} sx={{ opacity: 0.7 }}>
             Select one or more banks above to view their rate history.
           </Typography>
@@ -357,7 +357,7 @@ const MobileRowGroupedList = ({
   const highlightCol = chartMode === "yearly" ? "yearlyInterest" : "eir";
 
   return (
-    <Paper sx={{ borderRadius: "10px", backgroundColor: bgColor, overflow: "hidden" }}>
+    <Paper sx={{ backgroundColor: bgColor, overflow: "hidden" }}>
       <TableContainer sx={{ overflow: "hidden" }}>
         <Table size="small" sx={{ tableLayout: "fixed" }}>
           <TableHead>

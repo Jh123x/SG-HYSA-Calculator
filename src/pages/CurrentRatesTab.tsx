@@ -131,7 +131,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
         </Box>
       }
       bottomRight={
-        <Paper sx={{ borderRadius: "10px", backgroundColor: bgColor }}>
+        <Paper sx={{ backgroundColor: bgColor }}>
           <TableContainer>
             <Table aria-label="High yield savings account interest rate comparison table" size="small" stickyHeader>
               <TableHead>
@@ -282,7 +282,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
             sx={{
               backgroundColor: bgColor,
               border: "1px solid rgba(255,255,255,0.08)",
-              borderRadius: "10px",
+
             }}
           >
             <CardActionArea

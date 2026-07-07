@@ -6,7 +6,7 @@ exports[`App > should render correctly 1`] = `
     class="MuiBox-root css-1g2wnu2"
   >
     <header
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-rw9h23-MuiPaper-root-MuiAppBar-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-1hynkk9-MuiPaper-root-MuiAppBar-root"
       style="--Paper-shadow: none; --Paper-overlay: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));"
     >
       <div
@@ -772,7 +772,7 @@ exports[`App > should render correctly 1`] = `
                 >
                   <button
                     aria-pressed="true"
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-1jdva4l-MuiButtonBase-root-MuiToggleButton-root"
+                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-1fme6j2-MuiButtonBase-root-MuiToggleButton-root"
                     tabindex="0"
                     type="button"
                     value="current"
@@ -781,7 +781,7 @@ exports[`App > should render correctly 1`] = `
                   </button>
                   <button
                     aria-pressed="false"
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-1jdva4l-MuiButtonBase-root-MuiToggleButton-root"
+                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-1fme6j2-MuiButtonBase-root-MuiToggleButton-root"
                     tabindex="0"
                     type="button"
                     value="history"
@@ -790,7 +790,7 @@ exports[`App > should render correctly 1`] = `
                   </button>
                 </div>
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1vr171z-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1vy1el4-MuiChip-root"
                 >
                   <svg
                     aria-hidden="true"
