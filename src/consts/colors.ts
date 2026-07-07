@@ -1,4 +1,4 @@
-import { createTheme, Theme, type Components } from "@mui/material";
+import { createTheme, Theme, type Components, type SxProps } from "@mui/material";
 
 export const primaryColor: string = "#9550ff";
 export const bgColor: string = "#282828";
@@ -6,7 +6,7 @@ export const textColor: string = "#FFFFFF";
 export const dangerColor: string = "#d32f2f";
 
 /** ToggleButton overrides that vary per use case (added on top of theme defaults). */
-export const TOGGLE_SX = {
+export const TOGGLE_SX: SxProps<Theme> = {
   fontSize: "0.8rem",
 };
 

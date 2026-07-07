@@ -242,7 +242,12 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
         <FormControl size="small" sx={{ minWidth: 140 }}>
           <Select
             value={mobileSort}
-            onChange={(e) => setMobileSort(e.target.value as SortableColumns)}
+            onChange={(e) => {
+              const val = e.target.value;
+              if (val === "name" || val === "yearlyInterest" || val === "effectiveInterest") {
+                setMobileSort(val);
+              }
+            }}
             sx={{
               color: textColor,
               backgroundColor: bgColor,
@@ -265,10 +270,10 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
           size="small"
           onChange={(_, v) => v && setMobileOrder(v)}
         >
-          <ToggleButton value="asc" aria-label="Sort ascending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { ...TOGGLE_SX["&.Mui-selected:hover"], opacity: 0.85 } }}>
+          <ToggleButton value="asc" aria-label="Sort ascending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { opacity: 0.85 } }}>
             <ArrowUpwardIcon fontSize="small" sx={{ mr: 0.5 }} />Asc
           </ToggleButton>
-          <ToggleButton value="desc" aria-label="Sort descending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { ...TOGGLE_SX["&.Mui-selected:hover"], opacity: 0.85 } }}>
+          <ToggleButton value="desc" aria-label="Sort descending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { opacity: 0.85 } }}>
             <ArrowDownwardIcon fontSize="small" sx={{ mr: 0.5 }} />Desc
           </ToggleButton>
         </ToggleButtonGroup>
@@ -345,12 +350,12 @@ function useResults(profile: Profile): Record<string, ResultProp> {
   return useMemo(() => {
     const map: Record<string, ResultProp> = {};
     for (const [slug, info] of Object.entries(bankInfo)) {
-      const { interestFn } = deriveCurrentFromHistory(info.history);
+      const { interestFn, lastUpdated } = deriveCurrentFromHistory(info.history);
       map[slug] = {
         interest: interestFn(profile),
         url: info.url,
         remarks: info.remarks,
-        lastUpdated: undefined as unknown as string,
+        lastUpdated,
       };
     }
     return map;

@@ -2,7 +2,7 @@ import { Outlet, useNavigate, useLocation, useOutletContext } from "react-router
 import { Box, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { FormInputs } from "./Inputs";
-import { primaryColor, textColor, TOGGLE_SX } from "../consts/colors";
+import { primaryColor, TOGGLE_SX } from "../consts/colors";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 
@@ -20,7 +20,8 @@ const TAB_TOGGLE_SX = {
   px: { xs: 1.5, sm: 2 },
   transition: "all 0.2s ease",
   "&.Mui-selected": {
-    ...TOGGLE_SX["&.Mui-selected"],
+    color: "#fff",
+    backgroundColor: primaryColor,
     fontWeight: 600,
   },
   "&.Mui-selected:hover": {
