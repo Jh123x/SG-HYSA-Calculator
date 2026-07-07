@@ -5,7 +5,7 @@ import {
   Box,
 } from "@mui/material";
 import { LineChart } from "@mui/x-charts/LineChart";
-import { textColor, bgColor } from "../consts/colors";
+import { textColor, bgColor } from "../consts/theme";
 import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
 import { todayISO } from "../logic/dates";

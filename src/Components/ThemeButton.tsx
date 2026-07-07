@@ -1,5 +1,5 @@
 import { alpha, IconButton, Tooltip } from "@mui/material";
-import { primaryColor } from "../consts/colors";
+import { primaryColor } from "../consts/theme";
 import { ReactElement } from "react";
 
 interface BaseButtonProps {

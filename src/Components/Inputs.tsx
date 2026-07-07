@@ -21,7 +21,7 @@ import {
   bgColor,
   textColor,
   dangerColor,
-} from "../consts/colors";
+} from "../consts/theme";
 import type { Field } from "./types";
 import { WebAlert } from "./Alert";
 import { booleanInputs, numericalInputs } from "./InputValues";

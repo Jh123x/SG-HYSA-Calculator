@@ -1,5 +1,5 @@
 import { Container, Typography, Link, Box } from "@mui/material";
-import { bgColor } from "../consts/colors";
+import { bgColor } from "../consts/theme";
 import Socials from "./Socials";
 
 export const Footer = () => {

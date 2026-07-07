@@ -2,7 +2,7 @@ import { ChartsReferenceLine } from "@mui/x-charts";
 import { Paper, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
-import { lineColors, textColor, bgColor } from "../consts/colors";
+import { lineColors, textColor, bgColor } from "../consts/theme";
 import type Profile from "../types/profile";
 import {
   InterestVsSavingsChart,

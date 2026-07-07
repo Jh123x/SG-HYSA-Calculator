@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Box, Chip, Typography } from "@mui/material";
-import { primaryColor, textColor } from "../consts/colors";
+import { primaryColor, textColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type { FaqEntry } from "../data/faq";
 

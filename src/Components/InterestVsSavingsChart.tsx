@@ -1,6 +1,6 @@
 import { LineChart } from "@mui/x-charts/LineChart";
 import { Box, type SxProps, type Theme } from "@mui/material";
-import { lineColors, textColor } from "../consts/colors";
+import { lineColors, textColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 import type { ResultInterest } from "../types/interest_result";

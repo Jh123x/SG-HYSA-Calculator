@@ -1,6 +1,6 @@
 import { Component, type ErrorInfo, type ReactNode } from "react";
 import { Box, Typography, Button, Paper } from "@mui/material";
-import { textColor, bgColor, dangerColor } from "../consts/colors";
+import { textColor, bgColor, dangerColor } from "../consts/theme";
 
 interface Props {
   children: ReactNode;

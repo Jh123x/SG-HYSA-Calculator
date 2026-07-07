@@ -6,7 +6,7 @@ import { TabbedContent } from "./Components/TabbedContent";
 import Profile, { NewProfile } from "./types/profile";
 import { STORE_KEY } from "./consts/keys";
 import { searchToProfile, profileToSearch } from "./logic/profileUrl";
-import { primaryColor } from "./consts/colors";
+import { primaryColor } from "./consts/theme";
 
 const CurrentRatesTab = lazy(() => import("./pages/CurrentRatesTab"));
 const HistoryTab = lazy(() => import("./pages/HistoryTab"));
