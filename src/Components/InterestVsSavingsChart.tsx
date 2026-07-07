@@ -1,6 +1,6 @@
 import { LineChart } from "@mui/x-charts/LineChart";
-import { Box } from "@mui/material";
-import { lineColors, textColor } from "../consts/colors";
+import { Box, type SxProps, type Theme } from "@mui/material";
+import { lineColors, textColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 import type { ResultInterest } from "../types/interest_result";
@@ -10,6 +10,13 @@ export interface ChartLine {
   label: string;
   interestFn: (profile: Profile) => ResultInterest;
   color?: string;
+}
+
+/** Minimal type for MUI x-charts legend slot props (subset of ChartsLegendProps). */
+interface LegendSlotProps {
+  direction: "horizontal" | "vertical";
+  position: { vertical: "top" | "bottom" | "middle"; horizontal: "start" | "end" | "center" };
+  toggleVisibilityOnClick?: boolean;
 }
 
 interface Props {
@@ -22,7 +29,7 @@ interface Props {
   /** Optional children (e.g. ChartsReferenceLine) */
   children?: React.ReactNode;
   /** Optional sx to apply to the wrapper Box (used for flex fill) */
-  containerSx?: Record<string, unknown>;
+  containerSx?: SxProps<Theme>;
 }
 
 /**
@@ -77,22 +84,11 @@ export const InterestVsSavingsChart = ({
       v !== null ? `$${v.toFixed(2)}` : "",
   }));
 
-  const legendSlotProps = enableLegendToggle
-    ? ({
-        direction: "horizontal" as const,
-        position: {
-          vertical: "bottom" as const,
-          horizontal: "center" as const,
-        },
-        toggleVisibilityOnClick: true,
-      } as any)
-    : {
-        direction: "horizontal" as const,
-        position: {
-          vertical: "bottom" as const,
-          horizontal: "center" as const,
-        },
-      };
+  const legendSlotProps: LegendSlotProps = {
+    direction: "horizontal",
+    position: { vertical: "bottom", horizontal: "center" },
+    ...(enableLegendToggle ? { toggleVisibilityOnClick: true } : {}),
+  };
 
   return (
     <Box sx={containerSx}>
@@ -118,7 +114,7 @@ export const InterestVsSavingsChart = ({
         ]}
         height={height}
         grid={{ vertical: true, horizontal: true }}
-        slotProps={{ legend: legendSlotProps } as any}
+        slotProps={{ legend: legendSlotProps }}
         sx={{
           ".MuiChartsAxis-label": { fill: textColor },
           ".MuiChartsAxis-tick": { fill: textColor },

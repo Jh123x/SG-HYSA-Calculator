@@ -30,7 +30,7 @@ import SortIcon from "@mui/icons-material/Sort";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import type { ResultProp } from "../types/props";
-import { primaryColor, bgColor, textColor } from "../consts/colors";
+import { primaryColor, bgColor, textColor, TOGGLE_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
@@ -67,10 +67,7 @@ const SORT_OPTIONS: { value: SortableColumns; label: string }[] = [
  * - Mobile: stacked graph → sort bar with asc/desc → cards
  */
 export const CurrentRatesTab = ({ profile }: Props) => {
-  const navigate = useNavigate();
   const { isMobile } = useMobile();
-  const [orderBy, setOrderBy] = useState<SortableColumns | undefined>(undefined);
-  const [order, setOrder] = useState<"asc" | "desc">("desc");
 
   return (
     <>
@@ -134,7 +131,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
         </Box>
       }
       bottomRight={
-        <Paper sx={{ borderRadius: "10px", backgroundColor: bgColor }}>
+        <Paper sx={{ backgroundColor: bgColor }}>
           <TableContainer>
             <Table aria-label="High yield savings account interest rate comparison table" size="small" stickyHeader>
               <TableHead>
@@ -245,7 +242,12 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
         <FormControl size="small" sx={{ minWidth: 140 }}>
           <Select
             value={mobileSort}
-            onChange={(e) => setMobileSort(e.target.value as SortableColumns)}
+            onChange={(e) => {
+              const val = e.target.value;
+              if (val === "name" || val === "yearlyInterest" || val === "effectiveInterest") {
+                setMobileSort(val);
+              }
+            }}
             sx={{
               color: textColor,
               backgroundColor: bgColor,
@@ -268,22 +270,10 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
           size="small"
           onChange={(_, v) => v && setMobileOrder(v)}
         >
-          <ToggleButton value="asc" aria-label="Sort ascending" sx={{
-            color: textColor, borderColor: `${textColor}40`, textTransform: "none",
-            fontSize: "0.8rem", px: 1,
-            "&.Mui-selected": { color: "#fff", backgroundColor: primaryColor },
-            "&.Mui-selected:hover": { backgroundColor: primaryColor, opacity: 0.85 },
-            "&:hover": { backgroundColor: `${primaryColor}18`, borderColor: primaryColor },
-          }}>
+          <ToggleButton value="asc" aria-label="Sort ascending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { opacity: 0.85 } }}>
             <ArrowUpwardIcon fontSize="small" sx={{ mr: 0.5 }} />Asc
           </ToggleButton>
-          <ToggleButton value="desc" aria-label="Sort descending" sx={{
-            color: textColor, borderColor: `${textColor}40`, textTransform: "none",
-            fontSize: "0.8rem", px: 1,
-            "&.Mui-selected": { color: "#fff", backgroundColor: primaryColor },
-            "&.Mui-selected:hover": { backgroundColor: primaryColor, opacity: 0.85 },
-            "&:hover": { backgroundColor: `${primaryColor}18`, borderColor: primaryColor },
-          }}>
+          <ToggleButton value="desc" aria-label="Sort descending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { opacity: 0.85 } }}>
             <ArrowDownwardIcon fontSize="small" sx={{ mr: 0.5 }} />Desc
           </ToggleButton>
         </ToggleButtonGroup>
@@ -297,7 +287,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
             sx={{
               backgroundColor: bgColor,
               border: "1px solid rgba(255,255,255,0.08)",
-              borderRadius: "10px",
+
             }}
           >
             <CardActionArea
@@ -360,12 +350,12 @@ function useResults(profile: Profile): Record<string, ResultProp> {
   return useMemo(() => {
     const map: Record<string, ResultProp> = {};
     for (const [slug, info] of Object.entries(bankInfo)) {
-      const { interestFn } = deriveCurrentFromHistory(info.history);
+      const { interestFn, lastUpdated } = deriveCurrentFromHistory(info.history);
       map[slug] = {
         interest: interestFn(profile),
         url: info.url,
         remarks: info.remarks,
-        lastUpdated: undefined as unknown as string,
+        lastUpdated,
       };
     }
     return map;

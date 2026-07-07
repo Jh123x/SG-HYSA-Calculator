@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import { Button, Box } from "@mui/material";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import CheckIcon from "@mui/icons-material/Check";
-import { primaryColor, textColor, bgColor } from "../consts/colors";
+import { primaryColor, textColor, bgColor } from "../consts/theme";
 import type Profile from "../types/profile";
 import { profileToUrl } from "../logic/profileUrl";
 

@@ -1,6 +1,6 @@
 import { Component, type ErrorInfo, type ReactNode } from "react";
 import { Box, Typography, Button, Paper } from "@mui/material";
-import { textColor, bgColor, dangerColor } from "../consts/colors";
+import { textColor, bgColor, dangerColor } from "../consts/theme";
 
 interface Props {
   children: ReactNode;
@@ -39,7 +39,7 @@ export class ErrorBoundary extends Component<Props, State> {
         <Paper
           sx={{
             p: 4,
-            borderRadius: "10px",
+
             backgroundColor: bgColor,
             textAlign: "center",
             mt: 3,

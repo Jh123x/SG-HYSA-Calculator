@@ -5,7 +5,7 @@ import {
   Box,
 } from "@mui/material";
 import { LineChart } from "@mui/x-charts/LineChart";
-import { textColor, bgColor } from "../consts/colors";
+import { textColor, bgColor } from "../consts/theme";
 import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
 import { todayISO } from "../logic/dates";
@@ -69,7 +69,7 @@ export const ComparisonChart = ({
       <Paper
         sx={{
           p: 4,
-          borderRadius: "10px",
+
           backgroundColor: bgColor,
           textAlign: "center",
           mb: 3,
@@ -155,7 +155,7 @@ const ComparisonChartContent = ({
       <Paper
         sx={{
           p: 4,
-          borderRadius: "10px",
+
           backgroundColor: bgColor,
           textAlign: "center",
           mb: 3,
@@ -181,7 +181,7 @@ const ComparisonChartContent = ({
       <Paper
         sx={{
           p: 2,
-          borderRadius: "10px",
+
           backgroundColor: bgColor,
           flex: 1,
           minHeight: 0,
@@ -216,21 +216,20 @@ const ComparisonChartContent = ({
             }}
           />
         </Box>
+        <Typography
+          variant="caption"
+          sx={{
+            color: textColor,
+            display: "block",
+            textAlign: "left",
+            mt: 1,
+            opacity: 0.6,
+          }}
+        >
+          * The &ldquo;updated at&rdquo; date reflects when this calculator was
+          updated, which may differ from the date the bank published the change.
+        </Typography>
       </Paper>
-
-      <Typography
-        variant="caption"
-        sx={{
-          color: textColor,
-          display: "block",
-          textAlign: "left",
-          mt: 1,
-          opacity: 0.6,
-        }}
-      >
-        * The &ldquo;updated at&rdquo; date reflects when this calculator was
-        updated, which may differ from the date the bank published the change.
-      </Typography>
     </Box>
   );
 };

@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
-import { textColor, primaryColor } from "../consts/colors";
+import { textColor, primaryColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 
 /**

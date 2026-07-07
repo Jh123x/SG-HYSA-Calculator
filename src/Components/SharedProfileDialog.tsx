@@ -51,7 +51,8 @@ const fmtCurrency = (v: number): string =>
 
 const fmtValue = (v: Profile[keyof Profile], isBoolean: boolean): string => {
   if (isBoolean) return v ? "Yes" : "No";
-  return fmtCurrency(v as number);
+  if (typeof v === "number") return fmtCurrency(v);
+  return fmtCurrency(0);
 };
 
 const diffIcon = (
@@ -68,10 +69,9 @@ const diffIcon = (
       <ArrowDownwardIcon fontSize="inherit" color="error" />
     );
   }
-  const c = curr as number;
-  const p = pending as number;
-  if (c === p) return null;
-  return p > c ? (
+  if (typeof curr !== "number" || typeof pending !== "number") return null;
+  if (curr === pending) return null;
+  return pending > curr ? (
     <ArrowUpwardIcon fontSize="inherit" color="success" />
   ) : (
     <ArrowDownwardIcon fontSize="inherit" color="error" />

@@ -1,6 +1,6 @@
 import { Link } from "@mui/material";
 import type { ReactNode } from "react";
-import { primaryColor } from "../consts/colors";
+import { primaryColor } from "../consts/theme";
 
 interface LocalLinkProps {
   href: string;

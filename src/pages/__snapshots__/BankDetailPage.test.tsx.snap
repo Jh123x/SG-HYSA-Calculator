@@ -4,10 +4,10 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
 <DocumentFragment>
   <article
     aria-label="GXS Savings interest rate details"
-    class="MuiBox-root css-8lgfcg"
+    class="MuiBox-root css-1g4yje1"
   >
     <section
-      class="MuiBox-root css-8oufzr"
+      class="MuiBox-root css-tzrkmm"
     >
       <div
         class="MuiBox-root css-19zgt1b"
@@ -17,7 +17,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
         >
           <section
             aria-label="Interest rate trend chart"
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1kzwcse-MuiPaper-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-16yrg5z-MuiPaper-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <div
@@ -29,7 +29,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
               >
                 <button
                   aria-pressed="false"
-                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-57m2vu-MuiButtonBase-root-MuiToggleButton-root"
                   tabindex="0"
                   type="button"
                   value="yearly"
@@ -38,7 +38,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                 </button>
                 <button
                   aria-pressed="true"
-                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                  class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-57m2vu-MuiButtonBase-root-MuiToggleButton-root"
                   tabindex="0"
                   type="button"
                   value="eir"
@@ -381,7 +381,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
         >
           <section
             aria-label="Rate change history and bank details"
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11df6xj-MuiPaper-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-da3mz6-MuiPaper-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -495,34 +495,34 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                     class="MuiTableRow-root MuiTableRow-head css-1xtozoh-MuiTableRow-root"
                   >
                     <th
-                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-gxssj-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-9iq4h1-MuiTableCell-root"
                       scope="col"
                     >
                       Date
                     </th>
                     <th
-                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-gxssj-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-9iq4h1-MuiTableCell-root"
                       scope="col"
                     >
                       What Changed
                     </th>
                     <th
-                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-plqd6k-MuiTableCell-root"
                       scope="col"
                     >
-                      Yearly Interest
+                      Yearly Interest ($)
                     </th>
                     <th
-                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-plqd6k-MuiTableCell-root"
                       scope="col"
                     >
-                      EIR
+                      EIR (%)
                     </th>
                     <th
-                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1cb113z-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1nqo9gj-MuiTableCell-root"
                       scope="col"
                     >
-                      Action
+                      Actions
                     </th>
                   </tr>
                 </thead>
@@ -674,7 +674,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
 <DocumentFragment>
   <article
     aria-label="GXS Savings interest rate details"
-    class="MuiBox-root css-0"
+    class="MuiBox-root css-j7qwjs"
   >
     <section
       class="MuiBox-root css-1je7078"
@@ -684,7 +684,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
       >
         <section
           aria-label="Interest rate trend chart"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1cguod1-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-of2jiu-MuiPaper-root"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
         >
           <div
@@ -696,7 +696,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
             >
               <button
                 aria-pressed="false"
-                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-57m2vu-MuiButtonBase-root-MuiToggleButton-root"
                 tabindex="0"
                 type="button"
                 value="yearly"
@@ -705,7 +705,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
               </button>
               <button
                 aria-pressed="true"
-                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-coejt7-MuiButtonBase-root-MuiToggleButton-root"
+                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-57m2vu-MuiButtonBase-root-MuiToggleButton-root"
                 tabindex="0"
                 type="button"
                 value="eir"
@@ -1048,7 +1048,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
       >
         <section
           aria-label="Rate change history and bank details"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11df6xj-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-da3mz6-MuiPaper-root"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
         >
           <button
@@ -1162,34 +1162,34 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                   class="MuiTableRow-root MuiTableRow-head css-1xtozoh-MuiTableRow-root"
                 >
                   <th
-                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-gxssj-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-9iq4h1-MuiTableCell-root"
                     scope="col"
                   >
                     Date
                   </th>
                   <th
-                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-gxssj-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-9iq4h1-MuiTableCell-root"
                     scope="col"
                   >
                     What Changed
                   </th>
                   <th
-                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-plqd6k-MuiTableCell-root"
                     scope="col"
                   >
-                    Yearly Interest
+                    Yearly Interest ($)
                   </th>
                   <th
-                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-plqd6k-MuiTableCell-root"
                     scope="col"
                   >
-                    EIR
+                    EIR (%)
                   </th>
                   <th
-                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1cb113z-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1nqo9gj-MuiTableCell-root"
                     scope="col"
                   >
-                    Action
+                    Actions
                   </th>
                 </tr>
               </thead>

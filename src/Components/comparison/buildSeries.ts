@@ -1,5 +1,5 @@
 import { bankInfo } from "../../logic/constants";
-import { lineColors } from "../../consts/colors";
+import { lineColors } from "../../consts/theme";
 
 type YAxisMetric = "yearlyInterest" | "eir";
 

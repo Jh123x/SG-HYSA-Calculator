@@ -2,7 +2,7 @@ import { Outlet, useNavigate, useLocation, useOutletContext } from "react-router
 import { Box, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { FormInputs } from "./Inputs";
-import { primaryColor, textColor } from "../consts/colors";
+import { primaryColor, TOGGLE_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 
@@ -12,11 +12,9 @@ export const TAB_LABELS = {
   history: "History",
 } as const;
 
-/** Toggle button styling with hover response */
-const TOGGLE_SX = {
-  color: textColor,
-  borderColor: `${textColor}40`,
-  textTransform: "none" as const,
+/** Toggle button styling with heavier text and responsive sizing for tab navigation. */
+const TAB_TOGGLE_SX = {
+  ...TOGGLE_SX,
   fontWeight: 500,
   fontSize: { xs: "0.8rem", sm: "0.9rem" },
   px: { xs: 1.5, sm: 2 },
@@ -29,10 +27,6 @@ const TOGGLE_SX = {
   "&.Mui-selected:hover": {
     backgroundColor: primaryColor,
     opacity: 0.85,
-  },
-  "&:hover": {
-    backgroundColor: `${primaryColor}18`,
-    borderColor: primaryColor,
   },
 };
 
@@ -75,14 +69,15 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
       }}
       size="small"
     >
-      <ToggleButton value="current" sx={TOGGLE_SX}>
+      <ToggleButton value="current" sx={TAB_TOGGLE_SX}>
         {TAB_LABELS.current}
       </ToggleButton>
-      <ToggleButton value="history" sx={TOGGLE_SX}>
+      <ToggleButton value="history" sx={TAB_TOGGLE_SX}>
         {TAB_LABELS.history}
       </ToggleButton>
     </ToggleButtonGroup>
   );
+
 
   return (
     <Box
@@ -116,8 +111,8 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
         </ErrorBoundary>
       </Box>
 
-      {/* Content — fills remaining viewport, each panel scrolls independently */}
-      <Box sx={{ flex: 1, minHeight: 0, overflow: "hidden" }}>
+      {/* Content — fills remaining viewport, pages distribute via flex */}
+      <Box sx={{ flex: 1, minHeight: 0, display: "flex", flexDirection: "column", overflow: "hidden" }}>
         <ErrorBoundary>
           <Outlet />
         </ErrorBoundary>
@@ -157,10 +152,10 @@ const TabbedContentMobile = ({ ctx }: { ctx: LayoutContext }) => {
           }}
           size="small"
         >
-          <ToggleButton value="current" sx={TOGGLE_SX}>
+          <ToggleButton value="current" sx={TAB_TOGGLE_SX}>
             {TAB_LABELS.current}
           </ToggleButton>
-          <ToggleButton value="history" sx={TOGGLE_SX}>
+          <ToggleButton value="history" sx={TAB_TOGGLE_SX}>
             {TAB_LABELS.history}
           </ToggleButton>
         </ToggleButtonGroup>

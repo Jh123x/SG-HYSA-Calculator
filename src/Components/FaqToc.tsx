@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { Box, Chip, Typography } from "@mui/material";
-import { primaryColor, textColor } from "../consts/colors";
+import { primaryColor, textColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type { FaqEntry } from "../data/faq";
 
@@ -82,7 +82,7 @@ export const FaqToc = ({ entries }: FaqTocProps) => {
     const ids = entries.map((e) => questionId(e.question));
     const elements = ids
       .map((id) => document.getElementById(id))
-      .filter(Boolean) as HTMLElement[];
+      .filter((el): el is HTMLElement => el !== null);
 
     if (elements.length === 0) return;
 
@@ -94,7 +94,8 @@ export const FaqToc = ({ entries }: FaqTocProps) => {
           .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
 
         if (visible.length > 0) {
-          const idx = elements.indexOf(visible[0].target as HTMLElement);
+          const target = visible[0].target;
+          const idx = target instanceof HTMLElement ? elements.indexOf(target) : -1;
           if (idx >= 0) setActiveIndex(idx);
         }
       },
