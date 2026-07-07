@@ -120,6 +120,7 @@ const BottomPanel = ({ children }: { children?: React.ReactNode }) => (
       minWidth: 0,
       minHeight: 0,  // prevent flex child from expanding beyond container
       overflow: "auto",
+      pb: 1.5,        // prevent last row from appearing cut off at panel edge
     }}
   >
     {children}
