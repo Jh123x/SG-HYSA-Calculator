@@ -240,9 +240,9 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
             <TableRow>
               <TableCell sx={{ color: textColor, fontWeight: 600, backgroundColor: bgColor }}>Date</TableCell>
               <TableCell sx={{ color: textColor, fontWeight: 600, backgroundColor: bgColor }}>What Changed</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>Yearly Interest</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>EIR</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, width: 60, textAlign: "center", backgroundColor: bgColor }}>Actions</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>Yearly Interest ($)</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>EIR (%)</TableCell>
+              <TableCell sx={{ color: textColor, fontWeight: 600, width: 80, textAlign: "center", backgroundColor: bgColor }}>Actions</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

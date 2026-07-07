@@ -61,7 +61,7 @@ export const HistoryTab = ({ profile }: Props) => {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://hysa.jh123x.com/history" />
       </Helmet>
-      <Typography component="h1" variant="h4" sx={{ color: textColor, fontWeight: 700, mb: 2, fontSize: { xs: "1.25rem", sm: "1.5rem" } }}>
+      <Typography component="h2" variant="h4" sx={{ color: textColor, fontWeight: 700, mb: 2, fontSize: { xs: "1.25rem", sm: "1.5rem" } }}>
         Rate Change History
       </Typography>
       {isMobile ? (
@@ -110,7 +110,7 @@ const HistoryTabDesktop = ({
                   Yearly Interest ($)
                 </TableCell>
                 <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", backgroundColor: bgColor }}>
-                  EIR
+                  EIR (%)
                 </TableCell>
                 <TableCell sx={{ color: textColor, fontWeight: 600, width: 80, textAlign: "center", backgroundColor: bgColor }}>Actions</TableCell>
               </TableRow>
@@ -151,7 +151,7 @@ const HistoryTabDesktop = ({
                             </IconButton>
                           </Tooltip>
                           {row.sourceUrl && (
-                            <Tooltip title="Visit source" placement="right">
+                            <Tooltip title="Visit official website" placement="right">
                               <IconButton size="small" href={row.sourceUrl} target="_blank" rel="noopener noreferrer" sx={{ color: primaryColor }}>
                                 <Language fontSize="small" />
                               </IconButton>
@@ -179,7 +179,7 @@ const HistoryTabDesktop = ({
       <FormControl size="small" sx={{ minWidth: 200, flex: 1 }}>
         <Select multiple value={selectedBanks} onChange={(e) => { const val = e.target.value as string[]; if (val.length <= MAX_COMPARISON_BANKS) handleBankChange(val); }} input={<OutlinedInput />} renderValue={(selected) => (<Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>{selected.map((slug) => <Chip key={slug} label={displayNames[slug] ?? slug} size="small" />)}</Box>)} displayEmpty sx={{ color: textColor, backgroundColor: bgColor, "& .MuiOutlinedInput-notchedOutline": { borderColor: `${textColor}40` }, "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "&.Mui-focused .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor }, "& .MuiSvgIcon-root": { color: textColor } }}>
           <MenuItem disabled value=""><Typography variant="body2" sx={{ color: textColor, opacity: 0.6 }}>{selectedBanks.length === 0 ? "Select a bank to begin" : `Select banks (${selectedBanks.length}/${MAX_COMPARISON_BANKS})`}</Typography></MenuItem>
-          {sortedOptions.map((slug) => (<MenuItem key={slug} value={slug} disabled={!selectedBanks.includes(slug) && isMaxed} sx={{ color: textColor, "&.Mui-selected": { backgroundColor: `${primaryColor}30` }, "&:hover": { backgroundColor: `${primaryColor}20` }, "&.Mui-disabled": { opacity: 0.35 } }}><Box sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}><span>{displayNames[slug] ?? slug}</span><span style={{ opacity: 0.65, fontSize: "0.85em" }}>{profile.Savings > 0 ? `${bankEirs[slug]}%` : ""}</span></Box></MenuItem>))}
+          {sortedOptions.map((slug) => (<MenuItem key={slug} value={slug} disabled={!selectedBanks.includes(slug) && isMaxed} sx={{ color: textColor, "&.Mui-selected": { backgroundColor: `${primaryColor}30` }, "&:hover": { backgroundColor: `${primaryColor}20` }, "&.Mui-disabled": { opacity: 0.35 } }}><Box sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}><Typography component="span" sx={{ color: textColor }}>{displayNames[slug] ?? slug}</Typography><Typography component="span" sx={{ opacity: 0.65, fontSize: "0.85em" }}>{profile.Savings > 0 ? `${bankEirs[slug]}%` : ""}</Typography></Box></MenuItem>))}
         </Select>
       </FormControl>
     </Box>
@@ -302,8 +302,8 @@ const HistoryTabMobile = ({
                 }}
               >
                 <Box sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
-                  <span>{displayNames[slug] ?? slug}</span>
-                  <span style={{ opacity: 0.65, fontSize: "0.85em" }}>{profile.Savings > 0 ? `${bankEirs[slug]}%` : ""}</span>
+                  <Typography component="span" sx={{ color: textColor }}>{displayNames[slug] ?? slug}</Typography>
+                  <Typography component="span" sx={{ opacity: 0.65, fontSize: "0.85em" }}>{profile.Savings > 0 ? `${bankEirs[slug]}%` : ""}</Typography>
                 </Box>
               </MenuItem>
             ))}
@@ -369,8 +369,7 @@ const MobileRowGroupedList = ({
                 Yr$
               </TableCell>
               <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "eir" ? `${primaryColor}1a` : bgColor, width: 48 }}>
-                EIR
-              </TableCell>
+                EIR (%)</TableCell>
               <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", textAlign: "center", width: 60, px: 0.5, backgroundColor: bgColor, whiteSpace: "nowrap" }}>Actions</TableCell>
             </TableRow>
           </TableHead>

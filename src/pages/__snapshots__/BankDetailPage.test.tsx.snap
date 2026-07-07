@@ -510,16 +510,16 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                       class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
                       scope="col"
                     >
-                      Yearly Interest
+                      Yearly Interest ($)
                     </th>
                     <th
                       class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
                       scope="col"
                     >
-                      EIR
+                      EIR (%)
                     </th>
                     <th
-                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1cb113z-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1ic7x0c-MuiTableCell-root"
                       scope="col"
                     >
                       Actions
@@ -1177,16 +1177,16 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                     class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
                     scope="col"
                   >
-                    Yearly Interest
+                    Yearly Interest ($)
                   </th>
                   <th
                     class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-7tfro4-MuiTableCell-root"
                     scope="col"
                   >
-                    EIR
+                    EIR (%)
                   </th>
                   <th
-                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1cb113z-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-head MuiTableCell-stickyHeader MuiTableCell-sizeSmall css-1ic7x0c-MuiTableCell-root"
                     scope="col"
                   >
                     Actions
