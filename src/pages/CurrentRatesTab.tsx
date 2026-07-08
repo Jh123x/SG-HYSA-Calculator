@@ -231,7 +231,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
         Rate Comparison
       </Typography>
       {/* Graph + asterisks together */}
-      <Box sx={{ mb: 1.5 }}>
+      <Box sx={{ mb: 2.5 }}>
         <InterestGraph
           profile={profile}
           height={340}
@@ -367,7 +367,7 @@ function ChipRow({ factors }: { factors: string[] }) {
     if (children.length === 0) return;
 
     const containerWidth = container.getBoundingClientRect().width;
-    const gap = 4; // 0.25rem gap = 4px
+    const gap = 8; // 0.5rem gap = 8px at default 16px base
     const overflowBadgeWidth = 40;
 
     // First pass: measure total width of all chips

@@ -83,10 +83,11 @@ export const Layout = ({
         >
           <Container
             sx={{
-              maxWidth: "100% !important",
-              px: { xs: 2, sm: 4, md: 5 },
+              px: { xs: 1.5, sm: 4, md: 5 },
               py: { xs: 0, sm: 1 },
               height: "100%",
+              maxWidth: "100% !important",
+              ...(isMobile ? { overflowX: "hidden" } : {}),
             }}
           >
             <ErrorBoundary>

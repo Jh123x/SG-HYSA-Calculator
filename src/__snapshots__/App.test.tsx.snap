@@ -49,7 +49,7 @@ exports[`App > should render correctly 1`] = `
       class="MuiBox-root css-3bihpr"
     >
       <div
-        class="MuiContainer-root MuiContainer-maxWidthLg css-1902fom-MuiContainer-root"
+        class="MuiContainer-root MuiContainer-maxWidthLg css-1sg2yef-MuiContainer-root"
       >
         <div
           style="width: 100%; height: 100%;"
