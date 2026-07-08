@@ -18,7 +18,7 @@ const chipSx = {
   "&:hover": {
     backgroundColor: `${primaryColor}25`,
     borderColor: primaryColor,
-    color: textColor,
+    color: "#fff",
   },
 };
 
@@ -26,7 +26,7 @@ const activeChipSx = {
   ...chipSx,
   backgroundColor: `${primaryColor}30`,
   borderColor: primaryColor,
-  color: textColor,
+  color: "#fff",
   fontWeight: 600,
 };
 
@@ -38,7 +38,7 @@ const tocLinkSx = (isActive: boolean) => ({
   px: 1.5,
   borderRadius: 1,
   cursor: "pointer",
-  color: isActive ? textColor : `${textColor}B3`,
+  color: isActive ? "#fff" : `${textColor}B3`,
   backgroundColor: isActive ? `${primaryColor}20` : "transparent",
   fontWeight: isActive ? 600 : 400,
   fontSize: "0.85rem",
@@ -48,7 +48,7 @@ const tocLinkSx = (isActive: boolean) => ({
   borderLeft: isActive ? `3px solid ${primaryColor}` : "3px solid transparent",
   "&:hover": {
     backgroundColor: `${primaryColor}15`,
-    color: textColor,
+    color: "#fff",
   },
 });
 

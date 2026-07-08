@@ -10,7 +10,6 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-import { primaryColor, borderColor } from "../consts/theme";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import RemoveIcon from "@mui/icons-material/Remove";
@@ -82,7 +81,7 @@ const diffIcon = (
 const tableCellSx = {
   py: 0.6,
   px: 1.5,
-  borderBottom: `1px solid ${borderColor}`,
+  borderBottom: "1px solid rgba(0,0,0,0.08)",
   fontSize: "0.82rem",
 };
 

@@ -7,7 +7,6 @@ import Profile, { NewProfile } from "./types/profile";
 import { STORE_KEY } from "./consts/keys";
 import { searchToProfile, profileToSearch } from "./logic/profileUrl";
 import { primaryColor } from "./consts/theme";
-import { ThemeModeProvider } from "./hooks/useThemeMode";
 
 const CurrentRatesTab = lazy(() => import("./pages/CurrentRatesTab"));
 const HistoryTab = lazy(() => import("./pages/HistoryTab"));
@@ -68,67 +67,65 @@ export const App = () => {
   }, [currProfile]);
 
   return (
-    <ThemeModeProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route
-            element={
-              <Layout
-                currProfile={currProfile}
-                setCurrProfile={setCurrProfile}
-                pendingUrlProfile={pendingUrlProfile}
-                onAcceptShared={onAcceptShared}
-                onRejectShared={onRejectShared}
-              />
-            }
-          >
-            {/* Pages with inputs + tab navigation */}
-            <Route element={<TabbedContent />}>
-              <Route path="/" element={
-                <Suspense fallback={
-                  <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
-                    <CircularProgress sx={{ color: primaryColor }} />
-                  </Box>
-                }>
-                  <CurrentRatesTab profile={currProfile} />
-                </Suspense>
-              } />
-              <Route path="/history" element={
-                <Suspense fallback={
-                  <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
-                    <CircularProgress sx={{ color: primaryColor }} />
-                  </Box>
-                }>
-                  <HistoryTab profile={currProfile} />
-                </Suspense>
-              } />
-              <Route
-                path="/bank/:slug"
-                element={
-                  <Suspense fallback={
-                    <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
-                      <CircularProgress sx={{ color: primaryColor }} />
-                    </Box>
-                  }>
-                    <BankDetailPage profile={currProfile} />
-                  </Suspense>
-                }
-              />
-            </Route>
-
-            {/* Pages that don't need inputs */}
-            <Route path="/faq" element={
+    <BrowserRouter>
+      <Routes>
+        <Route
+          element={
+            <Layout
+              currProfile={currProfile}
+              setCurrProfile={setCurrProfile}
+              pendingUrlProfile={pendingUrlProfile}
+              onAcceptShared={onAcceptShared}
+              onRejectShared={onRejectShared}
+            />
+          }
+        >
+          {/* Pages with inputs + tab navigation */}
+          <Route element={<TabbedContent />}>
+            <Route path="/" element={
               <Suspense fallback={
                 <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
                   <CircularProgress sx={{ color: primaryColor }} />
                 </Box>
               }>
-                <FaqPage />
+                <CurrentRatesTab profile={currProfile} />
               </Suspense>
             } />
+            <Route path="/history" element={
+              <Suspense fallback={
+                <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
+                  <CircularProgress sx={{ color: primaryColor }} />
+                </Box>
+              }>
+                <HistoryTab profile={currProfile} />
+              </Suspense>
+            } />
+            <Route
+              path="/bank/:slug"
+              element={
+                <Suspense fallback={
+                  <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
+                    <CircularProgress sx={{ color: primaryColor }} />
+                  </Box>
+                }>
+                  <BankDetailPage profile={currProfile} />
+                </Suspense>
+              }
+            />
           </Route>
-        </Routes>
-      </BrowserRouter>
-    </ThemeModeProvider>
+
+          {/* Pages that don't need inputs */}
+          <Route path="/faq" element={
+            <Suspense fallback={
+              <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", height: "60vh" }}>
+                <CircularProgress sx={{ color: primaryColor }} />
+              </Box>
+            }>
+              <FaqPage />
+            </Suspense>
+          } />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };

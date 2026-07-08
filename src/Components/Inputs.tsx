@@ -244,7 +244,7 @@ export const FormInputs = ({
               borderRadius: "8px",
               fontSize: "0.8rem",
               "&:hover": {
-                backgroundColor: `${dangerColor}dd`,
+                backgroundColor: "#d32f2f",
               },
             }}
             type="button"

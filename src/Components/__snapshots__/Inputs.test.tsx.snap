@@ -185,14 +185,14 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
       class="MuiBox-root css-xine5j"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1ede33y-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-zgq95k-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
         Clear
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-aoodre-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-7qg0bq-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
@@ -406,14 +406,14 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
       class="MuiBox-root css-xine5j"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1ede33y-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-zgq95k-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
         Clear
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-aoodre-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-7qg0bq-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >

@@ -1615,7 +1615,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Chocolate Finance — 1.88% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -1720,7 +1720,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="GXS Savings — 1.22% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -1824,7 +1824,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Mari Savings — 0.88% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -1921,7 +1921,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="BOC SuperSaver — 0.68% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2015,7 +2015,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Trust Bank (Zen) — 0.40% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2105,7 +2105,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Maybank iSAVvy — 0.38% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2197,7 +2197,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Maybank iSAVvy Plus — 0.38% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2293,7 +2293,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Maybank SaveUp — 0.25% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2385,7 +2385,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="BOC SmartSaver — 0.10% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2475,7 +2475,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="UOB One — 0.05% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2565,7 +2565,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="OCBC 360 — 0.05% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2655,7 +2655,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Standard Chartered Bonus$aver — 0.05% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2747,7 +2747,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Trust Bank (Signature) — 0.05% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2837,7 +2837,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Trust Bank (Flex) — 0.05% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2933,7 +2933,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="DBS Multiplier — 0.00% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -3025,7 +3025,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Citi Wealth First — 0.00% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -4723,7 +4723,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Chocolate Finance — 1.88% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -4828,7 +4828,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="GXS Savings — 1.22% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -4932,7 +4932,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Mari Savings — 0.88% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5029,7 +5029,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="BOC SuperSaver — 0.68% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5123,7 +5123,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Trust Bank (Zen) — 0.40% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5213,7 +5213,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Maybank iSAVvy — 0.38% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5305,7 +5305,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Maybank iSAVvy Plus — 0.38% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5401,7 +5401,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Maybank SaveUp — 0.25% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5493,7 +5493,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="BOC SmartSaver — 0.10% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5583,7 +5583,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="UOB One — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5673,7 +5673,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="OCBC 360 — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5763,7 +5763,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Standard Chartered Bonus$aver — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5855,7 +5855,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Trust Bank (Signature) — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5945,7 +5945,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Trust Bank (Flex) — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -6041,7 +6041,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="DBS Multiplier — 0.00% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -6133,7 +6133,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Citi Wealth First — 0.00% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1xfq350-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"

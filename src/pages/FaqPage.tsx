@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet-async";
 import { FULL_FAQ } from "../data/faq";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { useMobile } from "../hooks/useMobile";
-import { bgColor, textColor, primaryColor, borderColor } from "../consts/theme";
+import { bgColor, textColor, primaryColor } from "../consts/theme";
 import { FaqToc, questionId } from "../Components/FaqToc";
 import type { FaqEntry } from "../data/faq";
 
@@ -121,7 +121,7 @@ const FaqEntrySection = ({ entry }: { entry: FaqEntry }) => (
       <Box
         sx={{
           borderLeft: "2px solid",
-          borderColor: borderColor,
+          borderColor: "rgba(255,255,255,0.15)",
           pl: 2,
           mb: 2,
           opacity: 0.8,
