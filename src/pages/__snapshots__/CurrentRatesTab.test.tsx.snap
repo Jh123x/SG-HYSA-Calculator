@@ -1624,10 +1624,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Chocolate Finance
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -1640,7 +1640,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   1.88%
                 </p>
@@ -1651,7 +1651,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $940.00/yr
               </p>
@@ -1696,10 +1696,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 GXS Savings
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -1712,7 +1712,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   1.22%
                 </p>
@@ -1723,7 +1723,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $610.00/yr
               </p>
@@ -1767,10 +1767,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Mari Savings
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -1783,7 +1783,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.88%
                 </p>
@@ -1794,7 +1794,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $440.00/yr
               </p>
@@ -1831,10 +1831,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 BOC SuperSaver
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -1847,7 +1847,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.68%
                 </p>
@@ -1858,7 +1858,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $340.00/yr
               </p>
@@ -1892,10 +1892,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Trust Bank (Zen)
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -1908,7 +1908,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.40%
                 </p>
@@ -1919,7 +1919,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $200.00/yr
               </p>
@@ -1950,10 +1950,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Maybank iSAVvy
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -1966,7 +1966,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.38%
                 </p>
@@ -1977,7 +1977,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $190.00/yr
               </p>
@@ -2009,10 +2009,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Maybank iSAVvy Plus
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -2025,7 +2025,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.38%
                 </p>
@@ -2036,7 +2036,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $190.00/yr
               </p>
@@ -2072,10 +2072,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Maybank SaveUp
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -2088,7 +2088,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.25%
                 </p>
@@ -2099,7 +2099,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $123.13/yr
               </p>
@@ -2131,10 +2131,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 BOC SmartSaver
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -2143,32 +2143,14 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Insurance
-                  </span>
-                </div>
-                <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Salary
-                  </span>
-                </div>
-                <div
-                  aria-label="Savings, Spending"
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                  aria-label="Insurance, Salary, Savings, Spending"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                   data-mui-internal-clone-element="true"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    +2
+                    +4
                   </span>
                 </div>
               </div>
@@ -2176,7 +2158,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.10%
                 </p>
@@ -2187,7 +2169,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $50.00/yr
               </p>
@@ -2218,10 +2200,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 UOB One
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -2230,32 +2212,14 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Salary
-                  </span>
-                </div>
-                <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Savings
-                  </span>
-                </div>
-                <div
-                  aria-label="Spending"
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                  aria-label="Salary, Savings, Spending"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                   data-mui-internal-clone-element="true"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    +1
+                    +3
                   </span>
                 </div>
               </div>
@@ -2263,7 +2227,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.05%
                 </p>
@@ -2274,7 +2238,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $25.00/yr
               </p>
@@ -2305,10 +2269,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 OCBC 360
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -2317,32 +2281,14 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Insurance
-                  </span>
-                </div>
-                <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Investment
-                  </span>
-                </div>
-                <div
-                  aria-label="Salary, Savings, Spending"
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                  aria-label="Insurance, Investment, Salary, Savings, Spending"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                   data-mui-internal-clone-element="true"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    +3
+                    +5
                   </span>
                 </div>
               </div>
@@ -2350,7 +2296,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.05%
                 </p>
@@ -2361,7 +2307,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $25.00/yr
               </p>
@@ -2392,10 +2338,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Standard Chartered Bonus$aver
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -2404,32 +2350,14 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Investment
-                  </span>
-                </div>
-                <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Salary
-                  </span>
-                </div>
-                <div
-                  aria-label="Savings, Spending"
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                  aria-label="Investment, Salary, Savings, Spending"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                   data-mui-internal-clone-element="true"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    +2
+                    +4
                   </span>
                 </div>
               </div>
@@ -2437,7 +2365,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.05%
                 </p>
@@ -2448,7 +2376,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $25.00/yr
               </p>
@@ -2480,10 +2408,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Trust Bank (Signature)
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -2492,32 +2420,14 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Salary
-                  </span>
-                </div>
-                <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Savings
-                  </span>
-                </div>
-                <div
-                  aria-label="Spending"
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                  aria-label="Salary, Savings, Spending"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                   data-mui-internal-clone-element="true"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    +1
+                    +3
                   </span>
                 </div>
               </div>
@@ -2525,7 +2435,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.05%
                 </p>
@@ -2536,7 +2446,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $25.00/yr
               </p>
@@ -2567,10 +2477,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Trust Bank (Flex)
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -2579,32 +2489,14 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    FX Spend
-                  </span>
-                </div>
-                <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Investment
-                  </span>
-                </div>
-                <div
-                  aria-label="NTUC Member, PayNow Received, Referred Customer, Salary, Savings, Spending"
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                  aria-label="FX Spend, Investment, NTUC Member, PayNow Received, Referred Customer, Salary, Savings, Spending"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                   data-mui-internal-clone-element="true"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    +6
+                    +8
                   </span>
                 </div>
               </div>
@@ -2612,7 +2504,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.05%
                 </p>
@@ -2623,7 +2515,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $25.00/yr
               </p>
@@ -2659,10 +2551,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 DBS Multiplier
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -2671,32 +2563,14 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Insurance
-                  </span>
-                </div>
-                <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Investment
-                  </span>
-                </div>
-                <div
-                  aria-label="Loan Installment, Salary, Savings, Spending"
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                  aria-label="Insurance, Investment, Loan Installment, Salary, Savings, Spending"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                   data-mui-internal-clone-element="true"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    +4
+                    +6
                   </span>
                 </div>
               </div>
@@ -2704,7 +2578,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.00%
                 </p>
@@ -2715,7 +2589,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $0.00/yr
               </p>
@@ -2747,10 +2621,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Citi Wealth First
               </p>
               <div
-                class="MuiBox-root css-107ld1r"
+                class="MuiBox-root css-1f5vj75"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -2759,32 +2633,14 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </div>
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Age
-                  </span>
-                </div>
-                <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-                >
-                  <span
-                    class="MuiChip-label css-19m61dl-MuiChip-label"
-                  >
-                    Insurance
-                  </span>
-                </div>
-                <div
-                  aria-label="Investment, One-Time Loan, Savings, Spending"
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                  aria-label="Age, Insurance, Investment, One-Time Loan, Savings, Spending"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                   data-mui-internal-clone-element="true"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    +4
+                    +6
                   </span>
                 </div>
               </div>
@@ -2792,7 +2648,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-1jchzkw"
               >
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1nn78ge-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-13on18d-MuiTypography-root"
                 >
                   0.00%
                 </p>
@@ -2803,7 +2659,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 </p>
               </div>
               <p
-                class="MuiTypography-root MuiTypography-body1 css-3bm8h6-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-body1 css-1nutsg1-MuiTypography-root"
               >
                 $0.00/yr
               </p>
@@ -4447,10 +4303,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Chocolate Finance
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -4471,7 +4327,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $940.00
                 </p>
@@ -4485,7 +4341,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   1.88%
                 </p>
@@ -4557,10 +4413,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               GXS Savings
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -4581,7 +4437,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $610.00
                 </p>
@@ -4595,7 +4451,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   1.22%
                 </p>
@@ -4667,10 +4523,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Mari Savings
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -4691,7 +4547,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $440.00
                 </p>
@@ -4705,7 +4561,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.88%
                 </p>
@@ -4777,10 +4633,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               BOC SuperSaver
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -4801,7 +4657,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $340.00
                 </p>
@@ -4815,7 +4671,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.68%
                 </p>
@@ -4887,10 +4743,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Trust Bank (Zen)
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -4911,7 +4767,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $200.00
                 </p>
@@ -4925,7 +4781,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.40%
                 </p>
@@ -4997,10 +4853,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Maybank iSAVvy
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -5021,7 +4877,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $190.00
                 </p>
@@ -5035,7 +4891,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.38%
                 </p>
@@ -5107,10 +4963,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Maybank iSAVvy Plus
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -5131,7 +4987,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $190.00
                 </p>
@@ -5145,7 +5001,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.38%
                 </p>
@@ -5217,10 +5073,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Maybank SaveUp
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -5241,7 +5097,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $123.13
                 </p>
@@ -5255,7 +5111,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.25%
                 </p>
@@ -5327,10 +5183,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               BOC SmartSaver
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -5339,32 +5195,14 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 </span>
               </div>
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Insurance
-                </span>
-              </div>
-              <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Salary
-                </span>
-              </div>
-              <div
-                aria-label="Savings, Spending"
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                aria-label="Insurance, Salary, Savings, Spending"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                 data-mui-internal-clone-element="true"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  +2
+                  +4
                 </span>
               </div>
             </div>
@@ -5380,7 +5218,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $50.00
                 </p>
@@ -5394,7 +5232,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.10%
                 </p>
@@ -5466,10 +5304,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               UOB One
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -5478,32 +5316,14 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 </span>
               </div>
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Salary
-                </span>
-              </div>
-              <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Savings
-                </span>
-              </div>
-              <div
-                aria-label="Spending"
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                aria-label="Salary, Savings, Spending"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                 data-mui-internal-clone-element="true"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  +1
+                  +3
                 </span>
               </div>
             </div>
@@ -5519,7 +5339,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $25.00
                 </p>
@@ -5533,7 +5353,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.05%
                 </p>
@@ -5605,10 +5425,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               OCBC 360
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -5617,32 +5437,14 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 </span>
               </div>
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Insurance
-                </span>
-              </div>
-              <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Investment
-                </span>
-              </div>
-              <div
-                aria-label="Salary, Savings, Spending"
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                aria-label="Insurance, Investment, Salary, Savings, Spending"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                 data-mui-internal-clone-element="true"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  +3
+                  +5
                 </span>
               </div>
             </div>
@@ -5658,7 +5460,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $25.00
                 </p>
@@ -5672,7 +5474,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.05%
                 </p>
@@ -5744,10 +5546,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Standard Chartered Bonus$aver
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -5756,32 +5558,14 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 </span>
               </div>
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Investment
-                </span>
-              </div>
-              <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Salary
-                </span>
-              </div>
-              <div
-                aria-label="Savings, Spending"
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                aria-label="Investment, Salary, Savings, Spending"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                 data-mui-internal-clone-element="true"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  +2
+                  +4
                 </span>
               </div>
             </div>
@@ -5797,7 +5581,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $25.00
                 </p>
@@ -5811,7 +5595,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.05%
                 </p>
@@ -5883,10 +5667,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Trust Bank (Signature)
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -5895,32 +5679,14 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 </span>
               </div>
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Salary
-                </span>
-              </div>
-              <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Savings
-                </span>
-              </div>
-              <div
-                aria-label="Spending"
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                aria-label="Salary, Savings, Spending"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                 data-mui-internal-clone-element="true"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  +1
+                  +3
                 </span>
               </div>
             </div>
@@ -5936,7 +5702,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $25.00
                 </p>
@@ -5950,7 +5716,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.05%
                 </p>
@@ -6022,10 +5788,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Trust Bank (Flex)
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -6034,32 +5800,14 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 </span>
               </div>
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  FX Spend
-                </span>
-              </div>
-              <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Investment
-                </span>
-              </div>
-              <div
-                aria-label="NTUC Member, PayNow Received, Referred Customer, Salary, Savings, Spending"
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                aria-label="FX Spend, Investment, NTUC Member, PayNow Received, Referred Customer, Salary, Savings, Spending"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                 data-mui-internal-clone-element="true"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  +6
+                  +8
                 </span>
               </div>
             </div>
@@ -6075,7 +5823,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $25.00
                 </p>
@@ -6089,7 +5837,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.05%
                 </p>
@@ -6161,10 +5909,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               DBS Multiplier
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -6173,32 +5921,14 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 </span>
               </div>
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Insurance
-                </span>
-              </div>
-              <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Investment
-                </span>
-              </div>
-              <div
-                aria-label="Loan Installment, Salary, Savings, Spending"
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                aria-label="Insurance, Investment, Loan Installment, Salary, Savings, Spending"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                 data-mui-internal-clone-element="true"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  +4
+                  +6
                 </span>
               </div>
             </div>
@@ -6214,7 +5944,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $0.00
                 </p>
@@ -6228,7 +5958,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.00%
                 </p>
@@ -6300,10 +6030,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Citi Wealth First
             </h6>
             <div
-              class="MuiBox-root css-fa6hel"
+              class="MuiBox-root css-1f5vj75"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -6312,32 +6042,14 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 </span>
               </div>
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Age
-                </span>
-              </div>
-              <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
-              >
-                <span
-                  class="MuiChip-label css-19m61dl-MuiChip-label"
-                >
-                  Insurance
-                </span>
-              </div>
-              <div
-                aria-label="Investment, One-Time Loan, Savings, Spending"
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-wfrblw-MuiChip-root"
+                aria-label="Age, Insurance, Investment, One-Time Loan, Savings, Spending"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                 data-mui-internal-clone-element="true"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  +4
+                  +6
                 </span>
               </div>
             </div>
@@ -6353,7 +6065,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-13tmbni-MuiTypography-root"
                 >
                   $0.00
                 </p>
@@ -6367,7 +6079,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                   EIR
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1i0evaq-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-1hylooi-MuiTypography-root"
                 >
                   0.00%
                 </p>
