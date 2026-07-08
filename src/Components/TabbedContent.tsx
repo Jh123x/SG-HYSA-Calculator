@@ -96,7 +96,7 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
           flexShrink: 0,
           pt: 2,
           pb: 1,
-          borderBottom: "1px solid rgba(255,255,255,0.08)",
+          borderBottom: "1px solid rgba(255,255,255,0.04)",
         }}
       >
         <ErrorBoundary>

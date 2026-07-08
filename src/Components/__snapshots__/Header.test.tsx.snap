@@ -3,14 +3,14 @@
 exports[`Header > should match snapshot 1`] = `
 <DocumentFragment>
   <header
-    class="MuiBox-root css-1ncmacz"
+    class="MuiBox-root css-1z13aci"
   >
     <div
       class="MuiBox-root css-p3zgxo"
     >
       <svg
         aria-hidden="true"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1125uu9-MuiSvgIcon-root"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-qju0rt-MuiSvgIcon-root"
         data-testid="SavingsOutlinedIcon"
         focusable="false"
         viewBox="0 0 24 24"
@@ -34,7 +34,7 @@ exports[`Header > should match snapshot 1`] = `
       class="MuiBox-root css-jma0kd"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-1088jwh-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-vd5mnj-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >

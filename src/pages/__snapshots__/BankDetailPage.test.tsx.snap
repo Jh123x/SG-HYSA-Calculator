@@ -17,7 +17,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
         >
           <section
             aria-label="Interest rate trend chart"
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1qw1xzm-MuiPaper-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-wumrny-MuiPaper-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <div
@@ -47,7 +47,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                 </button>
               </div>
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-nf626w-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-mjtegh-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -60,7 +60,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
               class="MuiBox-root css-zi2l0h"
             >
               <div
-                class="css-687z22-MuiChartsWrapper-root"
+                class="css-h36l85-MuiChartsWrapper-root"
               >
                 <ul
                   class="MuiChartsLegend-root MuiChartsLegend-horizontal css-6qmeuq-MuiChartsLegend-root"
@@ -83,7 +83,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                           <path
                             class="MuiChartsLabelMark-fill"
                             d="M 1 8 L 15 8"
-                            stroke="#58a6ff"
+                            stroke="#5b5bd6"
                             stroke-linecap="round"
                             stroke-width="2"
                             vector-effect="non-scaling-stroke"
@@ -91,7 +91,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                           <path
                             d="M3.192,0A3.192,3.192,0,1,1,-3.192,0A3.192,3.192,0,1,1,3.192,0"
                             fill="#fff"
-                            stroke="#58a6ff"
+                            stroke="#5b5bd6"
                             stroke-width="2"
                             transform="translate(8, 8) "
                           />
@@ -194,7 +194,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                             data-series-id="auto-generated-id-0"
                             fill="none"
                             opacity="1"
-                            stroke="#58a6ff"
+                            stroke="#5b5bd6"
                             stroke-linejoin="round"
                             stroke-width="2"
                           />
@@ -368,7 +368,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
               </div>
             </div>
             <span
-              class="MuiTypography-root MuiTypography-caption css-1xc0c88-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-caption css-11nzu0x-MuiTypography-root"
             >
               * Interest rate changes over time. EIR is calculated based on your current savings amount ($50,000).
               <br />
@@ -381,11 +381,11 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
         >
           <section
             aria-label="Rate change history and bank details"
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-56enq7-MuiPaper-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-9lev95-MuiPaper-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-6e8vs8-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-x2flso-MuiButtonBase-root-MuiButton-root"
               tabindex="0"
               type="button"
             >
@@ -410,13 +410,13 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
               class="MuiBox-root css-1o6yox5"
             >
               <h1
-                class="MuiTypography-root MuiTypography-h5 css-100viu0-MuiTypography-root"
+                class="MuiTypography-root MuiTypography-h5 css-13mxmde-MuiTypography-root"
               >
                 GXS Savings
               </h1>
               <a
                 aria-label="Visit official website"
-                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-caproo-MuiButtonBase-root-MuiIconButton-root"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-obrf0i-MuiButtonBase-root-MuiIconButton-root"
                 data-mui-internal-clone-element="true"
                 href="https://www.gxs.com.sg/savings-account"
                 rel="noopener noreferrer"
@@ -440,7 +440,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
               class="MuiBox-root css-1m8id4h"
             >
               <div
-                class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault css-24k4hw-MuiChip-root"
+                class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault css-144cz6v-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-eccknh-MuiChip-label"
@@ -449,7 +449,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                 </span>
               </div>
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-nf626w-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-mjtegh-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -459,7 +459,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
               </div>
             </div>
             <p
-              class="MuiTypography-root MuiTypography-body2 css-1ojbqzt-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-body2 css-1r6swty-MuiTypography-root"
             >
               Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
               <br />
@@ -469,7 +469,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
               <br />
               View other 
               <a
-                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-crpn5j-MuiTypography-root-MuiLink-root"
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
                 href="https://www.gxs.com.sg/notices"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -478,7 +478,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
               </a>
             </p>
             <h6
-              class="MuiTypography-root MuiTypography-h6 css-1kz6c4j-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-h6 css-108ryg4-MuiTypography-root"
             >
               Rate Change History
             </h6>
@@ -533,58 +533,58 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                     class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
                   >
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                     >
                       2026-06-05
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                     >
                       Boost Pocket: $85K at 1.22% (reduced from 1.38%). Saving Pockets unchanged
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                     >
                       $610.00
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                     >
                       1.22%
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-c7yd94-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-12b4i0z-MuiTableCell-root"
                     />
                   </tr>
                   <tr
                     class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
                   >
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                     >
                       2025-08-01
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                     >
                       Boost Pocket: $85K at 1.38% (reduced from 2.58%). Saving Pockets: $10K at 1.08%
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                     >
                       $690.00
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                     >
                       1.38%
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-c7yd94-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-12b4i0z-MuiTableCell-root"
                     >
                       <a
                         aria-label="Visit source page"
-                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-rx82u4-MuiButtonBase-root-MuiIconButton-root"
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-538ptv-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://sethisfy.com/nerfed-gxs-slashes-interest-1-38-p-a-6th-august-2025/"
                         rel="noopener noreferrer"
@@ -609,31 +609,31 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                     class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
                   >
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                     >
                       2025-07-01
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                     >
                       Boost Pocket: $60K at 2.58%, Saving Pockets: $35K at 1.68%
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                     >
                       $1290.00
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                     >
                       2.58%
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-c7yd94-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-12b4i0z-MuiTableCell-root"
                     >
                       <a
                         aria-label="Visit source page"
-                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-rx82u4-MuiButtonBase-root-MuiIconButton-root"
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-538ptv-MuiButtonBase-root-MuiIconButton-root"
                         data-mui-internal-clone-element="true"
                         href="https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/"
                         rel="noopener noreferrer"
@@ -684,7 +684,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
       >
         <section
           aria-label="Interest rate trend chart"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1dyzsjc-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-w83950-MuiPaper-root"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
         >
           <div
@@ -714,7 +714,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
               </button>
             </div>
             <div
-              class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-nf626w-MuiChip-root"
+              class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-mjtegh-MuiChip-root"
             >
               <span
                 class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -727,7 +727,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
             class="MuiBox-root css-zi2l0h"
           >
             <div
-              class="css-11cjt2c-MuiChartsWrapper-root"
+              class="css-93a99i-MuiChartsWrapper-root"
             >
               <ul
                 class="MuiChartsLegend-root MuiChartsLegend-horizontal css-6qmeuq-MuiChartsLegend-root"
@@ -750,7 +750,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                         <path
                           class="MuiChartsLabelMark-fill"
                           d="M 1 8 L 15 8"
-                          stroke="#58a6ff"
+                          stroke="#5b5bd6"
                           stroke-linecap="round"
                           stroke-width="2"
                           vector-effect="non-scaling-stroke"
@@ -758,7 +758,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                         <path
                           d="M3.192,0A3.192,3.192,0,1,1,-3.192,0A3.192,3.192,0,1,1,3.192,0"
                           fill="#fff"
-                          stroke="#58a6ff"
+                          stroke="#5b5bd6"
                           stroke-width="2"
                           transform="translate(8, 8) "
                         />
@@ -861,7 +861,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                           data-series-id="auto-generated-id-0"
                           fill="none"
                           opacity="1"
-                          stroke="#58a6ff"
+                          stroke="#5b5bd6"
                           stroke-linejoin="round"
                           stroke-width="2"
                         />
@@ -1035,7 +1035,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
             </div>
           </div>
           <span
-            class="MuiTypography-root MuiTypography-caption css-1xc0c88-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-caption css-11nzu0x-MuiTypography-root"
           >
             * Interest rate changes over time. EIR is calculated based on your current savings amount ($50,000).
             <br />
@@ -1048,11 +1048,11 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
       >
         <section
           aria-label="Rate change history and bank details"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-56enq7-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-9lev95-MuiPaper-root"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-6e8vs8-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-x2flso-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
@@ -1077,13 +1077,13 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
             class="MuiBox-root css-1o6yox5"
           >
             <h1
-              class="MuiTypography-root MuiTypography-h5 css-100viu0-MuiTypography-root"
+              class="MuiTypography-root MuiTypography-h5 css-13mxmde-MuiTypography-root"
             >
               GXS Savings
             </h1>
             <a
               aria-label="Visit official website"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-caproo-MuiButtonBase-root-MuiIconButton-root"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-obrf0i-MuiButtonBase-root-MuiIconButton-root"
               data-mui-internal-clone-element="true"
               href="https://www.gxs.com.sg/savings-account"
               rel="noopener noreferrer"
@@ -1107,7 +1107,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
             class="MuiBox-root css-1m8id4h"
           >
             <div
-              class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault css-24k4hw-MuiChip-root"
+              class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault css-144cz6v-MuiChip-root"
             >
               <span
                 class="MuiChip-label css-eccknh-MuiChip-label"
@@ -1116,7 +1116,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
               </span>
             </div>
             <div
-              class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-nf626w-MuiChip-root"
+              class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-mjtegh-MuiChip-root"
             >
               <span
                 class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -1126,7 +1126,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
             </div>
           </div>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1ojbqzt-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-1r6swty-MuiTypography-root"
           >
             Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
             <br />
@@ -1136,7 +1136,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
             <br />
             View other 
             <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-crpn5j-MuiTypography-root-MuiLink-root"
+              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
               href="https://www.gxs.com.sg/notices"
               rel="noopener noreferrer"
               target="_blank"
@@ -1145,7 +1145,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
             </a>
           </p>
           <h6
-            class="MuiTypography-root MuiTypography-h6 css-1kz6c4j-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-h6 css-108ryg4-MuiTypography-root"
           >
             Rate Change History
           </h6>
@@ -1200,58 +1200,58 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                   class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
                 >
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                   >
                     2026-06-05
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                   >
                     Boost Pocket: $85K at 1.22% (reduced from 1.38%). Saving Pockets unchanged
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                   >
                     $610.00
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                   >
                     1.22%
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-c7yd94-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-12b4i0z-MuiTableCell-root"
                   />
                 </tr>
                 <tr
                   class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
                 >
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                   >
                     2025-08-01
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                   >
                     Boost Pocket: $85K at 1.38% (reduced from 2.58%). Saving Pockets: $10K at 1.08%
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                   >
                     $690.00
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                   >
                     1.38%
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-c7yd94-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-12b4i0z-MuiTableCell-root"
                   >
                     <a
                       aria-label="Visit source page"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-rx82u4-MuiButtonBase-root-MuiIconButton-root"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-538ptv-MuiButtonBase-root-MuiIconButton-root"
                       data-mui-internal-clone-element="true"
                       href="https://sethisfy.com/nerfed-gxs-slashes-interest-1-38-p-a-6th-august-2025/"
                       rel="noopener noreferrer"
@@ -1276,31 +1276,31 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                   class="MuiTableRow-root css-1xtozoh-MuiTableRow-root"
                 >
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                   >
                     2025-07-01
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-1afyyag-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
                   >
                     Boost Pocket: $60K at 2.58%, Saving Pockets: $35K at 1.68%
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                   >
                     $1290.00
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-6jxtig-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
                   >
                     2.58%
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-c7yd94-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-12b4i0z-MuiTableCell-root"
                   >
                     <a
                       aria-label="Visit source page"
-                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-rx82u4-MuiButtonBase-root-MuiIconButton-root"
+                      class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-538ptv-MuiButtonBase-root-MuiIconButton-root"
                       data-mui-internal-clone-element="true"
                       href="https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/"
                       rel="noopener noreferrer"

@@ -3,7 +3,7 @@
 exports[`HistoryTab desktop > should match snapshot 1`] = `
 <DocumentFragment>
   <h2
-    class="MuiTypography-root MuiTypography-h4 css-yylqdi-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h4 css-14qzgjc-MuiTypography-root"
   >
     Rate Change History
   </h2>
@@ -50,7 +50,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
               class="MuiFormControl-root css-wu7wou-MuiFormControl-root"
             >
               <div
-                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-1markq4-MuiInputBase-root-MuiOutlinedInput-root"
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-19ja1hz-MuiInputBase-root-MuiOutlinedInput-root"
               >
                 <div
                   aria-expanded="false"
@@ -105,7 +105,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
           class="MuiBox-root css-1r0qzm1"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1tmp3jx-MuiPaper-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ul05vl-MuiPaper-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <p
@@ -124,7 +124,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
 exports[`HistoryTab mobile > should match snapshot 1`] = `
 <DocumentFragment>
   <h2
-    class="MuiTypography-root MuiTypography-h4 css-yylqdi-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h4 css-14qzgjc-MuiTypography-root"
   >
     Rate Change History
   </h2>
@@ -162,7 +162,7 @@ exports[`HistoryTab mobile > should match snapshot 1`] = `
         class="MuiFormControl-root css-1k6y6wi-MuiFormControl-root"
       >
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-1markq4-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-19ja1hz-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <div
             aria-expanded="false"
@@ -213,7 +213,7 @@ exports[`HistoryTab mobile > should match snapshot 1`] = `
       </div>
     </div>
     <div
-      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1tmp3jx-MuiPaper-root"
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ul05vl-MuiPaper-root"
       style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
     >
       <p

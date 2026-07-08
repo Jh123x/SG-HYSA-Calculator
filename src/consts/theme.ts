@@ -1,38 +1,38 @@
 import { createTheme, Theme, type Components, type SxProps } from "@mui/material";
 
-// ── Geckoboard-inspired color primitives ─────────────────────────
+// ── Stripe / Apple-inspired color primitives ──────────────────────
 
-export const bgColor = "#0d1117";
-export const surfaceColor = "#161b22";
-export const textColor = "#e6edf3";
-export const mutedColor = "#8b949e";
-export const primaryColor = "#58a6ff";
-export const accentGreen = "#3fb950";
-export const accentAmber = "#d29922";
-export const dangerColor = "#f85149";
-export const borderColor = "rgba(255,255,255,0.06)";
+export const bgColor = "#0a0a0c";
+export const surfaceColor = "#131316";
+export const textColor = "#fafafa";
+export const mutedColor = "#86868b";
+export const primaryColor = "#5b5bd6";
+export const accentGreen = "#34d058";
+export const accentAmber = "#f5a623";
+export const dangerColor = "#f44b42";
+export const borderColor = "rgba(255,255,255,0.04)";
 
 export const lineColors: string[] = [
-  "#58a6ff", // blue
-  "#3fb950", // green
-  "#d29922", // amber
-  "#f0883e", // orange
-  "#bc8cff", // purple
-  "#f85149", // red
-  "#79c0ff", // light blue
-  "#56d364", // light green
-  "#e3b341", // light amber
-  "#ffa657", // light orange
-  "#d2a8ff", // light purple
-  "#ff7b72", // light red
-  "#a5d6ff", // pale blue
-  "#7ee787", // pale green
-  "#f0c976", // pale amber
-  "#fdaa6b", // pale orange
-  "#dbb4ff", // pale purple
-  "#ffa198", // pale red
-  "#e6edf3", // white-ish
-  "#484f58", // dark gray
+  "#5b5bd6", // blue-purple
+  "#34d058", // green
+  "#f5a623", // amber
+  "#ff6b4a", // coral
+  "#a78bfa", // violet
+  "#f44b42", // red
+  "#67b8f7", // sky
+  "#56d470", // light green
+  "#f7c948", // gold
+  "#ff9175", // light coral
+  "#c4b5fd", // light violet
+  "#fb7b70", // light red
+  "#93cbfa", // pale sky
+  "#8ae39b", // pale green
+  "#fad87a", // pale gold
+  "#ffb399", // pale coral
+  "#e0d4fd", // pale violet
+  "#fca9a2", // pale red
+  "#f5f5f7", // off-white
+  "#484850", // dark gray
 ];
 
 // ── Reusable style fragments ─────────────────────────────────────
@@ -51,6 +51,7 @@ const components: Components = {
         borderRadius: 12,
         backgroundColor: surfaceColor,
         border: `1px solid ${borderColor}`,
+        backgroundImage: "none", // strip default MUI gradient
       },
     },
   },
@@ -86,8 +87,8 @@ const components: Components = {
           opacity: 0.9,
         },
         "&:hover": {
-          backgroundColor: `${primaryColor}18`,
-          borderColor: primaryColor,
+          backgroundColor: `${primaryColor}14`,
+          borderColor: `${primaryColor}40`,
         },
       },
     },
@@ -102,6 +103,7 @@ const components: Components = {
       paper: {
         backgroundColor: surfaceColor,
         border: `1px solid ${borderColor}`,
+        backdropFilter: "blur(20px)",
       },
     },
   },
@@ -115,7 +117,7 @@ const components: Components = {
           borderColor: borderColor,
         },
         "&:hover .MuiOutlinedInput-notchedOutline": {
-          borderColor: primaryColor,
+          borderColor: `${primaryColor}50`,
         },
         "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
           borderColor: primaryColor,
@@ -134,10 +136,31 @@ const components: Components = {
           backgroundColor: surfaceColor,
           borderRadius: 8,
           "& fieldset": { borderColor: borderColor },
-          "&:hover fieldset": { borderColor: primaryColor },
+          "&:hover fieldset": { borderColor: `${primaryColor}50` },
           "&.Mui-focused fieldset": { borderColor: primaryColor },
         },
         "& .MuiInputLabel-root": { color: mutedColor },
+      },
+    },
+  },
+  MuiTooltip: {
+    styleOverrides: {
+      tooltip: {
+        backgroundColor: "#1c1c1e",
+        color: textColor,
+        borderRadius: 6,
+        fontSize: "0.75rem",
+        padding: "6px 10px",
+        border: `1px solid ${borderColor}`,
+      },
+    },
+  },
+  MuiButton: {
+    styleOverrides: {
+      root: {
+        textTransform: "none",
+        borderRadius: 8,
+        fontWeight: 500,
       },
     },
   },
@@ -156,7 +179,7 @@ export const theme: Theme = createTheme({
     success: { main: accentGreen },
   },
   typography: {
-    fontFamily: `-apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif`,
+    fontFamily: `-apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Inter, sans-serif`,
   },
   components,
 });

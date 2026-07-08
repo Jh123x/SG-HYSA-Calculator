@@ -194,7 +194,7 @@ const ComparisonChartContent = ({
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
+            transition={{ type: "spring", stiffness: 400, damping: 35 }}
             style={{ height: "100%" }}
           >
             <LineChart

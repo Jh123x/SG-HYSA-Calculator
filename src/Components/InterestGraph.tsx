@@ -66,7 +66,7 @@ export const InterestGraph = ({
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
+        transition={{ type: "spring", stiffness: 400, damping: 35 }}
         style={{ display: "flex", flexDirection: "column", flex: 1, minHeight: 0 }}
       >
         <InterestVsSavingsChart

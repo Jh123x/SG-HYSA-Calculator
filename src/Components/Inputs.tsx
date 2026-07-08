@@ -15,7 +15,7 @@ import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import type Profile from "../types/profile";
 import { NewProfile } from "../types/profile";
 import { STORE_KEY } from "../consts/keys";
-import { primaryColor, textColor, mutedColor, dangerColor } from "../consts/theme";
+import { primaryColor, textColor, mutedColor, dangerColor, borderColor } from "../consts/theme";
 import type { Field } from "./types";
 import { WebAlert } from "./Alert";
 import { booleanInputs, numericalInputs } from "./InputValues";
@@ -228,7 +228,7 @@ export const FormInputs = ({
             variant="outlined"
             sx={{
               color: textColor,
-              borderColor: "rgba(255,255,255,0.15)",
+              borderColor: borderColor,
               opacity: 0.8,
               fontSize: "0.75rem",
             }}

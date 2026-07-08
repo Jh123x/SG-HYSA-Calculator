@@ -114,7 +114,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
       </div>
     </div>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-1vtebkr-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-l40zzh-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
@@ -143,7 +143,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
       class="MuiBox-root css-1qocved"
     >
       <div
-        class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1dqtt06-MuiChip-root"
+        class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-109p2vl-MuiChip-root"
       >
         <svg
           aria-hidden="true"
@@ -167,14 +167,14 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
       class="MuiBox-root css-xine5j"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1usg09l-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-zgq95k-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
         Clear
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-2ojcj0-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-7qg0bq-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
@@ -317,7 +317,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
       </div>
     </div>
     <button
-      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-1vtebkr-MuiButtonBase-root-MuiButton-root"
+      class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-l40zzh-MuiButtonBase-root-MuiButton-root"
       tabindex="0"
       type="button"
     >
@@ -346,7 +346,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
       class="MuiBox-root css-1qocved"
     >
       <div
-        class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1dqtt06-MuiChip-root"
+        class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-109p2vl-MuiChip-root"
       >
         <svg
           aria-hidden="true"
@@ -370,14 +370,14 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
       class="MuiBox-root css-xine5j"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1usg09l-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-zgq95k-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
         Clear
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-2ojcj0-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-7qg0bq-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >

@@ -21,10 +21,9 @@ export interface BankWidgetCardProps {
 }
 
 /**
- * Geckoboard-style metric card for displaying bank interest rate data.
+ * Apple-inspired metric card for displaying bank interest rate data.
  *
- * Displays bank name, effective interest rate (EIR), yearly interest earned,
- * remarks with tooltip, and action buttons for details/website.
+ * Clean typography, spring-like hover, minimal chrome.
  */
 export const BankWidgetCard = ({
   slug,
@@ -49,11 +48,15 @@ export const BankWidgetCard = ({
         display: "flex",
         flexDirection: "column",
         gap: 0.5,
-        transition: "all 0.2s ease",
         cursor: "pointer",
+        transition: "transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.25s cubic-bezier(0.25, 0.1, 0.25, 1)",
         "&:hover": {
-          transform: "translateY(-2px)",
-          boxShadow: "0 8px 24px rgba(0,0,0,0.3)",
+          transform: "scale(1.01)",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.4)",
+        },
+        "&:active": {
+          transform: "scale(0.985)",
+          transition: "transform 0.1s ease",
         },
       }}
       onClick={onClick}
@@ -64,11 +67,10 @@ export const BankWidgetCard = ({
       {/* Bank Name */}
       <Typography
         sx={{
-          fontSize: "0.9rem",
+          fontSize: "0.85rem",
           color: mutedColor,
           fontWeight: 500,
           lineHeight: 1.3,
-          mb: 0.5,
         }}
       >
         {name}
@@ -78,10 +80,11 @@ export const BankWidgetCard = ({
       <Typography
         variant="h2"
         sx={{
-          fontSize: "2.5rem",
+          fontSize: "2.25rem",
           fontWeight: 700,
           color: textColor,
           lineHeight: 1.1,
+          letterSpacing: "-0.02em",
         }}
       >
         {eir.toFixed(2)}%
@@ -92,7 +95,7 @@ export const BankWidgetCard = ({
           fontSize: "0.7rem",
           color: mutedColor,
           textTransform: "uppercase",
-          letterSpacing: "0.05em",
+          letterSpacing: "0.06em",
         }}
       >
         Effective Rate
@@ -101,7 +104,7 @@ export const BankWidgetCard = ({
       {/* Yearly Interest */}
       <Typography
         sx={{
-          fontSize: "1.3rem",
+          fontSize: "1.15rem",
           fontWeight: 600,
           color: accentGreen,
           mt: 1,
@@ -115,7 +118,7 @@ export const BankWidgetCard = ({
           fontSize: "0.7rem",
           color: mutedColor,
           textTransform: "uppercase",
-          letterSpacing: "0.05em",
+          letterSpacing: "0.06em",
         }}
       >
         Yearly Interest
@@ -147,7 +150,7 @@ export const BankWidgetCard = ({
           display: "flex",
           gap: 0.5,
           mt: "auto",
-          pt: 0.5,
+          pt: 0.75,
         }}
         onClick={(e) => e.stopPropagation()}
       >
@@ -158,7 +161,11 @@ export const BankWidgetCard = ({
               e.stopPropagation();
               navigate(`/bank/${slug}`);
             }}
-            sx={{ color: primaryColor }}
+            sx={{
+              color: mutedColor,
+              "&:hover": { color: primaryColor },
+              transition: "color 0.15s ease",
+            }}
           >
             <OpenInNewIcon fontSize="small" />
           </IconButton>
@@ -171,7 +178,11 @@ export const BankWidgetCard = ({
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              sx={{ color: primaryColor }}
+              sx={{
+                color: mutedColor,
+                "&:hover": { color: primaryColor },
+                transition: "color 0.15s ease",
+              }}
             >
               <LanguageIcon fontSize="small" />
             </IconButton>

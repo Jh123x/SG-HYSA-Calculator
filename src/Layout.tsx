@@ -34,15 +34,15 @@ export const Layout = ({
   const { isMobile } = useMobile();
   const location = useLocation();
 
-  // Desktop: fixed viewport with auto overflow — pages that fully consume their
-  // allocated space (e.g. ThreePanelLayout) don't scroll at the page level,
-  // while pages with natural document flow (e.g. FAQ) get a page-level scrollbar.
-  const bodyOverflow = isMobile ? "auto" : "auto";
+  // Desktop: strict viewport lock — no scrollbars at body or Box level.
+  // Tabbed pages fill exactly 100dvh (internal scrollbars in BottomPanels);
+  // document pages (FAQ) scroll through `main overflow: auto` alone.
+  const bodyOverflow = isMobile ? "auto" : "hidden";
   const rootHeight = isMobile ? "auto" : "100%";
-  const rootOverflow = isMobile ? "visible" : undefined;
+  const rootOverflow = isMobile ? "visible" : "hidden";
 
   const boxHeight = isMobile ? "auto" : "100dvh";
-  const boxOverflow = isMobile ? "visible" : "auto";
+  const boxOverflow = isMobile ? "visible" : "hidden";
 
   const mainOverflow = isMobile ? "visible" : "auto";
   const mainFlex = isMobile ? undefined : 1;
@@ -97,7 +97,7 @@ export const Layout = ({
                   initial={{ opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}
-                  transition={{ duration: 0.2 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 35 }}
                   style={{ width: "100%", height: "100%" }}
                 >
                   <Outlet

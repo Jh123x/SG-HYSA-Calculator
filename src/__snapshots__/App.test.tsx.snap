@@ -3,17 +3,17 @@
 exports[`App > should render correctly 1`] = `
 <DocumentFragment>
   <div
-    class="MuiBox-root css-1g2wnu2"
+    class="MuiBox-root css-90q4bv"
   >
     <header
-      class="MuiBox-root css-1ncmacz"
+      class="MuiBox-root css-1z13aci"
     >
       <div
         class="MuiBox-root css-p3zgxo"
       >
         <svg
           aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1125uu9-MuiSvgIcon-root"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-qju0rt-MuiSvgIcon-root"
           data-testid="SavingsOutlinedIcon"
           focusable="false"
           viewBox="0 0 24 24"
@@ -23,12 +23,12 @@ exports[`App > should render correctly 1`] = `
           />
         </svg>
         <p
-          class="MuiTypography-root MuiTypography-body1 css-9xa29m-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-bf9dw9-MuiTypography-root"
         >
           HYSA Calculator
         </p>
         <h1
-          class="MuiTypography-root MuiTypography-body1 css-ijokk9-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-190c4gd-MuiTypography-root"
         >
           SG High Yield Savings Accounts
         </h1>
@@ -37,7 +37,7 @@ exports[`App > should render correctly 1`] = `
         class="MuiBox-root css-jma0kd"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-16xhkrt-MuiButtonBase-root-MuiButton-root"
+          class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-f1v8tk-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
         >
@@ -59,16 +59,16 @@ exports[`App > should render correctly 1`] = `
             class="MuiBox-root css-1dek1sc"
           >
             <div
-              class="MuiBox-root css-1nc06pv"
+              class="MuiBox-root css-1fy0r92"
             >
               <div
                 class="MuiBox-root css-dem63z"
               >
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-1y4y70a-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-d6tznl-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1dc7zjd-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_5_"
                     id="_r_5_-label"
@@ -76,7 +76,7 @@ exports[`App > should render correctly 1`] = `
                     Savings
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -101,10 +101,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-1y4y70a-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-d6tznl-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1dc7zjd-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_6_"
                     id="_r_6_-label"
@@ -112,7 +112,7 @@ exports[`App > should render correctly 1`] = `
                     Age
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -137,10 +137,10 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-1y4y70a-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-d6tznl-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1dc7zjd-MuiFormLabel-root-MuiInputLabel-root"
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
                     for="_r_7_"
                     id="_r_7_-label"
@@ -148,7 +148,7 @@ exports[`App > should render correctly 1`] = `
                     Salary
                   </label>
                   <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-mzpliz-MuiInputBase-root-MuiOutlinedInput-root"
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
                       aria-invalid="false"
@@ -173,13 +173,13 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <button
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-26qzzs-MuiButtonBase-root-MuiButton-root"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-177q9xg-MuiButtonBase-root-MuiButton-root"
                   tabindex="0"
                   type="button"
                 >
                   More
                   <span
-                    class="MuiButton-icon MuiButton-endIcon css-itrjwl-MuiButton-endIcon"
+                    class="MuiButton-icon MuiButton-endIcon css-lzivkd-MuiButton-endIcon"
                   >
                     <svg
                       aria-hidden="true"
@@ -207,7 +207,7 @@ exports[`App > should render correctly 1`] = `
                   >
                     <button
                       aria-pressed="true"
-                      class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-7b73in-MuiButtonBase-root-MuiToggleButton-root"
+                      class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-1jptw77-MuiButtonBase-root-MuiToggleButton-root"
                       tabindex="0"
                       type="button"
                       value="current"
@@ -216,7 +216,7 @@ exports[`App > should render correctly 1`] = `
                     </button>
                     <button
                       aria-pressed="false"
-                      class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-7b73in-MuiButtonBase-root-MuiToggleButton-root"
+                      class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-1jptw77-MuiButtonBase-root-MuiToggleButton-root"
                       tabindex="0"
                       type="button"
                       value="history"
@@ -225,7 +225,7 @@ exports[`App > should render correctly 1`] = `
                     </button>
                   </div>
                   <div
-                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-pbsfh7-MuiChip-root"
+                    class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-4606mn-MuiChip-root"
                   >
                     <svg
                       aria-hidden="true"
@@ -249,19 +249,19 @@ exports[`App > should render correctly 1`] = `
                   class="MuiBox-root css-xine5j"
                 >
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-rg03cr-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1e2jhx9-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >
                     Clear
                   </button>
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-c3f4wh-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1aygv86-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >
                     <span
-                      class="MuiButton-icon MuiButton-startIcon css-1sh91j5-MuiButton-startIcon"
+                      class="MuiButton-icon MuiButton-startIcon css-1tn2zf3-MuiButton-startIcon"
                     >
                       <svg
                         aria-hidden="true"
@@ -290,7 +290,7 @@ exports[`App > should render correctly 1`] = `
                 class="MuiBox-root css-v3t3zj"
               >
                 <span
-                  class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1dflisx-MuiCircularProgress-root"
+                  class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-lpu7tt-MuiCircularProgress-root"
                   role="progressbar"
                   style="width: 40px; height: 40px;"
                 >
@@ -315,10 +315,10 @@ exports[`App > should render correctly 1`] = `
       </div>
     </main>
     <footer
-      class="MuiBox-root css-k8negz"
+      class="MuiBox-root css-1daksa0"
     >
       <p
-        class="MuiTypography-root MuiTypography-body1 css-yp1lys-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-1imfzl7-MuiTypography-root"
       >
         © Jh123x 2026
       </p>
@@ -326,7 +326,7 @@ exports[`App > should render correctly 1`] = `
         class="MuiBox-root css-171onha"
       >
         <a
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1eitvk4-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1k0rmsq-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://jh123x.com"
           rel="noopener noreferrer"
@@ -346,7 +346,7 @@ exports[`App > should render correctly 1`] = `
           </svg>
         </a>
         <a
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1eitvk4-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1k0rmsq-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="/sitemap.xml"
           rel="noopener noreferrer"
@@ -371,7 +371,7 @@ exports[`App > should render correctly 1`] = `
           </svg>
         </a>
         <a
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1eitvk4-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1k0rmsq-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://jh123x.com/blog/2024/high-yield-saving-accounts/"
           rel="noopener noreferrer"
@@ -391,7 +391,7 @@ exports[`App > should render correctly 1`] = `
           </svg>
         </a>
         <a
-          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1eitvk4-MuiButtonBase-root-MuiIconButton-root"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1k0rmsq-MuiButtonBase-root-MuiIconButton-root"
           data-mui-internal-clone-element="true"
           href="https://github.com/jh123x/SG-HYSA-Calculator"
           rel="noopener noreferrer"
