@@ -161,8 +161,9 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
                 border: `1px solid ${textColor}10`,
                 borderRadius: 2,
                 overflow: "hidden",
+                transform: "scale(0.99)",
                 transition: "transform 0.15s ease, box-shadow 0.15s ease",
-                "&:hover": { transform: "scale(1.01)", boxShadow: `0 4px 20px ${primaryColor}20` },
+                "&:hover": { transform: "scale(1)", boxShadow: `0 4px 20px ${primaryColor}20` },
               }}>
                 <CardActionArea onClick={() => navigate(`/bank/${slug}`)} sx={{ p: 2, display: "flex", flexDirection: "column", alignItems: "flex-start", height: "100%" }}>
                   {/* Bank name */}
