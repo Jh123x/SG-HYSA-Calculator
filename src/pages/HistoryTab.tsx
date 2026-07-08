@@ -367,7 +367,6 @@ const MobileRowGroupedList = ({
             <TableRow>
               <TableCell sx={{ color: textColor, fontWeight: 600, width: 24, p: 0.5, backgroundColor: bgColor }} />
               <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5, backgroundColor: bgColor, width: 80, whiteSpace: "nowrap" }}>Date</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5, backgroundColor: bgColor }}>Change</TableCell>
               <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}1a` : bgColor, width: 48 }}>
                 Yr$
               </TableCell>
@@ -386,7 +385,7 @@ const MobileRowGroupedList = ({
                       {isCollapsed ? <KeyboardArrowRight fontSize="small" /> : <KeyboardArrowDown fontSize="small" />}
                     </IconButton>
                   </TableCell>
-                  <TableCell colSpan={5} sx={{ color: textColor, py: 1, pl: 0 }}>
+                  <TableCell colSpan={4} sx={{ color: textColor, py: 1, pl: 0 }}>
                     <Typography component="span" sx={{ fontWeight: 600, color: textColor, fontSize: "0.85rem" }}>{bank.name}</Typography>
                     <Typography component="span" variant="body2" sx={{ color: textColor, opacity: 0.5, ml: 0.5, fontSize: "0.7rem" }}>
                       ({bank.rows.length})
@@ -397,7 +396,6 @@ const MobileRowGroupedList = ({
                   <TableRow key={`${bank.slug}-${idx}`} sx={{ "&:hover": { backgroundColor: `${primaryColor}08` } }}>
                     <TableCell sx={{ p: 0 }} />
                     <TableCell sx={{ color: textColor, fontSize: "0.7rem", px: 0.5, whiteSpace: "nowrap" }}>{row.date}</TableCell>
-                    <TableCell sx={{ color: textColor, fontSize: "0.7rem", px: 0.5, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "pre-line" }}>{row.changeSummary}</TableCell>
                     <TableCell sx={{ color: textColor, textAlign: "right", fontSize: "0.7rem", px: 0.5, backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}08` : "transparent", whiteSpace: "nowrap" }}>
                       {row.yearlyInterest}
                     </TableCell>
