@@ -13,7 +13,6 @@ import {
 import SortIcon from "@mui/icons-material/Sort";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import { motion } from "framer-motion";
 import type { ResultProp } from "../types/props";
 import { bgColor, textColor, accentGreen, TOGGLE_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
@@ -141,10 +140,6 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
         }
         bottomRight={
           <Box
-            component={motion.div}
-            variants={cardContainer}
-            initial="hidden"
-            animate="show"
             sx={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
@@ -153,7 +148,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
             }}
           >
             {sortedResults.map(([slug, interest]) => (
-              <motion.div key={slug} variants={cardItem}>
+              <div key={slug}>
                 <BankWidgetCard
                   slug={slug}
                   name={bankInfo[slug]?.name ?? slug}
@@ -163,7 +158,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
                   url={interest.url}
                   onClick={() => navigate(`/bank/${slug}`)}
                 />
-              </motion.div>
+              </div>
             ))}
           </Box>
         }
@@ -245,14 +240,10 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
 
       {/* Cards — stacked */}
       <Box
-        component={motion.div}
-        variants={cardContainer}
-        initial="hidden"
-        animate="show"
         sx={{ display: "flex", flexDirection: "column", gap: 1 }}
       >
         {mobileSorted.map(([slug, interest]) => (
-          <motion.div key={slug} variants={cardItem}>
+          <div key={slug}>
             <BankWidgetCard
               slug={slug}
               name={bankInfo[slug]?.name ?? slug}
@@ -262,7 +253,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
               url={interest.url}
               onClick={() => navigate(`/bank/${slug}`)}
             />
-          </motion.div>
+          </div>
         ))}
       </Box>
     </Box>
@@ -270,21 +261,6 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
 };
 
 export default CurrentRatesTab;
-
-// ── Animation variants ──────────────────────────────────────────
-
-const cardContainer = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: { staggerChildren: 0.04 },
-  },
-};
-
-const cardItem = {
-  hidden: { opacity: 0, y: 16 },
-  show: { opacity: 1, y: 0, transition: { type: "spring" as const, stiffness: 500, damping: 40 } },
-};
 
 // ── Shared helpers ─────────────────────────────────────────────────
 

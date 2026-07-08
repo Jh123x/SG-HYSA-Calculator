@@ -137,7 +137,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <div
-              style="display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0; opacity: 0;"
+              style="display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0;"
             >
               <div
                 class="MuiBox-root css-1lgiddr"
@@ -1537,14 +1537,11 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
       >
         <div
           class="MuiBox-root css-z8wuhi"
-          style="opacity: 0;"
         >
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="Chocolate Finance — 1.88% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -1575,26 +1572,30 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label=""
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                1st 20k 2% p.a, next 80k 1.8% p.a.
-                <br />
-                Amounts above 100k are invested and will not be counted here.
-                <br />
-                <b>
-                  Note: This is not a bank
-                </b>
-                <br />
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
-                  href="https://share.chocolate.app/nxW9/l0tqqxem"
-                  rel="noopener noreferrer"
-                  target="_blank"
+                <span
+                  aria-label=""
+                  class=""
+                  data-mui-internal-clone-element="true"
                 >
-                  Referral link
-                </a>
+                  1st 20k 2% p.a, next 80k 1.8% p.a.
+                  <br />
+                  Amounts above 100k are invested and will not be counted here.
+                  <br />
+                  <b>
+                    Note: This is not a bank
+                  </b>
+                  <br />
+                  <a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
+                    href="https://share.chocolate.app/nxW9/l0tqqxem"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Referral link
+                  </a>
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -1642,12 +1643,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="GXS Savings — 1.22% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -1678,25 +1677,29 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label=""
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
-                <br />
-                <b>
-                  Note: The max amount deposited depends on individual (up to $95,000)
-                </b>
-                <br />
-                View other 
-                <a
-                  class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
-                  href="https://www.gxs.com.sg/notices"
-                  rel="noopener noreferrer"
-                  target="_blank"
+                <span
+                  aria-label=""
+                  class=""
+                  data-mui-internal-clone-element="true"
                 >
-                  Notices here
-                </a>
+                  Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
+                  <br />
+                  <b>
+                    Note: The max amount deposited depends on individual (up to $95,000)
+                  </b>
+                  <br />
+                  View other 
+                  <a
+                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
+                    href="https://www.gxs.com.sg/notices"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Notices here
+                  </a>
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -1744,12 +1747,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="Mari Savings — 0.88% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -1780,18 +1781,22 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label=""
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Interest rates are a flat 0.88%
-                <br />
-                Capped at $100k
-                <br />
-                Referral code: 
-                <b>
-                  4QTP99MT
-                </b>
+                <span
+                  aria-label=""
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  Interest rates are a flat 0.88%
+                  <br />
+                  Capped at $100k
+                  <br />
+                  Referral code: 
+                  <b>
+                    4QTP99MT
+                  </b>
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -1839,12 +1844,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="BOC SuperSaver — 0.68% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -1875,15 +1878,19 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label=""
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                This account is valid from 2024-08-01 onwards.
-                <br />
-                <b>
-                  Note: You have to link your paynow to this account to qualify for the sale.
-                </b>
+                <span
+                  aria-label=""
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  This account is valid from 2024-08-01 onwards.
+                  <br />
+                  <b>
+                    Note: You have to link your paynow to this account to qualify for the sale.
+                  </b>
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -1931,12 +1938,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="Trust Bank (Zen) — 0.40% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -1967,11 +1972,15 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label="A Flat 0.4% interest rate up to 1.2 million"
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                A Flat 0.4% interest rate up to 1.2 million
+                <span
+                  aria-label="A Flat 0.4% interest rate up to 1.2 million"
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  A Flat 0.4% interest rate up to 1.2 million
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -2019,12 +2028,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="Maybank iSAVvy — 0.38% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -2055,13 +2062,17 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label=""
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Flat tiered rates (non-additive): 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
-                <br />
-                Rates effective from 11 June 2026.
+                <span
+                  aria-label=""
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  Flat tiered rates (non-additive): 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
+                  <br />
+                  Rates effective from 11 June 2026.
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -2109,12 +2120,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="Maybank iSAVvy Plus — 0.38% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -2145,17 +2154,21 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label=""
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Flat tiered base rates: 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
-                <br />
-                +1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.
-                <br />
-                <b>
-                  Set 'Account Increment' &gt; 0 to qualify for the bonus.
-                </b>
+                <span
+                  aria-label=""
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  Flat tiered base rates: 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
+                  <br />
+                  +1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.
+                  <br />
+                  <b>
+                    Set 'Account Increment' &gt; 0 to qualify for the bonus.
+                  </b>
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -2203,12 +2216,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="Maybank SaveUp — 0.25% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -2239,13 +2250,17 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label=""
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125% (above $50K).
-                <br />
-                No more category-based bonus system.
+                <span
+                  aria-label=""
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125% (above $50K).
+                  <br />
+                  No more category-based bonus system.
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -2293,12 +2308,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="UOB One — 0.05% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -2329,11 +2342,15 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label="Visit their official website to find out more"
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Visit their official website to find out more
+                <span
+                  aria-label="Visit their official website to find out more"
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  Visit their official website to find out more
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -2381,12 +2398,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="OCBC 360 — 0.05% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -2417,11 +2432,15 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label="Visit the official website to find out more"
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Visit the official website to find out more
+                <span
+                  aria-label="Visit the official website to find out more"
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  Visit the official website to find out more
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -2469,12 +2488,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="Standard Chartered Bonus$aver — 0.05% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -2505,13 +2522,17 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label=""
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Insurance and Investment only
-                <br />
-                fulfils interest for 6 months
+                <span
+                  aria-label=""
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  Insurance and Investment only
+                  <br />
+                  fulfils interest for 6 months
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -2559,12 +2580,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="Trust Bank (Signature) — 0.05% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -2595,11 +2614,15 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label="Spending assumes 5 x $30 if spending is more than 150."
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Spending assumes 5 x $30 if spending is more than …
+                <span
+                  aria-label="Spending assumes 5 x $30 if spending is more than 150."
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  Spending assumes 5 x $30 if spending is more than …
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -2647,12 +2670,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="Trust Bank (Flex) — 0.05% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -2683,17 +2704,21 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label=""
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Flex Plan: picks top 3 qualifying bonus scoops.
-                <br />
-                Scoops: salary $1.5K (+0.45%), 5×$30 spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%).
-                <br />
-                <b>
-                  Trust+ required (min S$100K).
-                </b>
+                <span
+                  aria-label=""
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  Flex Plan: picks top 3 qualifying bonus scoops.
+                  <br />
+                  Scoops: salary $1.5K (+0.45%), 5×$30 spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%).
+                  <br />
+                  <b>
+                    Trust+ required (min S$100K).
+                  </b>
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -2741,12 +2766,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="DBS Multiplier — 0.00% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -2777,13 +2800,17 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label=""
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Not eligible if you are younger than 18.
-                <br />
-                Spending includes credit card / paylah retail spend
+                <span
+                  aria-label=""
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  Not eligible if you are younger than 18.
+                  <br />
+                  Spending includes credit card / paylah retail spend
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -2831,12 +2858,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            style="opacity: 0; transform: translateY(16px);"
-          >
+          <div>
             <div
               aria-label="Citi Wealth First — 0.00% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
               role="button"
               style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
               tabindex="0"
@@ -2867,15 +2892,19 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Yearly Interest
               </span>
               <p
-                aria-label=""
-                class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-                data-mui-internal-clone-element="true"
+                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
               >
-                Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)
-                <br />
-                Bonus interest capped at first $500k.
-                <br />
-                *Assumes Citigold level, Citi Private has a higher level.
+                <span
+                  aria-label=""
+                  class=""
+                  data-mui-internal-clone-element="true"
+                >
+                  Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)
+                  <br />
+                  Bonus interest capped at first $500k.
+                  <br />
+                  *Assumes Citigold level, Citi Private has a higher level.
+                </span>
               </p>
               <div
                 class="MuiBox-root css-1o4203c"
@@ -2946,7 +2975,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
     >
       <div
-        style="display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0; opacity: 0;"
+        style="display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0;"
       >
         <div
           class="MuiBox-root css-0"
@@ -4454,14 +4483,11 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
     </div>
     <div
       class="MuiBox-root css-1821gv5"
-      style="opacity: 0;"
     >
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="Chocolate Finance — 1.88% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -4492,26 +4518,30 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label=""
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            1st 20k 2% p.a, next 80k 1.8% p.a.
-            <br />
-            Amounts above 100k are invested and will not be counted here.
-            <br />
-            <b>
-              Note: This is not a bank
-            </b>
-            <br />
-            <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
-              href="https://share.chocolate.app/nxW9/l0tqqxem"
-              rel="noopener noreferrer"
-              target="_blank"
+            <span
+              aria-label=""
+              class=""
+              data-mui-internal-clone-element="true"
             >
-              Referral link
-            </a>
+              1st 20k 2% p.a, next 80k 1.8% p.a.
+              <br />
+              Amounts above 100k are invested and will not be counted here.
+              <br />
+              <b>
+                Note: This is not a bank
+              </b>
+              <br />
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
+                href="https://share.chocolate.app/nxW9/l0tqqxem"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Referral link
+              </a>
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -4559,12 +4589,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="GXS Savings — 1.22% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -4595,25 +4623,29 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label=""
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
-            <br />
-            <b>
-              Note: The max amount deposited depends on individual (up to $95,000)
-            </b>
-            <br />
-            View other 
-            <a
-              class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
-              href="https://www.gxs.com.sg/notices"
-              rel="noopener noreferrer"
-              target="_blank"
+            <span
+              aria-label=""
+              class=""
+              data-mui-internal-clone-element="true"
             >
-              Notices here
-            </a>
+              Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
+              <br />
+              <b>
+                Note: The max amount deposited depends on individual (up to $95,000)
+              </b>
+              <br />
+              View other 
+              <a
+                class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
+                href="https://www.gxs.com.sg/notices"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Notices here
+              </a>
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -4661,12 +4693,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="Mari Savings — 0.88% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -4697,18 +4727,22 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label=""
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Interest rates are a flat 0.88%
-            <br />
-            Capped at $100k
-            <br />
-            Referral code: 
-            <b>
-              4QTP99MT
-            </b>
+            <span
+              aria-label=""
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Interest rates are a flat 0.88%
+              <br />
+              Capped at $100k
+              <br />
+              Referral code: 
+              <b>
+                4QTP99MT
+              </b>
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -4756,12 +4790,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="BOC SuperSaver — 0.68% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -4792,15 +4824,19 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label=""
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            This account is valid from 2024-08-01 onwards.
-            <br />
-            <b>
-              Note: You have to link your paynow to this account to qualify for the sale.
-            </b>
+            <span
+              aria-label=""
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              This account is valid from 2024-08-01 onwards.
+              <br />
+              <b>
+                Note: You have to link your paynow to this account to qualify for the sale.
+              </b>
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -4848,12 +4884,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="Trust Bank (Zen) — 0.40% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -4884,11 +4918,15 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label="A Flat 0.4% interest rate up to 1.2 million"
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            A Flat 0.4% interest rate up to 1.2 million
+            <span
+              aria-label="A Flat 0.4% interest rate up to 1.2 million"
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              A Flat 0.4% interest rate up to 1.2 million
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -4936,12 +4974,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="Maybank iSAVvy — 0.38% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -4972,13 +5008,17 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label=""
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Flat tiered rates (non-additive): 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
-            <br />
-            Rates effective from 11 June 2026.
+            <span
+              aria-label=""
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Flat tiered rates (non-additive): 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
+              <br />
+              Rates effective from 11 June 2026.
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -5026,12 +5066,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="Maybank iSAVvy Plus — 0.38% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5062,17 +5100,21 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label=""
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Flat tiered base rates: 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
-            <br />
-            +1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.
-            <br />
-            <b>
-              Set 'Account Increment' &gt; 0 to qualify for the bonus.
-            </b>
+            <span
+              aria-label=""
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Flat tiered base rates: 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
+              <br />
+              +1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.
+              <br />
+              <b>
+                Set 'Account Increment' &gt; 0 to qualify for the bonus.
+              </b>
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -5120,12 +5162,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="Maybank SaveUp — 0.25% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5156,13 +5196,17 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label=""
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125% (above $50K).
-            <br />
-            No more category-based bonus system.
+            <span
+              aria-label=""
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125% (above $50K).
+              <br />
+              No more category-based bonus system.
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -5210,12 +5254,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="UOB One — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5246,11 +5288,15 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label="Visit their official website to find out more"
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Visit their official website to find out more
+            <span
+              aria-label="Visit their official website to find out more"
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Visit their official website to find out more
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -5298,12 +5344,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="OCBC 360 — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5334,11 +5378,15 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label="Visit the official website to find out more"
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Visit the official website to find out more
+            <span
+              aria-label="Visit the official website to find out more"
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Visit the official website to find out more
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -5386,12 +5434,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="Standard Chartered Bonus$aver — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5422,13 +5468,17 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label=""
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Insurance and Investment only
-            <br />
-            fulfils interest for 6 months
+            <span
+              aria-label=""
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Insurance and Investment only
+              <br />
+              fulfils interest for 6 months
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -5476,12 +5526,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="Trust Bank (Signature) — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5512,11 +5560,15 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label="Spending assumes 5 x $30 if spending is more than 150."
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Spending assumes 5 x $30 if spending is more than …
+            <span
+              aria-label="Spending assumes 5 x $30 if spending is more than 150."
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Spending assumes 5 x $30 if spending is more than …
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -5564,12 +5616,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="Trust Bank (Flex) — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5600,17 +5650,21 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label=""
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Flex Plan: picks top 3 qualifying bonus scoops.
-            <br />
-            Scoops: salary $1.5K (+0.45%), 5×$30 spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%).
-            <br />
-            <b>
-              Trust+ required (min S$100K).
-            </b>
+            <span
+              aria-label=""
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Flex Plan: picks top 3 qualifying bonus scoops.
+              <br />
+              Scoops: salary $1.5K (+0.45%), 5×$30 spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%).
+              <br />
+              <b>
+                Trust+ required (min S$100K).
+              </b>
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -5658,12 +5712,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="DBS Multiplier — 0.00% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5694,13 +5746,17 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label=""
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Not eligible if you are younger than 18.
-            <br />
-            Spending includes credit card / paylah retail spend
+            <span
+              aria-label=""
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Not eligible if you are younger than 18.
+              <br />
+              Spending includes credit card / paylah retail spend
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"
@@ -5748,12 +5804,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        style="opacity: 0; transform: translateY(16px);"
-      >
+      <div>
         <div
           aria-label="Citi Wealth First — 0.00% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-11qpja8-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5784,15 +5838,19 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            aria-label=""
-            class="MuiTypography-root MuiTypography-body2 css-14sg3qt-MuiTypography-root"
-            data-mui-internal-clone-element="true"
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
           >
-            Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)
-            <br />
-            Bonus interest capped at first $500k.
-            <br />
-            *Assumes Citigold level, Citi Private has a higher level.
+            <span
+              aria-label=""
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)
+              <br />
+              Bonus interest capped at first $500k.
+              <br />
+              *Assumes Citigold level, Citi Private has a higher level.
+            </span>
           </p>
           <div
             class="MuiBox-root css-1o4203c"

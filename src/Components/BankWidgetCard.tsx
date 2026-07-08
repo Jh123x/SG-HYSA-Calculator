@@ -48,6 +48,7 @@ export const BankWidgetCard = ({
         display: "flex",
         flexDirection: "column",
         gap: 0.5,
+        height: 210,
         cursor: "pointer",
         transition: "transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.25s cubic-bezier(0.25, 0.1, 0.25, 1)",
         "&:hover": {
@@ -125,24 +126,25 @@ export const BankWidgetCard = ({
       </Typography>
 
       {/* Remarks */}
-      {remarks && (
-        <Tooltip title={typeof remarks === "string" ? remarks : ""} arrow>
-          <Typography
-            variant="body2"
-            sx={{
-              color: mutedColor,
-              fontSize: "0.75rem",
-              mt: 0.5,
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              whiteSpace: "nowrap",
-              maxWidth: "100%",
-            }}
-          >
-            {truncatedRemarks}
-          </Typography>
-        </Tooltip>
-      )}
+      <Typography
+        variant="body2"
+        sx={{
+          color: mutedColor,
+          fontSize: "0.75rem",
+          mt: 0.5,
+          minHeight: "1.1em",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+          whiteSpace: "nowrap",
+          maxWidth: "100%",
+        }}
+      >
+        {remarks ? (
+          <Tooltip title={typeof remarks === "string" ? remarks : ""} arrow>
+            <span>{truncatedRemarks}</span>
+          </Tooltip>
+        ) : null}
+      </Typography>
 
       {/* Action Buttons */}
       <Box

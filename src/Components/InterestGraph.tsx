@@ -1,6 +1,5 @@
 import { ChartsReferenceLine } from "@mui/x-charts";
 import { Paper, Typography } from "@mui/material";
-import { motion } from "framer-motion";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
 import { lineColors, textColor, bgColor, mutedColor, borderColor } from "../consts/theme";
@@ -63,12 +62,7 @@ export const InterestGraph = ({
         flexDirection: "column",
       }}
     >
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ type: "spring", stiffness: 400, damping: 35 }}
-        style={{ display: "flex", flexDirection: "column", flex: 1, minHeight: 0 }}
-      >
+      <div style={{ display: "flex", flexDirection: "column", flex: 1, minHeight: 0 }}>
         <InterestVsSavingsChart
         lines={lines}
         profile={profile}
@@ -79,6 +73,7 @@ export const InterestGraph = ({
             : undefined
         }
       >
+        {profile.Savings > 0 && (
         <ChartsReferenceLine
           x={profile.Savings}
           label="Your savings"
@@ -88,8 +83,9 @@ export const InterestGraph = ({
             strokeDasharray: "6 3",
           }}
         />
+        )}
       </InterestVsSavingsChart>
-      </motion.div>
+      </div>
 
       <Typography variant="caption" sx={ASTERISKS_SX}>
         {BUILT_IN_NOTES.map((note, i) => (

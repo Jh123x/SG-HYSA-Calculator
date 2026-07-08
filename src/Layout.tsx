@@ -1,7 +1,6 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { Container, GlobalStyles, Box } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
-import { AnimatePresence, motion } from "framer-motion";
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
 import { ErrorBoundary } from "./Components/ErrorBoundary";
@@ -32,7 +31,6 @@ export const Layout = ({
   onRejectShared,
 }: LayoutProps) => {
   const { isMobile } = useMobile();
-  const location = useLocation();
 
   // Desktop: strict viewport lock — no scrollbars at body or Box level.
   // Tabbed pages fill exactly 100dvh (internal scrollbars in BottomPanels);
@@ -91,26 +89,17 @@ export const Layout = ({
             }}
           >
             <ErrorBoundary>
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={location.pathname}
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -8 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 35 }}
-                  style={{ width: "100%", height: "100%" }}
-                >
-                  <Outlet
-                    context={{
-                      currProfile,
-                      setCurrProfile,
-                      pendingUrlProfile,
-                      onAcceptShared,
-                      onRejectShared,
-                    }}
-                  />
-                </motion.div>
-              </AnimatePresence>
+              <div style={{ width: "100%", height: "100%" }}>
+                <Outlet
+                  context={{
+                    currProfile,
+                    setCurrProfile,
+                    pendingUrlProfile,
+                    onAcceptShared,
+                    onRejectShared,
+                  }}
+                />
+              </div>
             </ErrorBoundary>
           </Container>
         </Box>

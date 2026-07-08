@@ -7,7 +7,7 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
     style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
   >
     <div
-      style="display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0; opacity: 0;"
+      style="display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0;"
     >
       <div
         class="MuiBox-root css-0"
@@ -1602,7 +1602,7 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
     style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
   >
     <div
-      style="display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0; opacity: 0;"
+      style="display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0;"
     >
       <div
         class="MuiBox-root css-0"

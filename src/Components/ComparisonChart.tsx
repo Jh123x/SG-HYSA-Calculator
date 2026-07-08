@@ -4,7 +4,6 @@ import {
   Paper,
   Box,
 } from "@mui/material";
-import { motion } from "framer-motion";
 import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, bgColor, mutedColor, borderColor } from "../consts/theme";
 import { bankInfo } from "../logic/constants";
@@ -191,12 +190,7 @@ const ComparisonChartContent = ({
         }}
       >
         <Box sx={{ flex: 1, minHeight: 0 }}>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 35 }}
-            style={{ height: "100%" }}
-          >
+          <div style={{ height: "100%" }}>
             <LineChart
               dataset={dataset}
               xAxis={X_AXIS}
@@ -223,7 +217,7 @@ const ComparisonChartContent = ({
                 ...(isMobile ? {} : { height: "100%", width: "100%" }),
               }}
             />
-          </motion.div>
+          </div>
         </Box>
         <Typography
           variant="caption"
