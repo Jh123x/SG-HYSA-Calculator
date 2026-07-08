@@ -19,18 +19,18 @@ export const Header = () => {
     <Box
       component="header"
       sx={{
-        height: 44,
+        height: 48,
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        px: 2,
+        px: { xs: 2, sm: 3 },
         borderBottom: `1px solid ${borderColor}`,
         flexShrink: 0,
       }}
     >
       {/* Left: icon + text */}
       <Box
-        sx={{ display: "flex", alignItems: "center", gap: 1, cursor: "pointer" }}
+        sx={{ display: "flex", alignItems: "center", gap: 1.5, cursor: "pointer" }}
         onClick={() => navigate("/")}
       >
         <SavingsOutlinedIcon

@@ -3,10 +3,10 @@
 exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
 <DocumentFragment>
   <div
-    class="MuiBox-root css-dem63z"
+    class="MuiBox-root css-1a1awyj"
   >
     <div
-      class="MuiFormControl-root MuiTextField-root css-2cm3s1-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1kxkoch-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
@@ -48,7 +48,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
       </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-2cm3s1-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1kxkoch-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
@@ -90,7 +90,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
       </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-2cm3s1-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1kxkoch-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
@@ -155,7 +155,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
     </button>
   </div>
   <div
-    class="MuiBox-root css-11y70p2"
+    class="MuiBox-root css-1pqq8nw"
   >
     <div
       class="MuiBox-root css-1qocved"
@@ -224,10 +224,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
 exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
 <DocumentFragment>
   <div
-    class="MuiBox-root css-dem63z"
+    class="MuiBox-root css-1a1awyj"
   >
     <div
-      class="MuiFormControl-root MuiTextField-root css-2cm3s1-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1kxkoch-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
@@ -269,7 +269,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
       </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-2cm3s1-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1kxkoch-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
@@ -311,7 +311,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
       </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-2cm3s1-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1kxkoch-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
@@ -376,7 +376,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
     </button>
   </div>
   <div
-    class="MuiBox-root css-11y70p2"
+    class="MuiBox-root css-1pqq8nw"
   >
     <div
       class="MuiBox-root css-1qocved"

@@ -84,7 +84,8 @@ export const Layout = ({
           <Container
             sx={{
               maxWidth: "100% !important",
-              px: { xs: 2, sm: 2 },
+              px: { xs: 2, sm: 4, md: 5 },
+              py: { xs: 0, sm: 1 },
               height: "100%",
             }}
           >

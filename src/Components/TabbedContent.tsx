@@ -99,8 +99,8 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
       <Box
         sx={{
           flexShrink: 0,
-          pt: 2,
-          pb: 1,
+          pt: 2.5,
+          pb: 1.5,
           borderBottom: "1px solid rgba(255,255,255,0.04)",
         }}
       >

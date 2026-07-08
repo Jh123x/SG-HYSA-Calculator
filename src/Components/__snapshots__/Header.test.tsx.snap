@@ -3,10 +3,10 @@
 exports[`Header > should match snapshot 1`] = `
 <DocumentFragment>
   <header
-    class="MuiBox-root css-1z13aci"
+    class="MuiBox-root css-joazt6"
   >
     <div
-      class="MuiBox-root css-p3zgxo"
+      class="MuiBox-root css-13mxke4"
     >
       <svg
         aria-hidden="true"

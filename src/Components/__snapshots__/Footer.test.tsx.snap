@@ -3,7 +3,7 @@
 exports[`Footer > should match snapshot 1`] = `
 <DocumentFragment>
   <footer
-    class="MuiBox-root css-1daksa0"
+    class="MuiBox-root css-1ju4mgl"
   >
     <p
       class="MuiTypography-root MuiTypography-body1 css-1qfk12i-MuiTypography-root"

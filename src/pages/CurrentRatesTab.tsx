@@ -82,14 +82,14 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
       <Typography
         component="h2"
         variant="h5"
-        sx={{ color: textColor, fontWeight: 600, mb: 1, fontSize: { xs: "1rem", sm: "1.1rem" } }}
+        sx={{ color: textColor, fontWeight: 600, mb: 1.5, fontSize: { xs: "1rem", sm: "1.1rem" } }}
       >
         Rate Comparison
       </Typography>
       <ThreePanelLayout
         aria-label="Current interest rates comparison"
         bottomLeft={
-          <Box sx={{ height: "40vh", minHeight: 0 }}>
+          <Box sx={{ height: "38vh", minHeight: 0 }}>
             <InterestGraph
               profile={profile}
               height="fill"
@@ -97,9 +97,9 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
           </Box>
         }
         bottomRight={
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
             {/* Sort controls — inside cards panel */}
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1, flexShrink: 0 }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, flexShrink: 0 }}>
               <SortIcon sx={{ color: textColor, fontSize: 20 }} />
               <FormControl size="small" sx={{ minWidth: 140 }}>
                 <Select
@@ -145,7 +145,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
               sx={{
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-                gap: 2,
+                gap: 2.5,
                 alignContent: "start",
               }}
             >

@@ -62,7 +62,7 @@ export const HistoryTab = ({ profile }: Props) => {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://hysa.jh123x.com/history" />
       </Helmet>
-      <Typography component="h2" variant="h4" sx={{ color: textColor, fontWeight: 700, mb: 2, fontSize: { xs: "1.25rem", sm: "1.5rem" } }}>
+      <Typography component="h2" variant="h4" sx={{ color: textColor, fontWeight: 700, mb: 2.5, fontSize: { xs: "1.25rem", sm: "1.5rem" } }}>
         Rate Change History
       </Typography>
       {isMobile ? (
@@ -126,7 +126,7 @@ const HistoryTabDesktop = ({
                         {isCollapsed ? <KeyboardArrowRight fontSize="small" /> : <KeyboardArrowDown fontSize="small" />}
                       </IconButton>
                     </TableCell>
-                    <TableCell colSpan={5} sx={{ py: 1 }}>
+                    <TableCell colSpan={5} sx={{ py: 1.5 }}>
                       <Typography component="span" sx={{ fontWeight: 600, color: textColor }}>{bank.name}</Typography>
                       <Typography component="span" variant="body2" sx={{ color: textColor, opacity: 0.6, ml: 1 }}>
                         ({bank.rows.length} change{bank.rows.length !== 1 ? "s" : ""})
@@ -174,7 +174,7 @@ const HistoryTabDesktop = ({
   };
 
   const renderControls = () => (
-    <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 1.5, mb: 1.5 }}>
+    <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 2, mb: 2 }}>
       <ToggleButtonGroup value={chartMode} exclusive onChange={(_e, v) => v && setChartMode(v)} size="small">
         <ToggleButton value="yearly" sx={TOGGLE_SX}>Yearly $</ToggleButton>
         <ToggleButton value="eir" sx={TOGGLE_SX}>EIR (%)</ToggleButton>
@@ -217,7 +217,7 @@ const HistoryTabDesktop = ({
           <>
             {renderControls()}
             {selectedBanks.length > 0 && (
-              <Box sx={{ height: "50vh" }}>
+              <Box sx={{ height: "48vh" }}>
                 <ComparisonChart selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
               </Box>
             )}

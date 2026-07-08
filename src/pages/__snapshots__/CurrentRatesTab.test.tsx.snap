@@ -3,7 +3,7 @@
 exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
 <DocumentFragment>
   <h2
-    class="MuiTypography-root MuiTypography-h5 css-qpthr6-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h5 css-1fsrp97-MuiTypography-root"
   >
     Rate Comparison
   </h2>
@@ -17,7 +17,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
         class="MuiBox-root css-1r0qzm1"
       >
         <div
-          class="MuiBox-root css-dqo70j"
+          class="MuiBox-root css-1bqlkpe"
         >
           <div
             class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-18gkh5a-MuiPaper-root"
@@ -1494,10 +1494,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
         class="MuiBox-root css-1r0qzm1"
       >
         <div
-          class="MuiBox-root css-1hdbc19"
+          class="MuiBox-root css-yd8sa2"
         >
           <div
-            class="MuiBox-root css-u6zh8m"
+            class="MuiBox-root css-agvjgr"
           >
             <svg
               aria-hidden="true"
@@ -1610,12 +1610,12 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="MuiBox-root css-1gfsc5w"
+            class="MuiBox-root css-1y0x6ag"
           >
             <div>
               <div
                 aria-label="Chocolate Finance — 1.88% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -1636,7 +1636,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $940.00
                 </p>
@@ -1646,7 +1646,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label=""
@@ -1672,7 +1672,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -1720,7 +1720,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="GXS Savings — 1.22% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -1741,7 +1741,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $610.00
                 </p>
@@ -1751,7 +1751,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label=""
@@ -1776,7 +1776,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -1824,7 +1824,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Mari Savings — 0.88% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -1845,7 +1845,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $440.00
                 </p>
@@ -1855,7 +1855,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label=""
@@ -1873,7 +1873,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -1921,7 +1921,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="BOC SuperSaver — 0.68% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -1942,7 +1942,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $340.00
                 </p>
@@ -1952,7 +1952,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label=""
@@ -1967,7 +1967,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -2015,7 +2015,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Trust Bank (Zen) — 0.40% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2036,7 +2036,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $200.00
                 </p>
@@ -2046,7 +2046,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label="A Flat 0.4% interest rate up to 1.2 million"
@@ -2057,7 +2057,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -2105,7 +2105,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Maybank iSAVvy — 0.38% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2126,7 +2126,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $190.00
                 </p>
@@ -2136,7 +2136,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label=""
@@ -2149,7 +2149,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -2197,7 +2197,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Maybank iSAVvy Plus — 0.38% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2218,7 +2218,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $190.00
                 </p>
@@ -2228,7 +2228,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label=""
@@ -2245,7 +2245,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -2293,7 +2293,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Maybank SaveUp — 0.25% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2314,7 +2314,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $123.13
                 </p>
@@ -2324,7 +2324,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label=""
@@ -2337,7 +2337,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -2385,7 +2385,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="BOC SmartSaver — 0.10% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2406,7 +2406,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $50.00
                 </p>
@@ -2416,7 +2416,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label="Prevailing 0.10%, Card S$750 +0.60% / S$2.5K +0.90%, Salary S$3K +0.50%, 3×Bill +0.10%, Insurance +3.00%. Max 1.60% on S$100K (4.60% with insurance)."
@@ -2427,7 +2427,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -2475,7 +2475,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="UOB One — 0.05% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2496,7 +2496,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $25.00
                 </p>
@@ -2506,7 +2506,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label="Visit their official website to find out more"
@@ -2517,7 +2517,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -2565,7 +2565,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="OCBC 360 — 0.05% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2586,7 +2586,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $25.00
                 </p>
@@ -2596,7 +2596,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label="Visit the official website to find out more"
@@ -2607,7 +2607,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -2655,7 +2655,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Standard Chartered Bonus$aver — 0.05% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2676,7 +2676,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $25.00
                 </p>
@@ -2686,7 +2686,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label=""
@@ -2699,7 +2699,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -2747,7 +2747,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Trust Bank (Signature) — 0.05% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2768,7 +2768,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $25.00
                 </p>
@@ -2778,7 +2778,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label="Spending assumes 5 x $30 if spending is more than 150."
@@ -2789,7 +2789,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -2837,7 +2837,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Trust Bank (Flex) — 0.05% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2858,7 +2858,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $25.00
                 </p>
@@ -2868,7 +2868,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label=""
@@ -2885,7 +2885,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -2933,7 +2933,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="DBS Multiplier — 0.00% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -2954,7 +2954,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $0.00
                 </p>
@@ -2964,7 +2964,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label=""
@@ -2977,7 +2977,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -3025,7 +3025,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             <div>
               <div
                 aria-label="Citi Wealth First — 0.00% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
                 role="button"
                 style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
                 tabindex="0"
@@ -3046,7 +3046,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Effective Rate
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
                 >
                   $0.00
                 </p>
@@ -3056,7 +3056,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   Yearly Interest
                 </span>
                 <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                  class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
                 >
                   <span
                     aria-label=""
@@ -3071,7 +3071,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </p>
                 <div
-                  class="MuiBox-root css-1o4203c"
+                  class="MuiBox-root css-2wwwu6"
                 >
                   <button
                     aria-label="View details"
@@ -4723,7 +4723,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Chocolate Finance — 1.88% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -4744,7 +4744,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $940.00
           </p>
@@ -4754,7 +4754,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label=""
@@ -4780,7 +4780,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -4828,7 +4828,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="GXS Savings — 1.22% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -4849,7 +4849,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $610.00
           </p>
@@ -4859,7 +4859,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label=""
@@ -4884,7 +4884,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -4932,7 +4932,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Mari Savings — 0.88% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -4953,7 +4953,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $440.00
           </p>
@@ -4963,7 +4963,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label=""
@@ -4981,7 +4981,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -5029,7 +5029,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="BOC SuperSaver — 0.68% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5050,7 +5050,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $340.00
           </p>
@@ -5060,7 +5060,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label=""
@@ -5075,7 +5075,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -5123,7 +5123,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Trust Bank (Zen) — 0.40% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5144,7 +5144,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $200.00
           </p>
@@ -5154,7 +5154,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label="A Flat 0.4% interest rate up to 1.2 million"
@@ -5165,7 +5165,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -5213,7 +5213,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Maybank iSAVvy — 0.38% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5234,7 +5234,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $190.00
           </p>
@@ -5244,7 +5244,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label=""
@@ -5257,7 +5257,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -5305,7 +5305,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Maybank iSAVvy Plus — 0.38% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5326,7 +5326,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $190.00
           </p>
@@ -5336,7 +5336,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label=""
@@ -5353,7 +5353,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -5401,7 +5401,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Maybank SaveUp — 0.25% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5422,7 +5422,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $123.13
           </p>
@@ -5432,7 +5432,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label=""
@@ -5445,7 +5445,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -5493,7 +5493,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="BOC SmartSaver — 0.10% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5514,7 +5514,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $50.00
           </p>
@@ -5524,7 +5524,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label="Prevailing 0.10%, Card S$750 +0.60% / S$2.5K +0.90%, Salary S$3K +0.50%, 3×Bill +0.10%, Insurance +3.00%. Max 1.60% on S$100K (4.60% with insurance)."
@@ -5535,7 +5535,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -5583,7 +5583,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="UOB One — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5604,7 +5604,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $25.00
           </p>
@@ -5614,7 +5614,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label="Visit their official website to find out more"
@@ -5625,7 +5625,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -5673,7 +5673,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="OCBC 360 — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5694,7 +5694,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $25.00
           </p>
@@ -5704,7 +5704,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label="Visit the official website to find out more"
@@ -5715,7 +5715,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -5763,7 +5763,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Standard Chartered Bonus$aver — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5784,7 +5784,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $25.00
           </p>
@@ -5794,7 +5794,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label=""
@@ -5807,7 +5807,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -5855,7 +5855,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Trust Bank (Signature) — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5876,7 +5876,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $25.00
           </p>
@@ -5886,7 +5886,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label="Spending assumes 5 x $30 if spending is more than 150."
@@ -5897,7 +5897,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -5945,7 +5945,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Trust Bank (Flex) — 0.05% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -5966,7 +5966,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $25.00
           </p>
@@ -5976,7 +5976,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label=""
@@ -5993,7 +5993,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -6041,7 +6041,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="DBS Multiplier — 0.00% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -6062,7 +6062,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $0.00
           </p>
@@ -6072,7 +6072,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label=""
@@ -6085,7 +6085,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"
@@ -6133,7 +6133,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       <div>
         <div
           aria-label="Citi Wealth First — 0.00% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1yzxdl4-MuiPaper-root"
           role="button"
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           tabindex="0"
@@ -6154,7 +6154,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Effective Rate
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body1 css-7ebbxj-MuiTypography-root"
           >
             $0.00
           </p>
@@ -6164,7 +6164,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             Yearly Interest
           </span>
           <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+            class="MuiTypography-root MuiTypography-body2 css-x87hxa-MuiTypography-root"
           >
             <span
               aria-label=""
@@ -6179,7 +6179,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             </span>
           </p>
           <div
-            class="MuiBox-root css-1o4203c"
+            class="MuiBox-root css-2wwwu6"
           >
             <button
               aria-label="View details"

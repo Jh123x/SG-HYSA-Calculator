@@ -105,7 +105,7 @@ export const FormInputs = ({
         sx={{
           display: "flex",
           alignItems: "center",
-          gap: 1,
+          gap: 1.5,
           flexWrap: "wrap",
           width: "100%",
         }}
@@ -150,7 +150,7 @@ export const FormInputs = ({
           sx={{
             display: "flex",
             flexDirection: "column",
-            gap: 1.5,
+            gap: 2,
             width: "100%",
             mt: 1.5,
           }}
@@ -160,7 +160,7 @@ export const FormInputs = ({
             sx={{
               display: "flex",
               flexWrap: "wrap",
-              gap: 1,
+              gap: 1.5,
               alignItems: "center",
             }}
           >
@@ -185,7 +185,7 @@ export const FormInputs = ({
             sx={{
               display: "flex",
               flexWrap: "wrap",
-              gap: 1,
+              gap: 1.5,
               alignItems: "center",
             }}
           >
@@ -210,12 +210,12 @@ export const FormInputs = ({
       {/* Action bar: Clear + Share + leftChildren */}
       <Box
         sx={{
-          mt: 1.5,
+          mt: 2,
           display: "flex",
           flexDirection: { xs: "column", sm: "row" },
           justifyContent: "space-between",
           alignItems: { xs: "stretch", sm: "center" },
-          gap: 1,
+          gap: 1.5,
         }}
       >
         {/* Left: tab toggle (passed from TabbedContent) + privacy chip */}
@@ -375,7 +375,7 @@ const InputNumberField = ({
         "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
           { display: "none" },
         "& input[type=number]": { MozAppearance: "textfield" },
-        width: { xs: "100%", sm: 240 },
+        width: { xs: "100%", sm: 260 },
         "& .MuiInputBase-root": {
           fontSize: "1rem",
         },

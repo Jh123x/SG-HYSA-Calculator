@@ -46,10 +46,10 @@ export const BankWidgetCard = ({
   return (
     <Paper
       sx={{
-        p: 2.5,
+        p: 3,
         display: "flex",
         flexDirection: "column",
-        gap: 0.5,
+        gap: 0.75,
         height: 210,
         cursor: "pointer",
         transition: "transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.25s cubic-bezier(0.25, 0.1, 0.25, 1)",
@@ -111,7 +111,7 @@ export const BankWidgetCard = ({
           fontSize: "1.15rem",
           fontWeight: 600,
           color: accentGreen,
-          mt: 1,
+          mt: 1.25,
         }}
       >
         ${yearlyInterest.toFixed(2)}
@@ -134,7 +134,7 @@ export const BankWidgetCard = ({
         sx={{
           color: mutedColor,
           fontSize: "0.75rem",
-          mt: 0.5,
+          mt: 0.75,
           minHeight: "1.1em",
           overflow: "hidden",
           textOverflow: "ellipsis",
@@ -155,7 +155,7 @@ export const BankWidgetCard = ({
           display: "flex",
           gap: 0.5,
           mt: "auto",
-          pt: 0.75,
+          pt: 1,
         }}
         onClick={(e) => e.stopPropagation()}
       >

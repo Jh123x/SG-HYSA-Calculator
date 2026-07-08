@@ -3,7 +3,7 @@
 exports[`HistoryTab desktop > should match snapshot 1`] = `
 <DocumentFragment>
   <h2
-    class="MuiTypography-root MuiTypography-h4 css-14qzgjc-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h4 css-1fprz8e-MuiTypography-root"
   >
     Rate Change History
   </h2>
@@ -21,7 +21,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
           class="MuiBox-root css-1r0qzm1"
         >
           <div
-            class="MuiBox-root css-ztk0b"
+            class="MuiBox-root css-1fvhcqv"
           >
             <div
               class="MuiToggleButtonGroup-root MuiToggleButtonGroup-horizontal css-1qb8o-MuiToggleButtonGroup-root"
@@ -124,7 +124,7 @@ exports[`HistoryTab desktop > should match snapshot 1`] = `
 exports[`HistoryTab mobile > should match snapshot 1`] = `
 <DocumentFragment>
   <h2
-    class="MuiTypography-root MuiTypography-h4 css-14qzgjc-MuiTypography-root"
+    class="MuiTypography-root MuiTypography-h4 css-1fprz8e-MuiTypography-root"
   >
     Rate Change History
   </h2>

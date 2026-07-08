@@ -6,10 +6,10 @@ exports[`App > should render correctly 1`] = `
     class="MuiBox-root css-90q4bv"
   >
     <header
-      class="MuiBox-root css-1z13aci"
+      class="MuiBox-root css-joazt6"
     >
       <div
-        class="MuiBox-root css-p3zgxo"
+        class="MuiBox-root css-13mxke4"
       >
         <svg
           aria-hidden="true"
@@ -49,7 +49,7 @@ exports[`App > should render correctly 1`] = `
       class="MuiBox-root css-3bihpr"
     >
       <div
-        class="MuiContainer-root MuiContainer-maxWidthLg css-4csstv-MuiContainer-root"
+        class="MuiContainer-root MuiContainer-maxWidthLg css-1902fom-MuiContainer-root"
       >
         <div
           style="width: 100%; height: 100%;"
@@ -59,13 +59,13 @@ exports[`App > should render correctly 1`] = `
             class="MuiBox-root css-1dek1sc"
           >
             <div
-              class="MuiBox-root css-1fy0r92"
+              class="MuiBox-root css-1b1smz5"
             >
               <div
-                class="MuiBox-root css-dem63z"
+                class="MuiBox-root css-1a1awyj"
               >
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-nwzazw-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-13yblst-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
@@ -107,7 +107,7 @@ exports[`App > should render correctly 1`] = `
                   </p>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-nwzazw-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-13yblst-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
@@ -149,7 +149,7 @@ exports[`App > should render correctly 1`] = `
                   </p>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-nwzazw-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-13yblst-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
@@ -214,7 +214,7 @@ exports[`App > should render correctly 1`] = `
                 </button>
               </div>
               <div
-                class="MuiBox-root css-11y70p2"
+                class="MuiBox-root css-1pqq8nw"
               >
                 <div
                   class="MuiBox-root css-1qocved"
@@ -333,7 +333,7 @@ exports[`App > should render correctly 1`] = `
       </div>
     </main>
     <footer
-      class="MuiBox-root css-1daksa0"
+      class="MuiBox-root css-1ju4mgl"
     >
       <p
         class="MuiTypography-root MuiTypography-body1 css-1imfzl7-MuiTypography-root"

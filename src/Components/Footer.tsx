@@ -7,12 +7,12 @@ export const Footer = () => {
     <Box
       component="footer"
       sx={{
-        height: 32,
+        height: 40,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        gap: 1,
-        px: 2,
+        gap: 1.5,
+        px: { xs: 2, sm: 3 },
         borderTop: `1px solid ${borderColor}`,
         flexShrink: 0,
       }}
