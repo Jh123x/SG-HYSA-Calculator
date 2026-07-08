@@ -97,7 +97,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
           </Box>
         }
         bottomRight={
-          <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, height: "100%" }}>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
             {/* Sort controls — inside cards panel */}
             <Box sx={{ display: "flex", alignItems: "center", gap: 1, flexShrink: 0 }}>
               <SortIcon sx={{ color: textColor, fontSize: 20 }} />
@@ -144,11 +144,9 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
             <Box
               sx={{
                 display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
+                gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
                 gap: 2,
                 alignContent: "start",
-                flex: 1,
-                overflow: "auto",
               }}
             >
               {sortedResults.map(([slug, interest]) => (
