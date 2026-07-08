@@ -6,7 +6,7 @@ exports[`App > should render correctly 1`] = `
     class="MuiBox-root css-90q4bv"
   >
     <header
-      class="MuiBox-root css-joazt6"
+      class="MuiBox-root css-16n9lli"
     >
       <div
         class="MuiBox-root css-13mxke4"
@@ -28,7 +28,7 @@ exports[`App > should render correctly 1`] = `
           HYSA Calculator
         </p>
         <h1
-          class="MuiTypography-root MuiTypography-body1 css-190c4gd-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-rqltwy-MuiTypography-root"
         >
           SG High Yield Savings Accounts
         </h1>

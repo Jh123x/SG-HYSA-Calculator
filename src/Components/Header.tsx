@@ -26,6 +26,7 @@ export const Header = () => {
         px: { xs: 2, sm: 3 },
         borderBottom: `1px solid ${borderColor}`,
         flexShrink: 0,
+        position: "relative",
       }}
     >
       {/* Left: icon + text */}
@@ -51,15 +52,18 @@ export const Header = () => {
             HYSA Calculator
           </Typography>
         )}
-        {/* Visually hidden h1 for SEO */}
+        {/* Visually hidden h1 for SEO — standard screen-reader-only pattern */}
         <Typography
           component="h1"
           sx={{
             position: "absolute",
             width: 1,
             height: 1,
+            m: -0.125,
+            p: 0,
             overflow: "hidden",
-            clip: "rect(0,0,0,0)",
+            clip: "rect(0, 0, 0, 0)",
+            clipPath: "inset(50%)",
             whiteSpace: "nowrap",
             border: 0,
           }}
