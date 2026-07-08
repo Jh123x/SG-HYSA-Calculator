@@ -50,7 +50,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         for="_r_2_"
         id="_r_2_-label"
       >
-        Age
+        Salary
       </label>
       <div
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
@@ -59,7 +59,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
           id="_r_2_"
-          placeholder="Current age"
+          placeholder="Credited to bank monthly"
           type="number"
           value=""
         />
@@ -71,7 +71,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
             class="css-1n64csd-MuiNotchedOutlined-root"
           >
             <span>
-              Age
+              Salary
             </span>
           </legend>
         </fieldset>
@@ -86,7 +86,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         for="_r_3_"
         id="_r_3_-label"
       >
-        Salary
+        Spending
       </label>
       <div
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
@@ -95,7 +95,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
           id="_r_3_"
-          placeholder="Credited to bank monthly"
+          placeholder="On eligible cards monthly"
           type="number"
           value=""
         />
@@ -107,7 +107,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
             class="css-1n64csd-MuiNotchedOutlined-root"
           >
             <span>
-              Salary
+              Spending
             </span>
           </legend>
         </fieldset>
@@ -253,7 +253,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         for="_r_9_"
         id="_r_9_-label"
       >
-        Age
+        Salary
       </label>
       <div
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
@@ -262,9 +262,9 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
           id="_r_9_"
-          placeholder="Current age"
+          placeholder="Credited to bank monthly"
           type="number"
-          value="10"
+          value="3000"
         />
         <fieldset
           aria-hidden="true"
@@ -274,7 +274,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
             class="css-ex8a5f-MuiNotchedOutlined-root"
           >
             <span>
-              Age
+              Salary
             </span>
           </legend>
         </fieldset>
@@ -289,7 +289,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         for="_r_a_"
         id="_r_a_-label"
       >
-        Salary
+        Spending
       </label>
       <div
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
@@ -298,9 +298,9 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
           id="_r_a_"
-          placeholder="Credited to bank monthly"
+          placeholder="On eligible cards monthly"
           type="number"
-          value="3000"
+          value="1000"
         />
         <fieldset
           aria-hidden="true"
@@ -310,7 +310,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
             class="css-ex8a5f-MuiNotchedOutlined-root"
           >
             <span>
-              Salary
+              Spending
             </span>
           </legend>
         </fieldset>

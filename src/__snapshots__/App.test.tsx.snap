@@ -109,7 +109,7 @@ exports[`App > should render correctly 1`] = `
                     for="_r_6_"
                     id="_r_6_-label"
                   >
-                    Age
+                    Salary
                   </label>
                   <div
                     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
@@ -118,7 +118,7 @@ exports[`App > should render correctly 1`] = `
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-1fe3xww-MuiInputBase-input-MuiOutlinedInput-input"
                       id="_r_6_"
-                      placeholder="Current age"
+                      placeholder="Credited to bank monthly"
                       type="number"
                       value=""
                     />
@@ -130,7 +130,7 @@ exports[`App > should render correctly 1`] = `
                         class="css-1n64csd-MuiNotchedOutlined-root"
                       >
                         <span>
-                          Age
+                          Salary
                         </span>
                       </legend>
                     </fieldset>
@@ -145,7 +145,7 @@ exports[`App > should render correctly 1`] = `
                     for="_r_7_"
                     id="_r_7_-label"
                   >
-                    Salary
+                    Spending
                   </label>
                   <div
                     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
@@ -154,7 +154,7 @@ exports[`App > should render correctly 1`] = `
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-1fe3xww-MuiInputBase-input-MuiOutlinedInput-input"
                       id="_r_7_"
-                      placeholder="Credited to bank monthly"
+                      placeholder="On eligible cards monthly"
                       type="number"
                       value=""
                     />
@@ -166,7 +166,7 @@ exports[`App > should render correctly 1`] = `
                         class="css-1n64csd-MuiNotchedOutlined-root"
                       >
                         <span>
-                          Salary
+                          Spending
                         </span>
                       </legend>
                     </fieldset>

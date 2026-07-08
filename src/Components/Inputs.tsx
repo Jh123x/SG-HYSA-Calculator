@@ -41,7 +41,7 @@ interface FormInput {
 }
 
 // The three core numeric inputs to show in the compact row
-const COMPACT_INPUTS = ["Savings", "Salary", "Age"];
+const COMPACT_INPUTS = ["Savings", "Salary", "Spending"];
 
 export const FormInputs = ({
   currProfile,
