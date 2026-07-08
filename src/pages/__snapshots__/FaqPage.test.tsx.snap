@@ -878,7 +878,7 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
                 >
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                    href="https://milelion.com/"
+                    href="https://milelion.com/tag/savings/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -1699,7 +1699,7 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
                 >
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                    href="https://seedly.sg/"
+                    href="https://seedly.sg/reviews/savings-accounts/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -2257,11 +2257,11 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
                 >
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                    href="https://www.cimb.com.sg/en/personal/"
+                    href="https://www.maribank.sg/savings-account/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    CIMB FastSaver — No Criteria Base Rate
+                    Mari Savings Account — No Criteria Digital Bank
                     <svg
                       aria-hidden="true"
                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-2e2mzl-MuiSvgIcon-root"
@@ -2277,7 +2277,7 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
                   <span
                     class="MuiTypography-root MuiTypography-caption css-1i2a26z-MuiTypography-root"
                   >
-                    — Flat interest rate with no bonus criteria, no minimum spend, and no salary crediting requirement. Good option before salary crediting is set up.
+                    — Flat interest rate with no minimum balance, no criteria, and no salary crediting requirement. Good option for newcomers before setting up salary crediting with a traditional bank.
                   </span>
                 </li>
               </ul>
@@ -3742,7 +3742,7 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
             >
               <a
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                href="https://milelion.com/"
+                href="https://milelion.com/tag/savings/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -4563,7 +4563,7 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
             >
               <a
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                href="https://seedly.sg/"
+                href="https://seedly.sg/reviews/savings-accounts/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -5121,11 +5121,11 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
             >
               <a
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                href="https://www.cimb.com.sg/en/personal/"
+                href="https://www.maribank.sg/savings-account/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                CIMB FastSaver — No Criteria Base Rate
+                Mari Savings Account — No Criteria Digital Bank
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-2e2mzl-MuiSvgIcon-root"
@@ -5141,7 +5141,7 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
               <span
                 class="MuiTypography-root MuiTypography-caption css-1i2a26z-MuiTypography-root"
               >
-                — Flat interest rate with no bonus criteria, no minimum spend, and no salary crediting requirement. Good option before salary crediting is set up.
+                — Flat interest rate with no minimum balance, no criteria, and no salary crediting requirement. Good option for newcomers before setting up salary crediting with a traditional bank.
               </span>
             </li>
           </ul>
