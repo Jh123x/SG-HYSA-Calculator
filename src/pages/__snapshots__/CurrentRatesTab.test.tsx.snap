@@ -1624,7 +1624,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Chocolate Finance
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -1696,7 +1696,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 GXS Savings
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -1767,7 +1767,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Mari Savings
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -1831,7 +1831,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 BOC SuperSaver
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -1892,7 +1892,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Trust Bank (Zen)
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -1950,7 +1950,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Maybank iSAVvy
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2009,7 +2009,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Maybank iSAVvy Plus
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2072,7 +2072,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Maybank SaveUp
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2131,7 +2131,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 BOC SmartSaver
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2200,7 +2200,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 UOB One
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2269,7 +2269,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 OCBC 360
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2338,7 +2338,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Standard Chartered Bonus$aver
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2408,7 +2408,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Trust Bank (Signature)
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2477,7 +2477,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Trust Bank (Flex)
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2551,7 +2551,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 DBS Multiplier
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2621,7 +2621,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Citi Wealth First
               </p>
               <div
-                class="MuiBox-root css-19jz6nr"
+                class="MuiBox-root css-un2syp"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4303,7 +4303,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Chocolate Finance
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4413,7 +4413,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               GXS Savings
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4523,7 +4523,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Mari Savings
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4633,7 +4633,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               BOC SuperSaver
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4743,7 +4743,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Trust Bank (Zen)
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4853,7 +4853,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Maybank iSAVvy
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4963,7 +4963,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Maybank iSAVvy Plus
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5073,7 +5073,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Maybank SaveUp
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5183,7 +5183,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               BOC SmartSaver
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5304,7 +5304,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               UOB One
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5425,7 +5425,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               OCBC 360
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5546,7 +5546,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Standard Chartered Bonus$aver
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5667,7 +5667,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Trust Bank (Signature)
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5788,7 +5788,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Trust Bank (Flex)
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5909,7 +5909,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               DBS Multiplier
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -6030,7 +6030,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Citi Wealth First
             </h6>
             <div
-              class="MuiBox-root css-19jz6nr"
+              class="MuiBox-root css-un2syp"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"

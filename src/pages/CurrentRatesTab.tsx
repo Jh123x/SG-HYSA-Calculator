@@ -419,7 +419,7 @@ function ChipRow({ factors }: { factors: string[] }) {
   return (
     <Box
       ref={chipRowRef}
-      sx={{ display: "flex", flexWrap: "nowrap", gap: 0.5, mb: 1 }}
+      sx={{ display: "flex", flexWrap: "nowrap", gap: 0.5, mb: 1, width: "100%" }}
     >
       {visible.map((f) => (
         <Chip
