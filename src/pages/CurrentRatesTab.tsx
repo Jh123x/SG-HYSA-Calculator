@@ -160,6 +160,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
                 backgroundColor: bgColor,
                 border: `1px solid ${textColor}10`,
                 borderRadius: 2,
+                overflow: "hidden",
                 transition: "transform 0.15s ease, box-shadow 0.15s ease",
                 "&:hover": { transform: "scale(1.01)", boxShadow: `0 4px 20px ${primaryColor}20` },
               }}>
@@ -289,7 +290,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
             sx={{
               backgroundColor: bgColor,
               border: "1px solid rgba(255,255,255,0.08)",
-
+              overflow: "hidden",
             }}
           >
             <CardActionArea
@@ -367,8 +368,8 @@ function ChipRow({ factors }: { factors: string[] }) {
     if (children.length === 0) return;
 
     const containerWidth = container.getBoundingClientRect().width;
-    const gap = 8; // 0.5rem gap = 8px at default 16px base
-    const overflowBadgeWidth = 40;
+    const gap = 4; // MUI spacing: gap:0.5 = 0.5 × 8px = 4px
+    const overflowBadgeWidth = 44; // "+N" chip width + gap
 
     // First pass: measure total width of all chips
     let totalChipsWidth = 0;
@@ -415,7 +416,7 @@ function ChipRow({ factors }: { factors: string[] }) {
   return (
     <Box
       ref={chipRowRef}
-      sx={{ display: "flex", flexWrap: "nowrap", overflow: "hidden", gap: 0.5, mb: 1 }}
+      sx={{ display: "flex", flexWrap: "nowrap", gap: 0.5, mb: 1 }}
     >
       {visible.map((f) => (
         <Chip

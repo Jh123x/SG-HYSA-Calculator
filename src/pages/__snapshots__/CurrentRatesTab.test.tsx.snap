@@ -1610,7 +1610,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
           class="MuiBox-root css-ud4sgh"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -1624,7 +1624,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Chocolate Finance
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -1682,7 +1682,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -1696,7 +1696,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 GXS Savings
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -1753,7 +1753,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -1767,7 +1767,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Mari Savings
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -1817,7 +1817,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -1831,7 +1831,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 BOC SuperSaver
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -1878,7 +1878,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -1892,7 +1892,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Trust Bank (Zen)
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -1936,7 +1936,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -1950,7 +1950,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Maybank iSAVvy
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -1995,7 +1995,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -2009,7 +2009,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Maybank iSAVvy Plus
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2058,7 +2058,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -2072,7 +2072,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Maybank SaveUp
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2117,7 +2117,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -2131,7 +2131,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 BOC SmartSaver
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2186,7 +2186,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -2200,7 +2200,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 UOB One
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2255,7 +2255,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -2269,7 +2269,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 OCBC 360
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2324,7 +2324,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -2338,7 +2338,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Standard Chartered Bonus$aver
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2394,7 +2394,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -2408,7 +2408,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Trust Bank (Signature)
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2463,7 +2463,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -2477,7 +2477,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Trust Bank (Flex)
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2537,7 +2537,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -2551,7 +2551,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 DBS Multiplier
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -2607,7 +2607,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </button>
           </div>
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-dy1iws-MuiPaper-root-MuiCard-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-kzlc2i-MuiPaper-root-MuiCard-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
@@ -2621,7 +2621,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 Citi Wealth First
               </p>
               <div
-                class="MuiBox-root css-1f5vj75"
+                class="MuiBox-root css-19jz6nr"
               >
                 <div
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4286,7 +4286,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       class="MuiBox-root css-bn3v3d"
     >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -4303,7 +4303,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Chocolate Finance
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4396,7 +4396,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -4413,7 +4413,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               GXS Savings
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4506,7 +4506,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -4523,7 +4523,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Mari Savings
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4616,7 +4616,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -4633,7 +4633,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               BOC SuperSaver
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4726,7 +4726,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -4743,7 +4743,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Trust Bank (Zen)
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4836,7 +4836,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -4853,7 +4853,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Maybank iSAVvy
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -4946,7 +4946,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -4963,7 +4963,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Maybank iSAVvy Plus
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5056,7 +5056,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -5073,7 +5073,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Maybank SaveUp
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5166,7 +5166,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -5183,7 +5183,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               BOC SmartSaver
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5287,7 +5287,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -5304,7 +5304,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               UOB One
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5408,7 +5408,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -5425,7 +5425,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               OCBC 360
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5529,7 +5529,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -5546,7 +5546,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Standard Chartered Bonus$aver
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5650,7 +5650,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -5667,7 +5667,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Trust Bank (Signature)
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5771,7 +5771,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -5788,7 +5788,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Trust Bank (Flex)
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -5892,7 +5892,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -5909,7 +5909,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               DBS Multiplier
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
@@ -6013,7 +6013,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         </button>
       </div>
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1c3t9dm-MuiPaper-root-MuiCard-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-ol5b67-MuiPaper-root-MuiCard-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <button
@@ -6030,7 +6030,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               Citi Wealth First
             </h6>
             <div
-              class="MuiBox-root css-1f5vj75"
+              class="MuiBox-root css-19jz6nr"
             >
               <div
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1sthkpy-MuiChip-root"
