@@ -103,7 +103,7 @@ exports[`App > should render correctly 1`] = `
                     class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-xkbyl4-MuiFormHelperText-root"
                     id="_r_3_-helper-text"
                   >
-                    To be deposited at bank
+                    Total savings balance to deposit
                   </p>
                 </div>
                 <div
@@ -145,7 +145,7 @@ exports[`App > should render correctly 1`] = `
                     class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-xkbyl4-MuiFormHelperText-root"
                     id="_r_4_-helper-text"
                   >
-                    Credited to bank monthly
+                    Salary credited to the bank monthly
                   </p>
                 </div>
                 <div

@@ -18,8 +18,8 @@ const ASTERISKS_SX = {
 };
 
 const BUILT_IN_NOTES = [
-  "Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges",
-  "Interest rates on their respective websites are subject to change without notice.",
+  "This graph shows interest rates for savings from S$0 to S$200,000, covering the typical savings account balance range.",
+  "Interest rates on the respective bank websites are subject to change without notice.",
   "Please do your own research before making any decisions.",
   "Ask for referrals to get additional bonuses.",
 ];

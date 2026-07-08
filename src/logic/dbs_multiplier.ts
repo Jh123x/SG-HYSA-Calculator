@@ -76,6 +76,6 @@ export const dbsMultiplierHistory: RateSnapshot[] = [
     interestFn: dbs_multiplier_interest,
     sourceUrl: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
     changeSummary:
-      "Multiplier rates based on eligible transaction categories.",
+      "No rate change — same multiplier tiers as Aug 2023",
   },
 ];

@@ -259,7 +259,7 @@ export const trustBankSignatureHistory: RateSnapshot[] = [
     effectiveDate: "2025-06-01",
     interestFn: trust_bank_06_2025,
     sourceUrl: "https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/",
-    changeSummary: "Base ↓0.5%. Spend ↓0.3%, NTUC ↓0.2%, $100K ↑0.75%, Salary ↓0.5%. Cap ↑$1.2M",
+    changeSummary: "Base: 0.5% (was 0.75%)\nSpend $150: +0.3% (was +0.4%)\nNTUC: +0.2% (was +0.35%)\n$100K bonus: +0.75% (was +0.5%)\nSalary: +0.5% (was +0.75%)\nCap: S$1.2M (was S$800K)",
   },
   {
     effectiveDate: "2025-08-01",
@@ -271,13 +271,13 @@ export const trustBankSignatureHistory: RateSnapshot[] = [
     effectiveDate: "2025-10-01",
     interestFn: trust_bank_signature_10_2025,
     sourceUrl: "https://sethisfy.com/nerfed-trust-bank-and-maribank-slash-interest-rates-from-1st-september-2025/",
-    changeSummary: "Base ↓0.1%. Spend ↓0.2%, NTUC ↓0.1%, $100K ↓0.4%, Salary unchanged",
+    changeSummary: "Base: 0.1% (was 0.5%)\nSpend $150: +0.2% (was +0.3%)\nNTUC: +0.1% (was +0.2%)\n$100K bonus: +0.4% (was +0.75%)\nSalary unchanged at +0.5%",
   },
   {
     effectiveDate: "2026-06-05",
     interestFn: trust_bank_signature_06_2026,
     sourceUrl: "https://growbeansprout.com/trust-bank-singapore-review",
-    changeSummary: "Base ↓0.05%. Spend (non-NTUC) ↓0.1%, $100K ↓0.3%, Salary ↓0.45%. Spend (NTUC) unchanged at +0.2%",
+    changeSummary: "Base: 0.05% (was 0.1%)\nSpend (non-NTUC): +0.1% (was +0.2%)\n$100K bonus: +0.3% (was +0.4%)\nSalary: +0.45% (was +0.5%)\nSpend (NTUC) unchanged at +0.2%",
   },
 ];
 
@@ -292,7 +292,7 @@ export const trustBankFlexHistory: RateSnapshot[] = [
     effectiveDate: "2026-03-01",
     interestFn: trust_bank_flex_03_2026,
     sourceUrl: "https://growbeansprout.com/trust-bank-singapore-review",
-    changeSummary: "Rate cut:\nbase ↓0.05%, salary ↓0.45%, ADB ↓0.30%,\ncard spend NTUC ↓0.20%/non-NTUC ↓0.10%,\nPayNow ↓0.15%, FX ↓0.15%.\nRefer (+1.20%) and invest (+0.70%) unchanged.\nMax trimmed to 2.40% p.a.",
+    changeSummary: "Rate cut:\nBase: 0.05% (was 0.10%)\nSalary: +0.45% (was +0.50%)\n$100K ADB: +0.30% (was +0.40%)\nCard spend (NTUC): +0.20% (was +0.30%)\nCard spend (non-NTUC): +0.10% (was +0.20%)\nPayNow: +0.15% (was +0.20%)\nFX: +0.15% (was +0.20%)\nRefer (+1.20%) and Invest (+0.70%) unchanged.\nMax 2.40% p.a.",
   },
   {
     effectiveDate: "2026-06-05",

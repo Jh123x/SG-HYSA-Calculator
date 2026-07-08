@@ -73,6 +73,6 @@ export const standChartHistory: RateSnapshot[] = [
     effectiveDate: "2026-06-05",
     interestFn: stand_chart_interest_06_2026,
     sourceUrl: "https://www.sc.com/sg/important-information/revision-of-bonusaver-myway-jumpstartaccount/",
-    changeSummary: "Salary ↓0.9%, Spend ↓0.9%.\nInsurance ($12K→$24K threshold) 2%, Investment ($20K→$30K threshold) 2%",
+    changeSummary: "Bonus rates lowered on first $100K:\nSalary: +0.9% (was +1.5%)\nSpend: +0.9% (was +1.5%)\nInsurance: +2% (threshold $12K → $24K)\nInvestment: +2% (threshold $20K → $30K)",
   },
 ];

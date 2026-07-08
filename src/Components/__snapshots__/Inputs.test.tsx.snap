@@ -44,7 +44,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-nn9my1-MuiFormHelperText-root"
         id="_r_1_-helper-text"
       >
-        To be deposited at bank
+        Total savings balance to deposit
       </p>
     </div>
     <div
@@ -86,7 +86,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-nn9my1-MuiFormHelperText-root"
         id="_r_2_-helper-text"
       >
-        Credited to bank monthly
+        Salary credited to the bank monthly
       </p>
     </div>
     <div
@@ -265,7 +265,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained MuiFormHelperText-filled css-nn9my1-MuiFormHelperText-root"
         id="_r_8_-helper-text"
       >
-        To be deposited at bank
+        Total savings balance to deposit
       </p>
     </div>
     <div
@@ -307,7 +307,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained MuiFormHelperText-filled css-nn9my1-MuiFormHelperText-root"
         id="_r_9_-helper-text"
       >
-        Credited to bank monthly
+        Salary credited to the bank monthly
       </p>
     </div>
     <div
