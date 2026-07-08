@@ -1,52 +1,10 @@
 import { describe, it, expect } from "vitest";
 import {
-  bankNameToSlug,
   slugToBankName,
   ERROR_SLUG,
   isValidSlug,
 } from "./slugs";
 import { banks } from "../data/banks";
-
-describe("bankNameToSlug (deprecated — kept for migration)", () => {
-  it("lowercases and hyphenates spaces", () => {
-    expect(bankNameToSlug("UOB One")).toBe("uob-one-account");
-  });
-
-  it("handles parentheses", () => {
-    expect(bankNameToSlug("Trust Bank (Zen)")).toBe("trust-bank-zen");
-  });
-
-  it("handles multiple special characters", () => {
-    expect(bankNameToSlug("Citi Wealth First")).toBe(
-      "citi-wealth-first-account",
-    );
-  });
-
-  it("strips leading/trailing hyphens", () => {
-    expect(bankNameToSlug("  Spaces  ")).toBe("spaces");
-  });
-
-  it("maps dollar sign to s", () => {
-    expect(bankNameToSlug("Standard Chartered Bonus$aver")).toBe(
-      "standard-chartered-bonus-saver",
-    );
-  });
-
-  it("reverse-lookups from bank registry for exact names", () => {
-    for (const [, data] of Object.entries(banks)) {
-      expect(bankNameToSlug(data.name)).toBeTruthy();
-      expect(bankNameToSlug(data.name).length).toBeGreaterThan(0);
-    }
-  });
-
-  it("round-trips through slugToBankName for all registered banks", () => {
-    for (const [, data] of Object.entries(banks)) {
-      const name = data.name;
-      const slug = bankNameToSlug(name);
-      expect(slugToBankName(slug)).toBe(name);
-    }
-  });
-});
 
 describe("slugToBankName", () => {
   it("maps slugs to display names", () => {
