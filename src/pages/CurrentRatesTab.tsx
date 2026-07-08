@@ -23,6 +23,7 @@ import {
   MenuItem,
   ToggleButton,
   ToggleButtonGroup,
+  Chip,
 } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -30,7 +31,7 @@ import SortIcon from "@mui/icons-material/Sort";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import type { ResultProp } from "../types/props";
-import { primaryColor, bgColor, textColor, TOGGLE_SX } from "../consts/theme";
+import { primaryColor, mutedColor, bgColor, textColor, TOGGLE_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
@@ -176,7 +177,30 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
                       transition: "background-color 0.3s ease",
                     }}
                   >
-                    <TableCell sx={{ ...cellSx, fontWeight: 600 }}>{bankInfo[slug]?.name ?? slug}</TableCell>
+                    <TableCell sx={{ ...cellSx }}>
+                      <Typography component="span" sx={{ fontWeight: 600, fontSize: "inherit" }}>
+                        {bankInfo[slug]?.name ?? slug}
+                      </Typography>
+                      {bankInfo[slug]?.factors && bankInfo[slug].factors.length > 0 && (
+                        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, mt: 0.5 }}>
+                          {bankInfo[slug].factors.map((f) => (
+                            <Chip
+                              key={f}
+                              label={f}
+                              size="small"
+                              variant="outlined"
+                              sx={{
+                                color: mutedColor,
+                                borderColor: `${textColor}20`,
+                                fontSize: "0.6rem",
+                                height: 18,
+                                "& .MuiChip-label": { px: 0.75 },
+                              }}
+                            />
+                          ))}
+                        </Box>
+                      )}
+                    </TableCell>
                     <TableCell sx={cellSx}>${(interest.interest.toYearly() ?? 0).toFixed(2)}</TableCell>
                     <TableCell sx={cellSx}>{(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%</TableCell>
                     <TableCell sx={{ ...cellSx, opacity: 0.75 }}>{bankInfo[slug]?.remarks ?? "—"}</TableCell>
@@ -295,9 +319,43 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
               sx={{ display: "flex", justifyContent: "space-between", alignItems: "stretch" }}
             >
               <CardContent sx={{ p: 1.5, "&:last-child": { pb: 1.5 }, flex: 1, minWidth: 0 }}>
-                <Typography variant="subtitle1" sx={{ color: textColor, fontWeight: 600, mb: 0.5, fontSize: "0.9rem" }}>
+                <Typography variant="subtitle1" sx={{ color: textColor, fontWeight: 600, mb: 0.25, fontSize: "0.9rem" }}>
                   {bankInfo[slug]?.name ?? slug}
                 </Typography>
+                {bankInfo[slug]?.factors && bankInfo[slug].factors.length > 0 && (
+                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, mb: 0.75 }}>
+                    {bankInfo[slug].factors.slice(0, 3).map((f) => (
+                      <Chip
+                        key={f}
+                        label={f}
+                        size="small"
+                        variant="outlined"
+                        sx={{
+                          color: mutedColor,
+                          borderColor: `${textColor}20`,
+                          fontSize: "0.6rem",
+                          height: 18,
+                          "& .MuiChip-label": { px: 0.75 },
+                        }}
+                      />
+                    ))}
+                    {bankInfo[slug].factors.length > 3 && (
+                      <Chip
+                        label={`+${bankInfo[slug].factors.length - 3}`}
+                        size="small"
+                        variant="outlined"
+                        sx={{
+                          color: primaryColor,
+                          borderColor: `${primaryColor}60`,
+                          fontSize: "0.6rem",
+                          height: 18,
+                          fontWeight: 600,
+                          "& .MuiChip-label": { px: 0.75 },
+                        }}
+                      />
+                    )}
+                  </Box>
+                )}
                 <Box sx={{ display: "flex", gap: 2 }}>
                   <Box>
                     <Typography variant="caption" sx={{ color: textColor, opacity: 0.6, fontSize: "0.7rem" }}>
