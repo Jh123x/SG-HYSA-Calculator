@@ -6,7 +6,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
     class="MuiBox-root css-dem63z"
   >
     <div
-      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1c2t26r-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
@@ -48,7 +48,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
       </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1c2t26r-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
@@ -90,7 +90,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
       </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1c2t26r-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
@@ -227,7 +227,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
     class="MuiBox-root css-dem63z"
   >
     <div
-      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1c2t26r-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
@@ -269,7 +269,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
       </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1c2t26r-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
@@ -311,7 +311,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
       </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1c2t26r-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
