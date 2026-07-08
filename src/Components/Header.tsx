@@ -3,6 +3,7 @@ import { Box, Button, Typography } from "@mui/material";
 import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
 import { primaryColor, mutedColor, borderColor, textColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
+import { prefetchRoute } from "../data/prefetch";
 
 /**
  * Minimalist Geckoboard-style Header:
@@ -71,6 +72,7 @@ export const Header = () => {
       <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
         <Button
           onClick={() => navigate("/faq")}
+          onMouseEnter={() => prefetchRoute("/faq")}
           size={isCompact ? "small" : "small"}
           sx={{
             color: mutedColor,

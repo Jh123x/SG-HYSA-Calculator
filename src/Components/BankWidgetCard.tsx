@@ -9,6 +9,7 @@ import {
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import LanguageIcon from "@mui/icons-material/Language";
 import { primaryColor, accentGreen, textColor, mutedColor } from "../consts/theme";
+import { prefetchRoute } from "../data/prefetch";
 
 export interface BankWidgetCardProps {
   slug: string;
@@ -35,6 +36,7 @@ export const BankWidgetCard = ({
   onClick,
 }: BankWidgetCardProps) => {
   const navigate = useNavigate();
+  const bankPath = `/bank/${slug}`;
 
   const truncatedRemarks =
     typeof remarks === "string" && remarks.length > 50
@@ -61,6 +63,7 @@ export const BankWidgetCard = ({
         },
       }}
       onClick={onClick}
+      onMouseEnter={() => prefetchRoute(bankPath)}
       role="button"
       tabIndex={0}
       aria-label={`${name} — ${eir.toFixed(2)}% EIR`}
@@ -159,9 +162,10 @@ export const BankWidgetCard = ({
         <Tooltip title="View details" placement="top">
           <IconButton
             size="small"
+            onMouseEnter={() => prefetchRoute(bankPath)}
             onClick={(e) => {
               e.stopPropagation();
-              navigate(`/bank/${slug}`);
+              navigate(bankPath);
             }}
             sx={{
               color: mutedColor,

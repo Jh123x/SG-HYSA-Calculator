@@ -34,6 +34,7 @@ import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { useMobile } from "../hooks/useMobile";
 import { MAX_COMPARISON_BANKS } from "../consts/keys";
 import { useHistoryState, type BankHistoryGroup } from "../hooks/useHistoryState";
+import { prefetchRoute } from "../data/prefetch";
 
 interface Props {
   profile: Profile;
@@ -146,7 +147,9 @@ const HistoryTabDesktop = ({
                       <TableCell sx={{ textAlign: "center", p: 0.5 }}>
                         <Box sx={{ display: "flex", justifyContent: "center", gap: 0.5 }}>
                           <Tooltip title="View details" placement="left">
-                            <IconButton size="small" onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor }}>
+                            <IconButton size="small"
+                              onMouseEnter={() => prefetchRoute(`/bank/${bank.slug}`)}
+                              onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor }}>
                               <OpenInNew fontSize="small" />
                             </IconButton>
                           </Tooltip>
@@ -403,7 +406,9 @@ const MobileRowGroupedList = ({
                     </TableCell>
                     <TableCell sx={{ color: textColor, textAlign: "center", p: 0.25, whiteSpace: "nowrap" }}>
                       <Box sx={{ display: "flex", justifyContent: "center", gap: 0 }}>
-                        <Tooltip title="Details"><IconButton size="small" onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor, p: 0.25 }}><OpenInNew sx={{ fontSize: 14 }} /></IconButton></Tooltip>
+                        <Tooltip title="Details"><IconButton size="small"
+                          onMouseEnter={() => prefetchRoute(`/bank/${bank.slug}`)}
+                          onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor, p: 0.25 }}><OpenInNew sx={{ fontSize: 14 }} /></IconButton></Tooltip>
                         {row.sourceUrl && (
                           <Tooltip title="Source"><IconButton size="small" href={row.sourceUrl} target="_blank" rel="noopener noreferrer" sx={{ color: primaryColor, p: 0.25 }}><Language sx={{ fontSize: 14 }} /></IconButton></Tooltip>
                         )}
