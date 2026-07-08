@@ -390,13 +390,15 @@ function ChipRow({ factors }: { factors: string[] }) {
     }
 
     // Otherwise, find how many full chips fit, reserving space for +N badge
+    // Rendered layout: chip0, gap, chip1, gap, ..., chipN, gap, +N badge
     let usedWidth = 0;
     let count = 0;
     for (let i = 0; i < children.length; i++) {
-      const needed = usedWidth === 0 ? chipWidths[i] : chipWidths[i] + gap;
-      // Check if this chip plus the overflow badge fits
-      if (usedWidth + needed + overflowBadgeWidth > containerWidth) break;
-      usedWidth += needed;
+      const chipWidth = chipWidths[i];
+      const widthIfAdded = (count === 0 ? 0 : gap) + chipWidth;
+      // After adding this chip, check: chips + gap + badge fits?
+      if (usedWidth + widthIfAdded + gap + overflowBadgeWidth > containerWidth) break;
+      usedWidth += widthIfAdded;
       count++;
     }
 
