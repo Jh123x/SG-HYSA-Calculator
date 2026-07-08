@@ -9,7 +9,7 @@ const table_nxt_25k = [0, 1, 1.5, 3.75];
 export const maybank_save_up_10_2025 = (profile: Profile): ResultInterest => {
   var count = 0;
 
-  // Giro / Salary
+  // GIRO / Salary
   if (
     (profile.GiroTransactions >= 1 && profile.Spending >= 300) ||
     profile.Salary >= 2000
@@ -136,7 +136,7 @@ export const maybankSaveUpHistory: RateSnapshot[] = [
     effectiveDate: "2025-10-01",
     interestFn: maybank_save_up_10_2025,
     sourceUrl: "https://sethisfy.com/maybank-save-up-program-launches-october-2025/",
-    changeSummary: "Category bonus: up to 3 categories (Giro/Salary, Spend $500, Invest $25K, Insurance $5K, Loan $10K). Max bonus: 2.75% (1st $50K) + 3.75% (next $25K)",
+    changeSummary: "Category bonus: up to 3 categories (GIRO/Salary, Spend $500, Invest $25K, Insurance $5K, Loan $10K). Max bonus: 2.75% (1st $50K) + 3.75% (next $25K)",
   },
   {
     effectiveDate: "2026-06-11",

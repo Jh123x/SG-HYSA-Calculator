@@ -155,7 +155,7 @@ export const bocSmartSaverHistory: RateSnapshot[] = [
     effectiveDate: "2025-08-01",
     interestFn: bank_of_china_smart_saver_08_2025,
     sourceUrl: "https://sethisfy.com/boc-smartsaver-dropping-interest-by-0-70-p-a-1st-august-2025/",
-    changeSummary: "Salary $2K +1.5%, Insurance $150K +2.75%, Spend $750 +0.75%, Spend $2.5K +0.5%, Giro 3×$90 +0.1%",
+    changeSummary: "Salary $2K +1.5%, Insurance $150K +2.75%, Spend $750 +0.75%, Spend $2.5K +0.5%, GIRO 3×$90 +0.1%",
   },
   {
     effectiveDate: "2025-11-01",

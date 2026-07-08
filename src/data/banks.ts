@@ -125,7 +125,7 @@ export const banks: Record<string, BankData> = {
     name: "BOC SuperSaver",
     url: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
     remarks:
-      "This account is valid from 2024-08-01 onwards.\n**Note: You have to link your paynow to this account to qualify for the sale.**",
+      "This account is valid from 2024-08-01 onwards.\n**Note: You have to link your PayNow to this account to qualify for the sale.**",
     history: bocSuperSaverHistory,
   },
   "maybank-saveup": {

@@ -48,7 +48,7 @@ describe("UOB Interest Rates", () => {
       expectedResult: 4950,
     },
     {
-      caseName: "100k + giro + spend",
+      caseName: "100k + GIRO + spend",
       savings: 100_000,
       salaryCredit: 0,
       giroTxns: 3,
@@ -56,7 +56,7 @@ describe("UOB Interest Rates", () => {
       expectedResult: 1750,
     },
     {
-      caseName: "150k + giro + spend",
+      caseName: "150k + GIRO + spend",
       savings: 150_000,
       salaryCredit: 0,
       giroTxns: 3,
