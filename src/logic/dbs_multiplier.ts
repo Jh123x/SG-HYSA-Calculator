@@ -69,13 +69,13 @@ export const dbsMultiplierHistory: RateSnapshot[] = [
     interestFn: dbs_multiplier_interest,
     sourceUrl: "https://growbeansprout.com/dbs-multiplier-account-review",
     changeSummary:
-      "Simplified structure: lowered eligible transaction threshold from S$2,000 to S$500, streamlined tiers (3×3 table), introduced age-based rules (under-29 bonus without salary). Max 4.10% p.a. on first S$100,000.\n",
+      "Simplified structure: lowered eligible transaction threshold from S$2,000 to S$500.\nStreamlined tiers (3×3 table), introduced age-based rules (under-29 bonus without salary).\nMax 4.10% p.a. on first S$100,000.",
   },
   {
     effectiveDate: "2025-10-14",
     interestFn: dbs_multiplier_interest,
     sourceUrl: "https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier",
     changeSummary:
-      "Multiplier rates based on eligible transaction categories.\n",
+      "Multiplier rates based on eligible transaction categories.",
   },
 ];

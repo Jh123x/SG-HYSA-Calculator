@@ -560,9 +560,10 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                       2026-06-05
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-155o6z-MuiTableCell-root"
                     >
-                      Boost Pocket: $85K at 1.22% (reduced from 1.38%). Saving Pockets unchanged
+                      Boost Pocket: $85K at 1.22% (reduced from 1.38%).
+Saving Pockets unchanged
                     </td>
                     <td
                       class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
@@ -587,9 +588,10 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                       2025-08-01
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-155o6z-MuiTableCell-root"
                     >
-                      Boost Pocket: $85K at 1.38% (reduced from 2.58%). Saving Pockets: $10K at 1.08%
+                      Boost Pocket: $85K at 1.38% (reduced from 2.58%).
+Saving Pockets: $10K at 1.08%
                     </td>
                     <td
                       class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
@@ -636,9 +638,10 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                       2025-07-01
                     </td>
                     <td
-                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
+                      class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-155o6z-MuiTableCell-root"
                     >
-                      Boost Pocket: $60K at 2.58%, Saving Pockets: $35K at 1.68%
+                      Boost Pocket: $60K at 2.58%,
+Saving Pockets: $35K at 1.68%
                     </td>
                     <td
                       class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
@@ -1249,9 +1252,10 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                     2026-06-05
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-155o6z-MuiTableCell-root"
                   >
-                    Boost Pocket: $85K at 1.22% (reduced from 1.38%). Saving Pockets unchanged
+                    Boost Pocket: $85K at 1.22% (reduced from 1.38%).
+Saving Pockets unchanged
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
@@ -1276,9 +1280,10 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                     2025-08-01
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-155o6z-MuiTableCell-root"
                   >
-                    Boost Pocket: $85K at 1.38% (reduced from 2.58%). Saving Pockets: $10K at 1.08%
+                    Boost Pocket: $85K at 1.38% (reduced from 2.58%).
+Saving Pockets: $10K at 1.08%
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"
@@ -1325,9 +1330,10 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                     2025-07-01
                   </td>
                   <td
-                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-qdpieg-MuiTableCell-root"
+                    class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-155o6z-MuiTableCell-root"
                   >
-                    Boost Pocket: $60K at 2.58%, Saving Pockets: $35K at 1.68%
+                    Boost Pocket: $60K at 2.58%,
+Saving Pockets: $35K at 1.68%
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-9bxgvb-MuiTableCell-root"

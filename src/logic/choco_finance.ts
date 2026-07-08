@@ -65,6 +65,6 @@ export const chocoFinanceHistory: RateSnapshot[] = [
     effectiveDate: "2026-06-05",
     interestFn: choco_finance_06_2026,
     sourceUrl: "https://www.chocolatefinance.com/how-it-works",
-    changeSummary: "First $20K unchanged 2%, next tier expanded to $80K at 1.8% (was $30K)",
+    changeSummary: "First $20K unchanged 2%,\nnext tier expanded to $80K at 1.8% (was $30K)",
   },
 ];

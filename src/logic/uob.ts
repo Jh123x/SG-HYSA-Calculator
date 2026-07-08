@@ -257,14 +257,14 @@ export const uobHistory: RateSnapshot[] = [
     interestFn: uob_interest_2024_05,
     sourceUrl: "https://milelion.com/2024/04/01/uob-one-account-cutting-interest-rates-to-4-p-a-from-may-2024/",
     changeSummary:
-      "EIR cut from 5% to 4% p.a. Cap raised from $100K to $150K. New 6-tier structure: 1st $30K 3.85%→3%, next $30K 3.9%→3%, next $15K 4.85%→3%, next $25K 7.8%→4.5%, next $25K 0.05%→4.5%, new top tier $25K at 6%. Giros tier also restructured to 6 tiers",
+      "EIR cut from 5% to 4% p.a. Cap raised from $100K to $150K.\nNew 6-tier structure:\n1st $30K 3.85%→3%, next $30K 3.9%→3%,\nnext $15K 4.85%→3%, next $25K 7.8%→4.5%,\nnext $25K 0.05%→4.5%, new top tier $25K at 6%.\nGiros tier also restructured to 6 tiers",
   },
   {
     effectiveDate: "2025-05-01",
     interestFn: uob_interest_2025_05,
     sourceUrl: "https://milelion.com/2025/04/01/uob-one-account-nerfing-interest-rates-to-3-3-p-a-from-may-2025/",
     changeSummary:
-      "EIR cut from 4% to 3.3% p.a. Top tier (Spend $500 + Salary): 1st $75K 3%→2.3%, next $50K 4.5%→3.8%, next $25K 6%→5.3%. Giros tier: 1st $75K 2%→1.5%, next $50K 3%→2.5%",
+      "EIR cut from 4% to 3.3% p.a.\nTop tier (Spend $500 + Salary):\n1st $75K 3%→2.3%, next $50K 4.5%→3.8%, next $25K 6%→5.3%.\nGiros tier: 1st $75K 2%→1.5%, next $50K 3%→2.5%",
   },
   {
     effectiveDate: "2025-09-01",

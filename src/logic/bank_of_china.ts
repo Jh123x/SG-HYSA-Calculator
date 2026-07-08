@@ -56,19 +56,19 @@ export const bocSuperSaverHistory: RateSnapshot[] = [
     effectiveDate: "2025-07-01",
     interestFn: bank_of_china_super_saver_07_2025,
     sourceUrl: "https://www.bankofchina.com/sg/bocinfo/bi1/202506/t20250620_25390361.html",
-    changeSummary: "1st $20K 1.5%, next $40K 2.2%, next $40K 3.6%, remaining 1.2%",
+    changeSummary: "1st $20K 1.5%, next $40K 2.2%,\nnext $40K 3.6%, remaining 1.2%",
   },
   {
     effectiveDate: "2025-08-01",
     interestFn: bank_of_china_super_saver_08_2025,
     sourceUrl: "https://www.bankofchina.com/sg/bocinfo/bi1/202506/t20250620_25390361.html",
-    changeSummary: "All tiers reduced: 1.5%→1%, 2.2%→1.2%, 3.6%→1.6%, base 1.2%→0.8%",
+    changeSummary: "All tiers reduced:\n1.5%→1%, 2.2%→1.2%, 3.6%→1.6%, base 1.2%→0.8%",
   },
   {
     effectiveDate: "2025-11-01",
     interestFn: bank_of_china_super_saver_11_2025,
     sourceUrl: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
-    changeSummary: "Further reduced: 1%→0.5%, 1.2%→0.8%, 1.6%→1%, base 0.8%→0.5%",
+    changeSummary: "Further reduced:\n1%→0.5%, 1.2%→0.8%, 1.6%→1%, base 0.8%→0.5%",
   },
 ];
 
@@ -144,7 +144,7 @@ export const bocSmartSaverHistory: RateSnapshot[] = [
     sourceUrl:
       "https://sethisfy.com/boc-smartsaver-dropping-interest-by-0-70-p-a-1st-august-2025/",
     changeSummary:
-      "Salary cut 1.50%→0.80%, Wealth bonus up 2.75%→3.00%. Max 2.35% on S$100K (without insurance).",
+      "Salary cut 1.50%→0.80%, Wealth bonus up 2.75%→3.00%.\nMax 2.35% on S$100K (without insurance).",
   },
   {
     effectiveDate: "2025-11-01",
@@ -152,6 +152,6 @@ export const bocSmartSaverHistory: RateSnapshot[] = [
     sourceUrl:
       "https://sethisfy.com/boc-smartsaver-getting-up-to-4-60-p-a-with-this-savings-account/",
     changeSummary:
-      "Prevailing 0.20%→0.10%, Card 0.75/1.25→0.60/0.90%, Salary 0.80%→0.50% (S$2K→S$3K). Max 1.60% on S$100K.",
+      "Prevailing 0.20%→0.10%, Card 0.75/1.25→0.60/0.90%, Salary 0.80%→0.50% (S$2K→S$3K).\nMax 1.60% on S$100K.",
   },
 ];

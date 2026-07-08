@@ -286,18 +286,18 @@ export const trustBankFlexHistory: RateSnapshot[] = [
     effectiveDate: "2025-10-08",
     interestFn: trust_bank_flex_10_2025,
     sourceUrl: "https://fintechnews.sg/119890/digital-banking-news-singapore/trust-bank-flex-savings/",
-    changeSummary: "Flex Plan launched. 8 bonus scoops: refer (+1.20%), invest S$20K (+0.70%), salary (+0.50%), $100K ADB (+0.40%), card spend (+0.30% NTUC/+0.20%), ADB inc $3K (+0.20%), PayNow $1.5K (+0.20%), FX S$500 (+0.20%). Base 0.10%. Up to 2.50% p.a. on S$1.2M. Trust+ required.",
+    changeSummary: "Flex Plan launched. 8 bonus scoops:\nrefer (+1.20%), invest S$20K (+0.70%), salary (+0.50%),\n$100K ADB (+0.40%), card spend (+0.30% NTUC/+0.20%),\nADB inc $3K (+0.20%), PayNow $1.5K (+0.20%), FX S$500 (+0.20%).\nBase 0.10%. Up to 2.50% p.a. on S$1.2M. Trust+ required.",
   },
   {
     effectiveDate: "2026-03-01",
     interestFn: trust_bank_flex_03_2026,
     sourceUrl: "https://growbeansprout.com/trust-bank-singapore-review",
-    changeSummary: "Rate cut: base ↓0.05%, salary ↓0.45%, ADB ↓0.30%, card spend NTUC ↓0.20%/non-NTUC ↓0.10%, PayNow ↓0.15%, FX ↓0.15%. Refer (+1.20%) and invest (+0.70%) unchanged. Max trimmed to 2.40% p.a.",
+    changeSummary: "Rate cut:\nbase ↓0.05%, salary ↓0.45%, ADB ↓0.30%,\ncard spend NTUC ↓0.20%/non-NTUC ↓0.10%,\nPayNow ↓0.15%, FX ↓0.15%.\nRefer (+1.20%) and invest (+0.70%) unchanged.\nMax trimmed to 2.40% p.a.",
   },
   {
     effectiveDate: "2026-06-05",
     interestFn: trust_bank_flex_07_2026,
     sourceUrl: "https://trustbank.sg/trust-plus/",
-    changeSummary: "8 bonus scoops: refer (+1.20%), invest S$20K (+0.70%), salary (+0.45%), $100K ADB (+0.30%), card spend (+0.20% NTUC/+0.10%), ADB inc $3K (+0.20%), PayNow $1.5K (+0.15%), FX S$500 (+0.15%). Max 2.40% p.a. on S$1.2M.",
+    changeSummary: "8 bonus scoops:\nrefer (+1.20%), invest S$20K (+0.70%), salary (+0.45%),\n$100K ADB (+0.30%), card spend (+0.20% NTUC/+0.10%),\nADB inc $3K (+0.20%), PayNow $1.5K (+0.15%), FX S$500 (+0.15%).\nMax 2.40% p.a. on S$1.2M.",
   },
 ];
