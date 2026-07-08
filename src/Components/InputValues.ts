@@ -76,14 +76,14 @@ export const numericalInputs: Array<InputArg<number>> = [
   },
   {
     label: "PayNow Received",
-    tooltip: "Incoming PayNow transfers monthly (≥$1,500 qualifies for Trust Flex bonus)",
+    tooltip: "Incoming PayNow transfers monthly",
     fn: (profile, v) => ({ ...profile, PayNowReceived: v }),
     getStateFromProfile: (profile: Profile) =>
       makeDefaultNumber(profile.PayNowReceived),
   },
   {
     label: "FX Spend",
-    tooltip: "Foreign currency spend monthly (≥$500 qualifies for Trust Flex bonus)",
+    tooltip: "Foreign currency spend monthly",
     fn: (profile, v) => ({ ...profile, FXSpend: v }),
     getStateFromProfile: (profile: Profile) =>
       makeDefaultNumber(profile.FXSpend),

@@ -483,7 +483,7 @@ const FULL: FaqEntry[] = [
     furtherReading: [
       {
         label: "Mari Savings Account — No Criteria Digital Bank",
-        url: "https://www.maribank.sg/savings-account/",
+        url: "https://www.maribank.sg/save/",
         confirms:
           "Flat interest rate with no minimum balance, no criteria, and no salary crediting requirement. Good option for newcomers before setting up salary crediting with a traditional bank.",
       },

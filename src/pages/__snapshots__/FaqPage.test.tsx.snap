@@ -2257,7 +2257,7 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
                 >
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                    href="https://www.maribank.sg/savings-account/"
+                    href="https://www.maribank.sg/save/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -5121,7 +5121,7 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
             >
               <a
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                href="https://www.maribank.sg/savings-account/"
+                href="https://www.maribank.sg/save/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
