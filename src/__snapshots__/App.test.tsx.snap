@@ -65,7 +65,7 @@ exports[`App > should render correctly 1`] = `
                 class="MuiBox-root css-dem63z"
               >
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-olcc2h-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-nwzazw-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
@@ -107,7 +107,7 @@ exports[`App > should render correctly 1`] = `
                   </p>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-olcc2h-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-nwzazw-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
@@ -149,7 +149,7 @@ exports[`App > should render correctly 1`] = `
                   </p>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-olcc2h-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-nwzazw-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"

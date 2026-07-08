@@ -375,12 +375,12 @@ const InputNumberField = ({
         "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
           { display: "none" },
         "& input[type=number]": { MozAppearance: "textfield" },
-        width: { xs: "100%", sm: 180 },
+        width: { xs: "100%", sm: 240 },
         "& .MuiInputBase-root": {
-          fontSize: "0.85rem",
+          fontSize: "1rem",
         },
         "& .MuiInputLabel-root": {
-          fontSize: "0.82rem",
+          fontSize: "0.95rem",
         },
       }}
       onChange={handleChange}
