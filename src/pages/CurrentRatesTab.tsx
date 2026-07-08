@@ -237,7 +237,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
       />
 
       {/* Sort bar: dropdown + asc/desc toggle */}
-      <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 3 }}>
         <SortIcon sx={{ color: textColor, fontSize: 20 }} />
         <FormControl size="small" sx={{ minWidth: 140 }}>
           <Select
