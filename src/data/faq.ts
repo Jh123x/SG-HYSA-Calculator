@@ -151,10 +151,10 @@ const FULL: FaqEntry[] = [
     ],
     furtherReading: [
       {
-        label: "The MileLion — Savings Accounts",
-        url: "https://milelion.com/tag/savings/",
+        label: "Seedly — Best Savings Accounts Singapore",
+        url: "https://seedly.sg/reviews/savings-accounts/",
         confirms:
-          "Independent blog tracking rate changes across Singapore savings accounts, often faster than bank official announcements.",
+          "Community-driven comparison of Singapore savings accounts with updated rates, reviews, and real user discussion.",
       },
     ],
   },
