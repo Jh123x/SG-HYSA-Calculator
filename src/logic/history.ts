@@ -16,8 +16,8 @@ const FACTOR_LABELS: Record<string, string> = {
   MonthlyAccIncrease: "Account Increment",
   LoanInstallment: "Loan Installment",
   OneTimeLoan: "One-Time Loan",
-  IsNTUCMember: "NTUC Member?",
-  ReferredCustomer: "Referred Customer?",
+  IsNTUCMember: "NTUC Member",
+  ReferredCustomer: "Referred Customer",
   PayNowReceived: "PayNow Received",
   FXSpend: "FX Spend",
 };

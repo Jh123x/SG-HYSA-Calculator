@@ -42,6 +42,15 @@ export const TOGGLE_SX: SxProps<Theme> = {
   fontSize: "0.8rem",
 };
 
+/** Factor chips — compact outlined style used on main page and detail page. */
+export const FACTOR_CHIP_SX: SxProps<Theme> = {
+  color: mutedColor,
+  borderColor: `${textColor}20`,
+  fontSize: "0.65rem",
+  height: 20,
+  "& .MuiChip-label": { px: 0.75 },
+};
+
 // ── Component overrides ──────────────────────────────────────────
 
 const components: Components = {

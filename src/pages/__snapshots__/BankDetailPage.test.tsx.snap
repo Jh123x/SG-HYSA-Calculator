@@ -489,7 +489,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-wq87pz"
               >
                 <div
-                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1utxm4p-MuiChip-root"
+                  class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
@@ -1181,7 +1181,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
               class="MuiBox-root css-wq87pz"
             >
               <div
-                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1utxm4p-MuiChip-root"
+                class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-579od4-MuiChip-root"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"

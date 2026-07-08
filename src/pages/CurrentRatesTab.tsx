@@ -31,7 +31,7 @@ import SortIcon from "@mui/icons-material/Sort";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import type { ResultProp } from "../types/props";
-import { primaryColor, mutedColor, bgColor, textColor, TOGGLE_SX } from "../consts/theme";
+import { primaryColor, mutedColor, bgColor, textColor, TOGGLE_SX, FACTOR_CHIP_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
@@ -189,13 +189,7 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
                               label={f}
                               size="small"
                               variant="outlined"
-                              sx={{
-                                color: mutedColor,
-                                borderColor: `${textColor}20`,
-                                fontSize: "0.6rem",
-                                height: 18,
-                                "& .MuiChip-label": { px: 0.75 },
-                              }}
+                              sx={{ ...FACTOR_CHIP_SX }}
                             />
                           ))}
                         </Box>
@@ -330,13 +324,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
                         label={f}
                         size="small"
                         variant="outlined"
-                        sx={{
-                          color: mutedColor,
-                          borderColor: `${textColor}20`,
-                          fontSize: "0.6rem",
-                          height: 18,
-                          "& .MuiChip-label": { px: 0.75 },
-                        }}
+                        sx={{ ...FACTOR_CHIP_SX }}
                       />
                     ))}
                     {bankInfo[slug].factors.length > 3 && (
@@ -348,7 +336,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
                           color: primaryColor,
                           borderColor: `${primaryColor}60`,
                           fontSize: "0.6rem",
-                          height: 18,
+                          height: 20,
                           fontWeight: 600,
                           "& .MuiChip-label": { px: 0.75 },
                         }}

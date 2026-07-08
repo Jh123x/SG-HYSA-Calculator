@@ -22,7 +22,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import LanguageIcon from "@mui/icons-material/Language";
 import { LineChart } from "@mui/x-charts/LineChart";
-import { textColor, bgColor, primaryColor, lineColors, mutedColor, TOGGLE_SX } from "../consts/theme";
+import { textColor, bgColor, primaryColor, lineColors, mutedColor, TOGGLE_SX, FACTOR_CHIP_SX } from "../consts/theme";
 import { ThreePanelLayout } from "../Components/ThreePanelLayout";
 import { bankInfo } from "../logic/constants";
 import { slugToBankName, ERROR_SLUG } from "../logic/slugs";
@@ -245,7 +245,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
                 label={f}
                 size="small"
                 variant="outlined"
-                sx={{ color: mutedColor, borderColor: `${textColor}20` }}
+                sx={{ ...FACTOR_CHIP_SX }}
               />
             ))}
           </Box>
