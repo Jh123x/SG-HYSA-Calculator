@@ -51,7 +51,7 @@ export const ShareButton = ({ profile, onCopied }: ShareButtonProps) => {
         "&:hover": {
           backgroundColor: copied
             ? "#2e7d32"
-            : "rgba(255,255,255,0.08)",
+            : `${primaryColor}14`,
         },
       }}
     >

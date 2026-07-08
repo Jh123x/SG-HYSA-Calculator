@@ -37,6 +37,15 @@ exports[`App > should render correctly 1`] = `
         class="MuiBox-root css-jma0kd"
       >
         <button
+          aria-label="Switch to light mode"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-nnxf2j-MuiButtonBase-root-MuiIconButton-root"
+          data-mui-internal-clone-element="true"
+          tabindex="0"
+          type="button"
+        >
+          ☀️
+        </button>
+        <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-f1v8tk-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
           type="button"
@@ -70,94 +79,10 @@ exports[`App > should render correctly 1`] = `
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
                     data-shrink="false"
-                    for="_r_3_"
-                    id="_r_3_-label"
-                  >
-                    Savings
-                  </label>
-                  <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
-                  >
-                    <input
-                      aria-describedby="_r_3_-helper-text"
-                      aria-invalid="false"
-                      class="MuiInputBase-input MuiOutlinedInput-input css-1fe3xww-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_3_"
-                      type="number"
-                      value=""
-                    />
-                    <fieldset
-                      aria-hidden="true"
-                      class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-                    >
-                      <legend
-                        class="css-1n64csd-MuiNotchedOutlined-root"
-                      >
-                        <span>
-                          Savings
-                        </span>
-                      </legend>
-                    </fieldset>
-                  </div>
-                  <p
-                    class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-xkbyl4-MuiFormHelperText-root"
-                    id="_r_3_-helper-text"
-                  >
-                    To be deposited at bank
-                  </p>
-                </div>
-                <div
-                  class="MuiFormControl-root MuiTextField-root css-nwzazw-MuiFormControl-root-MuiTextField-root"
-                >
-                  <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
-                    data-shrink="false"
-                    for="_r_4_"
-                    id="_r_4_-label"
-                  >
-                    Salary
-                  </label>
-                  <div
-                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
-                  >
-                    <input
-                      aria-describedby="_r_4_-helper-text"
-                      aria-invalid="false"
-                      class="MuiInputBase-input MuiOutlinedInput-input css-1fe3xww-MuiInputBase-input-MuiOutlinedInput-input"
-                      id="_r_4_"
-                      type="number"
-                      value=""
-                    />
-                    <fieldset
-                      aria-hidden="true"
-                      class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-                    >
-                      <legend
-                        class="css-1n64csd-MuiNotchedOutlined-root"
-                      >
-                        <span>
-                          Salary
-                        </span>
-                      </legend>
-                    </fieldset>
-                  </div>
-                  <p
-                    class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-xkbyl4-MuiFormHelperText-root"
-                    id="_r_4_-helper-text"
-                  >
-                    Credited to bank monthly
-                  </p>
-                </div>
-                <div
-                  class="MuiFormControl-root MuiTextField-root css-nwzazw-MuiFormControl-root-MuiTextField-root"
-                >
-                  <label
-                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
-                    data-shrink="false"
                     for="_r_5_"
                     id="_r_5_-label"
                   >
-                    Spending
+                    Savings
                   </label>
                   <div
                     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
@@ -178,7 +103,7 @@ exports[`App > should render correctly 1`] = `
                         class="css-1n64csd-MuiNotchedOutlined-root"
                       >
                         <span>
-                          Spending
+                          Savings
                         </span>
                       </legend>
                     </fieldset>
@@ -186,6 +111,90 @@ exports[`App > should render correctly 1`] = `
                   <p
                     class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-xkbyl4-MuiFormHelperText-root"
                     id="_r_5_-helper-text"
+                  >
+                    To be deposited at bank
+                  </p>
+                </div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root css-nwzazw-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink="false"
+                    for="_r_6_"
+                    id="_r_6_-label"
+                  >
+                    Salary
+                  </label>
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
+                  >
+                    <input
+                      aria-describedby="_r_6_-helper-text"
+                      aria-invalid="false"
+                      class="MuiInputBase-input MuiOutlinedInput-input css-1fe3xww-MuiInputBase-input-MuiOutlinedInput-input"
+                      id="_r_6_"
+                      type="number"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        class="css-1n64csd-MuiNotchedOutlined-root"
+                      >
+                        <span>
+                          Salary
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                  <p
+                    class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-xkbyl4-MuiFormHelperText-root"
+                    id="_r_6_-helper-text"
+                  >
+                    Credited to bank monthly
+                  </p>
+                </div>
+                <div
+                  class="MuiFormControl-root MuiTextField-root css-nwzazw-MuiFormControl-root-MuiTextField-root"
+                >
+                  <label
+                    class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
+                    data-shrink="false"
+                    for="_r_7_"
+                    id="_r_7_-label"
+                  >
+                    Spending
+                  </label>
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
+                  >
+                    <input
+                      aria-describedby="_r_7_-helper-text"
+                      aria-invalid="false"
+                      class="MuiInputBase-input MuiOutlinedInput-input css-1fe3xww-MuiInputBase-input-MuiOutlinedInput-input"
+                      id="_r_7_"
+                      type="number"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="MuiOutlinedInput-notchedOutline css-vy4cj6-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        class="css-1n64csd-MuiNotchedOutlined-root"
+                      >
+                        <span>
+                          Spending
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                  <p
+                    class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-xkbyl4-MuiFormHelperText-root"
+                    id="_r_7_-helper-text"
                   >
                     On eligible cards monthly
                   </p>
@@ -225,7 +234,7 @@ exports[`App > should render correctly 1`] = `
                   >
                     <button
                       aria-pressed="true"
-                      class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-1jptw77-MuiButtonBase-root-MuiToggleButton-root"
+                      class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-qcjayr-MuiButtonBase-root-MuiToggleButton-root"
                       tabindex="0"
                       type="button"
                       value="current"
@@ -234,7 +243,7 @@ exports[`App > should render correctly 1`] = `
                     </button>
                     <button
                       aria-pressed="false"
-                      class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-1jptw77-MuiButtonBase-root-MuiToggleButton-root"
+                      class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-qcjayr-MuiButtonBase-root-MuiToggleButton-root"
                       tabindex="0"
                       type="button"
                       value="history"
@@ -267,14 +276,14 @@ exports[`App > should render correctly 1`] = `
                   class="MuiBox-root css-xine5j"
                 >
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1e2jhx9-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-7m1hhi-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >
                     Clear
                   </button>
                   <button
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1aygv86-MuiButtonBase-root-MuiButton-root"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1n97j2d-MuiButtonBase-root-MuiButton-root"
                     tabindex="0"
                     type="button"
                   >

@@ -4,6 +4,7 @@ import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
 import { primaryColor, mutedColor, borderColor, textColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import { prefetchRoute } from "../data/prefetch";
+import { ModeToggle } from "./ModeToggle";
 
 /**
  * Minimalist Geckoboard-style Header:
@@ -68,8 +69,9 @@ export const Header = () => {
         </Typography>
       </Box>
 
-      {/* Right: FAQs text button */}
+      {/* Right: mode toggle + FAQs text button */}
       <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
+        <ModeToggle />
         <Button
           onClick={() => navigate("/faq")}
           onMouseEnter={() => prefetchRoute("/faq")}
