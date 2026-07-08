@@ -1,10 +1,9 @@
 import { Outlet } from "react-router-dom";
 import { Container, GlobalStyles, Box } from "@mui/material";
-import { ThemeProvider } from "@mui/material/styles";
 import { Header } from "./Components/Header";
 import { Footer } from "./Components/Footer";
 import { ErrorBoundary } from "./Components/ErrorBoundary";
-import { bgColor, theme } from "./consts/theme";
+import { bgColor } from "./consts/theme";
 import { useMobile } from "./hooks/useMobile";
 import type Profile from "./types/profile";
 
@@ -47,7 +46,7 @@ export const Layout = ({
   const mainMinHeight = isMobile ? undefined : 0;
 
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <GlobalStyles
         styles={{
           body: {
@@ -106,6 +105,6 @@ export const Layout = ({
         </Box>
         <Footer />
       </Box>
-    </ThemeProvider>
+    </>
   );
 };

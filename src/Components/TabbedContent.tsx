@@ -2,7 +2,7 @@ import { Outlet, useNavigate, useLocation, useOutletContext } from "react-router
 import { Box, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { FormInputs } from "./Inputs";
-import { primaryColor, TOGGLE_SX } from "../consts/theme";
+import { primaryColor, textColor, borderColor, TOGGLE_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import { prefetchRoute } from "../data/prefetch";
 import type Profile from "../types/profile";
@@ -21,7 +21,7 @@ const TAB_TOGGLE_SX = {
   px: { xs: 1.5, sm: 2 },
   transition: "all 0.2s ease",
   "&.Mui-selected": {
-    color: "#fff",
+    color: textColor,
     backgroundColor: primaryColor,
     fontWeight: 600,
   },
@@ -101,7 +101,7 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
           flexShrink: 0,
           pt: 2.5,
           pb: 1.5,
-          borderBottom: "1px solid rgba(255,255,255,0.04)",
+          borderBottom: `1px solid ${borderColor}`,
         }}
       >
         <ErrorBoundary>

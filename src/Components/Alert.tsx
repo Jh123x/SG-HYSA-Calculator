@@ -1,6 +1,7 @@
 import { Check, Close } from "@mui/icons-material";
 import type { AlertColor } from "@mui/material";
 import { Alert, Collapse, IconButton } from "@mui/material";
+import { textColor } from "../consts/theme";
 
 interface AlertProps {
   children: string;
@@ -20,7 +21,7 @@ export const WebAlert = ({
       severity={severity}
       icon={<Check fontSize="inherit" />}
       sx={{
-        color: "#fff",
+        color: textColor,
         borderRadius: "8px",
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
       }}

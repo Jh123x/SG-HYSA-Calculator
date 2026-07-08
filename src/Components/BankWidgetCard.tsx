@@ -55,7 +55,7 @@ export const BankWidgetCard = ({
         transition: "transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.25s cubic-bezier(0.25, 0.1, 0.25, 1)",
         "&:hover": {
           transform: "scale(1.01)",
-          boxShadow: "0 4px 20px rgba(0,0,0,0.4)",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.15)",
         },
         "&:active": {
           transform: "scale(0.985)",
