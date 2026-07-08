@@ -155,7 +155,8 @@ export const bocSmartSaverHistory: RateSnapshot[] = [
     effectiveDate: "2025-08-01",
     interestFn: bank_of_china_smart_saver_08_2025,
     sourceUrl: "https://sethisfy.com/boc-smartsaver-dropping-interest-by-0-70-p-a-1st-august-2025/",
-    changeSummary: "Salary $2K +1.5%, Insurance $150K +2.75%, Spend $750 +0.75%, Spend $2.5K +0.5%, GIRO 3×$90 +0.1%",
+    changeSummary:
+      "Bonus categories:\nSalary $2K: +1.5%\nInsurance $150K: +2.75%\nSpend $750: +0.75%\nSpend $2.5K: +0.5%\nGIRO 3×$90: +0.1%",
   },
   {
     effectiveDate: "2025-11-01",
@@ -170,18 +171,21 @@ export const bocSuperSaverHistory: RateSnapshot[] = [
     effectiveDate: "2025-07-01",
     interestFn: bank_of_china_super_saver_07_2025,
     sourceUrl: "https://www.bankofchina.com/sg/bocinfo/bi1/202506/t20250620_25390361.html",
-    changeSummary: "1st $20K 1.5%, next $40K 2.2%, next $40K 3.6%, remaining 1.2%",
+    changeSummary:
+      "Tiered rates:\n1st $20K: 1.5%\nnext $40K: 2.2%\nnext $40K: 3.6%\nremaining: 1.2%",
   },
   {
     effectiveDate: "2025-08-01",
     interestFn: bank_of_china_super_saver_08_2025,
     sourceUrl: "https://www.bankofchina.com/sg/bocinfo/bi1/202506/t20250620_25390361.html",
-    changeSummary: "All tiers reduced: 1.5%→1%, 2.2%→1.2%, 3.6%→1.6%, base 1.2%→0.8%",
+    changeSummary:
+      "All tiers reduced:\n1st $20K: 1.5% → 1%\nnext $40K: 2.2% → 1.2%\nnext $40K: 3.6% → 1.6%\nbase: 1.2% → 0.8%",
   },
   {
     effectiveDate: "2025-11-01",
     interestFn: bank_of_china_super_saver_11_2025,
     sourceUrl: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
-    changeSummary: "Further reduced: 1%→0.5%, 1.2%→0.8%, 1.6%→1%, base 0.8%→0.5%",
+    changeSummary:
+      "Further reduced:\n1st $20K: 1% → 0.5%\nnext $40K: 1.2% → 0.8%\nnext $40K: 1.6% → 1%\nbase: 0.8% → 0.5%",
   },
 ];

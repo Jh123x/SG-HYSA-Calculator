@@ -1572,11 +1572,11 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
       class="MuiTypography-root MuiTypography-caption css-71rnec-MuiTypography-root"
     >
       <span>
-        * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+        * This graph shows interest rates for savings from S$0 to S$200,000, covering the typical savings account balance range.
         <br />
       </span>
       <span>
-        ** Interest rates on their respective websites are subject to change without notice.
+        ** Interest rates on the respective bank websites are subject to change without notice.
         <br />
       </span>
       <span>
@@ -3035,11 +3035,11 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
       class="MuiTypography-root MuiTypography-caption css-71rnec-MuiTypography-root"
     >
       <span>
-        * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+        * This graph shows interest rates for savings from S$0 to S$200,000, covering the typical savings account balance range.
         <br />
       </span>
       <span>
-        ** Interest rates on their respective websites are subject to change without notice.
+        ** Interest rates on the respective bank websites are subject to change without notice.
         <br />
       </span>
       <span>

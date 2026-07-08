@@ -251,7 +251,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
               return (
                 <TableRow key={idx}>
                   <TableCell sx={{ color: textColor }}>{isTbd ? "TBD" : formatDate(snapshot.date)}</TableCell>
-                  <TableCell sx={{ color: textColor }}>{snapshot.changeSummary}</TableCell>
+                  <TableCell sx={{ color: textColor, whiteSpace: "pre-line" }}>{snapshot.changeSummary}</TableCell>
                   <TableCell sx={{ color: textColor, textAlign: "right" }}>{isTbd ? "—" : `$${snapshot.yearlyInterest.toFixed(2)}`}</TableCell>
                   <TableCell sx={{ color: textColor, textAlign: "right" }}>{isTbd ? "—" : `${snapshot.eir.toFixed(2)}%`}</TableCell>
                   <TableCell sx={{ color: textColor, textAlign: "center", p: 0.5 }}>

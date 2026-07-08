@@ -90,7 +90,7 @@ exports[`App > should render correctly 1`] = `
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
                       id="_r_3_"
-                      placeholder="To be deposited at bank"
+                      placeholder="Total savings balance to deposit"
                       type="number"
                       value=""
                     />
@@ -194,7 +194,7 @@ exports[`App > should render correctly 1`] = `
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
                       id="_r_5_"
-                      placeholder="Credited to bank monthly"
+                      placeholder="Salary credited to the bank monthly"
                       type="number"
                       value=""
                     />
@@ -246,7 +246,7 @@ exports[`App > should render correctly 1`] = `
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
                       id="_r_6_"
-                      placeholder="Pay to bank yearly"
+                      placeholder="Total investment contributions to the bank yearly"
                       type="number"
                       value=""
                     />
@@ -298,7 +298,7 @@ exports[`App > should render correctly 1`] = `
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
                       id="_r_7_"
-                      placeholder="Pay to bank yearly"
+                      placeholder="Total insurance premiums paid to the bank yearly"
                       type="number"
                       value=""
                     />
@@ -558,7 +558,7 @@ exports[`App > should render correctly 1`] = `
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-j3jqhj-MuiInputBase-input-MuiOutlinedInput-input"
                       id="_r_c_"
-                      placeholder="Additional 1 time loan"
+                      placeholder="Additional one-time loan amount"
                       type="number"
                       value=""
                     />
@@ -689,7 +689,7 @@ exports[`App > should render correctly 1`] = `
                   </div>
                 </div>
                 <div
-                  aria-label="Is/Willing to be NTUC Member"
+                  aria-label="Are you an NTUC member (or willing to join)?"
                   class="MuiBox-root css-1k83hgb"
                   data-mui-internal-clone-element="true"
                 >
@@ -724,7 +724,7 @@ exports[`App > should render correctly 1`] = `
                   </label>
                 </div>
                 <div
-                  aria-label="Referred a new Trust credit card customer this month and completed application"
+                  aria-label="You referred a new Trust credit card customer whose application was approved this month"
                   class="MuiBox-root css-1k83hgb"
                   data-mui-internal-clone-element="true"
                 >

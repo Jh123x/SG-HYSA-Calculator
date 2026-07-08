@@ -7,7 +7,7 @@ const makeDefaultNumber = (value?: number): number =>
 export const numericalInputs: Array<InputArg<number>> = [
   {
     label: "Savings",
-    tooltip: "To be deposited at bank",
+    tooltip: "Total savings balance to deposit",
     fn: (profile, v) => ({ ...profile, Savings: v }),
     getStateFromProfile: (profile: Profile) =>
       makeDefaultNumber(profile.Savings),
@@ -20,21 +20,21 @@ export const numericalInputs: Array<InputArg<number>> = [
   },
   {
     label: "Salary",
-    tooltip: "Credited to bank monthly",
+    tooltip: "Salary credited to the bank monthly",
     fn: (profile, v) => ({ ...profile, Salary: v }),
     getStateFromProfile: (profile: Profile) =>
       makeDefaultNumber(profile.Salary),
   },
   {
     label: "Investment",
-    tooltip: "Pay to bank yearly",
+    tooltip: "Total investment contributions to the bank yearly",
     fn: (profile, v) => ({ ...profile, Investment: v }),
     getStateFromProfile: (profile: Profile) =>
       makeDefaultNumber(profile.Investment),
   },
   {
     label: "Insurance",
-    tooltip: "Pay to bank yearly",
+    tooltip: "Total insurance premiums paid to the bank yearly",
     fn: (profile, v) => ({ ...profile, Insurance: v }),
     getStateFromProfile: (profile: Profile) =>
       makeDefaultNumber(profile.Insurance),
@@ -69,7 +69,7 @@ export const numericalInputs: Array<InputArg<number>> = [
   },
   {
     label: "One Time Loan",
-    tooltip: "Additional 1 time loan",
+    tooltip: "Additional one-time loan amount",
     fn: (profile, v) => ({ ...profile, OneTimeLoan: v }),
     getStateFromProfile: (profile: Profile) =>
       makeDefaultNumber(profile.OneTimeLoan),
@@ -93,13 +93,13 @@ export const numericalInputs: Array<InputArg<number>> = [
 export const booleanInputs: Array<InputArg<boolean>> = [
   {
     label: "NTUC Member?",
-    tooltip: "Is/Willing to be NTUC Member",
+    tooltip: "Are you an NTUC member (or willing to join)?",
     fn: (profile, v) => ({ ...profile, IsNTUCMember: v }),
     getStateFromProfile: (profile: Profile) => profile.IsNTUCMember,
   },
   {
     label: "Referred Customer?",
-    tooltip: "Referred a new Trust credit card customer this month and completed application",
+    tooltip: "You referred a new Trust credit card customer whose application was approved this month",
     fn: (profile, v) => ({ ...profile, ReferredCustomer: v }),
     getStateFromProfile: (profile: Profile) => profile.ReferredCustomer,
   },

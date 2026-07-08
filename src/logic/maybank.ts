@@ -136,7 +136,8 @@ export const maybankSaveUpHistory: RateSnapshot[] = [
     effectiveDate: "2025-10-01",
     interestFn: maybank_save_up_10_2025,
     sourceUrl: "https://sethisfy.com/maybank-save-up-program-launches-october-2025/",
-    changeSummary: "Category bonus: up to 3 categories (GIRO/Salary, Spend $500, Invest $25K, Insurance $5K, Loan $10K). Max bonus: 2.75% (1st $50K) + 3.75% (next $25K)",
+    changeSummary:
+      "Category bonus (up to 3 categories):\n• GIRO/Salary\n• Spend $500\n• Invest $25K\n• Insurance $5K\n• Loan $10K\nMax bonus: 2.75% (1st $50K) + 3.75% (next $25K)",
   },
   {
     effectiveDate: "2026-06-11",

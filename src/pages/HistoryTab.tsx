@@ -136,7 +136,7 @@ const HistoryTabDesktop = ({
                     <TableRow key={`${bank.slug}-${idx}`} sx={{ "&:hover": { backgroundColor: `${primaryColor}08` } }}>
                       <TableCell sx={{ p: 0 }} />
                       <TableCell sx={{ pl: 2 }}>{row.date}</TableCell>
-                      <TableCell>{row.changeSummary}</TableCell>
+                      <TableCell sx={{ color: textColor, whiteSpace: "pre-line" }}>{row.changeSummary}</TableCell>
                       <TableCell sx={{ textAlign: "right", backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}08` : "transparent" }}>
                         {row.yearlyInterest}
                       </TableCell>
@@ -394,7 +394,7 @@ const MobileRowGroupedList = ({
                   <TableRow key={`${bank.slug}-${idx}`} sx={{ "&:hover": { backgroundColor: `${primaryColor}08` } }}>
                     <TableCell sx={{ p: 0 }} />
                     <TableCell sx={{ color: textColor, fontSize: "0.7rem", px: 0.5, whiteSpace: "nowrap" }}>{row.date}</TableCell>
-                    <TableCell sx={{ color: textColor, fontSize: "0.7rem", px: 0.5, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{row.changeSummary}</TableCell>
+                    <TableCell sx={{ color: textColor, fontSize: "0.7rem", px: 0.5, whiteSpace: "pre-line" }}>{row.changeSummary}</TableCell>
                     <TableCell sx={{ color: textColor, textAlign: "right", fontSize: "0.7rem", px: 0.5, backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}08` : "transparent", whiteSpace: "nowrap" }}>
                       {row.yearlyInterest}
                     </TableCell>

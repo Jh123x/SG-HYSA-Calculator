@@ -79,19 +79,19 @@ export const banks: Record<string, BankData> = {
   "standard-chartered-bonus-saver": {
     name: "Standard Chartered Bonus$aver",
     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
-    remarks: "Insurance and Investment only\nfulfils interest for 6 months",
+    remarks: "Insurance and Investment categories\neach qualify for bonus interest for only 6 months",
     history: standChartHistory,
   },
   "trust-bank-signature": {
     name: "Trust Bank (Signature)",
     url: "https://trustbank.sg/savings-account/",
-    remarks: "Spending assumes 5 x $30 if spending is more than 150.",
+    remarks: "Spending assumes 5 × S$30 transactions if total spend exceeds S$150.",
     history: trustBankSignatureHistory,
   },
   "trust-bank-zen": {
     name: "Trust Bank (Zen)",
     url: "https://trustbank.sg/savings-account/",
-    remarks: "A Flat 0.4% interest rate up to 1.2 million",
+    remarks: "Flat 0.4% p.a. on balances up to S$1,200,000",
     history: trustBankZenHistory,
   },
   "trust-bank-flex": {
@@ -125,7 +125,7 @@ export const banks: Record<string, BankData> = {
     name: "BOC SuperSaver",
     url: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
     remarks:
-      "This account is valid from 2024-08-01 onwards.\n**Note: You have to link your PayNow to this account to qualify for the sale.**",
+      "This account is valid from 2024-08-01 onwards.\n**Note: You have to link your PayNow to this account to qualify for bonus interest.**",
     history: bocSuperSaverHistory,
   },
   "maybank-saveup": {
@@ -153,11 +153,10 @@ export const banks: Record<string, BankData> = {
     name: "Citi Wealth First",
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks:
-      "Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)\nBonus interest capped at first $500k.\n*Assumes Citigold level, Citi Private has a higher level.",
+      "Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)\nBonus interest capped at first $500k.\n*Assumes Citigold tier. Citi Private clients enjoy higher rates.",
     history: citiHistory,
   },
 };
 
 /** All bank slugs in registry order. */
 export const BANK_SLUGS = Object.keys(banks);
-

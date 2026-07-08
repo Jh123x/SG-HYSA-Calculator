@@ -49,17 +49,17 @@ export const gxsHistory: RateSnapshot[] = [
     effectiveDate: "2025-07-01",
     interestFn: gxs_interest_07_2025,
     sourceUrl: "https://sethisfy.com/nerfed-gxs-trust-bank-and-chocolate-finance-announce-drop-in-rates/",
-    changeSummary: "Boost Pocket: $60K at 2.58%, Saving Pockets: $35K at 1.68%",
+    changeSummary: "Boost Pocket: $60K at 2.58% p.a.\nSaving Pockets: $35K at 1.68% p.a.",
   },
   {
     effectiveDate: "2025-08-01",
     interestFn: gxs_interest_08_2025,
     sourceUrl: "https://sethisfy.com/nerfed-gxs-slashes-interest-1-38-p-a-6th-august-2025/",
-    changeSummary: "Boost Pocket: $85K at 1.38% (reduced from 2.58%). Saving Pockets: $10K at 1.08%",
+    changeSummary: "Boost Pocket: $85K at 1.38% p.a. (reduced from 2.58%)\nSaving Pockets: $10K at 1.08% p.a.",
   },
   {
     effectiveDate: "2026-06-05",
     interestFn: gxs_interest_06_2026,
-    changeSummary: "Boost Pocket: $85K at 1.22% (reduced from 1.38%). Saving Pockets unchanged",
+    changeSummary: "Boost Pocket: $85K at 1.22% p.a. (reduced from 1.38%)\nSaving Pockets unchanged (still $10K at 1.08% p.a.)",
   },
 ];
