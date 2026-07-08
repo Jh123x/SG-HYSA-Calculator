@@ -79,7 +79,7 @@ export const Layout = ({
             flex: mainFlex,
             minHeight: mainMinHeight,
             overflow: mainOverflow,
-            ...(isMobile ? { overflowX: "hidden", maxWidth: "100vw" } : {}),
+            ...(isMobile ? { maxWidth: "100vw" } : {}),
           }}
         >
           <Container
