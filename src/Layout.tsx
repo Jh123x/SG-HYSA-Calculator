@@ -79,15 +79,16 @@ export const Layout = ({
             flex: mainFlex,
             minHeight: mainMinHeight,
             overflow: mainOverflow,
+            ...(isMobile ? { overflowX: "hidden", maxWidth: "100vw" } : {}),
           }}
         >
           <Container
+            disableGutters
             sx={{
               px: { xs: 1.5, sm: 4, md: 5 },
               py: { xs: 0, sm: 1 },
               height: "100%",
               maxWidth: "100% !important",
-              ...(isMobile ? { overflowX: "hidden" } : {}),
             }}
           >
             <ErrorBoundary>
