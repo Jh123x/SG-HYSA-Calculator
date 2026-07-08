@@ -52,24 +52,10 @@ export const Header = () => {
             HYSA Calculator
           </Typography>
         )}
-        {/* Visually hidden h1 for SEO — standard screen-reader-only pattern */}
-        <Typography
-          component="h1"
-          sx={{
-            position: "absolute",
-            width: 1,
-            height: 1,
-            m: -0.125,
-            p: 0,
-            overflow: "hidden",
-            clip: "rect(0, 0, 0, 0)",
-            clipPath: "inset(50%)",
-            whiteSpace: "nowrap",
-            border: 0,
-          }}
-        >
+        {/* SEO h1 — zero-height overflow wrapper, no absolute positioning */}
+        <Box component="h1" sx={{ height: 0, overflow: "hidden", m: 0 }}>
           SG High Yield Savings Accounts
-        </Typography>
+        </Box>
       </Box>
 
       {/* Right: FAQs text button */}

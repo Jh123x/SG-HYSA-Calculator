@@ -28,7 +28,7 @@ exports[`App > should render correctly 1`] = `
           HYSA Calculator
         </p>
         <h1
-          class="MuiTypography-root MuiTypography-body1 css-rqltwy-MuiTypography-root"
+          class="MuiBox-root css-10h60es"
         >
           SG High Yield Savings Accounts
         </h1>
