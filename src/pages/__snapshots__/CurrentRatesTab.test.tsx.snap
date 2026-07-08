@@ -7,119 +7,6 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
   >
     Rate Comparison
   </h2>
-  <div
-    class="MuiBox-root css-5c4gil"
-  >
-    <svg
-      aria-hidden="true"
-      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1n0zc2l-MuiSvgIcon-root"
-      data-testid="SortIcon"
-      focusable="false"
-      viewBox="0 0 24 24"
-    >
-      <path
-        d="M3 18h6v-2H3zM3 6v2h18V6zm0 7h12v-2H3z"
-      />
-    </svg>
-    <div
-      class="MuiFormControl-root css-zctqko-MuiFormControl-root"
-    >
-      <div
-        class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-1v27yq1-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
-      >
-        <div
-          aria-expanded="false"
-          aria-haspopup="listbox"
-          class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-trm6af-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
-          role="combobox"
-          tabindex="0"
-        >
-          EIR
-        </div>
-        <input
-          aria-hidden="true"
-          aria-invalid="false"
-          class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
-          id="_r_1_"
-          tabindex="-1"
-          value="effectiveInterest"
-        />
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
-          data-testid="ArrowDropDownIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M7 10l5 5 5-5z"
-          />
-        </svg>
-        <fieldset
-          aria-hidden="true"
-          class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
-        >
-          <legend
-            class="css-1nf2c5d-MuiNotchedOutlined-root"
-          >
-            <span
-              aria-hidden="true"
-              class="notranslate"
-            >
-              ​
-            </span>
-          </legend>
-        </fieldset>
-      </div>
-    </div>
-    <div
-      class="MuiToggleButtonGroup-root MuiToggleButtonGroup-horizontal css-1qb8o-MuiToggleButtonGroup-root"
-      role="group"
-    >
-      <button
-        aria-label="Sort ascending"
-        aria-pressed="false"
-        class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-1urx6xq-MuiButtonBase-root-MuiToggleButton-root"
-        tabindex="0"
-        type="button"
-        value="asc"
-      >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-y20n43-MuiSvgIcon-root"
-          data-testid="ArrowUpwardIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8z"
-          />
-        </svg>
-        Asc
-      </button>
-      <button
-        aria-label="Sort descending"
-        aria-pressed="true"
-        class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-1urx6xq-MuiButtonBase-root-MuiToggleButton-root"
-        tabindex="0"
-        type="button"
-        value="desc"
-      >
-        <svg
-          aria-hidden="true"
-          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-y20n43-MuiSvgIcon-root"
-          data-testid="ArrowDownwardIcon"
-          focusable="false"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="m20 12-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8z"
-          />
-        </svg>
-        Desc
-      </button>
-    </div>
-  </div>
   <section
     class="MuiBox-root css-tzrkmm"
   >
@@ -759,20 +646,20 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                       tabindex="0"
                     >
                       <div
-                        id="voiceover-_r_3_-1"
+                        id="voiceover-_r_1_-1"
                         style="display: none;"
                       />
                       <div
-                        id="voiceover-_r_3_-2"
+                        id="voiceover-_r_1_-2"
                         style="display: none;"
                       />
                       <div
-                        aria-labelledby="voiceover-_r_3_-1"
+                        aria-labelledby="voiceover-_r_1_-1"
                         role="img"
                         style="width: 100%; height: 100%; outline: none;"
                       />
                       <div
-                        aria-labelledby="voiceover-_r_3_-2"
+                        aria-labelledby="voiceover-_r_1_-2"
                         role="img"
                         style="width: 100%; height: 100%; outline: none;"
                       />
@@ -822,7 +709,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                         />
                       </g>
                       <g
-                        clip-path="url(#_r_2_-clip-path)"
+                        clip-path="url(#_r_0_-clip-path)"
                       >
                         <g
                           class="MuiLineChart-areaPlot css-94vonx-MuiAreaPlot-root"
@@ -831,7 +718,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                           class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
                         >
                           <clippath
-                            id="_r_3_-uob-one-account-line-clip"
+                            id="_r_1_-uob-one-account-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -842,7 +729,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-uob-one-account-line-clip)"
+                            clip-path="url(#_r_1_-uob-one-account-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -858,7 +745,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-ocbc-360-account-line-clip"
+                            id="_r_1_-ocbc-360-account-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -869,7 +756,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-ocbc-360-account-line-clip)"
+                            clip-path="url(#_r_1_-ocbc-360-account-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -885,7 +772,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-mari-savings-account-line-clip"
+                            id="_r_1_-mari-savings-account-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -896,7 +783,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-mari-savings-account-line-clip)"
+                            clip-path="url(#_r_1_-mari-savings-account-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -912,7 +799,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-standard-chartered-bonus-saver-line-clip"
+                            id="_r_1_-standard-chartered-bonus-saver-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -923,7 +810,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-standard-chartered-bonus-saver-line-clip)"
+                            clip-path="url(#_r_1_-standard-chartered-bonus-saver-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -939,7 +826,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-trust-bank-signature-line-clip"
+                            id="_r_1_-trust-bank-signature-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -950,7 +837,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-trust-bank-signature-line-clip)"
+                            clip-path="url(#_r_1_-trust-bank-signature-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -966,7 +853,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-trust-bank-zen-line-clip"
+                            id="_r_1_-trust-bank-zen-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -977,7 +864,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-trust-bank-zen-line-clip)"
+                            clip-path="url(#_r_1_-trust-bank-zen-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -993,7 +880,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-trust-bank-flex-line-clip"
+                            id="_r_1_-trust-bank-flex-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -1004,7 +891,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-trust-bank-flex-line-clip)"
+                            clip-path="url(#_r_1_-trust-bank-flex-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -1020,7 +907,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-dbs-multiplier-account-line-clip"
+                            id="_r_1_-dbs-multiplier-account-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -1031,7 +918,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-dbs-multiplier-account-line-clip)"
+                            clip-path="url(#_r_1_-dbs-multiplier-account-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -1047,7 +934,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-gxs-savings-account-line-clip"
+                            id="_r_1_-gxs-savings-account-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -1058,7 +945,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-gxs-savings-account-line-clip)"
+                            clip-path="url(#_r_1_-gxs-savings-account-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -1074,7 +961,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-chocolate-finance-line-clip"
+                            id="_r_1_-chocolate-finance-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -1085,7 +972,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-chocolate-finance-line-clip)"
+                            clip-path="url(#_r_1_-chocolate-finance-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -1101,7 +988,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-boc-supersaver-line-clip"
+                            id="_r_1_-boc-supersaver-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -1112,7 +999,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-boc-supersaver-line-clip)"
+                            clip-path="url(#_r_1_-boc-supersaver-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -1128,7 +1015,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-maybank-saveup-line-clip"
+                            id="_r_1_-maybank-saveup-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -1139,7 +1026,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-maybank-saveup-line-clip)"
+                            clip-path="url(#_r_1_-maybank-saveup-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -1155,7 +1042,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-maybank-isavvy-line-clip"
+                            id="_r_1_-maybank-isavvy-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -1166,7 +1053,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-maybank-isavvy-line-clip)"
+                            clip-path="url(#_r_1_-maybank-isavvy-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -1182,7 +1069,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-maybank-isavvy-plus-line-clip"
+                            id="_r_1_-maybank-isavvy-plus-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -1193,7 +1080,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-maybank-isavvy-plus-line-clip)"
+                            clip-path="url(#_r_1_-maybank-isavvy-plus-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -1209,7 +1096,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </g>
                           <clippath
-                            id="_r_3_-citi-wealth-first-account-line-clip"
+                            id="_r_1_-citi-wealth-first-account-line-clip"
                           >
                             <rect
                               class="css-dbuw8t"
@@ -1220,7 +1107,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             />
                           </clippath>
                           <g
-                            clip-path="url(#_r_3_-citi-wealth-first-account-line-clip)"
+                            clip-path="url(#_r_1_-citi-wealth-first-account-line-clip)"
                           >
                             <path
                               class="MuiLineChart-line"
@@ -1431,69 +1318,69 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                           class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
                         >
                           <g
-                            clip-path="url(#_r_3_-uob-one-account-line-clip)"
+                            clip-path="url(#_r_1_-uob-one-account-line-clip)"
                             data-series="uob-one-account"
                           />
                           <g
-                            clip-path="url(#_r_3_-ocbc-360-account-line-clip)"
+                            clip-path="url(#_r_1_-ocbc-360-account-line-clip)"
                             data-series="ocbc-360-account"
                           />
                           <g
-                            clip-path="url(#_r_3_-mari-savings-account-line-clip)"
+                            clip-path="url(#_r_1_-mari-savings-account-line-clip)"
                             data-series="mari-savings-account"
                           />
                           <g
-                            clip-path="url(#_r_3_-standard-chartered-bonus-saver-line-clip)"
+                            clip-path="url(#_r_1_-standard-chartered-bonus-saver-line-clip)"
                             data-series="standard-chartered-bonus-saver"
                           />
                           <g
-                            clip-path="url(#_r_3_-trust-bank-signature-line-clip)"
+                            clip-path="url(#_r_1_-trust-bank-signature-line-clip)"
                             data-series="trust-bank-signature"
                           />
                           <g
-                            clip-path="url(#_r_3_-trust-bank-zen-line-clip)"
+                            clip-path="url(#_r_1_-trust-bank-zen-line-clip)"
                             data-series="trust-bank-zen"
                           />
                           <g
-                            clip-path="url(#_r_3_-trust-bank-flex-line-clip)"
+                            clip-path="url(#_r_1_-trust-bank-flex-line-clip)"
                             data-series="trust-bank-flex"
                           />
                           <g
-                            clip-path="url(#_r_3_-dbs-multiplier-account-line-clip)"
+                            clip-path="url(#_r_1_-dbs-multiplier-account-line-clip)"
                             data-series="dbs-multiplier-account"
                           />
                           <g
-                            clip-path="url(#_r_3_-gxs-savings-account-line-clip)"
+                            clip-path="url(#_r_1_-gxs-savings-account-line-clip)"
                             data-series="gxs-savings-account"
                           />
                           <g
-                            clip-path="url(#_r_3_-chocolate-finance-line-clip)"
+                            clip-path="url(#_r_1_-chocolate-finance-line-clip)"
                             data-series="chocolate-finance"
                           />
                           <g
-                            clip-path="url(#_r_3_-boc-supersaver-line-clip)"
+                            clip-path="url(#_r_1_-boc-supersaver-line-clip)"
                             data-series="boc-supersaver"
                           />
                           <g
-                            clip-path="url(#_r_3_-maybank-saveup-line-clip)"
+                            clip-path="url(#_r_1_-maybank-saveup-line-clip)"
                             data-series="maybank-saveup"
                           />
                           <g
-                            clip-path="url(#_r_3_-maybank-isavvy-line-clip)"
+                            clip-path="url(#_r_1_-maybank-isavvy-line-clip)"
                             data-series="maybank-isavvy"
                           />
                           <g
-                            clip-path="url(#_r_3_-maybank-isavvy-plus-line-clip)"
+                            clip-path="url(#_r_1_-maybank-isavvy-plus-line-clip)"
                             data-series="maybank-isavvy-plus"
                           />
                           <g
-                            clip-path="url(#_r_3_-citi-wealth-first-account-line-clip)"
+                            clip-path="url(#_r_1_-citi-wealth-first-account-line-clip)"
                             data-series="citi-wealth-first-account"
                           />
                         </g>
                       </g>
                       <clippath
-                        id="_r_2_-clip-path"
+                        id="_r_0_-clip-path"
                       >
                         <rect
                           height="215"
@@ -1536,1419 +1423,1536 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
         class="MuiBox-root css-1r0qzm1"
       >
         <div
-          class="MuiBox-root css-z8wuhi"
+          class="MuiBox-root css-1cvddga"
         >
-          <div>
-            <div
-              aria-label="Chocolate Finance — 1.88% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
+          <div
+            class="MuiBox-root css-u6zh8m"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1n0zc2l-MuiSvgIcon-root"
+              data-testid="SortIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
             >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
+              <path
+                d="M3 18h6v-2H3zM3 6v2h18V6zm0 7h12v-2H3z"
+              />
+            </svg>
+            <div
+              class="MuiFormControl-root css-zctqko-MuiFormControl-root"
+            >
+              <div
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-1v27yq1-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root"
               >
-                Chocolate Finance
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                1.88%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $940.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label=""
-                  class=""
-                  data-mui-internal-clone-element="true"
+                <div
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input css-trm6af-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+                  role="combobox"
+                  tabindex="0"
                 >
-                  1st 20k 2% p.a, next 80k 1.8% p.a.
-                  <br />
-                  Amounts above 100k are invested and will not be counted here.
-                  <br />
-                  <b>
-                    Note: This is not a bank
-                  </b>
-                  <br />
+                  EIR
+                </div>
+                <input
+                  aria-hidden="true"
+                  aria-invalid="false"
+                  class="MuiSelect-nativeInput css-j0riat-MuiSelect-nativeInput"
+                  id="_r_4_"
+                  tabindex="-1"
+                  value="effectiveInterest"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon css-1rfqz7c-MuiSvgIcon-root-MuiNativeSelect-root-MuiSelect-icon"
+                  data-testid="ArrowDropDownIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 10l5 5 5-5z"
+                  />
+                </svg>
+                <fieldset
+                  aria-hidden="true"
+                  class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+                >
+                  <legend
+                    class="css-1nf2c5d-MuiNotchedOutlined-root"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="notranslate"
+                    >
+                      ​
+                    </span>
+                  </legend>
+                </fieldset>
+              </div>
+            </div>
+            <div
+              class="MuiToggleButtonGroup-root MuiToggleButtonGroup-horizontal css-1qb8o-MuiToggleButtonGroup-root"
+              role="group"
+            >
+              <button
+                aria-label="Sort ascending"
+                aria-pressed="false"
+                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-firstButton css-1urx6xq-MuiButtonBase-root-MuiToggleButton-root"
+                tabindex="0"
+                type="button"
+                value="asc"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-y20n43-MuiSvgIcon-root"
+                  data-testid="ArrowUpwardIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8z"
+                  />
+                </svg>
+                Asc
+              </button>
+              <button
+                aria-label="Sort descending"
+                aria-pressed="true"
+                class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard MuiToggleButtonGroup-grouped MuiToggleButtonGroup-lastButton css-1urx6xq-MuiButtonBase-root-MuiToggleButton-root"
+                tabindex="0"
+                type="button"
+                value="desc"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-y20n43-MuiSvgIcon-root"
+                  data-testid="ArrowDownwardIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m20 12-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8z"
+                  />
+                </svg>
+                Desc
+              </button>
+            </div>
+          </div>
+          <div
+            class="MuiBox-root css-z204l3"
+          >
+            <div>
+              <div
+                aria-label="Chocolate Finance — 1.88% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
+                >
+                  Chocolate Finance
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
+                >
+                  1.88%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $940.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label=""
+                    class=""
+                    data-mui-internal-clone-element="true"
+                  >
+                    1st 20k 2% p.a, next 80k 1.8% p.a.
+                    <br />
+                    Amounts above 100k are invested and will not be counted here.
+                    <br />
+                    <b>
+                      Note: This is not a bank
+                    </b>
+                    <br />
+                    <a
+                      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
+                      href="https://share.chocolate.app/nxW9/l0tqqxem"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Referral link
+                    </a>
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
                   <a
-                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
-                    href="https://share.chocolate.app/nxW9/l0tqqxem"
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.chocolatefinance.com/"
                     rel="noopener noreferrer"
+                    tabindex="0"
                     target="_blank"
                   >
-                    Referral link
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
                   </a>
-                </span>
-              </p>
-              <div
-                class="MuiBox-root css-1o4203c"
-              >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://www.chocolatefinance.com/"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="GXS Savings — 1.22% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
+            <div>
+              <div
+                aria-label="GXS Savings — 1.22% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                GXS Savings
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                1.22%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $610.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label=""
-                  class=""
-                  data-mui-internal-clone-element="true"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
-                  <br />
-                  <b>
-                    Note: The max amount deposited depends on individual (up to $95,000)
-                  </b>
-                  <br />
-                  View other 
+                  GXS Savings
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
+                >
+                  1.22%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $610.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label=""
+                    class=""
+                    data-mui-internal-clone-element="true"
+                  >
+                    Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets
+                    <br />
+                    <b>
+                      Note: The max amount deposited depends on individual (up to $95,000)
+                    </b>
+                    <br />
+                    View other 
+                    <a
+                      class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
+                      href="https://www.gxs.com.sg/notices"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Notices here
+                    </a>
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
                   <a
-                    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
-                    href="https://www.gxs.com.sg/notices"
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.gxs.com.sg/savings-account"
                     rel="noopener noreferrer"
+                    tabindex="0"
                     target="_blank"
                   >
-                    Notices here
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
                   </a>
-                </span>
-              </p>
-              <div
-                class="MuiBox-root css-1o4203c"
-              >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://www.gxs.com.sg/savings-account"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="Mari Savings — 0.88% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                Mari Savings
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.88%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $440.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label=""
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  Interest rates are a flat 0.88%
-                  <br />
-                  Capped at $100k
-                  <br />
-                  Referral code: 
-                  <b>
-                    4QTP99MT
-                  </b>
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="Mari Savings — 0.88% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://www.maribank.sg/product/mari-savings-account/"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  Mari Savings
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.88%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $440.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label=""
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    Interest rates are a flat 0.88%
+                    <br />
+                    Capped at $100k
+                    <br />
+                    Referral code: 
+                    <b>
+                      4QTP99MT
+                    </b>
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.maribank.sg/product/mari-savings-account/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="BOC SuperSaver — 0.68% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                BOC SuperSaver
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.68%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $340.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label=""
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  This account is valid from 2024-08-01 onwards.
-                  <br />
-                  <b>
-                    Note: You have to link your paynow to this account to qualify for the sale.
-                  </b>
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="BOC SuperSaver — 0.68% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  BOC SuperSaver
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.68%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $340.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label=""
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    This account is valid from 2024-08-01 onwards.
+                    <br />
+                    <b>
+                      Note: You have to link your paynow to this account to qualify for the sale.
+                    </b>
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="Trust Bank (Zen) — 0.40% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                Trust Bank (Zen)
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.40%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $200.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label="A Flat 0.4% interest rate up to 1.2 million"
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  A Flat 0.4% interest rate up to 1.2 million
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="Trust Bank (Zen) — 0.40% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://trustbank.sg/savings-account/"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  Trust Bank (Zen)
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.40%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $200.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label="A Flat 0.4% interest rate up to 1.2 million"
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    A Flat 0.4% interest rate up to 1.2 million
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://trustbank.sg/savings-account/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="Maybank iSAVvy — 0.38% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                Maybank iSAVvy
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.38%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $190.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label=""
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  Flat tiered rates (non-additive): 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
-                  <br />
-                  Rates effective from 11 June 2026.
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="Maybank iSAVvy — 0.38% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  Maybank iSAVvy
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.38%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $190.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label=""
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    Flat tiered rates (non-additive): 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
+                    <br />
+                    Rates effective from 11 June 2026.
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="Maybank iSAVvy Plus — 0.38% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                Maybank iSAVvy Plus
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.38%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $190.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label=""
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  Flat tiered base rates: 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
-                  <br />
-                  +1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.
-                  <br />
-                  <b>
-                    Set 'Account Increment' &gt; 0 to qualify for the bonus.
-                  </b>
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="Maybank iSAVvy Plus — 0.38% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  Maybank iSAVvy Plus
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.38%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $190.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label=""
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    Flat tiered base rates: 0.1875% (&lt;$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).
+                    <br />
+                    +1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.
+                    <br />
+                    <b>
+                      Set 'Account Increment' &gt; 0 to qualify for the bonus.
+                    </b>
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="Maybank SaveUp — 0.25% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                Maybank SaveUp
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.25%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $123.13
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label=""
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125% (above $50K).
-                  <br />
-                  No more category-based bonus system.
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="Maybank SaveUp — 0.25% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  Maybank SaveUp
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.25%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $123.13
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label=""
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125% (above $50K).
+                    <br />
+                    No more category-based bonus system.
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="UOB One — 0.05% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                UOB One
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.05%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $25.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label="Visit their official website to find out more"
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  Visit their official website to find out more
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="UOB One — 0.05% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  UOB One
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.05%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $25.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label="Visit their official website to find out more"
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    Visit their official website to find out more
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="OCBC 360 — 0.05% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                OCBC 360
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.05%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $25.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label="Visit the official website to find out more"
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  Visit the official website to find out more
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="OCBC 360 — 0.05% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://www.ocbc.com/personal-banking/notices"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  OCBC 360
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.05%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $25.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label="Visit the official website to find out more"
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    Visit the official website to find out more
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.ocbc.com/personal-banking/notices"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="Standard Chartered Bonus$aver — 0.05% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                Standard Chartered Bonus$aver
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.05%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $25.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label=""
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  Insurance and Investment only
-                  <br />
-                  fulfils interest for 6 months
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="Standard Chartered Bonus$aver — 0.05% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  Standard Chartered Bonus$aver
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.05%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $25.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label=""
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    Insurance and Investment only
+                    <br />
+                    fulfils interest for 6 months
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.sc.com/sg/save/current-accounts/bonussaver/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="Trust Bank (Signature) — 0.05% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                Trust Bank (Signature)
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.05%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $25.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label="Spending assumes 5 x $30 if spending is more than 150."
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  Spending assumes 5 x $30 if spending is more than …
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="Trust Bank (Signature) — 0.05% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://trustbank.sg/savings-account/"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  Trust Bank (Signature)
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.05%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $25.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label="Spending assumes 5 x $30 if spending is more than 150."
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    Spending assumes 5 x $30 if spending is more than …
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://trustbank.sg/savings-account/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="Trust Bank (Flex) — 0.05% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                Trust Bank (Flex)
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.05%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $25.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label=""
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  Flex Plan: picks top 3 qualifying bonus scoops.
-                  <br />
-                  Scoops: salary $1.5K (+0.45%), 5×$30 spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%).
-                  <br />
-                  <b>
-                    Trust+ required (min S$100K).
-                  </b>
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="Trust Bank (Flex) — 0.05% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://trustbank.sg/trust-plus/"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  Trust Bank (Flex)
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.05%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $25.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label=""
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    Flex Plan: picks top 3 qualifying bonus scoops.
+                    <br />
+                    Scoops: salary $1.5K (+0.45%), 5×$30 spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%).
+                    <br />
+                    <b>
+                      Trust+ required (min S$100K).
+                    </b>
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://trustbank.sg/trust-plus/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="DBS Multiplier — 0.00% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                DBS Multiplier
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.00%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $0.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label=""
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  Not eligible if you are younger than 18.
-                  <br />
-                  Spending includes credit card / paylah retail spend
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="DBS Multiplier — 0.00% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  DBS Multiplier
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.00%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $0.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label=""
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    Not eligible if you are younger than 18.
+                    <br />
+                    Spending includes credit card / paylah retail spend
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.dbs.com.sg/personal/deposits/bank-earn/multiplier"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div
-              aria-label="Citi Wealth First — 0.00% EIR"
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-              role="button"
-              style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-              tabindex="0"
-            >
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-              >
-                Citi Wealth First
-              </p>
-              <h2
-                class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-              >
-                0.00%
-              </h2>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Effective Rate
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-              >
-                $0.00
-              </p>
-              <span
-                class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-              >
-                Yearly Interest
-              </span>
-              <p
-                class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-              >
-                <span
-                  aria-label=""
-                  class=""
-                  data-mui-internal-clone-element="true"
-                >
-                  Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)
-                  <br />
-                  Bonus interest capped at first $500k.
-                  <br />
-                  *Assumes Citigold level, Citi Private has a higher level.
-                </span>
-              </p>
+            <div>
               <div
-                class="MuiBox-root css-1o4203c"
+                aria-label="Citi Wealth First — 0.00% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
               >
-                <button
-                  aria-label="View details"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="OpenInNewIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                    />
-                  </svg>
-                </button>
-                <a
-                  aria-label="Visit official website"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                  data-mui-internal-clone-element="true"
-                  href="https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account"
-                  rel="noopener noreferrer"
-                  tabindex="0"
-                  target="_blank"
+                  Citi Wealth First
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
                 >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                    data-testid="LanguageIcon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
+                  0.00%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $0.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label=""
+                    class=""
+                    data-mui-internal-clone-element="true"
                   >
-                    <path
-                      d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                    />
-                  </svg>
-                </a>
+                    Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)
+                    <br />
+                    Bonus interest capped at first $500k.
+                    <br />
+                    *Assumes Citigold level, Citi Private has a higher level.
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

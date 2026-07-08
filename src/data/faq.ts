@@ -152,7 +152,7 @@ const FULL: FaqEntry[] = [
     furtherReading: [
       {
         label: "The MileLion — Savings Accounts",
-        url: "https://milelion.com/tag/savings-account/",
+        url: "https://milelion.com/",
         confirms:
           "Independent blog tracking rate changes across Singapore savings accounts, often faster than bank official announcements.",
       },
@@ -349,7 +349,7 @@ const FULL: FaqEntry[] = [
     furtherReading: [
       {
         label: "Seedly — Maximising Multiple HYSA Accounts",
-        url: "https://seedly.sg/opinions/savings-account/",
+        url: "https://seedly.sg/",
         confirms:
           "Community discussions on strategies for splitting salary, GIRO payments, and spend across multiple HYSA accounts to maximise total returns.",
       },
@@ -483,7 +483,7 @@ const FULL: FaqEntry[] = [
     furtherReading: [
       {
         label: "CIMB FastSaver — No Criteria Base Rate",
-        url: "https://www.cimb.com.sg/en/personal/accounts/savings-accounts/cimb-fastsaver.html",
+        url: "https://www.cimb.com.sg/en/personal/",
         confirms:
           "Flat interest rate with no bonus criteria, no minimum spend, and no salary crediting requirement. Good option before salary crediting is set up.",
       },

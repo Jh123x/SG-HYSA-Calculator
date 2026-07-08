@@ -878,7 +878,7 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
                 >
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                    href="https://milelion.com/tag/savings-account/"
+                    href="https://milelion.com/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -1699,7 +1699,7 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
                 >
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                    href="https://seedly.sg/opinions/savings-account/"
+                    href="https://seedly.sg/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -2257,7 +2257,7 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
                 >
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                    href="https://www.cimb.com.sg/en/personal/accounts/savings-accounts/cimb-fastsaver.html"
+                    href="https://www.cimb.com.sg/en/personal/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -3742,7 +3742,7 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
             >
               <a
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                href="https://milelion.com/tag/savings-account/"
+                href="https://milelion.com/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -4563,7 +4563,7 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
             >
               <a
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                href="https://seedly.sg/opinions/savings-account/"
+                href="https://seedly.sg/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -5121,7 +5121,7 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
             >
               <a
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                href="https://www.cimb.com.sg/en/personal/accounts/savings-accounts/cimb-fastsaver.html"
+                href="https://www.cimb.com.sg/en/personal/"
                 rel="noopener noreferrer"
                 target="_blank"
               >

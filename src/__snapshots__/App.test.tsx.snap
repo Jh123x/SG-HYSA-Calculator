@@ -65,7 +65,7 @@ exports[`App > should render correctly 1`] = `
                 class="MuiBox-root css-dem63z"
               >
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-d6tznl-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-k90o8o-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
@@ -79,10 +79,10 @@ exports[`App > should render correctly 1`] = `
                     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
+                      aria-describedby="_r_3_-helper-text"
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-1fe3xww-MuiInputBase-input-MuiOutlinedInput-input"
                       id="_r_3_"
-                      placeholder="To be deposited at bank"
                       type="number"
                       value=""
                     />
@@ -99,9 +99,15 @@ exports[`App > should render correctly 1`] = `
                       </legend>
                     </fieldset>
                   </div>
+                  <p
+                    class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-xkbyl4-MuiFormHelperText-root"
+                    id="_r_3_-helper-text"
+                  >
+                    To be deposited at bank
+                  </p>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-d6tznl-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-k90o8o-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
@@ -115,10 +121,10 @@ exports[`App > should render correctly 1`] = `
                     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
+                      aria-describedby="_r_4_-helper-text"
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-1fe3xww-MuiInputBase-input-MuiOutlinedInput-input"
                       id="_r_4_"
-                      placeholder="Credited to bank monthly"
                       type="number"
                       value=""
                     />
@@ -135,9 +141,15 @@ exports[`App > should render correctly 1`] = `
                       </legend>
                     </fieldset>
                   </div>
+                  <p
+                    class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-xkbyl4-MuiFormHelperText-root"
+                    id="_r_4_-helper-text"
+                  >
+                    Credited to bank monthly
+                  </p>
                 </div>
                 <div
-                  class="MuiFormControl-root MuiTextField-root css-d6tznl-MuiFormControl-root-MuiTextField-root"
+                  class="MuiFormControl-root MuiTextField-root css-k90o8o-MuiFormControl-root-MuiTextField-root"
                 >
                   <label
                     class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1g6cdam-MuiFormLabel-root-MuiInputLabel-root"
@@ -151,10 +163,10 @@ exports[`App > should render correctly 1`] = `
                     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-n01x3l-MuiInputBase-root-MuiOutlinedInput-root"
                   >
                     <input
+                      aria-describedby="_r_5_-helper-text"
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-1fe3xww-MuiInputBase-input-MuiOutlinedInput-input"
                       id="_r_5_"
-                      placeholder="On eligible cards monthly"
                       type="number"
                       value=""
                     />
@@ -171,6 +183,12 @@ exports[`App > should render correctly 1`] = `
                       </legend>
                     </fieldset>
                   </div>
+                  <p
+                    class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-xkbyl4-MuiFormHelperText-root"
+                    id="_r_5_-helper-text"
+                  >
+                    On eligible cards monthly
+                  </p>
                 </div>
                 <button
                   class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-177q9xg-MuiButtonBase-root-MuiButton-root"

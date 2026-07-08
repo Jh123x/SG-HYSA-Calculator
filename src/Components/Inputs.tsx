@@ -365,17 +365,22 @@ const InputNumberField = ({
       type="number"
       variant="outlined"
       size="small"
-      placeholder={tooltip}
+      helperText={tooltip}
+      slotProps={{
+        formHelperText: {
+          sx: { fontSize: "0.7rem", mx: 0, mt: 0.25, color: mutedColor },
+        },
+      }}
       sx={{
         "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
           { display: "none" },
         "& input[type=number]": { MozAppearance: "textfield" },
-        width: { xs: "100%", sm: 140 },
+        width: { xs: "100%", sm: 155 },
         "& .MuiInputBase-root": {
           fontSize: "0.85rem",
         },
         "& .MuiInputLabel-root": {
-          fontSize: "0.8rem",
+          fontSize: "0.82rem",
         },
       }}
       onChange={handleChange}

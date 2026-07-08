@@ -6,7 +6,7 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
     class="MuiBox-root css-dem63z"
   >
     <div
-      class="MuiFormControl-root MuiTextField-root css-1osmeyw-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
@@ -20,10 +20,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
       >
         <input
+          aria-describedby="_r_1_-helper-text"
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
           id="_r_1_"
-          placeholder="To be deposited at bank"
           type="number"
           value=""
         />
@@ -40,9 +40,15 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           </legend>
         </fieldset>
       </div>
+      <p
+        class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-nn9my1-MuiFormHelperText-root"
+        id="_r_1_-helper-text"
+      >
+        To be deposited at bank
+      </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-1osmeyw-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
@@ -56,10 +62,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
       >
         <input
+          aria-describedby="_r_2_-helper-text"
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
           id="_r_2_"
-          placeholder="Credited to bank monthly"
           type="number"
           value=""
         />
@@ -76,9 +82,15 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           </legend>
         </fieldset>
       </div>
+      <p
+        class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-nn9my1-MuiFormHelperText-root"
+        id="_r_2_-helper-text"
+      >
+        Credited to bank monthly
+      </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-1osmeyw-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeSmall MuiInputLabel-outlined css-1kfabtt-MuiFormLabel-root-MuiInputLabel-root"
@@ -92,10 +104,10 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
       >
         <input
+          aria-describedby="_r_3_-helper-text"
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
           id="_r_3_"
-          placeholder="On eligible cards monthly"
           type="number"
           value=""
         />
@@ -112,6 +124,12 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
           </legend>
         </fieldset>
       </div>
+      <p
+        class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-nn9my1-MuiFormHelperText-root"
+        id="_r_3_-helper-text"
+      >
+        On eligible cards monthly
+      </p>
     </div>
     <button
       class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-l40zzh-MuiButtonBase-root-MuiButton-root"
@@ -209,7 +227,7 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
     class="MuiBox-root css-dem63z"
   >
     <div
-      class="MuiFormControl-root MuiTextField-root css-1osmeyw-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
@@ -223,10 +241,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
       >
         <input
+          aria-describedby="_r_8_-helper-text"
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
           id="_r_8_"
-          placeholder="To be deposited at bank"
           type="number"
           value="100000"
         />
@@ -243,9 +261,15 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           </legend>
         </fieldset>
       </div>
+      <p
+        class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained MuiFormHelperText-filled css-nn9my1-MuiFormHelperText-root"
+        id="_r_8_-helper-text"
+      >
+        To be deposited at bank
+      </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-1osmeyw-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
@@ -259,10 +283,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
       >
         <input
+          aria-describedby="_r_9_-helper-text"
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
           id="_r_9_"
-          placeholder="Credited to bank monthly"
           type="number"
           value="3000"
         />
@@ -279,9 +303,15 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           </legend>
         </fieldset>
       </div>
+      <p
+        class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained MuiFormHelperText-filled css-nn9my1-MuiFormHelperText-root"
+        id="_r_9_-helper-text"
+      >
+        Credited to bank monthly
+      </p>
     </div>
     <div
-      class="MuiFormControl-root MuiTextField-root css-1osmeyw-MuiFormControl-root-MuiTextField-root"
+      class="MuiFormControl-root MuiTextField-root css-1nxahse-MuiFormControl-root-MuiTextField-root"
     >
       <label
         class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined css-hvjq6j-MuiFormLabel-root-MuiInputLabel-root"
@@ -295,10 +325,10 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
       >
         <input
+          aria-describedby="_r_a_-helper-text"
           aria-invalid="false"
           class="MuiInputBase-input MuiOutlinedInput-input css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
           id="_r_a_"
-          placeholder="On eligible cards monthly"
           type="number"
           value="1000"
         />
@@ -315,6 +345,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
           </legend>
         </fieldset>
       </div>
+      <p
+        class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained MuiFormHelperText-filled css-nn9my1-MuiFormHelperText-root"
+        id="_r_a_-helper-text"
+      >
+        On eligible cards monthly
+      </p>
     </div>
     <button
       class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-l40zzh-MuiButtonBase-root-MuiButton-root"

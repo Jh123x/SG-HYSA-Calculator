@@ -86,48 +86,6 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
       >
         Rate Comparison
       </Typography>
-      {/* Sort controls */}
-      <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
-        <SortIcon sx={{ color: textColor, fontSize: 20 }} />
-        <FormControl size="small" sx={{ minWidth: 140 }}>
-          <Select
-            value={orderBy}
-            onChange={(e) => {
-              const val = e.target.value;
-              if (val === "name" || val === "yearlyInterest" || val === "effectiveInterest") {
-                setOrderBy(val);
-              }
-            }}
-            sx={{
-              color: textColor,
-              backgroundColor: bgColor,
-              fontSize: "0.85rem",
-              "& .MuiOutlinedInput-notchedOutline": { borderColor: `${textColor}40` },
-              "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: accentGreen },
-              "& .MuiSvgIcon-root": { color: textColor },
-            }}
-          >
-            {SORT_OPTIONS.map((opt) => (
-              <MenuItem key={opt.value} value={opt.value} sx={{ color: textColor }}>
-                {opt.label}
-              </MenuItem>
-            ))}
-          </Select>
-        </FormControl>
-        <ToggleButtonGroup
-          value={order}
-          exclusive
-          size="small"
-          onChange={(_, v) => v && setOrder(v)}
-        >
-          <ToggleButton value="asc" aria-label="Sort ascending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { opacity: 0.85 } }}>
-            <ArrowUpwardIcon fontSize="small" sx={{ mr: 0.5 }} />Asc
-          </ToggleButton>
-          <ToggleButton value="desc" aria-label="Sort descending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { opacity: 0.85 } }}>
-            <ArrowDownwardIcon fontSize="small" sx={{ mr: 0.5 }} />Desc
-          </ToggleButton>
-        </ToggleButtonGroup>
-      </Box>
       <ThreePanelLayout
         aria-label="Current interest rates comparison"
         bottomLeft={
@@ -139,27 +97,74 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
           </Box>
         }
         bottomRight={
-          <Box
-            sx={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
-              gap: 2,
-              alignContent: "start",
-            }}
-          >
-            {sortedResults.map(([slug, interest]) => (
-              <div key={slug}>
-                <BankWidgetCard
-                  slug={slug}
-                  name={bankInfo[slug]?.name ?? slug}
-                  eir={interest.interest.toYearlyPercent() ?? 0}
-                  yearlyInterest={interest.interest.toYearly() ?? 0}
-                  remarks={bankInfo[slug]?.remarks}
-                  url={interest.url}
-                  onClick={() => navigate(`/bank/${slug}`)}
-                />
-              </div>
-            ))}
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5, height: "100%" }}>
+            {/* Sort controls — inside cards panel */}
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, flexShrink: 0 }}>
+              <SortIcon sx={{ color: textColor, fontSize: 20 }} />
+              <FormControl size="small" sx={{ minWidth: 140 }}>
+                <Select
+                  value={orderBy}
+                  onChange={(e) => {
+                    const val = e.target.value;
+                    if (val === "name" || val === "yearlyInterest" || val === "effectiveInterest") {
+                      setOrderBy(val);
+                    }
+                  }}
+                  sx={{
+                    color: textColor,
+                    backgroundColor: bgColor,
+                    fontSize: "0.85rem",
+                    "& .MuiOutlinedInput-notchedOutline": { borderColor: `${textColor}40` },
+                    "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: accentGreen },
+                    "& .MuiSvgIcon-root": { color: textColor },
+                  }}
+                >
+                  {SORT_OPTIONS.map((opt) => (
+                    <MenuItem key={opt.value} value={opt.value} sx={{ color: textColor }}>
+                      {opt.label}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+              <ToggleButtonGroup
+                value={order}
+                exclusive
+                size="small"
+                onChange={(_, v) => v && setOrder(v)}
+              >
+                <ToggleButton value="asc" aria-label="Sort ascending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { opacity: 0.85 } }}>
+                  <ArrowUpwardIcon fontSize="small" sx={{ mr: 0.5 }} />Asc
+                </ToggleButton>
+                <ToggleButton value="desc" aria-label="Sort descending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { opacity: 0.85 } }}>
+                  <ArrowDownwardIcon fontSize="small" sx={{ mr: 0.5 }} />Desc
+                </ToggleButton>
+              </ToggleButtonGroup>
+            </Box>
+            {/* Cards grid */}
+            <Box
+              sx={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
+                gap: 2,
+                alignContent: "start",
+                flex: 1,
+                overflow: "auto",
+              }}
+            >
+              {sortedResults.map(([slug, interest]) => (
+                <div key={slug}>
+                  <BankWidgetCard
+                    slug={slug}
+                    name={bankInfo[slug]?.name ?? slug}
+                    eir={interest.interest.toYearlyPercent() ?? 0}
+                    yearlyInterest={interest.interest.toYearly() ?? 0}
+                    remarks={bankInfo[slug]?.remarks}
+                    url={interest.url}
+                    onClick={() => navigate(`/bank/${slug}`)}
+                  />
+                </div>
+              ))}
+            </Box>
           </Box>
         }
       />
