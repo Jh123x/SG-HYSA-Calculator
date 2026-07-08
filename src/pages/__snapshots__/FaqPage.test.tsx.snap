@@ -878,11 +878,11 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
                 >
                   <a
                     class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                    href="https://milelion.com/tag/savings/"
+                    href="https://seedly.sg/reviews/savings-accounts/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
-                    The MileLion — Savings Accounts
+                    Seedly — Best Savings Accounts Singapore
                     <svg
                       aria-hidden="true"
                       class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-2e2mzl-MuiSvgIcon-root"
@@ -898,7 +898,7 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
                   <span
                     class="MuiTypography-root MuiTypography-caption css-1i2a26z-MuiTypography-root"
                   >
-                    — Independent blog tracking rate changes across Singapore savings accounts, often faster than bank official announcements.
+                    — Community-driven comparison of Singapore savings accounts with updated rates, reviews, and real user discussion.
                   </span>
                 </li>
               </ul>
@@ -3742,11 +3742,11 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
             >
               <a
                 class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1ufg7rf-MuiTypography-root-MuiLink-root"
-                href="https://milelion.com/tag/savings/"
+                href="https://seedly.sg/reviews/savings-accounts/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                The MileLion — Savings Accounts
+                Seedly — Best Savings Accounts Singapore
                 <svg
                   aria-hidden="true"
                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-2e2mzl-MuiSvgIcon-root"
@@ -3762,7 +3762,7 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
               <span
                 class="MuiTypography-root MuiTypography-caption css-1i2a26z-MuiTypography-root"
               >
-                — Independent blog tracking rate changes across Singapore savings accounts, often faster than bank official announcements.
+                — Community-driven comparison of Singapore savings accounts with updated rates, reviews, and real user discussion.
               </span>
             </li>
           </ul>

@@ -71,3 +71,116 @@ export const bocSuperSaverHistory: RateSnapshot[] = [
     changeSummary: "Further reduced: 1%→0.5%, 1.2%→0.8%, 1.6%→1%, base 0.8%→0.5%",
   },
 ];
+
+// ── BOC SmartSaver ────────────────────────────────────────────────────
+
+const getBaseInterest = (savings: number): number => {
+  if (savings < 5_000) return 0.15;
+  if (savings < 20_000) return 0.2;
+  if (savings < 100_000) return 0.3;
+  return 0.4;
+};
+
+export const bank_of_china_smart_saver_08_2025 = (
+  profile: Profile,
+): ResultInterest => {
+  const { Savings, Insurance, Spending, Salary, GiroTransactions } = profile;
+  if (Savings < 1_500) return new ResultInterest(0, Savings);
+
+  const baseInterest = getBaseInterest(Savings);
+  let hasExtraSavingsInterest = false;
+  let interest = baseInterest;
+
+  if (Insurance > 150_000) interest += 2.75;
+
+  if (Spending >= 750) interest += 0.75;
+
+  if (Spending > 2_500) {
+    interest += 0.5;
+    hasExtraSavingsInterest = true;
+  }
+
+  if (Salary >= 2_000) {
+    interest += 1.5;
+    hasExtraSavingsInterest = true;
+  }
+
+  if (Spending >= 90 && GiroTransactions >= 3) {
+    interest += 0.1;
+    hasExtraSavingsInterest = true;
+  }
+
+  return calculate_ir(Savings, {
+    cutoffs: [
+      { Cutoff: 100_000, InterestRatePercent: interest },
+      {
+        Cutoff: 1_000_000,
+        InterestRatePercent: hasExtraSavingsInterest
+          ? baseInterest + 0.6
+          : baseInterest,
+      },
+    ],
+    baseRatePercent: baseInterest,
+  });
+};
+
+export const bank_of_china_smart_saver_11_2025 = (
+  profile: Profile,
+): ResultInterest => {
+  const { Savings, Insurance, Spending, Salary, GiroTransactions } = profile;
+  if (Savings < 1_500) return new ResultInterest(0, Savings);
+
+  const baseInterest = getBaseInterest(Savings);
+  let hasExtraSavingsInterest = false;
+  let interest = baseInterest;
+
+  if (Insurance > 150_000) interest += 2.75;
+
+  if (Spending >= 750) interest += 0.75;
+
+  if (Spending > 2_500) {
+    interest += 0.5;
+    hasExtraSavingsInterest = true;
+  }
+
+  if (Salary >= 3_000) {
+    interest += 1.5;
+    hasExtraSavingsInterest = true;
+  }
+
+  if (Spending >= 90 && GiroTransactions >= 3) {
+    interest += 0.1;
+    hasExtraSavingsInterest = true;
+  }
+
+  return calculate_ir(Savings, {
+    cutoffs: [
+      { Cutoff: 100_000, InterestRatePercent: interest },
+      {
+        Cutoff: 1_000_000,
+        InterestRatePercent: hasExtraSavingsInterest
+          ? baseInterest + 0.6
+          : baseInterest,
+      },
+    ],
+    baseRatePercent: baseInterest,
+  });
+};
+
+export const bocSmartSaverHistory: RateSnapshot[] = [
+  {
+    effectiveDate: "2025-08-01",
+    interestFn: bank_of_china_smart_saver_08_2025,
+    sourceUrl:
+      "https://sethisfy.com/boc-smartsaver-dropping-interest-by-0-70-p-a-1st-august-2025/",
+    changeSummary:
+      "Salary $2K +1.5%, Insurance $150K +2.75%, Spend $750 +0.75%, Spend $2.5K +0.5%, Giro 3×$90 +0.1%",
+  },
+  {
+    effectiveDate: "2025-11-01",
+    interestFn: bank_of_china_smart_saver_11_2025,
+    sourceUrl:
+      "https://sethisfy.com/boc-smartsaver-getting-up-to-4-60-p-a-with-this-savings-account/",
+    changeSummary: "Salary threshold raised: $2K→$3K",
+  },
+];

@@ -30,8 +30,8 @@ import {
   trustBankFlexHistory,
 } from "../logic/trust_bank";
 import { maribankHistory } from "../logic/maribank";
-import { deriveCurrentFromHistory } from "../logic/history";
-import { bocSuperSaverHistory } from "../logic/bank_of_china";
+import { deriveCurrentFromHistory, deriveFactors } from "../logic/history";
+import { bocSuperSaverHistory, bocSmartSaverHistory } from "../logic/bank_of_china";
 import { chocoFinanceHistory } from "../logic/choco_finance";
 
 // Pre-compute Mari current rate so remarks are self-contained
@@ -53,7 +53,7 @@ export interface BankData {
   remarks: string;
   /** Chronologically sorted rate snapshots (oldest first) */
   history: RateSnapshot[];
-  /** Profile factors that affect this bank's interest rate */
+  /** Profile factors that affect this bank's interest rate (auto-derived) */
   factors?: string[];
 }
 
@@ -65,49 +65,43 @@ export const banks: Record<string, BankData> = {
     url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     remarks: "Visit their official website to find out more",
     history: uobHistory,
-    factors: ["Savings", "Spending", "Salary", "GIRO Transactions"],
   },
   "ocbc-360-account": {
     name: "OCBC 360",
     url: "https://www.ocbc.com/personal-banking/notices",
     remarks: "Visit the official website to find out more",
     history: ocbcHistory,
-    factors: ["Savings", "Salary", "Spending", "Account Increment", "Investment", "Insurance"],
   },
   "mari-savings-account": {
     name: "Mari Savings",
     url: "https://www.maribank.sg/product/mari-savings-account/",
     remarks: `Interest rates are a flat ${_mariCurrentRate}%\nCapped at $100k\nReferral code: **4QTP99MT**`,
     history: maribankHistory,
-    factors: ["Savings"],
   },
   "standard-chartered-bonus-saver": {
     name: "Standard Chartered Bonus$aver",
     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
     remarks: "Insurance and Investment only\nfulfils interest for 6 months",
     history: standChartHistory,
-    factors: ["Savings", "Spending", "Salary", "Investment", "Insurance", "GIRO Transactions"],
   },
   "trust-bank-signature": {
     name: "Trust Bank (Signature)",
     url: "https://trustbank.sg/savings-account/",
     remarks: "Spending assumes 5 x $30 if spending is more than 150.",
     history: trustBankSignatureHistory,
-    factors: ["Savings", "Spending", "Age"],
   },
   "trust-bank-zen": {
     name: "Trust Bank (Zen)",
     url: "https://trustbank.sg/savings-account/",
     remarks: "A Flat 0.4% interest rate up to 1.2 million",
     history: trustBankZenHistory,
-    factors: ["Savings"],
   },
   "trust-bank-flex": {
     name: "Trust Bank (Flex)",
     url: "https://trustbank.sg/trust-plus/",
-    remarks: "Flex Plan: picks top 3 qualifying bonus scoops.\nScoops: salary $1.5K (+0.45%), 5×$30 spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%).\n**Trust+ required (min S$100K).**",
+    remarks:
+      "Flex Plan: picks top 3 qualifying bonus scoops.\nScoops: salary $1.5K (+0.45%), 5×$30 spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%).\n**Trust+ required (min S$100K).**",
     history: trustBankFlexHistory,
-    factors: ["Savings", "Salary", "Spending", "Account Increment", "Investment", "PayNow Received", "FX Spend", "Referred Customer?"],
   },
   "dbs-multiplier-account": {
     name: "DBS Multiplier",
@@ -115,7 +109,6 @@ export const banks: Record<string, BankData> = {
     remarks:
       "Not eligible if you are younger than 18.\nSpending includes credit card / paylah retail spend",
     history: dbsMultiplierHistory,
-    factors: ["Savings", "Salary", "Spending", "Loan Installment", "Insurance", "Investment"],
   },
   "gxs-savings-account": {
     name: "GXS Savings",
@@ -123,7 +116,6 @@ export const banks: Record<string, BankData> = {
     remarks:
       "Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets\n**Note: The max amount deposited depends on individual (up to $95,000)**\nView other [Notices here](https://www.gxs.com.sg/notices)",
     history: gxsHistory,
-    factors: ["Savings"],
   },
   "chocolate-finance": {
     name: "Chocolate Finance",
@@ -131,7 +123,6 @@ export const banks: Record<string, BankData> = {
     remarks:
       "1st 20k 2% p.a, next 80k 1.8% p.a.\nAmounts above 100k are invested and will not be counted here.\n**Note: This is not a bank**\n[Referral link](https://share.chocolate.app/nxW9/l0tqqxem)",
     history: chocoFinanceHistory,
-    factors: ["Savings"],
   },
   "boc-supersaver": {
     name: "BOC SuperSaver",
@@ -139,7 +130,13 @@ export const banks: Record<string, BankData> = {
     remarks:
       "This account is valid from 2024-08-01 onwards.\n**Note: You have to link your paynow to this account to qualify for the sale.**",
     history: bocSuperSaverHistory,
-    factors: ["Savings"],
+  },
+  "boc-smartsaver": {
+    name: "BOC SmartSaver",
+    url: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
+    remarks:
+      "Salary $3K +1.5%, Insurance $150K +2.75%, Spend $750 +0.75%, Spend $2.5K +0.5%, Giro 3×$90 +0.1%",
+    history: bocSmartSaverHistory,
   },
   "maybank-saveup": {
     name: "Maybank SaveUp",
@@ -147,7 +144,6 @@ export const banks: Record<string, BankData> = {
     remarks:
       "Flat tiered rates: 0.1875% (first $3K), 0.25% (next $47K), 0.3125% (above $50K).\nNo more category-based bonus system.",
     history: maybankSaveUpHistory,
-    factors: ["Savings"],
   },
   "maybank-isavvy": {
     name: "Maybank iSAVvy",
@@ -155,7 +151,6 @@ export const banks: Record<string, BankData> = {
     remarks:
       "Flat tiered rates (non-additive): 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).\nRates effective from 11 June 2026.",
     history: maybankIsavvyHistory,
-    factors: ["Savings"],
   },
   "maybank-isavvy-plus": {
     name: "Maybank iSAVvy Plus",
@@ -163,7 +158,6 @@ export const banks: Record<string, BankData> = {
     remarks:
       "Flat tiered base rates: 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).\n+1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.\n**Set 'Account Increment' > 0 to qualify for the bonus.**",
     history: maybankIsavvyPlusHistory,
-    factors: ["Savings", "Account Increment"],
   },
   "citi-wealth-first-account": {
     name: "Citi Wealth First",
@@ -171,10 +165,13 @@ export const banks: Record<string, BankData> = {
     remarks:
       "Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)\nBonus interest capped at first $500k.\n*Assumes Citigold level, Citi Private has a higher level.",
     history: citiHistory,
-    factors: ["Savings"],
   },
 };
 
+// Auto-derive factors for every bank from its interest function
+for (const bank of Object.values(banks)) {
+  bank.factors = deriveFactors(bank.history);
+}
+
 /** All bank slugs in registry order. */
 export const BANK_SLUGS = Object.keys(banks);
-
