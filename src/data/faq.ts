@@ -151,10 +151,10 @@ const FULL: FaqEntry[] = [
     ],
     furtherReading: [
       {
-        label: "Seedly — Best Savings Accounts Singapore",
-        url: "https://seedly.sg/reviews/savings-accounts/",
+        label: "OCBC 360 — Rate Change Notices",
+        url: "https://www.ocbc.com/personal-banking/notices",
         confirms:
-          "Community-driven comparison of Singapore savings accounts with updated rates, reviews, and real user discussion.",
+          "Official OCBC notice archive showing every deposit rate revision for the 360 account over time — a real example of how often one bank adjusts rates.",
       },
     ],
   },
