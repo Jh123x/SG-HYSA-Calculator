@@ -3131,7 +3131,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
     class="MuiBox-root css-0"
   >
     <h2
-      class="MuiTypography-root MuiTypography-h5 css-qpthr6-MuiTypography-root"
+      class="MuiTypography-root MuiTypography-h5 css-w59aow-MuiTypography-root"
     >
       Rate Comparison
     </h2>
@@ -4605,7 +4605,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       </span>
     </div>
     <div
-      class="MuiBox-root css-5c4gil"
+      class="MuiBox-root css-1amc7ct"
     >
       <svg
         aria-hidden="true"
@@ -4718,7 +4718,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       </div>
     </div>
     <div
-      class="MuiBox-root css-1821gv5"
+      class="MuiBox-root css-yd8sa2"
     >
       <div>
         <div

@@ -188,7 +188,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
       <Typography
         component="h2"
         variant="h5"
-        sx={{ color: textColor, fontWeight: 600, mb: 1, fontSize: { xs: "1rem", sm: "1.1rem" } }}
+        sx={{ color: textColor, fontWeight: 600, mb: 2, fontSize: { xs: "1rem", sm: "1.1rem" } }}
       >
         Rate Comparison
       </Typography>
@@ -199,7 +199,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
       />
 
       {/* Sort bar: dropdown + asc/desc toggle */}
-      <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
         <SortIcon sx={{ color: textColor, fontSize: 20 }} />
         <FormControl size="small" sx={{ minWidth: 140 }}>
           <Select
@@ -243,7 +243,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
 
       {/* Cards — stacked */}
       <Box
-        sx={{ display: "flex", flexDirection: "column", gap: 1 }}
+        sx={{ display: "flex", flexDirection: "column", gap: 2 }}
       >
         {mobileSorted.map(([slug, interest]) => (
           <div key={slug}>

@@ -135,7 +135,7 @@ const TabbedContentMobile = ({ ctx }: { ctx: LayoutContext }) => {
   const activeTab = location.pathname === "/history" ? "history" : "current";
 
   return (
-    <Box component="section" aria-label="Savings calculator" sx={{ pt: 1 }}>
+    <Box component="section" aria-label="Savings calculator" sx={{ pt: 2.5 }}>
       {/* Inputs — natural flow */}
       <ErrorBoundary>
         <FormInputs
