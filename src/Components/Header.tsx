@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Typography } from "@mui/material";
 import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
-import { primaryColor, mutedColor, borderColor } from "../consts/theme";
+import { primaryColor, mutedColor, borderColor, textColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 
 /**
@@ -44,7 +44,7 @@ export const Header = () => {
             sx={{
               fontWeight: 600,
               fontSize: "0.9rem",
-              color: "inherit",
+              color: textColor,
             }}
           >
             HYSA Calculator

@@ -20,7 +20,7 @@ exports[`Header > should match snapshot 1`] = `
         />
       </svg>
       <p
-        class="MuiTypography-root MuiTypography-body1 css-19zw9iw-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 css-1xhhli5-MuiTypography-root"
       >
         HYSA Calculator
       </p>

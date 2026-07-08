@@ -23,7 +23,7 @@ exports[`App > should render correctly 1`] = `
           />
         </svg>
         <p
-          class="MuiTypography-root MuiTypography-body1 css-bf9dw9-MuiTypography-root"
+          class="MuiTypography-root MuiTypography-body1 css-dijeab-MuiTypography-root"
         >
           HYSA Calculator
         </p>
