@@ -1071,7 +1071,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                             <path
                               class="MuiLineChart-line"
                               cursor="unset"
-                              d="M85,235C84.583,234.463,84.167,233.925,83.75,232.85C83.333,231.775,82.917,229.804,82.5,228.55C82.083,227.296,81.667,226.4,81.25,225.325C80.833,224.25,80.417,223.175,80,222.1C79.583,221.025,79.167,219.95,78.75,218.875C78.333,217.8,77.917,216.725,77.5,215.65C77.083,214.575,76.667,213.5,76.25,212.425C75.833,211.35,75.417,210.275,75,209.2C74.583,208.125,74.167,208.125,73.75,205.975C73.333,203.825,72.917,194.867,72.5,192C72.083,189.133,71.667,189.133,71.25,187.7C70.833,186.267,70.417,184.833,70,183.4C69.583,181.967,69.167,180.533,68.75,179.1C68.333,177.667,67.917,176.233,67.5,174.8C67.083,173.367,66.667,171.933,66.25,170.5C65.833,169.067,65.417,167.633,65,166.2C64.583,164.767,64.167,163.333,63.75,161.9C63.333,160.467,62.917,159.033,62.5,157.6C62.083,156.167,61.667,154.733,61.25,153.3C60.833,151.867,60.417,150.433,60,149"
+                              d="M85,235C84.583,234.642,84.167,234.283,83.75,233.925C83.333,233.567,82.917,233.208,82.5,232.85C82.083,232.492,81.667,232.133,81.25,231.775C80.833,231.417,80.417,231.058,80,230.7C79.583,230.342,79.167,229.983,78.75,229.625C78.333,229.267,77.917,228.908,77.5,228.55C77.083,228.192,76.667,227.833,76.25,227.475C75.833,227.117,75.417,226.758,75,226.4C74.583,226.042,74.167,225.683,73.75,225.325C73.333,224.967,72.917,224.608,72.5,224.25C72.083,223.892,71.667,223.533,71.25,223.175C70.833,222.817,70.417,222.458,70,222.1C69.583,221.742,69.167,221.383,68.75,221.025C68.333,220.667,67.917,220.308,67.5,219.95C67.083,219.592,66.667,219.233,66.25,218.875C65.833,218.517,65.417,218.158,65,217.8C64.583,217.442,64.167,217.083,63.75,216.725C63.333,216.367,62.917,216.008,62.5,215.65C62.083,215.292,61.667,214.933,61.25,214.575C60.833,214.217,60.417,213.858,60,213.5"
                               data-series="boc-smartsaver"
                               data-series-id="boc-smartsaver"
                               fill="none"
@@ -2292,96 +2292,6 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
             </div>
             <div>
               <div
-                aria-label="BOC SmartSaver — 0.30% EIR"
-                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-                role="button"
-                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-                tabindex="0"
-              >
-                <p
-                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-                >
-                  BOC SmartSaver
-                </p>
-                <h2
-                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-                >
-                  0.30%
-                </h2>
-                <span
-                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-                >
-                  Effective Rate
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-                >
-                  $150.00
-                </p>
-                <span
-                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-                >
-                  Yearly Interest
-                </span>
-                <p
-                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-                >
-                  <span
-                    aria-label="Salary $3K +1.5%, Insurance $150K +2.75%, Spend $750 +0.75%, Spend $2.5K +0.5%, Giro 3×$90 +0.1%"
-                    class=""
-                    data-mui-internal-clone-element="true"
-                  >
-                    Salary $3K +1.5%, Insurance $150K +2.75%, Spend $7…
-                  </span>
-                </p>
-                <div
-                  class="MuiBox-root css-1o4203c"
-                >
-                  <button
-                    aria-label="View details"
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                    data-mui-internal-clone-element="true"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                      data-testid="OpenInNewIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                      />
-                    </svg>
-                  </button>
-                  <a
-                    aria-label="Visit official website"
-                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-                    data-mui-internal-clone-element="true"
-                    href="https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html"
-                    rel="noopener noreferrer"
-                    tabindex="0"
-                    target="_blank"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                      data-testid="LanguageIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div
                 aria-label="Maybank SaveUp — 0.25% EIR"
                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
                 role="button"
@@ -2453,6 +2363,96 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                     class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
                     data-mui-internal-clone-element="true"
                     href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="LanguageIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                aria-label="BOC SmartSaver — 0.10% EIR"
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+                role="button"
+                style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+                tabindex="0"
+              >
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
+                >
+                  BOC SmartSaver
+                </p>
+                <h2
+                  class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
+                >
+                  0.10%
+                </h2>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Effective Rate
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+                >
+                  $50.00
+                </p>
+                <span
+                  class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+                >
+                  Yearly Interest
+                </span>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+                >
+                  <span
+                    aria-label="Prevailing 0.10%, Card S$750 +0.60% / S$2.5K +0.90%, Salary S$3K +0.50%, 3×Bill +0.10%, Insurance +3.00%. Max 1.60% on S$100K (4.60% with insurance)."
+                    class=""
+                    data-mui-internal-clone-element="true"
+                  >
+                    Prevailing 0.10%, Card S$750 +0.60% / S$2.5K +0.90…
+                  </span>
+                </p>
+                <div
+                  class="MuiBox-root css-1o4203c"
+                >
+                  <button
+                    aria-label="View details"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                      data-testid="OpenInNewIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                      />
+                    </svg>
+                  </button>
+                  <a
+                    aria-label="Visit official website"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    href="https://sethisfy.com/boc-smartsaver-getting-up-to-4-60-p-a-with-this-savings-account/"
                     rel="noopener noreferrer"
                     tabindex="0"
                     target="_blank"
@@ -4187,7 +4187,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                       <path
                         class="MuiLineChart-line"
                         cursor="unset"
-                        d="M85,275C84.917,274.363,84.833,273.725,84.75,272.45C84.667,271.175,84.583,268.838,84.5,267.35C84.417,265.863,84.333,264.8,84.25,263.525C84.167,262.25,84.083,260.975,84,259.7C83.917,258.425,83.833,257.15,83.75,255.875C83.667,254.6,83.583,253.325,83.5,252.05C83.417,250.775,83.333,249.5,83.25,248.225C83.167,246.95,83.083,245.675,83,244.4C82.917,243.125,82.833,243.125,82.75,240.575C82.667,238.025,82.583,227.4,82.5,224C82.417,220.6,82.333,220.6,82.25,218.9C82.167,217.2,82.083,215.5,82,213.8C81.917,212.1,81.833,210.4,81.75,208.7C81.667,207,81.583,205.3,81.5,203.6C81.417,201.9,81.333,200.2,81.25,198.5C81.167,196.8,81.083,195.1,81,193.4C80.917,191.7,80.833,190,80.75,188.3C80.667,186.6,80.583,184.9,80.5,183.2C80.417,181.5,80.333,179.8,80.25,178.1C80.167,176.4,80.083,174.7,80,173"
+                        d="M85,275C84.917,274.575,84.833,274.15,84.75,273.725C84.667,273.3,84.583,272.875,84.5,272.45C84.417,272.025,84.333,271.6,84.25,271.175C84.167,270.75,84.083,270.325,84,269.9C83.917,269.475,83.833,269.05,83.75,268.625C83.667,268.2,83.583,267.775,83.5,267.35C83.417,266.925,83.333,266.5,83.25,266.075C83.167,265.65,83.083,265.225,83,264.8C82.917,264.375,82.833,263.95,82.75,263.525C82.667,263.1,82.583,262.675,82.5,262.25C82.417,261.825,82.333,261.4,82.25,260.975C82.167,260.55,82.083,260.125,82,259.7C81.917,259.275,81.833,258.85,81.75,258.425C81.667,258,81.583,257.575,81.5,257.15C81.417,256.725,81.333,256.3,81.25,255.875C81.167,255.45,81.083,255.025,81,254.6C80.917,254.175,80.833,253.75,80.75,253.325C80.667,252.9,80.583,252.475,80.5,252.05C80.417,251.625,80.333,251.2,80.25,250.775C80.167,250.35,80.083,249.925,80,249.5"
                         data-series="boc-smartsaver"
                         data-series-id="boc-smartsaver"
                         fill="none"
@@ -5400,96 +5400,6 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       </div>
       <div>
         <div
-          aria-label="BOC SmartSaver — 0.30% EIR"
-          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
-          role="button"
-          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
-          tabindex="0"
-        >
-          <p
-            class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
-          >
-            BOC SmartSaver
-          </p>
-          <h2
-            class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
-          >
-            0.30%
-          </h2>
-          <span
-            class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-          >
-            Effective Rate
-          </span>
-          <p
-            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
-          >
-            $150.00
-          </p>
-          <span
-            class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
-          >
-            Yearly Interest
-          </span>
-          <p
-            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
-          >
-            <span
-              aria-label="Salary $3K +1.5%, Insurance $150K +2.75%, Spend $750 +0.75%, Spend $2.5K +0.5%, Giro 3×$90 +0.1%"
-              class=""
-              data-mui-internal-clone-element="true"
-            >
-              Salary $3K +1.5%, Insurance $150K +2.75%, Spend $7…
-            </span>
-          </p>
-          <div
-            class="MuiBox-root css-1o4203c"
-          >
-            <button
-              aria-label="View details"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-              data-mui-internal-clone-element="true"
-              tabindex="0"
-              type="button"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                data-testid="OpenInNewIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
-                />
-              </svg>
-            </button>
-            <a
-              aria-label="Visit official website"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
-              data-mui-internal-clone-element="true"
-              href="https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html"
-              rel="noopener noreferrer"
-              tabindex="0"
-              target="_blank"
-            >
-              <svg
-                aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
-                data-testid="LanguageIcon"
-                focusable="false"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div
           aria-label="Maybank SaveUp — 0.25% EIR"
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
           role="button"
@@ -5561,6 +5471,96 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
               class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
               data-mui-internal-clone-element="true"
               href="https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp"
+              rel="noopener noreferrer"
+              tabindex="0"
+              target="_blank"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                data-testid="LanguageIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          aria-label="BOC SmartSaver — 0.10% EIR"
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-ic2hvt-MuiPaper-root"
+          role="button"
+          style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+          tabindex="0"
+        >
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-1pb969t-MuiTypography-root"
+          >
+            BOC SmartSaver
+          </p>
+          <h2
+            class="MuiTypography-root MuiTypography-h2 css-ch2bac-MuiTypography-root"
+          >
+            0.10%
+          </h2>
+          <span
+            class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+          >
+            Effective Rate
+          </span>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-1sa0aop-MuiTypography-root"
+          >
+            $50.00
+          </p>
+          <span
+            class="MuiTypography-root MuiTypography-caption css-8wnqt7-MuiTypography-root"
+          >
+            Yearly Interest
+          </span>
+          <p
+            class="MuiTypography-root MuiTypography-body2 css-1v1lhv3-MuiTypography-root"
+          >
+            <span
+              aria-label="Prevailing 0.10%, Card S$750 +0.60% / S$2.5K +0.90%, Salary S$3K +0.50%, 3×Bill +0.10%, Insurance +3.00%. Max 1.60% on S$100K (4.60% with insurance)."
+              class=""
+              data-mui-internal-clone-element="true"
+            >
+              Prevailing 0.10%, Card S$750 +0.60% / S$2.5K +0.90…
+            </span>
+          </p>
+          <div
+            class="MuiBox-root css-1o4203c"
+          >
+            <button
+              aria-label="View details"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+              data-mui-internal-clone-element="true"
+              tabindex="0"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-120dh41-MuiSvgIcon-root"
+                data-testid="OpenInNewIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3z"
+                />
+              </svg>
+            </button>
+            <a
+              aria-label="Visit official website"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1xg2ooq-MuiButtonBase-root-MuiIconButton-root"
+              data-mui-internal-clone-element="true"
+              href="https://sethisfy.com/boc-smartsaver-getting-up-to-4-60-p-a-with-this-savings-account/"
               rel="noopener noreferrer"
               tabindex="0"
               target="_blank"

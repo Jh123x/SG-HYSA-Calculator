@@ -133,9 +133,9 @@ export const banks: Record<string, BankData> = {
   },
   "boc-smartsaver": {
     name: "BOC SmartSaver",
-    url: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
+    url: "https://sethisfy.com/boc-smartsaver-getting-up-to-4-60-p-a-with-this-savings-account/",
     remarks:
-      "Salary $3K +1.5%, Insurance $150K +2.75%, Spend $750 +0.75%, Spend $2.5K +0.5%, Giro 3×$90 +0.1%",
+      "Prevailing 0.10%, Card S$750 +0.60% / S$2.5K +0.90%, Salary S$3K +0.50%, 3×Bill +0.10%, Insurance +3.00%. Max 1.60% on S$100K (4.60% with insurance).",
     history: bocSmartSaverHistory,
   },
   "maybank-saveup": {
