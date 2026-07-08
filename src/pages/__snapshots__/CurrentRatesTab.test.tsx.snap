@@ -1397,11 +1397,11 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               class="MuiTypography-root MuiTypography-caption css-71rnec-MuiTypography-root"
             >
               <span>
-                * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+                * This graph shows interest rates for savings from S$0 to S$200,000, covering the typical savings account balance range.
                 <br />
               </span>
               <span>
-                ** Interest rates on their respective websites are subject to change without notice.
+                ** Interest rates on the respective bank websites are subject to change without notice.
                 <br />
               </span>
               <span>
@@ -1765,9 +1765,9 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-7t2r29-MuiTableCell-root"
                   >
-                    Insurance and Investment only
+                    Insurance and Investment categories
                     <br />
-                    fulfils interest for 6 months
+                    each qualify for bonus interest for only 6 months
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-bcc6o7-MuiTableCell-root"
@@ -1839,7 +1839,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-7t2r29-MuiTableCell-root"
                   >
-                    Spending assumes 5 x $30 if spending is more than 150.
+                    Spending assumes 5 × S$30 transactions if total spend exceeds S$150.
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-bcc6o7-MuiTableCell-root"
@@ -1911,7 +1911,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-7t2r29-MuiTableCell-root"
                   >
-                    A Flat 0.4% interest rate up to 1.2 million
+                    Flat 0.4% p.a. on balances up to S$1,200,000
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-bcc6o7-MuiTableCell-root"
@@ -2311,7 +2311,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                     This account is valid from 2024-08-01 onwards.
                     <br />
                     <b>
-                      Note: You have to link your paynow to this account to qualify for the sale.
+                      Note: You have to link your PayNow to this account to qualify for bonus interest.
                     </b>
                   </td>
                   <td
@@ -2614,7 +2614,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                     <br />
                     Bonus interest capped at first $500k.
                     <br />
-                    *Assumes Citigold level, Citi Private has a higher level.
+                    *Assumes Citigold tier. Citi Private clients enjoy higher rates.
                   </td>
                   <td
                     class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeSmall css-bcc6o7-MuiTableCell-root"
@@ -4064,11 +4064,11 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
         class="MuiTypography-root MuiTypography-caption css-71rnec-MuiTypography-root"
       >
         <span>
-          * Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges
+          * This graph shows interest rates for savings from S$0 to S$200,000, covering the typical savings account balance range.
           <br />
         </span>
         <span>
-          ** Interest rates on their respective websites are subject to change without notice.
+          ** Interest rates on the respective bank websites are subject to change without notice.
           <br />
         </span>
         <span>
