@@ -34,6 +34,7 @@ import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { useMobile } from "../hooks/useMobile";
 import { MAX_COMPARISON_BANKS } from "../consts/keys";
 import { useHistoryState, type BankHistoryGroup } from "../hooks/useHistoryState";
+import { prefetchRoute } from "../data/prefetch";
 
 interface Props {
   profile: Profile;
@@ -61,7 +62,7 @@ export const HistoryTab = ({ profile }: Props) => {
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://hysa.jh123x.com/history" />
       </Helmet>
-      <Typography component="h2" variant="h4" sx={{ color: textColor, fontWeight: 700, mb: 2, fontSize: { xs: "1.25rem", sm: "1.5rem" } }}>
+      <Typography component="h2" variant="h4" sx={{ color: textColor, fontWeight: 700, mb: 2.5, fontSize: { xs: "1.25rem", sm: "1.5rem" } }}>
         Rate Change History
       </Typography>
       {isMobile ? (
@@ -125,7 +126,7 @@ const HistoryTabDesktop = ({
                         {isCollapsed ? <KeyboardArrowRight fontSize="small" /> : <KeyboardArrowDown fontSize="small" />}
                       </IconButton>
                     </TableCell>
-                    <TableCell colSpan={5} sx={{ py: 1 }}>
+                    <TableCell colSpan={5} sx={{ py: 1.5 }}>
                       <Typography component="span" sx={{ fontWeight: 600, color: textColor }}>{bank.name}</Typography>
                       <Typography component="span" variant="body2" sx={{ color: textColor, opacity: 0.6, ml: 1 }}>
                         ({bank.rows.length} change{bank.rows.length !== 1 ? "s" : ""})
@@ -136,7 +137,7 @@ const HistoryTabDesktop = ({
                     <TableRow key={`${bank.slug}-${idx}`} sx={{ "&:hover": { backgroundColor: `${primaryColor}08` } }}>
                       <TableCell sx={{ p: 0 }} />
                       <TableCell sx={{ pl: 2 }}>{row.date}</TableCell>
-                      <TableCell>{row.changeSummary}</TableCell>
+                      <TableCell sx={{ whiteSpace: "pre-line" }}>{row.changeSummary}</TableCell>
                       <TableCell sx={{ textAlign: "right", backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}08` : "transparent" }}>
                         {row.yearlyInterest}
                       </TableCell>
@@ -146,7 +147,9 @@ const HistoryTabDesktop = ({
                       <TableCell sx={{ textAlign: "center", p: 0.5 }}>
                         <Box sx={{ display: "flex", justifyContent: "center", gap: 0.5 }}>
                           <Tooltip title="View details" placement="left">
-                            <IconButton size="small" onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor }}>
+                            <IconButton size="small"
+                              onMouseEnter={() => prefetchRoute(`/bank/${bank.slug}`)}
+                              onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor }}>
                               <OpenInNew fontSize="small" />
                             </IconButton>
                           </Tooltip>
@@ -171,7 +174,7 @@ const HistoryTabDesktop = ({
   };
 
   const renderControls = () => (
-    <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 1.5, mb: 1.5 }}>
+    <Box sx={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 2, mb: 2 }}>
       <ToggleButtonGroup value={chartMode} exclusive onChange={(_e, v) => v && setChartMode(v)} size="small">
         <ToggleButton value="yearly" sx={TOGGLE_SX}>Yearly $</ToggleButton>
         <ToggleButton value="eir" sx={TOGGLE_SX}>EIR (%)</ToggleButton>
@@ -214,7 +217,7 @@ const HistoryTabDesktop = ({
           <>
             {renderControls()}
             {selectedBanks.length > 0 && (
-              <Box sx={{ height: "50vh" }}>
+              <Box sx={{ height: "48vh" }}>
                 <ComparisonChart selectedBanks={selectedBanks} profile={profile} chartMode={chartMode} />
               </Box>
             )}
@@ -364,7 +367,6 @@ const MobileRowGroupedList = ({
             <TableRow>
               <TableCell sx={{ color: textColor, fontWeight: 600, width: 24, p: 0.5, backgroundColor: bgColor }} />
               <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5, backgroundColor: bgColor, width: 80, whiteSpace: "nowrap" }}>Date</TableCell>
-              <TableCell sx={{ color: textColor, fontWeight: 600, fontSize: "0.75rem", px: 0.5, backgroundColor: bgColor }}>Change</TableCell>
               <TableCell sx={{ color: textColor, fontWeight: 600, textAlign: "right", fontSize: "0.75rem", px: 0.5, backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}1a` : bgColor, width: 48 }}>
                 Yr$
               </TableCell>
@@ -383,7 +385,7 @@ const MobileRowGroupedList = ({
                       {isCollapsed ? <KeyboardArrowRight fontSize="small" /> : <KeyboardArrowDown fontSize="small" />}
                     </IconButton>
                   </TableCell>
-                  <TableCell colSpan={5} sx={{ color: textColor, py: 1, pl: 0 }}>
+                  <TableCell colSpan={4} sx={{ color: textColor, py: 1, pl: 0 }}>
                     <Typography component="span" sx={{ fontWeight: 600, color: textColor, fontSize: "0.85rem" }}>{bank.name}</Typography>
                     <Typography component="span" variant="body2" sx={{ color: textColor, opacity: 0.5, ml: 0.5, fontSize: "0.7rem" }}>
                       ({bank.rows.length})
@@ -394,7 +396,6 @@ const MobileRowGroupedList = ({
                   <TableRow key={`${bank.slug}-${idx}`} sx={{ "&:hover": { backgroundColor: `${primaryColor}08` } }}>
                     <TableCell sx={{ p: 0 }} />
                     <TableCell sx={{ color: textColor, fontSize: "0.7rem", px: 0.5, whiteSpace: "nowrap" }}>{row.date}</TableCell>
-                    <TableCell sx={{ color: textColor, fontSize: "0.7rem", px: 0.5, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{row.changeSummary}</TableCell>
                     <TableCell sx={{ color: textColor, textAlign: "right", fontSize: "0.7rem", px: 0.5, backgroundColor: highlightCol === "yearlyInterest" ? `${primaryColor}08` : "transparent", whiteSpace: "nowrap" }}>
                       {row.yearlyInterest}
                     </TableCell>
@@ -403,7 +404,9 @@ const MobileRowGroupedList = ({
                     </TableCell>
                     <TableCell sx={{ color: textColor, textAlign: "center", p: 0.25, whiteSpace: "nowrap" }}>
                       <Box sx={{ display: "flex", justifyContent: "center", gap: 0 }}>
-                        <Tooltip title="Details"><IconButton size="small" onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor, p: 0.25 }}><OpenInNew sx={{ fontSize: 14 }} /></IconButton></Tooltip>
+                        <Tooltip title="Details"><IconButton size="small"
+                          onMouseEnter={() => prefetchRoute(`/bank/${bank.slug}`)}
+                          onClick={() => navigate(`/bank/${bank.slug}`)} sx={{ color: primaryColor, p: 0.25 }}><OpenInNew sx={{ fontSize: 14 }} /></IconButton></Tooltip>
                         {row.sourceUrl && (
                           <Tooltip title="Source"><IconButton size="small" href={row.sourceUrl} target="_blank" rel="noopener noreferrer" sx={{ color: primaryColor, p: 0.25 }}><Language sx={{ fontSize: 14 }} /></IconButton></Tooltip>
                         )}

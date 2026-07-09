@@ -1,18 +1,9 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useLayoutEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import {
   Box,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
   Typography,
-  Paper,
-  TableSortLabel,
-  alpha,
   Card,
   CardContent,
   CardActionArea,
@@ -23,6 +14,7 @@ import {
   MenuItem,
   ToggleButton,
   ToggleButtonGroup,
+  Chip,
 } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -30,7 +22,7 @@ import SortIcon from "@mui/icons-material/Sort";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import type { ResultProp } from "../types/props";
-import { primaryColor, bgColor, textColor, TOGGLE_SX } from "../consts/theme";
+import { primaryColor, mutedColor, bgColor, textColor, TOGGLE_SX, FACTOR_CHIP_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
 import { bankInfo } from "../logic/constants";
@@ -39,16 +31,6 @@ import { InterestGraph } from "../Components/InterestGraph";
 import { ThreePanelLayout } from "../Components/ThreePanelLayout";
 
 type SortableColumns = "name" | "yearlyInterest" | "effectiveInterest";
-
-const cellSx = {
-  color: textColor,
-  backgroundColor: bgColor,
-  padding: { xs: "6px 8px", sm: "8px 14px" },
-};
-
-const SORT_ICON_SX = {
-  "& .MuiTableSortLabel-icon": { color: `${textColor} !important` },
-};
 
 interface Props {
   profile: Profile;
@@ -93,7 +75,7 @@ export const CurrentRatesTab = ({ profile }: Props) => {
 
 const CurrentRatesTabDesktop = ({ profile }: Props) => {
   const navigate = useNavigate();
-  const [orderBy, setOrderBy] = useState<SortableColumns | undefined>(undefined);
+  const [orderBy, setOrderBy] = useState<SortableColumns>("effectiveInterest");
   const [order, setOrder] = useState<"asc" | "desc">("desc");
 
   const results = useResults(profile);
@@ -101,15 +83,6 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
   const sortedResults = useMemo(() => {
     return sortEntries(results, orderBy, order);
   }, [results, orderBy, order]);
-
-  const handleSort = (column: SortableColumns) => {
-    if (orderBy === column) {
-      setOrder((prev) => (prev === "asc" ? "desc" : "asc"));
-    } else {
-      setOrderBy(column);
-      setOrder("asc");
-    }
-  };
 
   return (
     <>
@@ -131,77 +104,106 @@ const CurrentRatesTabDesktop = ({ profile }: Props) => {
         </Box>
       }
       bottomRight={
-        <Paper sx={{ backgroundColor: bgColor }}>
-          <TableContainer>
-            <Table aria-label="High yield savings account interest rate comparison table" size="small" stickyHeader>
-              <TableHead>
-                <TableRow>
-                  <TableCell
-                    onClick={() => handleSort("name")}
-                    sx={{ ...cellSx, cursor: "pointer", fontWeight: 600, "&:hover": { backgroundColor: alpha(primaryColor, 0.15) }, backgroundColor: bgColor }}
-                  >
-                    <TableSortLabel active={orderBy === "name"} direction={orderBy === "name" ? order : "asc"} hideSortIcon={false} sx={SORT_ICON_SX}>
-                      Accounts
-                    </TableSortLabel>
-                  </TableCell>
-                  <TableCell
-                    onClick={() => handleSort("yearlyInterest")}
-                    sx={{ ...cellSx, cursor: "pointer", fontWeight: 600, "&:hover": { backgroundColor: alpha(primaryColor, 0.15) }, backgroundColor: bgColor }}
-                  >
-                    <TableSortLabel active={orderBy === "yearlyInterest"} direction={orderBy === "yearlyInterest" ? order : "asc"} hideSortIcon={false} sx={SORT_ICON_SX}>
-                      Yearly Interest ($)
-                    </TableSortLabel>
-                  </TableCell>
-                  <TableCell
-                    onClick={() => handleSort("effectiveInterest")}
-                    sx={{ ...cellSx, cursor: "pointer", fontWeight: 600, "&:hover": { backgroundColor: alpha(primaryColor, 0.15) }, backgroundColor: bgColor }}
-                  >
-                    <TableSortLabel active={orderBy === "effectiveInterest"} direction={orderBy === "effectiveInterest" ? order : "asc"} hideSortIcon={false} sx={SORT_ICON_SX}>
-                      EIR (%)
-                    </TableSortLabel>
-                  </TableCell>
-                  <TableCell sx={{ ...cellSx, fontWeight: 600, minWidth: 180, backgroundColor: bgColor }}>Remarks</TableCell>
-                  <TableCell sx={{ ...cellSx, fontWeight: 600, width: 80, textAlign: "center", backgroundColor: bgColor }}>Actions</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {sortedResults.map(([slug, interest]) => (
-                  <TableRow
-                    key={slug}
-                    hover
-                    sx={{
-                      color: textColor,
-                      backgroundColor: bgColor,
-                      "&:hover": { backgroundColor: alpha(primaryColor, 0.1) },
-                      transition: "background-color 0.3s ease",
-                    }}
-                  >
-                    <TableCell sx={{ ...cellSx, fontWeight: 600 }}>{bankInfo[slug]?.name ?? slug}</TableCell>
-                    <TableCell sx={cellSx}>${(interest.interest.toYearly() ?? 0).toFixed(2)}</TableCell>
-                    <TableCell sx={cellSx}>{(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%</TableCell>
-                    <TableCell sx={{ ...cellSx, opacity: 0.75 }}>{bankInfo[slug]?.remarks ?? "—"}</TableCell>
-                    <TableCell sx={{ ...cellSx, textAlign: "center", whiteSpace: "nowrap" }}>
-                      <Box sx={{ display: "flex", justifyContent: "center", gap: 0.5 }}>
-                        <Tooltip title="View details" placement="left">
-                          <IconButton size="small" onClick={() => navigate(`/bank/${slug}`)} sx={{ color: primaryColor }}>
-                            <OpenInNewIcon fontSize="small" />
-                          </IconButton>
-                        </Tooltip>
-                        {interest.url && (
-                          <Tooltip title="Visit official website" placement="right">
-                            <IconButton size="small" href={interest.url} target="_blank" rel="noopener noreferrer" sx={{ color: primaryColor }}>
-                              <LanguageIcon fontSize="small" />
-                            </IconButton>
-                          </Tooltip>
-                        )}
-                      </Box>
-                    </TableCell>
-                  </TableRow>
+        <>
+          {/* Sort bar: dropdown + asc/desc toggle */}
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 2 }}>
+            <SortIcon sx={{ color: textColor, fontSize: 20 }} />
+            <FormControl size="small" sx={{ minWidth: 140 }}>
+              <Select
+                value={orderBy}
+                onChange={(e) => {
+                  const val = e.target.value;
+                  if (val === "name" || val === "yearlyInterest" || val === "effectiveInterest") {
+                    setOrderBy(val);
+                  }
+                }}
+                sx={{
+                  color: textColor,
+                  backgroundColor: bgColor,
+                  fontSize: "0.85rem",
+                  "& .MuiOutlinedInput-notchedOutline": { borderColor: `${textColor}40` },
+                  "&:hover .MuiOutlinedInput-notchedOutline": { borderColor: primaryColor },
+                  "& .MuiSvgIcon-root": { color: textColor },
+                }}
+              >
+                {SORT_OPTIONS.map((opt) => (
+                  <MenuItem key={opt.value} value={opt.value} sx={{ color: textColor }}>
+                    {opt.label}
+                  </MenuItem>
                 ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </Paper>
+              </Select>
+            </FormControl>
+            <ToggleButtonGroup
+              value={order}
+              exclusive
+              size="small"
+              onChange={(_, v) => v && setOrder(v)}
+            >
+              <ToggleButton value="asc" aria-label="Sort ascending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { opacity: 0.85 } }}>
+                <ArrowUpwardIcon fontSize="small" sx={{ mr: 0.5 }} />Asc
+              </ToggleButton>
+              <ToggleButton value="desc" aria-label="Sort descending" sx={{ ...TOGGLE_SX, px: 1, "&.Mui-selected:hover": { opacity: 0.85 } }}>
+                <ArrowDownwardIcon fontSize="small" sx={{ mr: 0.5 }} />Desc
+              </ToggleButton>
+            </ToggleButtonGroup>
+          </Box>
+
+          {/* Card grid */}
+          <Box sx={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gap: 2,
+            pb: 1,
+          }}>
+            {sortedResults.map(([slug, interest]) => (
+              <Card key={slug} sx={{
+                backgroundColor: bgColor,
+                border: `1px solid ${textColor}10`,
+                borderRadius: 2,
+                overflow: "hidden",
+                transform: "scale(0.99)",
+                transition: "transform 0.15s ease, box-shadow 0.15s ease",
+                "&:hover": { transform: "scale(1)", boxShadow: `0 4px 20px ${primaryColor}20` },
+              }}>
+                <CardActionArea onClick={() => navigate(`/bank/${slug}`)} sx={{ p: 2, display: "flex", flexDirection: "column", alignItems: "flex-start", height: "100%" }}>
+                  {/* Bank name */}
+                  <Typography sx={{ color: textColor, fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>
+                    {bankInfo[slug]?.name ?? slug}
+                  </Typography>
+
+                  {/* Factor chips — single row with dynamic overflow */}
+                  {bankInfo[slug]?.factors && bankInfo[slug].factors.length > 0 && (
+                    <ChipRow factors={bankInfo[slug].factors} />
+                  )}
+
+                  {/* EIR large */}
+                  <Box sx={{ mt: "auto", textAlign: "center", width: "100%" }}>
+                    <Typography sx={{ color: primaryColor, fontSize: "2rem", fontWeight: 700, lineHeight: 1.2 }}>
+                      {(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%
+                    </Typography>
+                    <Typography sx={{ color: mutedColor, fontSize: "0.75rem" }}>
+                      EIR
+                    </Typography>
+                  </Box>
+
+                  {/* Yearly interest */}
+                  <Typography sx={{ color: textColor, fontSize: "1rem", fontWeight: 600, mt: 0.5, textAlign: "center", width: "100%" }}>
+                    ${(interest.interest.toYearly() ?? 0).toFixed(2)}/yr
+                  </Typography>
+
+                  {/* Remarks — truncated */}
+                  {bankInfo[slug]?.remarks && (
+                    <Tooltip title={bankInfo[slug].remarks} placement="top">
+                      <Typography sx={{ color: mutedColor, fontSize: "0.65rem", mt: 0.5, textAlign: "center", width: "100%", overflow: "hidden", textOverflow: "ellipsis", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }}>
+                        {bankInfo[slug].remarks}
+                      </Typography>
+                    </Tooltip>
+                  )}
+                </CardActionArea>
+              </Card>
+            ))}
+          </Box>
+        </>
       }
     />
     </>
@@ -222,22 +224,24 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
   }, [results, mobileSort, mobileOrder]);
 
   return (
-    <Box component="section" aria-label="Current interest rates comparison">
+    <Box component="section" aria-label="Current interest rates comparison" sx={{ overflow: "hidden", maxWidth: "100%", pt: 1 }}>
       <Typography
         component="h2"
         variant="h5"
-        sx={{ color: textColor, fontWeight: 600, mb: 1, fontSize: { xs: "1rem", sm: "1.1rem" } }}
+        sx={{ color: textColor, fontWeight: 600, mb: 2, fontSize: { xs: "1rem", sm: "1.1rem" } }}
       >
         Rate Comparison
       </Typography>
       {/* Graph + asterisks together */}
-      <InterestGraph
-        profile={profile}
-        height={340}
-      />
+      <Box sx={{ mb: 2.5 }}>
+        <InterestGraph
+          profile={profile}
+          height={340}
+        />
+      </Box>
 
       {/* Sort bar: dropdown + asc/desc toggle */}
-      <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1.5 }}>
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 3, flexWrap: "wrap" }}>
         <SortIcon sx={{ color: textColor, fontSize: 20 }} />
         <FormControl size="small" sx={{ minWidth: 140 }}>
           <Select
@@ -280,30 +284,33 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
       </Box>
 
       {/* Cards — stacked */}
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+      <Box sx={{ display: "flex", flexDirection: "column", gap: 1, width: "100%", overflow: "hidden" }}>
         {mobileSorted.map(([slug, interest]) => (
           <Card
             key={slug}
             sx={{
               backgroundColor: bgColor,
               border: "1px solid rgba(255,255,255,0.08)",
-
+              overflow: "hidden",
             }}
           >
             <CardActionArea
               onClick={() => navigate(`/bank/${slug}`)}
-              sx={{ display: "flex", justifyContent: "space-between", alignItems: "stretch" }}
+              sx={{ display: "flex", justifyContent: "space-between", alignItems: "stretch", minWidth: 0 }}
             >
               <CardContent sx={{ p: 1.5, "&:last-child": { pb: 1.5 }, flex: 1, minWidth: 0 }}>
-                <Typography variant="subtitle1" sx={{ color: textColor, fontWeight: 600, mb: 0.5, fontSize: "0.9rem" }}>
+                <Typography variant="subtitle1" sx={{ color: textColor, fontWeight: 600, mb: 0.25, fontSize: "0.9rem" }}>
                   {bankInfo[slug]?.name ?? slug}
                 </Typography>
+                {bankInfo[slug]?.factors && bankInfo[slug].factors.length > 0 && (
+                  <ChipRow factors={bankInfo[slug].factors} />
+                )}
                 <Box sx={{ display: "flex", gap: 2 }}>
                   <Box>
                     <Typography variant="caption" sx={{ color: textColor, opacity: 0.6, fontSize: "0.7rem" }}>
                       Yearly Interest
                     </Typography>
-                    <Typography variant="body2" sx={{ color: textColor, fontWeight: 500 }}>
+                    <Typography variant="body2" sx={{ color: textColor, fontWeight: 600, fontSize: "1rem" }}>
                       ${(interest.interest.toYearly() ?? 0).toFixed(2)}
                     </Typography>
                   </Box>
@@ -311,7 +318,7 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
                     <Typography variant="caption" sx={{ color: textColor, opacity: 0.6, fontSize: "0.7rem" }}>
                       EIR
                     </Typography>
-                    <Typography variant="body2" sx={{ color: textColor, fontWeight: 500 }}>
+                    <Typography variant="body2" sx={{ color: textColor, fontWeight: 600, fontSize: "1.1rem" }}>
                       {(interest.interest.toYearlyPercent() ?? 0).toFixed(2)}%
                     </Typography>
                   </Box>
@@ -343,6 +350,107 @@ const CurrentRatesTabMobile = ({ profile }: Props) => {
 };
 
 export default CurrentRatesTab;
+
+// ── ChipRow component ──────────────────────────────────────────────
+
+/** Single-row chip display with dynamic overflow detection.
+ *  Renders all chips, measures available width via useLayoutEffect,
+ *  and shows a "+N" badge with Tooltip for any overflow. */
+function ChipRow({ factors }: { factors: string[] }) {
+  const [visibleCount, setVisibleCount] = useState(factors.length);
+  const chipRowRef = useRef<HTMLDivElement>(null);
+  const measuredRef = useRef(false);
+
+  useLayoutEffect(() => {
+    const container = chipRowRef.current;
+    if (!container) return;
+
+    const children = Array.from(container.children) as HTMLElement[];
+    if (children.length === 0) return;
+
+    const containerWidth = container.getBoundingClientRect().width;
+    const gap = 4; // MUI spacing: gap:0.5 = 0.5 × 8px = 4px
+    const overflowBadgeWidth = 44; // "+N" chip width + gap
+
+    // First pass: measure total width of all chips
+    let totalChipsWidth = 0;
+    const chipWidths: number[] = [];
+    for (let i = 0; i < children.length; i++) {
+      chipWidths.push(children[i].getBoundingClientRect().width);
+      if (i > 0) totalChipsWidth += gap;
+      totalChipsWidth += chipWidths[i];
+    }
+
+    // If all chips fit, show all
+    if (totalChipsWidth <= containerWidth) {
+      if (visibleCount !== factors.length) {
+        setVisibleCount(factors.length);
+      }
+      measuredRef.current = true;
+      return;
+    }
+
+    // Otherwise, find how many full chips fit, reserving space for +N badge
+    // Rendered layout: chip0, gap, chip1, gap, ..., chipN, gap, +N badge
+    let usedWidth = 0;
+    let count = 0;
+    for (let i = 0; i < children.length; i++) {
+      const chipWidth = chipWidths[i];
+      const widthIfAdded = (count === 0 ? 0 : gap) + chipWidth;
+      // After adding this chip, check: chips + gap + badge fits?
+      if (usedWidth + widthIfAdded + gap + overflowBadgeWidth > containerWidth) break;
+      usedWidth += widthIfAdded;
+      count++;
+    }
+
+    // Ensure at least 1 chip is shown
+    const newCount = Math.max(1, Math.min(count, factors.length));
+    if (newCount !== visibleCount) {
+      setVisibleCount(newCount);
+    }
+    measuredRef.current = true;
+  }, [factors.length]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Guard: if we haven't measured yet, render all chips (measurement pass)
+  const showCount = measuredRef.current ? visibleCount : factors.length;
+  const visible = factors.slice(0, showCount);
+  const overflow = factors.slice(showCount);
+
+  return (
+    <Box
+      ref={chipRowRef}
+      sx={{ display: "flex", flexWrap: "nowrap", gap: 0.5, mb: 1, width: "100%" }}
+    >
+      {visible.map((f) => (
+        <Chip
+          key={f}
+          label={f}
+          size="small"
+          variant="outlined"
+          sx={{ ...FACTOR_CHIP_SX, flexShrink: 0 }}
+        />
+      ))}
+      {overflow.length > 0 && (
+        <Tooltip title={overflow.join(", ")} placement="top">
+          <Chip
+            label={`+${overflow.length}`}
+            size="small"
+            variant="outlined"
+            sx={{
+              color: primaryColor,
+              borderColor: `${primaryColor}60`,
+              fontSize: "0.6rem",
+              height: 20,
+              fontWeight: 600,
+              flexShrink: 0,
+              "& .MuiChip-label": { px: 0.75 },
+            }}
+          />
+        </Tooltip>
+      )}
+    </Box>
+  );
+}
 
 // ── Shared helpers ─────────────────────────────────────────────────
 

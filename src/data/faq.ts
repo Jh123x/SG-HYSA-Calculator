@@ -83,7 +83,7 @@ const FULL: FaqEntry[] = [
         label: "UOB One Rate Revision (Dec 2025)",
         url: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
         confirms:
-          "Maximum 1.90% EIR on S$150,000 requires both S$500 eligible card spend AND minimum S$1,600 salary credit via GIRO/PAYNOW.",
+          "Maximum 1.90% EIR on S$150,000 requires both S$500 eligible card spend AND minimum S$1,600 salary credit via GIRO/PayNow.",
       },
       {
         label: "DBS Multiplier — How It Works",
@@ -98,7 +98,7 @@ const FULL: FaqEntry[] = [
     answer:
       "Each account has a different sweet spot. Some (like OCBC 360) cap bonus interest at the first S$100,000, while others (like UOB One) cap at S$150,000. " +
       "Use the calculator to try different balances and see which bank gives you the best EIR for your specific situation. " +
-      "Generally, spreading money across multiple accounts to capture each bank's best tier is more optimal than putting everything in one account.",
+      "Generally, spreading money across multiple accounts to capture each bank's best tier is more optimal than putting everything into one account.",
     sources: [
       {
         label: "OCBC 360 — Balance Cap",
@@ -151,10 +151,10 @@ const FULL: FaqEntry[] = [
     ],
     furtherReading: [
       {
-        label: "The MileLion — Savings Accounts",
-        url: "https://milelion.com/tag/savings-account/",
+        label: "OCBC 360 — Rate Change Notices",
+        url: "https://www.ocbc.com/personal-banking/notices",
         confirms:
-          "Independent blog tracking rate changes across Singapore savings accounts, often faster than bank official announcements.",
+          "Official OCBC notice archive showing every deposit rate revision for the 360 account over time — a real example of how often one bank adjusts rates.",
       },
     ],
   },
@@ -349,7 +349,7 @@ const FULL: FaqEntry[] = [
     furtherReading: [
       {
         label: "Seedly — Maximising Multiple HYSA Accounts",
-        url: "https://seedly.sg/opinions/savings-account/",
+        url: "https://seedly.sg/reviews/savings-accounts/",
         confirms:
           "Community discussions on strategies for splitting salary, GIRO payments, and spend across multiple HYSA accounts to maximise total returns.",
       },
@@ -410,7 +410,7 @@ const FULL: FaqEntry[] = [
         label: "UOB One Account Criteria",
         url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
         confirms:
-          "Two criteria: (1) minimum S$500 eligible card spend, AND (2) either credit minimum S$1,600 salary via GIRO/PAYNOW or make 3 GIRO debit transactions.",
+          "Two criteria: (1) minimum S$500 eligible card spend, AND (2) either credit minimum S$1,600 salary via GIRO/PayNow or make 3 GIRO debit transactions.",
       },
       {
         label: "OCBC 360 Bonus Categories",
@@ -459,7 +459,7 @@ const FULL: FaqEntry[] = [
     answer:
       "For newcomers (EP/S-Pass holders): DBS Multiplier and OCBC 360 are the most accessible — both allow opening with a FIN number and SingPass. " +
       "Trust Bank and GXS Bank are also good options with no minimum balance and simple bonus structures, though they have lower rate caps. " +
-      "If you don't have a salary crediting to Singapore yet, some accounts (like CIMB FastSaver) offer good base rates without bonus criteria.",
+      "If you don't have salary crediting set up in Singapore yet, some accounts (like CIMB FastSaver) offer good base rates without bonus criteria.",
     sources: [
       {
         label: "DBS — For Foreigners: New to Singapore",
@@ -482,10 +482,10 @@ const FULL: FaqEntry[] = [
     ],
     furtherReading: [
       {
-        label: "CIMB FastSaver — No Criteria Base Rate",
-        url: "https://www.cimb.com.sg/en/personal/accounts/savings-accounts/cimb-fastsaver.html",
+        label: "Mari Savings Account — No Criteria Digital Bank",
+        url: "https://www.maribank.sg/save/",
         confirms:
-          "Flat interest rate with no bonus criteria, no minimum spend, and no salary crediting requirement. Good option before salary crediting is set up.",
+          "Flat interest rate with no minimum balance, no criteria, and no salary crediting requirement. Good option for newcomers before setting up salary crediting with a traditional bank.",
       },
     ],
   },
@@ -582,10 +582,10 @@ const FULL: FaqEntry[] = [
           "Minimum S$1,800 salary credited via GIRO-SALARY. 1.50% p.a. bonus interest on first S$100,000. Only salary with SAL transaction code qualifies.",
       },
       {
-        label: "UOB One — Salary via GIRO/PAYNOW",
+        label: "UOB One — Salary via GIRO/PayNow",
         url: "https://www.uob.com.sg/personal/save/everyday-accounts/one-account.page",
         confirms:
-          "Minimum S$1,600 salary credit via GIRO with PAYNOW-SALA reference to qualify as salary crediting for bonus interest.",
+          "Minimum S$1,600 salary credit via GIRO with PayNow-SALA reference to qualify as salary crediting for bonus interest.",
       },
     ],
   },

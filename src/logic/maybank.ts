@@ -9,7 +9,7 @@ const table_nxt_25k = [0, 1, 1.5, 3.75];
 export const maybank_save_up_10_2025 = (profile: Profile): ResultInterest => {
   var count = 0;
 
-  // Giro / Salary
+  // GIRO / Salary
   if (
     (profile.GiroTransactions >= 1 && profile.Spending >= 300) ||
     profile.Salary >= 2000
@@ -136,13 +136,13 @@ export const maybankSaveUpHistory: RateSnapshot[] = [
     effectiveDate: "2025-10-01",
     interestFn: maybank_save_up_10_2025,
     sourceUrl: "https://sethisfy.com/maybank-save-up-program-launches-october-2025/",
-    changeSummary: "Category bonus: up to 3 categories (Giro/Salary, Spend $500, Invest $25K, Insurance $5K, Loan $10K). Max bonus: 2.75% (1st $50K) + 3.75% (next $25K)",
+    changeSummary: "Category bonus: up to 3 categories\n(GIRO/Salary, Spend $500, Invest $25K, Insurance $5K, Loan $10K).\nMax bonus: 2.75% (1st $50K) + 3.75% (next $25K)",
   },
   {
     effectiveDate: "2026-06-11",
     interestFn: maybank_save_up_06_2026,
     sourceUrl: "https://www.maybank2u.com.sg/en/personal/about_us/important-notices/2026/changes-current-savings-accounts-interest-hibah-tiers-rates.page",
-    changeSummary: "Category bonus removed. Flat tiered: 0.1875% (<$3K), 0.25% ($3K–$50K), 0.3125% (>$50K)",
+    changeSummary: "Category bonus removed.\nFlat tiered: 0.1875% (<$3K), 0.25% ($3K–$50K), 0.3125% (>$50K)",
   },
 ];
 

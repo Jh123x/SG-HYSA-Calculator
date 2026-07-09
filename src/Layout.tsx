@@ -32,15 +32,15 @@ export const Layout = ({
 }: LayoutProps) => {
   const { isMobile } = useMobile();
 
-  // Desktop: fixed viewport with auto overflow — pages that fully consume their
-  // allocated space (e.g. ThreePanelLayout) don't scroll at the page level,
-  // while pages with natural document flow (e.g. FAQ) get a page-level scrollbar.
-  const bodyOverflow = isMobile ? "auto" : "auto";
+  // Desktop: strict viewport lock — no scrollbars at body or Box level.
+  // Tabbed pages fill exactly 100dvh (internal scrollbars in BottomPanels);
+  // document pages (FAQ) scroll through `main overflow: auto` alone.
+  const bodyOverflow = isMobile ? "auto" : "hidden";
   const rootHeight = isMobile ? "auto" : "100%";
-  const rootOverflow = isMobile ? "visible" : undefined;
+  const rootOverflow = isMobile ? "visible" : "hidden";
 
   const boxHeight = isMobile ? "auto" : "100dvh";
-  const boxOverflow = isMobile ? "visible" : "auto";
+  const boxOverflow = isMobile ? "visible" : "hidden";
 
   const mainOverflow = isMobile ? "visible" : "auto";
   const mainFlex = isMobile ? undefined : 1;
@@ -79,25 +79,30 @@ export const Layout = ({
             flex: mainFlex,
             minHeight: mainMinHeight,
             overflow: mainOverflow,
+            ...(isMobile ? { maxWidth: "100vw" } : {}),
           }}
         >
           <Container
+            disableGutters
             sx={{
-              maxWidth: "100% !important",
-              px: { xs: 1, sm: 2 },
+              px: { xs: 1.5, sm: 4, md: 5 },
+              py: { xs: 0, sm: 1 },
               height: "100%",
+              maxWidth: "100% !important",
             }}
           >
             <ErrorBoundary>
-              <Outlet
-                context={{
-                  currProfile,
-                  setCurrProfile,
-                  pendingUrlProfile,
-                  onAcceptShared,
-                  onRejectShared,
-                }}
-              />
+              <div style={{ width: "100%", height: "100%" }}>
+                <Outlet
+                  context={{
+                    currProfile,
+                    setCurrProfile,
+                    pendingUrlProfile,
+                    onAcceptShared,
+                    onRejectShared,
+                  }}
+                />
+              </div>
             </ErrorBoundary>
           </Container>
         </Box>

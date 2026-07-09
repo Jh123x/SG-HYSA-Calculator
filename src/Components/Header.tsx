@@ -1,95 +1,81 @@
 import { useNavigate } from "react-router-dom";
-import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Box,
-  Button,
-  IconButton,
-  Tooltip,
-} from "@mui/material";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
+import { Box, Button, Typography } from "@mui/material";
 import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
-import { textColor, primaryColor } from "../consts/theme";
+import { primaryColor, mutedColor, borderColor, textColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
+import { prefetchRoute } from "../data/prefetch";
 
 /**
- * Header matching the wireframe:
- * - Desktop: "SG High Yield Savings Accounts" title (left) + FAQ button (right)
- * - Mobile: Savings icon (left) + FAQ button (right)
- *
- * Tab navigation lives in TabbedContent (toggle button group above inputs).
+ * Minimalist Geckoboard-style Header:
+ * - 44px compact Box with bottom border
+ * - Left: diamond icon + "HYSA Calculator" text (icon only on mobile)
+ * - Right: "FAQs" text button (no icon)
  */
 export const Header = () => {
   const navigate = useNavigate();
   const { isCompact } = useMobile();
 
   return (
-    <AppBar
-      position="static"
-      elevation={0}
-      sx={{ backgroundColor: "transparent" }}
+    <Box
+      component="header"
+      sx={{
+        height: 48,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        px: { xs: 2, sm: 3 },
+        borderBottom: `1px solid ${borderColor}`,
+        flexShrink: 0,
+        position: "relative",
+      }}
     >
-      <Toolbar
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          px: { xs: 1, sm: 2 },
-        }}
+      {/* Left: icon + text */}
+      <Box
+        sx={{ display: "flex", alignItems: "center", gap: 1.5, cursor: "pointer" }}
+        onClick={() => navigate("/")}
       >
-        {/* Left: icon (compact) or title (desktop) */}
-        {isCompact ? (
-          <>
-            <Tooltip title="SG High Yield Savings Accounts">
-              <IconButton
-                onClick={() => navigate("/")}
-                sx={{ color: primaryColor }}
-              >
-                <SavingsOutlinedIcon sx={{ fontSize: 28 }} />
-              </IconButton>
-            </Tooltip>
-            <Typography
-              component="h1"
-              sx={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(0,0,0,0)", whiteSpace: "nowrap", border: 0 }}
-            >
-              SG High Yield Savings Accounts
-            </Typography>
-          </>
-        ) : (
+        <SavingsOutlinedIcon
+          sx={{
+            fontSize: 20,
+            color: primaryColor,
+            flexShrink: 0,
+          }}
+        />
+        {!isCompact && (
           <Typography
-            variant="h5"
-            component="h1"
             sx={{
-              color: textColor,
               fontWeight: 600,
-              flexShrink: 0,
-              cursor: "pointer",
+              fontSize: "0.9rem",
+              color: textColor,
             }}
-            onClick={() => navigate("/")}
           >
-            SG High Yield Savings Accounts
+            HYSA Calculator
           </Typography>
         )}
-
-        {/* Right: FAQ button (both compact and desktop) */}
-        <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
-          <Button
-            onClick={() => navigate("/faq")}
-            startIcon={<HelpOutlineOutlinedIcon />}
-            size={isCompact ? "small" : "medium"}
-            sx={{
-              color: textColor,
-              textTransform: "none",
-              fontWeight: 500,
-              fontSize: { xs: "0.8rem", sm: "0.9rem" },
-              "&:hover": { color: primaryColor },
-            }}
-          >
-            FAQs
-          </Button>
+        {/* SEO h1 — zero-height overflow wrapper, no absolute positioning */}
+        <Box component="h1" sx={{ height: 0, overflow: "hidden", m: 0 }}>
+          SG High Yield Savings Accounts
         </Box>
-      </Toolbar>
-    </AppBar>
+      </Box>
+
+      {/* Right: FAQs text button */}
+      <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
+        <Button
+          onClick={() => navigate("/faq")}
+          onMouseEnter={() => prefetchRoute("/faq")}
+          size={isCompact ? "small" : "small"}
+          sx={{
+            color: mutedColor,
+            textTransform: "none",
+            fontWeight: 500,
+            fontSize: "0.85rem",
+            minWidth: 0,
+            "&:hover": { color: primaryColor },
+          }}
+        >
+          FAQs
+        </Button>
+      </Box>
+    </Box>
   );
 };

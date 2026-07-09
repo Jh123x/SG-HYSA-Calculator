@@ -2,7 +2,7 @@ import { ChartsReferenceLine } from "@mui/x-charts";
 import { Paper, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
-import { lineColors, textColor, bgColor } from "../consts/theme";
+import { lineColors, textColor, bgColor, mutedColor, borderColor } from "../consts/theme";
 import type Profile from "../types/profile";
 import {
   InterestVsSavingsChart,
@@ -18,8 +18,8 @@ const ASTERISKS_SX = {
 };
 
 const BUILT_IN_NOTES = [
-  "Graph shows interest rates for savings from $0 to $200,000, covering typical savings account ranges",
-  "Interest rates on their respective websites are subject to change without notice.",
+  "This graph shows interest rates for savings from S$0 to S$200,000, covering the typical savings account balance range.",
+  "Interest rates on the respective bank websites are subject to change without notice.",
   "Please do your own research before making any decisions.",
   "Ask for referrals to get additional bonuses.",
 ];
@@ -57,13 +57,13 @@ export const InterestGraph = ({
       sx={{
         p: 2,
 
-        backgroundColor: bgColor,
         height: height === "fill" ? "100%" : "auto",
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <InterestVsSavingsChart
+      <div style={{ display: "flex", flexDirection: "column", flex: 1, minHeight: 0 }}>
+        <InterestVsSavingsChart
         lines={lines}
         profile={profile}
         height={height === "fill" ? undefined : height}
@@ -73,6 +73,7 @@ export const InterestGraph = ({
             : undefined
         }
       >
+        {profile.Savings > 0 && (
         <ChartsReferenceLine
           x={profile.Savings}
           label="Your savings"
@@ -82,7 +83,9 @@ export const InterestGraph = ({
             strokeDasharray: "6 3",
           }}
         />
+        )}
       </InterestVsSavingsChart>
+      </div>
 
       <Typography variant="caption" sx={ASTERISKS_SX}>
         {BUILT_IN_NOTES.map((note, i) => (

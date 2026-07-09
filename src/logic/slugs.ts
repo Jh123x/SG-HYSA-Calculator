@@ -31,27 +31,5 @@ export function isValidSlug(slug: string): boolean {
   return slug in banks;
 }
 
-/**
- * Convert a bank display name to a URL-safe slug.
- *
- * This is a lossy, one-way transformation used only when migrating
- * legacy display-name identifiers to slugs.  For new code, prefer
- * passing slugs directly.
- */
-export function bankNameToSlug(name: string): string {
-  // First try reverse lookup in the registry (exact match)
-  for (const [slug, data] of Object.entries(banks)) {
-    if (data.name === name) return slug;
-  }
-
-  // Fallback: compute slug from the display name using the same
-  // algorithm that generated the original slugs.
-  return name
-    .toLowerCase()
-    .replace(/\$/g, "s")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
 /** All known bank slugs. */
 export const ALL_SLUGS = Object.keys(banks);

@@ -22,7 +22,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import LanguageIcon from "@mui/icons-material/Language";
 import { LineChart } from "@mui/x-charts/LineChart";
-import { textColor, bgColor, primaryColor, lineColors, TOGGLE_SX } from "../consts/theme";
+import { textColor, bgColor, primaryColor, lineColors, mutedColor, TOGGLE_SX, FACTOR_CHIP_SX } from "../consts/theme";
 import { ThreePanelLayout } from "../Components/ThreePanelLayout";
 import { bankInfo } from "../logic/constants";
 import { slugToBankName, ERROR_SLUG } from "../logic/slugs";
@@ -233,6 +233,25 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
 
       <Typography variant="body2" sx={{ color: textColor, opacity: 0.75, mb: 1.5 }}>{info.remarks}</Typography>
 
+      {info.factors && info.factors.length > 0 && (
+        <Box sx={{ mb: 2 }}>
+          <Typography variant="h6" sx={{ color: textColor, fontWeight: 600, mb: 1 }}>
+            Factors Affecting Rate
+          </Typography>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75 }}>
+            {info.factors.map((f) => (
+              <Chip
+                key={f}
+                label={f}
+                size="small"
+                variant="outlined"
+                sx={{ ...FACTOR_CHIP_SX }}
+              />
+            ))}
+          </Box>
+        </Box>
+      )}
+
       <Typography variant="h6" sx={{ color: textColor, fontWeight: 600, mb: 1 }}>Rate Change History</Typography>
       <TableContainer>
         <Table size="small" stickyHeader>
@@ -251,7 +270,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
               return (
                 <TableRow key={idx}>
                   <TableCell sx={{ color: textColor }}>{isTbd ? "TBD" : formatDate(snapshot.date)}</TableCell>
-                  <TableCell sx={{ color: textColor }}>{snapshot.changeSummary}</TableCell>
+                  <TableCell sx={{ color: textColor, whiteSpace: "pre-line" }}>{snapshot.changeSummary}</TableCell>
                   <TableCell sx={{ color: textColor, textAlign: "right" }}>{isTbd ? "—" : `$${snapshot.yearlyInterest.toFixed(2)}`}</TableCell>
                   <TableCell sx={{ color: textColor, textAlign: "right" }}>{isTbd ? "—" : `${snapshot.eir.toFixed(2)}%`}</TableCell>
                   <TableCell sx={{ color: textColor, textAlign: "center", p: 0.5 }}>

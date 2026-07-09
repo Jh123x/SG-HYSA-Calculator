@@ -5,7 +5,7 @@ import {
   Box,
 } from "@mui/material";
 import { LineChart } from "@mui/x-charts/LineChart";
-import { textColor, bgColor } from "../consts/theme";
+import { textColor, bgColor, mutedColor, borderColor } from "../consts/theme";
 import { bankInfo } from "../logic/constants";
 import type Profile from "../types/profile";
 import { todayISO } from "../logic/dates";
@@ -70,7 +70,6 @@ export const ComparisonChart = ({
         sx={{
           p: 4,
 
-          backgroundColor: bgColor,
           textAlign: "center",
           mb: 3,
         }}
@@ -99,6 +98,7 @@ const X_AXIS = [
       angle: 45,
       textAnchor: "start" as const,
       fontSize: 11,
+      fill: mutedColor,
     },
     valueFormatter: dateFormatter,
   },
@@ -106,9 +106,10 @@ const X_AXIS = [
 
 /** Shared axis label colour. */
 const AXIS_SX = {
-  ".MuiChartsAxis-label": { fill: textColor },
-  ".MuiChartsAxis-tick": { fill: textColor },
-  ".MuiChartsLegend-label": { fill: textColor },
+  ".MuiChartsAxis-line": { stroke: borderColor },
+  ".MuiChartsAxis-tick": { fill: mutedColor },
+  ".MuiChartsAxis-label": { fill: mutedColor, fontSize: 12, fontWeight: 400 },
+  ".MuiChartsLegend-label": { fill: mutedColor },
   "& .MuiChartsSurface-root": { background: "transparent" },
 };
 
@@ -182,7 +183,6 @@ const ComparisonChartContent = ({
         sx={{
           p: 2,
 
-          backgroundColor: bgColor,
           flex: 1,
           minHeight: 0,
           display: "flex",
@@ -190,31 +190,34 @@ const ComparisonChartContent = ({
         }}
       >
         <Box sx={{ flex: 1, minHeight: 0 }}>
-          <LineChart
-            dataset={dataset}
-            xAxis={X_AXIS}
-            series={activeSeries}
-            yAxis={[
-              {
-                label: yLabel,
-                scaleType: "linear",
-                min: 0,
-                valueFormatter: yFormatter,
-              },
-            ]}
-            height={isMobile ? 260 : undefined}
-            grid={{ vertical: true, horizontal: true }}
-            slotProps={{
-              legend: {
-                direction: "horizontal",
-                position: { vertical: "bottom", horizontal: "center" },
-              },
-            }}
-            sx={{
-              ...AXIS_SX,
-              ...(isMobile ? {} : { height: "100%", width: "100%" }),
-            }}
-          />
+          <div style={{ height: "100%" }}>
+            <LineChart
+              dataset={dataset}
+              xAxis={X_AXIS}
+              series={activeSeries}
+              yAxis={[
+                {
+                  label: yLabel,
+                  scaleType: "linear",
+                  min: 0,
+                  valueFormatter: yFormatter,
+                  tickLabelStyle: { fill: mutedColor, fontSize: 12, fontWeight: 400 },
+                },
+              ]}
+              height={isMobile ? 260 : undefined}
+              grid={{ vertical: true, horizontal: true }}
+              slotProps={{
+                legend: {
+                  direction: "horizontal",
+                  position: { vertical: "bottom", horizontal: "center" },
+                },
+              }}
+              sx={{
+                ...AXIS_SX,
+                ...(isMobile ? {} : { height: "100%", width: "100%" }),
+              }}
+            />
+          </div>
         </Box>
         <Typography
           variant="caption"

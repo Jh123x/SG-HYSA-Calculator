@@ -3,6 +3,59 @@ import type { RateSnapshot } from "../types/history";
 import { ResultInterest } from "../types/interest_result";
 import { parseISODate, todayISO, TBD_DATE } from "./dates";
 
+// ── Field name → human-readable factor label ──────────────────────────
+
+const FACTOR_LABELS: Record<string, string> = {
+  Savings: "Savings",
+  Age: "Age",
+  Salary: "Salary",
+  Spending: "Spending",
+  Investment: "Investment",
+  Insurance: "Insurance",
+  GiroTransactions: "GIRO Transactions",
+  MonthlyAccIncrease: "Account Increment",
+  LoanInstallment: "Loan Installment",
+  OneTimeLoan: "One-Time Loan",
+  IsNTUCMember: "NTUC Member",
+  ReferredCustomer: "Referred Customer",
+  PayNowReceived: "PayNow Received",
+  FXSpend: "FX Spend",
+};
+
+/**
+ * Auto-detect which Profile fields a bank's interest function reads.
+ *
+ * Uses a Proxy that records every property access while feeding values
+ * that maximise bonus branches (Infinity for numbers, true for booleans).
+ * This ensures we capture optional criteria that only activate above
+ * certain thresholds (e.g. Insurance > $150k, Spending >= $750).
+ */
+export function deriveFactors(history: RateSnapshot[]): string[] {
+  const { interestFn } = deriveCurrentFromHistory(history);
+  const accessed = new Set<string>();
+
+  const proxy = new Proxy({} as Profile, {
+    get(_target, prop: string) {
+      if (prop === "then" || typeof prop === "symbol") return undefined;
+      accessed.add(prop);
+      // Booleans → true, everything else → Infinity to trigger all branches
+      if (prop === "IsNTUCMember" || prop === "ReferredCustomer") return true;
+      return Infinity;
+    },
+  });
+
+  try {
+    interestFn(proxy);
+  } catch {
+    // If Infinity breaks something, we still captured the field accesses
+  }
+
+  return [...accessed]
+    .map((f) => FACTOR_LABELS[f])
+    .filter(Boolean)
+    .sort();
+}
+
 /** A resolved snapshot ready for charting / display */
 export interface ResolvedHistoryItem {
   /** Parsed date */

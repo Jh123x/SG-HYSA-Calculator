@@ -4,6 +4,7 @@ import { ErrorBoundary } from "./ErrorBoundary";
 import { FormInputs } from "./Inputs";
 import { primaryColor, TOGGLE_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
+import { prefetchRoute } from "../data/prefetch";
 import type Profile from "../types/profile";
 
 /** Single source of truth for tab labels — kept concise for mobile screen widths */
@@ -69,10 +70,14 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
       }}
       size="small"
     >
-      <ToggleButton value="current" sx={TAB_TOGGLE_SX}>
+      <ToggleButton value="current" sx={TAB_TOGGLE_SX}
+        onMouseEnter={() => prefetchRoute("/")}
+      >
         {TAB_LABELS.current}
       </ToggleButton>
-      <ToggleButton value="history" sx={TAB_TOGGLE_SX}>
+      <ToggleButton value="history" sx={TAB_TOGGLE_SX}
+        onMouseEnter={() => prefetchRoute("/history")}
+      >
         {TAB_LABELS.history}
       </ToggleButton>
     </ToggleButtonGroup>
@@ -94,9 +99,9 @@ const TabbedContentDesktop = ({ ctx }: { ctx: LayoutContext }) => {
       <Box
         sx={{
           flexShrink: 0,
-          pt: 2,
-          pb: 1,
-          borderBottom: "1px solid rgba(255,255,255,0.08)",
+          pt: 2.5,
+          pb: 1.5,
+          borderBottom: "1px solid rgba(255,255,255,0.04)",
         }}
       >
         <ErrorBoundary>
@@ -130,7 +135,7 @@ const TabbedContentMobile = ({ ctx }: { ctx: LayoutContext }) => {
   const activeTab = location.pathname === "/history" ? "history" : "current";
 
   return (
-    <Box component="section" aria-label="Savings calculator" sx={{ pt: 1 }}>
+    <Box component="section" aria-label="Savings calculator" sx={{ pt: 2.5 }}>
       {/* Inputs — natural flow */}
       <ErrorBoundary>
         <FormInputs
@@ -152,10 +157,14 @@ const TabbedContentMobile = ({ ctx }: { ctx: LayoutContext }) => {
           }}
           size="small"
         >
-          <ToggleButton value="current" sx={TAB_TOGGLE_SX}>
+          <ToggleButton value="current" sx={TAB_TOGGLE_SX}
+            onMouseEnter={() => prefetchRoute("/")}
+          >
             {TAB_LABELS.current}
           </ToggleButton>
-          <ToggleButton value="history" sx={TAB_TOGGLE_SX}>
+          <ToggleButton value="history" sx={TAB_TOGGLE_SX}
+            onMouseEnter={() => prefetchRoute("/history")}
+          >
             {TAB_LABELS.history}
           </ToggleButton>
         </ToggleButtonGroup>

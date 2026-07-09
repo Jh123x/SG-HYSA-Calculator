@@ -30,8 +30,8 @@ import {
   trustBankFlexHistory,
 } from "../logic/trust_bank";
 import { maribankHistory } from "../logic/maribank";
-import { deriveCurrentFromHistory } from "../logic/history";
-import { bocSuperSaverHistory } from "../logic/bank_of_china";
+import { deriveCurrentFromHistory, deriveFactors } from "../logic/history";
+import { bocSuperSaverHistory, bocSmartSaverHistory } from "../logic/bank_of_china";
 import { chocoFinanceHistory } from "../logic/choco_finance";
 
 // Pre-compute Mari current rate so remarks are self-contained
@@ -53,6 +53,8 @@ export interface BankData {
   remarks: string;
   /** Chronologically sorted rate snapshots (oldest first) */
   history: RateSnapshot[];
+  /** Profile factors that affect this bank's interest rate (auto-derived) */
+  factors?: string[];
 }
 
 // ── Registry ─────────────────────────────────────────────────────────
@@ -79,25 +81,26 @@ export const banks: Record<string, BankData> = {
   "standard-chartered-bonus-saver": {
     name: "Standard Chartered Bonus$aver",
     url: "https://www.sc.com/sg/save/current-accounts/bonussaver/",
-    remarks: "Insurance and Investment only\nfulfils interest for 6 months",
+    remarks: "Insurance and Investment categories\neach qualify for bonus interest for only 6 months",
     history: standChartHistory,
   },
   "trust-bank-signature": {
     name: "Trust Bank (Signature)",
     url: "https://trustbank.sg/savings-account/",
-    remarks: "Spending assumes 5 x $30 if spending is more than 150.",
+    remarks: "Spending assumes 5 × S$30 transactions if total spend exceeds S$150.",
     history: trustBankSignatureHistory,
   },
   "trust-bank-zen": {
     name: "Trust Bank (Zen)",
     url: "https://trustbank.sg/savings-account/",
-    remarks: "A Flat 0.4% interest rate up to 1.2 million",
+    remarks: "Flat 0.4% p.a. on balances up to S$1,200,000",
     history: trustBankZenHistory,
   },
   "trust-bank-flex": {
     name: "Trust Bank (Flex)",
     url: "https://trustbank.sg/trust-plus/",
-    remarks: "Flex Plan: picks top 3 qualifying bonus scoops.\nScoops: salary $1.5K (+0.45%), 5×$30 spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%).\n**Trust+ required (min S$100K).**",
+    remarks:
+      "Flex Plan: picks top 3 qualifying bonus scoops.\nScoops: salary $1.5K (+0.45%), 5×$30 spend (+0.20% NTUC/+0.10%), $100K ADB (+0.30%), Invest $20K (+0.70%), ADB increase $3K (+0.20%).\n**Trust+ required (min S$100K).**",
     history: trustBankFlexHistory,
   },
   "dbs-multiplier-account": {
@@ -125,8 +128,15 @@ export const banks: Record<string, BankData> = {
     name: "BOC SuperSaver",
     url: "https://www.bankofchina.com/sg/bocinfo/bi1/202509/t20250929_25516576.html",
     remarks:
-      "This account is valid from 2024-08-01 onwards.\n**Note: You have to link your paynow to this account to qualify for the sale.**",
+      "This account is valid from 2024-08-01 onwards.\n**Note: You have to link your PayNow to this account to qualify for bonus interest.**",
     history: bocSuperSaverHistory,
+  },
+  "boc-smartsaver": {
+    name: "BOC SmartSaver",
+    url: "https://sethisfy.com/boc-smartsaver-getting-up-to-4-60-p-a-with-this-savings-account/",
+    remarks:
+      "Prevailing 0.10%, Card S$750 +0.60% / S$2.5K +0.90%, Salary S$3K +0.50%, 3×Bill +0.10%, Insurance +3.00%. Max 1.60% on S$100K (4.60% with insurance).",
+    history: bocSmartSaverHistory,
   },
   "maybank-saveup": {
     name: "Maybank SaveUp",
@@ -153,11 +163,15 @@ export const banks: Record<string, BankData> = {
     name: "Citi Wealth First",
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks:
-      "Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)\nBonus interest capped at first $500k.\n*Assumes Citigold level, Citi Private has a higher level.",
+      "Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)\nBonus interest capped at first $500k.\n*Assumes Citigold tier. Citi Private clients enjoy higher rates.",
     history: citiHistory,
   },
 };
 
+// Auto-derive factors for every bank from its interest function
+for (const bank of Object.values(banks)) {
+  bank.factors = deriveFactors(bank.history);
+}
+
 /** All bank slugs in registry order. */
 export const BANK_SLUGS = Object.keys(banks);
-

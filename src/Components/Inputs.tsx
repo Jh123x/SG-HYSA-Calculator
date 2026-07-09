@@ -1,27 +1,21 @@
 import {
   Button,
-  FormControl,
   TextField,
   Box,
   Checkbox,
   FormControlLabel,
-  FormGroup,
   Tooltip,
   Typography,
   Chip,
 } from "@mui/material";
 import { useState, useEffect, useRef, useCallback } from "react";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import type Profile from "../types/profile";
 import { NewProfile } from "../types/profile";
 import { STORE_KEY } from "../consts/keys";
-import { HelpOutlined } from "@mui/icons-material";
-import {
-  primaryColor,
-  bgColor,
-  textColor,
-  dangerColor,
-} from "../consts/theme";
+import { primaryColor, textColor, mutedColor, dangerColor, borderColor } from "../consts/theme";
 import type { Field } from "./types";
 import { WebAlert } from "./Alert";
 import { booleanInputs, numericalInputs } from "./InputValues";
@@ -46,6 +40,9 @@ interface FormInput {
   leftChildren?: React.ReactNode;
 }
 
+// The three core numeric inputs to show in the compact row
+const COMPACT_INPUTS = ["Savings", "Salary", "Spending"];
+
 export const FormInputs = ({
   currProfile,
   setCurrProfile,
@@ -56,6 +53,7 @@ export const FormInputs = ({
 }: FormInput) => {
   const [profile, setProfile] = useState<Profile>(currProfile);
   const [notifications, setNotifications] = useState<Notification[]>([]);
+  const [expanded, setExpanded] = useState(false);
   const nextId = useRef(0);
 
   useEffect(() => {
@@ -81,7 +79,16 @@ export const FormInputs = ({
   const onClear = () => {
     setCurrProfile(NewProfile({}));
     addNotification("Cleared", "info");
+    setExpanded(false);
   };
+
+  // Filter inputs for compact row vs expanded
+  const compactNumericalFields = numericalInputs.filter((f) =>
+    COMPACT_INPUTS.includes(f.label),
+  );
+  const expandedNumericalFields = numericalInputs.filter(
+    (f) => !COMPACT_INPUTS.includes(f.label),
+  );
 
   return (
     <>
@@ -92,62 +99,123 @@ export const FormInputs = ({
         onAccept={onAcceptShared}
         onReject={onRejectShared}
       />
-      <FormControl
+
+      {/* Compact inline row: 3 core inputs + More button */}
+      <Box
         sx={{
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
+          gap: 1.5,
+          flexWrap: "wrap",
           width: "100%",
         }}
       >
-        <FormGroup
-          sx={{
-            width: "100%",
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            gap: { xs: "10px", sm: "15px" },
-            justifyContent: "center",
-          }}
-        >
-          {numericalInputs.map(
-            ({ label, getStateFromProfile, fn, tooltip }) => {
-              const value = getStateFromProfile(profile);
-              return (
-                <InputNumberField
-                  key={label.replace(" ", "_") + "_input_field"}
-                  label={label}
-                  tooltip={tooltip}
-                  onChange={(value) =>
-                    setCurrProfile(fn(profile, Number(value)))
-                  }
-                  value={value}
-                />
-              );
-            },
-          )}
-          {booleanInputs.map(({ label, getStateFromProfile, fn, tooltip }) => {
+        {compactNumericalFields.map(
+          ({ label, getStateFromProfile, fn, tooltip }) => {
             const value = getStateFromProfile(profile);
             return (
-              <InputBooleanField
-                key={label.replace(" ", "_") + "_input_field"}
+              <InputNumberField
+                key={`compact_${label.replace(" ", "_")}`}
                 label={label}
                 tooltip={tooltip}
-                onChange={(value) => setCurrProfile(fn(profile, !value))}
+                onChange={(v) => setCurrProfile(fn(profile, Number(v)))}
                 value={value}
               />
             );
-          })}
-        </FormGroup>
-      </FormControl>
+          },
+        )}
+        <Button
+          onClick={() => setExpanded(!expanded)}
+          variant="text"
+          size="small"
+          endIcon={expanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+          sx={{
+            color: mutedColor,
+            textTransform: "none",
+            fontWeight: 500,
+            fontSize: "0.8rem",
+            whiteSpace: "nowrap",
+            minWidth: 0,
+            px: 1,
+            "&:hover": { color: primaryColor },
+          }}
+        >
+          {expanded ? "Less" : "More"}
+        </Button>
+      </Box>
+
+      {/* Expanded section: additional numeric + boolean toggles */}
+      {expanded && (
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 2,
+            width: "100%",
+            mt: 1.5,
+          }}
+        >
+          {/* Additional numeric fields */}
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 1.5,
+              alignItems: "center",
+            }}
+          >
+            {expandedNumericalFields.map(
+              ({ label, getStateFromProfile, fn, tooltip }) => {
+                const value = getStateFromProfile(profile);
+                return (
+                  <InputNumberField
+                    key={`expanded_${label.replace(" ", "_")}`}
+                    label={label}
+                    tooltip={tooltip}
+                    onChange={(v) => setCurrProfile(fn(profile, Number(v)))}
+                    value={value}
+                  />
+                );
+              },
+            )}
+          </Box>
+
+          {/* Boolean toggles */}
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: 1.5,
+              alignItems: "center",
+            }}
+          >
+            {booleanInputs.map(
+              ({ label, getStateFromProfile, fn, tooltip }) => {
+                const value = getStateFromProfile(profile);
+                return (
+                  <InputBooleanField
+                    key={label.replace(" ", "_")}
+                    label={label}
+                    tooltip={tooltip}
+                    onChange={(v) => setCurrProfile(fn(profile, !v))}
+                    value={value}
+                  />
+                );
+              },
+            )}
+          </Box>
+        </Box>
+      )}
+
+      {/* Action bar: Clear + Share + leftChildren */}
       <Box
         sx={{
-          marginTop: "20px",
+          mt: 2,
           display: "flex",
           flexDirection: { xs: "column", sm: "row" },
           justifyContent: "space-between",
           alignItems: { xs: "stretch", sm: "center" },
-          gap: "10px",
+          gap: 1.5,
         }}
       >
         {/* Left: tab toggle (passed from TabbedContent) + privacy chip */}
@@ -160,7 +228,7 @@ export const FormInputs = ({
             variant="outlined"
             sx={{
               color: textColor,
-              borderColor: "rgba(255,255,255,0.15)",
+              borderColor: borderColor,
               opacity: 0.8,
               fontSize: "0.75rem",
             }}
@@ -172,8 +240,9 @@ export const FormInputs = ({
             sx={{
               backgroundColor: dangerColor,
               color: textColor,
-              padding: "10px 20px",
+              padding: "6px 16px",
               borderRadius: "8px",
+              fontSize: "0.8rem",
               "&:hover": {
                 backgroundColor: "#d32f2f",
               },
@@ -191,6 +260,7 @@ export const FormInputs = ({
           />
         </Box>
       </Box>
+
       <NotificationStack>
         {notifications.map((n) => (
           <WebAlert
@@ -222,9 +292,8 @@ const InputBooleanField = ({
     >
       <Box
         sx={{
-          width: { xs: "100%", sm: "200px" },
           display: "flex",
-          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <FormControlLabel
@@ -232,33 +301,22 @@ const InputBooleanField = ({
             <Checkbox
               checked={value === "" ? false : value}
               onChange={() => onChange(value)}
+              size="small"
               sx={{
-                color: textColor,
+                color: mutedColor,
                 "&.Mui-checked": { color: primaryColor },
                 "& .MuiSvgIcon-root": {
-                  fontSize: { xs: "1.2rem", sm: "1.4rem" },
+                  fontSize: "1.1rem",
                 },
               }}
             />
           }
           label={label}
           sx={{
-            width: "100%",
             margin: 0,
-            backgroundColor: bgColor,
-            padding: "8px 16px",
-            borderRadius: "8px",
-            border: "1px solid rgba(255, 255, 255, 0.23)",
-            transition: "all 0.2s ease-in-out",
-            "@media (hover: hover)": {
-              "&:hover": {
-                borderColor: primaryColor,
-                backgroundColor: "rgba(255, 255, 255, 0.04)",
-              },
-            },
             "& .MuiFormControlLabel-label": {
               color: textColor,
-              fontSize: { xs: "0.9rem", sm: "1rem" },
+              fontSize: "0.8rem",
               fontWeight: 500,
             },
           }}
@@ -277,7 +335,6 @@ const InputNumberField = ({
   const [inputValue, setInputValue] = useState<string>(
     value === 0 ? "" : value.toString(),
   );
-  const [isFocused, setIsFocused] = useState<boolean>(false);
 
   useEffect(() => {
     if (value === 0) {
@@ -304,57 +361,26 @@ const InputNumberField = ({
 
   return (
     <TextField
-      label={
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-          }}
-        >
-          <Typography>{label}</Typography>
-          {(isFocused || value !== 0) && (
-            <Tooltip title={tooltip} placement="right">
-              <HelpOutlined
-                fontSize="small"
-                sx={{
-                  p: "0px 5px",
-                  transition: "opacity 0.2s ease-in-out",
-                }}
-              />
-            </Tooltip>
-          )}
-        </div>
-      }
+      label={label}
       type="number"
       variant="outlined"
-      placeholder={tooltip}
-      onFocus={() => setIsFocused(true)}
-      onBlur={() => setIsFocused(false)}
+      size="small"
+      helperText={tooltip}
+      slotProps={{
+        formHelperText: {
+          sx: { fontSize: "0.7rem", mx: 0, mt: 0.25, color: mutedColor },
+        },
+      }}
       sx={{
         "& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button":
           { display: "none" },
         "& input[type=number]": { MozAppearance: "textfield" },
-        width: { xs: "100%", sm: "200px" },
-        backgroundColor: bgColor,
-        borderRadius: "8px",
+        width: { xs: "100%", sm: 260 },
         "& .MuiInputBase-root": {
-          borderRadius: "8px",
-          fontSize: { xs: "0.9rem", sm: "1rem" },
+          fontSize: "1rem",
         },
         "& .MuiInputLabel-root": {
-          color: textColor,
-          fontSize: { xs: "0.9rem", sm: "1rem" },
-        },
-        "& .MuiOutlinedInput-root": {
-          "&:hover .MuiOutlinedInput-notchedOutline": {
-            borderColor: primaryColor,
-          },
-          "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-            borderColor: primaryColor,
-          },
-        },
-        "& .MuiInputLabel-root.Mui-focused": {
-          color: primaryColor,
+          fontSize: "0.95rem",
         },
       }}
       onChange={handleChange}

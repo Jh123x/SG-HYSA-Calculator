@@ -24,6 +24,8 @@ export interface BankDef {
   remarks: string | ReactElement;
   /** Chronologically sorted rate snapshots (oldest first) */
   history: RateSnapshot[];
+  /** Profile factors that affect this bank's interest rate */
+  factors?: string[];
 }
 
 // ── Registry (slug-keyed, with JSX remarks) ─────────────────────────
@@ -36,5 +38,6 @@ for (const [slug, data] of Object.entries(banks)) {
     url: data.url,
     remarks: formatRemarks(data.remarks),
     history: data.history,
+    factors: data.factors,
   };
 }
