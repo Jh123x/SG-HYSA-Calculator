@@ -111,7 +111,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                 >
                   <div
                     role="none"
-                    style="border-width: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; inset: 0; padding: 0px; outline: none; pointer-events: none;"
+                    style="border-width: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; inset: 0px; padding: 0px; outline: none; pointer-events: none;"
                     tabindex="0"
                   >
                     <div
@@ -361,9 +361,6 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                       />
                     </clippath>
                   </svg>
-                  <div
-                    style="position: absolute; left: 0px; top: 0px; pointer-events: none; opacity: 0; width: 1px; height: 1px;"
-                  />
                 </div>
               </div>
             </div>
@@ -385,12 +382,12 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-x2flso-MuiButtonBase-root-MuiButton-root"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1ke311x-MuiButtonBase-root-MuiButton-root"
               tabindex="0"
               type="button"
             >
               <span
-                class="MuiButton-icon MuiButton-startIcon css-1sh91j5-MuiButton-startIcon"
+                class="MuiButton-icon MuiButton-startIcon css-1lxyhll-MuiButton-startIcon"
               >
                 <svg
                   aria-hidden="true"
@@ -803,7 +800,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
               >
                 <div
                   role="none"
-                  style="border-width: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; inset: 0; padding: 0px; outline: none; pointer-events: none;"
+                  style="border-width: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; inset: 0px; padding: 0px; outline: none; pointer-events: none;"
                   tabindex="0"
                 >
                   <div
@@ -1053,9 +1050,6 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                     />
                   </clippath>
                 </svg>
-                <div
-                  style="position: absolute; left: 0px; top: 0px; pointer-events: none; opacity: 0; width: 1px; height: 1px;"
-                />
               </div>
             </div>
           </div>
@@ -1077,12 +1071,12 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
           style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
         >
           <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-x2flso-MuiButtonBase-root-MuiButton-root"
+            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1ke311x-MuiButtonBase-root-MuiButton-root"
             tabindex="0"
             type="button"
           >
             <span
-              class="MuiButton-icon MuiButton-startIcon css-1sh91j5-MuiButton-startIcon"
+              class="MuiButton-icon MuiButton-startIcon css-1lxyhll-MuiButton-startIcon"
             >
               <svg
                 aria-hidden="true"
