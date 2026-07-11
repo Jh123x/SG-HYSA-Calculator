@@ -8,6 +8,7 @@
     "skipLibCheck": true,
     "types": ["vitest/globals"],
     "module": "esnext",
+    "moduleResolution": "bundler",
     "esModuleInterop": true
   }
 }
