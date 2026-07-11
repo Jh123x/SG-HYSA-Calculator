@@ -189,7 +189,7 @@ exports[`BankDetailPage desktop > should match snapshot 1`] = `
                           <path
                             class="MuiLineChart-line"
                             cursor="unset"
-                            d="M85,25.325L84.564,25.325L84.564,29.825L80.229,29.825L80.229,30.425L80,30.425L80,30.425"
+                            d="M85,25.325L84.564,25.325L84.564,29.825L80.233,29.825L80.233,30.425L80,30.425L80,30.425"
                             data-series="auto-generated-id-0"
                             data-series-id="auto-generated-id-0"
                             fill="none"
@@ -881,7 +881,7 @@ exports[`BankDetailPage mobile > should match snapshot 1`] = `
                         <path
                           class="MuiLineChart-line"
                           cursor="unset"
-                          d="M85,53.725L84.564,53.725L84.564,82.225L80.229,82.225L80.229,86.025L80,86.025L80,86.025"
+                          d="M85,53.725L84.564,53.725L84.564,82.225L80.233,82.225L80.233,86.025L80,86.025L80,86.025"
                           data-series="auto-generated-id-0"
                           data-series-id="auto-generated-id-0"
                           fill="none"
