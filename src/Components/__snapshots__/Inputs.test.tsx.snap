@@ -192,12 +192,12 @@ exports[`Form Inputs > should match snapshot if profile is empty 1`] = `
         Clear
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-7qg0bq-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1f96gy7-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
         <span
-          class="MuiButton-icon MuiButton-startIcon css-1sh91j5-MuiButton-startIcon"
+          class="MuiButton-icon MuiButton-startIcon css-1lxyhll-MuiButton-startIcon"
         >
           <svg
             aria-hidden="true"
@@ -413,12 +413,12 @@ exports[`Form Inputs > should match snapshot if profile is not empty 1`] = `
         Clear
       </button>
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-7qg0bq-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeMedium MuiButton-colorPrimary css-1f96gy7-MuiButtonBase-root-MuiButton-root"
         tabindex="0"
         type="button"
       >
         <span
-          class="MuiButton-icon MuiButton-startIcon css-1sh91j5-MuiButton-startIcon"
+          class="MuiButton-icon MuiButton-startIcon css-1lxyhll-MuiButton-startIcon"
         >
           <svg
             aria-hidden="true"
