@@ -86,8 +86,8 @@ export const InterestVsSavingsChart = ({
   }));
 
   const legendSlotProps: LegendSlotProps = {
-    direction: "horizontal",
-    position: { vertical: "bottom", horizontal: "center" },
+    direction: "vertical",
+    position: { vertical: "middle", horizontal: "end" },
     ...(enableLegendToggle ? { toggleVisibilityOnClick: true } : {}),
   };
 

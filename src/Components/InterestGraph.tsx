@@ -57,7 +57,7 @@ export const InterestGraph = ({
       sx={{
         p: 2,
 
-        height: height === "fill" ? "100%" : "auto",
+        minHeight: height === "fill" ? "100%" : undefined,
         display: "flex",
         flexDirection: "column",
       }}

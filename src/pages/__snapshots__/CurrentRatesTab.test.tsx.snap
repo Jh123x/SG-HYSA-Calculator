@@ -20,7 +20,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
           class="MuiBox-root css-dqo70j"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-18gkh5a-MuiPaper-root"
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-12k4zk8-MuiPaper-root"
             style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
           >
             <div
@@ -30,10 +30,10 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiBox-root css-zi2l0h"
               >
                 <div
-                  class="css-1f7e6jz-MuiChartsWrapper-root"
+                  class="css-rzfp3q-MuiChartsWrapper-root"
                 >
                   <ul
-                    class="MuiChartsLegend-root MuiChartsLegend-horizontal css-pdrdb0-MuiChartsLegend-root"
+                    class="MuiChartsLegend-root MuiChartsLegend-horizontal css-1gf1r2y-MuiChartsLegend-root"
                   >
                     <li
                       class="MuiChartsLegend-item"
@@ -2520,7 +2520,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
       class="MuiBox-root css-uewl2b"
     >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1gvawvu-MuiPaper-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1fet55k-MuiPaper-root"
         style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
       >
         <div
@@ -2530,10 +2530,10 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
             class="MuiBox-root css-0"
           >
             <div
-              class="css-1f7e6jz-MuiChartsWrapper-root"
+              class="css-rzfp3q-MuiChartsWrapper-root"
             >
               <ul
-                class="MuiChartsLegend-root MuiChartsLegend-horizontal css-pdrdb0-MuiChartsLegend-root"
+                class="MuiChartsLegend-root MuiChartsLegend-horizontal css-1gf1r2y-MuiChartsLegend-root"
               >
                 <li
                   class="MuiChartsLegend-item"
