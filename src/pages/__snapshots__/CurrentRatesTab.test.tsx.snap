@@ -27,7 +27,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               style="display: flex; flex-direction: column; flex: 1 1 0%; min-height: 0px;"
             >
               <div
-                class="MuiBox-root css-1lgiddr"
+                class="MuiBox-root css-zi2l0h"
               >
                 <div
                   class="css-1f7e6jz-MuiChartsWrapper-root"

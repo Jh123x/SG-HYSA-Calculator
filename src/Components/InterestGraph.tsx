@@ -69,7 +69,7 @@ export const InterestGraph = ({
         height={height === "fill" ? undefined : height}
         containerSx={
           height === "fill"
-            ? { flex: 1, minHeight: 0, overflow: "hidden" }
+            ? { flex: 1, minHeight: 0 }
             : undefined
         }
       >
