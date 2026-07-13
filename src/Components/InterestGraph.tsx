@@ -57,12 +57,12 @@ export const InterestGraph = ({
       sx={{
         p: 2,
 
-        height: height === "fill" ? "100%" : "auto",
+        minHeight: height === "fill" ? "100%" : undefined,
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <div style={{ display: "flex", flexDirection: "column", flex: 1, minHeight: 0, overflow: "hidden" }}>
+      <div style={{ display: "flex", flexDirection: "column", flex: 1, minHeight: 0 }}>
         <InterestVsSavingsChart
         lines={lines}
         profile={profile}
