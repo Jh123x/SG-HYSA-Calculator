@@ -190,7 +190,7 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           <LineChart
             dataset={chartData}
             xAxis={[{ dataKey: "date", label: "Date", scaleType: "time" as const, tickLabelStyle: { angle: 45, textAnchor: "start" as const, fontSize: 11 }, valueFormatter: dateFormatter }]}
-            series={[{ dataKey, label: info.name, color: lineColors[0], showMark: true, curve: "stepAfter", valueFormatter: (v: number | null) => v !== null ? (isYearly ? `$${v.toFixed(2)}` : `${v.toFixed(2)}%`) : "" }]}
+            series={[{ dataKey, label: info.name, color: lineColors[0], showMark: false, curve: "stepAfter", valueFormatter: (v: number | null) => v !== null ? (isYearly ? `$${v.toFixed(2)}` : `${v.toFixed(2)}%`) : "" }]}
             yAxis={[{ label: yLabel, scaleType: "linear", min: 0, valueFormatter: yFormatter }]}
             height={isMobile ? 180 : undefined}
             grid={{ vertical: true, horizontal: true }}

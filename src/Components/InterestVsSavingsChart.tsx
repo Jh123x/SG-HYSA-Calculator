@@ -78,7 +78,8 @@ export const InterestVsSavingsChart = ({
     id: line.dataKey,
     dataKey: line.dataKey,
     label: line.label,
-    showMark: true,
+    showMark: false,
+    hidden: idx >= 5,
     color: line.color ?? lineColors[idx % lineColors.length],
     valueFormatter: (v: number | null) =>
       v !== null ? `$${v.toFixed(2)}` : "",

@@ -14,7 +14,7 @@ describe("buildComparisonSeries", () => {
     expect(series).toHaveLength(1);
     expect(series[0].dataKey).toBe("gxs-savings-account_yearlyInterest");
     expect(series[0].label).toContain("GXS Savings");
-    expect(series[0].showMark).toBe(true);
+    expect(series[0].showMark).toBe(false);
     expect(series[0].curve).toBe("stepAfter");
   });
 

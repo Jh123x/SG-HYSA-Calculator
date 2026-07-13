@@ -28,7 +28,7 @@ export function buildComparisonSeries(
     return {
       dataKey,
       label: bankInfo[slug]?.name ?? slug,
-      showMark: true,
+      showMark: false,
       color: lineColors[idx % lineColors.length],
       curve: "stepAfter" as const,
       valueFormatter:
