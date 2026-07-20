@@ -8,10 +8,10 @@ describe("Form Inputs", () => {
     const tree = render(
       <FormInputs
         currProfile={NewProfile({})}
-        setCurrProfile={(_: Profile) => {}}
+        setCurrProfile={(_: Profile) => { }}
         pendingUrlProfile={null}
-        onAcceptShared={() => {}}
-        onRejectShared={() => {}}
+        onAcceptShared={() => { }}
+        onRejectShared={() => { }}
       ></FormInputs>,
     ).asFragment();
     expect(tree).toMatchSnapshot();
@@ -30,10 +30,10 @@ describe("Form Inputs", () => {
           MonthlyAccIncrease: 500,
           GiroTransactions: 0,
         })}
-        setCurrProfile={(_: Profile) => {}}
+        setCurrProfile={(_: Profile) => { }}
         pendingUrlProfile={null}
-        onAcceptShared={() => {}}
-        onRejectShared={() => {}}
+        onAcceptShared={() => { }}
+        onRejectShared={() => { }}
       ></FormInputs>,
     ).asFragment();
     expect(tree).toMatchSnapshot();
