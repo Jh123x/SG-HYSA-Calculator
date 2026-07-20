@@ -42,7 +42,7 @@ export function deriveFactors(history: RateSnapshot[]): string[] {
 }
 
 /** A resolved snapshot ready for charting / display */
-export interface ResolvedHistoryItem {
+interface ResolvedHistoryItem {
   /** Parsed date */
   date: Date;
   /** Yearly interest in SGD (e.g. 1234.56) */
@@ -60,7 +60,7 @@ const ZERO_INTEREST = (_profile: Profile): ResultInterest =>
   new ResultInterest(0, 0);
 
 /** The resolved "current" state for a bank: its interest function + when it was last updated. */
-export interface DerivedCurrent {
+interface DerivedCurrent {
   interestFn: (profile: Profile) => ResultInterest;
   lastUpdated: string;
 }
