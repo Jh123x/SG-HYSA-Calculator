@@ -1,5 +1,4 @@
-import type Profile from "./profile";
-import type { ResultInterest } from "./interest_result";
+import type { InterestFn } from "./interest";
 
 /**
  * A single snapshot in a bank's interest rate history.
@@ -9,7 +8,7 @@ import type { ResultInterest } from "./interest_result";
  */
 export interface RateSnapshot {
   effectiveDate: string;
-  interestFn: (profile: Profile) => ResultInterest;
+  interestFn: InterestFn;
   changeSummary: string;
   sourceUrl?: string;
 }

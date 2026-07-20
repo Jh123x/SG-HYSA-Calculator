@@ -1,14 +1,14 @@
 import { LineChart } from "@mui/x-charts/LineChart";
 import { Box, type SxProps, type Theme } from "@mui/material";
-import { lineColors, textColor, mutedColor, borderColor } from "../consts/theme";
+import { lineColors, mutedColor, borderColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import type Profile from "../types/profile";
-import type { ResultInterest } from "../types/interest_result";
+import type { InterestFn } from "../types/interest";
 
 export interface ChartLine {
   dataKey: string;
   label: string;
-  interestFn: (profile: Profile) => ResultInterest;
+  interestFn: InterestFn;
   color?: string;
 }
 
@@ -134,3 +134,4 @@ export const InterestVsSavingsChart = ({
     </Box>
   );
 };
+

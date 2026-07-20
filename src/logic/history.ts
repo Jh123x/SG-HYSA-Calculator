@@ -3,43 +3,7 @@ import type { RateSnapshot } from "../types/history";
 import { ResultInterest } from "../types/interest_result";
 import { parseISODate, todayISO, TBD_DATE } from "./dates";
 import { FIELDS } from "../consts/fields";
-
-/**
- * Auto-detect which Profile fields a bank's interest function reads.
- *
- * Uses a Proxy that records every property access while feeding values
- * that maximise bonus branches (Infinity for numbers, true for booleans).
- * This ensures we capture optional criteria that only activate above
- * certain thresholds (e.g. Insurance > $150k, Spending >= $750).
- */
-export function deriveFactors(history: RateSnapshot[]): string[] {
-  const { interestFn } = deriveCurrentFromHistory(history);
-  const accessed = new Set<string>();
-
-  const proxy = new Proxy({} as Profile, {
-    get(_target, prop: string) {
-      if (prop === "then" || typeof prop === "symbol") return undefined;
-      accessed.add(prop);
-      // Booleans → true, everything else → Infinity to trigger all branches
-      const fieldValue = FIELDS.find((v) => v.key === prop);
-
-      if (!fieldValue) throw new Error("invalid field");
-      if (fieldValue.isBoolean) return true
-      return Infinity;
-    },
-  });
-
-  try {
-    interestFn(proxy);
-  } catch {
-    // If Infinity breaks something, we still captured the field accesses
-  }
-
-  return [...accessed]
-    .map((f) => FIELDS.find((v) => v.key === f)?.label ?? "")
-    .filter(Boolean)
-    .sort();
-}
+import { InterestFn } from "../types/interest";
 
 /** A resolved snapshot ready for charting / display */
 interface ResolvedHistoryItem {
@@ -61,7 +25,7 @@ const ZERO_INTEREST = (_profile: Profile): ResultInterest =>
 
 /** The resolved "current" state for a bank: its interest function + when it was last updated. */
 interface DerivedCurrent {
-  interestFn: (profile: Profile) => ResultInterest;
+  interestFn: InterestFn; 
   lastUpdated: string;
 }
 

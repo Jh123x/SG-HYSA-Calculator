@@ -84,7 +84,7 @@ The app auto-derives "current" rates from `history` via `deriveCurrentFromHistor
 ```typescript
 interface RateSnapshot {
   effectiveDate: string;  // "YYYY-MM-DD" ISO date
-  interestFn: (profile: Profile) => ResultInterest;
+  interestFn: InterestFn;
   changeSummary: string;  // Human-readable diff from previous snapshot
 }
 ```

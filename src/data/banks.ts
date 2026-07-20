@@ -10,7 +10,8 @@
  * (scripts, build tools, tests with minimal deps, etc.).
  */
 
-import Profile, { NewProfile } from "../types/profile";
+import type Profile from "../types/profile";
+import { NewProfile } from "../types/profile";
 import { uobHistory } from "../logic/uob";
 import { gxsHistory } from "../logic/gxs";
 import { ocbcHistory } from "../logic/ocbc360";
@@ -28,12 +29,12 @@ import {
   trustBankFlexHistory,
 } from "../logic/trust_bank";
 import { maribankHistory } from "../logic/maribank";
-import { deriveCurrentFromHistory, deriveFactors } from "../logic/history";
+import { deriveCurrentFromHistory } from "../logic/history";
 import { bocSuperSaverHistory, bocSmartSaverHistory } from "../logic/bank_of_china";
 import { chocoFinanceHistory } from "../logic/choco_finance";
 import type { BankData } from "../types/bank_data";
-import { ResultInterest } from "../types/interest_result";
 import { FIELDS } from "../consts/fields";
+import type { InterestFn } from "../types/interest";
 
 // Pre-compute Mari current rate so remarks are self-contained
 const _mariCurrentRate = (() => {
@@ -161,7 +162,7 @@ export const banks: Record<string, BankData> = {
  * This ensures we capture optional criteria that only activate above
  * certain thresholds (e.g. Insurance > $150k, Spending >= $750).
  */
-export function deriveFactors(interestFn: (_: Profile) => ResultInterest): string[] {
+export function deriveFactors(interestFn: InterestFn): string[] {
   const accessed = new Set<string>();
 
   const proxy = new Proxy({} as Profile, {
