@@ -1,0 +1,1205 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Comparison Chart > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-1sm2s1z"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1wq5bme-MuiPaper-root"
+      style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+    >
+      <div
+        class="MuiBox-root css-zi2l0h"
+      >
+        <div
+          style="height: 100%;"
+        >
+          <div
+            class="css-1mg2yh1-MuiChartsWrapper-root"
+          >
+            <ul
+              class="MuiChartsLegend-root MuiChartsLegend-horizontal css-6qmeuq-MuiChartsLegend-root"
+            >
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-0"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#5b5bd6"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    UOB One
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-1"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#34d058"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    OCBC 360
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-2"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#f5a623"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    Mari Savings
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-3"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#ff6b4a"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    Standard Chartered Bonus$aver
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-4"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#a78bfa"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    Trust Bank (Signature)
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-5"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#f44b42"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    Trust Bank (Zen)
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-6"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#67b8f7"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    Trust Bank (Flex)
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-7"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#56d470"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    DBS Multiplier
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-8"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#f7c948"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    GXS Savings
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-9"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#ff9175"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    Chocolate Finance
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-10"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#c4b5fd"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    BOC SuperSaver
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-11"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#fb7b70"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    BOC SmartSaver
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-12"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#93cbfa"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    Maybank SaveUp
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-13"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#8ae39b"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    Maybank iSAVvy
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-14"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#fad87a"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    Maybank iSAVvy Plus
+                  </span>
+                </div>
+              </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-15"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#ffb399"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    Citi Wealth First
+                  </span>
+                </div>
+              </li>
+            </ul>
+            <div
+              class="MuiChartsSurface-root MuiChartsSurface-root css-1q8baz2-MuiChartsLayerContainer-root"
+              role="none"
+            >
+              <div
+                role="none"
+                style="border-width: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; inset: 0px; padding: 0px; outline: none; pointer-events: none;"
+                tabindex="0"
+              >
+                <div
+                  id="voiceover-_r_1_-1"
+                  style="display: none;"
+                />
+                <div
+                  id="voiceover-_r_1_-2"
+                  style="display: none;"
+                />
+                <div
+                  aria-labelledby="voiceover-_r_1_-1"
+                  role="img"
+                  style="width: 100%; height: 100%; outline: none;"
+                />
+                <div
+                  aria-labelledby="voiceover-_r_1_-2"
+                  role="img"
+                  style="width: 100%; height: 100%; outline: none;"
+                />
+              </div>
+              <svg
+                aria-hidden="true"
+                class="MuiChartsSvgLayer-root css-1tura0-MuiChartsSvgLayer-root"
+                viewBox="0 0 100 100"
+              >
+                <g
+                  class="MuiChartsGrid-root css-g2sgfh-MuiChartsGrid-root"
+                >
+                  <line
+                    class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
+                    x1="85"
+                    x2="80"
+                    y1="35"
+                    y2="35"
+                  />
+                  <line
+                    class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
+                    x1="85"
+                    x2="80"
+                    y1="27.5"
+                    y2="27.5"
+                  />
+                  <line
+                    class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
+                    x1="85"
+                    x2="80"
+                    y1="20"
+                    y2="20"
+                  />
+                </g>
+                <g
+                  clip-path="url(#_r_0_-clip-path)"
+                >
+                  <g
+                    class="MuiLineChart-areaPlot css-94vonx-MuiAreaPlot-root"
+                  />
+                  <g
+                    class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
+                  >
+                    <clippath
+                      id="_r_1_-auto-generated-id-0-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-0-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,33.031L83.736,33.031L83.736,33.031L82.053,33.031L82.053,33.031L81.91,33.031L81.91,33.031L81.771,33.031L81.771,33.031L81.628,33.031L81.628,33.031L81.485,33.031L81.485,33.031L81.347,33.031L81.347,33.031L81.315,33.031L81.315,33.031L81.287,33.031L81.287,33.031L81.282,33.031L81.282,33.031L81.204,33.031L81.204,33.031L81.065,33.031L81.065,33.031L80.946,33.031L80.946,33.031L80.65,33.031L80.65,33.031L80.489,33.031L80.489,33.031L80.208,33.031L80.208,33.031L80.18,33.031L80.18,33.031L80,33.031L80,33.031"
+                        data-series="auto-generated-id-0"
+                        data-series-id="auto-generated-id-0"
+                        fill="none"
+                        opacity="1"
+                        stroke="#5b5bd6"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-1-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-1-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,32.844L83.736,32.844L83.736,32.844L82.053,32.844L82.053,32.844L81.91,32.844L81.91,32.844L81.771,32.844L81.771,32.844L81.628,32.844L81.628,33.219L81.485,33.219L81.485,33.219L81.347,33.219L81.347,33.219L81.315,33.219L81.315,33.219L81.287,33.219L81.287,33.219L81.282,33.219L81.282,33.219L81.204,33.219L81.204,33.219L81.065,33.219L81.065,33.219L80.946,33.219L80.946,33.219L80.65,33.219L80.65,33.219L80.489,33.219L80.489,33.781L80.208,33.781L80.208,33.781L80.18,33.781L80.18,33.781L80,33.781L80,33.781"
+                        data-series="auto-generated-id-1"
+                        data-series-id="auto-generated-id-1"
+                        fill="none"
+                        opacity="1"
+                        stroke="#34d058"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-2-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-2-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,26.45L83.736,26.45L83.736,26.45L82.053,26.45L82.053,26.45L81.91,26.45L81.91,27.95L81.771,27.95L81.771,27.95L81.628,27.95L81.628,27.95L81.485,27.95L81.485,30.2L81.347,30.2L81.347,30.2L81.315,30.2L81.315,30.2L81.287,30.2L81.287,30.2L81.282,30.2L81.282,30.2L81.204,30.2L81.204,30.2L81.065,30.2L81.065,30.2L80.946,30.2L80.946,31.7L80.65,31.7L80.65,31.7L80.489,31.7L80.489,31.7L80.208,31.7L80.208,31.7L80.18,31.7L80.18,31.7L80,31.7L80,31.7"
+                        data-series="auto-generated-id-2"
+                        data-series-id="auto-generated-id-2"
+                        fill="none"
+                        opacity="1"
+                        stroke="#f5a623"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-3-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-3-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,34.719L83.736,34.719L83.736,34.719L82.053,34.719L82.053,34.719L81.91,34.719L81.91,34.719L81.771,34.719L81.771,34.719L81.628,34.719L81.628,34.719L81.485,34.719L81.485,34.719L81.347,34.719L81.347,34.719L81.315,34.719L81.315,34.719L81.287,34.719L81.287,34.719L81.282,34.719L81.282,34.719L81.204,34.719L81.204,34.719L81.065,34.719L81.065,34.719L80.946,34.719L80.946,34.719L80.65,34.719L80.65,34.719L80.489,34.719L80.489,34.719L80.208,34.719L80.208,34.719L80.18,34.719L80.18,34.719L80,34.719L80,34.719"
+                        data-series="auto-generated-id-3"
+                        data-series-id="auto-generated-id-3"
+                        fill="none"
+                        opacity="1"
+                        stroke="#ff6b4a"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-4-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-4-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,25.719L83.736,25.719L83.736,25.719L82.053,25.719L82.053,25.719L81.91,25.719L81.91,26.281L81.771,26.281L81.771,26.281L81.628,26.281L81.628,27.688L81.485,27.688L81.485,27.688L81.347,27.688L81.347,31.063L81.315,31.063L81.315,31.063L81.287,31.063L81.287,31.063L81.282,31.063L81.282,31.063L81.204,31.063L81.204,31.063L81.065,31.063L81.065,31.063L80.946,31.063L80.946,31.063L80.65,31.063L80.65,31.063L80.489,31.063L80.489,31.063L80.208,31.063L80.208,32.469L80.18,32.469L80.18,32.469L80,32.469L80,32.469"
+                        data-series="auto-generated-id-4"
+                        data-series-id="auto-generated-id-4"
+                        fill="none"
+                        opacity="1"
+                        stroke="#a78bfa"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-5-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-5-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,32.75L83.736,32.75L83.736,32.75L82.053,32.75L82.053,32.75L81.91,32.75L81.91,32.75L81.771,32.75L81.771,32.75L81.628,32.75L81.628,32.75L81.485,32.75L81.485,32.75L81.347,32.75L81.347,32.75L81.315,32.75L81.315,32.75L81.287,32.75L81.287,32.75L81.282,32.75L81.282,32.75L81.204,32.75L81.204,32.75L81.065,32.75L81.065,32.75L80.946,32.75L80.946,32.75L80.65,32.75L80.65,32.75L80.489,32.75L80.489,32.75L80.208,32.75L80.208,32.75L80.18,32.75L80.18,32.75L80,32.75L80,32.75"
+                        data-series="auto-generated-id-5"
+                        data-series-id="auto-generated-id-5"
+                        fill="none"
+                        opacity="1"
+                        stroke="#f44b42"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-6-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-6-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,31.063L83.736,31.063L83.736,31.063L82.053,31.063L82.053,31.063L81.91,31.063L81.91,31.063L81.771,31.063L81.771,31.063L81.628,31.063L81.628,31.063L81.485,31.063L81.485,31.063L81.347,31.063L81.347,31.063L81.315,31.063L81.315,31.063L81.287,31.063L81.287,31.063L81.282,31.063L81.282,31.063L81.204,31.063L81.204,31.063L81.065,31.063L81.065,31.063L80.946,31.063L80.946,31.063L80.65,31.063L80.65,32.469L80.489,32.469L80.489,32.469L80.208,32.469L80.208,32.469L80.18,32.469L80.18,32.469L80,32.469L80,32.469"
+                        data-series="auto-generated-id-6"
+                        data-series-id="auto-generated-id-6"
+                        fill="none"
+                        opacity="1"
+                        stroke="#67b8f7"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-7-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-7-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,35L83.736,35L83.736,35L82.053,35L82.053,35L81.91,35L81.91,35L81.771,35L81.771,35L81.628,35L81.628,35L81.485,35L81.485,35L81.347,35L81.347,35L81.315,35L81.315,35L81.287,35L81.287,35L81.282,35L81.282,35L81.204,35L81.204,35L81.065,35L81.065,35L80.946,35L80.946,35L80.65,35L80.65,35L80.489,35L80.489,35L80.208,35L80.208,35L80.18,35L80.18,35L80,35L80,35"
+                        data-series="auto-generated-id-7"
+                        data-series-id="auto-generated-id-7"
+                        fill="none"
+                        opacity="1"
+                        stroke="#56d470"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-8-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-8-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,26.99L83.736,26.99L83.736,26.99L82.053,26.99L82.053,26.99L81.91,26.99L81.91,26.99L81.771,26.99L81.771,26.99L81.628,26.99L81.628,30.196L81.485,30.196L81.485,30.196L81.347,30.196L81.347,30.196L81.315,30.196L81.315,30.196L81.287,30.196L81.287,30.196L81.282,30.196L81.282,30.196L81.204,30.196L81.204,30.196L81.065,30.196L81.065,30.196L80.946,30.196L80.946,30.196L80.65,30.196L80.65,30.196L80.489,30.196L80.489,30.196L80.208,30.196L80.208,30.706L80.18,30.706L80.18,30.706L80,30.706L80,30.706"
+                        data-series="auto-generated-id-8"
+                        data-series-id="auto-generated-id-8"
+                        fill="none"
+                        opacity="1"
+                        stroke="#f7c948"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-9-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-9-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,29.15L83.736,29.15L83.736,29.15L82.053,29.15L82.053,29.15L81.91,29.15L81.91,29.713L81.771,29.713L81.771,29.713L81.628,29.713L81.628,29.713L81.485,29.713L81.485,29.713L81.347,29.713L81.347,30.65L81.315,30.65L81.315,30.65L81.287,30.65L81.287,30.65L81.282,30.65L81.282,30.65L81.204,30.65L81.204,30.65L81.065,30.65L81.065,31.475L80.946,31.475L80.946,31.475L80.65,31.475L80.65,31.475L80.489,31.475L80.489,31.475L80.208,31.475L80.208,28.1L80.18,28.1L80.18,28.1L80,28.1L80,28.1"
+                        data-series="auto-generated-id-9"
+                        data-series-id="auto-generated-id-9"
+                        fill="none"
+                        opacity="1"
+                        stroke="#ff9175"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-10-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-10-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,22.925L83.736,22.925L83.736,22.925L82.053,22.925L82.053,22.925L81.91,22.925L81.91,22.925L81.771,22.925L81.771,22.925L81.628,22.925L81.628,28.55L81.485,28.55L81.485,28.55L81.347,28.55L81.347,28.55L81.315,28.55L81.315,28.55L81.287,28.55L81.287,28.55L81.282,28.55L81.282,28.55L81.204,28.55L81.204,30.987L81.065,30.987L81.065,30.987L80.946,30.987L80.946,30.987L80.65,30.987L80.65,30.987L80.489,30.987L80.489,30.987L80.208,30.987L80.208,30.987L80.18,30.987L80.18,30.987L80,30.987L80,30.987"
+                        data-series="auto-generated-id-10"
+                        data-series-id="auto-generated-id-10"
+                        fill="none"
+                        opacity="1"
+                        stroke="#c4b5fd"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-11-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-11-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,33.875L83.736,33.875L83.736,33.875L82.053,33.875L82.053,33.875L81.91,33.875L81.91,33.875L81.771,33.875L81.771,33.875L81.628,33.875L81.628,33.875L81.485,33.875L81.485,33.875L81.347,33.875L81.347,33.875L81.315,33.875L81.315,33.875L81.287,33.875L81.287,33.875L81.282,33.875L81.282,33.875L81.204,33.875L81.204,34.438L81.065,34.438L81.065,34.438L80.946,34.438L80.946,34.438L80.65,34.438L80.65,34.438L80.489,34.438L80.489,34.438L80.208,34.438L80.208,34.438L80.18,34.438L80.18,34.438L80,34.438L80,34.438"
+                        data-series="auto-generated-id-11"
+                        data-series-id="auto-generated-id-11"
+                        fill="none"
+                        opacity="1"
+                        stroke="#fb7b70"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-12-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-12-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,32.116L83.736,32.116L83.736,32.116L82.053,32.116L82.053,32.116L81.91,32.116L81.91,32.116L81.771,32.116L81.771,32.116L81.628,32.116L81.628,32.116L81.485,32.116L81.485,32.116L81.347,32.116L81.347,32.116L81.315,32.116L81.315,32.116L81.287,32.116L81.287,32.116L81.282,32.116L81.282,32.116L81.204,32.116L81.204,32.116L81.065,32.116L81.065,32.116L80.946,32.116L80.946,32.116L80.65,32.116L80.65,32.116L80.489,32.116L80.489,32.116L80.208,32.116L80.208,32.116L80.18,32.116L80.18,33.366L80,33.366L80,33.366"
+                        data-series="auto-generated-id-12"
+                        data-series-id="auto-generated-id-12"
+                        fill="none"
+                        opacity="1"
+                        stroke="#93cbfa"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-13-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-13-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,32.863L83.736,32.863L83.736,32.863L82.053,32.863L82.053,32.863L81.91,32.863L81.91,32.863L81.771,32.863L81.771,32.863L81.628,32.863L81.628,32.863L81.485,32.863L81.485,32.863L81.347,32.863L81.347,32.863L81.315,32.863L81.315,32.863L81.287,32.863L81.287,32.863L81.282,32.863L81.282,32.863L81.204,32.863L81.204,32.863L81.065,32.863L81.065,32.863L80.946,32.863L80.946,32.863L80.65,32.863L80.65,32.863L80.489,32.863L80.489,32.863L80.208,32.863L80.208,32.863L80.18,32.863L80.18,32.863L80,32.863L80,32.863"
+                        data-series="auto-generated-id-13"
+                        data-series-id="auto-generated-id-13"
+                        fill="none"
+                        opacity="1"
+                        stroke="#8ae39b"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-14-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-14-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,32.863L83.736,32.863L83.736,32.863L82.053,32.863L82.053,32.863L81.91,32.863L81.91,32.863L81.771,32.863L81.771,32.863L81.628,32.863L81.628,32.863L81.485,32.863L81.485,32.863L81.347,32.863L81.347,32.863L81.315,32.863L81.315,32.863L81.287,32.863L81.287,32.863L81.282,32.863L81.282,32.863L81.204,32.863L81.204,32.863L81.065,32.863L81.065,32.863L80.946,32.863L80.946,32.863L80.65,32.863L80.65,32.863L80.489,32.863L80.489,32.863L80.208,32.863L80.208,32.863L80.18,32.863L80.18,32.863L80,32.863L80,32.863"
+                        data-series="auto-generated-id-14"
+                        data-series-id="auto-generated-id-14"
+                        fill="none"
+                        opacity="1"
+                        stroke="#fad87a"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-15-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-15-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,35L83.736,35L83.736,35L82.053,35L82.053,35L81.91,35L81.91,35L81.771,35L81.771,35L81.628,35L81.628,35L81.485,35L81.485,35L81.347,35L81.347,35L81.315,35L81.315,35L81.287,35L81.287,35L81.282,35L81.282,35L81.204,35L81.204,35L81.065,35L81.065,35L80.946,35L80.946,35L80.65,35L80.65,35L80.489,35L80.489,35L80.208,35L80.208,35L80.18,35L80.18,35L80,35L80,35"
+                        data-series="auto-generated-id-15"
+                        data-series-id="auto-generated-id-15"
+                        fill="none"
+                        opacity="1"
+                        stroke="#ffb399"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                  </g>
+                </g>
+                <g
+                  class="MuiChartsAxis-root MuiChartsAxis-directionX MuiChartsAxis-bottom css-1yscjcf-MuiChartsAxis-root-MuiChartsXAxis-root"
+                  data-axis-id="defaultized-x-axis-0"
+                  transform="translate(0, 35)"
+                >
+                  <line
+                    class="MuiChartsAxis-line"
+                    x1="85"
+                    x2="80"
+                  />
+                  <g
+                    class="MuiChartsAxis-label"
+                  >
+                    <text
+                      dominant-baseline="text-after-edge"
+                      style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 14px; line-height: 1; letter-spacing: 0.00938em;"
+                      text-anchor="middle"
+                      x="82.5"
+                      y="45"
+                    >
+                      <tspan
+                        dominant-baseline="text-after-edge"
+                        dy="0px"
+                        x="82.5"
+                      >
+                        Date
+                      </tspan>
+                    </text>
+                  </g>
+                </g>
+                <g
+                  class="MuiChartsAxis-root MuiChartsAxis-directionY MuiChartsAxis-left css-ra8wgq-MuiChartsAxis-root-MuiChartsYAxis-root"
+                  data-axis-id="defaultized-y-axis-0"
+                  transform="translate(85, 0)"
+                >
+                  <line
+                    class="MuiChartsAxis-line"
+                    stroke-linecap="square"
+                    y1="20"
+                    y2="35"
+                  />
+                  <g
+                    class="MuiChartsAxis-tickContainer"
+                    transform="translate(0, 35)"
+                  >
+                    <line
+                      class="MuiChartsAxis-tick"
+                      x2="-6"
+                    />
+                    <text
+                      class="MuiChartsAxis-tickLabel"
+                      dominant-baseline="central"
+                      style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em; fill: rgb(134, 134, 139);"
+                      text-anchor="end"
+                      x="-8"
+                      y="0"
+                    >
+                      <tspan
+                        dominant-baseline="central"
+                        dy="0px"
+                        x="-8"
+                      >
+                        $0k
+                      </tspan>
+                    </text>
+                  </g>
+                  <g
+                    class="MuiChartsAxis-tickContainer"
+                    transform="translate(0, 27.5)"
+                  >
+                    <line
+                      class="MuiChartsAxis-tick"
+                      x2="-6"
+                    />
+                    <text
+                      class="MuiChartsAxis-tickLabel"
+                      dominant-baseline="central"
+                      style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em; fill: rgb(134, 134, 139);"
+                      text-anchor="end"
+                      x="-8"
+                      y="0"
+                    >
+                      <tspan
+                        dominant-baseline="central"
+                        dy="0px"
+                        x="-8"
+                      >
+                        $2k
+                      </tspan>
+                    </text>
+                  </g>
+                  <g
+                    class="MuiChartsAxis-tickContainer"
+                    transform="translate(0, 20)"
+                  >
+                    <line
+                      class="MuiChartsAxis-tick"
+                      x2="-6"
+                    />
+                    <text
+                      class="MuiChartsAxis-tickLabel"
+                      dominant-baseline="central"
+                      style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em; fill: rgb(134, 134, 139);"
+                      text-anchor="end"
+                      x="-8"
+                      y="0"
+                    >
+                      <tspan
+                        dominant-baseline="central"
+                        dy="0px"
+                        x="-8"
+                      >
+                        $4k
+                      </tspan>
+                    </text>
+                  </g>
+                  <g
+                    class="MuiChartsAxis-label"
+                  >
+                    <text
+                      dominant-baseline="text-before-edge"
+                      style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 14px; line-height: 1; letter-spacing: 0.00938em;"
+                      text-anchor="middle"
+                      transform="rotate(-90, -65, 27.5)"
+                      x="-65"
+                      y="27.5"
+                    >
+                      <tspan
+                        dominant-baseline="text-before-edge"
+                        dy="0px"
+                        x="-65"
+                      >
+                        Yearly Interest ($)
+                      </tspan>
+                    </text>
+                  </g>
+                </g>
+                <g
+                  data-drawing-container="true"
+                >
+                  <g
+                    class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
+                  />
+                </g>
+                <clippath
+                  id="_r_0_-clip-path"
+                >
+                  <rect
+                    height="15"
+                    width="-5"
+                    x="85"
+                    y="20"
+                  />
+                </clippath>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span
+        class="MuiTypography-root MuiTypography-caption css-11nzu0x-MuiTypography-root"
+      >
+        * The “updated at” date reflects when this calculator was updated, which may differ from the date the bank published the change.
+      </span>
+    </div>
+  </div>
+</DocumentFragment>
+`;
