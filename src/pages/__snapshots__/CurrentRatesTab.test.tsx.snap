@@ -1959,7 +1959,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    GIRO Transactions
+                    GIRO Txn
                   </span>
                 </div>
                 <div
@@ -2028,7 +2028,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    GIRO Transactions
+                    GIRO Txn
                   </span>
                 </div>
                 <div
@@ -2097,7 +2097,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    Account Increment
+                    Acc Increase
                   </span>
                 </div>
                 <div
@@ -2305,7 +2305,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    Account Increment
+                    Acc Increase
                   </span>
                 </div>
                 <div
@@ -2383,7 +2383,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </div>
                 <div
-                  aria-label="Insurance, Investment, Loan Installment, Salary, Savings, Spending"
+                  aria-label="Insurance, Investment, Loan Install, Salary, Savings, Spending"
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                   data-mui-internal-clone-element="true"
                 >
@@ -2449,7 +2449,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    Account Increment
+                    Acc Increase
                   </span>
                 </div>
                 <div
@@ -4831,7 +4831,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  GIRO Transactions
+                  GIRO Txn
                 </span>
               </div>
               <div
@@ -4952,7 +4952,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  GIRO Transactions
+                  GIRO Txn
                 </span>
               </div>
               <div
@@ -5073,7 +5073,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  Account Increment
+                  Acc Increase
                 </span>
               </div>
               <div
@@ -5436,7 +5436,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  Account Increment
+                  Acc Increase
                 </span>
               </div>
               <div
@@ -5561,7 +5561,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 </span>
               </div>
               <div
-                aria-label="Insurance, Investment, Loan Installment, Salary, Savings, Spending"
+                aria-label="Insurance, Investment, Loan Install, Salary, Savings, Spending"
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                 data-mui-internal-clone-element="true"
               >
@@ -5678,7 +5678,7 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  Account Increment
+                  Acc Increase
                 </span>
               </div>
               <div

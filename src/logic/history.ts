@@ -2,25 +2,7 @@ import type Profile from "../types/profile";
 import type { RateSnapshot } from "../types/history";
 import { ResultInterest } from "../types/interest_result";
 import { parseISODate, todayISO, TBD_DATE } from "./dates";
-
-// ── Field name → human-readable factor label ──────────────────────────
-
-const FACTOR_LABELS: Record<string, string> = {
-  Savings: "Savings",
-  Age: "Age",
-  Salary: "Salary",
-  Spending: "Spending",
-  Investment: "Investment",
-  Insurance: "Insurance",
-  GiroTransactions: "GIRO Transactions",
-  MonthlyAccIncrease: "Account Increment",
-  LoanInstallment: "Loan Installment",
-  OneTimeLoan: "One-Time Loan",
-  IsNTUCMember: "NTUC Member",
-  ReferredCustomer: "Referred Customer",
-  PayNowReceived: "PayNow Received",
-  FXSpend: "FX Spend",
-};
+import { FIELDS } from "../consts/fields";
 
 /**
  * Auto-detect which Profile fields a bank's interest function reads.
@@ -39,7 +21,10 @@ export function deriveFactors(history: RateSnapshot[]): string[] {
       if (prop === "then" || typeof prop === "symbol") return undefined;
       accessed.add(prop);
       // Booleans → true, everything else → Infinity to trigger all branches
-      if (prop === "IsNTUCMember" || prop === "ReferredCustomer") return true;
+      const fieldValue = FIELDS.find((v) => v.key === prop);
+
+      if (!fieldValue) throw new Error("invalid field");
+      if (fieldValue.isBoolean) return true
       return Infinity;
     },
   });
@@ -51,7 +36,7 @@ export function deriveFactors(history: RateSnapshot[]): string[] {
   }
 
   return [...accessed]
-    .map((f) => FACTOR_LABELS[f])
+    .map((f) => FIELDS.find((v) => v.key === f)?.label ?? "")
     .filter(Boolean)
     .sort();
 }
