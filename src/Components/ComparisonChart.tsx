@@ -40,20 +40,21 @@ export const ComparisonChart = ({
 }: ComparisonChartProps) => {
   // ── Validation ──────────────────────────────────────────────────────
   const validation = useMemo(() => {
-    if (selectedBanks.length === 0) {
-      return { valid: false, error: "noBanks" } as const;
-    }
+    if (selectedBanks.length === 0) return { valid: false, error: "noBanks" } as const;
+
     const unknown = selectedBanks.filter((b) => !bankInfo[b]);
     if (unknown.length > 0) {
       const names = unknown.map((s) => bankInfo[s]?.name ?? s);
       return { valid: false, error: "unknownBanks", banks: names } as const;
     }
+
     const noHistory = selectedBanks.filter(
       (b) => bankInfo[b] && bankInfo[b].history.length === 0,
     );
     if (noHistory.length === selectedBanks.length) {
       return { valid: false, error: "noHistory" } as const;
     }
+
     return { valid: true } as const;
   }, [selectedBanks]);
 
@@ -122,16 +123,15 @@ const ComparisonChartContent = ({
 
   const { dataset, yearlySeries, eirSeries } = useMemo(() => {
     const bankPoints = collectBankPoints(selectedBanks, profile);
-
     const allDates = collectAllDates(bankPoints);
-    const today = todayISO();
-    if (allDates.length > 0 && allDates[allDates.length - 1] !== today) {
-      allDates.push(today);
-    }
 
     if (allDates.length === 0)
       return { dataset: [], yearlySeries: [], eirSeries: [] };
 
+    const today = todayISO();
+    if (allDates.length > 0 && allDates[allDates.length - 1] !== today) {
+      allDates.push(today);
+    }
     const datasetArr = buildComparisonDataset(
       selectedBanks,
       bankPoints,
@@ -156,7 +156,6 @@ const ComparisonChartContent = ({
       <Paper
         sx={{
           p: 4,
-
           backgroundColor: bgColor,
           textAlign: "center",
           mb: 3,
@@ -178,7 +177,6 @@ const ComparisonChartContent = ({
 
   return (
     <Box sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
-      {/* ── Chart ─────────────────────────────────────────────────── */}
       <Paper
         sx={{
           p: 2,

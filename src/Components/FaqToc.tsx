@@ -77,7 +77,6 @@ export const FaqToc = ({ entries }: FaqTocProps) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const tocRef = useRef<HTMLDivElement>(null);
 
-  // ── Active section tracking ────────────────────────────────────
   useEffect(() => {
     const ids = entries.map((e) => questionId(e.question));
     const elements = ids
@@ -183,7 +182,6 @@ export const FaqToc = ({ entries }: FaqTocProps) => {
       >
         On this page
       </Typography>
-
       {entries.map((entry, i) => (
         <Box
           key={entry.question}

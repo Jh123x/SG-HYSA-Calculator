@@ -1,5 +1,5 @@
 import { Component, type ErrorInfo, type ReactNode } from "react";
-import { Box, Typography, Button, Paper } from "@mui/material";
+import { Typography, Button, Paper } from "@mui/material";
 import { textColor, bgColor, dangerColor } from "../consts/theme";
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
 
 interface State {
   hasError: boolean;
-  error: Error | null;
+  error?: Error;
 }
 
 /**
@@ -22,7 +22,7 @@ interface State {
 export class ErrorBoundary extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
-    this.state = { hasError: false, error: null };
+    this.state = { hasError: false, error: undefined };
   }
 
   static getDerivedStateFromError(error: Error): State {
@@ -34,40 +34,38 @@ export class ErrorBoundary extends Component<Props, State> {
   }
 
   render() {
-    if (this.state.hasError) {
-      return (
-        <Paper
-          sx={{
-            p: 4,
+    if (!this.state.hasError) return this.props.children;
 
-            backgroundColor: bgColor,
-            textAlign: "center",
-            mt: 3,
-            border: `1px solid ${dangerColor}40`,
+    return (
+      <Paper
+        sx={{
+          p: 4,
+
+          backgroundColor: bgColor,
+          textAlign: "center",
+          mt: 3,
+          border: `1px solid ${dangerColor}40`,
+        }}
+      >
+        <Typography variant="h6" sx={{ color: dangerColor, mb: 1 }}>
+          Something went wrong
+        </Typography>
+        <Typography variant="body2" sx={{ color: textColor, opacity: 0.7, mb: 2 }}>
+          {this.state.error?.message ?? "An unexpected error occurred."}
+        </Typography>
+        <Button
+          variant="outlined"
+          size="small"
+          onClick={() => this.setState({ hasError: false, error: undefined })}
+          sx={{
+            color: textColor,
+            borderColor: `${textColor}40`,
+            textTransform: "none",
           }}
         >
-          <Typography variant="h6" sx={{ color: dangerColor, mb: 1 }}>
-            Something went wrong
-          </Typography>
-          <Typography variant="body2" sx={{ color: textColor, opacity: 0.7, mb: 2 }}>
-            {this.state.error?.message ?? "An unexpected error occurred."}
-          </Typography>
-          <Button
-            variant="outlined"
-            size="small"
-            onClick={() => this.setState({ hasError: false, error: null })}
-            sx={{
-              color: textColor,
-              borderColor: `${textColor}40`,
-              textTransform: "none",
-            }}
-          >
-            Try Again
-          </Button>
-        </Paper>
-      );
-    }
-
-    return this.props.children;
+          Try Again
+        </Button>
+      </Paper>
+    );
   }
 }

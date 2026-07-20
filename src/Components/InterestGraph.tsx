@@ -2,7 +2,7 @@ import { ChartsReferenceLine } from "@mui/x-charts";
 import { Paper, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
-import { lineColors, textColor, bgColor, mutedColor, borderColor } from "../consts/theme";
+import { lineColors, textColor } from "../consts/theme";
 import type Profile from "../types/profile";
 import {
   InterestVsSavingsChart,
@@ -26,7 +26,6 @@ const BUILT_IN_NOTES = [
 
 interface InterestGraphProps {
   profile: Profile;
-  /** Fixed pixel height, or "fill" to expand to container */
   height?: number | "fill";
 }
 
@@ -64,27 +63,27 @@ export const InterestGraph = ({
     >
       <div style={{ display: "flex", flexDirection: "column", flex: 1, minHeight: 0 }}>
         <InterestVsSavingsChart
-        lines={lines}
-        profile={profile}
-        height={height === "fill" ? undefined : height}
-        containerSx={
-          height === "fill"
-            ? { flex: 1, minHeight: 0 }
-            : undefined
-        }
-      >
-        {profile.Savings > 0 && (
-        <ChartsReferenceLine
-          x={profile.Savings}
-          label="Your savings"
-          lineStyle={{
-            stroke: lineColors[0],
-            strokeWidth: 1,
-            strokeDasharray: "6 3",
-          }}
-        />
-        )}
-      </InterestVsSavingsChart>
+          lines={lines}
+          profile={profile}
+          height={height === "fill" ? undefined : height}
+          containerSx={
+            height === "fill"
+              ? { flex: 1, minHeight: 0 }
+              : undefined
+          }
+        >
+          {profile.Savings > 0 && (
+            <ChartsReferenceLine
+              x={profile.Savings}
+              label="Your savings"
+              lineStyle={{
+                stroke: lineColors[0],
+                strokeWidth: 1,
+                strokeDasharray: "6 3",
+              }}
+            />
+          )}
+        </InterestVsSavingsChart>
       </div>
 
       <Typography variant="caption" sx={ASTERISKS_SX}>
@@ -98,3 +97,4 @@ export const InterestGraph = ({
     </Paper>
   );
 };
+

@@ -200,3 +200,4 @@ export const BankWidgetCard = ({
 };
 
 export default BankWidgetCard;
+

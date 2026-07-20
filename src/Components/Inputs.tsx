@@ -5,7 +5,6 @@ import {
   Checkbox,
   FormControlLabel,
   Tooltip,
-  Typography,
   Chip,
 } from "@mui/material";
 import { useState, useEffect, useRef, useCallback } from "react";
@@ -388,3 +387,4 @@ const InputNumberField = ({
     />
   );
 };
+
