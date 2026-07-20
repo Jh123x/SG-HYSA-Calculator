@@ -23,8 +23,8 @@ interface Props {
   onAccept: () => void;
   onReject: () => void;
 }
-const fmtCurrency = (v: number): string =>
-  v === 0 ? "$0" : `$${v.toLocaleString()}`;
+
+const fmtCurrency = (v: number): string =>v === 0 ? "$0" : `$${v.toLocaleString()}`;
 
 const fmtValue = (v: Profile[keyof Profile], isBoolean: boolean): string => {
   if (isBoolean) return v ? "Yes" : "No";
@@ -130,3 +130,4 @@ export const SharedProfileDialog = ({
     </Dialog>
   );
 };
+
