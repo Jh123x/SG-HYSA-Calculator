@@ -11,7 +11,8 @@
  * but unrelated target like the homepage.
  */
 
-import { banks, type BankData, BANK_SLUGS } from "../data/banks";
+import { banks, BANK_SLUGS } from "../data/banks";
+import { type BankData } from "../types/bank_data";
 
 // ── Jaro-Winkler similarity ──────────────────────────────────────────
 
