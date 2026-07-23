@@ -106,12 +106,16 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
     return (
       <>
         <Helmet>
-          <title>{bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "Bank Detail — SG HYSA Calculator"}</title>
+          <title>{bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "High Yield Savings Account — SG HYSA Calculator"}</title>
           <meta name="description" content={seoDescription} />
-          <meta property="og:title" content={bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "Bank Detail — SG HYSA Calculator"} />
+          <meta property="og:title" content={bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "High Yield Savings Account — SG HYSA Calculator"} />
           <meta property="og:description" content={seoDescription} />
           <meta property="og:url" content={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
           <meta property="og:type" content="website" />
+          <meta property="og:image" content="https://hysa.jh123x.com/hysa_logo.webp" />
+          <meta property="og:image:width" content="512" />
+          <meta property="og:image:height" content="512" />
+          <meta property="og:image:alt" content="SG HYSA Calculator logo" />
           <link rel="canonical" href={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
         </Helmet>
         <Box component="article" aria-label={isHome ? "Redirecting to home" : "Bank suggestion"} sx={{ mt: 3, textAlign: "center" }}>
@@ -316,12 +320,16 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
   return (
     <>
       <Helmet>
-        <title>{bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "Bank Detail — SG HYSA Calculator"}</title>
+        <title>{bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "High Yield Savings Account — SG HYSA Calculator"}</title>
         <meta name="description" content={seoDescription} />
-        <meta property="og:title" content={bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "Bank Detail — SG HYSA Calculator"} />
+        <meta property="og:title" content={bankName !== ERROR_SLUG && bankInfo[slug ?? ""] ? `${bankInfo[slug ?? ""]!.name} Interest Rate History & EIR Trends — SG HYSA Calculator` : "High Yield Savings Account — SG HYSA Calculator"} />
         <meta property="og:description" content={seoDescription} />
         <meta property="og:url" content={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://hysa.jh123x.com/hysa_logo.webp" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content="SG HYSA Calculator logo" />
         <link rel="canonical" href={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
       </Helmet>
       <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ display: "flex", flexDirection: "column", height: isMobile ? undefined : "100%" }}>

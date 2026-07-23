@@ -199,6 +199,10 @@ export const FaqPage = () => {
         <meta property="og:description" content="Frequently asked questions about high yield savings accounts in Singapore. Learn how high interest savings accounts work, how to find the highest interest rate savings account, how EIR is calculated, and how to maximise your high yield savings with bonus interest categories." />
         <meta property="og:url" content="https://hysa.jh123x.com/faq" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://hysa.jh123x.com/hysa_logo.webp" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content="SG HYSA Calculator logo" />
         <link rel="canonical" href="https://hysa.jh123x.com/faq" />
       </Helmet>
 

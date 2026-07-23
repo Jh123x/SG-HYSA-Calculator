@@ -60,6 +60,10 @@ export const HistoryTab = ({ profile }: Props) => {
         <meta property="og:description" content="Track how high yield savings account rates have changed over time. View historical interest rate changes for Singapore high yield savings accounts including UOB One, OCBC 360, DBS Multiplier, Maribank, Trust Bank, GXS — find the highest interest rate savings account trends." />
         <meta property="og:url" content="https://hysa.jh123x.com/history" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://hysa.jh123x.com/hysa_logo.webp" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content="SG HYSA Calculator logo" />
         <link rel="canonical" href="https://hysa.jh123x.com/history" />
       </Helmet>
       <Typography component="h2" variant="h4" sx={{ color: textColor, fontWeight: 700, mb: 2.5, fontSize: { xs: "1.25rem", sm: "1.5rem" } }}>

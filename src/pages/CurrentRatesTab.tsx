@@ -60,6 +60,10 @@ export const CurrentRatesTab = ({ profile }: Props) => {
         <meta property="og:description" content="Find the highest interest rate savings account in Singapore. Compare high yield savings account rates across UOB One, OCBC 360, DBS Multiplier, Maribank, Trust Bank, GXS, and more." />
         <meta property="og:url" content="https://hysa.jh123x.com/" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://hysa.jh123x.com/hysa_logo.webp" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content="SG HYSA Calculator logo" />
         <link rel="canonical" href="https://hysa.jh123x.com/" />
       </Helmet>
       {isMobile ? (
