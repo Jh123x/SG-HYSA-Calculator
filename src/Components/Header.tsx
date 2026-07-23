@@ -53,7 +53,7 @@ export const Header = () => {
           </Typography>
         )}
         <Box component="h1" sx={{ height: 0, overflow: "hidden", m: 0 }}>
-          SG High Yield Savings Accounts
+          High Yield Savings Account Calculator Singapore — Compare the Best Rates
         </Box>
       </Box>
       <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
