@@ -21,7 +21,7 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
       <p
         class="MuiTypography-root MuiTypography-body1 css-16ypnqk-MuiTypography-root"
       >
-        Everything you need to know about High Yield Savings Accounts in Singapore. 
+        Everything you need to know about high yield and high interest savings accounts in Singapore — how they work, how to compare rates, and how to earn more from your savings. 
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-yc5h7k-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
@@ -2938,7 +2938,7 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
       <p
         class="MuiTypography-root MuiTypography-body1 css-16ypnqk-MuiTypography-root"
       >
-        Everything you need to know about High Yield Savings Accounts in Singapore. 
+        Everything you need to know about high yield and high interest savings accounts in Singapore — how they work, how to compare rates, and how to earn more from your savings. 
         <button
           class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-sizeSmall MuiButton-colorPrimary css-yc5h7k-MuiButtonBase-root-MuiButton-root"
           tabindex="0"
