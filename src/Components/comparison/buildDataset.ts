@@ -1,4 +1,4 @@
-import type {Profile} from "../../types/profile";
+import type { Profile } from "../../types/profile";
 import { bankInfo } from "../../logic/constants";
 import { parseISODate } from "../../logic/dates";
 
