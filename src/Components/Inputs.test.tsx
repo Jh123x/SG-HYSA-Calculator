@@ -1,7 +1,6 @@
 import { render } from "@testing-library/react";
 import { FormInputs } from "./Inputs";
-import Profile, { NewProfile } from "../types/profile";
-import * as React from "react";
+import  {type Profile, NewProfile } from "../types/profile";
 import { describe, it, expect } from "vitest";
 
 describe("Form Inputs", () => {
@@ -9,10 +8,10 @@ describe("Form Inputs", () => {
     const tree = render(
       <FormInputs
         currProfile={NewProfile({})}
-        setCurrProfile={(_: Profile) => {}}
+        setCurrProfile={(_: Profile) => { }}
         pendingUrlProfile={null}
-        onAcceptShared={() => {}}
-        onRejectShared={() => {}}
+        onAcceptShared={() => { }}
+        onRejectShared={() => { }}
       ></FormInputs>,
     ).asFragment();
     expect(tree).toMatchSnapshot();
@@ -31,10 +30,10 @@ describe("Form Inputs", () => {
           MonthlyAccIncrease: 500,
           GiroTransactions: 0,
         })}
-        setCurrProfile={(_: Profile) => {}}
+        setCurrProfile={(_: Profile) => { }}
         pendingUrlProfile={null}
-        onAcceptShared={() => {}}
-        onRejectShared={() => {}}
+        onAcceptShared={() => { }}
+        onRejectShared={() => { }}
       ></FormInputs>,
     ).asFragment();
     expect(tree).toMatchSnapshot();

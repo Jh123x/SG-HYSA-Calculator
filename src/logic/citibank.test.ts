@@ -1,5 +1,5 @@
 import { ResultInterest } from "../types/interest_result";
-import Profile, { NewProfile } from "../types/profile";
+import { type Profile, NewProfile } from "../types/profile";
 import { citi_wealth_first_05_2025, citi_wealth_first_06_2026 } from "./citibank";
 
 interface TestCase {

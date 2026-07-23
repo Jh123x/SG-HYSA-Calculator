@@ -1,4 +1,4 @@
-export default interface Profile {
+export interface Profile {
   Savings: number;
   Age: number;
   Salary: number;
@@ -48,3 +48,4 @@ export const NewProfile = ({
     FXSpend,
   };
 };
+

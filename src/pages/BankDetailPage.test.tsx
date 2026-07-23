@@ -12,6 +12,10 @@ vi.mock("../hooks/useMobile", () => ({
   useMobile: mockUseMobile,
 }));
 
+vi.mock("@mui/x-charts/LineChart", () => ({
+  LineChart: () => null,
+}));
+
 const profile = NewProfile({ Savings: 50000 });
 
 function renderAt(path: string) {

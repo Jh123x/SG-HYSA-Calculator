@@ -29,9 +29,9 @@ export const Header = () => {
         position: "relative",
       }}
     >
-      {/* Left: icon + text */}
       <Box
         sx={{ display: "flex", alignItems: "center", gap: 1.5, cursor: "pointer" }}
+        onMouseEnter={() => prefetchRoute("/")}
         onClick={() => navigate("/")}
       >
         <SavingsOutlinedIcon
@@ -52,13 +52,10 @@ export const Header = () => {
             HYSA Calculator
           </Typography>
         )}
-        {/* SEO h1 — zero-height overflow wrapper, no absolute positioning */}
         <Box component="h1" sx={{ height: 0, overflow: "hidden", m: 0 }}>
           SG High Yield Savings Accounts
         </Box>
       </Box>
-
-      {/* Right: FAQs text button */}
       <Box sx={{ display: "flex", alignItems: "center", flexShrink: 0 }}>
         <Button
           onClick={() => navigate("/faq")}
@@ -76,6 +73,6 @@ export const Header = () => {
           FAQs
         </Button>
       </Box>
-    </Box>
+    </Box >
   );
 };

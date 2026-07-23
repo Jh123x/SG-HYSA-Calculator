@@ -10,9 +10,7 @@
  * (scripts, build tools, tests with minimal deps, etc.).
  */
 
-import type { RateSnapshot } from "../types/history";
-import type Profile from "../types/profile";
-import { NewProfile } from "../types/profile";
+import { type Profile, NewProfile } from "../types/profile";
 import { uobHistory } from "../logic/uob";
 import { gxsHistory } from "../logic/gxs";
 import { ocbcHistory } from "../logic/ocbc360";
@@ -30,9 +28,12 @@ import {
   trustBankFlexHistory,
 } from "../logic/trust_bank";
 import { maribankHistory } from "../logic/maribank";
-import { deriveCurrentFromHistory, deriveFactors } from "../logic/history";
+import { deriveCurrentFromHistory } from "../logic/history";
 import { bocSuperSaverHistory, bocSmartSaverHistory } from "../logic/bank_of_china";
 import { chocoFinanceHistory } from "../logic/choco_finance";
+import type { BankData } from "../types/bank_data";
+import { FIELDS } from "../consts/fields";
+import type { InterestFn } from "../types/interest";
 
 // Pre-compute Mari current rate so remarks are self-contained
 const _mariCurrentRate = (() => {
@@ -42,22 +43,6 @@ const _mariCurrentRate = (() => {
     .toFixed(2);
 })();
 
-// ── Types ────────────────────────────────────────────────────────────
-
-export interface BankData {
-  /** Human-readable display name (e.g. "UOB One Account") */
-  name: string;
-  /** Official product page URL */
-  url: string;
-  /** Plain-text remarks (no JSX — see module docstring for conventions) */
-  remarks: string;
-  /** Chronologically sorted rate snapshots (oldest first) */
-  history: RateSnapshot[];
-  /** Profile factors that affect this bank's interest rate (auto-derived) */
-  factors?: string[];
-}
-
-// ── Registry ─────────────────────────────────────────────────────────
 
 export const banks: Record<string, BankData> = {
   "uob-one-account": {
@@ -168,9 +153,47 @@ export const banks: Record<string, BankData> = {
   },
 };
 
+/**
+ * Auto-detect which Profile fields a bank's interest function reads.
+ *
+ * Uses a Proxy that records every property access while feeding values
+ * that maximise bonus branches (Infinity for numbers, true for booleans).
+ * This ensures we capture optional criteria that only activate above
+ * certain thresholds (e.g. Insurance > $150k, Spending >= $750).
+ */
+export function deriveFactors(interestFn: InterestFn): string[] {
+  const accessed = new Set<string>();
+
+  const proxy = new Proxy({} as Profile, {
+    get(_target, prop: string) {
+      if (prop === "then" || typeof prop === "symbol") return undefined;
+      accessed.add(prop);
+      // Booleans → true, everything else → Infinity to trigger all branches
+      const fieldValue = FIELDS.find((v) => v.key === prop);
+
+      if (!fieldValue) throw new Error("invalid field");
+      if (fieldValue.isBoolean) return true
+      return Infinity;
+    },
+  });
+
+  try {
+    interestFn(proxy);
+  } catch {
+    // If Infinity breaks something, we still captured the field accesses
+  }
+
+  return [...accessed]
+    .map((f) => FIELDS.find((v) => v.key === f)?.label ?? "")
+    .filter(Boolean)
+    .sort();
+}
+
+
 // Auto-derive factors for every bank from its interest function
 for (const bank of Object.values(banks)) {
-  bank.factors = deriveFactors(bank.history);
+  const latest = deriveCurrentFromHistory(bank.history);
+  bank.factors = deriveFactors(latest.interestFn);
 }
 
 /** All bank slugs in registry order. */

@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { resolveHistoryForChart, deriveCurrentFromHistory } from "./history";
 import { ResultInterest } from "../types/interest_result";
-import type Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import type { RateSnapshot } from "../types/history";
 import { bankInfo } from "./constants";
 

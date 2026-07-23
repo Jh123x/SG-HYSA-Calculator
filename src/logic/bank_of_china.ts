@@ -1,6 +1,6 @@
 import type { RateSnapshot } from "../types/history";
 import { ResultInterest } from "../types/interest_result";
-import Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import { calculate_ir } from "./common";
 
 export const bank_of_china_super_saver_07_2025 = (

@@ -1,9 +1,9 @@
 import { useState, useCallback } from "react";
-import { Button, Box } from "@mui/material";
+import { Button } from "@mui/material";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import CheckIcon from "@mui/icons-material/Check";
 import { primaryColor, textColor, bgColor } from "../consts/theme";
-import type Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import { profileToUrl } from "../logic/profileUrl";
 
 interface ShareButtonProps {
@@ -16,25 +16,10 @@ export const ShareButton = ({ profile, onCopied }: ShareButtonProps) => {
 
   const handleShare = useCallback(async () => {
     const url = profileToUrl(profile);
-    try {
-      await navigator.clipboard.writeText(url);
-      setCopied(true);
-      onCopied?.();
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // Fallback for older browsers / non-HTTPS contexts
-      const textarea = document.createElement("textarea");
-      textarea.value = url;
-      textarea.style.position = "fixed";
-      textarea.style.opacity = "0";
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-      setCopied(true);
-      onCopied?.();
-      setTimeout(() => setCopied(false), 2000);
-    }
+    await navigator.clipboard.writeText(url);
+    setCopied(true);
+    onCopied?.();
+    setTimeout(() => setCopied(false), 2000);
   }, [profile, onCopied]);
 
   return (

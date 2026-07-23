@@ -4,7 +4,7 @@ import {
   collectAllDates,
   buildComparisonDataset,
 } from "./buildDataset";
-import type Profile from "../../types/profile";
+import type { Profile } from "../../types/profile";
 
 const emptyProfile: Profile = {
   Savings: 0,

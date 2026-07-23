@@ -1,6 +1,6 @@
 import { calculate_ir } from "./common";
 import { ResultInterest } from "../types/interest_result";
-import Profile from "../types/profile";
+import type {Profile } from "../types/profile";
 import type { RateSnapshot } from "../types/history";
 
 const table: Array<Array<number>> = [

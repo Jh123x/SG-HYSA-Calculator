@@ -1,5 +1,5 @@
 import { ResultInterest } from "../types/interest_result";
-import Profile, { NewProfile } from "../types/profile";
+import { type Profile, NewProfile } from "../types/profile";
 import {
   trust_bank_06_2025,
   trust_bank_signature_06_2026,

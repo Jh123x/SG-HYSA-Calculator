@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, useCallback } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
-import type Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory, resolveHistoryForChart } from "../logic/history";
 import { isValidSlug, ALL_SLUGS } from "../logic/slugs";

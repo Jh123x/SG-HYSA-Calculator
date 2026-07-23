@@ -1,0 +1,181 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InterestVsSavingsChart > should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-0"
+  >
+    <div
+      class="css-rzfp3q-MuiChartsWrapper-root"
+    >
+      <div
+        class="MuiChartsSurface-root MuiChartsSurface-root css-gicut1-MuiChartsLayerContainer-root"
+        role="none"
+      >
+        <div
+          role="none"
+          style="border-width: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute; inset: 0px; padding: 0px; outline: none; pointer-events: none;"
+          tabindex="0"
+        >
+          <div
+            id="voiceover-_r_1_-1"
+            style="display: none;"
+          />
+          <div
+            id="voiceover-_r_1_-2"
+            style="display: none;"
+          />
+          <div
+            aria-labelledby="voiceover-_r_1_-1"
+            role="img"
+            style="width: 100%; height: 100%; outline: none;"
+          />
+          <div
+            aria-labelledby="voiceover-_r_1_-2"
+            role="img"
+            style="width: 100%; height: 100%; outline: none;"
+          />
+        </div>
+        <svg
+          aria-hidden="true"
+          class="MuiChartsSvgLayer-root css-1tura0-MuiChartsSvgLayer-root"
+          viewBox="0 0 100 300"
+        >
+          <g
+            class="MuiChartsGrid-root css-g2sgfh-MuiChartsGrid-root"
+          >
+            <line
+              class="MuiChartsGrid-line MuiChartsGrid-horizontalLine css-195sd4n-MuiChartsGrid-line"
+              x1="85"
+              x2="60"
+              y1="127.5"
+              y2="127.5"
+            />
+          </g>
+          <g
+            clip-path="url(#_r_0_-clip-path)"
+          >
+            <g
+              class="MuiLineChart-areaPlot css-94vonx-MuiAreaPlot-root"
+            />
+            <g
+              class="MuiLineChart-linePlot css-1ygpbzp-MuiLinePlot-root"
+            />
+            <text
+              class="css-1f57y8b"
+              x="72.5"
+              y="127.5"
+            >
+              No data to display
+            </text>
+          </g>
+          <g
+            class="MuiChartsAxis-root MuiChartsAxis-directionX MuiChartsAxis-bottom css-1yscjcf-MuiChartsAxis-root-MuiChartsXAxis-root"
+            data-axis-id="defaultized-x-axis-0"
+            transform="translate(0, 235)"
+          >
+            <line
+              class="MuiChartsAxis-line"
+              x1="85"
+              x2="60"
+            />
+            <g
+              class="MuiChartsAxis-label"
+            >
+              <text
+                dominant-baseline="text-after-edge"
+                style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 14px; line-height: 1; letter-spacing: 0.00938em;"
+                text-anchor="middle"
+                x="72.5"
+                y="45"
+              >
+                <tspan
+                  dominant-baseline="text-after-edge"
+                  dy="0px"
+                  x="72.5"
+                >
+                  Savings ($)
+                </tspan>
+              </text>
+            </g>
+          </g>
+          <g
+            class="MuiChartsAxis-root MuiChartsAxis-directionY MuiChartsAxis-left css-ra8wgq-MuiChartsAxis-root-MuiChartsYAxis-root"
+            data-axis-id="defaultized-y-axis-0"
+            transform="translate(85, 0)"
+          >
+            <line
+              class="MuiChartsAxis-line"
+              stroke-linecap="square"
+              y1="20"
+              y2="235"
+            />
+            <g
+              class="MuiChartsAxis-tickContainer"
+              transform="translate(0, 127.5)"
+            >
+              <line
+                class="MuiChartsAxis-tick"
+                x2="-6"
+              />
+              <text
+                class="MuiChartsAxis-tickLabel"
+                dominant-baseline="central"
+                style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 12px; line-height: 1.66; letter-spacing: 0.03333em; fill: rgb(134, 134, 139);"
+                text-anchor="end"
+                x="-8"
+                y="0"
+              >
+                <tspan
+                  dominant-baseline="central"
+                  dy="0px"
+                  x="-8"
+                >
+                  $0k
+                </tspan>
+              </text>
+            </g>
+            <g
+              class="MuiChartsAxis-label"
+            >
+              <text
+                dominant-baseline="text-before-edge"
+                style="font-family: "Roboto", "Helvetica", "Arial", sans-serif; font-weight: 400; font-size: 14px; line-height: 1; letter-spacing: 0.00938em;"
+                text-anchor="middle"
+                transform="rotate(-90, -65, 127.5)"
+                x="-65"
+                y="127.5"
+              >
+                <tspan
+                  dominant-baseline="text-before-edge"
+                  dy="0px"
+                  x="-65"
+                >
+                  Yearly Interest ($)
+                </tspan>
+              </text>
+            </g>
+          </g>
+          <g
+            data-drawing-container="true"
+          >
+            <g
+              class="MuiLineChart-markPlot css-1xks5uz-MuiMarkPlot-root"
+            />
+          </g>
+          <clippath
+            id="_r_0_-clip-path"
+          >
+            <rect
+              height="215"
+              width="-25"
+              x="85"
+              y="20"
+            />
+          </clippath>
+        </svg>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

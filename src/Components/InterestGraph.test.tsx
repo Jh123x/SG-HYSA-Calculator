@@ -1,7 +1,6 @@
 import { render } from "@testing-library/react";
 import { InterestGraph } from "./InterestGraph";
 import { NewProfile } from "../types/profile";
-import * as React from "react";
 import { expect, it, describe } from "vitest";
 
 describe("Interest Graph", () => {

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Box, CircularProgress } from "@mui/material";
 import { Layout } from "./Layout";
 import { TabbedContent } from "./Components/TabbedContent";
-import Profile, { NewProfile } from "./types/profile";
+import {type Profile, NewProfile } from "./types/profile";
 import { STORE_KEY } from "./consts/keys";
 import { searchToProfile, profileToSearch } from "./logic/profileUrl";
 import { primaryColor } from "./consts/theme";

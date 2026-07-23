@@ -5,20 +5,18 @@ import {
   Checkbox,
   FormControlLabel,
   Tooltip,
-  Typography,
   Chip,
 } from "@mui/material";
 import { useState, useEffect, useRef, useCallback } from "react";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
-import type Profile from "../types/profile";
-import { NewProfile } from "../types/profile";
+import { type Profile, NewProfile } from "../types/profile";
 import { STORE_KEY } from "../consts/keys";
 import { primaryColor, textColor, mutedColor, dangerColor, borderColor } from "../consts/theme";
-import type { Field } from "./types";
+import type { Field } from "../types/input";
 import { WebAlert } from "./Alert";
-import { booleanInputs, numericalInputs } from "./InputValues";
+import { booleanInputs, numericalInputs } from "../consts/InputValues";
 import { ShareButton } from "./ShareButton";
 import { SharedProfileDialog } from "./SharedProfileDialog";
 import { NotificationStack } from "./NotificationStack";
@@ -388,3 +386,4 @@ const InputNumberField = ({
     />
   );
 };
+
