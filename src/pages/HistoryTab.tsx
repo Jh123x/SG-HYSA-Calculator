@@ -28,7 +28,7 @@ import {
 } from "@mui/icons-material";
 import { ComparisonChart } from "../Components/ComparisonChart";
 import { ThreePanelLayout } from "../Components/ThreePanelLayout";
-import type Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import { textColor, bgColor, primaryColor, TOGGLE_SX } from "../consts/theme";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { useMobile } from "../hooks/useMobile";

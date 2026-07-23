@@ -24,7 +24,7 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import type { ResultProp } from "../types/props";
 import { primaryColor, mutedColor, bgColor, textColor, TOGGLE_SX, FACTOR_CHIP_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
-import type Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
 import { InterestGraph } from "../Components/InterestGraph";

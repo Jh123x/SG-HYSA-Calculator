@@ -22,13 +22,13 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import LanguageIcon from "@mui/icons-material/Language";
 import { LineChart } from "@mui/x-charts/LineChart";
-import { textColor, bgColor, primaryColor, lineColors, mutedColor, TOGGLE_SX, FACTOR_CHIP_SX } from "../consts/theme";
+import { textColor, bgColor, primaryColor, lineColors,  TOGGLE_SX, FACTOR_CHIP_SX } from "../consts/theme";
 import { ThreePanelLayout } from "../Components/ThreePanelLayout";
 import { bankInfo } from "../logic/constants";
 import { slugToBankName, ERROR_SLUG } from "../logic/slugs";
 import { resolveHistoryForChart, deriveCurrentFromHistory } from "../logic/history";
 import { formatDate } from "../logic/dates";
-import type Profile from "../types/profile";
+import type { Profile } from "../types/profile";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
 import { useMobile } from "../hooks/useMobile";
 import { jaroWinkler } from "../logic/fuzzyMatch";
@@ -115,21 +115,21 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
           <link rel="canonical" href={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
         </Helmet>
         <Box component="article" aria-label={isHome ? "Redirecting to home" : "Bank suggestion"} sx={{ mt: 3, textAlign: "center" }}>
-        <Paper sx={{ p: 4, backgroundColor: bgColor }}>
-          <Typography variant="h5" sx={{ color: textColor, mb: 2, fontWeight: 600 }}>Bank not found</Typography>
-          {isHome ? (
-            <Typography variant="body1" sx={{ color: textColor, mb: 3 }}>The bank you&apos;re looking for could not be found. You will be redirected to the homepage.</Typography>
-          ) : (
-            <Typography variant="body1" sx={{ color: textColor, mb: 3 }}>
-              Did you mean <Link to={`/bank/${suggestion.slug}`} style={{ color: primaryColor, fontWeight: 600 }}>{suggestion.bankName}</Link>?
-            </Typography>
-          )}
-          <Typography variant="body2" sx={{ color: textColor, opacity: 0.7 }}>Redirecting in {countdown} second{countdown !== 1 ? "s" : ""}...</Typography>
-        </Paper>
-      </Box>
-    </>
-  );
-}
+          <Paper sx={{ p: 4, backgroundColor: bgColor }}>
+            <Typography variant="h5" sx={{ color: textColor, mb: 2, fontWeight: 600 }}>Bank not found</Typography>
+            {isHome ? (
+              <Typography variant="body1" sx={{ color: textColor, mb: 3 }}>The bank you&apos;re looking for could not be found. You will be redirected to the homepage.</Typography>
+            ) : (
+              <Typography variant="body1" sx={{ color: textColor, mb: 3 }}>
+                Did you mean <Link to={`/bank/${suggestion.slug}`} style={{ color: primaryColor, fontWeight: 600 }}>{suggestion.bankName}</Link>?
+              </Typography>
+            )}
+            <Typography variant="body2" sx={{ color: textColor, opacity: 0.7 }}>Redirecting in {countdown} second{countdown !== 1 ? "s" : ""}...</Typography>
+          </Paper>
+        </Box>
+      </>
+    );
+  }
   if (bankName === ERROR_SLUG || !bankInfo[slug ?? ""]) return null;
 
   const info = bankInfo[slug ?? ""];
@@ -325,12 +325,12 @@ export const BankDetailPage = ({ profile }: BankDetailPageProps) => {
         <link rel="canonical" href={`https://hysa.jh123x.com/bank/${slug ?? ""}`} />
       </Helmet>
       <Box component="article" aria-label={`${info.name} interest rate details`} sx={{ display: "flex", flexDirection: "column", height: isMobile ? undefined : "100%" }}>
-      <ThreePanelLayout
-        bottomLeft={renderChart()}
-        bottomRight={renderHistorySection()}
-      />
-      <script ref={scriptRef} type="application/ld+json" />
-    </Box>
+        <ThreePanelLayout
+          bottomLeft={renderChart()}
+          bottomRight={renderHistorySection()}
+        />
+        <script ref={scriptRef} type="application/ld+json" />
+      </Box>
     </>
   );
 };

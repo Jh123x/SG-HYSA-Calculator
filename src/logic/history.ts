@@ -1,8 +1,7 @@
-import type Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import type { RateSnapshot } from "../types/history";
 import { ResultInterest } from "../types/interest_result";
 import { parseISODate, todayISO, TBD_DATE } from "./dates";
-import { FIELDS } from "../consts/fields";
 import { InterestFn } from "../types/interest";
 
 /** A resolved snapshot ready for charting / display */

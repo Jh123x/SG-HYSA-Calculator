@@ -10,8 +10,7 @@
  * (scripts, build tools, tests with minimal deps, etc.).
  */
 
-import type Profile from "../types/profile";
-import { NewProfile } from "../types/profile";
+import { type Profile, NewProfile } from "../types/profile";
 import { uobHistory } from "../logic/uob";
 import { gxsHistory } from "../logic/gxs";
 import { ocbcHistory } from "../logic/ocbc360";

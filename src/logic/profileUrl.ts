@@ -1,5 +1,4 @@
-import type Profile from "../types/profile";
-import { NewProfile } from "../types/profile";
+import { type Profile, NewProfile } from "../types/profile";
 
 /** All Profile field names, derived from the type at runtime. */
 const PROFILE_FIELDS = Object.keys(NewProfile({})) as (keyof Profile)[];

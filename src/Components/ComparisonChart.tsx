@@ -7,7 +7,7 @@ import {
 import { LineChart } from "@mui/x-charts/LineChart";
 import { textColor, bgColor, mutedColor, borderColor } from "../consts/theme";
 import { bankInfo } from "../logic/constants";
-import type Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import { todayISO } from "../logic/dates";
 import {
   collectBankPoints,

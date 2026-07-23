@@ -6,7 +6,7 @@ import { Footer } from "./Components/Footer";
 import { ErrorBoundary } from "./Components/ErrorBoundary";
 import { bgColor, theme } from "./consts/theme";
 import { useMobile } from "./hooks/useMobile";
-import type Profile from "./types/profile";
+import type {Profile} from "./types/profile";
 
 export interface LayoutContext {
   currProfile: Profile;
