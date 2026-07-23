@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi } from "vitest";
 import { render } from "@testing-library/react";
 import { ErrorBoundary } from "./ErrorBoundary";
 
@@ -13,7 +13,9 @@ describe("ErrorBoundary", () => {
     expect(asFragment()).toMatchSnapshot();
   });
   it("should match snapshot on error", () => {
+    const spy = vi.spyOn(console, "error").mockImplementation(() => {});
     const { asFragment } = render(<ErrorBoundary><ErrComponent /></ErrorBoundary>)
     expect(asFragment()).toMatchSnapshot();
+    spy.mockRestore();
   })
 })
