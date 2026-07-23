@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { FormInputs } from "./Inputs";
-import Profile, { NewProfile } from "../types/profile";
+import  {type Profile, NewProfile } from "../types/profile";
 import { describe, it, expect } from "vitest";
 
 describe("Form Inputs", () => {

@@ -3,7 +3,7 @@ import { Paper, Typography } from "@mui/material";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory } from "../logic/history";
 import { lineColors, textColor } from "../consts/theme";
-import type Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import {
   InterestVsSavingsChart,
   type ChartLine,

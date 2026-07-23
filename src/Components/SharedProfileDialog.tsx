@@ -13,7 +13,7 @@ import {
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import RemoveIcon from "@mui/icons-material/Remove";
-import type Profile from "../types/profile";
+import type { Profile } from "../types/profile";
 import { FIELDS } from "../consts/fields";
 
 interface Props {
@@ -24,7 +24,7 @@ interface Props {
   onReject: () => void;
 }
 
-const fmtCurrency = (v: number): string =>v === 0 ? "$0" : `$${v.toLocaleString()}`;
+const fmtCurrency = (v: number): string => v === 0 ? "$0" : `$${v.toLocaleString()}`;
 
 const fmtValue = (v: Profile[keyof Profile], isBoolean: boolean): string => {
   if (isBoolean) return v ? "Yes" : "No";

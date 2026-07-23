@@ -1,6 +1,6 @@
 import type { RateSnapshot } from "../types/history";
 import { ResultInterest } from "../types/interest_result";
-import Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import { calculate_ir } from "./common";
 
 export const ocbc_interest_07_2025 = (profile: Profile): ResultInterest => {

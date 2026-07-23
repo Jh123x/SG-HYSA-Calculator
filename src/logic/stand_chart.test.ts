@@ -4,7 +4,7 @@ import {
   stand_chart_interest_10_2025,
   stand_chart_interest_06_2026,
 } from "./stand_chart";
-import Profile, { NewProfile } from "../types/profile";
+import  { type Profile, NewProfile } from "../types/profile";
 
 describe("Standard Chartered I/R (Jun 2026)", () => {
   const tests: {

@@ -2,7 +2,7 @@ import { LineChart } from "@mui/x-charts/LineChart";
 import { Box, type SxProps, type Theme } from "@mui/material";
 import { lineColors, mutedColor, borderColor } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
-import type Profile from "../types/profile";
+import type {Profile }from "../types/profile";
 import type { InterestFn } from "../types/interest";
 
 export interface ChartLine {

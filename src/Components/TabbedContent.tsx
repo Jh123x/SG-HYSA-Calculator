@@ -5,7 +5,7 @@ import { FormInputs } from "./Inputs";
 import { primaryColor, TOGGLE_SX } from "../consts/theme";
 import { useMobile } from "../hooks/useMobile";
 import { prefetchRoute } from "../data/prefetch";
-import type Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 
 /** Single source of truth for tab labels — kept concise for mobile screen widths */
 export const TAB_LABELS = {

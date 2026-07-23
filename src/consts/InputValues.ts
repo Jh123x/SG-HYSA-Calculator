@@ -1,10 +1,10 @@
-import type Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import type { InputArg } from "../types/input";
 
 const makeDefaultNumber = (value?: number): number =>
   value === undefined || value === 0 ? 0 : value;
 
-export const numericalInputs: Array<InputArg<number>> = [
+export const numericalInputs: InputArg<number>[] = [
   {
     label: "Savings",
     tooltip: "Total savings balance to deposit",

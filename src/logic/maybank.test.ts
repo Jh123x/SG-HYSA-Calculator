@@ -1,5 +1,5 @@
 import { ResultInterest } from "../types/interest_result";
-import Profile, { NewProfile } from "../types/profile";
+import{ type Profile,  NewProfile } from "../types/profile";
 import {
   maybank_save_up_10_2025,
   maybank_save_up_06_2026,

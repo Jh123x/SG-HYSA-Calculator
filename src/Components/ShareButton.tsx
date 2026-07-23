@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import CheckIcon from "@mui/icons-material/Check";
 import { primaryColor, textColor, bgColor } from "../consts/theme";
-import type Profile from "../types/profile";
+import type {Profile} from "../types/profile";
 import { profileToUrl } from "../logic/profileUrl";
 
 interface ShareButtonProps {

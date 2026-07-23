@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LocalLink > should match snapshot 1`] = `
+<DocumentFragment>
+  <a
+    class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-5an4ja-MuiTypography-root-MuiLink-root"
+    href="https://example.com"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    Test
+  </a>
+</DocumentFragment>
+`;

@@ -1,5 +1,5 @@
-import { ResultInterest } from "./interest_result";
-import Profile from "./profile";
+import type { ResultInterest } from "./interest_result";
+import type {Profile} from "./profile";
 
 export interface CutoffInterest {
   Cutoff: number;

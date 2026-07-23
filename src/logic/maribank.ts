@@ -1,7 +1,7 @@
 import type { RateSnapshot } from "../types/history";
 import { calculate_ir } from "./common";
 import { ResultInterest } from "../types/interest_result";
-import Profile from "../types/profile";
+import type {Profile}from "../types/profile";
 
 const maribankInterest =
   (rate: number) =>
