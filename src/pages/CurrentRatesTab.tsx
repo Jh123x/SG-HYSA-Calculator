@@ -54,12 +54,16 @@ export const CurrentRatesTab = ({ profile }: Props) => {
   return (
     <>
       <Helmet>
-        <title>[SG] High Yield Savings Account Calculator — Compare &amp; Maximise Your Interest</title>
-        <meta name="description" content="Compare Singapore's best high yield savings accounts (HYSA) side by side. Calculate interest for UOB One, OCBC 360, DBS Multiplier, Maribank, Trust Bank, GXS, and more. Updated regularly with latest rates." />
-        <meta property="og:title" content="[SG] High Yield Savings Account Calculator — Compare &amp; Maximise Your Interest" />
-        <meta property="og:description" content="Compare Singapore's best high yield savings accounts (HYSA) side by side. Calculate interest for UOB One, OCBC 360, DBS Multiplier, Maribank, Trust Bank, GXS, and more." />
+        <title>High Yield Savings Account Calculator Singapore — Compare &amp; Maximise Your Interest</title>
+        <meta name="description" content="Find the highest interest rate savings account in Singapore. Our high yield savings account calculator compares high yield savings account rates across UOB One, OCBC 360, DBS Multiplier, Maribank, Trust Bank, GXS, and more high interest savings accounts. Updated regularly with latest rates." />
+        <meta property="og:title" content="High Yield Savings Account Calculator Singapore — Compare &amp; Maximise Your Interest" />
+        <meta property="og:description" content="Find the highest interest rate savings account in Singapore. Compare high yield savings account rates across UOB One, OCBC 360, DBS Multiplier, Maribank, Trust Bank, GXS, and more." />
         <meta property="og:url" content="https://hysa.jh123x.com/" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://hysa.jh123x.com/hysa_logo.webp" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content="SG HYSA Calculator logo" />
         <link rel="canonical" href="https://hysa.jh123x.com/" />
       </Helmet>
       {isMobile ? (

@@ -181,7 +181,7 @@ const FaqContent = ({ entries }: { entries: FaqEntry[] }) => (
 export const FaqPage = () => {
   const navigate = useNavigate();
   const { isMobile } = useMobile();
-  useDocumentTitle("FAQ — SG HYSA Calculator");
+  useDocumentTitle("FAQ — High Yield Savings Account Singapore");
   const scriptRef = useRef<HTMLScriptElement>(null);
 
   useEffect(() => {
@@ -193,12 +193,16 @@ export const FaqPage = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ — SG HYSA Calculator</title>
-        <meta name="description" content="Frequently asked questions about Singapore high yield savings accounts (HYSA). Learn about EIR calculations, bonus interest categories, and how to maximise your savings." />
-        <meta property="og:title" content="FAQ — SG HYSA Calculator" />
-        <meta property="og:description" content="Frequently asked questions about Singapore high yield savings accounts (HYSA). Learn about EIR calculations, bonus interest categories, and how to maximise your savings." />
+        <title>FAQ — High Yield Savings Account Singapore</title>
+        <meta name="description" content="Frequently asked questions about high yield savings accounts in Singapore. Learn how high interest savings accounts work, how to find the highest interest rate savings account, how EIR is calculated, and how to maximise your high yield savings with bonus interest categories." />
+        <meta property="og:title" content="FAQ — High Yield Savings Account Singapore" />
+        <meta property="og:description" content="Frequently asked questions about high yield savings accounts in Singapore. Learn how high interest savings accounts work, how to find the highest interest rate savings account, how EIR is calculated, and how to maximise your high yield savings with bonus interest categories." />
         <meta property="og:url" content="https://hysa.jh123x.com/faq" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://hysa.jh123x.com/hysa_logo.webp" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content="SG HYSA Calculator logo" />
         <link rel="canonical" href="https://hysa.jh123x.com/faq" />
       </Helmet>
 
@@ -222,7 +226,7 @@ export const FaqPage = () => {
             Frequently Asked Questions
           </Typography>
           <Typography variant="body1" sx={{ color: textColor, opacity: 0.7 }}>
-            Everything you need to know about High Yield Savings Accounts in Singapore.
+            Everything you need to know about high yield and high interest savings accounts in Singapore — how they work, how to compare rates, and how to earn more from your savings.
             {" "}
             <Button
               onClick={() => navigate("/")}
