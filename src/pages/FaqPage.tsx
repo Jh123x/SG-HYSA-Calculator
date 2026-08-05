@@ -2,7 +2,7 @@ import { useRef, useEffect } from "react";
 import { Container, Typography, Box, Link as MuiLink, Button } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { Helmet } from "react-helmet-async";
 import { FULL_FAQ } from "../data/faq";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";

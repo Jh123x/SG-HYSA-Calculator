@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, useCallback } from "react";
-import { useSearchParams, useNavigate } from "react-router-dom";
+import { useSearchParams, useNavigate } from "react-router";
 import type {Profile} from "../types/profile";
 import { bankInfo } from "../logic/constants";
 import { deriveCurrentFromHistory, resolveHistoryForChart } from "../logic/history";

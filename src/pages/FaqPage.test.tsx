@@ -1,6 +1,6 @@
 import { vi, describe, it, expect, beforeEach, beforeAll } from "vitest";
 import { render } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter } from "react-router";
 import { FaqPage } from "./FaqPage";
 
 // IntersectionObserver is not available in jsdom. Use a minimal mock that
