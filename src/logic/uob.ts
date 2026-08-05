@@ -107,7 +107,7 @@ export const uob_interest_2025_05 = (profile: Profile): ResultInterest => {
   return calculate_ir(Savings, ir_2025_05_cutoff[3]);
 };
 
-const ir_cutoff: Array<Interest> = [
+const old_ir_cutoff: Array<Interest> = [
   // Spend 500 + Salary Credit
   {
     cutoffs: [
@@ -117,59 +117,11 @@ const ir_cutoff: Array<Interest> = [
     ],
     baseRatePercent: 0.05,
   },
-  // Spend 500 + 3 GIRO Txns
+  // Spend 500 + 3 GIRO Transactions
   {
     cutoffs: [
       { Cutoff: 75000, InterestRatePercent: 1 },
       { Cutoff: 50000, InterestRatePercent: 2 },
-    ],
-    baseRatePercent: 0.05,
-  },
-  // Only spend 500
-  {
-    cutoffs: [{ Cutoff: 75000, InterestRatePercent: 0.65 }],
-    baseRatePercent: 0.05,
-  },
-  // Does not fulfil any criteria
-  {
-    cutoffs: [],
-    baseRatePercent: 0.05,
-  },
-];
-
-export const uob_interest_10_2025 = (profile: Profile): ResultInterest => {
-  const { Savings, Spending, GiroTransactions, Salary } = profile;
-
-  if (Spending >= 500 && Salary >= 1600) {
-    return calculate_ir(Savings, ir_cutoff[0]);
-  }
-
-  if (Spending >= 500 && GiroTransactions >= 3) {
-    return calculate_ir(Savings, ir_cutoff[1]);
-  }
-
-  if (Spending >= 500) {
-    return calculate_ir(Savings, ir_cutoff[2]);
-  }
-
-  return calculate_ir(Savings, ir_cutoff[3]);
-};
-
-const old_ir_cutoff: Array<Interest> = [
-  // Spend 500 + Salary Credit
-  {
-    cutoffs: [
-      { Cutoff: 75000, InterestRatePercent: 2.3 },
-      { Cutoff: 50000, InterestRatePercent: 3.8 },
-      { Cutoff: 25000, InterestRatePercent: 5.3 },
-    ],
-    baseRatePercent: 0.05,
-  },
-  // Spend 500 + 3 GIRO Transactions
-  {
-    cutoffs: [
-      { Cutoff: 75000, InterestRatePercent: 1.5 },
-      { Cutoff: 50000, InterestRatePercent: 2.5 },
     ],
     baseRatePercent: 0.05,
   },
@@ -216,8 +168,8 @@ const ir_2025_12_cutoff: Array<Interest> = [
   // Spend 500 + 3 GIRO Transactions
   {
     cutoffs: [
-      { Cutoff: 75000, InterestRatePercent: 1.5 },
-      { Cutoff: 50000, InterestRatePercent: 2.5 },
+      { Cutoff: 75000, InterestRatePercent: 1 },
+      { Cutoff: 50000, InterestRatePercent: 2 },
     ],
     baseRatePercent: 0.05,
   },
@@ -226,7 +178,7 @@ const ir_2025_12_cutoff: Array<Interest> = [
     cutoffs: [{ Cutoff: 75000, InterestRatePercent: 0.65 }],
     baseRatePercent: 0.05,
   },
-  // Does not fulfill any criteria
+  // Does not fulfil any criteria
   {
     cutoffs: [],
     baseRatePercent: 0.05,
@@ -271,20 +223,13 @@ export const uobHistory: RateSnapshot[] = [
     interestFn: uob_interest_2025_09,
     sourceUrl: "https://milelion.com/2025/08/01/uob-one-account-nerfing-interest-rates-to-2-5-p-a-from-september-2025/",
     changeSummary:
-      "Top tier (Spend $500 + Salary):\n1st $25K: 5.3% → 3.4%\nnext $50K: 3.8% → 2.5%\nnext $75K: 2.3% → 1%\nGIROs tier: 1st $50K: 2.5% → 1.5%"
-  },
-  {
-    effectiveDate: "2025-10-15",
-    interestFn: uob_interest_10_2025,
-    sourceUrl: "https://www.businesstimes.com.sg/companies-markets/uob-trims-one-account-interest-rate-again-maximum-2-5-annum-first-s150000",
-    changeSummary:
-      "Top tier partially restored:\n1st $25K: 3.4% → 4.5%\nnext $50K: 2.5% → 3%\nnext $75K: 1% → 1.5%",
+      "Top tier (Spend $500 + Salary):\n1st $75K: 2.3% → 1.5%\nnext $50K: 3.8% → 3%\nnext $25K: 5.3% → 4.5%\nGIROs tier: 1st $75K: 1.5% → 1%\nnext $50K: 2.5% → 2%\nMax EIR: 3.3% → 2.5%",
   },
   {
     effectiveDate: "2025-12-01",
     interestFn: uob_interest_2025_12,
     sourceUrl: "https://www.uob.com.sg/assets/web-resources/personal/pdf/save/everyday-accounts/revision-of-interest-rates-for-uob-one-account.pdf",
     changeSummary:
-      "Top tier cut again:\n1st $25K: 4.5% → 3.4%\nnext $50K: 3% → 2.5%",
+      "Top tier cut again:\n1st $75K: 1.5% → 1%\nnext $50K: 3% → 2.5%\nnext $25K: 4.5% → 3.4%\nGIROs tier unchanged\nMax EIR: 2.5% → 1.9%",
   },
 ];

@@ -5,7 +5,7 @@ import { calculate_ir } from "./common";
 
 const baseInterest = 0.05;
 
-export const stand_chart_interest_10_2025 = (
+export const stand_chart_interest_06_2025 = (
   profile: Profile,
 ): ResultInterest => {
   const { Savings, Salary, Spending, Insurance, Investment } = profile;
@@ -30,8 +30,8 @@ export const stand_chart_interest_06_2026 = (
 
   if (Salary >= 3000) interest += 0.9;
   if (Spending >= 1000) interest += 0.9;
-  if (Insurance >= 24000) interest += 2;
-  if (Investment >= 30000) interest += 2;
+  if (Insurance >= 24000) interest += 2.5;
+  if (Investment >= 30000) interest += 1.5;
 
   return calculate_ir(Savings, {
     cutoffs: [{ Cutoff: 100_000, InterestRatePercent: interest }],
@@ -58,21 +58,21 @@ export const stand_chart_interest_before_06_25 = (
 
 export const standChartHistory: RateSnapshot[] = [
   {
-    effectiveDate: "2025-06-01",
+    effectiveDate: "2025-01-01",
     interestFn: stand_chart_interest_before_06_25,
     sourceUrl: "https://www.sc.com/sg/important-information/bonussaver-revision/",
     changeSummary: "Salary 1% / Spend 1% /\nInsurance 2% / Investment 2% on first $100K",
   },
   {
-    effectiveDate: "2025-10-01",
-    interestFn: stand_chart_interest_10_2025,
+    effectiveDate: "2025-06-01",
+    interestFn: stand_chart_interest_06_2025,
     sourceUrl: "https://sethisfy.com/buffed-bonussaver-increases-rates-3-05-2-5-p-a-possible/",
-    changeSummary: "Salary ↑1.5%, Spend ↑1.5%,\nInsurance ↑2.5%, Investment ↑2.5%",
+    changeSummary: "Salary +1.5% (was +1%), Spend +1.5% (was +1%),\nInsurance +2.5% (was +2%), Investment +2.5% (was +2%)",
   },
   {
-    effectiveDate: "2026-06-05",
+    effectiveDate: "2026-05-01",
     interestFn: stand_chart_interest_06_2026,
     sourceUrl: "https://www.sc.com/sg/important-information/revision-of-bonusaver-myway-jumpstartaccount/",
-    changeSummary: "Bonus rates lowered on first $100K:\nSalary: +0.9% (was +1.5%)\nSpend: +0.9% (was +1.5%)\nInsurance: +2% (threshold $12K → $24K)\nInvestment: +2% (threshold $20K → $30K)",
+    changeSummary: "Bonus rates lowered on first $100K:\nSalary: +0.9% (was +1%)\nSpend: +0.9% (was +1%)\nInsurance: +2.5% (unchanged; threshold $12K → $24K)\nInvestment: +1.5% (was +2.5%; threshold $20K → $30K)",
   },
 ];

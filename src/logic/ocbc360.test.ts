@@ -86,7 +86,7 @@ describe("OCBC 360 — May 2026 rates (golden tests)", () => {
   /**
    * Manually verified expected values for ocbc_interest_05_2026.
    *
-   * Rate structure (effective 2026-04-05):
+   * Rate structure (effective 2026-05-01):
    *   Base: 0.05% on all tiers
    *   Salary (≥$1,800):  +1.00% first $75K / +2.00% next $25K
    *   Save (ADB +$500):   +0.40% first $75K / +0.40% next $25K

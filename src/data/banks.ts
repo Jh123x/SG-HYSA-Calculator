@@ -99,7 +99,7 @@ export const banks: Record<string, BankData> = {
     name: "GXS Savings",
     url: "https://www.gxs.com.sg/savings-account",
     remarks:
-      "Calculated using boost pocket (3 months) up to $85,000 with remaining balance in saving pockets\n**Note: The max amount deposited depends on individual (up to $95,000)**\nView other [Notices here](https://www.gxs.com.sg/notices)",
+      "Calculated using a 3-month Boost Pocket: 0.88% base + 0.34% bonus = 1.22% p.a. on up to $95,000 (up to 5 pockets; tenures 1/3/4/8/12 months, max 1.60% p.a.). Remaining balance in Saving Pockets at 1.08% p.a.\n**Note: The max amount deposited depends on individual (up to $95,000)**\nView other [Notices here](https://www.gxs.com.sg/notices)",
     history: gxsHistory,
   },
   "chocolate-finance": {

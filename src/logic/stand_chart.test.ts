@@ -1,7 +1,7 @@
 import { ResultInterest } from "../types/interest_result";
 import {
   stand_chart_interest_before_06_25,
-  stand_chart_interest_10_2025,
+  stand_chart_interest_06_2025,
   stand_chart_interest_06_2026,
 } from "./stand_chart";
 import  { type Profile, NewProfile } from "../types/profile";
@@ -156,7 +156,7 @@ describe("Standard Chartered I/R (Oct 2025)", () => {
 
   for (const testCase of tests) {
     it(testCase.name, () => {
-      const result = stand_chart_interest_10_2025(testCase.profile);
+      const result = stand_chart_interest_06_2025(testCase.profile);
       expect(result).toEqual(testCase.expectedInterest);
     });
   }
