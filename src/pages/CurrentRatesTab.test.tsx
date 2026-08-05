@@ -1,6 +1,6 @@
 import { vi, describe, it, expect, beforeEach } from "vitest";
 import { render } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter } from "react-router";
 import { CurrentRatesTab } from "./CurrentRatesTab";
 import { NewProfile } from "../types/profile";
 

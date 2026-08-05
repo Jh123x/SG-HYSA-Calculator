@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { Box, Button, Typography } from "@mui/material";
 import SavingsOutlinedIcon from "@mui/icons-material/SavingsOutlined";
 import { primaryColor, mutedColor, borderColor, textColor } from "../consts/theme";

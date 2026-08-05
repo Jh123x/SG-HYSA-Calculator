@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 import { Container, GlobalStyles, Box } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import { Header } from "./Components/Header";

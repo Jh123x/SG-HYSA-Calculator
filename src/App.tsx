@@ -1,5 +1,5 @@
 import { lazy, useState, useEffect, useCallback, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router";
 import { Box, CircularProgress } from "@mui/material";
 import { Layout } from "./Layout";
 import { TabbedContent } from "./Components/TabbedContent";

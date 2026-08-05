@@ -1,6 +1,6 @@
 import { vi, describe, it, expect, beforeEach } from "vitest";
 import { render } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter } from "react-router";
 import { HistoryTab } from "./HistoryTab";
 import { NewProfile } from "../types/profile";
 
@@ -12,8 +12,8 @@ vi.mock("../hooks/useMobile", () => ({
   useMobile: mockUseMobile,
 }));
 
-vi.mock("react-router-dom", async () => {
-  const actual = await vi.importActual("react-router-dom");
+vi.mock("react-router", async () => {
+  const actual = await vi.importActual("react-router");
   return {
     ...actual,
     useSearchParams: () => [new URLSearchParams(), vi.fn()],

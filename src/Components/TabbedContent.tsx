@@ -1,4 +1,4 @@
-import { Outlet, useNavigate, useLocation, useOutletContext } from "react-router-dom";
+import { Outlet, useNavigate, useLocation, useOutletContext } from "react-router";
 import { Box, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { ErrorBoundary } from "./ErrorBoundary";
 import { FormInputs } from "./Inputs";
