@@ -5,7 +5,7 @@ import { calculate_ir } from "./common";
 
 const baseInterest = 0.05;
 
-export const stand_chart_interest_10_2025 = (
+export const stand_chart_interest_06_2025 = (
   profile: Profile,
 ): ResultInterest => {
   const { Savings, Salary, Spending, Insurance, Investment } = profile;
@@ -65,7 +65,7 @@ export const standChartHistory: RateSnapshot[] = [
   },
   {
     effectiveDate: "2025-06-01",
-    interestFn: stand_chart_interest_10_2025,
+    interestFn: stand_chart_interest_06_2025,
     sourceUrl: "https://sethisfy.com/buffed-bonussaver-increases-rates-3-05-2-5-p-a-possible/",
     changeSummary: "Salary +1.5% (was +1%), Spend +1.5% (was +1%),\nInsurance +2.5% (was +2%), Investment +2.5% (was +2%)",
   },
