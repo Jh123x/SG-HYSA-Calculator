@@ -171,9 +171,9 @@ export const ocbcHistory: RateSnapshot[] = [
     sourceUrl: "https://milelion.com/2025/06/28/ocbc-360-account-cuts-interest-rates-again-from-august-2025/",
   },
   {
-    effectiveDate: "2026-04-05",
+    effectiveDate: "2026-05-01",
     interestFn: ocbc_interest_05_2026,
-    changeSummary: "Bonus rates lowered (1st $75K / next $25K):\nSalary: +1.0% / +2.0%\nSave: +0.4% / +0.8% (unchanged)\nSpend: +0.25% (both tiers)\nInsurance: +1.0% / +2.0%\nInvestment: +1.0% / +2.0%\n$250K balance: +1.2% (both tiers)",
+    changeSummary: "Bonus rates lowered (1st $75K / next $25K):\nSalary: +1.0% / +2.0%\nSave: +0.4% (both tiers)\nSpend: +0.25% (both tiers)\nInsurance: +1.0% / +2.0%\nInvestment: +1.0% / +2.0%\n$250K balance: +1.2% (both tiers)",
     sourceUrl: "https://milelion.com/2026/04/01/ocbc-360-account-cuts-interest-rates-from-may-2026/",
   },
 ];
