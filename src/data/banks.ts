@@ -99,7 +99,7 @@ export const banks: Record<string, BankData> = {
     name: "GXS Savings",
     url: "https://www.gxs.com.sg/savings-account",
     remarks:
-      "Calculated using a 3-month Boost Pocket: 0.88% base + 0.34% bonus = 1.22% p.a. on up to $95,000 (up to 5 pockets; tenures 1/3/4/8/12 months, max 1.60% p.a.). Remaining balance in Saving Pockets at 1.08% p.a.\n**Note: The max amount deposited depends on individual (up to $95,000)**\nView other [Notices here](https://www.gxs.com.sg/notices)",
+      "Calculated using a 3-month Boost Pocket: 0.88% base + 0.34% bonus = 1.22% p.a. on up to $95,000 (up to 8 pockets; tenures 1/3/4/8/12 months, max 1.75% p.a. on 12-month). Remaining balance in Saving Pockets at 1.08% p.a.\n**Note: The max amount deposited depends on individual (up to $95,000)**\nView other [Notices here](https://www.gxs.com.sg/notices)",
     history: gxsHistory,
   },
   "chocolate-finance": {
@@ -148,7 +148,7 @@ export const banks: Record<string, BankData> = {
     name: "Citi Wealth First",
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks:
-      "Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)\nBonus interest capped at first $500k.\n*Assumes Citigold tier. Citi Private clients enjoy higher rates.",
+      "Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)\nBonus interest capped at first $250k (Citigold tier).\n*Assumes Citigold tier. Citi Private clients enjoy higher rates (capped at first $500k).",
     history: citiHistory,
   },
 };

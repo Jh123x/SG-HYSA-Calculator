@@ -1551,7 +1551,7 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                 class="MuiTypography-root MuiTypography-body1 css-96y9xm-MuiTypography-root"
                 data-mui-internal-clone-element="true"
               >
-                Calculated using a 3-month Boost Pocket: 0.88% base + 0.34% bonus = 1.22% p.a. on up to $95,000 (up to 5 pockets; tenures 1/3/4/8/12 months, max 1.60% p.a.). Remaining balance in Saving Pockets at 1.08% p.a.
+                Calculated using a 3-month Boost Pocket: 0.88% base + 0.34% bonus = 1.22% p.a. on up to $95,000 (up to 8 pockets; tenures 1/3/4/8/12 months, max 1.75% p.a. on 12-month). Remaining balance in Saving Pockets at 1.08% p.a.
                 <br />
                 <b>
                   Note: The max amount deposited depends on individual (up to $95,000)
@@ -2453,14 +2453,14 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
                   </span>
                 </div>
                 <div
-                  aria-label="Age, Insurance, Investment, One-Time Loan, Savings, Spending"
+                  aria-label="Age, Insurance, Investment, One-Time Loan, Salary, Savings, Spending"
                   class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                   data-mui-internal-clone-element="true"
                 >
                   <span
                     class="MuiChip-label css-19m61dl-MuiChip-label"
                   >
-                    +6
+                    +7
                   </span>
                 </div>
               </div>
@@ -2489,9 +2489,9 @@ exports[`CurrentRatesTab desktop > should match snapshot 1`] = `
               >
                 Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)
                 <br />
-                Bonus interest capped at first $500k.
+                Bonus interest capped at first $250k (Citigold tier).
                 <br />
-                *Assumes Citigold tier. Citi Private clients enjoy higher rates.
+                *Assumes Citigold tier. Citi Private clients enjoy higher rates (capped at first $500k).
               </p>
               <span
                 class="MuiCardActionArea-focusHighlight css-1h5un5t-MuiCardActionArea-focusHighlight"
@@ -5682,14 +5682,14 @@ exports[`CurrentRatesTab mobile > should match snapshot 1`] = `
                 </span>
               </div>
               <div
-                aria-label="Age, Insurance, Investment, One-Time Loan, Savings, Spending"
+                aria-label="Age, Insurance, Investment, One-Time Loan, Salary, Savings, Spending"
                 class="MuiChip-root MuiChip-outlined MuiChip-sizeSmall MuiChip-colorDefault css-1xmh3j5-MuiChip-root"
                 data-mui-internal-clone-element="true"
               >
                 <span
                   class="MuiChip-label css-19m61dl-MuiChip-label"
                 >
-                  +6
+                  +7
                 </span>
               </div>
             </div>

@@ -68,6 +68,27 @@ export const citi_wealth_first_06_2026 = (profile: Profile): ResultInterest => {
   return result;
 };
 
+export const citi_wealth_first_10_2026 = (profile: Profile): ResultInterest => {
+  // Minimum 250k savings and 18 year old
+  if (profile.Savings < 250_000 || profile.Age < 18)
+    return new ResultInterest(0, profile.Savings);
+
+  var ir = baseInterest;
+  if (profile.Spending >= 750) ir += 1.5;
+  if (profile.Investment >= 50_000) ir += 1.5;
+  if (profile.Insurance >= 50_000) ir += 1.5;
+  if (profile.OneTimeLoan >= 500_000) ir += 1.5;
+  if (profile.Salary >= 5_000) ir += 1.0;
+  if (profile.MonthlyAccIncrease >= 3000) ir += 0.5;
+
+  const result = calculate_ir(profile.Savings, {
+    cutoffs: [{ Cutoff: 250_000, InterestRatePercent: ir }],
+    baseRatePercent: 0.01,
+  });
+
+  return result;
+};
+
 export const citiHistory: RateSnapshot[] = [
   {
     effectiveDate: "2025-05-01",
@@ -86,5 +107,11 @@ export const citiHistory: RateSnapshot[] = [
     interestFn: citi_wealth_first_06_2026,
     sourceUrl: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     changeSummary: "Cap increased: $250K → $500K",
+  },
+  {
+    effectiveDate: "2026-10-01",
+    interestFn: citi_wealth_first_10_2026,
+    sourceUrl: "https://www.citibank.com.sg/content/dam/cgcpc/sg/prelogin/www-citibank-com-sg/pdf/global_docs/pdf/cg-wf-wef-oct26.pdf",
+    changeSummary: "Revised T&Cs (Citigold):\nSpend threshold S$250 → S$750 (bonus unchanged at +1.5%)\nSave (ADB increase ≥S$3K): +1.5% → +0.5%\nNew Salary category: +1.0% (min S$5,000)\nCap: Bonus Interest capped at first S$250K for Citigold (S$500K only for Citigold Private Client)",
   },
 ];
