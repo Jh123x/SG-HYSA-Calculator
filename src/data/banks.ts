@@ -19,7 +19,7 @@ import {
   maybankIsavvyHistory,
   maybankIsavvyPlusHistory,
 } from "../logic/maybank";
-import { citiHistory } from "../logic/citibank";
+import { citiHistory, citiInterestBoosterHistory } from "../logic/citibank";
 import { standChartHistory } from "../logic/stand_chart";
 import { dbsMultiplierHistory } from "../logic/dbs_multiplier";
 import {
@@ -150,6 +150,13 @@ export const banks: Record<string, BankData> = {
     remarks:
       "Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)\nBonus interest capped at first $250k (Citigold tier).\n*Assumes Citigold tier. Citi Private clients enjoy higher rates (capped at first $500k).",
     history: citiHistory,
+  },
+  "citi-interest-booster-account": {
+    name: "Citi Interest Booster",
+    url: "https://www1.citibank.com.sg/wealth-management/citi-plus/citi-interest-booster-account",
+    remarks:
+      "Open to anyone 18+ via Citi Plus (no Citigold requirement).\nBase 1.5% on first $50K (0.01% above).\nBonus missions (capped at first $50K): Spend $500 +0.2%, Invest $1K +0.6%, Insurance $5K +0.6%, Home loan $500K +0.8%, ADB +$1.5K +0.2%, birthday month +0.1%.\nMax 4.0% p.a.",
+    history: citiInterestBoosterHistory,
   },
 };
 

@@ -1,6 +1,11 @@
 import { ResultInterest } from "../types/interest_result";
 import { type Profile, NewProfile } from "../types/profile";
-import { citi_wealth_first_05_2025, citi_wealth_first_06_2026, citi_wealth_first_10_2026 } from "./citibank";
+import {
+  citi_wealth_first_05_2025,
+  citi_wealth_first_06_2026,
+  citi_wealth_first_10_2026,
+  citi_interest_booster_11_2025,
+} from "./citibank";
 
 interface TestCase {
   name: string;
@@ -284,6 +289,74 @@ describe("Citibank (Oct 2026, revised T&Cs)", () => {
   for (const test of tests) {
     it(test.name, () => {
       const result = citi_wealth_first_10_2026(test.profile);
+      expect(result).toEqual(
+        new ResultInterest(test.expected_ir, test.profile.Savings),
+      );
+    });
+  }
+});
+
+describe("Citi Interest Booster Account (Citi Plus)", () => {
+  // Base 1.5% on first S$50K (0.01% above), +0.1% birthday (any account holder).
+  // Spend >=S$500 +0.2%, Invest >=S$1K +0.6%, Insurance >=S$5K +0.6%,
+  // Home loan >=S$500K +0.8%, ADB increase >=S$1.5K +0.2%.
+  const tests: Array<TestCase> = [
+    {
+      name: "under 18 earns nothing",
+      profile: NewProfile({ Savings: 50_000, Age: 17 }),
+      expected_ir: 0,
+    },
+    {
+      name: "base + birthday only",
+      profile: NewProfile({ Savings: 50_000, Age: 20 }),
+      // 50k * (1.5 + 0.1) / 100 = 800
+      expected_ir: 800,
+    },
+    {
+      name: "spend at S$500 threshold",
+      profile: NewProfile({ Savings: 50_000, Age: 20, Spending: 500 }),
+      // 50k * (1.5 + 0.1 + 0.2) / 100 = 900
+      expected_ir: 900,
+    },
+    {
+      name: "invest at S$1K threshold",
+      profile: NewProfile({ Savings: 50_000, Age: 20, Investment: 1_000 }),
+      // 50k * (1.5 + 0.1 + 0.6) / 100 = 1100
+      expected_ir: 1100,
+    },
+    {
+      name: "all missions stacked (max 4.0%)",
+      profile: NewProfile({
+        Savings: 50_000,
+        Age: 20,
+        Spending: 500,
+        Investment: 1_000,
+        Insurance: 5_000,
+        OneTimeLoan: 500_000,
+        MonthlyAccIncrease: 1_500,
+      }),
+      // 50k * (1.5 + 0.1 + 0.2 + 0.6 + 0.6 + 0.8 + 0.2) / 100 = 50k * 4.0 / 100 = 2000
+      expected_ir: 2000,
+    },
+    {
+      name: "above S$50K cap earns 0.01%",
+      profile: NewProfile({
+        Savings: 100_000,
+        Age: 20,
+        Spending: 500,
+        Investment: 1_000,
+        Insurance: 5_000,
+        OneTimeLoan: 500_000,
+        MonthlyAccIncrease: 1_500,
+      }),
+      // 50k * 4.0/100 + 50k * 0.01/100 = 2000 + 5 = 2005
+      expected_ir: 2005,
+    },
+  ];
+
+  for (const test of tests) {
+    it(test.name, () => {
+      const result = citi_interest_booster_11_2025(test.profile);
       expect(result).toEqual(
         new ResultInterest(test.expected_ir, test.profile.Savings),
       );

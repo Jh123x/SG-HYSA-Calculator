@@ -546,6 +546,39 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                 </span>
               </button>
             </li>
+            <li
+              class="MuiChartsLegend-item"
+              data-series="citi-interest-booster-account"
+            >
+              <button
+                class="MuiChartsLegend-series"
+                type="button"
+              >
+                <div
+                  aria-hidden="true"
+                  class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                >
+                  <svg
+                    preserveAspectRatio="none"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      class="MuiChartsLabelMark-fill"
+                      d="M 1 8 L 15 8"
+                      stroke="#e0d4fd"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      vector-effect="non-scaling-stroke"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="MuiChartsLabel-root MuiChartsLegend-label"
+                >
+                  Citi Interest Booster
+                </span>
+              </button>
+            </li>
           </ul>
           <div
             class="MuiChartsSurface-root MuiChartsSurface-root css-1p1kxwd-MuiChartsLayerContainer-root"
@@ -1098,6 +1131,33 @@ exports[`Interest Graph > should match snapshot if profile is empty 1`] = `
                       fill="none"
                       opacity="1"
                       stroke="#ffb399"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <clippath
+                    id="_r_1_-citi-interest-booster-account-line-clip"
+                  >
+                    <rect
+                      class="css-dbuw8t"
+                      height="500"
+                      width="100"
+                      x="0"
+                      y="0"
+                    />
+                  </clippath>
+                  <g
+                    clip-path="url(#_r_1_-citi-interest-booster-account-line-clip)"
+                  >
+                    <path
+                      class="MuiLineChart-line"
+                      cursor="unset"
+                      d="M85,435C84.583,435,84.167,435,83.75,435C83.333,435,82.917,435,82.5,435C82.083,435,81.667,435,81.25,435C80.833,435,80.417,435,80,435C79.583,435,79.167,435,78.75,435C78.333,435,77.917,435,77.5,435C77.083,435,76.667,435,76.25,435C75.833,435,75.417,435,75,435C74.583,435,74.167,435,73.75,435C73.333,435,72.917,435,72.5,435C72.083,435,71.667,435,71.25,435C70.833,435,70.417,435,70,435C69.583,435,69.167,435,68.75,435C68.333,435,67.917,435,67.5,435C67.083,435,66.667,435,66.25,435C65.833,435,65.417,435,65,435C64.583,435,64.167,435,63.75,435C63.333,435,62.917,435,62.5,435C62.083,435,61.667,435,61.25,435C60.833,435,60.417,435,60,435"
+                      data-series="citi-interest-booster-account"
+                      data-series-id="citi-interest-booster-account"
+                      fill="none"
+                      opacity="1"
+                      stroke="#e0d4fd"
                       stroke-linejoin="round"
                       stroke-width="2"
                     />
@@ -2032,6 +2092,39 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                 </span>
               </button>
             </li>
+            <li
+              class="MuiChartsLegend-item"
+              data-series="citi-interest-booster-account"
+            >
+              <button
+                class="MuiChartsLegend-series"
+                type="button"
+              >
+                <div
+                  aria-hidden="true"
+                  class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                >
+                  <svg
+                    preserveAspectRatio="none"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      class="MuiChartsLabelMark-fill"
+                      d="M 1 8 L 15 8"
+                      stroke="#e0d4fd"
+                      stroke-linecap="round"
+                      stroke-width="2"
+                      vector-effect="non-scaling-stroke"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="MuiChartsLabel-root MuiChartsLegend-label"
+                >
+                  Citi Interest Booster
+                </span>
+              </button>
+            </li>
           </ul>
           <div
             class="MuiChartsSurface-root MuiChartsSurface-root css-1p1kxwd-MuiChartsLayerContainer-root"
@@ -2556,6 +2649,33 @@ exports[`Interest Graph > should match snapshot if profile is not empty 1`] = `
                       fill="none"
                       opacity="1"
                       stroke="#ffb399"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    />
+                  </g>
+                  <clippath
+                    id="_r_4_-citi-interest-booster-account-line-clip"
+                  >
+                    <rect
+                      class="css-dbuw8t"
+                      height="500"
+                      width="100"
+                      x="0"
+                      y="0"
+                    />
+                  </clippath>
+                  <g
+                    clip-path="url(#_r_4_-citi-interest-booster-account-line-clip)"
+                  >
+                    <path
+                      class="MuiLineChart-line"
+                      cursor="unset"
+                      d="M85,435C84.583,435,84.167,435,83.75,435C83.333,435,82.917,435,82.5,435C82.083,435,81.667,435,81.25,435C80.833,435,80.417,435,80,435C79.583,435,79.167,435,78.75,435C78.333,435,77.917,435,77.5,435C77.083,435,76.667,435,76.25,435C75.833,435,75.417,435,75,435C74.583,435,74.167,435,73.75,435C73.333,435,72.917,435,72.5,435C72.083,435,71.667,435,71.25,435C70.833,435,70.417,435,70,435C69.583,435,69.167,435,68.75,435C68.333,435,67.917,435,67.5,435C67.083,435,66.667,435,66.25,435C65.833,435,65.417,435,65,435C64.583,435,64.167,435,63.75,435C63.333,435,62.917,435,62.5,435C62.083,435,61.667,435,61.25,435C60.833,435,60.417,435,60,435"
+                      data-series="citi-interest-booster-account"
+                      data-series-id="citi-interest-booster-account"
+                      fill="none"
+                      opacity="1"
+                      stroke="#e0d4fd"
                       stroke-linejoin="round"
                       stroke-width="2"
                     />

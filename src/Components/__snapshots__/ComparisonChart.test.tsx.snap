@@ -533,6 +533,38 @@ exports[`Comparison Chart > should match snapshot 1`] = `
                   </span>
                 </div>
               </li>
+              <li
+                class="MuiChartsLegend-item"
+                data-series="auto-generated-id-16"
+              >
+                <div
+                  class="MuiChartsLegend-series"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="MuiChartsLabelMark-root MuiChartsLabelMark-lineAndMark MuiChartsLegend-mark css-box9k7-MuiChartsLabelMark-root"
+                  >
+                    <svg
+                      preserveAspectRatio="none"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        class="MuiChartsLabelMark-fill"
+                        d="M 1 8 L 15 8"
+                        stroke="#e0d4fd"
+                        stroke-linecap="round"
+                        stroke-width="2"
+                        vector-effect="non-scaling-stroke"
+                      />
+                    </svg>
+                  </div>
+                  <span
+                    class="MuiChartsLabel-root MuiChartsLegend-label"
+                  >
+                    Citi Interest Booster
+                  </span>
+                </div>
+              </li>
             </ul>
             <div
               class="MuiChartsSurface-root MuiChartsSurface-root css-1q8baz2-MuiChartsLayerContainer-root"
@@ -1029,6 +1061,33 @@ exports[`Comparison Chart > should match snapshot 1`] = `
                         fill="none"
                         opacity="1"
                         stroke="#ffb399"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      />
+                    </g>
+                    <clippath
+                      id="_r_1_-auto-generated-id-16-line-clip"
+                    >
+                      <rect
+                        class="css-dbuw8t"
+                        height="100"
+                        width="100"
+                        x="0"
+                        y="0"
+                      />
+                    </clippath>
+                    <g
+                      clip-path="url(#_r_1_-auto-generated-id-16-line-clip)"
+                    >
+                      <path
+                        class="MuiLineChart-line"
+                        cursor="unset"
+                        d="M85,35L83.824,35L83.824,35L82.773,35L82.773,35L82.258,35L82.258,35L82.124,35L82.124,35L81.996,35L81.996,35L81.863,35L81.863,35L81.73,35L81.73,35L81.601,35L81.601,35L81.571,35L81.571,35L81.545,35L81.545,35L81.468,35L81.468,35L81.339,35L81.339,35L81.227,35L81.227,35L80.953,35L80.953,35L80.691,35L80.691,35L80.541,35L80.541,35L80.515,35L80.515,35L80.227,35L80.227,35L80.034,35L80.034,35L80,35L80,35"
+                        data-series="auto-generated-id-16"
+                        data-series-id="auto-generated-id-16"
+                        fill="none"
+                        opacity="1"
+                        stroke="#e0d4fd"
                         stroke-linejoin="round"
                         stroke-width="2"
                       />
