@@ -60,7 +60,7 @@ export const banks: Record<string, BankData> = {
   "mari-savings-account": {
     name: "Mari Savings",
     url: "https://www.maribank.sg/product/mari-savings-account/",
-    remarks: `Interest rates are a flat ${_mariCurrentRate}%\nCapped at $100k\nReferral code: **4QTP99MT**`,
+    remarks: `Base ${_mariCurrentRate}% applies to the entire balance (no cap)\nSalary credited (≥ S$500/mo): +0.20%\nShopeeVIP member: +0.40%\nMax 1.48% p.a. (excludes the 1.60% new-user bonus for the first 30 days)\nReferral code: **4QTP99MT**`,
     history: maribankHistory,
   },
   "standard-chartered-bonus-saver": {
