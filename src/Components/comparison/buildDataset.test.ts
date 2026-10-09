@@ -19,6 +19,7 @@ const emptyProfile: Profile = {
   OneTimeLoan: 0,
   IsNTUCMember: false,
   ReferredCustomer: false,
+  IsShopeeVip: false,
   PayNowReceived: 0,
   FXSpend: 0,
 };
