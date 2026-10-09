@@ -25,7 +25,7 @@ export const maribank_interest_12_2025 = maribankInterest(mariInterestRate_12_20
 
 /**
  * Mari Savings Account — from 17 Aug 2026 the base rate (0.88% p.a.) is joined
- * by two bonus tiers that apply to the ENTIRE balance (no cap):
+ * by two bonus tiers, applied to the first S$100,000 (nothing above that):
  *   - Salary Crediting Bonus: +0.20% p.a. when salary ≥ S$500/mo is credited.
  *   - ShopeeVIP Bonus: +0.40% p.a. for active ShopeeVIP members linked on Shopee.
  * The +1.60% new-user welcome bonus is a 30-day promo and is not modelled.
@@ -37,8 +37,8 @@ export const maribank_interest_08_2026 = (profile: Profile): ResultInterest => {
   if (profile.IsShopeeVip) rate += 0.4;
 
   return calculate_ir(profile.Savings, {
-    cutoffs: [],
-    baseRatePercent: rate,
+    cutoffs: [{ Cutoff: 100_000, InterestRatePercent: rate }],
+    baseRatePercent: 0,
   });
 };
 
