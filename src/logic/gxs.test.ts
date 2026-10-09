@@ -55,7 +55,7 @@ describe("GXS Interest rates (Jun 2026)", () => {
     {
       caseName: "Max amount deposited (95k)",
       savings: 95000,
-      expectedResult: 1145,
+      expectedResult: 1125,
     },
     {
       caseName: "50k in boost pocket",
