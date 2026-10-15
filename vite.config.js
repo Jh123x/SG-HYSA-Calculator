@@ -17,5 +17,8 @@ export default defineConfig({
       // No need to define root level *.config.ts files or node_modules, as we didn't add those in include
       exclude: [],
     },
+    setupFiles: [
+      './vitest.setup.ts'
+    ]
   },
 });
