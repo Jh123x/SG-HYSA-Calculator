@@ -15,7 +15,7 @@ export default defineConfig({
 
       // Exclusion is applied for the files that match include pattern above
       // No need to define root level *.config.ts files or node_modules, as we didn't add those in include
-      exclude: ["**/some-pattern/**"],
+      exclude: [],
     },
   },
 });
