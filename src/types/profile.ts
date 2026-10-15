@@ -11,6 +11,7 @@ export interface Profile {
   OneTimeLoan: number;
   IsNTUCMember: boolean;
   ReferredCustomer: boolean;
+  IsShopeeVip: boolean;
   PayNowReceived: number;
   FXSpend: number;
 }
@@ -28,6 +29,7 @@ export const NewProfile = ({
   OneTimeLoan = 0,
   IsNTUCMember = false,
   ReferredCustomer = false,
+  IsShopeeVip = false,
   PayNowReceived = 0,
   FXSpend = 0,
 }): Profile => {
@@ -44,6 +46,7 @@ export const NewProfile = ({
     IsNTUCMember,
     OneTimeLoan,
     ReferredCustomer,
+    IsShopeeVip,
     PayNowReceived,
     FXSpend,
   };

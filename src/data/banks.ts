@@ -19,7 +19,7 @@ import {
   maybankIsavvyHistory,
   maybankIsavvyPlusHistory,
 } from "../logic/maybank";
-import { citiHistory } from "../logic/citibank";
+import { citiHistory, citiInterestBoosterHistory } from "../logic/citibank";
 import { standChartHistory } from "../logic/stand_chart";
 import { dbsMultiplierHistory } from "../logic/dbs_multiplier";
 import {
@@ -60,7 +60,7 @@ export const banks: Record<string, BankData> = {
   "mari-savings-account": {
     name: "Mari Savings",
     url: "https://www.maribank.sg/product/mari-savings-account/",
-    remarks: `Interest rates are a flat ${_mariCurrentRate}%\nCapped at $100k\nReferral code: **4QTP99MT**`,
+    remarks: `Base ${_mariCurrentRate}% applies to the first $100,000 (nothing above).\nSalary credited (≥ S$500/mo): +0.20%\nShopeeVIP member: +0.40%\nMax 1.48% p.a. (excludes the 1.60% new-user bonus for the first 30 days)\nReferral code: **4QTP99MT**`,
     history: maribankHistory,
   },
   "standard-chartered-bonus-saver": {
@@ -99,7 +99,7 @@ export const banks: Record<string, BankData> = {
     name: "GXS Savings",
     url: "https://www.gxs.com.sg/savings-account",
     remarks:
-      "Calculated using a 3-month Boost Pocket: 0.88% base + 0.34% bonus = 1.22% p.a. on up to $95,000 (up to 5 pockets; tenures 1/3/4/8/12 months, max 1.60% p.a.). Remaining balance in Saving Pockets at 1.08% p.a.\n**Note: The max amount deposited depends on individual (up to $95,000)**\nView other [Notices here](https://www.gxs.com.sg/notices)",
+      "Calculated using a 3-month Boost Pocket: 0.88% base + 0.34% bonus = 1.22% p.a. on up to $95,000 (up to 8 pockets; tenures 1/3/4/8/12/18 months, max 2.0% p.a. on 18-month). Remaining balance sits in Saving Pockets (limited-time promo; no standing rate) or Main Account at 0.88% p.a.\n**Note: The max amount deposited depends on individual (up to $95,000)**\nView other [Notices here](https://www.gxs.com.sg/notices)",
     history: gxsHistory,
   },
   "chocolate-finance": {
@@ -148,8 +148,15 @@ export const banks: Record<string, BankData> = {
     name: "Citi Wealth First",
     url: "https://www.citibank.com.sg/personal-banking/deposits/citi-wealth-first-saving-account",
     remarks:
-      "Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)\nBonus interest capped at first $500k.\n*Assumes Citigold tier. Citi Private clients enjoy higher rates.",
+      "Only Citigold and above members above 18 years old can access this perk (IE: more than 250k avg balance)\nBonus interest capped at first $250k (Citigold tier).\n*Assumes Citigold tier. Citi Private clients enjoy higher rates (capped at first $500k).",
     history: citiHistory,
+  },
+  "citi-interest-booster-account": {
+    name: "Citi Interest Booster",
+    url: "https://www1.citibank.com.sg/wealth-management/citi-plus/citi-interest-booster-account",
+    remarks:
+      "Open to anyone 18+ via Citi Plus (no Citigold requirement).\nBase 1.5% on first $50K (0.01% above).\nBonus missions (capped at first $50K): Spend $500 +0.2%, Invest $1K +0.6%, Insurance $5K +0.6%, Home loan $500K +0.8%, ADB +$1.5K +0.2%, birthday month +0.1%.\nMax 4.0% p.a.",
+    history: citiInterestBoosterHistory,
   },
 };
 

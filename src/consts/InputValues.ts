@@ -103,4 +103,10 @@ export const booleanInputs: Array<InputArg<boolean>> = [
     fn: (profile, v) => ({ ...profile, ReferredCustomer: v }),
     getStateFromProfile: (profile: Profile) => profile.ReferredCustomer,
   },
+  {
+    label: "Shopee VIP?",
+    tooltip: "Are you an active ShopeeVIP member with your Mari Savings Account linked to Shopee?",
+    fn: (profile, v) => ({ ...profile, IsShopeeVip: v }),
+    getStateFromProfile: (profile: Profile) => profile.IsShopeeVip,
+  },
 ];
