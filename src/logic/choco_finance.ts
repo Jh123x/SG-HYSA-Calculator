@@ -4,11 +4,14 @@ import type {Profile} from "../types/profile";
 import { calculate_ir } from "./common";
 
 const chocoFinanceInterest =
-  (cutoffs: { Cutoff: number; InterestRatePercent: number }[]) =>
+  (
+    cutoffs: { Cutoff: number; InterestRatePercent: number }[],
+    baseRatePercent = 0,
+  ) =>
   (profile: Profile): ResultInterest =>
     calculate_ir(profile.Savings, {
       cutoffs,
-      baseRatePercent: 0,
+      baseRatePercent,
     });
 
 export const choco_finance_05_2025 = chocoFinanceInterest([
@@ -35,6 +38,11 @@ export const choco_finance_06_2026 = chocoFinanceInterest([
   { Cutoff: 20000, InterestRatePercent: 2 },
   { Cutoff: 80000, InterestRatePercent: 1.8 },
 ]);
+
+export const choco_finance_11_2026 = chocoFinanceInterest(
+  [{ Cutoff: 20000, InterestRatePercent: 2.2 }],
+  1.9,
+);
 
 export const chocoFinanceHistory: RateSnapshot[] = [
   {
@@ -66,5 +74,12 @@ export const chocoFinanceHistory: RateSnapshot[] = [
     interestFn: choco_finance_06_2026,
     sourceUrl: "https://www.chocolatefinance.com/how-it-works",
     changeSummary: "First $20K unchanged 2%,\nnext tier expanded to $80K at 1.8% (was $30K)",
+  },
+  {
+    effectiveDate: "2026-11-01",
+    interestFn: choco_finance_11_2026,
+    sourceUrl: "https://www.chocolatefinance.com/how-it-works",
+    changeSummary:
+      "First $20K: 2.2% (was 2%).\nNext $130K: 1.9% (was 1.8% on the next $80K).\nAbove $150K: up to 1.9% (previously not counted).",
   },
 ];

@@ -144,6 +144,14 @@ export const maybankSaveUpHistory: RateSnapshot[] = [
     sourceUrl: "https://www.maybank2u.com.sg/en/personal/about_us/important-notices/2026/changes-current-savings-accounts-interest-hibah-tiers-rates.page",
     changeSummary: "Category bonus removed.\nFlat tiered: 0.1875% (<$3K), 0.25% ($3K–$50K), 0.3125% (>$50K)",
   },
+  {
+    effectiveDate: "2026-11-25",
+    interestFn: maybank_save_up_06_2026,
+    sourceUrl:
+      "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
+    changeSummary:
+      "Rates effective 25 November 2026 (tiers unchanged):\n0.1875% (<$3K), 0.25% ($3K–$50K), 0.3125% (>$50K)",
+  },
 ];
 
 export const maybankIsavvyHistory: RateSnapshot[] = [
@@ -154,6 +162,14 @@ export const maybankIsavvyHistory: RateSnapshot[] = [
     changeSummary:
       "Simplified tiered rates: 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K)",
   },
+  {
+    effectiveDate: "2026-11-25",
+    interestFn: maybank_isavvy_06_2026,
+    sourceUrl:
+      "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
+    changeSummary:
+      "Rates effective 25 November 2026 (tiers unchanged):\n0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K)",
+  },
 ];
 
 export const maybankIsavvyPlusHistory: RateSnapshot[] = [
@@ -163,5 +179,13 @@ export const maybankIsavvyPlusHistory: RateSnapshot[] = [
     sourceUrl: "https://www.maybank2u.com.sg/en/personal/about_us/important-notices/2026/changes-current-savings-accounts-interest-hibah-tiers-rates.page",
     changeSummary:
       "Flat tiered base (0.1875%–0.38%) + 1.52% top-up bonus with monthly ADB increment",
+  },
+  {
+    effectiveDate: "2026-11-25",
+    interestFn: maybank_isavvy_plus_06_2026,
+    sourceUrl:
+      "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
+    changeSummary:
+      "Base tiers effective 25 November 2026 (unchanged):\n0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K)\n+1.52% six-monthly bonus if ADB rises each month",
   },
 ];

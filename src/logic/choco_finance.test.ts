@@ -1,6 +1,10 @@
 import { ResultInterest } from "../types/interest_result";
 import { NewProfile } from "../types/profile";
-import { choco_finance_06_2025, choco_finance_06_2026 } from "./choco_finance";
+import {
+  choco_finance_06_2025,
+  choco_finance_06_2026,
+  choco_finance_11_2026,
+} from "./choco_finance";
 
 interface TestCase {
   name: string;
@@ -86,6 +90,56 @@ describe("Choco Finance (Jun 2026)", () => {
   for (const test of tests) {
     it(test.name, () => {
       const result = choco_finance_06_2026(
+        NewProfile({ Savings: test.savings }),
+      );
+      expect(result).toEqual(
+        new ResultInterest(test.expected_ir, test.savings),
+      );
+    });
+  }
+});
+
+describe("Choco Finance (Nov 2026)", () => {
+  const tests: Array<TestCase> = [
+    {
+      name: "should return correct i/r for 1k",
+      savings: 1000,
+      expected_ir: 22,
+    },
+    {
+      name: "should return correct i/r for 20k",
+      savings: 20000,
+      expected_ir: 440,
+    },
+    {
+      name: "should return correct i/r for 30k",
+      // 20k * 2.2% + 10k * 1.9% = 440 + 190 = 630
+      savings: 30000,
+      expected_ir: 630,
+    },
+    {
+      name: "should return correct i/r for 100k",
+      // 20k * 2.2% + 80k * 1.9% = 440 + 1520 = 1960
+      savings: 100000,
+      expected_ir: 1960,
+    },
+    {
+      name: "should return correct i/r for 150k",
+      // 20k * 2.2% + 130k * 1.9% = 440 + 2470 = 2910
+      savings: 150000,
+      expected_ir: 2910,
+    },
+    {
+      name: "should return correct i/r for 200k (above top-up cap)",
+      // 20k * 2.2% + 180k * 1.9% = 440 + 3420 = 3860
+      savings: 200000,
+      expected_ir: 3860,
+    },
+  ];
+
+  for (const test of tests) {
+    it(test.name, () => {
+      const result = choco_finance_11_2026(
         NewProfile({ Savings: test.savings }),
       );
       expect(result).toEqual(

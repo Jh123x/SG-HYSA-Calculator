@@ -1,6 +1,10 @@
 import { ResultInterest } from "../types/interest_result";
 import { NewProfile } from "../types/profile";
-import { ocbc_interest_07_2025, ocbc_interest_05_2026 } from "./ocbc360";
+import {
+  ocbc_interest_07_2025,
+  ocbc_interest_05_2026,
+  ocbc_interest_08_2026,
+} from "./ocbc360";
 
 interface testCase {
   caseName: string;
@@ -169,6 +173,101 @@ describe("OCBC 360 — May 2026 rates (golden tests)", () => {
   for (const tc of cases) {
     it(tc.caseName, () => {
       const result = ocbc_interest_05_2026(
+        NewProfile({
+          Savings: tc.savings,
+          Salary: tc.salary,
+          Spending: tc.spending,
+          Investment: tc.investment ? 100 : 0,
+          Insurance: tc.insurance ? 100 : 0,
+          MonthlyAccIncrease: tc.balanceIncrease,
+        }),
+      );
+
+      expect(result.toYearly()).toBe(tc.expectedResult);
+      expect(result.toYearlyPercent()).toBeCloseTo(tc.eir, 1);
+    });
+  }
+});
+
+describe("OCBC 360 — limited-time Save bonus (Aug–Dec 2026)", () => {
+  /**
+   * From 1 Aug to 31 Dec 2026 the Save category pays +0.50% on the first
+   * S$75K and +1.10% on the next S$25K (0.65% EIR) instead of +0.40% flat.
+   * Everything else is unchanged from the May 2026 rates.
+   */
+  const cases: Array<testCase & { eir: number }> = [
+    {
+      caseName: "$100K with all 5 criteria (no $250K bonus)",
+      savings: 100_000,
+      salary: 5_000,
+      balanceIncrease: 1_000,
+      spending: 1_000,
+      insurance: true,
+      investment: true,
+      // T1: 0.05+1.0+0.5+0.25+1.0+1.0 = 3.80% → $75K * 0.038 = $2,850
+      // T2: 0.05+2.0+1.1+0.25+2.0+2.0 = 7.40% → $25K * 0.074 = $1,850
+      // Total = $4,700
+      expectedResult: 4700,
+      eir: 4.7,
+    },
+    {
+      caseName: "$250K with all 6 criteria",
+      savings: 250_000,
+      salary: 5_000,
+      balanceIncrease: 1_000,
+      spending: 1_000,
+      insurance: true,
+      investment: true,
+      // T1: 3.80 + 1.20 = 5.00% → $75K * 0.05 = $3,750
+      // T2: 7.40 + 1.20 = 8.60% → $25K * 0.086 = $2,150
+      // Remaining $150K at 0.05% base = $75
+      // Total = $5,975
+      expectedResult: 5975,
+      eir: 2.39,
+    },
+    {
+      caseName: "$100K salary + save + spend only (no Insure/Invest)",
+      savings: 100_000,
+      salary: 5_000,
+      balanceIncrease: 1_000,
+      spending: 1_000,
+      insurance: false,
+      investment: false,
+      // T1: 0.05+1.0+0.5+0.25 = 1.80% → $75K * 0.018 = $1,350
+      // T2: 0.05+2.0+1.1+0.25 = 3.40% → $25K * 0.034 = $850
+      // Total = $2,200
+      expectedResult: 2200,
+      eir: 2.2,
+    },
+    {
+      caseName: "$50K salary only",
+      savings: 50_000,
+      salary: 5_000,
+      balanceIncrease: 0,
+      spending: 0,
+      insurance: false,
+      investment: false,
+      // T1: 0.05+1.0 = 1.05% → $50K * 0.0105 = $525
+      expectedResult: 525,
+      eir: 1.05,
+    },
+    {
+      caseName: "$10K no criteria met",
+      savings: 10_000,
+      salary: 0,
+      balanceIncrease: 0,
+      spending: 0,
+      insurance: false,
+      investment: false,
+      // T1: 0.05% → $10K * 0.0005 = $5
+      expectedResult: 5,
+      eir: 0.05,
+    },
+  ];
+
+  for (const tc of cases) {
+    it(tc.caseName, () => {
+      const result = ocbc_interest_08_2026(
         NewProfile({
           Savings: tc.savings,
           Salary: tc.salary,

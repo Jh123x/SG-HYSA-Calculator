@@ -157,6 +157,66 @@ export const ocbc_interest_05_2026 = (profile: Profile): ResultInterest => {
   });
 };
 
+/**
+ * OCBC 360 limited-time Save bonus (1 Aug – 31 Dec 2026).
+ *
+ * The Save category is boosted from a flat +0.40% to +0.50% on the first
+ * S$75K and +1.10% on the next S$25K (0.65% EIR), taking the maximum EIR
+ * from 4.45% to 4.70% when all six categories are met.
+ */
+export const ocbc_interest_08_2026 = (profile: Profile): ResultInterest => {
+  const {
+    Savings,
+    Salary,
+    MonthlyAccIncrease,
+    Spending,
+    Insurance,
+    Investment,
+  } = profile;
+
+  const interest = [0.05, 0.05]; // [1st 75k, next 25k]
+  if (Salary >= 1800) {
+    interest[0] += 1;
+    interest[1] += 2;
+  }
+
+  // Limited-time Save bonus (1 Aug – 31 Dec 2026).
+  if (MonthlyAccIncrease >= 500) {
+    interest[0] += 0.5;
+    interest[1] += 1.1;
+  }
+
+  if (Spending >= 500) {
+    interest[0] += 0.25;
+    interest[1] += 0.25;
+  }
+
+  // For 12 months.
+  if (Insurance > 0) {
+    interest[0] += 1;
+    interest[1] += 2;
+  }
+
+  // For 12 months.
+  if (Investment > 0) {
+    interest[0] += 1;
+    interest[1] += 2;
+  }
+
+  if (Savings >= 250000) {
+    interest[0] += 1.2;
+    interest[1] += 1.2;
+  }
+
+  return calculate_ir(Savings, {
+    cutoffs: [
+      { Cutoff: 75000, InterestRatePercent: interest[0] },
+      { Cutoff: 25000, InterestRatePercent: interest[1] },
+    ],
+    baseRatePercent: 0.05,
+  });
+};
+
 export const ocbcHistory: RateSnapshot[] = [
   {
     effectiveDate: "2025-07-01",
@@ -175,5 +235,21 @@ export const ocbcHistory: RateSnapshot[] = [
     interestFn: ocbc_interest_05_2026,
     changeSummary: "Bonus rates lowered (1st $75K / next $25K):\nSalary: +1.0% / +2.0%\nSave: +0.4% (both tiers)\nSpend: +0.25% (both tiers)\nInsurance: +1.0% / +2.0%\nInvestment: +1.0% / +2.0%\n$250K balance: +1.2% (both tiers)",
     sourceUrl: "https://milelion.com/2026/04/01/ocbc-360-account-cuts-interest-rates-from-may-2026/",
+  },
+  {
+    effectiveDate: "2026-08-01",
+    interestFn: ocbc_interest_08_2026,
+    changeSummary:
+      "Limited-time Save bonus (1 Aug – 31 Dec 2026):\nSave: +0.40% flat → +0.50% first $75K / +1.10% next $25K (0.65% EIR).\nMax EIR: 4.45% → 4.70% with all six categories.",
+    sourceUrl:
+      "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
+  },
+  {
+    effectiveDate: "2027-01-01",
+    interestFn: ocbc_interest_05_2026,
+    changeSummary:
+      "Limited-time Save bonus ends.\nSave returns to +0.40% both tiers (max EIR 4.70% → 4.45%).",
+    sourceUrl:
+      "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
   },
 ];
