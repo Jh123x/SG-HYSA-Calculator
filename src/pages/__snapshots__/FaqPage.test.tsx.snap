@@ -564,7 +564,7 @@ exports[`FaqPage desktop > should match snapshot 1`] = `
                   <span
                     class="MuiTypography-root MuiTypography-caption css-1i2a26z-MuiTypography-root"
                   >
-                    — Advertised maximum rate (4.45% EIR) requires meeting all 6 bonus categories: Salary, Save, Spend, Grow, Insure, and Invest. Missing any category reduces the rate.
+                    — Advertised maximum rate (4.70% EIR, including the limited-time Save bonus until 31 December 2026) requires meeting all 6 bonus categories: Salary, Save, Spend, Grow, Insure, and Invest. Missing any category reduces the rate.
                   </span>
                 </li>
                 <li
@@ -3428,7 +3428,7 @@ exports[`FaqPage mobile > should match snapshot 1`] = `
               <span
                 class="MuiTypography-root MuiTypography-caption css-1i2a26z-MuiTypography-root"
               >
-                — Advertised maximum rate (4.45% EIR) requires meeting all 6 bonus categories: Salary, Save, Spend, Grow, Insure, and Invest. Missing any category reduces the rate.
+                — Advertised maximum rate (4.70% EIR, including the limited-time Save bonus until 31 December 2026) requires meeting all 6 bonus categories: Salary, Save, Spend, Grow, Insure, and Invest. Missing any category reduces the rate.
               </span>
             </li>
             <li

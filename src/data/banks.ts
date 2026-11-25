@@ -99,14 +99,14 @@ export const banks: Record<string, BankData> = {
     name: "GXS Savings",
     url: "https://www.gxs.com.sg/savings-account",
     remarks:
-      "Calculated using a 3-month Boost Pocket: 0.88% base + 0.34% bonus = 1.22% p.a. on up to $95,000 (up to 8 pockets; tenures 1/3/4/8/12/18 months, max 2.0% p.a. on 18-month). Remaining balance sits in Saving Pockets (limited-time promo; no standing rate) or Main Account at 0.88% p.a.\n**Note: The max amount deposited depends on individual (up to $95,000)**\nView other [Notices here](https://www.gxs.com.sg/notices)",
+      "Calculated using a 3-month Boost Pocket: 0.88% base + 0.62% bonus = 1.50% p.a. on up to $95,000 (up to 8 pockets; tenures 1/3/4/8/12/18 months, max 2.0% p.a. on 18-month). Remaining balance sits in the Main Account at 0.88% p.a. (Saving Pockets are a limited-time promo and not modelled).\n**Note: The max amount deposited depends on individual (up to $95,000)**\nView other [Notices here](https://www.gxs.com.sg/notices)",
     history: gxsHistory,
   },
   "chocolate-finance": {
     name: "Chocolate Finance",
     url: "https://www.chocolatefinance.com/",
     remarks:
-      "1st 20k 2% p.a, next 80k 1.8% p.a.\nAmounts above 100k are invested and will not be counted here.\n**Note: This is not a bank**\n[Referral link](https://share.chocolate.app/nxW9/l0tqqxem)",
+      "1st 20k 2.2% p.a., next 130k 1.9% p.a.\nAbove the guaranteed 150k is treated as 0% here (not guaranteed; no longer savings).\nTop-Up Programme on the first 150k runs until 30 Jun 2027.\n**Note: This is not a bank**\n[Referral link](https://share.chocolate.app/nxW9/l0tqqxem)",
     history: chocoFinanceHistory,
   },
   "boc-supersaver": {
@@ -134,14 +134,14 @@ export const banks: Record<string, BankData> = {
     name: "Maybank iSAVvy",
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks:
-      "Flat tiered rates (non-additive): 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).\nRates effective from 11 June 2026.",
+      "Flat tiered rates (non-additive): 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).\nRates effective from 25 November 2026.",
     history: maybankIsavvyHistory,
   },
   "maybank-isavvy-plus": {
     name: "Maybank iSAVvy Plus",
     url: "https://sslsecure.maybank.com.sg/scripts/mbb_rates_savings.jsp",
     remarks:
-      "Flat tiered base rates: 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).\n+1.52% p.a. bonus (paid every 6 months) only if ADB increases every month.\n**Set 'Account Increment' > 0 to qualify for the bonus.**",
+      "Flat tiered base rates: 0.1875% (<$5K), 0.30% ($5K–$50K), 0.38% (≥$50K).\nRates effective from 25 November 2026.\n+1.52% p.a. bonus paid every 6 months if ADB increases each month (not included in the estimate).",
     history: maybankIsavvyPlusHistory,
   },
   "citi-wealth-first-account": {

@@ -77,7 +77,7 @@ const FULL: FaqEntry[] = [
         label: "OCBC 360 Interest Rates",
         url: "https://www.ocbc.com/personal-banking/deposits/360-savings-account",
         confirms:
-          "Advertised maximum rate (4.45% EIR) requires meeting all 6 bonus categories: Salary, Save, Spend, Grow, Insure, and Invest. Missing any category reduces the rate.",
+          "Advertised maximum rate (4.70% EIR, including the limited-time Save bonus until 31 December 2026) requires meeting all 6 bonus categories: Salary, Save, Spend, Grow, Insure, and Invest. Missing any category reduces the rate.",
       },
       {
         label: "UOB One Rate Revision (Dec 2025)",

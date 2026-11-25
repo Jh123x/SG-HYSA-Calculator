@@ -4,6 +4,7 @@ import {
   gxs_interest_07_2025,
   gxs_interest_06_2026,
   gxs_interest_10_2026,
+  gxs_interest_11_2026,
 } from "./gxs";
 
 interface testCase {
@@ -121,6 +122,51 @@ describe("GXS Interest rates (Oct 2026, Main Account scheme)", () => {
   for (const tc of testCases) {
     it(tc.caseName, () => {
       const result = gxs_interest_10_2026(
+        NewProfile({
+          Savings: tc.savings,
+        }),
+      );
+      const expectedSavings = tc.savings < 200 ? 0 : tc.savings;
+      expect(result).toEqual(
+        new ResultInterest(tc.expectedResult, expectedSavings),
+      );
+    });
+  }
+});
+
+describe("GXS Interest rates (Nov 2026, 3-month Boost at 1.50%)", () => {
+  const testCases: Array<testCase> = [
+    {
+      caseName: "No $$ is empty",
+      savings: 0,
+      expectedResult: 0,
+    },
+    {
+      caseName: "Below 200 should be 0",
+      savings: 100,
+      expectedResult: 0,
+    },
+    {
+      caseName: "50k in boost pocket",
+      savings: 50000,
+      expectedResult: 750,
+    },
+    {
+      caseName: "Full boost pocket (85k)",
+      savings: 85000,
+      expectedResult: 1275,
+    },
+    {
+      caseName: "Max amount deposited (95k)",
+      // 85k * 1.50 / 100 + 10k * 0.88 / 100 = 1275 + 88 = 1363
+      savings: 95000,
+      expectedResult: 1363,
+    },
+  ];
+
+  for (const tc of testCases) {
+    it(tc.caseName, () => {
+      const result = gxs_interest_11_2026(
         NewProfile({
           Savings: tc.savings,
         }),
