@@ -106,7 +106,7 @@ export const banks: Record<string, BankData> = {
     name: "Chocolate Finance",
     url: "https://www.chocolatefinance.com/",
     remarks:
-      "1st 20k 2.2% p.a., next 130k 1.9% p.a.\nAbove 150k earns up to 1.9% p.a. (not topped up).\nTop-Up Programme on the first 150k runs until 30 Jun 2027.\n**Note: This is not a bank**\n[Referral link](https://share.chocolate.app/nxW9/l0tqqxem)",
+      "1st 20k 2.2% p.a., next 130k 1.9% p.a.\nAbove the guaranteed 150k is treated as 0% here (not guaranteed; no longer savings).\nTop-Up Programme on the first 150k runs until 30 Jun 2027.\n**Note: This is not a bank**\n[Referral link](https://share.chocolate.app/nxW9/l0tqqxem)",
     history: chocoFinanceHistory,
   },
   "boc-supersaver": {

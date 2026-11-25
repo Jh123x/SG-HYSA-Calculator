@@ -39,10 +39,15 @@ export const choco_finance_06_2026 = chocoFinanceInterest([
   { Cutoff: 80000, InterestRatePercent: 1.8 },
 ]);
 
-export const choco_finance_11_2026 = chocoFinanceInterest(
-  [{ Cutoff: 20000, InterestRatePercent: 2.2 }],
-  1.9,
-);
+/**
+ * Chocolate only guarantees its return via the Top-Up Programme on the first
+ * S$150,000. Anything above that is un-topped-up investment exposure, so this
+ * calculator treats it as 0% rather than projecting the "up to 1.9%" rate.
+ */
+export const choco_finance_11_2026 = chocoFinanceInterest([
+  { Cutoff: 20000, InterestRatePercent: 2.2 },
+  { Cutoff: 130000, InterestRatePercent: 1.9 },
+]);
 
 export const chocoFinanceHistory: RateSnapshot[] = [
   {
@@ -80,6 +85,6 @@ export const chocoFinanceHistory: RateSnapshot[] = [
     interestFn: choco_finance_11_2026,
     sourceUrl: "https://www.chocolatefinance.com/how-it-works",
     changeSummary:
-      "First $20K: 2.2% (was 2%).\nNext $130K: 1.9% (was 1.8% on the next $80K).\nAbove $150K: up to 1.9% (previously not counted).",
+      "First $20K: 2.2% (was 2%).\nNext $130K: 1.9% (was 1.8% on the next $80K).\nAbove $150K: excluded at 0% (not guaranteed / no longer savings).",
   },
 ];

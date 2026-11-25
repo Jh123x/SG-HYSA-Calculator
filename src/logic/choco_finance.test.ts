@@ -130,10 +130,16 @@ describe("Choco Finance (Nov 2026)", () => {
       expected_ir: 2910,
     },
     {
-      name: "should return correct i/r for 200k (above top-up cap)",
-      // 20k * 2.2% + 180k * 1.9% = 440 + 3420 = 3860
+      name: "should return correct i/r for 200k (above guaranteed cap)",
+      // Only the first 150k earns: 20k * 2.2% + 130k * 1.9% = 440 + 2470 = 2910
       savings: 200000,
-      expected_ir: 3860,
+      expected_ir: 2910,
+    },
+    {
+      name: "should return correct i/r for 300k (excess earns 0%)",
+      // Same as 150k: 20k * 2.2% + 130k * 1.9% = 2910
+      savings: 300000,
+      expected_ir: 2910,
     },
   ];
 
